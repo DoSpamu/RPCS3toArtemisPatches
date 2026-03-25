@@ -1,3 +1,8 @@
+Unlock FPS v01.15 (RPCS3)
+0
+RPCS3
+0 001EF34C 60000000
+#
 Max + Infinite Money + Black Market Money On Buy
 0
 Medo
@@ -15,9 +20,4 @@ Infinite Ammo + Grenades
 Medo
 0 00493CCC 60000000
 0 00493CD0 D00B0070
-#
-Unlock FPS v01.15 (RPCS3)
-0
-RPCS3
-0 001EF34C 60000000
 #

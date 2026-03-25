@@ -1,3 +1,8 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 0075F200 60000000
+#
 Memory Unknown Code 1
 0
 jgduff1
@@ -10,9 +15,4 @@ ASM Unknown Code 1
 jgduff1
 0 00465E30 91CB0000
 0 00465E2C 80C50000
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 0075F200 60000000
 #

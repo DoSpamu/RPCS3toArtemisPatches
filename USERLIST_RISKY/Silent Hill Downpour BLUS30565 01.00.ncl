@@ -1,3 +1,8 @@
+Unlock FPS v01.01 (RPCS3)
+0
+RPCS3
+0 002A1250 60000000
+#
 Invincible
 0
 xtatu
@@ -217,9 +222,4 @@ AoB Increased UV Light Beam Distance
 bungholio
 B 00010000 04000000
 B C03E00F4D02301AC 3CA0470090A301AC
-#
-Unlock FPS v01.01 (RPCS3)
-0
-RPCS3
-0 002A1250 60000000
 #

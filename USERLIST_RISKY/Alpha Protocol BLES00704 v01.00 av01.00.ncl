@@ -1,3 +1,8 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 000D78D48 60000000
+#
 Infinite Health Shield
 0
 jgduff1
@@ -71,9 +76,4 @@ After you save your game
 in the Start Menu, quit
 using the PS Button.
 */
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 000D78D48 60000000
 #

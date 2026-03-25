@@ -1,3 +1,10 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 007EEAC8 C0228DCC
+0 00F02AD4 38D1B717
+0 00736C44 60000000
+#
 File Info
 0
 bungholio
@@ -721,11 +728,4 @@ normally need to log into
 RESISTANCE.NET or whatever
 to unlock.
 */
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 007EEAC8 C0228DCC
-0 00F02AD4 38D1B717
-0 00736C44 60000000
 #

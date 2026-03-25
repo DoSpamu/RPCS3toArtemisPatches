@@ -1,3 +1,8 @@
+60 FPS v01.27 (RPCS3)
+0
+RPCS3
+0 004A0E34 4800
+#
 No Wanted Level
 0
 dron_3
@@ -29,9 +34,4 @@ Infinite Special Ability
 0
 dron_3
 0 010674FC C03F0034
-#
-60 FPS v01.27 (RPCS3)
-0
-RPCS3
-0 004A0E34 4800
 #

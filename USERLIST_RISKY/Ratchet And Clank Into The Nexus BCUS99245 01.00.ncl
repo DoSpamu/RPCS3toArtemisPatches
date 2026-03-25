@@ -1,3 +1,9 @@
+Unlock FPS v01.01 (RPCS3)
+0
+RPCS3
+0 0032FF02 3A83
+0 0032FF0E 126F
+#
 Also known as
 Ratchet & Clank Nexus
 
@@ -170,10 +176,4 @@ This will make the game
 unplayable. Toggle on + off
 as needed.
 */
-#
-Unlock FPS v01.01 (RPCS3)
-0
-RPCS3
-0 0032FF02 3A83
-0 0032FF0E 126F
 #

@@ -1,3 +1,8 @@
+60 FPS v01.06 (RPCS3)
+0
+RPCS3
+0 0065DBAC 9383
+#
 Infinite Health
 0
 Skiller
@@ -13,9 +18,4 @@ Infinite Turbo
 0
 Skiller
 0 001C9EBC 60000000
-#
-60 FPS v01.06 (RPCS3)
-0
-RPCS3
-0 0065DBAC 9383
 #

@@ -1,3 +1,8 @@
+Unlock FPS v02.00 (RPCS3)
+0
+RPCS3
+0 000DB720 4E800020
+#
 Infinite Health
 0
 CodeFreak/PS3UserCheat
@@ -100,9 +105,4 @@ Recovery Item 0?
 0
 games24.blog.fc2.com/blog-entry-158.html
 0 00279DDC 39600000
-#
-Unlock FPS v02.00 (RPCS3)
-0
-RPCS3
-0 000DB720 4E800020
 #

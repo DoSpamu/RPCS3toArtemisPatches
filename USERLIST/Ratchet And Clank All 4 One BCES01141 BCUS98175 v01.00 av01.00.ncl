@@ -1,3 +1,9 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 0031A186 3A83
+0 0031A192 126F
+#
 Alternative Names
 0
 PARAM.SFO
@@ -278,10 +284,4 @@ you the gold bolt for the
 area you are about to
 play.
 */
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 0031A186 3A83
-0 0031A192 126F
 #

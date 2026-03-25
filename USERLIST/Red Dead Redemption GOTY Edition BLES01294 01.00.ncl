@@ -1,3 +1,8 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 0025F98C 386003E8
+#
 Alternative Names
 0
 PARAM.SFO
@@ -102,9 +107,4 @@ find your own place to
 put it and adjust the
 branch as necessary.
 */
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 0025F98C 386003E8
 #

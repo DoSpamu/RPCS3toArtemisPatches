@@ -1,3 +1,8 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 002FAAB8 60000000
+#
 Max And Infinite Health And Resources
 0
 FBML
@@ -60,9 +65,4 @@ B 7C632014907C0000 38600000907C0000
 Use only when purchasing
 and then disable it.
 */
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 002FAAB8 60000000
 #

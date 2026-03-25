@@ -1,3 +1,8 @@
+60 FPS (RPCS3)
+0
+RPCS3
+0 000AF0D0 48000014
+#
 Damage Fully Refills Health
 0
 bungholio
@@ -84,9 +89,4 @@ Max Hearts On Gain
 0
 bungholio
 0 00CFDDD4 38807FFF
-#
-60 FPS (RPCS3)
-0
-RPCS3
-0 000AF0D0 48000014
 #

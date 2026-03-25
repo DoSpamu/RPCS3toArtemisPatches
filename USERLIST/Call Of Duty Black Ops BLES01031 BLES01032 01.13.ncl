@@ -1,3 +1,9 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 00679988 60000000
+0 01CC0424 453B8000
+#
 Infinite Health
 0
 Peoples00
@@ -81,10 +87,4 @@ Max Total Kills-Headshoots Zombie Mode (Result)
 0
 Peoples00
 0 00592350 91AC0000
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 00679988 60000000
-0 01CC0424 453B8000
 #

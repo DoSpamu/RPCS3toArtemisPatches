@@ -1,3 +1,9 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 007D23B4 60000000
+0 007D23C8 60000000
+#
 Alternative Names
 0
 PARAM.SFO
@@ -272,10 +278,4 @@ Select + L1 = Backward
 Select + R2 = Set Ammo
 Select + L2 = Delete Item
 */
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 007D23B4 60000000
-0 007D23C8 60000000
 #

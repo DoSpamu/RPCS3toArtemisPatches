@@ -1,3 +1,8 @@
+60 FPS (RPCS3)
+0
+RPCS3
+0 00076850 38600000
+#
 BLES & BLUS note:
 0
 People have said the codes
@@ -467,9 +472,4 @@ Riku Max AP
 0
 JorgeFFC
 0 007751B8 FF
-#
-60 FPS (RPCS3)
-0
-RPCS3
-0 00076850 38600000
 #

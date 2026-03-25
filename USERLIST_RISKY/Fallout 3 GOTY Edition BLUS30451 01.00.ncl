@@ -1,3 +1,8 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 00702BCC 60000000
+#
 Infinite Health + Oxygen + AP + Ammo + Carrying Weight
 0
 dron_3
@@ -64,9 +69,4 @@ AoB Infinite Health + Oxygen + AP + Ammo + Carrying Weight
 dron_3
 B 00010000 04000000
 B 88840000FBC100882C04000040820058 3BE00001FBC100889BE4000048000058
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 00702BCC 60000000
 #

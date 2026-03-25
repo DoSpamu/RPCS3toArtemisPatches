@@ -1,3 +1,8 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 001B5EF4 60000000
+#
 P1 Invincibility
 0
 GuitarMan
@@ -71,9 +76,4 @@ Max Kills
 0
 GuitarMan
 0 002C4948 3C007F7F
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 001B5EF4 60000000
 #

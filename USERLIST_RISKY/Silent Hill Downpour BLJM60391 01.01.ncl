@@ -1,3 +1,8 @@
+Unlock FPS v01.00 (RPCS3)
+0
+RPCS3
+0 002A1020 60000000
+#
 Invincible
 0
 vosman
@@ -24,9 +29,4 @@ Infinite Ammo
 0
 vosman
 0 0087E0E0 33430000
-#
-Unlock FPS v01.00 (RPCS3)
-0
-RPCS3
-0 002A1020 60000000
 #

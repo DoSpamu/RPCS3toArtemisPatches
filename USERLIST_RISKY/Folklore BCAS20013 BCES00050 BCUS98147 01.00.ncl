@@ -1,3 +1,8 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 00181118 60000000
+#
 Alternative Names
 0
 PARAM.SFO
@@ -38,9 +43,4 @@ Keats MP
 CodeFreak/PS3UserCheat
 0 10146A18 03E7
 0 10146A1A 03E7
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 00181118 60000000
 #

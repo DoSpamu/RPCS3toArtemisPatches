@@ -1,3 +1,8 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 00036AB8 38A00000
+#
 Enemies Never Attack
 0
 bungholio
@@ -33,9 +38,4 @@ L3 + Select = Quick Menu
 L3 + Triangle = Debug Text
 L3 + R3 = Debug Fly
 */
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 00036AB8 38A00000
 #

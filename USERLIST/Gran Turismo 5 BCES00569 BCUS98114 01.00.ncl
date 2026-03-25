@@ -1,3 +1,8 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 008CFFB4 38800000
+#
 Money Max
 0
 CodeFreak/PS3UserCheat
@@ -29,9 +34,4 @@ Complete one of A Licenses
 or win one. Race of B
 License to Reach LV 40.
 */
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 008CFFB4 38800000
 #

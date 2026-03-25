@@ -1,3 +1,8 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 003BCFE8 60000000
+#
 Memory Infinite Health
 0
 jgduff1
@@ -22,9 +27,4 @@ ASM Max + Infinite Money On Gain + Special Always Full
 jgduff1
 0 00065208 91880000
 0 00134BEC 90CB0000
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 003BCFE8 60000000
 #

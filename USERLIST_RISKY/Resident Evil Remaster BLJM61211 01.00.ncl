@@ -1,3 +1,9 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 007D23B4 60000000
+0 007D23C8 60000000
+#
 Invincible
 0
 Hiei-YYH
@@ -134,10 +140,4 @@ sorry i'm a bit late :P i was too busy, here a new code... now to get my KH port
 
 BLJM61211 v1.0
 */
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 007D23B4 60000000
-0 007D23C8 60000000
 #

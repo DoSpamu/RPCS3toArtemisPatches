@@ -1,3 +1,8 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 00855048 3A83126F
+#
 Also known as
 Ratchet & Clank Future Gaiden Kaizoku Dark Water No Hihou
 
@@ -33,9 +38,4 @@ CodeFreak/PS3UserCheat
 0 009CE8C8 42C80000
 0 009CE8DC 42C80000
 0 009CE8F0 42C80000
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 00855048 3A83126F
 #

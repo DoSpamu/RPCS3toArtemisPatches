@@ -1,3 +1,8 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 00036AB8 38A00000
+#
 Infinite Everything (Ammo, Items, Skills, Parts)
 0
 Medo
@@ -171,9 +176,4 @@ unless you have no shivs.
 Does not work on human
 enemies.
 */
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 00036AB8 38A00000
 #

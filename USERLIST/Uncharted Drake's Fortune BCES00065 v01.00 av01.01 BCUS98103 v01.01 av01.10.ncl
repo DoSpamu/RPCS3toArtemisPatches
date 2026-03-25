@@ -1,3 +1,8 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 000E515C 901D
+#
 Alternative Names
 0
 PARAM.SFO
@@ -91,9 +96,4 @@ L3 + Select = Quick Menu (Use this first to unlock other)
 L3 + Start = Dev Menu
 L2 + R2 = Debug Fly
 */
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 000E515C 901D
 #

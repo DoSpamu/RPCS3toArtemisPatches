@@ -1,3 +1,8 @@
+60 FPS (RPCS3)
+0
+RPCS3
+0 00170CC8 60000000
+#
 Max Money On Buy (Energy)
 0
 JorgeFFC
@@ -194,9 +199,4 @@ AoB Effects From Sanity Will Be Constant On Enemies
 bbs.duowan.com/forum.php?mod=viewthread&tid=40441815, ported by JorgeFFC
 B 00010000 04000000
 B 93DF0018E80100A07C0803A6EB810070 907F0018E80100A07C0803A6EB810070
-#
-60 FPS (RPCS3)
-0
-RPCS3
-0 00170CC8 60000000
 #

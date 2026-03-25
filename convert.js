@@ -236,7 +236,7 @@ function main() {
     for (const nclFile of files) {
       const fVer = nclVer(nclFile);
       let content = fs.readFileSync(nclFile,'utf8');
-      let changed = false;
+      const newEntries = [];
 
       // Track already-added patch names (case-insensitive) for this file
       const done = new Set(
@@ -267,16 +267,18 @@ function main() {
           : `${p.name} (RPCS3)`;
 
         const entry = [patchLabel, '0', 'RPCS3', ...artemis, '#'].join('\n');
-        if (!content.endsWith('\n')) content += '\n';
-        content += entry + '\n';
-        changed = true;
+        newEntries.push(entry);
         done.add(p.name.toLowerCase());
         totalAdded++;
         rep.modified.push({tid, file:path.basename(nclFile), name:patchLabel,
           lines:artemis.length, skippedLines:skips, patchVersion:p.versions});
       }
 
-      if (changed) fs.writeFileSync(nclFile, content, 'utf8');
+      // Prepend new RPCS3 entries so they appear first in Artemis cheat list
+      if (newEntries.length) {
+        content = newEntries.join('\n') + '\n' + content;
+        fs.writeFileSync(nclFile, content, 'utf8');
+      }
     }
   }
 

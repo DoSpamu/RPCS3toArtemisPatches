@@ -1,3 +1,8 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 00855048 3A83126F
+#
 Alternative Names
 0
 PARAM.SFO
@@ -64,9 +69,4 @@ Azagthoth
 0
 Azagthoth
 0 00185990 D1030004
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 00855048 3A83126F
 #

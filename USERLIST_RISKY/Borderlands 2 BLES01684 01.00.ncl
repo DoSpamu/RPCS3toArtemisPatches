@@ -1,3 +1,8 @@
+Unlock FPS v01.15 (RPCS3)
+0
+RPCS3
+0 001EF34C 60000000
+#
 Max + Infinite Money + Black Market Money On Buy
 0
 Medo
@@ -9,9 +14,4 @@ Max + Infinite Skill Points + Badass Token On Use
 Medo
 0 0002D880 380003E7
 0 0002D884 900B0000
-#
-Unlock FPS v01.15 (RPCS3)
-0
-RPCS3
-0 001EF34C 60000000
 #

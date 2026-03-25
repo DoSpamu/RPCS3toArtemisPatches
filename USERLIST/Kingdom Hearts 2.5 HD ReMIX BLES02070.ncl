@@ -1,3 +1,8 @@
+60 FPS (RPCS3)
+0
+RPCS3
+0 00076850 38600000
+#
 All Abilities For Sora + Roxas
 0
 kuxir97
@@ -807,9 +812,4 @@ No values were given, so
 I do not know what you
 might need.
 */
-#
-60 FPS (RPCS3)
-0
-RPCS3
-0 00076850 38600000
 #

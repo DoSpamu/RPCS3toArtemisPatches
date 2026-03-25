@@ -1,3 +1,8 @@
+Unlock FPS v01.00 (RPCS3)
+0
+RPCS3
+0 00357698 60000000
+#
 Max Fri On Change
 0
 games24.blog.fc2.com/blog-entry-254.html
@@ -85,9 +90,4 @@ AoB Items Never Decrease
 games24.blog.fc2.com/blog-entry-254.html
 B 00010000 04000000
 B 98AB0011288300634185FFC44E800020 60000000288300634185FFC44E800020
-#
-Unlock FPS v01.00 (RPCS3)
-0
-RPCS3
-0 00357698 60000000
 #

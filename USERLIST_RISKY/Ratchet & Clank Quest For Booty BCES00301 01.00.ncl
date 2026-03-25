@@ -1,3 +1,8 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 00855048 3A83126F
+#
 Max Exp
 0
 jgduff1
@@ -46,9 +51,4 @@ ASM Infinite Ammo
 0
 jgduff1
 0 0034E658 60000000
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 00855048 3A83126F
 #

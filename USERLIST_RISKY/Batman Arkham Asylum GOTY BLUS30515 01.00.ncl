@@ -1,3 +1,8 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 000D0A10 60000000
+#
 Infinite HP
 0
 CodeFreak/PS3UserCheat
@@ -14,9 +19,4 @@ Debug Menu (R1 + Start)
 0
 dron_3
 0 0121DBAC 38600000
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 000D0A10 60000000
 #

@@ -1,3 +1,8 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 002A1250 60000000
+#
 Invincible
 0
 xtatu
@@ -669,9 +674,4 @@ Requires that extra
 Enable Code or nothing
 will happen.
 */
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 002A1250 60000000
 #

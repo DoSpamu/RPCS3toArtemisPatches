@@ -1,3 +1,9 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 002D6938 60000000
+0 11E81A90 453B8000
+#
 HP Max (Will be red)
 0
 CodeFreak/PS3UserCheat
@@ -23,10 +29,4 @@ Flash Grenade 999
 0
 CodeFreak/PS3UserCheat
 0 1090EFD8 000007FF
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 002D6938 60000000
-0 11E81A90 453B8000
 #

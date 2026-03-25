@@ -1,3 +1,9 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 0032BCA6 3A83
+0 0032BCB2 126F
+#
 Alternative Names
 0
 PARAM.SFO
@@ -483,10 +489,4 @@ subtract 1.
 03 = Firing Rate
 08 = Firing Range
 */
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 0032BCA6 3A83
-0 0032BCB2 126F
 #

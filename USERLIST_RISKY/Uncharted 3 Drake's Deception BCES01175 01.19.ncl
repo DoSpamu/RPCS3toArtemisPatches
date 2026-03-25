@@ -1,3 +1,9 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 0096E97C 93630014
+0 0096E980 93630018
+#
 Alternative Names
 0
 PARAM.SFO
@@ -28,10 +34,4 @@ L3 + Select = Quick Menu
 L3 + Triangle = Debug Text
 L2 + R2 = Debug Fly
 */
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 0096E97C 93630014
-0 0096E980 93630018
 #

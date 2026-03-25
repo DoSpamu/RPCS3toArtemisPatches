@@ -1,3 +1,8 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 00036AB8 38A00000
+#
 Infinite Health ( enable at main menu to avoid freeze )
 0
 Medo ported by Randy97Killa
@@ -78,9 +83,4 @@ Medo ported by Randy97Killa
 0 002F78C8 3CA03B9A
 0 002F78CC A60A5C9F
 0 002F78D0 F7FA3EB7
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 00036AB8 38A00000
 #

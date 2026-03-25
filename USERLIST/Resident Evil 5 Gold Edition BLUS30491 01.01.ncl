@@ -1,3 +1,9 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 00C27CAC 60000000
+0 00C27CB8 60000000
+#
 Also known as
 Biohazard 5 Alternative Edition
 
@@ -167,10 +173,4 @@ AoB Mercenaries Combo Chain Timer Never Decreases
 bungholio
 B 00010000 04000000
 B 816982D4D00B0404 816982D460000000
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 00C27CAC 60000000
-0 00C27CB8 60000000
 #

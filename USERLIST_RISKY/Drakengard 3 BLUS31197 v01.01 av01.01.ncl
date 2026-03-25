@@ -1,3 +1,8 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 008EDC5C 3E000000
+#
 Alternative Names
 0
 PARAM.SFO
@@ -214,9 +219,4 @@ Weapon Materials Never Decrease
 0
 jgduff1
 0 000ED0E0 30830000
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 008EDC5C 3E000000
 #

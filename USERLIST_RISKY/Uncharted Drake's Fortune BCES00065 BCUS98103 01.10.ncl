@@ -1,3 +1,8 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 000E515C 901D
+#
 Also known as
 Uncharted El Dorado No Hihou
 
@@ -11,9 +16,4 @@ Infinite Ammo
 0
 Hiei-YYH
 0 005D14D8 39290000
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 000E515C 901D
 #
