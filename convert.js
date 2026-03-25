@@ -20,9 +20,9 @@ function f32hex(f) {
   b.writeFloatBE(parseFloat(f), 0);
   return b.toString('hex').toUpperCase();
 }
-const fmtAddr = s => s.trim().replace(/^0x/i,'').toUpperCase().padStart(8,'0');
-const fmtH32  = s => s.trim().replace(/^0x/i,'').toUpperCase().padStart(8,'0');
-const fmtH16  = s => s.trim().replace(/^0x/i,'').toUpperCase().padStart(4,'0');
+const fmtAddr = s => s.trim().replace(/^0x/i,'').toUpperCase().padStart(8,'0').slice(-8);
+const fmtH32  = s => s.trim().replace(/^0x/i,'').toUpperCase().padStart(8,'0').slice(-8);
+const fmtH16  = s => s.trim().replace(/^0x/i,'').toUpperCase().padStart(4,'0').slice(-4);
 
 function parseLine(raw) {
   const loadM = raw.match(/^-\s*\[\s*load\s*,\s*\*(\w+)\s*\]/);

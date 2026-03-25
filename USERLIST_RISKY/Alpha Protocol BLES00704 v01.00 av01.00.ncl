@@ -1,7 +1,7 @@
 Unlock FPS (RPCS3)
 0
 RPCS3
-0 000D78D48 60000000
+0 00D78D48 60000000
 #
 Infinite Health Shield
 0
