@@ -4,17 +4,21 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repo does
 
-Converts RPCS3 emulator game patches (`patch.yml`) into Artemis PS3 cheat format (`.ncl` files) so they can be used on real PS3 hardware with Custom Firmware. All converted entries are marked with `(RPCS3)` in their cheat name.
+Converts RPCS3 emulator game patches (`patch.yml`) into Artemis PS3 cheat format (`.ncl` files) so they can be used on real PS3 hardware with Custom Firmware. All converted entries are marked with `(RPCS3)` in their cheat name and are **prepended** to each file so they appear first in Artemis.
 
 ## Running the converter
 
 ```bash
+# Safe mode — version-matched patches only → USERLIST/
 node convert.js
+
+# Risky mode — includes version-mismatched patches → USERLIST_RISKY/
+node convert.js --risky
 ```
 
-This reads `patch.yml`, finds all FPS-related patches, matches them to `.ncl` files in `USERLIST/` by Title ID, and appends converted entries. It writes a full audit log to `conversion_report.json`.
+Both modes are idempotent: re-running skips entries already marked `(RPCS3)` in the target file. Results are logged to `conversion_report.json` (safe) or `conversion_report_risky.json` (risky).
 
-The script is idempotent: re-running it skips entries already marked `(RPCS3)` in the target file.
+In risky mode, version-mismatched patches get the target version appended to their label: `Unlock FPS v01.04 (RPCS3)` so users know which game version the patch was written for.
 
 ## File formats
 
@@ -39,7 +43,7 @@ PPU-<hash>:                     # root level, keyed by PPU executable hash
 Patch types in use: `be32` (32-bit), `be16` (16-bit), `bef32` (32-bit float), `byte` (8-bit), `load` (alias reference). The `load` type references an anchor by name and inlines its lines.
 
 ### .ncl (Artemis format)
-Plain text, one cheat entry per block:
+Plain text, one cheat entry per block, no blank lines between entries:
 ```
 Cheat Name
 0
@@ -69,7 +73,9 @@ Code prefixes seen in USERLIST: `0` (direct write), `6` (pointer follow), `B` (a
    - `gameAnchors`: name → `{gameName → {titleId → [versions]}}` (game title anchors)
 2. Pass 2 walks PPU entries, calls `flush()` at each patch boundary, resolves `Games: *anchor` references against `gameAnchors`.
 
-**Version matching:** `.ncl` filenames often contain a version like `01.00`. The converter extracts this and only adds a patch if the patch's declared version matches (or is `All`). Files with no version in the name accept any patch version.
+**Prepend, not append:** New RPCS3 entries are collected in `newEntries[]` during the inner loop and then prepended to the file content in one operation (`newEntries.join('\n') + '\n' + content`). This ensures RPCS3 patches appear first in the Artemis cheat list.
+
+**Version matching:** `.ncl` filenames often contain a version like `01.00`. The converter extracts this and only adds a patch if the patch's declared version matches (or is `All`). Files with no version in the name accept any patch version. The `--risky` flag bypasses this check entirely.
 
 **Duplicate prevention:** Before writing, the converter checks for lines ending in `(RPCS3)` in the existing file content. If a patch name already exists (case-insensitive), it's skipped.
 
@@ -77,7 +83,7 @@ Code prefixes seen in USERLIST: `0` (direct write), `6` (pointer follow), `B` (a
 
 ## USERLIST file naming convention
 
-Files in `USERLIST/` follow loose naming patterns:
+Files in `USERLIST/` (and `USERLIST_RISKY/`) follow loose naming patterns:
 - `Game Title TITLEID VV.VV.ncl` — single region + version
 - `Game Title TITLEID1 TITLEID2 VV.VV.ncl` — multiple regions in one file
 - `Game Title TITLEID v01.00 av01.01.ncl` — "v" = disc version, "av" = app version
