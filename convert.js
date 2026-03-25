@@ -182,10 +182,10 @@ function parsePatchYml(text) {
 }
 
 // ---------- NCL helpers ----------
-function findNcl(tid) {
-  return fs.readdirSync(USERLIST_DIR)
+function findNcl(tid, dir) {
+  return fs.readdirSync(dir)
     .filter(f => f.includes(tid) && f.endsWith('.ncl'))
-    .map(f => path.join(USERLIST_DIR, f));
+    .map(f => path.join(dir, f));
 }
 
 function nclVer(filename) {
@@ -204,6 +204,17 @@ function verMatches(fileVer, patchVers) {
 
 // ---------- Main ----------
 function main() {
+  const risky = process.argv.includes('--risky');
+  const targetDir = risky
+    ? path.join(__dirname, 'USERLIST_RISKY')
+    : USERLIST_DIR;
+  const reportFile = risky ? 'conversion_report_risky.json' : 'conversion_report.json';
+
+  if (risky) {
+    console.log('MODE: RISKY — version checking disabled, target: USERLIST_RISKY/');
+    console.log('WARNING: Patches may use wrong memory addresses if game version differs!\n');
+  }
+
   console.log('Parsing patch.yml...');
   const {anchors, fpsByTid} = parsePatchYml(fs.readFileSync(PATCH_FILE,'utf8'));
 
@@ -215,7 +226,7 @@ function main() {
 
   for (const tid of tids.sort()) {
     const patches = fpsByTid[tid];
-    const files = findNcl(tid);
+    const files = findNcl(tid, targetDir);
     if (!files.length) {
       for (const p of patches)
         rep.notFound.push({tid, name:p.name, reason:'no .ncl file'});
@@ -233,7 +244,7 @@ function main() {
       );
 
       for (const p of patches) {
-        if (!verMatches(fVer, p.versions)) {
+        if (!risky && !verMatches(fVer, p.versions)) {
           rep.skipped.push({tid, file:path.basename(nclFile), name:p.name,
             reason:`version mismatch (file=${fVer||'any'}, patch=${p.versions.join(',')})`});
           continue;
@@ -250,26 +261,31 @@ function main() {
           continue;
         }
 
-        const entry = [`${p.name} (RPCS3)`, '0', 'RPCS3', ...artemis, '#'].join('\n');
+        // In risky mode, append version info to patch name so user knows which version it was for
+        const patchLabel = risky && !verMatches(fVer, p.versions)
+          ? `${p.name} v${p.versions.join('/')} (RPCS3)`
+          : `${p.name} (RPCS3)`;
+
+        const entry = [patchLabel, '0', 'RPCS3', ...artemis, '#'].join('\n');
         if (!content.endsWith('\n')) content += '\n';
         content += entry + '\n';
         changed = true;
         done.add(p.name.toLowerCase());
         totalAdded++;
-        rep.modified.push({tid, file:path.basename(nclFile), name:p.name,
-          lines:artemis.length, skippedLines:skips});
+        rep.modified.push({tid, file:path.basename(nclFile), name:patchLabel,
+          lines:artemis.length, skippedLines:skips, patchVersion:p.versions});
       }
 
       if (changed) fs.writeFileSync(nclFile, content, 'utf8');
     }
   }
 
-  fs.writeFileSync('conversion_report.json', JSON.stringify(rep, null, 2), 'utf8');
+  fs.writeFileSync(reportFile, JSON.stringify(rep, null, 2), 'utf8');
   console.log(`\nDone. Added ${totalAdded} patch entries.`);
   console.log(`  Modified entries : ${rep.modified.length}`);
   console.log(`  Skipped          : ${rep.skipped.length}`);
   console.log(`  No .ncl found    : ${rep.notFound.length}`);
-  console.log(`  Report           : conversion_report.json`);
+  console.log(`  Report           : ${reportFile}`);
 }
 
 main();

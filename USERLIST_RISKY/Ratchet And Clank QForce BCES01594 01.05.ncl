@@ -1,0 +1,11 @@
+infinite ammo
+0
+Smich
+0 004D28C8 60000000
+#
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 0032BCA6 3A83
+0 0032BCB2 126F
+#

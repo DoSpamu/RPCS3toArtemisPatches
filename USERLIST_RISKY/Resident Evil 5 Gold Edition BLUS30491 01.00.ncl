@@ -1,0 +1,20 @@
+Alternative Names
+0
+PARAM.SFO
+/*
+Biohazard 5 Alternative Edition
+*/
+#
+Invincible
+0
+puzzle
+0 009C6FB0 801700D0
+0 009C6FB4 2F80000F
+0 009C6FB8 419D006C
+#
+Unlock FPS v01.01 (RPCS3)
+0
+RPCS3
+0 00C27CAC 60000000
+0 00C27CB8 60000000
+#

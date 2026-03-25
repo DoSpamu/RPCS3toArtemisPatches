@@ -1,0 +1,11 @@
+Infinite Health
+0
+dron_3 ported by jgduff
+0 00731E88 38000080
+0 00731E8C 900302A4
+#
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 000D1690 60000000
+#
