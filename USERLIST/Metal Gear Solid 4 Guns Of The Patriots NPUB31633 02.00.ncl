@@ -73,3 +73,8 @@ games24.blog.fc2.com/blog-entry-158.html
 0 0003C5C8 B0070000
 0 0003C5CC 48000008
 #
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 000D9FE0 4E800020
+#

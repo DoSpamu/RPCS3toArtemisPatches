@@ -55,3 +55,8 @@ Azagthoth
 Azagthoth
 0 00185990 D1030004
 #
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 00855048 3A83126F
+#

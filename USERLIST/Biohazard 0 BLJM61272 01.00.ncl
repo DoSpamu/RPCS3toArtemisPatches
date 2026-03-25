@@ -129,3 +129,8 @@ Select + R2 = Set ammo to 10
 Select + L2 = Erase
 */
 #
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 003C34F0 60000000
+#

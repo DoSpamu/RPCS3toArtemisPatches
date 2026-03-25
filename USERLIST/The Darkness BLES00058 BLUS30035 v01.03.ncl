@@ -85,3 +85,8 @@ Max Hearts On Gain
 bungholio
 0 00CFDDD4 38807FFF
 #
+60 FPS (RPCS3)
+0
+RPCS3
+0 000AF0D0 48000014
+#

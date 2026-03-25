@@ -215,3 +215,8 @@ Weapon Materials Never Decrease
 jgduff1
 0 000ED0E0 30830000
 #
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 008EDC5C 3E000000
+#

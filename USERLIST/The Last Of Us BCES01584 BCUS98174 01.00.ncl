@@ -172,3 +172,8 @@ Does not work on human
 enemies.
 */
 #
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 00036AB8 38A00000
+#

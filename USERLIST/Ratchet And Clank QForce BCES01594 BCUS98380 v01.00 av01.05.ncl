@@ -458,3 +458,9 @@ subtract 1.
 08 = Firing Range
 */
 #
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 0032BCA6 3A83
+0 0032BCB2 126F
+#

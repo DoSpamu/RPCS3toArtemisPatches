@@ -61,3 +61,8 @@ Use only when purchasing
 and then disable it.
 */
 #
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 002FAAB8 60000000
+#

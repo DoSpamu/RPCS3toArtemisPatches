@@ -808,3 +808,8 @@ I do not know what you
 might need.
 */
 #
+60 FPS (RPCS3)
+0
+RPCS3
+0 00076850 38600000
+#

@@ -103,3 +103,8 @@ put it and adjust the
 branch as necessary.
 */
 #
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 0025F98C 386003E8
+#

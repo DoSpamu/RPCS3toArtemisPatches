@@ -44,3 +44,9 @@ when your Endurance
 reaches the limit.
 */
 #
+60 FPS (RPCS3)
+0
+RPCS3
+0 002125A4 3CA03F00
+0 002192F8 3CA03F00
+#

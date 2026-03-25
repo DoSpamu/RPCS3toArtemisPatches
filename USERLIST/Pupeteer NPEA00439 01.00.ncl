@@ -8,3 +8,9 @@ Activate before
 starting a scene or
 loading.
 #
+60 FPS (RPCS3)
+0
+RPCS3
+0 000431DC 38800001
+0 00084690 3F800000
+#

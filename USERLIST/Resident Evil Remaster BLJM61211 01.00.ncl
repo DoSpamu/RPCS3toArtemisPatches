@@ -71,7 +71,7 @@ $00045B4C
 OGP=	30A50001
 COP=	38A00000
 	
-Time 00’00’00	
+Time 00ï¿½00ï¿½00	
 $00F3ADC	
 OGP=	7C23252E
 COP=	7E03212E
@@ -123,7 +123,7 @@ Hiei-YYH
  Visit Homepage 
  Add as Contact 
 ??????????? 
-™™ 
+ï¿½ï¿½ 
 Join Date 
 Dec 2005 
 Location 
@@ -134,4 +134,10 @@ sorry i'm a bit late :P i was too busy, here a new code... now to get my KH port
 
 BLJM61211 v1.0
 */
+#
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 007D23B4 60000000
+0 007D23C8 60000000
 #

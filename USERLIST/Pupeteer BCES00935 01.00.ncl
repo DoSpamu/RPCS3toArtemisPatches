@@ -14,3 +14,9 @@ starting a scene or
 loading.
 */
 #
+60 FPS (RPCS3)
+0
+RPCS3
+0 00042A2C 38800001
+0 00083DF8 3F800000
+#

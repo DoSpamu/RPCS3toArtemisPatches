@@ -12,3 +12,8 @@ Infinite Ammo
 Hiei-YYH
 0 005D14D8 39290000
 #
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 000E515C 901D
+#

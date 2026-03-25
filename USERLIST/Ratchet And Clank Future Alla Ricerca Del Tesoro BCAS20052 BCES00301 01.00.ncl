@@ -3,7 +3,7 @@ Alternative Names
 PARAM.SFO
 /*
 Ratchet & Clank Future Gaiden Kaizoku Dark Water No Hihou
-Ratchet & Clank Caça Ao Tesouro
+Ratchet & Clank Caï¿½a Ao Tesouro
 Ratchet & Clank En Busca Del Tesoro
 Ratchet & Clank Future Quest For Booty
 */
@@ -39,4 +39,9 @@ CodeFreak/PS3UserCheat
 0 009CE8C8 42C80000
 0 009CE8DC 42C80000
 0 009CE8F0 42C80000
+#
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 00855048 3A83126F
 #

@@ -25,3 +25,8 @@ Infinite Ammo
 vosman
 0 0087E190 33430000
 #
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 002A1020 60000000
+#

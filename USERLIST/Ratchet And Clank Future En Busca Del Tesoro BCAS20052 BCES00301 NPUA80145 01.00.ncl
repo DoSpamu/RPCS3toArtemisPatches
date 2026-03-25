@@ -3,7 +3,7 @@ Alternative Names
 PARAM.SFO
 /*
 Ratchet & Clank Alla Ricerca Del Tesoro
-Ratchet & Clank Caça Ao Tesouro
+Ratchet & Clank Caï¿½a Ao Tesouro
 Ratchet & Clank Future Gaiden Kaizoku Dark Water No Hihou
 Ratchet & Clank Future Quest For Booty
 */
@@ -54,4 +54,9 @@ Azagthoth
 0
 Azagthoth
 0 00185990 D1030004
+#
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 00855048 3A83126F
 #

@@ -495,3 +495,9 @@ Carbine if you want to
 use it.
 */
 #
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 001E5DB0 60000000
+0 00678ED0 3B88887A
+#

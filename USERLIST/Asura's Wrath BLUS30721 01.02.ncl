@@ -98,3 +98,10 @@ to activate the debug
 menu.
 */
 #
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 008BBD04 60000000
+0 008BBD64 60000000
+0 008BBD68 60000000
+#

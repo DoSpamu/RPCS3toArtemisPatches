@@ -9,3 +9,8 @@ No Wanted Level
 dron_3
 0 00F47A4C 7D6B5A78
 #
+60 FPS (RPCS3)
+0
+RPCS3
+0 0043678C 4800
+#

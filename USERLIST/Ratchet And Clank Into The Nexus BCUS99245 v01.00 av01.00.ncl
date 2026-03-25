@@ -174,3 +174,9 @@ unplayable. Toggle on + off
 as needed.
 */
 #
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 0032FF02 3A83
+0 0032FF0E 126F
+#

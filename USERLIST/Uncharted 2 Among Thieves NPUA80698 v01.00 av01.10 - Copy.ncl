@@ -51,3 +51,13 @@ L3 + Triangle = Debug Text
 L2 + R2 = Debug Fly
 */
 #
+60 FPS (RPCS3)
+0
+RPCS3
+0 000C2BB8 9163
+#
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 000C2BB8 9183
+#

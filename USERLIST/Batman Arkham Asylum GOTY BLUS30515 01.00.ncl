@@ -15,3 +15,8 @@ Debug Menu (R1 + Start)
 dron_3
 0 0121DBAC 38600000
 #
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 000D0A10 60000000
+#
