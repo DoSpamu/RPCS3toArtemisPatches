@@ -1,3 +1,8 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 008EDC5C 3E000000
+#
 Enable Codes (Must Be On)
 0
 Jordy_Indo_Mods
@@ -39,9 +44,4 @@ Jordy_Indo_Mods
 0 0163386C 4E800020
 0 0095DC10 48CD5C41
 [Z]3F80=Normal;4000=2x;4040=3x;4080=4x;40A0=5x;[/Z]
-#
-Unlock FPS (RPCS3)
-0
-RPCS3
-0 008EDC5C 3E000000
 #
