@@ -81,6 +81,14 @@ Code prefixes seen in USERLIST: `0` (direct write), `6` (pointer follow), `B` (a
 
 **FPS patch detection (`isFpsPatch`):** Exact match against a known set (`60 fps`, `unlock fps`, etc.) plus prefix match for variants like `Unlock FPS (No User Input)`.
 
+## Known .ncl file quirks
+
+**Mixed line endings:** Some original USERLIST files use CRLF (`\r\n`) while content appended by convert.js uses LF (`\n`). When parsing `.ncl` files line-by-line, always normalize with `.replace(/\r\n/g, '\n').replace(/\r/g, '\n')` before splitting. Detecting block boundaries with `line === '#'` will silently fail on CRLF lines — use `line.trimEnd() === '#'` or normalize first.
+
+**Missing `#` terminator:** A small number of original USERLIST files have an unterminated final cheat block (the last `B`-type or `0`-type entry has no closing `#`). If content is appended to such a file without checking, the new entry gets fused into the previous block. Always verify that the line immediately before an `(RPCS3)` entry is `#`.
+
+**Address width in patch.yml:** At least one entry (`Alpha Protocol BLES00704`) has a 9-digit hex address (`0x000d78d48`) — a typo in the source. `fmtAddr` guards against this with `.slice(-8)` to cap to 32-bit width.
+
 ## USERLIST file naming convention
 
 Files in `USERLIST/` (and `USERLIST_RISKY/`) follow loose naming patterns:
