@@ -1,0 +1,6787 @@
+{
+  "modified": [
+    {
+      "tid": "BLES00153",
+      "file": "The Orange Box Half-Life 2 BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "lines": 1,
+      "skippedLines": []
+    },
+    {
+      "tid": "BLES00153",
+      "file": "The Orange Box Half-Life 2 Episodes 1 & 2 BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "lines": 1,
+      "skippedLines": []
+    },
+    {
+      "tid": "BLES00153",
+      "file": "The Orange Box Portal BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "lines": 1,
+      "skippedLines": []
+    }
+  ],
+  "skipped": [
+    {
+      "tid": "BCAS20002",
+      "file": "Genji Kamui Souran BCAS20002 01.01.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.01, patch=01.00)"
+    },
+    {
+      "tid": "BCAS20024",
+      "file": "Uncharted Drake's Fortune BCAS20024 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCAS20052",
+      "file": "Ratchet And Clank Future Alla Ricerca Del Tesoro BCAS20052 BCES00301 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCAS20052",
+      "file": "Ratchet And Clank Future Alla Ricerca Del Tesoro BCAS20052 BCES00301 NPUA80145 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCAS20052",
+      "file": "Ratchet And Clank Future CaĂ§a Ao Tesouro BCAS20052 BCES00301 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCAS20052",
+      "file": "Ratchet And Clank Future CaĂ§a Ao Tesouro BCAS20052 BCES00301 NPUA80145 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCAS20052",
+      "file": "Ratchet And Clank Future En Busca Del Tesoro BCAS20052 BCES00301 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCAS20052",
+      "file": "Ratchet And Clank Future En Busca Del Tesoro BCAS20052 BCES00301 NPUA80145 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCAS20052",
+      "file": "Ratchet And Clank Future Quest For Booty BCAS20052 BCES00301 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCAS20052",
+      "file": "Ratchet And Clank Future Quest For Booty BCAS20052 BCES00301 NPUA80145 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCAS20071",
+      "file": "Demon's Souls BCAS20071 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.04)"
+    },
+    {
+      "tid": "BCAS20097",
+      "file": "Uncharted 2 Among Thieves BCAS20097 BCES00509 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCAS20097",
+      "file": "Uncharted 2 Among Thieves BCAS20097 BCES00509 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCAS20097",
+      "file": "Uncharted 2 Among Thieves BCAS20097 BCES00509 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.09)"
+    },
+    {
+      "tid": "BCAS20097",
+      "file": "Uncharted 2 Among Thieves BCAS20097 BCES00509 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.09)"
+    },
+    {
+      "tid": "BCAS20097",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCAS20097 BCES00509 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCAS20097",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCAS20097 BCES00509 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCAS20097",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCAS20097 BCES00509 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.09)"
+    },
+    {
+      "tid": "BCAS20097",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCAS20097 BCES00509 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.09)"
+    },
+    {
+      "tid": "BCAS20097",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCAS20097 BCES00509 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCAS20097",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCAS20097 BCES00509 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCAS20097",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCAS20097 BCES00509 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.09)"
+    },
+    {
+      "tid": "BCAS20097",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCAS20097 BCES00509 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.09)"
+    },
+    {
+      "tid": "BCAS20200",
+      "file": "Ratchet And Clank 4 Za Jednego BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCAS20200",
+      "file": "Ratchet And Clank All 4 One BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCAS20200",
+      "file": "Ratchet And Clank All 4 One BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCAS20200",
+      "file": "Ratchet And Clank Todos Para Uno BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCAS20200",
+      "file": "Ratchet And Clank Todos Por Um BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCAS20200",
+      "file": "Ratchet And Clank Tutti Per Uno BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCAS20270",
+      "file": "The Last of Us BCUS98174 BCES01584 BCES01585 BCAS20270 v01.11.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCAS20270",
+      "file": "The Last of Us BCUS98174 BCES01584 BCES01585 BCAS20270 v01.11.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCAS25014",
+      "file": "Uncharted 3 Drake's Deception BCAS25014 01.15.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.15, patch=01.19)"
+    },
+    {
+      "tid": "BCAS25016",
+      "file": "God Of War Ascension BCAS25016 BCES01741 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.04)"
+    },
+    {
+      "tid": "BCES00001",
+      "file": "Resistance Fall Of Man BCES00001 BCUS98107 v01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00001",
+      "file": "Resistance Fall Of Man BCES00001 BCUS98107 v01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00002",
+      "file": "Genji Days Of The Blade BCES00002 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00002",
+      "file": "Genji Days Of The Blade BCES00002 v01.00 av01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00050",
+      "file": "Folklore BCAS20013 BCES00050 BCUS98147 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00050",
+      "file": "Folklore BCAS20013 BCES00050 BCUS98147 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.10)"
+    },
+    {
+      "tid": "BCES00050",
+      "file": "Folklore BCES00050 01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.10, patch=01.00)"
+    },
+    {
+      "tid": "BCES00050",
+      "file": "Folklore BCES00050 01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00052",
+      "file": "Ratchet And Clank Future Armados Hasta Los Dientes BCES00052 v01.00 av01.00 BCUS98127 v02.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00052",
+      "file": "Ratchet And Clank Future Armi Di Distruzione BCES00052 v01.00 av01.00 BCUS98127 v02.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00052",
+      "file": "Ratchet And Clank Future OpĂ©ration Destruction BCES00052 v01.00 av01.00 BCUS98127 v02.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00052",
+      "file": "Ratchet And Clank Future Tools Of Destruction BCES00052 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00052",
+      "file": "Ratchet And Clank Future Tools Of Destruction BCES00052 v01.00 av01.00 BCUS98127 v02.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00065",
+      "file": "Uncharted Drake's Fortune BCES00065 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "BCES00065",
+      "file": "Uncharted Drake's Fortune BCES00065 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00065",
+      "file": "Uncharted Drake's Fortune BCES00065 BCUS98103 01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.10, patch=01.01)"
+    },
+    {
+      "tid": "BCES00065",
+      "file": "Uncharted Drake's Fortune BCES00065 v01.00 av01.01 BCUS98103 v01.01 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00301",
+      "file": "Ratchet & Clank Quest For Booty BCES00301 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00301",
+      "file": "Ratchet And Clank Future Alla Ricerca Del Tesoro BCAS20052 BCES00301 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00301",
+      "file": "Ratchet And Clank Future Alla Ricerca Del Tesoro BCAS20052 BCES00301 NPUA80145 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00301",
+      "file": "Ratchet And Clank Future CaĂ§a Ao Tesouro BCAS20052 BCES00301 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00301",
+      "file": "Ratchet And Clank Future CaĂ§a Ao Tesouro BCAS20052 BCES00301 NPUA80145 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00301",
+      "file": "Ratchet And Clank Future En Busca Del Tesoro BCAS20052 BCES00301 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00301",
+      "file": "Ratchet And Clank Future En Busca Del Tesoro BCAS20052 BCES00301 NPUA80145 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00301",
+      "file": "Ratchet And Clank Future Quest For Booty BCAS20052 BCES00301 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00301",
+      "file": "Ratchet And Clank Future Quest For Booty BCAS20052 BCES00301 NPUA80145 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00484",
+      "file": "MotorStorm Apocalypse BCES00484 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00484",
+      "file": "MotorStorm Apocalypse BCES00484 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.06)"
+    },
+    {
+      "tid": "BCES00484",
+      "file": "MotorStorm Apocalypse BCES00484 BCUS98242 01.02 BCES01104 01.04.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.04, patch=01.00)"
+    },
+    {
+      "tid": "BCES00484",
+      "file": "MotorStorm Apocalypse BCES00484 BCUS98242 01.02 BCES01104 01.04.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.04, patch=01.06)"
+    },
+    {
+      "tid": "BCES00484",
+      "file": "MotorStorm Apocalypse BCES00484 BCUS98242 v01.02 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00484",
+      "file": "MotorStorm Apocalypse BCES00484 BCUS98242 v01.02 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Among Thieves BCAS20097 BCES00509 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Among Thieves BCAS20097 BCES00509 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Among Thieves BCAS20097 BCES00509 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.09)"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Among Thieves BCAS20097 BCES00509 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.09)"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Among Thieves BCES00509 01.09.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.09, patch=01.00)"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Among Thieves BCES00509 01.09.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.09, patch=01.00)"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Among Thieves BCES00509 01.09.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Among Thieves BCES00509 01.09.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Among Thieves BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Among Thieves BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Among Thieves BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Among Thieves BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCAS20097 BCES00509 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCAS20097 BCES00509 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCAS20097 BCES00509 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.09)"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCAS20097 BCES00509 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.09)"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCES00509 01.09.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.09, patch=01.00)"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCES00509 01.09.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.09, patch=01.00)"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCES00509 01.09.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCES00509 01.09.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCAS20097 BCES00509 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCAS20097 BCES00509 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCAS20097 BCES00509 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.09)"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCAS20097 BCES00509 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.09)"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCES00509 01.09.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.09, patch=01.00)"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCES00509 01.09.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.09, patch=01.00)"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCES00509 01.09.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCES00509 01.09.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00569",
+      "file": "Gran Turismo 5 BCES00569 BCUS98114 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00569",
+      "file": "Gran Turismo 5 BCES00569 BCUS98114 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.12)"
+    },
+    {
+      "tid": "BCES00569",
+      "file": "Gran Turismo 5 BCES00569 BCUS98114 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=02.11)"
+    },
+    {
+      "tid": "BCES00569",
+      "file": "Gran Turismo 5 BCES00569 BCUS98114 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=02.17)"
+    },
+    {
+      "tid": "BCES00569",
+      "file": "Gran Turismo 5 BCES00569 BCUS98114 01.09.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.09, patch=01.00)"
+    },
+    {
+      "tid": "BCES00569",
+      "file": "Gran Turismo 5 BCES00569 BCUS98114 01.09.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.09, patch=01.12)"
+    },
+    {
+      "tid": "BCES00569",
+      "file": "Gran Turismo 5 BCES00569 BCUS98114 01.09.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.09, patch=02.11)"
+    },
+    {
+      "tid": "BCES00569",
+      "file": "Gran Turismo 5 BCES00569 BCUS98114 01.09.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.09, patch=02.17)"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 Among Thieves BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 Among Thieves BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 Among Thieves BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 Among Thieves BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 Among Thieves BCES00757 01.09.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.09, patch=01.00)"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 Among Thieves BCES00757 01.09.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.09, patch=01.00)"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 Among Thieves BCES00757 01.09.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 Among Thieves BCES00757 01.09.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCES00757 01.09.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.09, patch=01.00)"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCES00757 01.09.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.09, patch=01.00)"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCES00757 01.09.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCES00757 01.09.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCES00757 01.09.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.09, patch=01.00)"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCES00757 01.09.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.09, patch=01.00)"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCES00757 01.09.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCES00757 01.09.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00935",
+      "file": "Pupeteer BCES00935 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00938",
+      "file": "SOCOM 4 U.S. Navy SEALs BCAS20121 BCES00938 BCJS30052 BCUS98135 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01104",
+      "file": "MotorStorm Apocalypse BCES00484 BCUS98242 01.02 BCES01104 01.04.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.04, patch=01.00)"
+    },
+    {
+      "tid": "BCES01104",
+      "file": "MotorStorm Apocalypse BCES00484 BCUS98242 01.02 BCES01104 01.04.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.04, patch=01.06)"
+    },
+    {
+      "tid": "BCES01118",
+      "file": "Resistance 3 BCES01118 BCUS98176 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01118",
+      "file": "Resistance 3 BCES01118 BCUS98176 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.05)"
+    },
+    {
+      "tid": "BCES01118",
+      "file": "Resistance 3 BCES01118 BCUS98176 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01118",
+      "file": "Resistance 3 BCES01118 BCUS98176 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01141",
+      "file": "Ratchet And Clank 4 Za Jednego BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01141",
+      "file": "Ratchet And Clank 4 Za Jednego BCES01141 BCUS98175 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01141",
+      "file": "Ratchet And Clank All 4 One BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01141",
+      "file": "Ratchet And Clank All 4 One BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01141",
+      "file": "Ratchet And Clank All 4 One BCES01141 BCUS98175 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01141",
+      "file": "Ratchet And Clank Todos Para Uno BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01141",
+      "file": "Ratchet And Clank Todos Para Uno BCES01141 BCUS98175 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01141",
+      "file": "Ratchet And Clank Todos Por Um BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01141",
+      "file": "Ratchet And Clank Todos Por Um BCES01141 BCUS98175 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01141",
+      "file": "Ratchet And Clank Tutti Per Uno BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01141",
+      "file": "Ratchet And Clank Tutti Per Uno BCES01141 BCUS98175 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01175",
+      "file": "Uncharted 3 Drake's Deception BCES01175 01.17.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.17, patch=01.00)"
+    },
+    {
+      "tid": "BCES01175",
+      "file": "Uncharted 3 Drake's Deception BCES01175 01.17.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.17, patch=01.19)"
+    },
+    {
+      "tid": "BCES01175",
+      "file": "Uncharted 3 Drake's Deception BCES01175 01.18.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.18, patch=01.00)"
+    },
+    {
+      "tid": "BCES01175",
+      "file": "Uncharted 3 Drake's Deception BCES01175 01.18.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.18, patch=01.19)"
+    },
+    {
+      "tid": "BCES01175",
+      "file": "Uncharted 3 Drake's Deception BCES01175 01.19.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.19, patch=01.00)"
+    },
+    {
+      "tid": "BCES01175",
+      "file": "Uncharted 3 Drake's Deception BCES01175 01.19.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01584",
+      "file": "The Last Of Us BCES01584 BCES01585 BCUS98174 v01.00 av01.11.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01584",
+      "file": "The Last Of Us BCES01584 BCES01585 BCUS98174 v01.00 av01.11.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01584",
+      "file": "The Last Of Us BCES01584 BCUS98174 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01584",
+      "file": "The Last Of Us BCES01584 BCUS98174 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.11)"
+    },
+    {
+      "tid": "BCES01584",
+      "file": "The Last Of Us BCES01584 BCUS98174 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01584",
+      "file": "The Last Of Us BCES01584 BCUS98174 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01584",
+      "file": "The Last of Us BCUS98174 BCES01584 BCES01585 BCAS20270 v01.11.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01584",
+      "file": "The Last of Us BCUS98174 BCES01584 BCES01585 BCAS20270 v01.11.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01585",
+      "file": "The Last Of Us BCES01584 BCES01585 BCUS98174 v01.00 av01.11.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01585",
+      "file": "The Last Of Us BCES01584 BCES01585 BCUS98174 v01.00 av01.11.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01585",
+      "file": "The Last of Us BCUS98174 BCES01584 BCES01585 BCAS20270 v01.11.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01585",
+      "file": "The Last of Us BCUS98174 BCES01584 BCES01585 BCAS20270 v01.11.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01594",
+      "file": "Ratchet And Clank Full Frontal Assault BCES01594 BCUS98380 v01.00 av01.04.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01594",
+      "file": "Ratchet And Clank Full Frontal Assault BCES01594 BCUS98380 v01.00 av01.05.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01594",
+      "file": "Ratchet And Clank QForce BCES01594 01.04.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.04, patch=01.05)"
+    },
+    {
+      "tid": "BCES01594",
+      "file": "Ratchet And Clank QForce BCES01594 01.05.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01594",
+      "file": "Ratchet And Clank QForce BCES01594 BCUS98380 v01.00 av01.04.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01594",
+      "file": "Ratchet And Clank QForce BCES01594 BCUS98380 v01.00 av01.05.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01594",
+      "file": "Ratchet And Clank Zaloga Q BCES01594 BCUS98380 v01.00 av01.04.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01594",
+      "file": "Ratchet And Clank Zaloga Q BCES01594 BCUS98380 v01.00 av01.05.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01670",
+      "file": "Uncharted 3 Drake's Deception BCES01670 v01.00 av01.19.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01670",
+      "file": "Uncharted 3 L'illusion De Drake BCES01670 v01.00 av01.19.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01670",
+      "file": "Uncharted 3 L'inganno Di Drake BCES01670 v01.00 av01.19.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01670",
+      "file": "Uncharted 3 La TraiciĂłn De Drake BCES01670 v01.00 av01.19.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01670",
+      "file": "Uncharted 3 Oszustwo Drake'a BCES01670 v01.00 av01.19.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01670",
+      "file": "Uncharted 3 Sabaku Ni Nemuru Atlantis BCES01670 v01.00 av01.19.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01741",
+      "file": "God Of War Ascension BCAS25016 BCES01741 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.04)"
+    },
+    {
+      "tid": "BCES01741",
+      "file": "God Of War Ascension BCES01741 v01.00 av01.12.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01908",
+      "file": "Ratchet And Clank Nexus BCES01908 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01908",
+      "file": "Ratchet And Clank Nexus BCES01908 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "BCES01908",
+      "file": "Ratchet And Clank Nexus BCES01908 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.00)"
+    },
+    {
+      "tid": "BCES01908",
+      "file": "Ratchet And Clank Nexus BCES01908 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCJS30015",
+      "file": "Uncharted El Dorado No Hihou BCJS30015 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCJS30022",
+      "file": "Demon's Souls BCJS30022 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.04)"
+    },
+    {
+      "tid": "BCJS30022",
+      "file": "Demon's Souls BCJS30022 01.04.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCJS30035",
+      "file": "Uncharted Ougontou To Kieta Sendan BCJS30035 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCJS30035",
+      "file": "Uncharted Ougontou To Kieta Sendan BCJS30035 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCJS30035",
+      "file": "Uncharted Ougontou To Kieta Sendan BCJS30035 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.09)"
+    },
+    {
+      "tid": "BCJS30035",
+      "file": "Uncharted Ougontou To Kieta Sendan BCJS30035 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.09)"
+    },
+    {
+      "tid": "BCJS30035",
+      "file": "Uncharted Ougontou To Kieta Sendan BCJS30035 01.09.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.09, patch=01.00)"
+    },
+    {
+      "tid": "BCJS30035",
+      "file": "Uncharted Ougontou To Kieta Sendan BCJS30035 01.09.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.09, patch=01.00)"
+    },
+    {
+      "tid": "BCJS30035",
+      "file": "Uncharted Ougontou To Kieta Sendan BCJS30035 01.09.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCJS30035",
+      "file": "Uncharted Ougontou To Kieta Sendan BCJS30035 01.09.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98103",
+      "file": "Uncharted Drake's Fortune BCES00065 BCUS98103 01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98103",
+      "file": "Uncharted Drake's Fortune BCES00065 v01.00 av01.01 BCUS98103 v01.01 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98106",
+      "file": "Twisted Metal BCES01010 01.01 BCUS98106 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.06)"
+    },
+    {
+      "tid": "BCUS98106",
+      "file": "Twisted Metal BCUS98106 01.00 BCES01010 01.01.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.01, patch=01.06)"
+    },
+    {
+      "tid": "BCUS98107",
+      "file": "Resistance Fall Of Man BCES00001 BCUS98107 v01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98107",
+      "file": "Resistance Fall Of Man BCES00001 BCUS98107 v01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98107",
+      "file": "Resistance Fall Of Man BCUS98107 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98107",
+      "file": "Resistance Fall Of Man BCUS98107 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98114",
+      "file": "Gran Turismo 5 BCES00569 BCUS98114 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.13)"
+    },
+    {
+      "tid": "BCUS98114",
+      "file": "Gran Turismo 5 BCES00569 BCUS98114 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=02.11)"
+    },
+    {
+      "tid": "BCUS98114",
+      "file": "Gran Turismo 5 BCES00569 BCUS98114 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=02.17)"
+    },
+    {
+      "tid": "BCUS98114",
+      "file": "Gran Turismo 5 BCES00569 BCUS98114 01.09.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.09, patch=01.13)"
+    },
+    {
+      "tid": "BCUS98114",
+      "file": "Gran Turismo 5 BCES00569 BCUS98114 01.09.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.09, patch=02.11)"
+    },
+    {
+      "tid": "BCUS98114",
+      "file": "Gran Turismo 5 BCES00569 BCUS98114 01.09.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.09, patch=02.17)"
+    },
+    {
+      "tid": "BCUS98120",
+      "file": "Resistance 2 BCAS20055 BCUS98120 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98120",
+      "file": "Resistance 2 BCAS20055 BCUS98120 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.60)"
+    },
+    {
+      "tid": "BCUS98120",
+      "file": "Resistance 2 BCAS20055 BCUS98120 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98120",
+      "file": "Resistance 2 BCAS20055 BCUS98120 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98124",
+      "file": "Ratchet And Clank Future A Crack In Time BCUS98124 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98124",
+      "file": "Ratchet And Clank Future A Crack In Time BCUS98124 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.20)"
+    },
+    {
+      "tid": "BCUS98124",
+      "file": "Ratchet And Clank Future A Crack In Time BCUS98124 01.02.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.02, patch=01.00)"
+    },
+    {
+      "tid": "BCUS98124",
+      "file": "Ratchet And Clank Future A Crack In Time BCUS98124 01.02.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.02, patch=01.20)"
+    },
+    {
+      "tid": "BCUS98124",
+      "file": "Ratchet And Clank Future A Crack In Time BCUS98124 v01.01 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98124",
+      "file": "Ratchet And Clank Future A Crack In Time BCUS98124 v01.01 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98127",
+      "file": "Ratchet And Clank Future Armados Hasta Los Dientes BCES00052 v01.00 av01.00 BCUS98127 v02.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98127",
+      "file": "Ratchet And Clank Future Armados Hasta Los Dientes BCES00052 v01.00 av01.00 BCUS98127 v02.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98127",
+      "file": "Ratchet And Clank Future Armi Di Distruzione BCES00052 v01.00 av01.00 BCUS98127 v02.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98127",
+      "file": "Ratchet And Clank Future Armi Di Distruzione BCES00052 v01.00 av01.00 BCUS98127 v02.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98127",
+      "file": "Ratchet And Clank Future OpĂ©ration Destruction BCES00052 v01.00 av01.00 BCUS98127 v02.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98127",
+      "file": "Ratchet And Clank Future OpĂ©ration Destruction BCES00052 v01.00 av01.00 BCUS98127 v02.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98127",
+      "file": "Ratchet And Clank Future Tools Of Destruction BCES00052 v01.00 av01.00 BCUS98127 v02.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98127",
+      "file": "Ratchet And Clank Future Tools Of Destruction BCES00052 v01.00 av01.00 BCUS98127 v02.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98127",
+      "file": "Ratchet And Clank Future Tools Of Destruction BCUS98127 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98127",
+      "file": "Ratchet And Clank Future Tools Of Destruction BCUS98127 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98135",
+      "file": "SOCOM 4 U.S. Navy SEALs BCAS20121 BCES00938 BCJS30052 BCUS98135 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98147",
+      "file": "Folklore BCAS20013 BCES00050 BCUS98147 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98147",
+      "file": "Folklore BCAS20013 BCES00050 BCUS98147 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.10)"
+    },
+    {
+      "tid": "BCUS98155",
+      "file": "MotorStorm Pacific Rift BCUS98155 01.02.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.02, patch=01.00)"
+    },
+    {
+      "tid": "BCUS98155",
+      "file": "MotorStorm Pacific Rift BCUS98155 01.02.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.02, patch=01.03)"
+    },
+    {
+      "tid": "BCUS98155",
+      "file": "MotorStorm Pacific Rift BCUS98155 v01.01 av01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98155",
+      "file": "MotorStorm Pacific Rift BCUS98155 v01.01 av01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98174",
+      "file": "The Last Of Us BCES01584 BCES01585 BCUS98174 v01.00 av01.11.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98174",
+      "file": "The Last Of Us BCES01584 BCES01585 BCUS98174 v01.00 av01.11.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98174",
+      "file": "The Last Of Us BCES01584 BCUS98174 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98174",
+      "file": "The Last Of Us BCES01584 BCUS98174 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.11)"
+    },
+    {
+      "tid": "BCUS98174",
+      "file": "The Last Of Us BCES01584 BCUS98174 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98174",
+      "file": "The Last Of Us BCES01584 BCUS98174 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98174",
+      "file": "The Last of Us BCUS98174 BCES01584 BCES01585 BCAS20270 v01.11.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98174",
+      "file": "The Last of Us BCUS98174 BCES01584 BCES01585 BCAS20270 v01.11.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98175",
+      "file": "Ratchet And Clank 4 Za Jednego BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98175",
+      "file": "Ratchet And Clank 4 Za Jednego BCES01141 BCUS98175 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98175",
+      "file": "Ratchet And Clank All 4 One BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98175",
+      "file": "Ratchet And Clank All 4 One BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98175",
+      "file": "Ratchet And Clank All 4 One BCES01141 BCUS98175 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98175",
+      "file": "Ratchet And Clank Todos Para Uno BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98175",
+      "file": "Ratchet And Clank Todos Para Uno BCES01141 BCUS98175 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98175",
+      "file": "Ratchet And Clank Todos Por Um BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98175",
+      "file": "Ratchet And Clank Todos Por Um BCES01141 BCUS98175 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98175",
+      "file": "Ratchet And Clank Tutti Per Uno BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98175",
+      "file": "Ratchet And Clank Tutti Per Uno BCES01141 BCUS98175 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98176",
+      "file": "Resistance 3 BCES01118 BCUS98176 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98176",
+      "file": "Resistance 3 BCES01118 BCUS98176 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.05)"
+    },
+    {
+      "tid": "BCUS98176",
+      "file": "Resistance 3 BCES01118 BCUS98176 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98176",
+      "file": "Resistance 3 BCES01118 BCUS98176 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98232",
+      "file": "God Of War Ascension BCUS98232 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.04)"
+    },
+    {
+      "tid": "BCUS98232",
+      "file": "God Of War Ascension BCUS98232 v01.00 av01.12.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98242",
+      "file": "MotorStorm Apocalypse BCES00484 BCUS98242 01.02 BCES01104 01.04.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.04, patch=01.00)"
+    },
+    {
+      "tid": "BCUS98242",
+      "file": "MotorStorm Apocalypse BCES00484 BCUS98242 01.02 BCES01104 01.04.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.04, patch=01.06)"
+    },
+    {
+      "tid": "BCUS98242",
+      "file": "MotorStorm Apocalypse BCES00484 BCUS98242 v01.02 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98242",
+      "file": "MotorStorm Apocalypse BCES00484 BCUS98242 v01.02 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98380",
+      "file": "Ratchet And Clank Full Frontal Assault BCES01594 BCUS98380 v01.00 av01.04.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98380",
+      "file": "Ratchet And Clank Full Frontal Assault BCES01594 BCUS98380 v01.00 av01.05.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98380",
+      "file": "Ratchet And Clank Full Frontal Assault BCUS98380 01.04 NPJA00089 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.05)"
+    },
+    {
+      "tid": "BCUS98380",
+      "file": "Ratchet And Clank Full Frontal Assault BCUS98380 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98380",
+      "file": "Ratchet And Clank QForce BCES01594 BCUS98380 v01.00 av01.04.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98380",
+      "file": "Ratchet And Clank QForce BCES01594 BCUS98380 v01.00 av01.05.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98380",
+      "file": "Ratchet And Clank Zaloga Q BCES01594 BCUS98380 v01.00 av01.04.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98380",
+      "file": "Ratchet And Clank Zaloga Q BCES01594 BCUS98380 v01.00 av01.05.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS99245",
+      "file": "Ratchet And Clank Into The Nexus BCUS99245 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "BCUS99245",
+      "file": "Ratchet And Clank Into The Nexus BCUS99245 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00044",
+      "file": "Der Pate Die Don-Edition BLES00044 v01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00044",
+      "file": "El Padrino Don Corleone BLES00044 v01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00044",
+      "file": "Il Padrino The Don's Edition BLES00044 v01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00044",
+      "file": "Le Parrain Edition Du Don BLES00044 v01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00044",
+      "file": "The Godfather The Don's Edition BLES00044 01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00044",
+      "file": "The Godfather The Don's Edition BLES00044 v01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00058",
+      "file": "The Darkness BLES00058 BLUS30035 v01.03.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00142",
+      "file": "I Simpson Il Videogioco BLES00142 v01.00 av01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00142",
+      "file": "Les Simpson Le Jeu BLES00142 v01.00 av01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00142",
+      "file": "Los Simpson El Videojuego BLES00142 v01.00 av01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00142",
+      "file": "The Simpsons Game BLES00142 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00142",
+      "file": "The Simpsons Game BLES00142 v01.00 av01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00144",
+      "file": "Stranglehold BLES00144 01.20.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.20, patch=01.01)"
+    },
+    {
+      "tid": "BLES00144",
+      "file": "Stranglehold BLES00144 01.20.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00144",
+      "file": "Stranglehold BLES00144 BLUS30080 BLUS30081 v01.01 av01.20.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00144",
+      "file": "Stranglehold BLES00144 BLUS30080 BLUS30081 v01.01 av01.20.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00144",
+      "file": "Worms Revolution Collection  2 BLES001442 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00144",
+      "file": "Worms Revolution Collection  2 BLES001442 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.20)"
+    },
+    {
+      "tid": "BLES00144",
+      "file": "Worms Revolution Collection 2 BLES001442 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00144",
+      "file": "Worms Revolution Collection 2 BLES001442 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.20)"
+    },
+    {
+      "tid": "BLES00144",
+      "file": "WRC 2 BLES001442 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00144",
+      "file": "WRC 2 BLES001442 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.20)"
+    },
+    {
+      "tid": "BLES00148",
+      "file": "Call Of Duty 4 Modern Warfare BLES00148 BLJS10013 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00148",
+      "file": "Call Of Duty 4 Modern Warfare BLES00148 BLJS10013 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00148",
+      "file": "Call Of Duty 4 Modern Warfare BLES00148 BLJS10013 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.40)"
+    },
+    {
+      "tid": "BLES00153",
+      "file": "The Orange Box Half-Life 2 BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00153",
+      "file": "The Orange Box Half-Life 2 BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00153",
+      "file": "The Orange Box Half-Life 2 BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00153",
+      "file": "The Orange Box Half-Life 2 BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00153",
+      "file": "The Orange Box Half-Life 2 BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00153",
+      "file": "The Orange Box Half-Life 2 BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00153",
+      "file": "The Orange Box Half-Life 2 Episodes 1 & 2 BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00153",
+      "file": "The Orange Box Half-Life 2 Episodes 1 & 2 BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00153",
+      "file": "The Orange Box Half-Life 2 Episodes 1 & 2 BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00153",
+      "file": "The Orange Box Half-Life 2 Episodes 1 & 2 BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00153",
+      "file": "The Orange Box Half-Life 2 Episodes 1 & 2 BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00153",
+      "file": "The Orange Box Half-Life 2 Episodes 1 & 2 BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00153",
+      "file": "The Orange Box Portal BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00153",
+      "file": "The Orange Box Portal BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00153",
+      "file": "The Orange Box Portal BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00153",
+      "file": "The Orange Box Portal BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00153",
+      "file": "The Orange Box Portal BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00153",
+      "file": "The Orange Box Portal BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00157",
+      "file": "Haze BLES00157 BLES00169 v01.01 av01.36 BLUS30094 v01.00 av01.36.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00163",
+      "file": "The Elder Scrolls 4 Oblivion GOTY Edition BLES00163 BLUS30087 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00168",
+      "file": "Army Of Two BLES00168 BLUS30057 v01.00 av01.03.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00229",
+      "file": "Grand Theft Auto IV BLES00229 BLES00258 v01.00 av01.08.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00229",
+      "file": "Grand Theft Auto IV BLES00229 BLUS30127 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.08)"
+    },
+    {
+      "tid": "BLES00246",
+      "file": "Metal Gear Solid 4 Guns Of The Patriots BLES00246 BLJM67001 02.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00246",
+      "file": "Metal Gear Solid 4 Guns Of The Patriots BLES00246 BLUS30109 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=02.00)"
+    },
+    {
+      "tid": "BLES00261",
+      "file": "Battlefield Bad Company Gold Edition BLES00261 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.20)"
+    },
+    {
+      "tid": "BLES00354",
+      "file": "Call Of Duty World At War BLES00354 BLES00357 v01.00 av01.00 BLUS30192 v01.01 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00354",
+      "file": "Call Of Duty World At War BLES00354 BLES00357 v01.00 av01.00 BLUS30192 v01.01 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00354",
+      "file": "Call Of Duty World At War BLES00354 BLUS30192 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.07)"
+    },
+    {
+      "tid": "BLES00354",
+      "file": "Call Of Duty World At War BLES00354 BLUS30192 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.07)"
+    },
+    {
+      "tid": "BLES00357",
+      "file": "Call Of Duty World At War BLES00354 BLES00357 v01.00 av01.00 BLUS30192 v01.01 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00357",
+      "file": "Call Of Duty World At War BLES00354 BLES00357 v01.00 av01.00 BLUS30192 v01.01 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00405",
+      "file": "Legendary BLES00405 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00460",
+      "file": "Silent Hill Homecoming BLES00460 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00485",
+      "file": "Resident Evil 5 BLES00485 BLUS30270 v01.00 av02.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00485",
+      "file": "Resident Evil 5 Gold Edition BLES00485 BLUS30491 02.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00503",
+      "file": "Batman Arkham Asylum BLES00503 v01.01 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00517",
+      "file": "Just Cause 2 BLES00517 BLUS30400 01.02.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00517",
+      "file": "Just Cause 2 BLES00517 BLUS30400 v01.00 av01.02.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00659",
+      "file": "Army Of Two The 40th Day BLES00659 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00659",
+      "file": "Army Of Two The 40th Day BLES00659 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.02)"
+    },
+    {
+      "tid": "BLES00659",
+      "file": "Army Of Two The 40th Day BLES00659 01.02.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.02, patch=01.00)"
+    },
+    {
+      "tid": "BLES00659",
+      "file": "Army Of Two The 40th Day BLES00659 01.02.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00659",
+      "file": "Army Of Two The 40th Day BLES00659 BLUS30408 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00659",
+      "file": "Army Of Two The 40th Day BLES00659 BLUS30408 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00659",
+      "file": "Army Of Two The 40th Day BLES00659 v01.00 av01.02 BLUS30408 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00659",
+      "file": "Army Of Two The 40th Day BLES00659 v01.00 av01.02 BLUS30408 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00704",
+      "file": "Alpha Protocol BLES00704 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00816",
+      "file": "Resident Evil 5 Gold Edition BLES00816 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00816",
+      "file": "Resident Evil 5 Gold Edition BLES00816 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "BLES00816",
+      "file": "Resident Evil 5 Gold Edition BLES00816 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.00)"
+    },
+    {
+      "tid": "BLES00816",
+      "file": "Resident Evil 5 Gold Edition BLES00816 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00816",
+      "file": "Resident Evil 5 Gold Edition BLES00816 BLUS30491 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00816",
+      "file": "Resident Evil 5 Gold Edition BLES00816 BLUS30491 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00826",
+      "file": "Nier BLES00826 BLUS30481 v01.01 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00827",
+      "file": "Batman Arkham Asylum GOTY BLES00827 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00833",
+      "file": "Transformers Kampf Um Cybertron BLES00833 BLUS30357 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00833",
+      "file": "Transformers La Battaglia Per Cybertron BLES00833 BLUS30357 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00833",
+      "file": "Transformers La Guerra Por Cybertron BLES00833 BLUS30357 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00833",
+      "file": "Transformers La Guerra Pour Cybertron BLES00833 BLUS30357 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00833",
+      "file": "Transformers War For Cybertron BLES00833 BLUS30357 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00833",
+      "file": "Transformers War For Cybertron BLES00833 BLUS30357 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00875",
+      "file": "3D Dot Game Heroes BLES00875 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00875",
+      "file": "3D Dot Game Heroes BLES00875 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.00)"
+    },
+    {
+      "tid": "BLES00875",
+      "file": "3D Dot Game Heroes BLES00875 BLJM60180 BLUS30490 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00932",
+      "file": "Demon's Souls BLES00932 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00989",
+      "file": "Enslaved Odyssey To The West BLES00989 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00989",
+      "file": "Enslaved Odyssey To The West BLES00989 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "BLES00989",
+      "file": "Enslaved Odyssey To The West BLES00989 BLUS30558 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00989",
+      "file": "Enslaved Odyssey To The West BLES00989 BLUS30558 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00989",
+      "file": "Enslaved Odyssey To The West BLES00989 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00989",
+      "file": "Enslaved Odyssey To The West BLES00989 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01031",
+      "file": "Call Of Duty Black Ops BLES01031 BLES01032 01.13.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.13, patch=01.00)"
+    },
+    {
+      "tid": "BLES01031",
+      "file": "Call Of Duty Black Ops BLES01031 BLES01032 01.13.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01031",
+      "file": "Call Of Duty Black Ops BLES01031 BLES01032 BLUS30591 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01031",
+      "file": "Call Of Duty Black Ops BLES01031 BLES01032 BLUS30591 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.13)"
+    },
+    {
+      "tid": "BLES01032",
+      "file": "Call Of Duty Black Ops BLES01031 BLES01032 01.13.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01032",
+      "file": "Call Of Duty Black Ops BLES01031 BLES01032 BLUS30591 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.13)"
+    },
+    {
+      "tid": "BLES01120",
+      "file": "Splatterhouse BLES01120 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01133",
+      "file": "Mass Effect 2 BLES01133 v01.01 av01.00 BLUS30650 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01232",
+      "file": "Anarchy Reigns BLES01232.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01251",
+      "file": "Kingdoms Of Amalur Reckoning BLES01251 BLUS30710 01.02.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.02, patch=01.00)"
+    },
+    {
+      "tid": "BLES01251",
+      "file": "Kingdoms Of Amalur Reckoning BLES01251 BLUS30710 01.02.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01251",
+      "file": "Kingdoms Of Amalur Reckoning BLES01251 BLUS30710 v01.00 av01.02.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01251",
+      "file": "Kingdoms Of Amalur Reckoning BLES01251 BLUS30710 v01.00 av01.02.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01275",
+      "file": "Battlefield 3 BLES01275 BLUS30762 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.09)"
+    },
+    {
+      "tid": "BLES01276",
+      "file": "Shadows Of The Damned BLES01276 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01276",
+      "file": "Shadows Of The Damned BLES01276 BLUS30653 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01294",
+      "file": "Red Dead Redemption GOTY Edition BLES01294 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01294",
+      "file": "Red Dead Redemption GOTY Edition BLES01294 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "BLES01356",
+      "file": "Dragon's Dogma BLES01356 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01356",
+      "file": "Dragon's Dogma BLES01356 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.05)"
+    },
+    {
+      "tid": "BLES01356",
+      "file": "Dragon's Dogma BLES01356 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=10.00)"
+    },
+    {
+      "tid": "BLES01356",
+      "file": "Dragon's Dogma BLES01356 01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.03, patch=01.00)"
+    },
+    {
+      "tid": "BLES01356",
+      "file": "Dragon's Dogma BLES01356 01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.03, patch=01.05)"
+    },
+    {
+      "tid": "BLES01356",
+      "file": "Dragon's Dogma BLES01356 01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.03, patch=10.00)"
+    },
+    {
+      "tid": "BLES01396",
+      "file": "Dark Souls BLES01396 01.05.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.05, patch=01.00)"
+    },
+    {
+      "tid": "BLES01402",
+      "file": "Dark Souls BLES01402 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01446",
+      "file": "Silent Hill Downpour BLES01446 v01.00 av01.01 BLUS30565 v01.01 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01462",
+      "file": "Mass Effect 3 BLES01462 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.09)"
+    },
+    {
+      "tid": "BLES01462",
+      "file": "Mass Effect 3 BLES01462 01.05.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.05, patch=01.09)"
+    },
+    {
+      "tid": "BLES01462",
+      "file": "Mass Effect 3 BLES01462 01.07.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.07, patch=01.09)"
+    },
+    {
+      "tid": "BLES01475",
+      "file": "Fallout New Vegas Ultimate Edition BLES01475 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01525",
+      "file": "Lollipop Chainsaw BLES01525 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01525",
+      "file": "Lollipop Chainsaw PE BLES01525 v01.01 av01.01 BLUS30917 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01684",
+      "file": "Borderlands 2 BLES01684 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.15)"
+    },
+    {
+      "tid": "BLES01684",
+      "file": "Borderlands 2 BLES01684 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.15)"
+    },
+    {
+      "tid": "BLES01684",
+      "file": "Borderlands 2 BLES01684 01.02.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.02, patch=01.15)"
+    },
+    {
+      "tid": "BLES01763",
+      "file": "Army Of Two Le Cartel Du Diable BLES01763 BLJM60518 BLUS31069 v01.00 av01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01763",
+      "file": "Army Of Two Le Cartel Du Diable BLES01763 BLUS31069 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "BLES01763",
+      "file": "Army Of Two The Devil's Cartel BLES01763 BLJM60518 BLUS31069 v01.00 av01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01763",
+      "file": "Army Of Two The Devil's Cartel BLES01763 BLUS31069 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "BLES01763",
+      "file": "Army Of Two The Devil's Cartel BLES01763 BLUS31069 01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01773",
+      "file": "Resident Evil Revelations BLES01773 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "BLES01773",
+      "file": "Resident Evil Revelations BLES01773 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01773",
+      "file": "Resident Evil Revelations BLES01773 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01789",
+      "file": "Deadpool BLES01789 BLUS31146 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01794",
+      "file": "Dragon's Dogma Dark Arisen BLES01794 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01794",
+      "file": "Dragon's Dogma Dark Arisen BLES01794 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.02)"
+    },
+    {
+      "tid": "BLES01807",
+      "file": "Grand Theft Auto V BLES01807 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.27)"
+    },
+    {
+      "tid": "BLES01807",
+      "file": "Grand Theft Auto V BLES01807 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01807",
+      "file": "Grand Theft Auto V BLES01807 01.01.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.01, patch=01.27)"
+    },
+    {
+      "tid": "BLES01807",
+      "file": "Grand Theft Auto V BLES01807 01.01.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.01, patch=01.00)"
+    },
+    {
+      "tid": "BLES01807",
+      "file": "Grand Theft Auto V BLES01807 01.02.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.02, patch=01.27)"
+    },
+    {
+      "tid": "BLES01807",
+      "file": "Grand Theft Auto V BLES01807 01.02.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.02, patch=01.00)"
+    },
+    {
+      "tid": "BLES01807",
+      "file": "Grand Theft Auto V BLES01807 01.04.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.04, patch=01.27)"
+    },
+    {
+      "tid": "BLES01807",
+      "file": "Grand Theft Auto V BLES01807 01.04.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.04, patch=01.00)"
+    },
+    {
+      "tid": "BLES01807",
+      "file": "Grand Theft Auto V BLES01807 01.06.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.06, patch=01.27)"
+    },
+    {
+      "tid": "BLES01807",
+      "file": "Grand Theft Auto V BLES01807 01.06.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.06, patch=01.00)"
+    },
+    {
+      "tid": "BLES01815",
+      "file": "Tales Of Xillia BLES01815 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01815",
+      "file": "Tales Of Xillia BLES01815 v01.00 av01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01848",
+      "file": "Time And Eternity BLES01848.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01856",
+      "file": "Killer Is Dead BLES01856 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01856",
+      "file": "Killer Is Dead BLES01856 v01.01 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01886",
+      "file": "The Elder Scrolls 5 Skyrim Legendary Edition BLES01886 BLUS31202 v01.00 av01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01894",
+      "file": "Need For Speed Rivals BLES01894 BLUS31201 v01.00 av01.03.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01897",
+      "file": "Kingdom Hearts 1.5 HD ReMIX BLES01897 BLUS31212 v01.00 av01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01897",
+      "file": "Kingdom Hearts 1.5 HD ReMIX BLES01897 BLUS31212 v01.00 av01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01962",
+      "file": "Tales Of Xillia 2 BLES01962 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01962",
+      "file": "Tales Of Xillia 2 BLES01962 v01.00 av01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01963",
+      "file": "Rambo BLES01963 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "BLES01963",
+      "file": "Rambo BLES01963 BLUS31387 v01.00 av01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES02070",
+      "file": "Kingdom Hearts 2.5 HD ReMIX BLES02070 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES02070",
+      "file": "Kingdom Hearts 2.5 HD ReMIX BLES02070 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES02070",
+      "file": "Kingdom Hearts 2.5 HD ReMIX BLES02070 v01.00 av01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES02070",
+      "file": "Kingdom Hearts 2.5 HD ReMIX BLES02070 v01.00 av01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES02070",
+      "file": "Kingdom Hearts 2.5 HD ReMIX BLES02070.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES02070",
+      "file": "Kingdom Hearts 2.5 HD ReMIX BLES02070.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJM60180",
+      "file": "3D Dot Game Heroes BLES00875 BLJM60180 BLUS30490 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.20)"
+    },
+    {
+      "tid": "BLJM60180",
+      "file": "3D Dot Game Heroes BLJM60180 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.20)"
+    },
+    {
+      "tid": "BLJM60199",
+      "file": "Biohazard 5 Alternative Edition BLJM60199 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "BLJM60199",
+      "file": "Biohazard 5 Alternative Edition BLJM60199 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJM60223",
+      "file": "Nier Replicant BLJM60223 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJM60286",
+      "file": "Call Of Duty Black Ops Subtitle BLJM60286 01.13.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJM60287",
+      "file": "Call Of Duty Black Ops Dubbed Edition BLJM60287 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.13)"
+    },
+    {
+      "tid": "BLJM60391",
+      "file": "Silent Hill Downpour BLJM60391 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJM60391",
+      "file": "Silent Hill Downpour BLJM60391 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.00)"
+    },
+    {
+      "tid": "BLJM60527",
+      "file": "Hatsune Miku Project Diva F BLJM60527 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJM61012",
+      "file": "Dragon's Dogma Dark Arisen BLJM61012 BLUS31155 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.02)"
+    },
+    {
+      "tid": "BLJM61019",
+      "file": "Grand Theft Auto V BLJM61019 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=02.24)"
+    },
+    {
+      "tid": "BLJM61019",
+      "file": "Grand Theft Auto V BLJM61019 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJM61043",
+      "file": "Drag-On Dragoon 3 BLJM61043 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJM61043",
+      "file": "Drag-On Dragoon 3 BLJM61043 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.04)"
+    },
+    {
+      "tid": "BLJM61043",
+      "file": "Drag-On Dragoon 3 BLJM61043 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.00)"
+    },
+    {
+      "tid": "BLJM61043",
+      "file": "Drag-On Dragoon 3 BLJM61043 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.04)"
+    },
+    {
+      "tid": "BLJM61079",
+      "file": "Hatsune Miku Project Diva F 2nd BLJM61079 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJM61079",
+      "file": "Hatsune Miku Project Diva F 2nd BLJM61079 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "BLJM61079",
+      "file": "Hatsune Miku Project Diva F 2nd BLJM61079 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.02)"
+    },
+    {
+      "tid": "BLJM61079",
+      "file": "Hatsune Miku Project Diva F 2nd BLJM61079 01.01.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.01, patch=01.00)"
+    },
+    {
+      "tid": "BLJM61079",
+      "file": "Hatsune Miku Project Diva F 2nd BLJM61079 01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJM61079",
+      "file": "Hatsune Miku Project Diva F 2nd BLJM61079 01.01.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.01, patch=01.02)"
+    },
+    {
+      "tid": "BLJM61211",
+      "file": "Biohazard Remaster BLJM61211 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJM61211",
+      "file": "Biohazard Remaster BLJM61211 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJM61211",
+      "file": "Resident Evil Remaster BLJM61211 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJM61248",
+      "file": "Sengoku Basara 4 Sumeragi BLJM61248 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.02)"
+    },
+    {
+      "tid": "BLJM61248",
+      "file": "Sengoku Basara 4 Sumeragi BLJM61248 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJM61272",
+      "file": "Biohazard 0 BLJM61272 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJM61272",
+      "file": "Biohazard 0 BLJM61272 NPJB00726 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJM67001",
+      "file": "Metal Gear Solid 4 Guns Of The Patriots BLES00246 BLJM67001 02.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJM67001",
+      "file": "Metal Gear Solid 4 Guns Of The Patriots BLJM67001 01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.03, patch=02.00)"
+    },
+    {
+      "tid": "BLJS10013",
+      "file": "Call Of Duty 4 Modern Warfare BLES00148 BLJS10013 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJS10013",
+      "file": "Call Of Duty 4 Modern Warfare BLES00148 BLJS10013 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJS10013",
+      "file": "Call Of Duty 4 Modern Warfare BLES00148 BLJS10013 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.40)"
+    },
+    {
+      "tid": "BLJS10120",
+      "file": "Tales Of Xillia BLJS10120 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJS10125",
+      "file": "Lollipop Chainsaw PE BLJS10125 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJS10188",
+      "file": "Tales Of Xillia 2 BLJS10188 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJS10188",
+      "file": "Tales Of Xillia 2 BLJS10188 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "BLJS10188",
+      "file": "Tales Of Xillia 2 BLJS10188 01.01.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.01, patch=01.00)"
+    },
+    {
+      "tid": "BLJS10188",
+      "file": "Tales Of Xillia 2 BLJS10188 01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJS10215",
+      "file": "Killer Is Dead BLJS10215 BLUS31186 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJS10215",
+      "file": "Killer Is Dead BLJS10215 BLUS31186 v01.00 v01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJS10220",
+      "file": "Kamen Rider Battride War BLJS10220 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.00)"
+    },
+    {
+      "tid": "BLJS10220",
+      "file": "Kamen Rider Battride War BLJS10220 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJS10273",
+      "file": "Natsuiro High School Seishun Hakusho BLJS10273 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.00)"
+    },
+    {
+      "tid": "BLJS10273",
+      "file": "Natsuiro High School Seishun Hakusho BLJS10273 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.02)"
+    },
+    {
+      "tid": "BLJS10301",
+      "file": "Ukiyo No Shishi BLJS10301 01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLJS10318",
+      "file": "JoJo No Kimyou Na Bouken Eyes Of Heaven BLJS10318 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.05)"
+    },
+    {
+      "tid": "BLJS10318",
+      "file": "JoJo No Kimyou Na Bouken Eyes Of Heaven BLJS10318 01.02.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.02, patch=01.05)"
+    },
+    {
+      "tid": "BLUS30023",
+      "file": "Der Pate Die Don-Edition BLUS30023 v01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30023",
+      "file": "El Padrino Don Corleone BLUS30023 v01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30023",
+      "file": "Il Padrino The Don's Edition BLUS30023 v01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30023",
+      "file": "Le Parrain Edition Du Don BLUS30023 v01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30023",
+      "file": "The Godfather The Don's Edition BLUS30023 v01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30035",
+      "file": "The Darkness BLES00058 BLUS30035 v01.03.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30055",
+      "file": "The Orange Box Half-Life 2 BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30055",
+      "file": "The Orange Box Half-Life 2 BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30055",
+      "file": "The Orange Box Half-Life 2 BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30055",
+      "file": "The Orange Box Half-Life 2 BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30055",
+      "file": "The Orange Box Half-Life 2 Episodes 1 & 2 BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30055",
+      "file": "The Orange Box Half-Life 2 Episodes 1 & 2 BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30055",
+      "file": "The Orange Box Half-Life 2 Episodes 1 & 2 BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30055",
+      "file": "The Orange Box Half-Life 2 Episodes 1 & 2 BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30055",
+      "file": "The Orange Box Portal BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30055",
+      "file": "The Orange Box Portal BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30055",
+      "file": "The Orange Box Portal BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30055",
+      "file": "The Orange Box Portal BLES00153 BLUS30055 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30057",
+      "file": "Army Of Two BLES00168 BLUS30057 v01.00 av01.03.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30080",
+      "file": "Stranglehold BLES00144 BLUS30080 BLUS30081 v01.01 av01.20.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30081",
+      "file": "Stranglehold BLES00144 BLUS30080 BLUS30081 v01.01 av01.20.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30087",
+      "file": "The Elder Scrolls 4 Oblivion GOTY Edition BLES00163 BLUS30087 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30087",
+      "file": "The Elder Scrolls 4 Oblivion GOTY Edition BLUS30087 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30087",
+      "file": "The Elder Scrolls 4 Oblivion GOTY Edition BLUS30087 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30094",
+      "file": "Haze BLES00157 BLES00169 v01.01 av01.36 BLUS30094 v01.00 av01.36.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30109",
+      "file": "Metal Gear Solid 4 Guns Of The Patriots BLES00246 BLUS30109 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=02.00)"
+    },
+    {
+      "tid": "BLUS30127",
+      "file": "Grand Theft Auto IV BLES00229 BLUS30127 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.08)"
+    },
+    {
+      "tid": "BLUS30127",
+      "file": "Grand Theft Auto IV BLUS30127 v01.00 av01.08.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30169",
+      "file": "Silent Hill Homecoming BLUS30169 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30169",
+      "file": "Silent Hill Homecoming BLUS30169 v01.00 av01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30192",
+      "file": "Call Of Duty World At War BLES00354 BLES00357 v01.00 av01.00 BLUS30192 v01.01 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30192",
+      "file": "Call Of Duty World At War BLES00354 BLES00357 v01.00 av01.00 BLUS30192 v01.01 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30192",
+      "file": "Call Of Duty World At War BLES00354 BLUS30192 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.07)"
+    },
+    {
+      "tid": "BLUS30192",
+      "file": "Call Of Duty World At War BLES00354 BLUS30192 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.07)"
+    },
+    {
+      "tid": "BLUS30270",
+      "file": "Resident Evil 5 BLES00485 BLUS30270 v01.00 av02.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30357",
+      "file": "Transformers Kampf Um Cybertron BLES00833 BLUS30357 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30357",
+      "file": "Transformers Kampf Um Cybertron BLES00833 BLUS30357 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30357",
+      "file": "Transformers La Battaglia Per Cybertron BLES00833 BLUS30357 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30357",
+      "file": "Transformers La Battaglia Per Cybertron BLES00833 BLUS30357 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30357",
+      "file": "Transformers La Guerra Por Cybertron BLES00833 BLUS30357 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30357",
+      "file": "Transformers La Guerra Por Cybertron BLES00833 BLUS30357 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30357",
+      "file": "Transformers La Guerra Pour Cybertron BLES00833 BLUS30357 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30357",
+      "file": "Transformers La Guerra Pour Cybertron BLES00833 BLUS30357 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30357",
+      "file": "Transformers War For Cybertron BLES00833 BLUS30357 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.00)"
+    },
+    {
+      "tid": "BLUS30357",
+      "file": "Transformers War For Cybertron BLES00833 BLUS30357 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30357",
+      "file": "Transformers War For Cybertron BLES00833 BLUS30357 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30357",
+      "file": "Transformers War For Cybertron BLES00833 BLUS30357 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30400",
+      "file": "Just Cause 2 BLES00517 BLUS30400 01.02.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30400",
+      "file": "Just Cause 2 BLES00517 BLUS30400 v01.00 av01.02.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30408",
+      "file": "Army Of Two The 40th Day BLES00659 BLUS30408 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30408",
+      "file": "Army Of Two The 40th Day BLES00659 BLUS30408 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30408",
+      "file": "Army Of Two The 40th Day BLES00659 v01.00 av01.02 BLUS30408 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30408",
+      "file": "Army Of Two The 40th Day BLES00659 v01.00 av01.02 BLUS30408 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30443",
+      "file": "Demon's Souls BLUS30443 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30451",
+      "file": "Fallout 3 GOTY Edition BLUS30451 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30456",
+      "file": "Fairytale Fights BLUS30456 01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30481",
+      "file": "Nier BLES00826 BLUS30481 v01.01 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30481",
+      "file": "Nier BLUS30481 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30481",
+      "file": "Nier BLUS30481 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30490",
+      "file": "3D Dot Game Heroes BLES00875 BLJM60180 BLUS30490 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "BLUS30491",
+      "file": "Resident Evil 5 Gold Edition BLES00485 BLUS30491 02.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=02.00, patch=01.01)"
+    },
+    {
+      "tid": "BLUS30491",
+      "file": "Resident Evil 5 Gold Edition BLES00816 BLUS30491 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30491",
+      "file": "Resident Evil 5 Gold Edition BLUS30491 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "BLUS30491",
+      "file": "Resident Evil 5 Gold Edition BLUS30491 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30491",
+      "file": "Resident Evil 5 Gold Edition BLUS30491 v02.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30515",
+      "file": "Batman Arkham Asylum GOTY BLUS30515 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30558",
+      "file": "Enslaved Odyssey To The West BLES00989 BLUS30558 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30565",
+      "file": "Silent Hill Downpour BLES01446 v01.00 av01.01 BLUS30565 v01.01 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30565",
+      "file": "Silent Hill Downpour BLUS30565 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "BLUS30565",
+      "file": "Silent Hill Downpour BLUS30565 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30565",
+      "file": "Silent Hill Downpour BLUS30565 v01.01 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30591",
+      "file": "Call Of Duty Black Ops BLES01031 BLES01032 BLUS30591 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.13)"
+    },
+    {
+      "tid": "BLUS30650",
+      "file": "Mass Effect 2 BLES01133 v01.01 av01.00 BLUS30650 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30653",
+      "file": "Shadows Of The Damned BLES01276 BLUS30653 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30653",
+      "file": "Shadows Of The Damned BLUS30653 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30654",
+      "file": "NeverDead BLES01303 BLUS30654 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30654",
+      "file": "NeverDead BLES01303 BLUS30654 v01.00 av01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30710",
+      "file": "Kingdoms Of Amalur Reckoning BLES01251 BLUS30710 01.02.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30710",
+      "file": "Kingdoms Of Amalur Reckoning BLES01251 BLUS30710 v01.00 av01.02.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30720",
+      "file": "Dragon's Dogma BLUS30720 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.05)"
+    },
+    {
+      "tid": "BLUS30720",
+      "file": "Dragon's Dogma BLUS30720 01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.03, patch=01.05)"
+    },
+    {
+      "tid": "BLUS30721",
+      "file": "Asura's Wrath BLUS30721 01.02.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30761",
+      "file": "Tom Clancy's Splinter Cell BLES01146 BLUS30761 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30761",
+      "file": "Tom Clancy's Splinter Cell BLES01146 BLUS30761 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30761",
+      "file": "Tom Clancy's Splinter Cell Chaos Theory BLES01146 BLUS30761 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30761",
+      "file": "Tom Clancy's Splinter Cell Chaos Theory BLES01146 BLUS30761 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30761",
+      "file": "Tom Clancy's Splinter Cell Pandora Tomorrow BLES01146 BLUS30761 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30761",
+      "file": "Tom Clancy's Splinter Cell Pandora Tomorrow BLES01146 BLUS30761 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30762",
+      "file": "Battlefield 3 BLES01275 BLUS30762 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.09)"
+    },
+    {
+      "tid": "BLUS30762",
+      "file": "Battlefield 3 BLUS30762 01.01.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.01, patch=01.09)"
+    },
+    {
+      "tid": "BLUS30782",
+      "file": "Dark Souls BLUS30782 01.05.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.05, patch=01.00)"
+    },
+    {
+      "tid": "BLUS30853",
+      "file": "Mass Effect 3 BLUS30853 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.10)"
+    },
+    {
+      "tid": "BLUS30853",
+      "file": "Mass Effect 3 BLUS30853 01.05.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.05, patch=01.10)"
+    },
+    {
+      "tid": "BLUS30853",
+      "file": "Mass Effect 3 BLUS30853 01.07.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.07, patch=01.10)"
+    },
+    {
+      "tid": "BLUS30853",
+      "file": "Mass Effect 3 BLUS30853 01.09.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.09, patch=01.10)"
+    },
+    {
+      "tid": "BLUS30917",
+      "file": "Lollipop Chainsaw PE BLES01525 v01.01 av01.01 BLUS30917 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30917",
+      "file": "Lollipop Chainsaw PE BLUS30917 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31020",
+      "file": "Lost Planet 3 BLUS31020 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.02)"
+    },
+    {
+      "tid": "BLUS31051",
+      "file": "Resident Evil Revelations BLUS31051 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "BLUS31051",
+      "file": "Resident Evil Revelations BLUS31051 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31051",
+      "file": "Resident Evil Revelations BLUS31051 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31069",
+      "file": "Army Of Two Le Cartel Du Diable BLES01763 BLJM60518 BLUS31069 v01.00 av01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31069",
+      "file": "Army Of Two Le Cartel Du Diable BLES01763 BLUS31069 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "BLUS31069",
+      "file": "Army Of Two The Devil's Cartel BLES01763 BLJM60518 BLUS31069 v01.00 av01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31069",
+      "file": "Army Of Two The Devil's Cartel BLES01763 BLUS31069 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "BLUS31069",
+      "file": "Army Of Two The Devil's Cartel BLES01763 BLUS31069 01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31146",
+      "file": "Deadpool BLES01789 BLUS31146 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31155",
+      "file": "Dragon's Dogma Dark Arisen BLJM61012 BLUS31155 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.02)"
+    },
+    {
+      "tid": "BLUS31156",
+      "file": "Grand Theft Auto V BLUS31156 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.27)"
+    },
+    {
+      "tid": "BLUS31156",
+      "file": "Grand Theft Auto V BLUS31156 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31156",
+      "file": "Grand Theft Auto V BLUS31156 01.04.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.04, patch=01.27)"
+    },
+    {
+      "tid": "BLUS31156",
+      "file": "Grand Theft Auto V BLUS31156 01.04.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.04, patch=01.00)"
+    },
+    {
+      "tid": "BLUS31156",
+      "file": "Grand Theft Auto V BLUS31156 01.05.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.05, patch=01.27)"
+    },
+    {
+      "tid": "BLUS31156",
+      "file": "Grand Theft Auto V BLUS31156 01.05.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.05, patch=01.00)"
+    },
+    {
+      "tid": "BLUS31186",
+      "file": "Killer Is Dead BLJS10215 BLUS31186 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31186",
+      "file": "Killer Is Dead BLJS10215 BLUS31186 v01.00 v01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31197",
+      "file": "Drakengard 3 BLUS31197 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.00)"
+    },
+    {
+      "tid": "BLUS31197",
+      "file": "Drakengard 3 BLUS31197 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31197",
+      "file": "Drakengard 3 BLUS31197 NPUB31251 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31197",
+      "file": "Drakengard 3 BLUS31197 NPUB31251 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "BLUS31197",
+      "file": "Drakengard 3 BLUS31197 v01.01 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31197",
+      "file": "Drakengard 3 BLUS31197 v01.01 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31197",
+      "file": "Drakengard 3 BLUS31197 v1.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31197",
+      "file": "Drakengard 3 BLUS31197 v1.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31201",
+      "file": "Need For Speed Rivals BLES01894 BLUS31201 v01.00 av01.03.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31201",
+      "file": "Need For Speed Rivals BLUS31201 01.03.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.03, patch=01.00)"
+    },
+    {
+      "tid": "BLUS31202",
+      "file": "The Elder Scrolls 5 Skyrim Legendary Edition BLES01886 BLUS31202 v01.00 av01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31202",
+      "file": "The Elder Scrolls 5 Skyrim Legendary Edition BLUS31202 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31212",
+      "file": "Kingdom Hearts 1.5 HD ReMIX BLES01897 BLUS31212 v01.00 av01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31212",
+      "file": "Kingdom Hearts 1.5 HD ReMIX BLES01897 BLUS31212 v01.00 av01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31212",
+      "file": "Kingdom Hearts 1.5 HD ReMIX BLUS31212 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31212",
+      "file": "Kingdom Hearts 1.5 HD ReMIX BLUS31212 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31387",
+      "file": "Rambo BLES01963 BLUS31387 v01.00 av01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31397",
+      "file": "Tales Of Xillia 2 BLUS31397 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31397",
+      "file": "Tales Of Xillia 2 BLUS31397 v01.01 av01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31431",
+      "file": "Hatsune Miku Project Diva F 2nd BLUS31431 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31460",
+      "file": "Kingdom Hearts 2.5 HD ReMIX BLUS31460 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31460",
+      "file": "Kingdom Hearts 2.5 HD ReMIX BLUS31460 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31460",
+      "file": "Kingdom Hearts 2.5 HD ReMIX BLUS31460 v01.00 av01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31460",
+      "file": "Kingdom Hearts 2.5 HD ReMIX BLUS31460 v01.00 av01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31460",
+      "file": "Kingdom Hearts 2.5 ReMIX - Birth By Sleep BLUS31460 v01.00 av01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31460",
+      "file": "Kingdom Hearts 2.5 ReMIX - Birth By Sleep BLUS31460 v01.00 av01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31460",
+      "file": "Kingdom Hearts Birth By Sleep Final Mix BLUS31460 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31460",
+      "file": "Kingdom Hearts Birth By Sleep Final Mix BLUS31460 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31554",
+      "file": "Lost Dimension BLUS31554 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31604",
+      "file": "Persona 5 BLUS31604 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31604",
+      "file": "Persona 5 BLUS31604 NPEB02436 NPUB31848.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "MRTC00002",
+      "file": "Lost Planet 2 MRTC00002 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.00)"
+    },
+    {
+      "tid": "MRTC00002",
+      "file": "Lost Planet 2 MRTC00002 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.02)"
+    },
+    {
+      "tid": "MRTC00002",
+      "file": "Lost Planet 2 MRTC00002 v01.01 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "MRTC00002",
+      "file": "Lost Planet 2 MRTC00002 v01.01 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "MRTC00003",
+      "file": "Final Fantasy XIII MRTC00003 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEA00356",
+      "file": "Ratchet And Clank 4 Za Jednego BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEA00356",
+      "file": "Ratchet And Clank 4 Za Jednego BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEA00356",
+      "file": "Ratchet And Clank All 4 One BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.03, patch=01.00)"
+    },
+    {
+      "tid": "NPEA00356",
+      "file": "Ratchet And Clank All 4 One BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEA00356",
+      "file": "Ratchet And Clank All 4 One BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEA00356",
+      "file": "Ratchet And Clank All 4 One BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEA00356",
+      "file": "Ratchet And Clank Todos Para Uno BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEA00356",
+      "file": "Ratchet And Clank Todos Para Uno BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEA00356",
+      "file": "Ratchet And Clank Todos Por Um BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEA00356",
+      "file": "Ratchet And Clank Todos Por Um BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEA00356",
+      "file": "Ratchet And Clank Tutti Per Uno BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEA00356",
+      "file": "Ratchet And Clank Tutti Per Uno BCAS20200 BCES01141 BCJS30081 BCUS98175 NPEA00356 v01.00 av01.03.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEA00365",
+      "file": "Uncharted 2 Among Thieves NPEA00365 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.10)"
+    },
+    {
+      "tid": "NPEA00365",
+      "file": "Uncharted 2 Among Thieves NPEA00365 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.10)"
+    },
+    {
+      "tid": "NPEA00365",
+      "file": "Uncharted 2 El Reino De Los Ladrones NPEA00365 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.10)"
+    },
+    {
+      "tid": "NPEA00365",
+      "file": "Uncharted 2 El Reino De Los Ladrones NPEA00365 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.10)"
+    },
+    {
+      "tid": "NPEA00365",
+      "file": "Uncharted 2 Il Covo Dei Ladri NPEA00365 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.10)"
+    },
+    {
+      "tid": "NPEA00365",
+      "file": "Uncharted 2 Il Covo Dei Ladri NPEA00365 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.10)"
+    },
+    {
+      "tid": "NPEA00366",
+      "file": "Malicious NPEA00366 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEA00366",
+      "file": "Malicious NPEA00366 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "NPEA00366",
+      "file": "Malicious NPEA00366 v01.00 av01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEA00366",
+      "file": "Malicious NPEA00366 v01.00 av01.01.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEA00418",
+      "file": "Killzone NPEA00418 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEA00418",
+      "file": "Killzone NPEA00418 v01.00 av01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEA00430",
+      "file": "Resistance Fall Of Man NPEA00430 v01.00 av01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEA00439",
+      "file": "Pupeteer NPEA00439 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEB00299",
+      "file": "Rush'N Attack Ex-Patriot NPUB30112 01.00 NPEB00299 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.00)"
+    },
+    {
+      "tid": "NPEB00833",
+      "file": "Red Dead Redemption NPEB00833 NPUB30638 v01.00 av01.02.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEB01425",
+      "file": "Teenage Mutant Ninja Turtles Out Of The Shadows NPEB01425 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEB01427",
+      "file": "Disney Castle Of Illusion Starring Mickey Mouse NPEB01427 NPUB31099 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEB02076",
+      "file": "Biohazard Remaster NPEB02076 NPJB00653 NPUB31552 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEB02076",
+      "file": "Resident Evil Remaster NPEB02076 NPJB00653 NPUB31552 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEB02226",
+      "file": "Resident Evil 0 NPEB02226 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEB02226",
+      "file": "Resident Evil Zero NPEB02226 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEB02436",
+      "file": "Persona 5 BLUS31604 NPEB02436 NPUB31848.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPJB00653",
+      "file": "Biohazard Remaster NPEB02076 NPJB00653 NPUB31552 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPJB00653",
+      "file": "Biohazard Remaster NPJB00653 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPJB00653",
+      "file": "Resident Evil Remaster NPEB02076 NPJB00653 NPUB31552 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPJB00688",
+      "file": "Sengoku Basara 4 Sumeragi NPJB00688 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.00)"
+    },
+    {
+      "tid": "NPJB00688",
+      "file": "Sengoku Basara 4 Sumeragi NPJB00688 01.01.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.01, patch=01.02)"
+    },
+    {
+      "tid": "NPJB00726",
+      "file": "Biohazard 0 BLJM61272 NPJB00726 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPJB00805",
+      "file": "Sengoku Basara Sanada Yukimura-Den BLJM61332 NPJB00805 v01.02 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPUA80136",
+      "file": "Siren Blood Curse NPUA80136 01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPUA80136",
+      "file": "Siren Blood Curse NPUA80136 v01.00 av01.00.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPUA80145",
+      "file": "Ratchet And Clank Future Alla Ricerca Del Tesoro BCAS20052 BCES00301 NPUA80145 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPUA80145",
+      "file": "Ratchet And Clank Future CaĂ§a Ao Tesouro BCAS20052 BCES00301 NPUA80145 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPUA80145",
+      "file": "Ratchet And Clank Future En Busca Del Tesoro BCAS20052 BCES00301 NPUA80145 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPUA80145",
+      "file": "Ratchet And Clank Future Quest For Booty BCAS20052 BCES00301 NPUA80145 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPUA80642",
+      "file": "Ratchet And Clank Full Frontal Assault NPUA80642 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPUA80642",
+      "file": "Ratchet And Clank Full Frontal Assault NPUA80642 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.05)"
+    },
+    {
+      "tid": "NPUA80698",
+      "file": "Uncharted 2 Among Thieves NPUA80698 v01.00 av01.10 - Copy.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPUA80698",
+      "file": "Uncharted 2 Among Thieves NPUA80698 v01.00 av01.10 - Copy.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPUA80698",
+      "file": "Uncharted 2 El Reino De Los Ladrones NPUA80698 v01.00 av01.10.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPUA80698",
+      "file": "Uncharted 2 El Reino De Los Ladrones NPUA80698 v01.00 av01.10.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPUB30308",
+      "file": "All Zombies Must Die NPUB30308 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPUB30638",
+      "file": "Red Dead Redemption NPEB00833 NPUB30638 v01.00 av01.02.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPUB31099",
+      "file": "Disney Castle Of Illusion Starring Mickey Mouse NPEB01427 NPUB31099 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPUB31099",
+      "file": "Disney Castle Of Illusion Starring Mickey Mouse NPUB31099 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPUB31117",
+      "file": "Dragon's Dogma Dark Arisen NPUB31117 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPUB31117",
+      "file": "Dragon's Dogma Dark Arisen NPUB31117 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.02)"
+    },
+    {
+      "tid": "NPUB31251",
+      "file": "Drakengard 3 BLUS31197 NPUB31251 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPUB31251",
+      "file": "Drakengard 3 BLUS31197 NPUB31251 01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "NPUB31251",
+      "file": "Drakengard 3 BLUS31197 NPUB31251 01.00.ncl",
+      "name": "Unlock FPS (No User Input)",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "NPUB31552",
+      "file": "Biohazard Remaster NPEB02076 NPJB00653 NPUB31552 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPUB31552",
+      "file": "Resident Evil Remaster NPEB02076 NPJB00653 NPUB31552 v01.00 av01.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPUB31633",
+      "file": "Metal Gear Solid 4 Guns Of The Patriots NPUB31633 02.00.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPUB31848",
+      "file": "Persona 5 BLUS31604 NPEB02436 NPUB31848.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
+    }
+  ],
+  "notFound": [
+    {
+      "tid": "BCAS20003",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCAS20015",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCAS20044",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCAS20044",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCAS20281",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCAS20292",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCAS20311",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCAS25009",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCED01448",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES00005",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES00006",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES00006",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES00008",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES00129",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES00129",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES00226",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES00226",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES00511",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES00511",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES00727",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES00727",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES00727",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES00727",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES00748",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES00748",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES01142",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES01176",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES01176",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES01692",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES01692",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES01742",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES01743",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES01949",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES01949",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCJS30001",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCJS30019",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCJS30027",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCJS30027",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCJS30078",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCJS37004",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCJS37008",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCJS37010",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCJS37010",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCKS10018",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCUS98117",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCUS98123",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCUS98123",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCUS98123",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCUS98123",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCUS98137",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCUS98137",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCUS98142",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCUS98227",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCUS98233",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCUS98233",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCUS98233",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCUS99086",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BHPE00000",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLAS50546",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLAS50546",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLAS50723",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00014",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00043",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00045",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00046",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00047",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00048",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00066",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00070",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00130",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00145",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00146",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00149",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00149",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00149",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00154",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00154",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00154",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00155",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00155",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00155",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00156",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00156",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00156",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00200",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00231",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00259",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00307",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00322",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00333",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00334",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00335",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00335",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00336",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00337",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00355",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00355",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00398",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00399",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00404",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00404",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00424",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00457",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00457",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00457",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00457",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00461",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00461",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00467",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00526",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00582",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00584",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00676",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00695",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00696",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00697",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00697",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00698",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00698",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00737",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00760",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00773",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00779",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00901",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00901",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00902",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00902",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00903",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00903",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00904",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00904",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00905",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES00905",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES01033",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES01034",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES01035",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES01039",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES01050",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES01057",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES01057",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES01105",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES01227",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES01227",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES01265",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES01329",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES01329",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES01329",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES01330",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES01330",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES01685",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES01685",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES01685",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES01885",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES02029",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES02197",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLES02247",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJM60028",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJM60030",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJM60032",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJM60034",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJM60071",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJM60104",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJM60197",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJM60232",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJM60265",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJM60279",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJM60279",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJM60282",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJM60296",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJM60332",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJM60379",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJM60409",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJM60413",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJM60427",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJM60490",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJM61163",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJM61166",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJM61166",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJS10034",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJS10034",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJS10040",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJS10040",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJS10068",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJS10069",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJS10181",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJS10219",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJS10262",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJS10263",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJS10288",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJS10288",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJS10319",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJS10319",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJS10324",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJS10324",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLKS20048",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLKS20048",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLKS20048",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLKS20094",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLKS20098",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLKS20098",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUD80018",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUD80019",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30007",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30010",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30011",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30029",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30065",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30071",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30072",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30072",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30072",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30086",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30106",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30117",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30118",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30121",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30134",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30153",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30179",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30185",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30234",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30242",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30253",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30253",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30279",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30335",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30371",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30386",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30386",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30436",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30455",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30455",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30458",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30464",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30500",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30500",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30500",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30517",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30608",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30626",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30626",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30627",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30627",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30632",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30640",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30640",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30682",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30754",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30754",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30758",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30758",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30778",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30849",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30888",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS30982",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS31006",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS31076",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS31173",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS31319",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLUS31405",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00017",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00088",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00095",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00106",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00315",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00333",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00362",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00363",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00364",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00364",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00378",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00378",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00378",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00422",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00431",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00435",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00435",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00445",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00452",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00453",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00457",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00457",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00521",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA80017",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA90033",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA90055",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA90055",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA90090",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA90125",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00052",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00075",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00098",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00098",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00293",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00316",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00365",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00385",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00458",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00458",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00459",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00459",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00503",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00505",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00557",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00622",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00625",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00636",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00652",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00652",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00723",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00724",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00730",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00740",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00740",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00751",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00777",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00777",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00777",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00777",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00777",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00859",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00865",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00882",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00941",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01028",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01028",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01043",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01088",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01109",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01121",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01144",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01144",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01156",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01216",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01217",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01220",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01224",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01224",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01243",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01246",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01268",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01283",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01283",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01310",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01318",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01318",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01351",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01370",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01374",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01376",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01390",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01393",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01407",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01407",
+      "name": "Unlock FPS (No User Input)",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01407",
+      "name": "Unlock FPS (For Delisted Ver)",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01432",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01854",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01858",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01861",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01861",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01932",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB02013",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB02061",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB02061",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB02182",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB02197",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB02319",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB90073",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB90124",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB90170",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB90198",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB90366",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB90387",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB90405",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB90439",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB90470",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB90478",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPHA20002",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPHA80190",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPHA80193",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPHA80194",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPHA80194",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPHA80243",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPHA80246",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPHA80250",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPHA80258",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPHB00520",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPHB00671",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJA00033",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJA00077",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJA00096",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJA00098",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJB00240",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJB00273",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJB00287",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJB00302",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJB00311",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJB00313",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJB00335",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJB00435",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJB00435",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJB00516",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJB00516",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJB00698",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJB00758",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJB00758",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJB00789",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJB90112",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJB90221",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJB90524",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJB90581",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA70183",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA70192",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA70257",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA80017",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA80077",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA80079",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA80661",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA80678",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA80695",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA80695",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA80697",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA80796",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA80856",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA80858",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA80908",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA80908",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA80918",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA80959",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA80960",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA80960",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA80965",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA80966",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA81175",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB30224",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB30251",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB30413",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB30413",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB30447",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB30543",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB30583",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB30588",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB30588",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB30606",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB30643",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB30643",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB30643",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB30702",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB30710",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB30732",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB30751",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB30799",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB30838",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB30892",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB30898",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB30987",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB31069",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB31071",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB31071",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB31096",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB31125",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB31136",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB31154",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB31154",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB31188",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB31241",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB31252",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB31342",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB31389",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB31391",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB31443",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB31488",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB31526",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB31636",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB31689",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB31711",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB90070",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB90214",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB90296",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB90506",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB90614",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB90813",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB90862",
+      "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB90869",
+      "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    }
+  ]
+}
