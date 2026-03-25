@@ -4,6 +4,16 @@ All notable changes to this project will be documented here.
 
 ## [Unreleased]
 
+## [1.2.0] — 2026-03-25
+
+### Added
+- `USERLIST_RISKY/` — copy of USERLIST with 88 additional version-mismatched patches included
+  - Total: 354 `.ncl` files with 385 RPCS3 patch entries (297 safe + 88 risky)
+  - Risky patches are labeled with their target version, e.g. `Unlock FPS v01.04 (RPCS3)`
+  - `USERLIST_RISKY/README_RISKY.txt` — explains risks, how to identify risky patches, and what to do if a patch fails
+- `--risky` flag for `convert.js` — skips version check and writes to `USERLIST_RISKY/`
+- `conversion_report_risky.json` — audit log for the risky run
+
 ## [1.1.0] — 2026-03-25
 
 ### Added

@@ -9,10 +9,11 @@ A collection of RPCS3 game patches converted to Artemis cheat format for use on 
 This repository contains:
 - **`patch.yml`** — RPCS3 patch database (800+ patch entries across hundreds of PS3 games)
 - **`USERLIST/`** — ~2,500 Artemis `.ncl` cheat files ready to copy onto your PS3, with RPCS3 FPS patches already embedded
+- **`USERLIST_RISKY/`** — same as above, but also includes patches where the game version does not exactly match (use at your own risk — see below)
 
 ## RPCS3 FPS patches — conversion status
 
-The `USERLIST/` files have been automatically updated with FPS patches from `patch.yml`:
+### USERLIST (safe — version matched)
 
 | Stat | Value |
 |------|-------|
@@ -24,6 +25,18 @@ Every added entry is named `Patch Name (RPCS3)` with author `RPCS3` so it's easy
 
 - Full list of patched games: [PATCHED_GAMES.md](PATCHED_GAMES.md)
 - Explanation of what was skipped and why: [SKIPPED_PATCHES.md](SKIPPED_PATCHES.md)
+
+### USERLIST_RISKY (use at your own risk)
+
+| Stat | Value |
+|------|-------|
+| NCL files with RPCS3 patches | **354 files** |
+| Total patch entries | **385 entries** |
+| Extra risky entries (version mismatch) | **88 entries** |
+
+Patches added with a mismatched version are labeled with the version they were written for, e.g. `Unlock FPS v01.04 (RPCS3)`. Safe (version-matched) patches keep the standard `Unlock FPS (RPCS3)` name.
+
+See `USERLIST_RISKY/README_RISKY.txt` for full explanation of risks and how to identify risky patches.
 
 ## Requirements
 
@@ -44,13 +57,19 @@ Every added entry is named `Patch Name (RPCS3)` with author `RPCS3` so it's easy
 
 The RPCS3 FPS patches will appear in the cheat list alongside any existing cheats for that game.
 
+> **Want more patches?** Use `USERLIST_RISKY/` instead — it contains 88 additional version-mismatched patches. Read `USERLIST_RISKY/README_RISKY.txt` before using.
+
 ### Regenerating patches (after updating patch.yml)
 
 ```bash
+# Safe mode — only version-matched patches → USERLIST/
 node convert.js
+
+# Risky mode — all patches including version mismatches → USERLIST_RISKY/
+node convert.js --risky
 ```
 
-This re-reads `patch.yml`, matches patches to `.ncl` files by Title ID and game version, and appends any new entries. Already-converted patches are detected and skipped automatically. Results are logged to `conversion_report.json`.
+Both commands are idempotent: already-converted patches (marked `(RPCS3)`) are detected and skipped automatically. Results are logged to `conversion_report.json` and `conversion_report_risky.json` respectively.
 
 ### Manual Method (Converting from patch.yml)
 
@@ -75,8 +94,8 @@ This re-reads `patch.yml`, matches patches to `.ncl` files by Title ID and game 
 |------------|-------------|-------|
 | `be32` | `0 ADDR VVVVVVVV` | 32-bit write |
 | `be16` | `0 ADDR VVVV` | 16-bit write (4 hex digits) |
-| `bef32` | `0 ADDR VVVVVVVV` | Float converted to IEEE 754 hex |
-| `load *anchor` | Inlined | Multi-line patches resolved from anchors |
+| `bef32` | `0 ADDR VVVVVVVV` | Float converted to IEEE 754 big-endian hex |
+| `load *anchor` | Inlined | Multi-line patches resolved from YAML anchors |
 | `bef64`, `byte` | Skipped | No standard Artemis equivalent |
 
 ## Credits
