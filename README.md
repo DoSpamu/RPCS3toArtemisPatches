@@ -11,9 +11,13 @@ This repository contains:
 - **`USERLIST/`** — ~2,500 Artemis `.ncl` cheat files ready to copy onto your PS3, with RPCS3 FPS patches already embedded
 - **`USERLIST_RISKY/`** — same as above, but also includes patches where the game version does not exactly match (use at your own risk — see below)
 
-## RPCS3 FPS patches — conversion status
+## Patch sources
 
-### USERLIST (safe — version matched)
+### RPCS3 patches — automated conversion
+
+Patches from the official RPCS3 patch database are automatically converted by `convert.js` and labeled `(RPCS3)` in the cheat name.
+
+#### USERLIST (safe — version matched)
 
 | Stat | Value |
 |------|-------|
@@ -21,10 +25,28 @@ This repository contains:
 | NCL files modified | **281 files** |
 | Patch entries added | **297 entries** |
 
-Every added entry is named `Patch Name (RPCS3)` with author `RPCS3` so it's easy to identify.
-
 - Full list of patched games: [PATCHED_GAMES.md](PATCHED_GAMES.md)
 - Explanation of what was skipped and why: [SKIPPED_PATCHES.md](SKIPPED_PATCHES.md)
+
+### PSXPlace community patches — manually sourced
+
+Additional patches sourced from the [PSX-Place game patches forum thread](https://www.psx-place.com/threads/game-patches.43706/) and the community PS3 Codes spreadsheet. These are labeled `(PSXPlace)` in the cheat name.
+
+| Stat | Value |
+|------|-------|
+| New files created | **9 files** |
+| Existing files modified | **12 files** |
+| Patch entries added | **22 entries** |
+
+**Key contributors:** NunoRS2000, FlexBy, vFxMz, illusion, Mitsu, Whatcookie, zeWaardt, SharkyBoy
+
+**Highlights:**
+- Extended FOV for Killzone 2 (v1.29) and Killzone 3 (v1.14) — vFxMz
+- Sonic Unleashed performance patches — disable shadows/blur/DoF/reflection — illusion (confirmed on real HW)
+- New game coverage: Harry Potter Order of the Phoenix, Castle Crashers (EUR), Dragon Ball Z Burst Limit (EU/US), Killer Is Dead (Asian BCAS), Just Cause 2 (PSN), Fallout New Vegas (BLUS30888)
+- Alternative FPS code addresses for RE5 Gold, Resistance 3, The Orange Box — different memory locations than the RPCS3 patch
+
+> Both `(RPCS3)` and `(PSXPlace)` entries may appear in the same game file — they target different memory addresses and can both be tried.
 
 ### USERLIST_RISKY (use at your own risk)
 
@@ -101,6 +123,7 @@ Both commands are idempotent: already-converted patches (marked `(RPCS3)`) are d
 ## Credits
 
 - **RPCS3 Team** and community — original patch authors (Gibbed, Whatcookie, and many others)
+- **PSX-Place community** — forum contributors: NunoRS2000, FlexBy, vFxMz, illusion, Mitsu, Whatcookie, zeWaardt, SharkyBoy, CatalinW, rock77, gmanarte and others
 - **Artemis PS3** — cheat manager for PS3 CFW
 - **webMAN MOD** — FTP and FPS counter support
 

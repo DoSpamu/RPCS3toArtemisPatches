@@ -4,6 +4,38 @@ All notable changes to this project will be documented here.
 
 ## [Unreleased]
 
+## [1.3.0] — 2026-03-27
+
+### Added
+- **PSXPlace community patches** — manually sourced from [psx-place.com/threads/game-patches.43706](https://www.psx-place.com/threads/game-patches.43706/) (9 pages, 170 posts) and the community PS3 Codes spreadsheet
+  - All entries labeled `(PSXPlace)` in the cheat name to distinguish from RPCS3 patches
+  - 9 new `.ncl` files created for games/regions not previously in USERLIST
+  - 12 existing `.ncl` files updated with additional patch entries
+  - 22 total new entries added
+
+**New files:**
+- `Castle Crashers NPEB00293` — 60 FPS (FlexBy, confirmed working on real HW)
+- `Dragon Ball Z Burst Limit BLES00231` — 60 FPS (illusion, `be32` lines only; `byte` type skipped)
+- `Dragon Ball Z Burst Limit BLUS30117` — 60 FPS (illusion, `be32` lines only)
+- `Fallout New Vegas Ultimate Edition BLUS30888` — Unlock FPS (FlexBy; US version, only BLES01475 existed before)
+- `Harry Potter And The Order Of The Phoenix BLES00070` — 60 FPS (NunoRS2000, confirmed on PS3 and RPCS3)
+- `Just Cause 2 NPUB30606` — Unlock FPS (illusion, PSN version; separate from existing BLES/BLUS file)
+- `Killer Is Dead BCAS20292` — Unlock FPS (Asian version; separate from BLJS/BLUS file)
+
+**Modified files (new entries added):**
+- `Batman Arkham Origins BLUS31147` — Debug Menu (tested on v1.60)
+- `Borderlands 2 BLES01684` — Unlock FPS (FlexBy, tested v1.15)
+- `Destroy All Humans! Path Of The Furon` — Unlock FPS (Whatcookie)
+- `GTA IV Complete Edition BLES01128` — Unlock FPS
+- `Killzone 2 BCES00081 v1.29` — Extended FOV (vFxMz: `0x00EC096C 3F266666`)
+- `Killzone 3 BCES01007 v1.14` — Extended FOV (vFxMz: two addresses)
+- `Lost Dimension v1.01` — 60 FPS (FlexBy, BLJM61166 v1.00 addresses)
+- `Lost Planet 2 MRTC00002` — Unlock FPS (tested on v1.02; file is v1.01)
+- `Resident Evil 5 Gold BLES00816` — Unlock FPS with alternate addresses (different from RPCS3 entry)
+- `Resistance 3 BCES01118` — Unlock FPS with alternate addresses (different from RPCS3 entry)
+- `Sonic Unleashed BLUS30244` — Disable Shadows, Motion Blur, Depth of Field, Reflection (illusion; confirmed improved FPS on real HW by Mitsu)
+- `The Orange Box BLUS30055` — Unlock FPS alternate address (`0xC477F4` vs RPCS3's `0xC471C4`)
+
 ## [1.2.0] — 2026-03-25
 
 ### Added
