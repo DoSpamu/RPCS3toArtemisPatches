@@ -3,6 +3,11 @@ Unlock FPS (RPCS3)
 RPCS3
 0 00C471C4 60000000
 #
+Unlock FPS (PSXPlace)
+0
+PSXPlace
+0 00C477F4 60000000
+#
 Half-Life 2
 0
 dron_3

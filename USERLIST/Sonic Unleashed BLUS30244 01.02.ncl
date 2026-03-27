@@ -1,3 +1,23 @@
+Disable Shadows (PSXPlace)
+0
+illusion
+0 00E0464C 38000000
+#
+Disable Motion Blur (PSXPlace)
+0
+illusion
+0 00E234E8 38000000
+#
+Disable Depth Of Field (PSXPlace)
+0
+illusion
+0 00E5D7C4 38000000
+#
+Disable Reflection (PSXPlace)
+0
+illusion
+0 00E1EEF0 38000000
+#
 Also known as
 Sonic World Adventure
 

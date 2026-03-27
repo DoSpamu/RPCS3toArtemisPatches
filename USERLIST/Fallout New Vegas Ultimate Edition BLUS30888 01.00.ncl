@@ -1,0 +1,5 @@
+Unlock FPS (PSXPlace)
+0
+PSXPlace
+0 0097504C 60000000
+#

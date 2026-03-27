@@ -1,3 +1,9 @@
+Unlock FPS (PSXPlace)
+0
+PSXPlace
+0 010B9E68 60000000
+0 010B9EC0 60000000
+#
 Button Bindings
 0
 IDontModLobbies

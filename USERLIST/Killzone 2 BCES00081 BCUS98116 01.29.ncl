@@ -1,3 +1,8 @@
+Extended FOV (PSXPlace)
+0
+vFxMz
+0 00EC096C 3F266666
+#
 God Mode
 0
 dron_3

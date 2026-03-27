@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+PSXPlace
+0 00F18840 00000000
+#
 Lot Of Money On Gain
 0
 jgduff1

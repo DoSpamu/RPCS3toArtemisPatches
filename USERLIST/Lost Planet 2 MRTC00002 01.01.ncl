@@ -1,3 +1,9 @@
+Unlock FPS (PSXPlace)
+0
+PSXPlace
+0 013DC518 60000000
+0 013DC524 60000000
+#
 Infinite HP
 0
 CodeFreak/PS3UserCheat

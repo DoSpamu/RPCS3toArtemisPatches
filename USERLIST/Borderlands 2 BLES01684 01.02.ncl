@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+FlexBy
+0 001EF34C 60000000
+#
 Max + Infinite Money + Black Market Money On Buy
 0
 Medo

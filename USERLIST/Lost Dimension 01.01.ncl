@@ -1,3 +1,8 @@
+60 FPS (PSXPlace)
+0
+FlexBy
+0 00171300 60000000
+#
 Max Money On Buy (Energy)
 0
 bbs.duowan.com/forum.php?mod=viewthread&tid=40441815
