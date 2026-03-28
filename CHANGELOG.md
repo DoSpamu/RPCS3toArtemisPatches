@@ -4,6 +4,37 @@ All notable changes to this project will be documented here.
 
 ## [Unreleased]
 
+## [1.4.0] — 2026-03-28
+
+### Added
+- **32 new `.ncl` files** — missing USERLIST entries whose patches existed in `patch.yml` but had no file, plus new regions sourced from PSXPlace scraping:
+  - `Alice Madness Returns BLES01265 01.00` + `NPEB00625 01.00` — EU disc + EU PSN (FlexBy/PSXPlace)
+  - `Alien Rage NPEB01088 01.00` — EU PSN
+  - `Borderlands 2 BLUS30982 BLES01684 NPUB30898 01.15` + `NPEB01144 01.00` — multi-TID + EU PSN
+  - `Bulletstorm NPEB00622 01.00` — EU PSN
+  - `Grand Theft Auto IV NPEB00882 01.09` — EU PSN (Zolika1351/illusion, confirmed PSXPlace)
+  - `Hatsune Miku Project Diva F 2nd NPEB02013 01.00` — EU PSN, confirmed on real PS3 HW (Brolijah)
+  - `Kamen Rider Battride War II BLJS10262 01.00` + `BLJS10263 01.00` (Premium Edition)
+  - `Kamen Rider Battride War Genesis BLJS10319 NPJB00758 01.00` + `01.04`
+  - `Kamen Rider Battride War Genesis Memorial BLJS10324 01.00` + `01.04`
+  - `Lost Dimension BLES02197 BLUS31554 BLJM61166 01.02` — EU/US/JP v1.02, **confirmed on stock PS3** (FlexBy/PSXPlace)
+  - `Lucha Libre AAA BLUS30640 01.00` + `01.01`
+  - `Papo & Yo NPEB01109 01.00` — EU PSN
+  - `Warp NPEB00636 01.00` + `NPUB30543 01.00` — EU/US PSN
+  - `WRC Powerslide NPEB01324 01.01` — EU PSN (Jao)
+  - `Zeno Clash 2 NPEB01351 01.00` — EU PSN (3-address NOP patch)
+
+- **`COMMUNITY_TESTED.md`** — curated reference document with:
+  - ✅ 22 patches confirmed working on real PS3 hardware (CFW + Artemis)
+  - 🔵 ~70 RPCS3-sourced patches organized by genre (Action, FPS, RPG, Racing, Horror)
+  - ⚠️ Known issues section (GTA V freezes, R&C untested, version mismatches)
+  - Contributing guide for community test reports
+
+### Changed
+- `PATCHED_GAMES.md` — regenerated; now lists **310 files / 326 RPCS3 entries** (up from 281/297)
+- `SKIPPED_PATCHES.md` — regenerated; now reflects **450 unmatched Title IDs** (previously 375)
+- `README.md` — updated stats throughout; added COMMUNITY_TESTED.md reference and PSXPlace section expanded
+
 ## [1.3.0] — 2026-03-27
 
 ### Added

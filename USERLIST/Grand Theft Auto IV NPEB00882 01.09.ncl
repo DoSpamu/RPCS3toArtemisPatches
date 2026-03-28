@@ -1,5 +1,5 @@
-Unlock FPS (PSXPlace)
+Unlock FPS (RPCS3)
 0
-Zolika1351/illusion
+RPCS3
 0 00F18840 00000000
 #

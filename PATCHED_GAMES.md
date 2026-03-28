@@ -1,17 +1,20 @@
 # Patched Games — RPCS3 FPS Patches Added to Artemis USERLIST
 
-This file lists every `.ncl` file that received a converted RPCS3 FPS patch entry.
+This file lists every `.ncl` file that contains a converted RPCS3 FPS patch entry.
 
-**156 unique games · 281 files modified · 297 patch entries added**
+**310 files with RPCS3 patches · 326 patch entries total**
 
 Each added cheat is named `Patch Name (RPCS3)` with author `RPCS3`.
 
 > Run `node convert.js` to regenerate patches after updating `patch.yml`.
 
-| Game | Title ID(s) | Version | Patch(es) Added |
-|------|-------------|---------|------------------|
+| Game | Title ID(s) | Version | Patch(es) |
+|------|-------------|---------|----------|
 | 3D Dot Game Heroes | BLES00875 | 01.00 | Unlock FPS |
 | 3D Dot Game Heroes | BLES00875, BLJM60180, BLUS30490 | 01.00 | Unlock FPS |
+| Alice Madness Returns | BLES01265 | 01.00 | Unlock FPS |
+| Alice Madness Returns | NPEB00625 | 01.00 | Unlock FPS |
+| Alien Rage | NPEB01088 | 01.00 | Unlock FPS |
 | All Zombies Must Die | NPUB30308 | 01.00 | Unlock FPS |
 | Alpha Protocol | BLES00704 | 01.00 | Unlock FPS |
 | Anarchy Reigns | BLES01232 | all | 60 FPS |
@@ -34,11 +37,15 @@ Each added cheat is named `Patch Name (RPCS3)` with author `RPCS3`.
 | Biohazard Remaster | BLJM61211 | 01.00 | Unlock FPS |
 | Biohazard Remaster | NPEB02076, NPJB00653, NPUB31552 | 01.00 | Unlock FPS |
 | Biohazard Remaster | NPJB00653 | 01.00 | Unlock FPS |
+| Borderlands 2 | BLUS30982, BLES01684, NPUB30898 | 01.15 | Unlock FPS |
+| Borderlands 2 | NPEB01144 | 01.00 | Unlock FPS |
+| Bulletstorm | NPEB00622 | 01.00 | Unlock FPS |
 | Call Of Duty 4 Modern Warfare | BLES00148, BLJS10013 | 01.00 | Unlock FPS |
 | Call Of Duty Black Ops | BLES01031, BLES01032 | 01.13 | Unlock FPS |
 | Call Of Duty Black Ops | BLES01031, BLES01032, BLUS30591 | 01.00 | Unlock FPS |
 | Call Of Duty Black Ops Subtitle | BLJM60286 | 01.13 | Unlock FPS |
-| Call Of Duty World At War | BLES00354, BLES00357, BLUS30192 | 01.01 | Unlock FPS |
+| Call Of Duty World At War | BLES00354, BLES00357, BLUS30192 | 01.00 | Unlock FPS |
+| Castle Crashers | NPEB00293 | 01.00 | 60 FPS |
 | Dark Souls | BLES01402 | 01.00 | Unlock FPS |
 | Deadpool | BLES01789, BLUS31146 | 01.00 | Unlock FPS |
 | Demon's Souls | BCJS30022 | 01.04 | Unlock FPS |
@@ -49,13 +56,15 @@ Each added cheat is named `Patch Name (RPCS3)` with author `RPCS3`.
 | Disney Castle Of Illusion Starring Mickey Mouse | NPEB01427, NPUB31099 | 01.00 | Unlock FPS |
 | Disney Castle Of Illusion Starring Mickey Mouse | NPUB31099 | 01.00 | Unlock FPS |
 | Drag-On Dragoon 3 | BLJM61043 | 01.00 | Unlock FPS |
+| Dragon Ball Z Burst Limit | BLES00231 | 01.00 | 60 FPS |
+| Dragon Ball Z Burst Limit | BLUS30117 | 01.00 | 60 FPS |
 | Dragon's Dogma | BLES01356 | 01.00 | Unlock FPS |
 | Dragon's Dogma Dark Arisen | BLES01794 | 01.00 | Unlock FPS |
 | Dragon's Dogma Dark Arisen | NPUB31117 | 01.00 | Unlock FPS |
 | Drakengard 3 | BLUS31197 | 01.01 | Unlock FPS |
 | Drakengard 3 | BLUS31197, NPUB31251 | 01.00 | Unlock FPS |
 | Drakengard 3 | BLUS31197 | 01.01 | Unlock FPS |
-| Drakengard 3 v1.01 | BLUS31197 | all | Unlock FPS |
+| Drakengard 3 | BLUS31197 | all | Unlock FPS |
 | El Padrino Don Corleone | BLES00044 | 01.01 | 60 FPS |
 | El Padrino Don Corleone | BLUS30023 | 01.01 | 60 FPS |
 | Enslaved Odyssey To The West | BLES00989 | 01.00 | Unlock FPS |
@@ -64,6 +73,7 @@ Each added cheat is named `Patch Name (RPCS3)` with author `RPCS3`.
 | Fairytale Fights | BLUS30456 | 01.03 | Unlock FPS |
 | Fallout 3 GOTY Edition | BLUS30451 | 01.00 | Unlock FPS |
 | Fallout New Vegas Ultimate Edition | BLES01475 | 01.00 | 60 FPS |
+| Fallout New Vegas Ultimate Edition | BLUS30888 | 01.00 | Unlock FPS |
 | Final Fantasy XIII | MRTC00003 | 01.00 | 60 FPS |
 | Folklore | BCAS20013, BCES00050, BCUS98147 | 01.00 | Unlock FPS |
 | Folklore | BCES00050 | 01.10 | Unlock FPS |
@@ -74,20 +84,31 @@ Each added cheat is named `Patch Name (RPCS3)` with author `RPCS3`.
 | Gran Turismo 5 | BCES00569, BCUS98114 | 01.00 | Unlock FPS |
 | Grand Theft Auto IV | BLES00229, BLES00258 | 01.00 | Unlock FPS |
 | Grand Theft Auto IV | BLUS30127 | 01.00 | Unlock FPS |
+| Grand Theft Auto IV | NPEB00882 | 01.09 | Unlock FPS |
 | Grand Theft Auto V | BLES01807 | 01.00 | 60 FPS |
 | Grand Theft Auto V | BLJM61019 | 01.00 | 60 FPS |
 | Grand Theft Auto V | BLUS31156 | 01.00 | 60 FPS |
+| Harry Potter And The Order Of The Phoenix | BLES00070 | 01.01 | 60 FPS |
 | Hatsune Miku Project Diva F 2nd | BLJM61079 | 01.00 | 60 FPS |
 | Hatsune Miku Project Diva F 2nd | BLJM61079 | 01.01 | 60 FPS |
 | Hatsune Miku Project Diva F 2nd | BLUS31431 | 01.00 | 60 FPS |
+| Hatsune Miku Project Diva F 2nd | NPEB02013 | 01.00 | 60 FPS |
 | Hatsune Miku Project Diva F | BLJM60527 | 01.00 | 60 FPS |
-| Haze | BLES00157, BLES00169, BLUS30094 | 01.00 | Unlock FPS |
+| Haze | BLES00157, BLES00169, BLUS30094 | 01.01 | Unlock FPS |
 | I Simpson Il Videogioco | BLES00142 | 01.00 | 60 FPS |
 | Il Padrino The Don's Edition | BLES00044 | 01.01 | 60 FPS |
 | Il Padrino The Don's Edition | BLUS30023 | 01.01 | 60 FPS |
 | Just Cause 2 | BLES00517, BLUS30400 | 01.02 | 60 FPS |
 | Just Cause 2 | BLES00517, BLUS30400 | 01.00 | 60 FPS |
+| Just Cause 2 | NPUB30606 | 01.02 | 60 FPS |
 | Kamen Rider Battride War | BLJS10220 | 01.00 | Unlock FPS |
+| Kamen Rider Battride War Genesis | BLJS10319, NPJB00758 | 01.00 | Unlock FPS |
+| Kamen Rider Battride War Genesis | BLJS10319, NPJB00758 | 01.04 | Unlock FPS |
+| Kamen Rider Battride War Genesis Memorial TV Sound Edition | BLJS10324 | 01.00 | Unlock FPS |
+| Kamen Rider Battride War Genesis Memorial TV Sound Edition | BLJS10324 | 01.04 | Unlock FPS |
+| Kamen Rider Battride War II | BLJS10262 | 01.00 | Unlock FPS |
+| Kamen Rider Battride War II Premium TV Movie Sound Edition | BLJS10263 | 01.00 | Unlock FPS |
+| Killer Is Dead | BCAS20292 | 01.00 | Unlock FPS |
 | Killer Is Dead | BLES01856 | 01.00 | Unlock FPS |
 | Killer Is Dead | BLES01856 | 01.01 | Unlock FPS |
 | Killer Is Dead | BLJS10215, BLUS31186 | 01.00 | Unlock FPS |
@@ -110,15 +131,18 @@ Each added cheat is named `Patch Name (RPCS3)` with author `RPCS3`.
 | Legendary | BLES00405 | 01.00 | Unlock FPS |
 | Les Simpson Le Jeu | BLES00142 | 01.00 | 60 FPS |
 | Lollipop Chainsaw | BLES01525 | 01.00 | Unlock FPS |
-| Lollipop Chainsaw PE | BLES01525, BLUS30917 | 01.00 | Unlock FPS |
+| Lollipop Chainsaw PE | BLES01525, BLUS30917 | 01.01 | Unlock FPS |
 | Lollipop Chainsaw PE | BLJS10125 | 01.00 | Unlock FPS |
 | Lollipop Chainsaw PE | BLUS30917 | 01.00 | Unlock FPS |
 | Los Simpson El Videojuego | BLES00142 | 01.00 | 60 FPS |
+| Lost Dimension | BLES02197, BLUS31554, BLJM61166 | 01.02 | 60 FPS |
 | Lost Dimension | BLUS31554 | 01.00 | 60 FPS |
 | Lost Planet 2 | MRTC00002 | 01.01 | Unlock FPS |
+| Lucha Libre AAA | BLUS30640 | 01.00 | Unlock FPS |
+| Lucha Libre AAA | BLUS30640 | 01.01 | Unlock FPS |
 | Malicious | NPEA00366 | 01.00 | 60 FPS |
 | Malicious | NPEA00366 | 01.00 | 60 FPS |
-| Mass Effect 2 | BLES01133, BLUS30650 | 01.00 | Unlock FPS |
+| Mass Effect 2 | BLES01133, BLUS30650 | 01.01 | Unlock FPS |
 | Metal Gear Solid 4 Guns Of The Patriots | BLES00246, BLJM67001 | 02.00 | Unlock FPS |
 | Metal Gear Solid 4 Guns Of The Patriots | NPUB31633 | 02.00 | Unlock FPS |
 | MotorStorm Apocalypse | BCES00484 | 01.00 | Unlock FPS |
@@ -131,6 +155,7 @@ Each added cheat is named `Patch Name (RPCS3)` with author `RPCS3`.
 | Nier | BLUS30481 | 01.00 | Unlock FPS |
 | Nier | BLUS30481 | 01.01 | Unlock FPS |
 | Nier Replicant | BLJM60223 | 01.00 | Unlock FPS |
+| Papo & Yo | NPEB01109 | 01.00 | Unlock FPS |
 | Persona 5 | BLUS31604 | 01.00 | 60 FPS |
 | Persona 5 | BLUS31604, NPEB02436, NPUB31848 | all | 60 FPS |
 | Pupeteer | BCES00935 | 01.00 | 60 FPS |
@@ -150,17 +175,17 @@ Each added cheat is named `Patch Name (RPCS3)` with author `RPCS3`.
 | Ratchet And Clank Future A Crack In Time | BCUS98124 | 01.01 | Unlock FPS |
 | Ratchet And Clank Future Alla Ricerca Del Tesoro | BCAS20052, BCES00301 | 01.00 | Unlock FPS |
 | Ratchet And Clank Future Alla Ricerca Del Tesoro | BCAS20052, BCES00301, NPUA80145 | 01.00 | Unlock FPS |
-| Ratchet And Clank Future Armados Hasta Los Dientes | BCES00052, BCUS98127 | 02.00 | Unlock FPS |
-| Ratchet And Clank Future Armi Di Distruzione | BCES00052, BCUS98127 | 02.00 | Unlock FPS |
+| Ratchet And Clank Future Armados Hasta Los Dientes | BCES00052, BCUS98127 | 01.00 | Unlock FPS |
+| Ratchet And Clank Future Armi Di Distruzione | BCES00052, BCUS98127 | 01.00 | Unlock FPS |
 | Ratchet And Clank Future CaĂ§a Ao Tesouro | BCAS20052, BCES00301 | 01.00 | Unlock FPS |
 | Ratchet And Clank Future CaĂ§a Ao Tesouro | BCAS20052, BCES00301, NPUA80145 | 01.00 | Unlock FPS |
 | Ratchet And Clank Future En Busca Del Tesoro | BCAS20052, BCES00301 | 01.00 | Unlock FPS |
 | Ratchet And Clank Future En Busca Del Tesoro | BCAS20052, BCES00301, NPUA80145 | 01.00 | Unlock FPS |
-| Ratchet And Clank Future OpĂ©ration Destruction | BCES00052, BCUS98127 | 02.00 | Unlock FPS |
+| Ratchet And Clank Future OpĂ©ration Destruction | BCES00052, BCUS98127 | 01.00 | Unlock FPS |
 | Ratchet And Clank Future Quest For Booty | BCAS20052, BCES00301 | 01.00 | Unlock FPS |
 | Ratchet And Clank Future Quest For Booty | BCAS20052, BCES00301, NPUA80145 | 01.00 | Unlock FPS |
 | Ratchet And Clank Future Tools Of Destruction | BCES00052 | 01.00 | Unlock FPS |
-| Ratchet And Clank Future Tools Of Destruction | BCES00052, BCUS98127 | 02.00 | Unlock FPS |
+| Ratchet And Clank Future Tools Of Destruction | BCES00052, BCUS98127 | 01.00 | Unlock FPS |
 | Ratchet And Clank Future Tools Of Destruction | BCUS98127 | 01.00 | Unlock FPS |
 | Ratchet And Clank Into The Nexus | BCUS99245 | 01.00 | Unlock FPS |
 | Ratchet And Clank Nexus | BCES01908 | 01.00 | Unlock FPS |
@@ -200,12 +225,13 @@ Each added cheat is named `Patch Name (RPCS3)` with author `RPCS3`.
 | Resistance Fall Of Man | BCES00001, BCUS98107 | 01.00 | Unlock FPS |
 | Resistance Fall Of Man | BCUS98107 | 01.00 | Unlock FPS |
 | Resistance Fall Of Man | NPEA00430 | 01.00 | Unlock FPS |
+| SOCOM 4 U.S. Navy SEALs | BCAS20121, BCES00938, BCJS30052, BCUS98135 | 01.00 | 60 FPS |
 | Sengoku Basara 4 Sumeragi | BLJM61248 | 01.00 | Unlock FPS |
 | Sengoku Basara Sanada Yukimura-Den | BLJM61332, NPJB00805 | 01.02 | Unlock FPS |
 | Shadows Of The Damned | BLES01276 | 01.00 | Unlock FPS |
 | Shadows Of The Damned | BLES01276, BLUS30653 | 01.00 | Unlock FPS |
 | Shadows Of The Damned | BLUS30653 | 01.00 | Unlock FPS |
-| Silent Hill Downpour | BLES01446, BLUS30565 | 01.01 | Unlock FPS |
+| Silent Hill Downpour | BLES01446, BLUS30565 | 01.00 | Unlock FPS |
 | Silent Hill Downpour | BLJM60391 | 01.00 | Unlock FPS |
 | Silent Hill Downpour | BLUS30565 | 01.01 | Unlock FPS |
 | Silent Hill Downpour | BLUS30565 | 01.01 | Unlock FPS |
@@ -214,7 +240,6 @@ Each added cheat is named `Patch Name (RPCS3)` with author `RPCS3`.
 | Silent Hill Homecoming | BLUS30169 | 01.00 | 60 FPS |
 | Siren Blood Curse | NPUA80136 | 01.00 | 60 FPS |
 | Siren Blood Curse | NPUA80136 | 01.00 | 60 FPS |
-| SOCOM 4 U.S. Navy SEALs | BCAS20121, BCES00938, BCJS30052, BCUS98135 | 01.00 | 60 FPS |
 | Splatterhouse | BLES01120 | 01.00 | 60 FPS |
 | Stranglehold | BLES00144 | 01.20 | Unlock FPS |
 | Stranglehold | BLES00144, BLUS30080, BLUS30081 | 01.01 | Unlock FPS |
@@ -241,9 +266,9 @@ Each added cheat is named `Patch Name (RPCS3)` with author `RPCS3`.
 | The Last Of Us | BCES01584, BCUS98174 | 01.00 | Unlock FPS |
 | The Last Of Us | BCES01584, BCUS98174 | 01.00 | Unlock FPS |
 | The Last of Us | BCUS98174, BCES01584, BCES01585, BCAS20270 | 01.11 | Unlock FPS |
-| The Orange Box Half-Life 2 av01.10 | BLES00153, BLUS30055 | all | Unlock FPS |
-| The Orange Box Half-Life 2 Episodes 1 & 2 av01.10 | BLES00153, BLUS30055 | all | Unlock FPS |
-| The Orange Box Portal av01.10 | BLES00153, BLUS30055 | all | Unlock FPS |
+| The Orange Box Half-Life 2 | BLES00153, BLUS30055 | 01.10 | Unlock FPS |
+| The Orange Box Half-Life 2 Episodes 1 & 2 | BLES00153, BLUS30055 | 01.10 | Unlock FPS |
+| The Orange Box Portal | BLES00153, BLUS30055 | 01.10 | Unlock FPS |
 | The Simpsons Game | BLES00142 | 01.00 | 60 FPS |
 | The Simpsons Game | BLES00142 | 01.00 | 60 FPS |
 | Time And Eternity | BLES01848 | all | 60 FPS |
@@ -262,17 +287,17 @@ Each added cheat is named `Patch Name (RPCS3)` with author `RPCS3`.
 | Ukiyo No Shishi | BLJS10301 | 01.01 | 60 FPS |
 | Uncharted 2 Among Thieves | BCAS20097, BCES00509 | 01.00 | 60 FPS, Unlock FPS |
 | Uncharted 2 Among Thieves | BCES00509 | 01.09 | 60 FPS, Unlock FPS |
-| Uncharted 2 Among Thieves tv01.08 | BCES00509, BCES00757, BCUS98213 | 01.00 | 60 FPS, Unlock FPS |
+| Uncharted 2 Among Thieves | BCES00509, BCES00757, BCUS98213 | 01.00 | 60 FPS, Unlock FPS |
 | Uncharted 2 Among Thieves | BCES00757 | 01.09 | 60 FPS, Unlock FPS |
-| Uncharted 2 Among Thieves - Copy | NPUA80698 | 01.00 | 60 FPS, Unlock FPS |
+| Uncharted 2 Among Thieves | NPUA80698 | 01.00 | 60 FPS, Unlock FPS |
 | Uncharted 2 El Reino De Los Ladrones | BCAS20097, BCES00509 | 01.00 | 60 FPS, Unlock FPS |
 | Uncharted 2 El Reino De Los Ladrones | BCES00509 | 01.09 | 60 FPS, Unlock FPS |
-| Uncharted 2 El Reino De Los Ladrones tv01.08 | BCES00509, BCES00757, BCUS98213 | 01.00 | 60 FPS, Unlock FPS |
+| Uncharted 2 El Reino De Los Ladrones | BCES00509, BCES00757, BCUS98213 | 01.00 | 60 FPS, Unlock FPS |
 | Uncharted 2 El Reino De Los Ladrones | BCES00757 | 01.09 | 60 FPS, Unlock FPS |
 | Uncharted 2 El Reino De Los Ladrones | NPUA80698 | 01.00 | 60 FPS, Unlock FPS |
 | Uncharted 2 Il Covo Dei Ladri | BCAS20097, BCES00509 | 01.00 | 60 FPS, Unlock FPS |
 | Uncharted 2 Il Covo Dei Ladri | BCES00509 | 01.09 | 60 FPS, Unlock FPS |
-| Uncharted 2 Il Covo Dei Ladri tv01.08 | BCES00509, BCES00757, BCUS98213 | 01.00 | 60 FPS, Unlock FPS |
+| Uncharted 2 Il Covo Dei Ladri | BCES00509, BCES00757, BCUS98213 | 01.00 | 60 FPS, Unlock FPS |
 | Uncharted 2 Il Covo Dei Ladri | BCES00757 | 01.09 | 60 FPS, Unlock FPS |
 | Uncharted 3 Drake's Deception | BCES01175 | 01.19 | Unlock FPS |
 | Uncharted 3 Drake's Deception | BCES01670 | 01.00 | Unlock FPS |
@@ -284,10 +309,14 @@ Each added cheat is named `Patch Name (RPCS3)` with author `RPCS3`.
 | Uncharted Drake's Fortune | BCAS20024 | 01.01 | Unlock FPS |
 | Uncharted Drake's Fortune | BCES00065 | 01.01 | Unlock FPS |
 | Uncharted Drake's Fortune | BCES00065, BCUS98103 | 01.10 | Unlock FPS |
-| Uncharted Drake's Fortune | BCES00065, BCUS98103 | 01.01 | Unlock FPS |
+| Uncharted Drake's Fortune | BCES00065, BCUS98103 | 01.00 | Unlock FPS |
 | Uncharted El Dorado No Hihou | BCJS30015 | 01.01 | Unlock FPS |
 | Uncharted Ougontou To Kieta Sendan | BCJS30035 | 01.00 | 60 FPS, Unlock FPS |
 | Uncharted Ougontou To Kieta Sendan | BCJS30035 | 01.09 | 60 FPS, Unlock FPS |
-| Worms Revolution Collection  2 | BLES001442 | 01.01 | Unlock FPS |
-| Worms Revolution Collection 2 | BLES001442 | 01.01 | Unlock FPS |
-| WRC 2 | BLES001442 | 01.01 | Unlock FPS |
+| WRC 2 | BLES00144 | 01.01 | Unlock FPS |
+| WRC Powerslide | NPEB01324 | 01.01 | Unlock FPS |
+| Warp | NPEB00636 | 01.00 | Unlock FPS |
+| Warp | NPUB30543 | 01.00 | Unlock FPS |
+| Worms Revolution Collection  2 | BLES00144 | 01.01 | Unlock FPS |
+| Worms Revolution Collection 2 | BLES00144 | 01.01 | Unlock FPS |
+| Zeno Clash 2 | NPEB01351 | 01.00 | Unlock FPS |
