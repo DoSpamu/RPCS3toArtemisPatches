@@ -18,6 +18,11 @@ Borderlands 2 NPEB01144 01.00                  — FlexBy (PSXPlace, EU PSN)
 Castle Crashers NPEB00293 01.00                — FlexBy (PSXPlace, confirmed in intro)
 Destroy All Humans! Path Of The Furon          — Whatcookie (PS3 Codes Works=Y)
 Fallout New Vegas Ultimate Edition BLUS30888   — FlexBy (PS3 Codes Works=Y, US version)
+Call Of Duty 4 Modern Warfare BLES00148 BLJS10013 — PSXPlace forum (tested on real PS3; capped at 60hz vsync)
+Call Of Duty Black Ops BLES01031 BLES01032 01.13  — PSXPlace forum (same vsync cap as COD4, confirmed working)
+Call Of Duty Black Ops BLES01031 BLES01032 BLUS30591 01.00 — same patch, v1.00
+Grand Theft Auto IV BLES00229 BLES00258 v01.00 av01.08 — PSXPlace: "got one working for GTA IV BLES AND BLUS"
+Grand Theft Auto IV BLUS30127 v01.00 av01.08   — PSXPlace (same confirmation, US version)
 Grand Theft Auto IV Complete Edition BLES01128 — Zolika1351/illusion (PS3 Codes Works=Y)
 Grand Theft Auto IV NPEB00882 01.09            — Zolika1351/illusion (PSXPlace, EU PSN)
 Harry Potter And The Order Of The Phoenix BLES00070 01.01 — NunoRS2000 (PSXPlace, confirmed PS3+RPCS3)
@@ -34,6 +39,8 @@ Resident Evil 5 Gold Edition BLES00816 01.01   — PS3 Codes Works=Y (EU disc)
 Sonic Unleashed BLUS30244 01.02                — illusion/Mitsu (PSXPlace, confirmed real HW)
 The Orange Box Half-Life 2 BLES00153 BLUS30055 — PS3 Codes Works=Y (Unlock FPS)
 The Orange Box Episodes 1 & 2 BLES00153 BLUS30055 — same patch, episodes
+The Elder Scrolls 4 Oblivion GOTY BLES00163 BLUS30087 — PSXPlace: "runs 20-60 FPS, depends on what is rendered"
+The Elder Scrolls 5 Skyrim Legendary BLES01886 BLUS31202 — PSXPlace: "can push framerate cap to 60fps"
 The Orange Box Portal BLES00153 BLUS30055      — same patch, Portal
 
 How to use

@@ -25,10 +25,15 @@ Reported working by community members on PSXPlace forum, PS3 Codes spreadsheet (
 | Borderlands 2 | `BLES01684 01.02` | Unlock FPS | FlexBy | PSXPlace | EU disc; patch tested on v1.15 |
 | Borderlands 2 | `BLUS30982 BLES01684 NPUB30898 01.15` | Unlock FPS | FlexBy | PSXPlace | US/EU disc + US PSN v1.15 |
 | Borderlands 2 | `NPEB01144 01.00` | Unlock FPS | FlexBy | PSXPlace | EU PSN v1.00 |
+| Call of Duty 4: Modern Warfare | `BLES00148 BLJS10013 01.00` | Unlock FPS | — | PSXPlace | Tested on real PS3; capped at 60hz vsync |
+| Call of Duty: Black Ops | `BLES01031 BLES01032 01.13` | Unlock FPS | — | PSXPlace | Confirmed same as COD4 |
+| Call of Duty: Black Ops | `BLES01031 BLES01032 BLUS30591 01.00` | Unlock FPS | — | PSXPlace | v1.00 multi-region |
 | Castle Crashers | `NPEB00293 01.00` | 60 FPS | FlexBy | PSXPlace | Confirmed works in intro |
 | Destroy All Humans! Path of the Furon | *(no TID)* | Unlock FPS | Whatcookie | PS3 Codes Works=Y | |
 | Fallout: New Vegas Ultimate Edition | `BLUS30888 01.00` | Unlock FPS | FlexBy | PS3 Codes Works=Y | US version |
-| Grand Theft Auto IV Complete Edition | `BLES01128 01.00` | Unlock FPS | — | PS3 Codes Works=Y | EU disc |
+| Grand Theft Auto IV | `BLES00229 BLES00258 v01.00 av01.08` | Unlock FPS | Zolika1351/illusion | PSXPlace | Base game EU disc |
+| Grand Theft Auto IV | `BLUS30127 v01.00 av01.08` | Unlock FPS | Zolika1351/illusion | PSXPlace | Base game US disc |
+| Grand Theft Auto IV Complete Edition | `BLES01128 01.00` | Unlock FPS | Zolika1351/illusion | PS3 Codes Works=Y | EU disc |
 | Grand Theft Auto IV | `NPEB00882 01.09` | Unlock FPS | Zolika1351/illusion | PSXPlace | EU PSN version |
 | Harry Potter and the Order of the Phoenix | `BLES00070 01.01` | 60 FPS | NunoRS2000 | PSXPlace | Confirmed PS3 + RPCS3 |
 | Hatsune Miku Project Diva F 2nd | `NPEB02013 01.00` | 60 FPS | Brolijah | PSXPlace | EU PSN; confirmed real HW (partially) |
@@ -42,6 +47,8 @@ Reported working by community members on PSXPlace forum, PS3 Codes spreadsheet (
 | Resistance 3 | `BCES01118 01.00` | Unlock FPS | — | PS3 Codes Works=Y | EU disc |
 | Resident Evil 5 Gold Edition | `BLES00816 01.01` | Unlock FPS | — | PS3 Codes Works=Y | EU disc |
 | Sonic Unleashed | `BLUS30244 01.02` | Disable Shadows / Blur / DoF | illusion | PSXPlace | Confirmed by Mitsu on real HW |
+| The Elder Scrolls IV: Oblivion GOTY | `BLES00163 BLUS30087` | 60 FPS | — | PSXPlace | "runs 20-60 FPS depending on scene"; XMB stops rendering at high FPS |
+| The Elder Scrolls V: Skyrim Legendary | `BLES01886 BLUS31202` | 60 FPS | — | PSXPlace | "can push framerate cap to 60fps" |
 | The Orange Box | `BLUS30055` | Unlock FPS | — | PS3 Codes Works=Y | US disc |
 
 ---
