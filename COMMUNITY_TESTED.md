@@ -29,12 +29,15 @@ Reported working by community members on PSXPlace forum, PS3 Codes spreadsheet (
 | Destroy All Humans! Path of the Furon | *(no TID)* | Unlock FPS | Whatcookie | PS3 Codes Works=Y | |
 | Fallout: New Vegas Ultimate Edition | `BLUS30888 01.00` | Unlock FPS | FlexBy | PS3 Codes Works=Y | US version |
 | Grand Theft Auto IV Complete Edition | `BLES01128 01.00` | Unlock FPS | — | PS3 Codes Works=Y | EU disc |
+| Grand Theft Auto IV | `NPEB00882 01.09` | Unlock FPS | Zolika1351/illusion | PSXPlace | EU PSN version |
 | Harry Potter and the Order of the Phoenix | `BLES00070 01.01` | 60 FPS | NunoRS2000 | PSXPlace | Confirmed PS3 + RPCS3 |
+| Hatsune Miku Project Diva F 2nd | `NPEB02013 01.00` | 60 FPS | Brolijah | PSXPlace | EU PSN; confirmed real HW (partially) |
 | Just Cause 2 | `NPUB30606 01.02` | 60 FPS | illusion | PSXPlace | US PSN version |
 | Killer Is Dead | `BCAS20292 01.00` | Unlock FPS | FlexBy | PS3 Codes Works=Y | Asian version |
 | Killzone 2 | `BCES00081 01.29` | Extended FOV | vFxMz | PSXPlace | `3F266666` ≈ 0.65 FOV multiplier |
 | Killzone 3 | `BCES01007 01.14` | Extended FOV | vFxMz | PSXPlace | Two addresses |
-| Lost Dimension | `01.01` | 60 FPS | FlexBy | PSXPlace | JP version |
+| Lost Dimension | `01.01` | 60 FPS | FlexBy | PSXPlace | JP v1.00 |
+| Lost Dimension | `BLES02197 BLUS31554 BLJM61166 01.02` | 60 FPS | FlexBy | PSXPlace | EU/US/JP v1.02; confirmed stock PS3 |
 | Lost Planet 2 | `MRTC00002 01.01` | Unlock FPS | — | PS3 Codes Works=Y | ⚠️ Tested on v1.02, file is v1.01 |
 | Resistance 3 | `BCES01118 01.00` | Unlock FPS | — | PS3 Codes Works=Y | EU disc |
 | Resident Evil 5 Gold Edition | `BLES00816 01.01` | Unlock FPS | — | PS3 Codes Works=Y | EU disc |
