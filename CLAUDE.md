@@ -20,10 +20,31 @@ Both modes are idempotent: re-running skips entries already marked `(RPCS3)` in 
 
 In risky mode, version-mismatched patches get the target version appended to their label: `Unlock FPS v01.04 (RPCS3)` so users know which game version the patch was written for.
 
+## Patch label conventions
+
+Two label suffixes are used in cheat names — they indicate provenance:
+
+| Label | Source | Author field |
+|-------|--------|-------------|
+| `(RPCS3)` | Official RPCS3 `patch.yml` | `RPCS3` or `FlexBy/RPCS3` etc. |
+| `(PSXPlace)` | PSXPlace forum / PS3 Codes spreadsheet | Real person name (e.g. `FlexBy`, `vFxMz`, `illusion`) |
+
+Both types may coexist in the same `.ncl` file and may target different memory addresses. When a PSXPlace patch was also confirmed in RPCS3's database, prefer the `(RPCS3)` label to avoid duplicates.
+
+## Folder structure
+
+| Folder | Contents |
+|--------|----------|
+| `USERLIST/` | ~2,500 Artemis `.ncl` files — primary target for conversion |
+| `USERLIST_RISKY/` | Copy of USERLIST with 88 additional version-mismatched patches |
+| `USERLIST_TESTED/` | 32 `.ncl` files — only patches confirmed working on real PS3 hardware |
+
+`USERLIST_TESTED/` is maintained manually. Files there are exact copies of their `USERLIST/` counterparts. `README_TESTED.txt` inside lists per-game attribution and source.
+
 ## File formats
 
 ### patch.yml (RPCS3 format)
-Non-standard YAML — the file has **multiple `Anchors:` sections** scattered throughout, which breaks standard YAML parsers (`js-yaml` cannot load it). The custom line-by-line parser in `convert.js` handles this.
+Non-standard YAML — the file has **multiple `Anchors:` sections** scattered throughout, which breaks standard YAML parsers (`js-yaml` cannot load it). The custom line-by-line parser in `convert.js` handles this. `patch_new.yml` is a second copy at the same version — use `patch.yml` as the canonical source.
 
 Structure:
 ```
@@ -77,9 +98,11 @@ Code prefixes seen in USERLIST: `0` (direct write), `6` (pointer follow), `B` (a
 
 **Version matching:** `.ncl` filenames often contain a version like `01.00`. The converter extracts this and only adds a patch if the patch's declared version matches (or is `All`). Files with no version in the name accept any patch version. The `--risky` flag bypasses this check entirely.
 
-**Duplicate prevention:** Before writing, the converter checks for lines ending in `(RPCS3)` in the existing file content. If a patch name already exists (case-insensitive), it's skipped.
+**Duplicate prevention:** Before writing, the converter checks for lines ending in `(RPCS3)` in the existing file content. If a patch name already exists (case-insensitive), it's skipped. This does **not** detect `(PSXPlace)` entries — manually-added patches can coexist with RPCS3 ones at different addresses.
 
 **FPS patch detection (`isFpsPatch`):** Exact match against a known set (`60 fps`, `unlock fps`, etc.) plus prefix match for variants like `Unlock FPS (No User Input)`.
+
+**Report structure:** `conversion_report.json` has three keys: `modified` (files written to), `skipped` (version mismatch / already present), `notFound` (TIDs with no matching `.ncl`).
 
 ## Known .ncl file quirks
 
@@ -96,4 +119,18 @@ Files in `USERLIST/` (and `USERLIST_RISKY/`) follow loose naming patterns:
 - `Game Title TITLEID1 TITLEID2 VV.VV.ncl` — multiple regions in one file
 - `Game Title TITLEID v01.00 av01.01.ncl` — "v" = disc version, "av" = app version
 
-Title ID matching is done by substring: any `.ncl` filename containing the Title ID string (e.g. `BLUS30443`) is treated as a match.
+Title ID matching is done by substring: any `.ncl` filename containing the Title ID string (e.g. `BLUS30443`) is treated as a match. The original USERLIST files come from `bucanero_codes.json` (upstream ArtemisPS3 source).
+
+## Scraper scripts
+
+Three scripts exist for sourcing new patches from the web — not part of the normal conversion workflow:
+
+| Script | Method | Target |
+|--------|--------|--------|
+| `scrape_fps_patches.js` | Playwright (headless Chromium) | PSXPlace forum (9 pages), RPCS3 wiki/forums, Reddit |
+| `scrape_flaresolverr.js` | FlareSolverr proxy at `192.168.1.100:8191` | Same sources, bypasses Cloudflare |
+| `scrape_cloudflare.js` | Alternative CF bypass | Supplementary sources |
+
+Output is written to `scraped_fps_patches.txt` and `scraped_rpcs3.txt`. These are the raw source files used to identify PSXPlace patches — grep them for keywords like `"confirmed"`, `"real ps3"`, `"tested"` to find community-verified patches.
+
+`USERLIST/extract_posts.js` is a helper that strips HTML tags from raw scraped content.
