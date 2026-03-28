@@ -1,0 +1,5 @@
+Unlock FPS (RPCS3)
+0
+FlexBy/RPCS3
+0 0034CAD0 60000000
+#
