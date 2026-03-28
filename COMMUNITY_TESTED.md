@@ -39,17 +39,17 @@ Reported working by community members on PSXPlace forum, PS3 Codes spreadsheet (
 | Hatsune Miku Project Diva F 2nd | `NPEB02013 01.00` | 60 FPS | Brolijah | PSXPlace | EU PSN; confirmed real HW (partially) |
 | Just Cause 2 | `NPUB30606 01.02` | 60 FPS | illusion | PSXPlace | US PSN version |
 | Killer Is Dead | `BCAS20292 01.00` | Unlock FPS | FlexBy | PS3 Codes Works=Y | Asian version |
-| Killzone 2 | `BCES00081 01.29` | Extended FOV | vFxMz | PSXPlace | `3F266666` ≈ 0.65 FOV multiplier |
-| Killzone 3 | `BCES01007 01.14` | Extended FOV | vFxMz | PSXPlace | Two addresses |
+| Killzone 2 | `BCES00081 BCUS98116 01.29` | Extended FOV | vFxMz | PSXPlace | `3F266666` ≈ 0.65 FOV multiplier |
+| Killzone 3 | `BCES01007 BCUS98234 01.14` | Extended FOV | vFxMz | PSXPlace | Two addresses |
 | Lost Dimension | `01.01` | 60 FPS | FlexBy | PSXPlace | JP v1.00 |
 | Lost Dimension | `BLES02197 BLUS31554 BLJM61166 01.02` | 60 FPS | FlexBy | PSXPlace | EU/US/JP v1.02; confirmed stock PS3 |
 | Lost Planet 2 | `MRTC00002 01.01` | Unlock FPS | — | PS3 Codes Works=Y | ⚠️ Tested on v1.02, file is v1.01 |
-| Resistance 3 | `BCES01118 01.00` | Unlock FPS | — | PS3 Codes Works=Y | EU disc |
+| Resistance 3 | `BCES01118 BCUS98176 01.00` | Unlock FPS | — | PS3 Codes Works=Y | EU+US disc |
 | Resident Evil 5 Gold Edition | `BLES00816 01.01` | Unlock FPS | — | PS3 Codes Works=Y | EU disc |
-| Sonic Unleashed | `BLUS30244 01.02` | Disable Shadows / Blur / DoF | illusion | PSXPlace | Confirmed by Mitsu on real HW |
+| Sonic Unleashed | `BLUS30244 01.02` | Disable Shadows / Blur / DoF / Reflection | illusion | PSXPlace | Confirmed by Mitsu on real HW; 4 separate toggles |
 | The Elder Scrolls IV: Oblivion GOTY | `BLES00163 BLUS30087` | 60 FPS | — | PSXPlace | "runs 20-60 FPS depending on scene"; XMB stops rendering at high FPS |
 | The Elder Scrolls V: Skyrim Legendary | `BLES01886 BLUS31202` | 60 FPS | — | PSXPlace | "can push framerate cap to 60fps" |
-| The Orange Box | `BLUS30055` | Unlock FPS | — | PS3 Codes Works=Y | US disc |
+| The Orange Box | `BLES00153 BLUS30055` | Unlock FPS | — | PS3 Codes Works=Y | EU+US disc; 3 patches (HL2, Episodes 1&2, Portal) |
 
 ---
 
