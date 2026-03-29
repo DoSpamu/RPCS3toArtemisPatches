@@ -20,5 +20,9 @@
   "homepage": "https://github.com/DoSpamu/RCPS3toArtemisPatches#readme",
   "devDependencies": {
     "js-yaml": "^4.1.1"
+  },
+  "dependencies": {
+    "playwright": "^1.58.2",
+    "xlsx": "^0.18.5"
   }
 }

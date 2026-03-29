@@ -1,3 +1,9 @@
+Debug Menu (RPCS3)
+0
+RPCS3
+0 00EDCB80 74727565
+0 00EDCB84 00000000
+#
 Extended FOV (PSXPlace)
 0
 vFxMz

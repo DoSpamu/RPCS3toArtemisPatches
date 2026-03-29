@@ -1,3 +1,8 @@
+Debug Menu (RPCS3)
+0
+RPCS3
+0 00732B94 3BA00001
+#
 Extras Debug Menu In The Pause Menu
 0
 dron_3

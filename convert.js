@@ -14,6 +14,12 @@ function isFpsPatch(name) {
   return PREFIXES.some(p => l.startsWith(p + ' ') || l.startsWith(p + '('));
 }
 
+// ---------- Debug menu matching ----------
+function isDebugMenuPatch(name) {
+  const l = name.toLowerCase();
+  return l === 'debug menu' || l === 'enable debug menu' || l === 'debug options';
+}
+
 // ---------- Conversion helpers ----------
 function f32hex(f) {
   const b = Buffer.allocUnsafe(4);
@@ -109,7 +115,7 @@ function parsePatchYml(text) {
   let inGames=false, inPatch=false, gamesAnchor=null, curGame2=null;
 
   function flush() {
-    if (curName && isFpsPatch(curName)) {
+    if (curName && (isFpsPatch(curName) || isDebugMenuPatch(curName))) {
       let tids = {...curTids};
       if (!Object.keys(tids).length && gamesAnchor) {
         const ga = gameAnchors[gamesAnchor];

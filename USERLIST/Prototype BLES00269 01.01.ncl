@@ -1,3 +1,9 @@
+Debug Menu (RPCS3)
+0
+RPCS3
+0 010B5AE4 52454C45
+0 010B5AE8 41534500
+#
 Memory Lot + Infinite PE On Gain
 0
 jgduff1

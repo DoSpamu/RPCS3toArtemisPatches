@@ -1,3 +1,8 @@
+Debug Menu (RPCS3)
+0
+RPCS3
+0 0116CB84 38600000
+#
 File Info
 0
 Eboot.Elf

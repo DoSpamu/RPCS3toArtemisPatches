@@ -1,3 +1,8 @@
+Debug Menu (RPCS3)
+0
+RPCS3
+0 0078B384 3BA00001
+#
 Health Never Decreases
 0
 bungholio

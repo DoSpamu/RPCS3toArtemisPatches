@@ -1,3 +1,8 @@
+Debug Menu (RPCS3)
+0
+RPCS3
+0 00023C0C 419E
+#
 60 FPS (RPCS3)
 0
 RPCS3

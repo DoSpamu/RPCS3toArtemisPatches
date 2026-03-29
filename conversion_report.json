@@ -1,19 +1,147 @@
 {
   "modified": [
     {
-      "tid": "BLJM61166",
-      "file": "Lost Dimension BLES02197 BLUS31554 BLJM61166 01.02.ncl",
-      "name": "60 FPS (RPCS3)",
+      "tid": "BCAS20024",
+      "file": "Uncharted Drake's Fortune BCAS20024 01.01.ncl",
+      "name": "Debug Menu (RPCS3)",
       "lines": 1,
       "skippedLines": [],
       "patchVersion": [
-        "01.02"
+        "01.01"
       ]
     },
     {
-      "tid": "NPEB00882",
-      "file": "Grand Theft Auto IV NPEB00882 01.09.ncl",
-      "name": "Unlock FPS (RPCS3)",
+      "tid": "BCAS20097",
+      "file": "Uncharted 2 Among Thieves BCAS20097 BCES00509 01.00.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 2,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BCAS20097",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCAS20097 BCES00509 01.00.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 2,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BCAS20097",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCAS20097 BCES00509 01.00.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 2,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BCAS20270",
+      "file": "The Last of Us BCUS98174 BCES01584 BCES01585 BCAS20270 v01.11.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 77,
+      "skippedLines": [
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8"
+      ],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BCES00065",
+      "file": "Uncharted Drake's Fortune BCES00065 01.01.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.01"
+      ]
+    },
+    {
+      "tid": "BCES00065",
+      "file": "Uncharted Drake's Fortune BCES00065 v01.00 av01.01 BCUS98103 v01.01 av01.10.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.01"
+      ]
+    },
+    {
+      "tid": "BCES00081",
+      "file": "Killzone 2 BCES00081 BCUS98116 01.29.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.29"
+      ]
+    },
+    {
+      "tid": "BCES00081",
+      "file": "Killzone 2 BCES00081 BCUS98116 v01.00 av01.29 tv01.28.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.29"
+      ]
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Among Thieves BCES00509 01.09.ncl",
+      "name": "Debug Menu (RPCS3)",
       "lines": 1,
       "skippedLines": [],
       "patchVersion": [
@@ -21,13 +149,757 @@
       ]
     },
     {
-      "tid": "NPEB02013",
-      "file": "Hatsune Miku Project Diva F 2nd NPEB02013 01.00.ncl",
-      "name": "60 FPS (RPCS3)",
-      "lines": 5,
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Among Thieves BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 2,
       "skippedLines": [],
       "patchVersion": [
-        "All"
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCES00509 01.09.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.09"
+      ]
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 2,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCES00509 01.09.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.09"
+      ]
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 2,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 Among Thieves BCES00757 01.09.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.09"
+      ]
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCES00757 01.09.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.09"
+      ]
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCES00757 01.09.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.09"
+      ]
+    },
+    {
+      "tid": "BCES01007",
+      "file": "Killzone 3 BCAS25008 BCES01007 BCJS30066 BCUS98234 v01.00 av01.14.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 2,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BCES01007",
+      "file": "Killzone 3 BCES01007 01.00.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 2,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BCES01007",
+      "file": "Killzone 3 BCES01007 BCUS98234 01.14.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 2,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.14"
+      ]
+    },
+    {
+      "tid": "BCES01007",
+      "file": "Killzone 3 EU BCES01007 1.14.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 2,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BCES01175",
+      "file": "Uncharted 3 Drake's Deception BCES01175 01.19.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 34,
+      "skippedLines": [
+        "byte (1-byte) type skipped",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8"
+      ],
+      "patchVersion": [
+        "01.19"
+      ]
+    },
+    {
+      "tid": "BCES01584",
+      "file": "The Last Of Us BCES01584 BCES01585 BCUS98174 v01.00 av01.11.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 77,
+      "skippedLines": [
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8"
+      ],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BCES01584",
+      "file": "The Last Of Us BCES01584 BCUS98174 01.00.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 77,
+      "skippedLines": [
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8"
+      ],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BCES01584",
+      "file": "The Last Of Us BCES01584 BCUS98174 v01.00 av01.00.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 77,
+      "skippedLines": [
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8",
+        "unsupported type: utf8"
+      ],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BCES01670",
+      "file": "Uncharted 3 Drake's Deception BCES01670 v01.00 av01.19.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.10"
+      ]
+    },
+    {
+      "tid": "BCES01670",
+      "file": "Uncharted 3 L'illusion De Drake BCES01670 v01.00 av01.19.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.10"
+      ]
+    },
+    {
+      "tid": "BCES01670",
+      "file": "Uncharted 3 L'inganno Di Drake BCES01670 v01.00 av01.19.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.10"
+      ]
+    },
+    {
+      "tid": "BCES01670",
+      "file": "Uncharted 3 La TraiciĂłn De Drake BCES01670 v01.00 av01.19.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.10"
+      ]
+    },
+    {
+      "tid": "BCES01670",
+      "file": "Uncharted 3 Oszustwo Drake'a BCES01670 v01.00 av01.19.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.10"
+      ]
+    },
+    {
+      "tid": "BCES01670",
+      "file": "Uncharted 3 Sabaku Ni Nemuru Atlantis BCES01670 v01.00 av01.19.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.10"
+      ]
+    },
+    {
+      "tid": "BCJS30015",
+      "file": "Uncharted El Dorado No Hihou BCJS30015 01.01.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.01"
+      ]
+    },
+    {
+      "tid": "BCJS30035",
+      "file": "Uncharted Ougontou To Kieta Sendan BCJS30035 01.00.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 2,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BCJS30035",
+      "file": "Uncharted Ougontou To Kieta Sendan BCJS30035 01.09.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.09"
+      ]
+    },
+    {
+      "tid": "BCUS98103",
+      "file": "Uncharted Drake's Fortune BCES00065 BCUS98103 01.10.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.10"
+      ]
+    },
+    {
+      "tid": "BCUS98164",
+      "file": "Heavy Rain BCUS98164 v01.00 av01.00.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 2,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BCUS98298",
+      "file": "Beyond Two Souls BCUS98298 v01.01 av01.00.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 22,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BLES00269",
+      "file": "Prototype BLES00269 01.01.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 2,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.01"
+      ]
+    },
+    {
+      "tid": "BLES00269",
+      "file": "Prototype BLUS30145 01.00 BLES00269 01.01.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 2,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.01"
+      ]
+    },
+    {
+      "tid": "BLES00269",
+      "file": "Prototype BLUS30145 v01.00 av01.00 BLES00269 01.01.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 2,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.01"
+      ]
+    },
+    {
+      "tid": "BLES00827",
+      "file": "Batman Arkham Asylum GOTY BLES00827 01.00.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BLES00989",
+      "file": "Enslaved Odyssey To The West BLES00989 01.00.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BLES00989",
+      "file": "Enslaved Odyssey To The West BLES00989 BLUS30558 v01.00 av01.00.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BLES00989",
+      "file": "Enslaved Odyssey To The West BLES00989 v01.00 av01.01.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BLES01534",
+      "file": "Prototype 2 BLES01532 BLES01534 BLUS30756 NPEB00917 NPUB30801.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 2,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BLES01587",
+      "file": "Batman Arkham City BLES01587 v02.00 av01.00 BLUS30978 v01.01 av01.00.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BLES01698",
+      "file": "Devil May Cry 1 BLES01698 v01.02 av01.01.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.01"
+      ]
+    },
+    {
+      "tid": "BLES01698",
+      "file": "DmC Devil May Cry BLES01698 01.01.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.01"
+      ]
+    },
+    {
+      "tid": "BLES01698",
+      "file": "DmC Devil May Cry BLES01698 BLUS30723 v01.01 av01.01.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.01"
+      ]
+    },
+    {
+      "tid": "BLES01698",
+      "file": "DmC Devil May Cry BLES01698 v01.01 av01.00.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.01"
+      ]
+    },
+    {
+      "tid": "BLES01784",
+      "file": "Batman Arkham Origins BLES01784 BLUS31147 BLUS31207 v01.00 av01.06.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.06"
+      ]
+    },
+    {
+      "tid": "BLES01851",
+      "file": "XCOM Enemy Within BLES01851 BLUS31180 v01.00 av01.01.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 15,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BLUS30515",
+      "file": "Batman Arkham Asylum GOTY BLUS30515 01.00.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BLUS30723",
+      "file": "DmC Devil May Cry BLUS30723 01.01.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.01"
+      ]
+    },
+    {
+      "tid": "BLUS30756",
+      "file": "Prototype 2 BLES01532 BLUS30756 01.00.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 2,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BLUS30756",
+      "file": "Prototype 2 BLES01532 BLUS30756 v01.01 av01.00.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 2,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BLUS30756",
+      "file": "Prototype 2 BLES01532 BLUS30756 v01.01 av01.01.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 2,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BLUS30978",
+      "file": "Batman Arkham City BLUS30978 01.00.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "BLUS31147",
+      "file": "Batman Arkham Origins BLUS31147 BLUS31207 01.06.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.06"
+      ]
+    },
+    {
+      "tid": "NPEB00791",
+      "file": "Deus Ex Human Revolution NPEB00791 01.01.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.01"
+      ]
+    },
+    {
+      "tid": "NPEB01805",
+      "file": "Deus Ex Human Revolution Director's Cut NPEB01805 01.00.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "NPEB01805",
+      "file": "Deus Ex Human Revolution Director's Cut NPEB01805 v01.01 av01.00.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.00"
+      ]
+    },
+    {
+      "tid": "NPUA80698",
+      "file": "Uncharted 2 Among Thieves NPUA80698 v01.00 av01.10 - Copy.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.10"
+      ]
+    },
+    {
+      "tid": "NPUA80698",
+      "file": "Uncharted 2 El Reino De Los Ladrones NPUA80698 v01.00 av01.10.ncl",
+      "name": "Debug Menu (RPCS3)",
+      "lines": 1,
+      "skippedLines": [],
+      "patchVersion": [
+        "01.10"
       ]
     }
   ],
@@ -93,6 +965,12 @@
       "reason": "duplicate"
     },
     {
+      "tid": "BCAS20066",
+      "file": "Killzone 2 BCAS20066 01.02.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.02, patch=01.29)"
+    },
+    {
       "tid": "BCAS20071",
       "file": "Demon's Souls BCAS20071 01.00.ncl",
       "name": "Unlock FPS",
@@ -124,6 +1002,12 @@
     },
     {
       "tid": "BCAS20097",
+      "file": "Uncharted 2 Among Thieves BCAS20097 BCES00509 01.00.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.00, patch=01.09)"
+    },
+    {
+      "tid": "BCAS20097",
       "file": "Uncharted 2 El Reino De Los Ladrones BCAS20097 BCES00509 01.00.ncl",
       "name": "60 FPS",
       "reason": "duplicate"
@@ -148,6 +1032,12 @@
     },
     {
       "tid": "BCAS20097",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCAS20097 BCES00509 01.00.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.00, patch=01.09)"
+    },
+    {
+      "tid": "BCAS20097",
       "file": "Uncharted 2 Il Covo Dei Ladri BCAS20097 BCES00509 01.00.ncl",
       "name": "60 FPS",
       "reason": "duplicate"
@@ -168,6 +1058,12 @@
       "tid": "BCAS20097",
       "file": "Uncharted 2 Il Covo Dei Ladri BCAS20097 BCES00509 01.00.ncl",
       "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.09)"
+    },
+    {
+      "tid": "BCAS20097",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCAS20097 BCES00509 01.00.ncl",
+      "name": "Debug Menu",
       "reason": "version mismatch (file=01.00, patch=01.09)"
     },
     {
@@ -215,6 +1111,12 @@
     {
       "tid": "BCAS20270",
       "file": "The Last of Us BCUS98174 BCES01584 BCES01585 BCAS20270 v01.11.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCAS20270",
+      "file": "The Last of Us BCUS98174 BCES01584 BCES01585 BCAS20270 v01.11.ncl",
       "name": "Unlock FPS",
       "reason": "duplicate"
     },
@@ -227,7 +1129,19 @@
     {
       "tid": "BCAS25014",
       "file": "Uncharted 3 Drake's Deception BCAS25014 01.15.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.15, patch=01.10)"
+    },
+    {
+      "tid": "BCAS25014",
+      "file": "Uncharted 3 Drake's Deception BCAS25014 01.15.ncl",
       "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.15, patch=01.19)"
+    },
+    {
+      "tid": "BCAS25014",
+      "file": "Uncharted 3 Drake's Deception BCAS25014 01.15.ncl",
+      "name": "Debug Menu",
       "reason": "version mismatch (file=01.15, patch=01.19)"
     },
     {
@@ -317,6 +1231,12 @@
     {
       "tid": "BCES00065",
       "file": "Uncharted Drake's Fortune BCES00065 01.00.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "BCES00065",
+      "file": "Uncharted Drake's Fortune BCES00065 01.00.ncl",
       "name": "Unlock FPS",
       "reason": "version mismatch (file=01.00, patch=01.01)"
     },
@@ -325,6 +1245,12 @@
       "file": "Uncharted Drake's Fortune BCES00065 01.01.ncl",
       "name": "Unlock FPS",
       "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00065",
+      "file": "Uncharted Drake's Fortune BCES00065 BCUS98103 01.10.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.10, patch=01.01)"
     },
     {
       "tid": "BCES00065",
@@ -443,6 +1369,12 @@
     {
       "tid": "BCES00509",
       "file": "Uncharted 2 Among Thieves BCAS20097 BCES00509 01.00.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Among Thieves BCAS20097 BCES00509 01.00.ncl",
       "name": "60 FPS",
       "reason": "version mismatch (file=01.00, patch=01.09)"
     },
@@ -454,6 +1386,12 @@
     },
     {
       "tid": "BCES00509",
+      "file": "Uncharted 2 Among Thieves BCAS20097 BCES00509 01.00.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.00, patch=01.09)"
+    },
+    {
+      "tid": "BCES00509",
       "file": "Uncharted 2 Among Thieves BCES00509 01.09.ncl",
       "name": "60 FPS",
       "reason": "version mismatch (file=01.09, patch=01.00)"
@@ -462,6 +1400,12 @@
       "tid": "BCES00509",
       "file": "Uncharted 2 Among Thieves BCES00509 01.09.ncl",
       "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.09, patch=01.00)"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Among Thieves BCES00509 01.09.ncl",
+      "name": "Debug Menu",
       "reason": "version mismatch (file=01.09, patch=01.00)"
     },
     {
@@ -502,6 +1446,12 @@
     },
     {
       "tid": "BCES00509",
+      "file": "Uncharted 2 Among Thieves BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
       "file": "Uncharted 2 El Reino De Los Ladrones BCAS20097 BCES00509 01.00.ncl",
       "name": "60 FPS",
       "reason": "duplicate"
@@ -510,6 +1460,12 @@
       "tid": "BCES00509",
       "file": "Uncharted 2 El Reino De Los Ladrones BCAS20097 BCES00509 01.00.ncl",
       "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCAS20097 BCES00509 01.00.ncl",
+      "name": "Debug Menu",
       "reason": "duplicate"
     },
     {
@@ -522,6 +1478,12 @@
       "tid": "BCES00509",
       "file": "Uncharted 2 El Reino De Los Ladrones BCAS20097 BCES00509 01.00.ncl",
       "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.09)"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCAS20097 BCES00509 01.00.ncl",
+      "name": "Debug Menu",
       "reason": "version mismatch (file=01.00, patch=01.09)"
     },
     {
@@ -534,6 +1496,12 @@
       "tid": "BCES00509",
       "file": "Uncharted 2 El Reino De Los Ladrones BCES00509 01.09.ncl",
       "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.09, patch=01.00)"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCES00509 01.09.ncl",
+      "name": "Debug Menu",
       "reason": "version mismatch (file=01.09, patch=01.00)"
     },
     {
@@ -574,6 +1542,12 @@
     },
     {
       "tid": "BCES00509",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
       "file": "Uncharted 2 Il Covo Dei Ladri BCAS20097 BCES00509 01.00.ncl",
       "name": "60 FPS",
       "reason": "duplicate"
@@ -582,6 +1556,12 @@
       "tid": "BCES00509",
       "file": "Uncharted 2 Il Covo Dei Ladri BCAS20097 BCES00509 01.00.ncl",
       "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCAS20097 BCES00509 01.00.ncl",
+      "name": "Debug Menu",
       "reason": "duplicate"
     },
     {
@@ -594,6 +1574,12 @@
       "tid": "BCES00509",
       "file": "Uncharted 2 Il Covo Dei Ladri BCAS20097 BCES00509 01.00.ncl",
       "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.09)"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCAS20097 BCES00509 01.00.ncl",
+      "name": "Debug Menu",
       "reason": "version mismatch (file=01.00, patch=01.09)"
     },
     {
@@ -611,6 +1597,12 @@
     {
       "tid": "BCES00509",
       "file": "Uncharted 2 Il Covo Dei Ladri BCES00509 01.09.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.09, patch=01.00)"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCES00509 01.09.ncl",
       "name": "60 FPS",
       "reason": "duplicate"
     },
@@ -642,6 +1634,12 @@
       "tid": "BCES00509",
       "file": "Uncharted 2 Il Covo Dei Ladri BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
       "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00509",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "Debug Menu",
       "reason": "duplicate"
     },
     {
@@ -707,6 +1705,12 @@
     {
       "tid": "BCES00757",
       "file": "Uncharted 2 Among Thieves BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 Among Thieves BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
       "name": "60 FPS",
       "reason": "duplicate"
     },
@@ -718,6 +1722,12 @@
     },
     {
       "tid": "BCES00757",
+      "file": "Uncharted 2 Among Thieves BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00757",
       "file": "Uncharted 2 Among Thieves BCES00757 01.09.ncl",
       "name": "60 FPS",
       "reason": "version mismatch (file=01.09, patch=01.00)"
@@ -726,6 +1736,12 @@
       "tid": "BCES00757",
       "file": "Uncharted 2 Among Thieves BCES00757 01.09.ncl",
       "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.09, patch=01.00)"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 Among Thieves BCES00757 01.09.ncl",
+      "name": "Debug Menu",
       "reason": "version mismatch (file=01.09, patch=01.00)"
     },
     {
@@ -755,6 +1771,12 @@
     {
       "tid": "BCES00757",
       "file": "Uncharted 2 El Reino De Los Ladrones BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
       "name": "60 FPS",
       "reason": "duplicate"
     },
@@ -766,6 +1788,12 @@
     },
     {
       "tid": "BCES00757",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00757",
       "file": "Uncharted 2 El Reino De Los Ladrones BCES00757 01.09.ncl",
       "name": "60 FPS",
       "reason": "version mismatch (file=01.09, patch=01.00)"
@@ -779,6 +1807,12 @@
     {
       "tid": "BCES00757",
       "file": "Uncharted 2 El Reino De Los Ladrones BCES00757 01.09.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.09, patch=01.00)"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 El Reino De Los Ladrones BCES00757 01.09.ncl",
       "name": "60 FPS",
       "reason": "duplicate"
     },
@@ -803,6 +1837,12 @@
     {
       "tid": "BCES00757",
       "file": "Uncharted 2 Il Covo Dei Ladri BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
       "name": "60 FPS",
       "reason": "duplicate"
     },
@@ -810,6 +1850,12 @@
       "tid": "BCES00757",
       "file": "Uncharted 2 Il Covo Dei Ladri BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
       "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCES00509 BCES00757 BCUS98213 v01.00 av01.09 tv01.08.ncl",
+      "name": "Debug Menu",
       "reason": "duplicate"
     },
     {
@@ -822,6 +1868,12 @@
       "tid": "BCES00757",
       "file": "Uncharted 2 Il Covo Dei Ladri BCES00757 01.09.ncl",
       "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.09, patch=01.00)"
+    },
+    {
+      "tid": "BCES00757",
+      "file": "Uncharted 2 Il Covo Dei Ladri BCES00757 01.09.ncl",
+      "name": "Debug Menu",
       "reason": "version mismatch (file=01.09, patch=01.00)"
     },
     {
@@ -846,6 +1898,42 @@
       "tid": "BCES00938",
       "file": "SOCOM 4 U.S. Navy SEALs BCAS20121 BCES00938 BCJS30052 BCUS98135 01.00.ncl",
       "name": "60 FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01007",
+      "file": "Killzone 3 BCAS25008 BCES01007 BCJS30066 BCUS98234 v01.00 av01.14.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01007",
+      "file": "Killzone 3 BCES01007 01.00.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.00, patch=01.14)"
+    },
+    {
+      "tid": "BCES01007",
+      "file": "Killzone 3 BCES01007 01.01.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.01, patch=01.00)"
+    },
+    {
+      "tid": "BCES01007",
+      "file": "Killzone 3 BCES01007 01.01.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.01, patch=01.14)"
+    },
+    {
+      "tid": "BCES01007",
+      "file": "Killzone 3 BCES01007 BCUS98234 01.14.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.14, patch=01.00)"
+    },
+    {
+      "tid": "BCES01007",
+      "file": "Killzone 3 EU BCES01007 1.14.ncl",
+      "name": "Debug Menu",
       "reason": "duplicate"
     },
     {
@@ -959,7 +2047,19 @@
     {
       "tid": "BCES01175",
       "file": "Uncharted 3 Drake's Deception BCES01175 01.17.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.17, patch=01.00)"
+    },
+    {
+      "tid": "BCES01175",
+      "file": "Uncharted 3 Drake's Deception BCES01175 01.17.ncl",
       "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.17, patch=01.19)"
+    },
+    {
+      "tid": "BCES01175",
+      "file": "Uncharted 3 Drake's Deception BCES01175 01.17.ncl",
+      "name": "Debug Menu",
       "reason": "version mismatch (file=01.17, patch=01.19)"
     },
     {
@@ -971,13 +2071,31 @@
     {
       "tid": "BCES01175",
       "file": "Uncharted 3 Drake's Deception BCES01175 01.18.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.18, patch=01.00)"
+    },
+    {
+      "tid": "BCES01175",
+      "file": "Uncharted 3 Drake's Deception BCES01175 01.18.ncl",
       "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.18, patch=01.19)"
+    },
+    {
+      "tid": "BCES01175",
+      "file": "Uncharted 3 Drake's Deception BCES01175 01.18.ncl",
+      "name": "Debug Menu",
       "reason": "version mismatch (file=01.18, patch=01.19)"
     },
     {
       "tid": "BCES01175",
       "file": "Uncharted 3 Drake's Deception BCES01175 01.19.ncl",
       "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.19, patch=01.00)"
+    },
+    {
+      "tid": "BCES01175",
+      "file": "Uncharted 3 Drake's Deception BCES01175 01.19.ncl",
+      "name": "Debug Menu",
       "reason": "version mismatch (file=01.19, patch=01.00)"
     },
     {
@@ -995,6 +2113,12 @@
     {
       "tid": "BCES01584",
       "file": "The Last Of Us BCES01584 BCES01585 BCUS98174 v01.00 av01.11.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01584",
+      "file": "The Last Of Us BCES01584 BCES01585 BCUS98174 v01.00 av01.11.ncl",
       "name": "Unlock FPS",
       "reason": "duplicate"
     },
@@ -1003,6 +2127,12 @@
       "file": "The Last Of Us BCES01584 BCUS98174 01.00.ncl",
       "name": "Unlock FPS",
       "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01584",
+      "file": "The Last Of Us BCES01584 BCUS98174 01.00.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.00, patch=01.11)"
     },
     {
       "tid": "BCES01584",
@@ -1019,7 +2149,19 @@
     {
       "tid": "BCES01584",
       "file": "The Last Of Us BCES01584 BCUS98174 v01.00 av01.00.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01584",
+      "file": "The Last Of Us BCES01584 BCUS98174 v01.00 av01.00.ncl",
       "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01584",
+      "file": "The Last of Us BCUS98174 BCES01584 BCES01585 BCAS20270 v01.11.ncl",
+      "name": "Debug Menu",
       "reason": "duplicate"
     },
     {
@@ -1031,13 +2173,31 @@
     {
       "tid": "BCES01584",
       "file": "The Last of Us BCUS98174 BCES01584 BCES01585 BCAS20270 v01.11.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01584",
+      "file": "The Last of Us BCUS98174 BCES01584 BCES01585 BCAS20270 v01.11.ncl",
       "name": "Unlock FPS",
       "reason": "duplicate"
     },
     {
       "tid": "BCES01585",
       "file": "The Last Of Us BCES01584 BCES01585 BCUS98174 v01.00 av01.11.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01585",
+      "file": "The Last Of Us BCES01584 BCES01585 BCUS98174 v01.00 av01.11.ncl",
       "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01585",
+      "file": "The Last Of Us BCES01584 BCES01585 BCUS98174 v01.00 av01.11.ncl",
+      "name": "Debug Menu",
       "reason": "duplicate"
     },
     {
@@ -1049,7 +2209,19 @@
     {
       "tid": "BCES01585",
       "file": "The Last of Us BCUS98174 BCES01584 BCES01585 BCAS20270 v01.11.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01585",
+      "file": "The Last of Us BCUS98174 BCES01584 BCES01585 BCAS20270 v01.11.ncl",
       "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01585",
+      "file": "The Last of Us BCUS98174 BCES01584 BCES01585 BCAS20270 v01.11.ncl",
+      "name": "Debug Menu",
       "reason": "duplicate"
     },
     {
@@ -1114,8 +2286,20 @@
     },
     {
       "tid": "BCES01670",
+      "file": "Uncharted 3 Drake's Deception BCES01670 v01.00 av01.19.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01670",
       "file": "Uncharted 3 L'illusion De Drake BCES01670 v01.00 av01.19.ncl",
       "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01670",
+      "file": "Uncharted 3 L'illusion De Drake BCES01670 v01.00 av01.19.ncl",
+      "name": "Debug Menu",
       "reason": "duplicate"
     },
     {
@@ -1126,8 +2310,20 @@
     },
     {
       "tid": "BCES01670",
+      "file": "Uncharted 3 L'inganno Di Drake BCES01670 v01.00 av01.19.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01670",
       "file": "Uncharted 3 La TraiciĂłn De Drake BCES01670 v01.00 av01.19.ncl",
       "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01670",
+      "file": "Uncharted 3 La TraiciĂłn De Drake BCES01670 v01.00 av01.19.ncl",
+      "name": "Debug Menu",
       "reason": "duplicate"
     },
     {
@@ -1138,8 +2334,20 @@
     },
     {
       "tid": "BCES01670",
+      "file": "Uncharted 3 Oszustwo Drake'a BCES01670 v01.00 av01.19.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01670",
       "file": "Uncharted 3 Sabaku Ni Nemuru Atlantis BCES01670 v01.00 av01.19.ncl",
       "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCES01670",
+      "file": "Uncharted 3 Sabaku Ni Nemuru Atlantis BCES01670 v01.00 av01.19.ncl",
+      "name": "Debug Menu",
       "reason": "duplicate"
     },
     {
@@ -1222,6 +2430,12 @@
     },
     {
       "tid": "BCJS30035",
+      "file": "Uncharted Ougontou To Kieta Sendan BCJS30035 01.00.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.00, patch=01.09)"
+    },
+    {
+      "tid": "BCJS30035",
       "file": "Uncharted Ougontou To Kieta Sendan BCJS30035 01.09.ncl",
       "name": "60 FPS",
       "reason": "version mismatch (file=01.09, patch=01.00)"
@@ -1230,6 +2444,12 @@
       "tid": "BCJS30035",
       "file": "Uncharted Ougontou To Kieta Sendan BCJS30035 01.09.ncl",
       "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.09, patch=01.00)"
+    },
+    {
+      "tid": "BCJS30035",
+      "file": "Uncharted Ougontou To Kieta Sendan BCJS30035 01.09.ncl",
+      "name": "Debug Menu",
       "reason": "version mismatch (file=01.09, patch=01.00)"
     },
     {
@@ -1248,6 +2468,12 @@
       "tid": "BCUS98103",
       "file": "Uncharted Drake's Fortune BCES00065 BCUS98103 01.10.ncl",
       "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98103",
+      "file": "Uncharted Drake's Fortune BCES00065 v01.00 av01.01 BCUS98103 v01.01 av01.10.ncl",
+      "name": "Debug Menu",
       "reason": "duplicate"
     },
     {
@@ -1327,6 +2553,24 @@
       "file": "Gran Turismo 5 BCES00569 BCUS98114 01.09.ncl",
       "name": "Unlock FPS",
       "reason": "version mismatch (file=01.09, patch=02.17)"
+    },
+    {
+      "tid": "BCUS98116",
+      "file": "Killzone 2 BCES00081 BCUS98116 01.29.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98116",
+      "file": "Killzone 2 BCES00081 BCUS98116 v01.00 av01.29 tv01.28.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98116",
+      "file": "Killzone 2 BCUS98116 01.01.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.01, patch=01.29)"
     },
     {
       "tid": "BCUS98120",
@@ -1493,7 +2737,19 @@
     {
       "tid": "BCUS98174",
       "file": "The Last Of Us BCES01584 BCES01585 BCUS98174 v01.00 av01.11.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98174",
+      "file": "The Last Of Us BCES01584 BCES01585 BCUS98174 v01.00 av01.11.ncl",
       "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98174",
+      "file": "The Last Of Us BCES01584 BCES01585 BCUS98174 v01.00 av01.11.ncl",
+      "name": "Debug Menu",
       "reason": "duplicate"
     },
     {
@@ -1505,8 +2761,20 @@
     {
       "tid": "BCUS98174",
       "file": "The Last Of Us BCES01584 BCUS98174 01.00.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98174",
+      "file": "The Last Of Us BCES01584 BCUS98174 01.00.ncl",
       "name": "Unlock FPS",
       "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98174",
+      "file": "The Last Of Us BCES01584 BCUS98174 01.00.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.00, patch=01.11)"
     },
     {
       "tid": "BCUS98174",
@@ -1517,7 +2785,19 @@
     {
       "tid": "BCUS98174",
       "file": "The Last Of Us BCES01584 BCUS98174 v01.00 av01.00.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98174",
+      "file": "The Last Of Us BCES01584 BCUS98174 v01.00 av01.00.ncl",
       "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98174",
+      "file": "The Last Of Us BCES01584 BCUS98174 v01.00 av01.00.ncl",
+      "name": "Debug Menu",
       "reason": "duplicate"
     },
     {
@@ -1529,7 +2809,19 @@
     {
       "tid": "BCUS98174",
       "file": "The Last of Us BCUS98174 BCES01584 BCES01585 BCAS20270 v01.11.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98174",
+      "file": "The Last of Us BCUS98174 BCES01584 BCES01585 BCAS20270 v01.11.ncl",
       "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98174",
+      "file": "The Last of Us BCUS98174 BCES01584 BCES01585 BCAS20270 v01.11.ncl",
+      "name": "Debug Menu",
       "reason": "duplicate"
     },
     {
@@ -1638,6 +2930,30 @@
       "tid": "BCUS98232",
       "file": "God Of War Ascension BCUS98232 v01.00 av01.12.ncl",
       "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98234",
+      "file": "Killzone 3 BCAS25008 BCES01007 BCJS30066 BCUS98234 v01.00 av01.14.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98234",
+      "file": "Killzone 3 BCAS25008 BCES01007 BCJS30066 BCUS98234 v01.00 av01.14.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BCUS98234",
+      "file": "Killzone 3 BCES01007 BCUS98234 01.14.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.14, patch=01.00)"
+    },
+    {
+      "tid": "BCUS98234",
+      "file": "Killzone 3 BCES01007 BCUS98234 01.14.ncl",
+      "name": "Debug Menu",
       "reason": "duplicate"
     },
     {
@@ -2309,6 +3625,12 @@
     {
       "tid": "BLES00989",
       "file": "Enslaved Odyssey To The West BLES00989 01.00.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
+      "tid": "BLES00989",
+      "file": "Enslaved Odyssey To The West BLES00989 01.00.ncl",
       "name": "Unlock FPS",
       "reason": "version mismatch (file=01.00, patch=01.01)"
     },
@@ -2321,6 +3643,12 @@
     {
       "tid": "BLES00989",
       "file": "Enslaved Odyssey To The West BLES00989 BLUS30558 v01.00 av01.00.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00989",
+      "file": "Enslaved Odyssey To The West BLES00989 BLUS30558 v01.00 av01.00.ncl",
       "name": "Unlock FPS",
       "reason": "duplicate"
     },
@@ -2328,6 +3656,12 @@
       "tid": "BLES00989",
       "file": "Enslaved Odyssey To The West BLES00989 v01.00 av01.01.ncl",
       "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLES00989",
+      "file": "Enslaved Odyssey To The West BLES00989 v01.00 av01.01.ncl",
+      "name": "Debug Menu",
       "reason": "duplicate"
     },
     {
@@ -2565,6 +3899,12 @@
       "reason": "duplicate"
     },
     {
+      "tid": "BLES01698",
+      "file": "DmC Devil May Cry BLES01698 01.00.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
       "tid": "BLES01763",
       "file": "Army Of Two Le Cartel Du Diable BLES01763 BLJM60518 BLUS31069 v01.00 av01.01.ncl",
       "name": "60 FPS",
@@ -2611,6 +3951,18 @@
       "file": "Resident Evil Revelations BLES01773 v01.00 av01.01.ncl",
       "name": "Unlock FPS",
       "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01784",
+      "file": "Batman Arkham Origins BLES01784 01.01.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.01, patch=01.06)"
+    },
+    {
+      "tid": "BLES01784",
+      "file": "Batman Arkham Origins BLES01784 01.02.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.02, patch=01.06)"
     },
     {
       "tid": "BLES01789",
@@ -2707,6 +4059,12 @@
       "file": "Time And Eternity BLES01848.ncl",
       "name": "60 FPS",
       "reason": "duplicate"
+    },
+    {
+      "tid": "BLES01851",
+      "file": "XCOM Enemy Within BLES01851 BLUS31180 01.01.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.01, patch=01.00)"
     },
     {
       "tid": "BLES01856",
@@ -2953,6 +4311,12 @@
       "file": "Lost Dimension BLES02197 BLUS31554 BLJM61166 01.02.ncl",
       "name": "60 FPS",
       "reason": "version mismatch (file=01.02, patch=01.00)"
+    },
+    {
+      "tid": "BLJM61166",
+      "file": "Lost Dimension BLES02197 BLUS31554 BLJM61166 01.02.ncl",
+      "name": "60 FPS",
+      "reason": "duplicate"
     },
     {
       "tid": "BLJM61211",
@@ -3351,6 +4715,18 @@
       "reason": "duplicate"
     },
     {
+      "tid": "BLUS30145",
+      "file": "Prototype BLUS30145 01.00 BLES00269 01.01.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30145",
+      "file": "Prototype BLUS30145 v01.00 av01.00 BLES00269 01.01.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
       "tid": "BLUS30169",
       "file": "Silent Hill Homecoming BLUS30169 01.00.ncl",
       "name": "60 FPS",
@@ -3581,6 +4957,12 @@
     {
       "tid": "BLUS30558",
       "file": "Enslaved Odyssey To The West BLES00989 BLUS30558 v01.00 av01.00.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30558",
+      "file": "Enslaved Odyssey To The West BLES00989 BLUS30558 v01.00 av01.00.ncl",
       "name": "Unlock FPS",
       "reason": "duplicate"
     },
@@ -3699,6 +5081,18 @@
       "reason": "duplicate"
     },
     {
+      "tid": "BLUS30723",
+      "file": "DmC Devil May Cry BLES01698 BLUS30723 v01.01 av01.01.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS30756",
+      "file": "Prototype 2 BLES01532 BLES01534 BLUS30756 NPEB00917 NPUB30801.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
       "tid": "BLUS30761",
       "file": "Tom Clancy's Splinter Cell BLES01146 BLUS30761 01.01.ncl",
       "name": "Unlock FPS",
@@ -3795,6 +5189,12 @@
       "reason": "duplicate"
     },
     {
+      "tid": "BLUS30978",
+      "file": "Batman Arkham City BLES01587 v02.00 av01.00 BLUS30978 v01.01 av01.00.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
       "tid": "BLUS30982",
       "file": "Borderlands 2 BLUS30982 BLES01684 NPUB30898 01.15.ncl",
       "name": "Unlock FPS",
@@ -3861,6 +5261,24 @@
       "reason": "duplicate"
     },
     {
+      "tid": "BLUS31147",
+      "file": "Batman Arkham Origins BLES01784 BLUS31147 BLUS31207 v01.00 av01.06.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "BLUS31147",
+      "file": "Batman Arkham Origins BLUS31147 BLUS31207 01.00.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.00, patch=01.06)"
+    },
+    {
+      "tid": "BLUS31147",
+      "file": "Batman Arkham Origins BLUS31147 BLUS31207 01.02.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.02, patch=01.06)"
+    },
+    {
       "tid": "BLUS31155",
       "file": "Dragon's Dogma Dark Arisen BLJM61012 BLUS31155 01.01.ncl",
       "name": "Unlock FPS",
@@ -3901,6 +5319,18 @@
       "file": "Grand Theft Auto V BLUS31156 01.05.ncl",
       "name": "60 FPS",
       "reason": "version mismatch (file=01.05, patch=01.00)"
+    },
+    {
+      "tid": "BLUS31180",
+      "file": "XCOM Enemy Within BLES01851 BLUS31180 01.01.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.01, patch=01.00)"
+    },
+    {
+      "tid": "BLUS31180",
+      "file": "XCOM Enemy Within BLES01851 BLUS31180 v01.00 av01.01.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
     },
     {
       "tid": "BLUS31186",
@@ -4222,6 +5652,12 @@
     },
     {
       "tid": "NPEA00365",
+      "file": "Uncharted 2 Among Thieves NPEA00365 01.00.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.00, patch=01.10)"
+    },
+    {
+      "tid": "NPEA00365",
       "file": "Uncharted 2 El Reino De Los Ladrones NPEA00365 01.00.ncl",
       "name": "60 FPS",
       "reason": "version mismatch (file=01.00, patch=01.10)"
@@ -4234,6 +5670,12 @@
     },
     {
       "tid": "NPEA00365",
+      "file": "Uncharted 2 El Reino De Los Ladrones NPEA00365 01.00.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.00, patch=01.10)"
+    },
+    {
+      "tid": "NPEA00365",
       "file": "Uncharted 2 Il Covo Dei Ladri NPEA00365 01.00.ncl",
       "name": "60 FPS",
       "reason": "version mismatch (file=01.00, patch=01.10)"
@@ -4242,6 +5684,12 @@
       "tid": "NPEA00365",
       "file": "Uncharted 2 Il Covo Dei Ladri NPEA00365 01.00.ncl",
       "name": "Unlock FPS",
+      "reason": "version mismatch (file=01.00, patch=01.10)"
+    },
+    {
+      "tid": "NPEA00365",
+      "file": "Uncharted 2 Il Covo Dei Ladri NPEA00365 01.00.ncl",
+      "name": "Debug Menu",
       "reason": "version mismatch (file=01.00, patch=01.10)"
     },
     {
@@ -4329,6 +5777,12 @@
       "reason": "duplicate"
     },
     {
+      "tid": "NPEB00882",
+      "file": "Grand Theft Auto IV NPEB00882 01.09.ncl",
+      "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
       "tid": "NPEB01088",
       "file": "Alien Rage NPEB01088 01.00.ncl",
       "name": "Unlock FPS",
@@ -4368,6 +5822,12 @@
       "tid": "NPEB01427",
       "file": "Disney Castle Of Illusion Starring Mickey Mouse NPEB01427 NPUB31099 v01.00 av01.00.ncl",
       "name": "Unlock FPS",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPEB02013",
+      "file": "Hatsune Miku Project Diva F 2nd NPEB02013 01.00.ncl",
+      "name": "60 FPS",
       "reason": "duplicate"
     },
     {
@@ -4563,6 +6023,18 @@
       "reason": "duplicate"
     },
     {
+      "tid": "NPUB30801",
+      "file": "Prototype 2 BLES01532 BLES01534 BLUS30756 NPEB00917 NPUB30801.ncl",
+      "name": "Debug Menu",
+      "reason": "duplicate"
+    },
+    {
+      "tid": "NPUB30830",
+      "file": "DmC Devil May Cry NPUB30830 01.00.ncl",
+      "name": "Debug Menu",
+      "reason": "version mismatch (file=01.00, patch=01.01)"
+    },
+    {
       "tid": "NPUB30898",
       "file": "Borderlands 2 BLUS30982 BLES01684 NPUB30898 01.15.ncl",
       "name": "Unlock FPS",
@@ -4672,6 +6144,16 @@
       "reason": "no .ncl file"
     },
     {
+      "tid": "BCAS25009",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCAS25017",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
       "tid": "BCED01448",
       "name": "Unlock FPS",
       "reason": "no .ncl file"
@@ -4738,6 +6220,11 @@
     },
     {
       "tid": "BCES00727",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES00727",
       "name": "60 FPS",
       "reason": "no .ncl file"
     },
@@ -4747,6 +6234,11 @@
       "reason": "no .ncl file"
     },
     {
+      "tid": "BCES00727",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
       "tid": "BCES00748",
       "name": "Unlock FPS",
       "reason": "no .ncl file"
@@ -4754,6 +6246,16 @@
     {
       "tid": "BCES00748",
       "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES01121",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES01123",
+      "name": "Debug Menu",
       "reason": "no .ncl file"
     },
     {
@@ -4768,7 +6270,17 @@
     },
     {
       "tid": "BCES01176",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES01176",
       "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES01176",
+      "name": "Debug Menu",
       "reason": "no .ncl file"
     },
     {
@@ -4778,7 +6290,17 @@
     },
     {
       "tid": "BCES01692",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES01692",
       "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCES01692",
+      "name": "Debug Menu",
       "reason": "no .ncl file"
     },
     {
@@ -4802,6 +6324,26 @@
       "reason": "no .ncl file"
     },
     {
+      "tid": "BCET00006",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCET70015",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCET70015",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCET70043",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
       "tid": "BCJS30001",
       "name": "Unlock FPS",
       "reason": "no .ncl file"
@@ -4822,8 +6364,18 @@
       "reason": "no .ncl file"
     },
     {
+      "tid": "BCJS30032",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
       "tid": "BCJS30078",
       "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCJS37004",
+      "name": "Debug Menu",
       "reason": "no .ncl file"
     },
     {
@@ -4832,13 +6384,33 @@
       "reason": "no .ncl file"
     },
     {
+      "tid": "BCJS37004",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
       "tid": "BCJS37008",
       "name": "Unlock FPS",
       "reason": "no .ncl file"
     },
     {
+      "tid": "BCJS37009",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCJS37010",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
       "tid": "BCJS37010",
       "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCJS37010",
+      "name": "Debug Menu",
       "reason": "no .ncl file"
     },
     {
@@ -4868,12 +6440,22 @@
     },
     {
       "tid": "BCUS98123",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCUS98123",
       "name": "60 FPS",
       "reason": "no .ncl file"
     },
     {
       "tid": "BCUS98123",
       "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCUS98123",
+      "name": "Debug Menu",
       "reason": "no .ncl file"
     },
     {
@@ -4903,7 +6485,22 @@
     },
     {
       "tid": "BCUS98233",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCUS98233",
       "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCUS98233",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCUS98233",
+      "name": "Debug Menu",
       "reason": "no .ncl file"
     },
     {
@@ -4914,6 +6511,16 @@
     {
       "tid": "BCUS99086",
       "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCUS99086",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BCUS99134",
+      "name": "Debug Menu",
       "reason": "no .ncl file"
     },
     {
@@ -5307,6 +6914,11 @@
       "reason": "no .ncl file"
     },
     {
+      "tid": "BLES01039",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
       "tid": "BLES01050",
       "name": "Unlock FPS",
       "reason": "no .ncl file"
@@ -5484,6 +7096,11 @@
     {
       "tid": "BLJM60490",
       "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "BLJM60502",
+      "name": "Debug Menu",
       "reason": "no .ncl file"
     },
     {
@@ -5762,6 +7379,11 @@
       "reason": "no .ncl file"
     },
     {
+      "tid": "BLUS30608",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
       "tid": "BLUS30626",
       "name": "60 FPS",
       "reason": "no .ncl file"
@@ -5883,6 +7505,11 @@
     },
     {
       "tid": "NPEA00363",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00363",
       "name": "Unlock FPS",
       "reason": "no .ncl file"
     },
@@ -5894,6 +7521,11 @@
     {
       "tid": "NPEA00364",
       "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00364",
+      "name": "Debug Menu",
       "reason": "no .ncl file"
     },
     {
@@ -5917,13 +7549,28 @@
       "reason": "no .ncl file"
     },
     {
+      "tid": "NPEA00422",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
       "tid": "NPEA00431",
       "name": "Unlock FPS",
       "reason": "no .ncl file"
     },
     {
       "tid": "NPEA00435",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00435",
       "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00435",
+      "name": "Debug Menu",
       "reason": "no .ncl file"
     },
     {
@@ -5958,6 +7605,11 @@
     },
     {
       "tid": "NPEA00521",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA00521",
       "name": "Unlock FPS",
       "reason": "no .ncl file"
     },
@@ -5967,8 +7619,18 @@
       "reason": "no .ncl file"
     },
     {
+      "tid": "NPEA90018",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
       "tid": "NPEA90033",
       "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA90034",
+      "name": "Debug Menu",
       "reason": "no .ncl file"
     },
     {
@@ -5979,6 +7641,16 @@
     {
       "tid": "NPEA90055",
       "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA90055",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEA90084",
+      "name": "Debug Menu",
       "reason": "no .ncl file"
     },
     {
@@ -6127,6 +7799,16 @@
       "reason": "no .ncl file"
     },
     {
+      "tid": "NPEB00792",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB00793",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
       "tid": "NPEB00859",
       "name": "Unlock FPS",
       "reason": "no .ncl file"
@@ -6139,6 +7821,11 @@
     {
       "tid": "NPEB00941",
       "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01020",
+      "name": "Debug Menu",
       "reason": "no .ncl file"
     },
     {
@@ -6159,6 +7846,11 @@
     {
       "tid": "NPEB01121",
       "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB01156",
+      "name": "Debug Menu",
       "reason": "no .ncl file"
     },
     {
@@ -6338,6 +8030,11 @@
     },
     {
       "tid": "NPEB90170",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPEB90170",
       "name": "Unlock FPS",
       "reason": "no .ncl file"
     },
@@ -6388,6 +8085,11 @@
     },
     {
       "tid": "NPHA80193",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPHA80193",
       "name": "Unlock FPS",
       "reason": "no .ncl file"
     },
@@ -6402,6 +8104,16 @@
       "reason": "no .ncl file"
     },
     {
+      "tid": "NPHA80194",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPHA80243",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
       "tid": "NPHA80243",
       "name": "Unlock FPS",
       "reason": "no .ncl file"
@@ -6409,6 +8121,11 @@
     {
       "tid": "NPHA80246",
       "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPHA80246",
+      "name": "Debug Menu",
       "reason": "no .ncl file"
     },
     {
@@ -6443,12 +8160,22 @@
     },
     {
       "tid": "NPJA00096",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJA00096",
       "name": "Unlock FPS",
       "reason": "no .ncl file"
     },
     {
       "tid": "NPJA00098",
       "name": "60 FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJA90063",
+      "name": "Debug Menu",
       "reason": "no .ncl file"
     },
     {
@@ -6459,6 +8186,11 @@
     {
       "tid": "NPJB00273",
       "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPJB00278",
+      "name": "Debug Menu",
       "reason": "no .ncl file"
     },
     {
@@ -6537,8 +8269,28 @@
       "reason": "no .ncl file"
     },
     {
+      "tid": "NPUA70034",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA70133",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA70180",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
       "tid": "NPUA70183",
       "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA70183",
+      "name": "Debug Menu",
       "reason": "no .ncl file"
     },
     {
@@ -6549,6 +8301,11 @@
     {
       "tid": "NPUA70257",
       "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA70257",
+      "name": "Debug Menu",
       "reason": "no .ncl file"
     },
     {
@@ -6588,6 +8345,11 @@
     },
     {
       "tid": "NPUA80697",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA80697",
       "name": "Unlock FPS",
       "reason": "no .ncl file"
     },
@@ -6604,6 +8366,11 @@
     {
       "tid": "NPUA80858",
       "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA80858",
+      "name": "Debug Menu",
       "reason": "no .ncl file"
     },
     {
@@ -6628,7 +8395,17 @@
     },
     {
       "tid": "NPUA80960",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA80960",
       "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA80960",
+      "name": "Debug Menu",
       "reason": "no .ncl file"
     },
     {
@@ -6648,7 +8425,17 @@
     },
     {
       "tid": "NPUA81175",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA81175",
       "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUA98103",
+      "name": "Debug Menu",
       "reason": "no .ncl file"
     },
     {
@@ -6659,6 +8446,11 @@
     {
       "tid": "NPUB30251",
       "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "NPUB30389",
+      "name": "Debug Menu",
       "reason": "no .ncl file"
     },
     {
@@ -6884,6 +8676,26 @@
     {
       "tid": "NPUB90869",
       "name": "Unlock FPS",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "TEST12345",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "TEST12345",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "TEST12345",
+      "name": "Debug Menu",
+      "reason": "no .ncl file"
+    },
+    {
+      "tid": "TEST70001",
+      "name": "Enable Debug Menu",
       "reason": "no .ncl file"
     }
   ]

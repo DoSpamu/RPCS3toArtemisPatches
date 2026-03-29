@@ -1,3 +1,9 @@
+Debug Menu (RPCS3)
+0
+RPCS3
+0 000C7F98 38000001
+0 000C7FA0 98090000
+#
 Enable Debug Menu And Playable Demo Mode (L3)
 0
 bungholio

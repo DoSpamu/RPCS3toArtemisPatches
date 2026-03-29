@@ -1,3 +1,9 @@
+Debug Menu (RPCS3)
+0
+RPCS3
+0 00E61018 74727565
+0 00E6101C 00000000
+#
 Debug Options
 0
 dron_3

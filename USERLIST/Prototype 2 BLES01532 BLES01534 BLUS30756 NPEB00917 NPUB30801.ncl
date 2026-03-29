@@ -1,3 +1,9 @@
+Debug Menu (RPCS3)
+0
+RPCS3
+0 00CC24E4 52454C45
+0 00CC24E8 41534500
+#
 AoB Debug Menu
 0
 dron_3

@@ -156,6 +156,26 @@ Not all have been explicitly tested on real hardware; report your results!
 
 ---
 
+## 📁 File-Based FPS Unlocks (No Cheat Codes Needed)
+
+Some games expose FPS limits through config files inside the game folder.
+Access method: **Multiman** → back up game as **JB Folder** format → edit file via **FTP**.
+
+| Game | File to Edit | Change | Default Cap | Notes | Source |
+|------|-------------|--------|-------------|-------|--------|
+| Battlefield Bad Company (Gold Ed.) | `Ps3GameSettings.cfg` | Set FPS value | — | Max 60! **>60 breaks the game** (HUD bugs). Also: "FPS Unlocker" mod by Aniroh on Nexus Mods. **Note: this is BBC1, not BBC2** — BBC2 has no confirmed file method | NunoRS2000 |
+| Condemned 2: Bloodshot | `PS3_GAME/USRDIR/autoexec.cfg` | Delete or change `MaxFPS` line | 40 FPS | Delete line entirely for ~59.94 FPS. Also: `FovY` line allows custom FOV | PoppaJerry |
+| Crysis | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | — | Vsync commands in the .cfg do **not** work | NunoRS2000 |
+| Crysis 2 | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | — | Same as Crysis | NunoRS2000 |
+| Crysis 3 | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | — | Same as Crysis | NunoRS2000 |
+| F.E.A.R. 2: Project Origin | `PS3_GAME/USRDIR/autoexec.cfg` | Delete or change `MaxFPS` line; set `"VSyncOnFlip" "0.000000"` to disable vsync | 45 FPS | Delete `MaxFPS` entirely for ~59.94 FPS. Keep `FovY` at ≤80 to avoid weapon clipping | PoppaJerry |
+| Middle-Earth: Shadow of Mordor | `PS3_GAME/USRDIR/autoexec.cfg` | Delete or change `MaxFPS` line | 45 FPS | Delete line entirely for ~59.94 FPS | PoppaJerry |
+| Syndicate | `ENVIRONMENT_PS3.CFG` | Change vsync value to `0` | — | ⚠️ File is **binary format** — open with a hex editor, not a text editor | NunoRS2000 |
+
+> **Condemned 2**, **F.E.A.R. 2**, and **Shadow of Mordor** all use the **LithTech Jupiter EX** engine — the same `autoexec.cfg` `MaxFPS` mechanism applies to all three.
+
+---
+
 ## ⚠️ Known Issues / Use with Caution
 
 | Game | Issue |

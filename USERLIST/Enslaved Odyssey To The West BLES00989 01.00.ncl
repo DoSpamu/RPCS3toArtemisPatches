@@ -1,3 +1,8 @@
+Debug Menu (RPCS3)
+0
+RPCS3
+0 014FBF54 38600000
+#
 Unlock FPS (RPCS3)
 0
 RPCS3

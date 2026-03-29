@@ -1,3 +1,8 @@
+Debug Menu (RPCS3)
+0
+RPCS3
+0 0116CB84 38600000
+#
 Max Red Orbs On Buy Or Gain
 0
 Medo
