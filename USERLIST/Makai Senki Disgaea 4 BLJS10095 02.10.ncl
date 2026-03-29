@@ -107,12 +107,6 @@ Max Damage
 games24.blog.fc2.com/blog-entry-158.html
 0 0013ABC8 7C000050
 #
-Steal 100%
-0
-datetext.blog109.fc2.com/blog-entry-17.html
-B 00010000 04000000
-B 386000644BEC4C4D600000007F83E800409C07CC 386000004BEC4C4D600000007F83E80060000000
-#
 AoB Max Mana
 0
 games24.blog.fc2.com/blog-entry-158.html

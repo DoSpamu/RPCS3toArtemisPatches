@@ -1,6 +1,3 @@
-/*R-Type*/
-
-#
 Memory Infinite Lives (Classic Mode)
 0
 jgduff1
@@ -46,11 +43,4 @@ jgduff1
 
 
 /*R-Type 2*/
-
-
-#
-Memory Infinite Lives (Classic Mode)
-0
-jgduff1
-0 381B3AD8 00000002
 #

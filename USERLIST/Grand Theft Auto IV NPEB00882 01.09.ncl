@@ -1,4 +1,4 @@
-Unlock FPS (RPCS3)
+Unlock FPS (RPCS3) [Tested]
 0
 RPCS3
 0 00F18840 00000000

@@ -5,9 +5,6 @@ PARAM.SFO
 Wander To Kyozou
 */
 #
-Shadow Of The Colossus (Shadow.self)
-
-#
 Unlock Hard Mode After Saving
 0
 CodeFreak/PS3UserCheat

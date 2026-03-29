@@ -2,7 +2,7 @@ Alternative Names
 0
 PARAM.SFO
 /*
-Mercenaries 2 L’Enfer Des Favelas
+Mercenaries 2 Lï¿½Enfer Des Favelas
 Mercenaries 2 World In Flames
 */
 #

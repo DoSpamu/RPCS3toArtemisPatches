@@ -1,9 +1,9 @@
-60 FPS (RPCS3)
+60 FPS (RPCS3) [Tested]
 0
 RPCS3
 0 008EDB64 F8051C60
 #
-Infinite HP, MP, And Stamina
+Infinite HP, MP, And Stamina [Tested]
 0
 Medo
 0 0143C794 D3DF0188
@@ -19,83 +19,83 @@ Medo
 0 0143C7BC 48198312
 0 0019830C 4943C796
 #
-Infinite Shout
+Infinite Shout [Tested]
 0
 Medo
 0 0008EA00 60000000
 #
-Infinite Powers
+Infinite Powers [Tested]
 0
 Medo
 0 001976F8 48000008
 #
-Quick Main Level Up
+Quick Main Level Up [Tested]
 0
 Medo
 0 001D8E9C C0230004
 #
-Quick Skill Level Up
+Quick Skill Level Up [Tested]
 0
 Medo
 0 001D8CC4 C03C0008
 #
-Max Items on Deposit (Inventory)
+Max Items on Deposit (Inventory) [Tested]
 0
 Medo
 0 0047C794 386003E7
 #
-Max Items on Desposit (Chest)
+Max Items on Desposit (Chest) [Tested]
 0
 Medo
 0 004166A0 388003E7
 #
-Max Items On Gain (Must have 1 in inventory)
+Max Items On Gain (Must have 1 in inventory) [Tested]
 0
 Medo
 0 00470F6C 38A003E7
 #
-Max Perks
+Max Perks [Tested]
 0
 Medo
 0 002DC7EC 38800063
 #
-Max Gold In Shop
+Max Gold In Shop [Tested]
 0
 Medo
 0 002F0B5C 38607FFF
 #
-Can Always Level Up At Trainers
+Can Always Level Up At Trainers [Tested]
 0
 Medo
 0 00308D30 60000000
 #
-Max Gold On Spend
+Max Gold On Spend [Tested]
 0
 Medo
 0 004739DC 3C6005F5
 0 004739E0 6063E0FF
 #
-Infinite Arrows
+Infinite Arrows [Tested]
 0
 Medo
 0 002AEE54 60000000
 #
-Infinite Dragon Souls (Only use for Dragon Souls)
+Infinite Dragon Souls (Only use for Dragon Souls) [Tested]
 0
 Medo
 0 00E69F50 60000000
 #
-Carry Weight Never Increases
+Carry Weight Never Increases [Tested]
 0
 Medo
 0 00414FCC 60000000
 #
-Can Craft Without Materials
+Can Craft Without Materials [Tested]
 0
 Medo
 0 00478894 3860000F
 #
-Fly + No Clip (Jump Once)
+Fly + No Clip (Jump Once) [Tested]
 0
 Medo
 0 009374D8 38600004
@@ -109,25 +109,25 @@ the ground with strong
 magic
 */
 #
-AoB Max Perks On Use
+AoB Max Perks On Use [Tested]
 0
 Medo
 B 00010000 04000000
 B 7884062098830755382100A048B79664 3880006398830755382100A048B79664
 #
-AoB Infinite Shout
+AoB Infinite Shout [Tested]
 0
 Medo
 B 00010000 04000000
 B D02300104E8000203CA0012880630008C025F110 600000004E8000203CA0012880630008C025F110
 #
-AoB Max Gold In Shop
+AoB Max Gold In Shop [Tested]
 0
 Medo
 B 00010000 04000000
 B 7C6307B43BA00000786400207C8407B4907E006038600003 38607FFF3BA00000786400207C8407B4907E006038600003
 #
-AoB Infinite Dragon Souls (Only use for Dragon Souls)
+AoB Infinite Dragon Souls (Only use for Dragon Souls) [Tested]
 0
 Medo
 B 00010000 04000000

@@ -30,3 +30,8 @@ Infinite Special Ability
 dron_3
 0 0107B1EC C03F0034
 #
+60 FPS v01.27 (RPCS3)
+0
+RPCS3
+0 004A7394 4800
+#

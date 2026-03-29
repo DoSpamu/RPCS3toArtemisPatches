@@ -4,7 +4,7 @@ PARAM.SFO
 /*
 Prince Of Persia Boukyaku No Suna
 Prince Of Persia Las Arenas Olvidadas
-Prince Of Persia Les Sables Oubliés
+Prince Of Persia Les Sables Oubliï¿½s
 Prince Of Persia The Forgotten Sands
 */
 #

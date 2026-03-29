@@ -15,11 +15,6 @@ Neptune Exp Max
 xtatu
 0 0138A638 3B9AC9FF
 #
-Infinite HP
-0
-xtatu
-0 00284250 38C90000
-#
 Death
 0
 xtatu

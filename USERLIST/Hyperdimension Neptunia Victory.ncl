@@ -39,11 +39,6 @@ Kreativity or Motivez
 4 00000001 14
 0 330E87F0 000000CC
 #
-SP (Neptune)
-0
-Kreativity or Motivez
-0 330E86CC 0000270F
-#
 Neptune Weapon Model
 0
 Kreativity or Motivez
@@ -205,9 +200,6 @@ Plutia Texture Model
 Kreativity or Motivez
 0 330E90E8 00000711
 #
-Plutia Accessory
-0 330E90EC 00000817
-#
 Plutia Weapon Model
 0
 Kreativity or Motivez
@@ -270,9 +262,6 @@ Noire Weapon Model
 0
 Kreativity or Motivez
 0 330E95E4 00000431
-#
-Noire Stat Booster
-0 330E95EC 000006E0
 #
 Noire Level 999
 0

@@ -1,7 +1,6 @@
 Also known as
 Agarest Generations Of War 2
 Agarest Senki 2
-
 #
 Max TP + PP + Gold After Gain
 0

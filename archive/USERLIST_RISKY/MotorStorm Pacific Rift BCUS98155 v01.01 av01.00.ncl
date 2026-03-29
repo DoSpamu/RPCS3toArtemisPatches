@@ -1,0 +1,19 @@
+60 FPS (RPCS3)
+0
+RPCS3
+0 00435D1C 60000000
+#
+Alternative Names
+0
+PARAM.SFO
+/*
+MotorStorm 2
+*/
+#
+Infinite Boost
+0
+dron_3
+0 0003F8AC EC210828
+0 0003F8B0 D0240030
+0 0003F8B4 4E800020
+#

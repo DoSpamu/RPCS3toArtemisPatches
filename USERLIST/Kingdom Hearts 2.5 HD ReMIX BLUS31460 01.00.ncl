@@ -11,7 +11,6 @@ fine for both, but since
 the codes are so different
 for whatever reason I left
 them apart.
-
 #
 Max Munny On Change
 0

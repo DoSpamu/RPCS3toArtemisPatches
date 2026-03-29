@@ -280,11 +280,6 @@ will be alert the instant
 you unfreeze them
 */
 #
-Max + Infinite Battery
-0
-jgduff1
-0 009EFEB8 D05C0000
-#
 Fast Health Regeneration
 0
 jgduff1

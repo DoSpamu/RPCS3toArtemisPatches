@@ -1,10 +1,10 @@
-Unlock FPS (RPCS3)
+Unlock FPS (RPCS3) [Tested]
 0
 RPCS3
 0 00679988 60000000
 0 01CC0424 453B8000
 #
-Infinite Health
+Infinite Health [Tested]
 0
 Peoples00
 0 007DD620 82E91A20
@@ -19,12 +19,12 @@ Peoples00
 SP and Zombie Mode
 */
 #
-Invincible Again Melee Attack (Zombie Mode)
+Invincible Again Melee Attack (Zombie Mode) [Tested]
 0
 Peoples00
 0 0020D898 60000000
 #
-Infinite Ammo
+Infinite Ammo [Tested]
 0
 Peoples00
 0 00A22580 386003E7
@@ -32,18 +32,18 @@ Peoples00
 0 00A22588 4B67FE00
 0 000A2384 489801FC
 #
-Infinite Ammo-No Reload + Infinite Grenades
+Infinite Ammo-No Reload + Infinite Grenades [Tested]
 0
 Peoples00
 0 000A1864 48000004
 #
-Infinite Ammo-No Reload + Infinite Grenades Launcher 
+Infinite Ammo-No Reload + Infinite Grenades Launcher  [Tested]
 0
 Peoples00
 0 00099320 48000010
 0 0009933C 60000000
 #
-Infinite Ammo-No Reload For Launcher
+Infinite Ammo-No Reload For Launcher [Tested]
 0
 Peoples00
 0 000A18BC 60000000
@@ -53,7 +53,7 @@ Grenades Launcher
 Rocket-Laucher/RPG-7
 */
 #
-Improved Accuracy 
+Improved Accuracy  [Tested]
 0
 Peoples00
 0 00090DE8 38000000
@@ -71,19 +71,19 @@ Peoples00
 0 0006AE88 60000000
 0 0006AE90 60000000
 #
-Freeze Zombie Movement
+Freeze Zombie Movement [Tested]
 0
 Peoples00
 0 002880B4 Z
 [Z]600000=ON;4807B5ED=OFF[/Z]
 #
-Max Score On Gain Zombie Mode
+Max Score On Gain Zombie Mode [Tested]
 0
 Peoples00
 0 0025A504 3FA03B9A
 0 0025A534 63BDC9FF
 #
-Max Total Kills-Headshoots Zombie Mode (Result)
+Max Total Kills-Headshoots Zombie Mode (Result) [Tested]
 0
 Peoples00
 0 00592350 91AC0000

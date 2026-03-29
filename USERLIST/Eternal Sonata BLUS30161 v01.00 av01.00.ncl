@@ -45,54 +45,6 @@ Max Speed
 xilium
 0 001E9348 3BC02710
 #
-Max Strength
-0
-Skiller
-0 001E9ACC 3BE02710
-/*
-It is likely for a
-different version of the
-game, and the address is
-possibly +0x10000 higher
-than it should be.
-*/
-#
-Max Magic
-0
-Skiller
-0 001E9AD0 3BA02710
-/*
-It is likely for a
-different version of the
-game, and the address is
-possibly +0x10000 higher
-than it should be.
-*/
-#
-Max Defense
-0
-Skiller
-0 001E9AD4 3B802710
-/*
-It is likely for a
-different version of the
-game, and the address is
-possibly +0x10000 higher
-than it should be.
-*/
-#
-Max Speed
-0
-Skiller
-0 001E9AD8 3BC02710
-/*
-It is likely for a
-different version of the
-game, and the address is
-possibly +0x10000 higher
-than it should be.
-*/
-#
 Quick LV Up Change Equip Before Battle Always
 0
 Skiller

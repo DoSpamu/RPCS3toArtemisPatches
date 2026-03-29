@@ -1,9 +1,9 @@
-Unlock FPS (RPCS3)
+Unlock FPS (RPCS3) [Tested]
 0
 RPCS3
 0 00C471C4 60000000
 #
-Portal
+Portal [Tested]
 0
 dron_3
 /*
@@ -14,12 +14,12 @@ The below codes are for
 Portal.
 */
 #
-God Mode
+God Mode [Tested]
 0
 dron_3
 0 00815724 54000630
 #
-Hold Jump For Ghost Mode
+Hold Jump For Ghost Mode [Tested]
 0
 dron_3
 0 0081427C 419E000C
@@ -29,13 +29,13 @@ dron_3
 0 0081428C 9BFA0146
 0 00814290 83FC0008
 #
-AoB God Mode
+AoB God Mode [Tested]
 0
 dron_3
 B 00010000 04000000
 B 540004622F800000409E0394 540006302F800000409E0394
 #
-AoB Hold Jump For Ghost Mode
+AoB Hold Jump For Ghost Mode [Tested]
 0
 dron_3
 B 00010000 04000000

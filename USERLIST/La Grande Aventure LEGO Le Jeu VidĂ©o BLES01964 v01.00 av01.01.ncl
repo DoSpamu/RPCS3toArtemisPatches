@@ -2,7 +2,7 @@ Alternative Names
 0
 PARAM.SFO
 /*
-La LEGO Película El Videojuego
+La LEGO Pelï¿½cula El Videojuego
 LEGO Przygoda Gra Wideo
 The LEGO Movie Videogame
 */

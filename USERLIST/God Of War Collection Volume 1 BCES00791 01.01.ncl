@@ -1,6 +1,3 @@
-/*God Of War 1*/
-
-#
 ASM Max + Infinite Health
 0
 jgduff1
@@ -56,25 +53,6 @@ jgduff1
 
 
 /*God Of War 2*/
-
-
-#
-ASM Max + Infinite Health
-0
-jgduff1
-0 00062470 60000000
-0 000624A8 D0030170
-0 000624B4 D3C30170
-0 000624CC EC3E002A
-0 000E4024 60000000
-0 000E6DFC 60000000
-#
-ASM Max + Infinite Magic
-0
-jgduff1
-0 0008D000 60000000
-0 0008D030 60000000
-0 0008D038 60000000
 #
 ASM Max + Infinite Orbs
 0

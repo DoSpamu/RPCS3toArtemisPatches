@@ -144,15 +144,6 @@ Needs Multiple
 Cheats Activated.
 */
 #
-Disable Level Up
-0 
-Hiei-YYH
-0 00CDCF8C 60000000
-/*
-Needs Multiple
-Cheats Activated.
-*/
-#
 Disable HP
 0 
 Hiei-YYH

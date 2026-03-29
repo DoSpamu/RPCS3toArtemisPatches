@@ -462,11 +462,6 @@ games24
 games24
 0 00357574 38A00063
 #
-Field Gauge Max On Change
-0
-games24
-0 0010CEB0 48000008
-#
 Field Event 3
 0
 games24

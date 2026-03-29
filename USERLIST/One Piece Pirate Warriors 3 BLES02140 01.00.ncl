@@ -59,16 +59,6 @@ Current Evaluation.
 FullCodes
 0 003B568C 93790100
 #
-Max Crew Assistance
-0
-Fullcodes
-0 0027E978 60000000
-/*
-This will guarantee S Rank
-on ! Obtained and Max Crew
-Exp on Battle.
-*/
-#
 Max Level On Growth
 0
 JorgeFFC
@@ -254,17 +244,6 @@ AoB 1 Hit for Instant Max Kizuna Rush
 FullCodes
 B 00010000 04000000
 B 38C0000060C5000090B901008BF90104 38C0000060C50000937901008BF90104
-#
-AoB Max Crew Assistance
-0
-Fullcodes + JorgeFFC
-B 00010000 04000000
-B 2827270F4181000860E80000B1090000 2827270F4181000860000000B1090000
-/*
-This will guarantee S Rank
-on ! Obtained and Max Crew
-Exp on Battle
-*/
 #
 AoB Max Level On Growth
 0

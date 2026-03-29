@@ -1,7 +1,6 @@
 Also known as
 Samurai Dou 3
 Samurai Dou 3 Plus
-
 #
 Max Money
 0

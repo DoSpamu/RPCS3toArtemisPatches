@@ -30,3 +30,13 @@ or win one. Race of B
 License to Reach LV 40.
 */
 #
+Unlock FPS v01.00 (RPCS3)
+0
+RPCS3
+0 008CFFB4 38800000
+#
+Unlock FPS v01.13 (RPCS3)
+0
+RPCS3
+0 00A0F640 38800000
+#

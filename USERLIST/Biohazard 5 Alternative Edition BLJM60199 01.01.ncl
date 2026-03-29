@@ -50,11 +50,6 @@ CodeUnique3
 0 3887972C FFFFFFFF
 0 38879730 00000001
 #
-Infinite Ammo
-0
-CodeUnique3
-0 38879714 000FFFFF
-#
 1P Invincible
 0
 puzzle

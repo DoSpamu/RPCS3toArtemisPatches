@@ -49,3 +49,8 @@ Ration 9999
 CodeFreak/PS3UserCheat
 0 0057DAE8 270F
 #
+Unlock FPS v02.00 (RPCS3)
+0
+RPCS3
+0 000DB720 4E800020
+#

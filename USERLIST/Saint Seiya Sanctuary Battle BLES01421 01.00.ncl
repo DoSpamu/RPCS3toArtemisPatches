@@ -2,7 +2,6 @@ Also known as
 Saint Seiya Senki
 Los Caballeros Del Zodiaco La Batalla Del Santuario
 Os Cavaleiros Do Zodiaco A Batalha Do Santuario
-
 #
 Infinite Cosmo (MP)
 0

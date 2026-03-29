@@ -198,11 +198,6 @@ GuitarMan
 0 017F9164 48C216B2
 0 00C216AC 497F9122
 #
-No Cooldown
-0
-GuitarMan
-0 00325E9C D3C30014
-#
 Infinite Upgrade Points
 0
 GuitarMan

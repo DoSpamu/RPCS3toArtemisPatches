@@ -57,7 +57,7 @@ Your default max health
 is set to 100, but I
 have it set to 1,600.
 */
-# 
+#
 AoB Infinite Ammo
 0
 Randy97Killa

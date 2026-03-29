@@ -170,12 +170,6 @@ dron_3
 B 00010000 04000000
 B 7CC31B787C67D92E 1C7800027C67D92E
 #
-Max Resources On Gain
-0
-dron_3
-B 00010000 04000000
-B 7C831B787C67F12E 1C7600027C67F12E
-#
 AoB Infinite Suppressor
 0
 dron_3
@@ -278,27 +272,11 @@ dron_3
 B 00010000 04000000
 B 78A5002030610070388000004901E5F5 38A0000030610070388000004901E5F5
 #
-File Info
-0
-bungholio
-/*
-The below codes modify
-prx_qui_ps3.sprx.
-*/
-#
 AoB Quiet + Camouflage Skulls One Hit Sleep Or Stun
 0
 dron_3
 B 00010000 04000000
 B 7C63D010B07C0012 7C631810B07C0012
-#
-File Info
-0
-bungholio
-/*
-The below codes modify
-prx_wmu_ps3.sprx.
-*/
 #
 AoB Mist + Armor Skulls One Hit Sleep Or Stun
 0
@@ -317,14 +295,6 @@ AoB Mist + Armor Skulls One Hit Kill
 dron_3
 B 00010000 04000000
 B EC42F82841810008 EC42102841810008
-#
-File Info
-0
-bungholio
-/*
-The below codes modify
-prx_sah_ps3.sprx.
-*/
 #
 AoB Sahelanthropus One Hit Kill
 0

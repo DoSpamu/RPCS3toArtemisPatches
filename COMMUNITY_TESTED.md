@@ -3,6 +3,8 @@
 Patches in this repo converted from RPCS3 patch.yml and PSXPlace forum research.
 Use on real PS3 with **Custom Firmware + Artemis PS3** (cheat tool).
 
+> Patches listed in the **✅ Confirmed** section below are marked `[Tested]` directly in their cheat name inside `USERLIST/`. You can identify them at a glance in the Artemis UI without consulting this document.
+
 ## Legend
 
 | Symbol | Meaning |
@@ -193,11 +195,13 @@ Access method: **Multiman** → back up game as **JB Folder** format → edit fi
 
 ## How to use
 
-1. Copy the `.ncl` file for your game to your PS3's Artemis codes folder
+1. Copy the `.ncl` file for your game from `USERLIST/` to `hdd0/game/ARTZ00001/USRDIR/USERLIST/` on your PS3 via FTP
 2. Launch Artemis, select your game, activate the FPS patch
 3. The patch activates immediately — no reboot needed
 
 > **Vblank note:** Patches labeled "Unlock FPS" remove the frame limiter — actual FPS depends on your PS3 model and game. Setting Vblank frequency higher in RPCS3 does NOT apply to real PS3 hardware (those patches are emulator-only).
+
+> **Version mismatch:** Patches labeled `v01.XX (RPCS3)` in the cheat name were written for a different game version than your file. They may still work, but test carefully and expect possible instability.
 
 ---
 

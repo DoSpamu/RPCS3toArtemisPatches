@@ -4,7 +4,7 @@ PARAM.SFO
 /*
 Ni No Kuni La Ira De La Bruja Blanca
 Ni No Kuni La Minaccia Della Strega Cinerea
-Ni No Kuni La Vengeance De La Sorcière Céleste
+Ni No Kuni La Vengeance De La Sorciï¿½re Cï¿½leste
 Ni No Kuni Wrath Of The White Witch
 Ninokuni Shiroki Seihai No Joou
 */

@@ -20,11 +20,6 @@ Medo
 0 002E25F4 809F0074
 0 002D2780 809F0074
 #
-Infinite Fate
-0
-Medo
-0 0042D464 38600109
-#
 Max Fate On Gain
 0
 Medo

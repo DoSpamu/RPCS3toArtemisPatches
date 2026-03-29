@@ -24,12 +24,6 @@ games24.blog.fc2.com/blog-entry-291.html
 B 00010000 04000000
 B 549B043E54BC043EFBE10098FBA10088 1F64Z54BC043EFBE10098FBA10088
 #
-Max Power For All Character
-0
-games24.blog.fc2.com/blog-entry-291.html
-B 00010000 04000000
-B 4181001038A00000418406080850000 4800001038A00000418400008608500000
-#
 AoB Strength Never Decreases For All Characters
 0
 games24.blog.fc2.com/blog-entry-291.html

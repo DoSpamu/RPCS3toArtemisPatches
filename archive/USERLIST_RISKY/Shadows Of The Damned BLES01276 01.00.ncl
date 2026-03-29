@@ -1,0 +1,16 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 009E0CE4 60000000
+0 009E0D64 60000000
+#
+No Move Enemy
+0
+xtatu
+0 00A45810 40800000
+#
+Hit Anywhere Torch
+0
+xtatu
+0 006007F0 00000000
+#

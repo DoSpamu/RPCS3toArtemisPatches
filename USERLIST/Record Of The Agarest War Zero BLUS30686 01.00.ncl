@@ -76,8 +76,3 @@ JorgeFFC
 JorgeFFC
 0 001726EC 3809270F
 #
-Items Never Decrease
-0
-JorgeFFC
-0 000BA390 419E0008
-#

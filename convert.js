@@ -211,13 +211,11 @@ function verMatches(fileVer, patchVers) {
 // ---------- Main ----------
 function main() {
   const risky = process.argv.includes('--risky');
-  const targetDir = risky
-    ? path.join(__dirname, 'USERLIST_RISKY')
-    : USERLIST_DIR;
-  const reportFile = risky ? 'conversion_report_risky.json' : 'conversion_report.json';
+  const targetDir = USERLIST_DIR;
+  const reportFile = 'conversion_report.json';
 
   if (risky) {
-    console.log('MODE: RISKY — version checking disabled, target: USERLIST_RISKY/');
+    console.log('MODE: RISKY — version checking disabled, target: USERLIST/');
     console.log('WARNING: Patches may use wrong memory addresses if game version differs!\n');
   }
 

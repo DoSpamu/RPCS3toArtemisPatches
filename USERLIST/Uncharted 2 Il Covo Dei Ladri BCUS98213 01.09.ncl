@@ -2,7 +2,6 @@ Also known as
 Uncharted 2 Among Thieves
 Uncharted 2 El Reino De Los Ladrones
 Uncharted Ougontou To Kieta Sendan
-
 #
 Infinite Health
 0

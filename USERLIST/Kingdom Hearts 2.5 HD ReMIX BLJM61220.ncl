@@ -13,9 +13,6 @@ Experience Stats
 Kreativity, Kronoaxis, Motivez, x66dme66x
 0 007756B0 04448DDA
 #
-Sora's Armor
-0 007744D4 01310000
-#
 Unlock All Items
 0
 Kreativity, Kronoaxis, Motivez, x66dme66x

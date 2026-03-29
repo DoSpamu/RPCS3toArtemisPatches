@@ -20,21 +20,6 @@ optantic
 0 003405BB 08
 0 00340727 08
 #
-Infinite Bombs
-0
-optantic
-0 0009C604 60000000
-/*
-Works the same as the
-other one. This one
-prevents the current
-bombs from being
-over-written with a new
-value while the previous
-one prevents the value
-from being decreased.
-*/
-#
 AoB Infinite Health
 0
 optantic

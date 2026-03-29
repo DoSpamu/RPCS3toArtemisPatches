@@ -1,6 +1,3 @@
-TMNT_r.sprx
-
-#
 Infinite Lives
 0
 dron_3

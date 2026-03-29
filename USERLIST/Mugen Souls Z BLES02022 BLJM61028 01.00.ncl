@@ -73,11 +73,6 @@ games24.blog.fc2.com/blog-entry-164.html
 0 00357274 4873AA35
 [Z]000A=10x;0064=100x;03E8=1000x;2710=10000x[/Z]
 #
-Infinite Item Usage
-0
-JorgeFFC
-0 00414B54 7CA42B78
-#
 Instant Peon
 0
 JorgeFFC

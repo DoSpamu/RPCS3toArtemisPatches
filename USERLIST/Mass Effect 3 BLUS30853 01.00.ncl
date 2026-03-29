@@ -11,3 +11,8 @@ Medo
 Only use it while in shop.
 */
 #
+Unlock FPS v01.10 (RPCS3)
+0
+RPCS3
+0 002A9928 60000000
+#

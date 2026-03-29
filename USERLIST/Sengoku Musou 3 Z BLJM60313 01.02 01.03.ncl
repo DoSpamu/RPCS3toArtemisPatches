@@ -14,11 +14,6 @@ Gold 9999999
 ChaosZage
 0 000E7BE8 60000000
 #
-Gold 9999999
-0
-ChaosZage
-0 000E7F68 60000000
-#
 Max Something
 0
 ChaosZage
@@ -54,12 +49,6 @@ ChaosZage
 0 000E5D20 3D400002
 0 000E5D24 394A869F
 #
-Exp 99999 While Gaining
-0
-ChaosZage
-0 000E60A0 3D400002
-0 000E60A4 394A869F
-#
 Limited Time Max
 0
 CodeFreak/PS3UserCheat
@@ -69,11 +58,6 @@ K.O. 9999 In Battle
 0
 ChaosZage
 0 000ACAFC 60000000
-#
-K.O. 9999 In Battle
-0
-ChaosZage
-0 000ACE40 60000000
 #
 P1 Infinite HP In Battle
 0

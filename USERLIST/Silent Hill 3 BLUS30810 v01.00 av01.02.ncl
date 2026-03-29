@@ -68,11 +68,6 @@ Invincibility
 GuitarMan
 0 001261D0 60000000
 #
-Infinite Health
-0
-GuitarMan
-0 00125D04 D07F019C
-#
 Never Tired
 0
 GuitarMan
@@ -192,11 +187,6 @@ GuitarMan
 0 003B1E54 48026A12
 0 00026A0C 483B1E26
 [Z]01=Return To Game Screen;06=Menu;09=Map;0A=Dailies?;0C=Advertising a Demo;0D=Advertising a Demo;0F=Bug Screen;10=Game Over Screen;11=Coming Soon.. SH3?;12=Load Screen;13=Save Screen;14=Save Screen;15=Game Screen;16=Game result, instantly beat the game;17=Game result, instantly beat the game;18=Game Screen;19=Save Anywhere[/Z]
-#
-Invincibility
-0
-bungholio
-0 001261B0 4E800020
 #
 Damage Fully Refills Health
 0

@@ -1,9 +1,9 @@
-Unlock FPS (RPCS3)
+Unlock FPS (RPCS3) [Tested]
 0
 RPCS3
 0 00AAED04 60000000
 #
-Invincible
+Invincible [Tested]
 0
 bungholio
 0 0036FBD8 4E800020
@@ -16,32 +16,32 @@ them will not make you
 flinch.
 */
 #
-Health Never Decreases
+Health Never Decreases [Tested]
 0
 bungholio
 0 00325B74 EC210828
 #
-Magic Never Decreases
+Magic Never Decreases [Tested]
 0
 bungholio
 0 00325B44 EC210828
 #
-Stamina Never Decreases
+Stamina Never Decreases [Tested]
 0
 bungholio
 0 00325B5C EC210828
 #
-Oxygen Never Decreases
+Oxygen Never Decreases [Tested]
 0
 bungholio
 0 00543FF8 60000000
 #
-Infinite Weapon Charge
+Infinite Weapon Charge [Tested]
 0
 bungholio
 0 0019C90C D009000C
 #
-Weapon And Armor Health Never Decrease
+Weapon And Armor Health Never Decrease [Tested]
 0
 bungholio
 0 0019BF98 D009000C
@@ -50,12 +50,12 @@ This affects everyone
 else too.
 */
 #
-Upgrade A Stat To Max 255
+Upgrade A Stat To Max 255 [Tested]
 0
 bungholio
 0 0001E864 3B8000FF
 #
-Max Stats
+Max Stats [Tested]
 0
 bungholio
 0 0001E90C 386000FF
@@ -76,7 +76,7 @@ through the game this way
 without fighting.
 */
 #
-Saveable Max Stats
+Saveable Max Stats [Tested]
 0
 bungholio
 0 0001E8F8 7C6307B4
@@ -95,45 +95,45 @@ only. Enemies will still
 attack.
 */
 #
-Max Skill Level On Increase
+Max Skill Level On Increase [Tested]
 0
 bungholio
 0 000BC900 3BE00064
 #
-Fast Leveling
+Fast Leveling [Tested]
 0
 bungholio
 0 00370C8C FFE00890
 0 00370C9C 48000078
 #
-Max Gold Or Items On Gain
+Max Gold Or Items On Gain [Tested]
 0
 bungholio
 0 001A56DC 3C803B9A
 0 001A56E4 6084C9FF
 #
-Max Gold Or Items On Loss
+Max Gold Or Items On Loss [Tested]
 0
 bungholio
 0 00267DB0 3D203B9A
 0 00267DB8 6129C9FF
 #
-Gold Or Items Never Decrease
+Gold Or Items Never Decrease [Tested]
 0
 bungholio
 0 00267DC0 60000000
 #
-Unlimited Training
+Unlimited Training [Tested]
 0
 bungholio
 0 00370BEC 39200000
 #
-Never Encumbered
+Never Encumbered [Tested]
 0
 bungholio
 0 0034B28C 4BFFFFB0
 #
-Temporary Effects Last Forever
+Temporary Effects Last Forever [Tested]
 0
 bungholio
 0 004253EC 39600000
@@ -149,12 +149,12 @@ paralyzing an enemy or an
 enemy paralyzing you too.
 */
 #
-Arrows Never Decrease
+Arrows Never Decrease [Tested]
 0
 bungholio
 0 0019AB88 60000000
 #
-Lockpicks Never Decrease
+Lockpicks Never Decrease [Tested]
 0
 bungholio
 0 005F8EE8 60000000
@@ -166,7 +166,7 @@ decrease seems to work
 fine for this.
 */
 #
-Hold Jump To Fly
+Hold Jump To Fly [Tested]
 0
 bungholio
 0 01455720 3C807700
@@ -189,7 +189,7 @@ bungholio
 0 014557D4 48D19FE2
 0 00D19FDC 49455722
 #
-AoB Invincible
+AoB Invincible [Tested]
 0
 bungholio
 B 00010000 04000000
@@ -203,37 +203,37 @@ them will not make you
 flinch.
 */
 #
-AoB Health Never Decreases
+AoB Health Never Decreases [Tested]
 0
 bungholio
 B 00010000 04000000
 B 7CE53B78C02304444BFFFA85 7CE53B78C0230444EC210828
 #
-AoB Magic Never Decreases
+AoB Magic Never Decreases [Tested]
 0
 bungholio
 B 00010000 04000000
 B 7CE53B78C02304484BFFFAB5 7CE53B78C0230448EC210828
 #
-AoB Stamina Never Decreases
+AoB Stamina Never Decreases [Tested]
 0
 bungholio
 B 00010000 04000000
 B 7CE53B78C023044C4BFFFA9D 7CE53B78C023044CEC210828
 #
-AoB Oxygen Never Decreases
+AoB Oxygen Never Decreases [Tested]
 0
 bungholio
 B 00010000 04000000
 B 4E800020D0230238 4E80002060000000
 #
-AoB Infinite Weapon Charge
+AoB Infinite Weapon Charge [Tested]
 0
 bungholio
 B 00010000 04000000
 B 4BEAF6FD2C2300007C691B783860001041820024E80100A0D3E9000C 4BEAF6FD2C2300007C691B783860001041820024E80100A0D009000C
 #
-AoB Weapon And Armor Health Never Decrease
+AoB Weapon And Armor Health Never Decrease [Tested]
 0
 bungholio
 B 00010000 04000000
@@ -243,13 +243,13 @@ This affects everyone
 else too.
 */
 #
-AoB Upgrade A Stat To Max 255
+AoB Upgrade A Stat To Max 255 [Tested]
 0
 bungholio
 B 00010000 04000000
 B 600000002FBD00007C6007B4 3B8000FF2FBD00007C6007B4
 #
-AoB Max Stats
+AoB Max Stats [Tested]
 0
 bungholio
 B 00010000 04000000
@@ -271,7 +271,7 @@ through the game this way
 without fighting.
 */
 #
-AoB Saveable Max Stats
+AoB Saveable Max Stats [Tested]
 0
 bungholio
 B 00010000 04000000
@@ -288,49 +288,49 @@ only. Enemies will still
 attack.
 */
 #
-AoB Max Skill Level On Increase
+AoB Max Skill Level On Increase [Tested]
 0
 bungholio
 B 00010000 04000000
 B 6000000038800200 3BE0006438800200
 #
-AoB Fast Leveling
+AoB Fast Leveling [Tested]
 0
 bungholio
 B 00010000 04000000
 B FF9F08007FE3FB7838A000006B860001419D0078 FFE008907FE3FB7838A000006B86000148000078
 #
-AoB Max Gold Or Items On Gain
+AoB Max Gold Or Items On Gain [Tested]
 0
 bungholio
 B 00010000 04000000
 B 7C9A1A147F83E3787C8407B4 3C803B9A7F83E3786084C9FF
 #
-AoB Max Gold Or Items On Loss
+AoB Max Gold Or Items On Loss [Tested]
 0
 bungholio
 B 00010000 04000000
 B 813B00047EFFBB787D374850 3D203B9A7EFFBB786129C9FF
 #
-AoB Gold Or Items Never Decrease
+AoB Gold Or Items Never Decrease [Tested]
 0
 bungholio
 B 00010000 04000000
 B 3AE00000913B0004 3AE0000060000000
 #
-AoB Unlimited Training
+AoB Unlimited Training [Tested]
 0
 bungholio
 B 00010000 04000000
 B 817D06687C0803A639290001 817D06687C0803A639200000
 #
-AoB Never Encumbered
+AoB Never Encumbered [Tested]
 0
 bungholio
 B 00010000 04000000
 B 7FE3FB78FF9F080040DDFFB0 7FE3FB78FF9F08004BFFFFB0
 #
-AoB Temporary Effects Last Forever
+AoB Temporary Effects Last Forever [Tested]
 0
 bungholio
 B 00010000 04000000
@@ -346,13 +346,13 @@ paralyzing an enemy or an
 enemy paralyzing you too.
 */
 #
-AoB Arrows Never Decrease
+AoB Arrows Never Decrease [Tested]
 0
 bungholio
 B 00010000 04000000
 B 419A004CB3E4000C 419A004C60000000
 #
-AoB Lockpicks Never Decrease
+AoB Lockpicks Never Decrease [Tested]
 0
 bungholio
 B 00010000 04000000
@@ -365,7 +365,7 @@ decrease seems to work
 fine for this.
 */
 #
-AoB Hold Jump To Fly
+AoB Hold Jump To Fly [Tested]
 0
 bungholio
 B 00010000 04000000

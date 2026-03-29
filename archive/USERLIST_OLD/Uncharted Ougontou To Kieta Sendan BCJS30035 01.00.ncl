@@ -1,0 +1,29 @@
+Debug Menu (RPCS3)
+0
+RPCS3
+0 00023C64 419E
+0 00062E10 60000000
+#
+60 FPS (RPCS3)
+0
+RPCS3
+0 000C9250 9163
+#
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 000C9250 9183
+#
+Alternative Names
+0
+PARAM.SFO
+/*
+Uncharted 2 Among Thieves
+*/
+#
+Max Money
+0
+rippchen
+0 00E9BD88 3B9AC9FF
+0 00E9BD8C 00000000
+#

@@ -27,12 +27,6 @@ Max + Infinite Money On Gain
 jgduff1
 0 00FA0714 9063000C
 #
-Infinite Health
-0
-jgduff1
-0 00968B08 60000000
-0 00968B24 939F0058
-#
 Max + Infinite Items On Gain
 0
 jgduff1

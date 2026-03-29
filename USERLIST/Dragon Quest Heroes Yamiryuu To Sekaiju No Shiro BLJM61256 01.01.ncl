@@ -165,11 +165,6 @@ whatever that means from
 the translation.
 */
 #
-MP Never Decreases
-0
-games24.blog.fc2.com/blog-entry-248.html
-0 0007F32C 60000000
-#
 Maximum tension fluctuation
 0
 games24.blog.fc2.com/blog-entry-248.html
@@ -227,12 +222,6 @@ games24.blog.fc2.com/blog-category-10.html
 0
 games24.blog.fc2.com/blog-category-10.html
 0 00128198 48000014
-#
-AoB MP Never Decreases
-0
-games24.blog.fc2.com/blog-entry-248.html
-B 00010000 04000000
-B FC401890FC20101ED0440200D821FFF0 60000000FC20101ED0440200D821FFF0
 #
 AoB Maximum tension fluctuation
 0

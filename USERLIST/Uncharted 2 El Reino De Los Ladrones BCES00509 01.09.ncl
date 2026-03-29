@@ -17,7 +17,6 @@ Also known as
 Uncharted 2 Among Thieves
 Uncharted 2 Il Covo Dei Ladri
 Uncharted Ougontou To Kieta Sendan
-
 #
 Infinite Health
 0

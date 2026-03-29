@@ -52,11 +52,6 @@ GuitarMan
 0 0086F0C0 4817347A
 0 00173474 4886F0B2
 #
-Infinite Ammo
-0
-GuitarMan
-0 001B235C 38A003E7
-#
 1 Hit Kill
 0
 GuitarMan

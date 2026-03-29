@@ -72,11 +72,12 @@ The script does not write patches. It converts existing ones from one text forma
 
 | Folder | Contents |
 |--------|----------|
-| `USERLIST/` | ~2,500 `.ncl` files; **310 files** have RPCS3 patches injected (**326 entries**) |
-| `USERLIST_RISKY/` | Same as above + **88 extra** version-mismatched patches |
-| `USERLIST_TESTED/` | **32 files** — only patches confirmed working on real PS3 hardware |
+| `USERLIST/` | **2,526 `.ncl` files** — all patches merged into one place |
 
-Full list of patched games: [PATCHED_GAMES.md](PATCHED_GAMES.md)
+- **310 files** have at least one `(RPCS3)` patch (326 entries total)
+- **74 files** include extra version-mismatched patches labeled `v01.XX (RPCS3)`
+- **277 patches** across 32 games are marked `[Tested]` — confirmed on real PS3 hardware
+
 Games skipped due to no matching `.ncl`: [SKIPPED_PATCHES.md](SKIPPED_PATCHES.md)
 
 ---
@@ -85,11 +86,12 @@ Games skipped due to no matching `.ncl`: [SKIPPED_PATCHES.md](SKIPPED_PATCHES.md
 
 Maybe. It depends on the game and the patch type.
 
-| Status | Meaning |
-|--------|---------|
-| `USERLIST_TESTED/` | Confirmed working on real PS3 (sourced from community reports) |
-| `USERLIST/` (RPCS3 label) | High confidence — same Cell CPU addresses, but not all verified on HW |
-| `USERLIST_RISKY/` | Version mismatch — the patch targets a different game version than your file |
+| Label in cheat name | Meaning |
+|---------------------|---------|
+| `[Tested]` | Confirmed working on real PS3 (sourced from community reports) |
+| `(RPCS3)` | High confidence — same Cell CPU addresses, but not all verified on HW |
+| `(PSXPlace)` | Written for real hardware by community modders |
+| `v01.XX (RPCS3)` | Version mismatch — patch targets a different game version; use with caution |
 
 See [COMMUNITY_TESTED.md](COMMUNITY_TESTED.md) for the full breakdown including known issues and games that crash.
 
@@ -112,21 +114,21 @@ See [COMMUNITY_TESTED.md](COMMUNITY_TESTED.md) for the full breakdown including 
 4. Open Artemis, find your game, enable the FPS patch
 5. Launch the game, then press **PS + Start** to attach cheats
 
-> Want more patches? Use `USERLIST_RISKY/` — 88 additional version-mismatched entries. Read the included README before using.
+> Patches marked `[Tested]` are confirmed working on real PS3 hardware. Patches labeled `v01.XX (RPCS3)` target a different game version — try them, but expect possible instability.
 
 ---
 
 ## Regenerating patches
 
 ```bash
-# Safe mode — version-matched patches only → USERLIST/
+# Add new RPCS3 patches to USERLIST/ (version-matched only)
 node convert.js
 
-# Risky mode — includes version-mismatched patches → USERLIST_RISKY/
+# Also include version-mismatched patches (labeled v01.XX in cheat name)
 node convert.js --risky
 ```
 
-Both commands are idempotent — already-converted patches are detected and skipped.
+Both commands are idempotent — already-converted patches are detected and skipped. Results are logged to `conversion_report.json`.
 
 ---
 

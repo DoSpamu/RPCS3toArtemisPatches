@@ -67,16 +67,6 @@ hnop.blog11.fc2.com, yuzuru.2ch.net/test/read.cgi/gameurawaza/1296550258/l50, ka
 0 011C0AA8 Z
 [Z]3F800000=Normal;3F000000=0.5x;3F400000=0.75x;3F600000=0.875x;3FA00000=1.25x;3FC00000=1.5x;3FE00000=1.75x;40000000=2x;40400000=3x;40800000=4x;40A00000=5x[/Z]
 #
-Max Money
-0
-Medo
-0 30564500 3B9AC9FF
-#
-Max Dahlia
-0
-Medo
-0 304DFEBC 3B9AC9FF
-#
 Max Exp
 0
 Medo

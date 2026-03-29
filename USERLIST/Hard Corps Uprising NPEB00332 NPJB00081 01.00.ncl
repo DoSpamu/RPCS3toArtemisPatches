@@ -35,12 +35,6 @@ CodeFreak/PS3UserCheat
 6 00000000 00001100
 0 00000000 000000E8
 #
-Infinite Health
-0
-dron_3
-0 0095133C 60000000
-0 009533E8 60000000
-#
 Infinite Lives
 0
 dron_3

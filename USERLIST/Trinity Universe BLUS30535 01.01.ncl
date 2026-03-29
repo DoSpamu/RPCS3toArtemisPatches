@@ -106,9 +106,6 @@ JorgeFFC
 JorgeFFC
 0 3B306AFC 000000C8
 #
-Memory Of Light
-0 3AF74C3F 63
-#
 AoB Max Money
 0
 sayde, Skiller

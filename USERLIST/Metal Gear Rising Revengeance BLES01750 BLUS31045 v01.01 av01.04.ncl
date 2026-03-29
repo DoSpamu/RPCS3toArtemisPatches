@@ -426,7 +426,8 @@ Individual Battle Timers Never Increase
 0
 bungholio
 0 00B22640 EC210828
-#Damage Multiplier
+#
+Damage Multiplier
 0
 bungholio
 0 01684FD8 38E00000
@@ -505,7 +506,8 @@ bungholio
 0 003643B0 38E00000 /* Blade Wolf */
 0 004CAE40 38E00000 /* Sam */
 0 009DF80C 38E00000 /* Raiden */
-#Any Damage Stuns Raiden's Cyborgs
+#
+Any Damage Stuns Raiden's Cyborgs
 0
 bungholio
 0 009D3ED4 60000000
@@ -682,7 +684,8 @@ Any Damage Electrically Stuns Raiden's File R-06's Sam
 0
 bungholio
 0 0005C074 3C600002
-#Any Damage Stuns Sam's Cyborgs
+#
+Any Damage Stuns Sam's Cyborgs
 0
 bungholio
 0 004BF5C0 60000000
@@ -945,7 +948,8 @@ Any Damage Electrically Stuns Blade Wolf's Khamsin
 0
 bungholio
 0 003099F0 3C600002
-#Invincibility For Raiden
+#
+Invincibility For Raiden
 0
 bungholio
 /* btl_sam_3 */
@@ -1018,7 +1022,8 @@ limping bit is set, and
 then if the character is
 File R-00 Raiden to
 determine whether to
-apply the exception.
+apply the exception.
+
 
 The other exception is
 File R-07 at the end
@@ -1649,7 +1654,8 @@ other things and break
 parts of the game, so
 disable it off as needed.
 */
-#Objective Marker Display
+#
+Objective Marker Display
 0
 bungholio
 0 00BFB3AC Z
@@ -2346,7 +2352,8 @@ far under the ground from
 the starting point of a
 level without a character
 and crashed from various
-input.
+input.
+
 
 The old character
 modifier was a 1 line

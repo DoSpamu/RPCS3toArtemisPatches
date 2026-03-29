@@ -2,7 +2,7 @@ Alternative Names
 0
 PARAM.SFO
 /*
-Ni No Kuni Der Fluch Der Weißen Königin
+Ni No Kuni Der Fluch Der Weiï¿½en Kï¿½nigin
 Ni No Kuni La Ira De La Bruja Blanca
 Ni No Kuni La Minaccia Della Strega Cinerea
 Ni No Kuni Wrath Of The White Witch

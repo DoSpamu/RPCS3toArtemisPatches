@@ -1,6 +1,3 @@
-scimitar_final.self
-
-#
 Max Money On Gain
 0
 ciao1102

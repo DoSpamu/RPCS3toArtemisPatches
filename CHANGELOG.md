@@ -4,6 +4,22 @@ All notable changes to this project will be documented here.
 
 ## [Unreleased]
 
+## [1.5.0] — 2026-03-29
+
+### Changed
+- **Single USERLIST folder** — merged `USERLIST/`, `USERLIST_RISKY/`, and `USERLIST_TESTED/` into one `USERLIST/` (2,526 files)
+  - Version-mismatched patches from the former `USERLIST_RISKY/` are now included directly, labeled `v01.XX (RPCS3)` in the cheat name
+  - Patches confirmed on real PS3 hardware (formerly `USERLIST_TESTED/`) are now marked `[Tested]` in the cheat name — 277 entries across 32 games
+  - 74 files gained additional risky-mode entries from the merge
+- `README.md`, `CLAUDE.md`, `COMMUNITY_TESTED.md` — updated throughout to reflect single-folder structure and new label conventions
+
+### Archived
+- `archive/USERLIST_OLD/` — pre-merge USERLIST snapshot
+- `archive/USERLIST_RISKY/` — superseded by inline `v01.XX` labels
+- `archive/USERLIST_TESTED/` — superseded by inline `[Tested]` labels
+- `archive/PATCHED_GAMES.md` — stale list; use `conversion_report.json` for machine-readable equivalent
+- `archive/patch_new.yml`, `archive/gh_*.json`, `archive/scraped_*.txt`, `archive/bucanero_codes.json` — research/source artifacts
+
 ## [1.4.0] — 2026-03-28
 
 ### Added

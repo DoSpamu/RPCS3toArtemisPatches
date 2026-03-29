@@ -68,12 +68,6 @@ GelsonSilva from ? ported by x_com
 OpGreece
 0 32F6A10C 3B9AC9FF
 #
-Infinite Health
-0
-Randy97Killa
-0 0041B3E4 60000000
-0 0043A7F8 60000000
-#
 Invincible From Melee Attack
 0
 Randy97Killa

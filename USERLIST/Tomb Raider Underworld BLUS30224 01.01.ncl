@@ -56,12 +56,6 @@ Infinite Oxygen
 Hiei-YYH
 0 00500FBC C18B0920
 #
-Infinite Ammo
-0
-Hiei-YYH
-0 00451CB0 38090000
-0 00454D6C 380B0000
-#
 Moon Jump
 0
 Hiei-YYH

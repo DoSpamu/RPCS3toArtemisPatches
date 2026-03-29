@@ -9,12 +9,6 @@ Invincibility
 GuitarMan
 0 0006C2CC 4E800020
 #
-Infinite HP
-0
-GuitarMan
-0 0043C8FC C0450618
-0 0043B2A8 D045061C
-#
 Infinite Soul Gauge
 0
 GuitarMan

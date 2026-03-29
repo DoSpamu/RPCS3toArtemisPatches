@@ -26,12 +26,6 @@ Infinite Health
 dron_3
 0 001969C0 48000008
 #
-Infinite Health
-dron_3
-6 011E235C 00000268
-6 00000000 00000118
-0 00000000 43480000
-#
 Infinite Void Power
 0
 dron_3

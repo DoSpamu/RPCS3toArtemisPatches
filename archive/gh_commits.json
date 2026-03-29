@@ -1,0 +1,822 @@
+[
+  {
+    "sha": "e67a06082a78e7491a59888b49f31ea2cc7b8d9a",
+    "node_id": "C_kwDOG1cBY9oAKGU2N2EwNjA4MmE3OGU3NDkxYTU5ODg4YjQ5ZjMxZWEyY2M3YjhkOWE",
+    "commit": {
+      "author": {
+        "name": "github-actions[bot]",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-03-24T21:17:44Z"
+      },
+      "committer": {
+        "name": "github-actions[bot]",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-03-24T21:17:44Z"
+      },
+      "message": "Update patch from remote - `2026-03-24 21:17:44 Tuesday (UTC +0000)`",
+      "tree": {
+        "sha": "ed56b77ec7c5f10b64c830d273413cb358075cfd",
+        "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/git/trees/ed56b77ec7c5f10b64c830d273413cb358075cfd"
+      },
+      "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/git/commits/e67a06082a78e7491a59888b49f31ea2cc7b8d9a",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/e67a06082a78e7491a59888b49f31ea2cc7b8d9a",
+    "html_url": "https://github.com/illusionyy/rpcs3-game-patch/commit/e67a06082a78e7491a59888b49f31ea2cc7b8d9a",
+    "comments_url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/e67a06082a78e7491a59888b49f31ea2cc7b8d9a/comments",
+    "author": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "1ce0df15ba806741514556d54077a407be8393b4",
+        "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/1ce0df15ba806741514556d54077a407be8393b4",
+        "html_url": "https://github.com/illusionyy/rpcs3-game-patch/commit/1ce0df15ba806741514556d54077a407be8393b4"
+      }
+    ]
+  },
+  {
+    "sha": "1ce0df15ba806741514556d54077a407be8393b4",
+    "node_id": "C_kwDOG1cBY9oAKDFjZTBkZjE1YmE4MDY3NDE1MTQ1NTZkNTQwNzdhNDA3YmU4MzkzYjQ",
+    "commit": {
+      "author": {
+        "name": "github-actions[bot]",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-03-24T15:31:08Z"
+      },
+      "committer": {
+        "name": "github-actions[bot]",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-03-24T15:31:08Z"
+      },
+      "message": "Update patch from remote - `2026-03-24 15:31:08 Tuesday (UTC +0000)`",
+      "tree": {
+        "sha": "147e5d0af70e379dbb8371be6e57e12a83adf572",
+        "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/git/trees/147e5d0af70e379dbb8371be6e57e12a83adf572"
+      },
+      "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/git/commits/1ce0df15ba806741514556d54077a407be8393b4",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/1ce0df15ba806741514556d54077a407be8393b4",
+    "html_url": "https://github.com/illusionyy/rpcs3-game-patch/commit/1ce0df15ba806741514556d54077a407be8393b4",
+    "comments_url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/1ce0df15ba806741514556d54077a407be8393b4/comments",
+    "author": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7a22bf38f72c297347089ad64a3756bc8ad23a0b",
+        "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/7a22bf38f72c297347089ad64a3756bc8ad23a0b",
+        "html_url": "https://github.com/illusionyy/rpcs3-game-patch/commit/7a22bf38f72c297347089ad64a3756bc8ad23a0b"
+      }
+    ]
+  },
+  {
+    "sha": "7a22bf38f72c297347089ad64a3756bc8ad23a0b",
+    "node_id": "C_kwDOG1cBY9oAKDdhMjJiZjM4ZjcyYzI5NzM0NzA4OWFkNjRhMzc1NmJjOGFkMjNhMGI",
+    "commit": {
+      "author": {
+        "name": "github-actions[bot]",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-03-15T11:10:28Z"
+      },
+      "committer": {
+        "name": "github-actions[bot]",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-03-15T11:10:28Z"
+      },
+      "message": "Update patch from remote - `2026-03-15 11:10:28 Sunday (UTC +0000)`",
+      "tree": {
+        "sha": "ad451d360365e20d226e7268add31c48051bc71e",
+        "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/git/trees/ad451d360365e20d226e7268add31c48051bc71e"
+      },
+      "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/git/commits/7a22bf38f72c297347089ad64a3756bc8ad23a0b",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/7a22bf38f72c297347089ad64a3756bc8ad23a0b",
+    "html_url": "https://github.com/illusionyy/rpcs3-game-patch/commit/7a22bf38f72c297347089ad64a3756bc8ad23a0b",
+    "comments_url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/7a22bf38f72c297347089ad64a3756bc8ad23a0b/comments",
+    "author": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "5d95b52bf60949200484d002c35d7f9e2ccd42e3",
+        "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/5d95b52bf60949200484d002c35d7f9e2ccd42e3",
+        "html_url": "https://github.com/illusionyy/rpcs3-game-patch/commit/5d95b52bf60949200484d002c35d7f9e2ccd42e3"
+      }
+    ]
+  },
+  {
+    "sha": "5d95b52bf60949200484d002c35d7f9e2ccd42e3",
+    "node_id": "C_kwDOG1cBY9oAKDVkOTViNTJiZjYwOTQ5MjAwNDg0ZDAwMmMzNWQ3ZjllMmNjZDQyZTM",
+    "commit": {
+      "author": {
+        "name": "github-actions[bot]",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-03-14T16:11:08Z"
+      },
+      "committer": {
+        "name": "github-actions[bot]",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-03-14T16:11:08Z"
+      },
+      "message": "Update patch from remote - `2026-03-14 16:11:08 Saturday (UTC +0000)`",
+      "tree": {
+        "sha": "cf5a4235a4e845e5320febd803a2675b161ab800",
+        "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/git/trees/cf5a4235a4e845e5320febd803a2675b161ab800"
+      },
+      "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/git/commits/5d95b52bf60949200484d002c35d7f9e2ccd42e3",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/5d95b52bf60949200484d002c35d7f9e2ccd42e3",
+    "html_url": "https://github.com/illusionyy/rpcs3-game-patch/commit/5d95b52bf60949200484d002c35d7f9e2ccd42e3",
+    "comments_url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/5d95b52bf60949200484d002c35d7f9e2ccd42e3/comments",
+    "author": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ae5a9eb3f645e96c60d0b771841afacaa85cc353",
+        "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/ae5a9eb3f645e96c60d0b771841afacaa85cc353",
+        "html_url": "https://github.com/illusionyy/rpcs3-game-patch/commit/ae5a9eb3f645e96c60d0b771841afacaa85cc353"
+      }
+    ]
+  },
+  {
+    "sha": "ae5a9eb3f645e96c60d0b771841afacaa85cc353",
+    "node_id": "C_kwDOG1cBY9oAKGFlNWE5ZWIzZjY0NWU5NmM2MGQwYjc3MTg0MWFmYWNhYTg1Y2MzNTM",
+    "commit": {
+      "author": {
+        "name": "github-actions[bot]",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-03-11T11:16:46Z"
+      },
+      "committer": {
+        "name": "github-actions[bot]",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-03-11T11:16:46Z"
+      },
+      "message": "Update patch from remote - `2026-03-11 11:16:46 Wednesday (UTC +0000)`",
+      "tree": {
+        "sha": "944ad210c86d725f95fe8a3ccd88649f1f78c3fb",
+        "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/git/trees/944ad210c86d725f95fe8a3ccd88649f1f78c3fb"
+      },
+      "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/git/commits/ae5a9eb3f645e96c60d0b771841afacaa85cc353",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/ae5a9eb3f645e96c60d0b771841afacaa85cc353",
+    "html_url": "https://github.com/illusionyy/rpcs3-game-patch/commit/ae5a9eb3f645e96c60d0b771841afacaa85cc353",
+    "comments_url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/ae5a9eb3f645e96c60d0b771841afacaa85cc353/comments",
+    "author": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "25c09b3e6ffff832f2cf6a3e8da92fbecd4750ef",
+        "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/25c09b3e6ffff832f2cf6a3e8da92fbecd4750ef",
+        "html_url": "https://github.com/illusionyy/rpcs3-game-patch/commit/25c09b3e6ffff832f2cf6a3e8da92fbecd4750ef"
+      }
+    ]
+  },
+  {
+    "sha": "25c09b3e6ffff832f2cf6a3e8da92fbecd4750ef",
+    "node_id": "C_kwDOG1cBY9oAKDI1YzA5YjNlNmZmZmY4MzJmMmNmNmEzZThkYTkyZmJlY2Q0NzUwZWY",
+    "commit": {
+      "author": {
+        "name": "github-actions[bot]",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-03-09T14:25:54Z"
+      },
+      "committer": {
+        "name": "github-actions[bot]",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-03-09T14:25:54Z"
+      },
+      "message": "Update patch from remote - `2026-03-09 14:25:54 Monday (UTC +0000)`",
+      "tree": {
+        "sha": "e422f7f48c4175bef9ee34ffb258995984a4d3e5",
+        "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/git/trees/e422f7f48c4175bef9ee34ffb258995984a4d3e5"
+      },
+      "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/git/commits/25c09b3e6ffff832f2cf6a3e8da92fbecd4750ef",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/25c09b3e6ffff832f2cf6a3e8da92fbecd4750ef",
+    "html_url": "https://github.com/illusionyy/rpcs3-game-patch/commit/25c09b3e6ffff832f2cf6a3e8da92fbecd4750ef",
+    "comments_url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/25c09b3e6ffff832f2cf6a3e8da92fbecd4750ef/comments",
+    "author": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "af94fd995b8d5e0d5efce240c6eb5aef56300728",
+        "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/af94fd995b8d5e0d5efce240c6eb5aef56300728",
+        "html_url": "https://github.com/illusionyy/rpcs3-game-patch/commit/af94fd995b8d5e0d5efce240c6eb5aef56300728"
+      }
+    ]
+  },
+  {
+    "sha": "af94fd995b8d5e0d5efce240c6eb5aef56300728",
+    "node_id": "C_kwDOG1cBY9oAKGFmOTRmZDk5NWI4ZDVlMGQ1ZWZjZTI0MGM2ZWI1YWVmNTYzMDA3Mjg",
+    "commit": {
+      "author": {
+        "name": "github-actions[bot]",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-03-09T13:34:37Z"
+      },
+      "committer": {
+        "name": "github-actions[bot]",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-03-09T13:34:37Z"
+      },
+      "message": "Update patch from remote - `2026-03-09 13:34:37 Monday (UTC +0000)`",
+      "tree": {
+        "sha": "d321806a74ee150b1f443adb0705e08b80d3812a",
+        "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/git/trees/d321806a74ee150b1f443adb0705e08b80d3812a"
+      },
+      "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/git/commits/af94fd995b8d5e0d5efce240c6eb5aef56300728",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/af94fd995b8d5e0d5efce240c6eb5aef56300728",
+    "html_url": "https://github.com/illusionyy/rpcs3-game-patch/commit/af94fd995b8d5e0d5efce240c6eb5aef56300728",
+    "comments_url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/af94fd995b8d5e0d5efce240c6eb5aef56300728/comments",
+    "author": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "9e6ad8aebd8b7c669b1cdd990cfee40cce04cf9c",
+        "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/9e6ad8aebd8b7c669b1cdd990cfee40cce04cf9c",
+        "html_url": "https://github.com/illusionyy/rpcs3-game-patch/commit/9e6ad8aebd8b7c669b1cdd990cfee40cce04cf9c"
+      }
+    ]
+  },
+  {
+    "sha": "9e6ad8aebd8b7c669b1cdd990cfee40cce04cf9c",
+    "node_id": "C_kwDOG1cBY9oAKDllNmFkOGFlYmQ4YjdjNjY5YjFjZGQ5OTBjZmVlNDBjY2UwNGNmOWM",
+    "commit": {
+      "author": {
+        "name": "github-actions[bot]",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-03-07T13:19:32Z"
+      },
+      "committer": {
+        "name": "github-actions[bot]",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-03-07T13:19:32Z"
+      },
+      "message": "Update patch from remote - `2026-03-07 13:19:32 Saturday (UTC +0000)`",
+      "tree": {
+        "sha": "9d4f1455d90c81c946c5b70321907ea685496ebb",
+        "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/git/trees/9d4f1455d90c81c946c5b70321907ea685496ebb"
+      },
+      "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/git/commits/9e6ad8aebd8b7c669b1cdd990cfee40cce04cf9c",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/9e6ad8aebd8b7c669b1cdd990cfee40cce04cf9c",
+    "html_url": "https://github.com/illusionyy/rpcs3-game-patch/commit/9e6ad8aebd8b7c669b1cdd990cfee40cce04cf9c",
+    "comments_url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/9e6ad8aebd8b7c669b1cdd990cfee40cce04cf9c/comments",
+    "author": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "ad3140d473fa8ff070b861aafbd6c55bebcc7421",
+        "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/ad3140d473fa8ff070b861aafbd6c55bebcc7421",
+        "html_url": "https://github.com/illusionyy/rpcs3-game-patch/commit/ad3140d473fa8ff070b861aafbd6c55bebcc7421"
+      }
+    ]
+  },
+  {
+    "sha": "8df98bc291231b01cbba201809ba211a4f3f0f3e",
+    "node_id": "C_kwDOG1cBY9oAKDhkZjk4YmMyOTEyMzFiMDFjYmJhMjAxODA5YmEyMTFhNGYzZjBmM2U",
+    "commit": {
+      "author": {
+        "name": "github-actions[bot]",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-03-06T22:10:42Z"
+      },
+      "committer": {
+        "name": "github-actions[bot]",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-03-06T22:10:42Z"
+      },
+      "message": "Update patch from remote - `2026-03-06 22:10:42 Friday (UTC +0000)`",
+      "tree": {
+        "sha": "a95d308fccaca0f75bf8328a71073c594eade8bd",
+        "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/git/trees/a95d308fccaca0f75bf8328a71073c594eade8bd"
+      },
+      "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/git/commits/8df98bc291231b01cbba201809ba211a4f3f0f3e",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/8df98bc291231b01cbba201809ba211a4f3f0f3e",
+    "html_url": "https://github.com/illusionyy/rpcs3-game-patch/commit/8df98bc291231b01cbba201809ba211a4f3f0f3e",
+    "comments_url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/8df98bc291231b01cbba201809ba211a4f3f0f3e/comments",
+    "author": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "7216fba0a225fb230e409c6da5678b7e28ef0a22",
+        "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/7216fba0a225fb230e409c6da5678b7e28ef0a22",
+        "html_url": "https://github.com/illusionyy/rpcs3-game-patch/commit/7216fba0a225fb230e409c6da5678b7e28ef0a22"
+      }
+    ]
+  },
+  {
+    "sha": "7216fba0a225fb230e409c6da5678b7e28ef0a22",
+    "node_id": "C_kwDOG1cBY9oAKDcyMTZmYmEwYTIyNWZiMjMwZTQwOWM2ZGE1Njc4YjdlMjhlZjBhMjI",
+    "commit": {
+      "author": {
+        "name": "github-actions[bot]",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-03-06T16:16:56Z"
+      },
+      "committer": {
+        "name": "github-actions[bot]",
+        "email": "41898282+github-actions[bot]@users.noreply.github.com",
+        "date": "2026-03-06T16:16:56Z"
+      },
+      "message": "Update patch from remote - `2026-03-06 16:16:56 Friday (UTC +0000)`",
+      "tree": {
+        "sha": "e5b3afba1edb29d2e3f0083ca6178ca69d0c9504",
+        "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/git/trees/e5b3afba1edb29d2e3f0083ca6178ca69d0c9504"
+      },
+      "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/git/commits/7216fba0a225fb230e409c6da5678b7e28ef0a22",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null,
+        "verified_at": null
+      }
+    },
+    "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/7216fba0a225fb230e409c6da5678b7e28ef0a22",
+    "html_url": "https://github.com/illusionyy/rpcs3-game-patch/commit/7216fba0a225fb230e409c6da5678b7e28ef0a22",
+    "comments_url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/7216fba0a225fb230e409c6da5678b7e28ef0a22/comments",
+    "author": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "github-actions[bot]",
+      "id": 41898282,
+      "node_id": "MDM6Qm90NDE4OTgyODI=",
+      "avatar_url": "https://avatars.githubusercontent.com/in/15368?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/github-actions%5Bbot%5D",
+      "html_url": "https://github.com/apps/github-actions",
+      "followers_url": "https://api.github.com/users/github-actions%5Bbot%5D/followers",
+      "following_url": "https://api.github.com/users/github-actions%5Bbot%5D/following{/other_user}",
+      "gists_url": "https://api.github.com/users/github-actions%5Bbot%5D/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/github-actions%5Bbot%5D/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/github-actions%5Bbot%5D/subscriptions",
+      "organizations_url": "https://api.github.com/users/github-actions%5Bbot%5D/orgs",
+      "repos_url": "https://api.github.com/users/github-actions%5Bbot%5D/repos",
+      "events_url": "https://api.github.com/users/github-actions%5Bbot%5D/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/github-actions%5Bbot%5D/received_events",
+      "type": "Bot",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "parents": [
+      {
+        "sha": "02eec9be6a684b55d4530f67dcd4cf5390667508",
+        "url": "https://api.github.com/repos/illusionyy/rpcs3-game-patch/commits/02eec9be6a684b55d4530f67dcd4cf5390667508",
+        "html_url": "https://github.com/illusionyy/rpcs3-game-patch/commit/02eec9be6a684b55d4530f67dcd4cf5390667508"
+      }
+    ]
+  }
+]

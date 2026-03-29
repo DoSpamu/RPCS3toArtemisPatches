@@ -3,28 +3,28 @@ Debug Menu (RPCS3)
 RPCS3
 0 00B336F4 38600001
 #
-Extended FOV (PSXPlace)
+Extended FOV (PSXPlace) [Tested]
 0
 vFxMz
 0 00EC096C 3F266666
 #
-God Mode
+God Mode [Tested]
 0
 dron_3
 0 000CE7EC 60000000
 #
-Debug Options
+Debug Options [Tested]
 0
 dron_3
 0 00B336F4 38600001
 #
-AoB God Mode
+AoB God Mode [Tested]
 0
 dron_3
 B 00010000 04000000
 B 40820008386000012C030000418200242C040000 60000000386000012C030000418200242C040000
 #
-AoB Debug Options
+AoB Debug Options [Tested]
 0
 dron_3
 B 00010000 04000000

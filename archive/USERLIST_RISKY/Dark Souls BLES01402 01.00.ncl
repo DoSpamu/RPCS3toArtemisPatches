@@ -1,0 +1,112 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 001466D0 38800002
+0 001466D4 989F070C
+0 001466D8 989F070D
+0 00141C78 494447F9
+0 01586470 7EAC42E6
+0 01586474 3EC0017D
+0 01586478 62D6E3F8
+0 0158647C 7E96A02A
+0 01586480 FAB60000
+0 01586484 7E74A850
+0 01586488 FA7600E0
+0 0158648C CBD600E0
+0 01586490 FFC0F69C
+0 01586494 FFC0F018
+0 01586498 3E400158
+0 0158649C 62526470
+0 015864A0 C3B20054
+0 015864A4 C3920058
+0 015864A8 FFFEE824
+0 015864AC FF9FE000
+0 015864B0 419C0008
+0 015864B4 FFE0E090
+0 015864B8 7E94A278
+0 015864BC 7E94A278
+0 015864C0 4E800020
+0 015864C4 4C989680
+0 015864C8 3D4CCCCD
+#
+Max Souls
+0
+Medo, Skiller
+0 00AF0FC4 3D403E80
+#
+Damage (Player + Enemy)
+0
+Medo
+0 0199C790 60000000
+0 0199C79C 60000000
+#
+Max Equipment Load
+0
+Medo
+0 0199C71C 49499000
+#
+Max Stats
+0
+Medo
+0 0199C76C 49000000
+#
+Max Items on Use + Discard + Buy + Deposit in Storage
+0
+Medo
+0 00BC3A68 60000000
+#
+Infinite Magic + Miracles + Pyromancy Slot 1
+0
+Medo
+0 00BCC2B4 30A90004
+#
+Infinite Magic + Miracles + Pyromancy Slot 2
+0
+Medo
+0 00BCC2F4 30A90004
+#
+Infinite Magic + Miracles + Pyromancy Slot 3
+0
+Medo
+0 00BCC334 30A90004
+#
+Infinite Magic + Miracles + Pyromancy Slot 4
+0
+Medo
+0 00BCC374 30A90004
+#
+Infinite Magic + Miracles + Pyromancy Slot 5
+0
+Medo
+0 00BCC3B4 30A90004
+#
+Infinite Magic + Miracles + Pyromancy Slot 6
+0
+Medo
+0 00BCC3F4 30A90004
+#
+Infinite Magic + Miracles + Pyromancy Slot 7
+0
+Medo
+0 00BCC434 30A90004
+#
+Infinite Magic + Miracles + Pyromancy Slot 8
+0
+Medo
+0 00BCC474 30A90004
+#
+Infinite Magic + Miracles + Pyromancy Slot 9
+0
+Medo
+0 00BCC4B4 30A90004
+#
+Infinite Magic + Miracles + Pyromancy Slot 10
+0
+Medo
+0 00BCC4F4 30A90004
+#
+Fly Mode (Useless)
+0
+Medo
+0 0199B188 34000001
+#

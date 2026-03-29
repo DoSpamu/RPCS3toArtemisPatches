@@ -252,7 +252,6 @@ bungholio
 0 00080B1C 3BA000Z
 [Z]01=Dietician;02=Master;03=Gladiator;04=Sentry;05=Tutor;06=Coach;07=Marksman;08=Physician;0B=Muscleman;0C=Sprinter;0D=Nerd;0E=Hard Worker;0F=Patient;10=Sniper;15=Alchemist;16=Hypnotist;17=Witch Doctor;18=Amnesiac;19=Gangster;1A=Professional;1F=Collector;20=Collector;21=Collector;22=Collector;29=Pharmacist;2A=Coffee Maker;2B=Medicine Man;2C=Psychologist;2D=Social Worker;2E=Firefighter;2F=Aeronaut;30=Cryophile;33=Fist Fighter;34=Fencer;35=Lancer;36=Eros;37=Deadeye;38=Lumberjack;39=Cane Man;3A=Monster Hunter;3B=Guardian;3D=Broker;3E=Statistician;3F=Manager;40=Armsmaster;41=Mentor;42=Artisan;47=Evility Lover;48=Magichange Lover;6F=Mediater;70=Teacher;83=Item General;84=Item King;85=Item God;86=Item God 2;87=Class Secretary;88=Class Treasurer;89=Class President;8A=Class President;8D=Bailiff;C9=Kinder Gardener;CA=Berry Picker;CB=Secret Trainer;CC=Hop Step Cheer;CD=High Spiriter;CE=Glutton;CF=Punisher;D0=Sweet Tempter;D1=Mana Robber;D2=Cat Burglar;D3=All Digger;D4=Trash Talker;D5=Rubber;D6=Sensationalist;D7=Wuss;D8=Town Crier;D9=Sun Bather;DA=Joke Slapper;DB=Motivator;DC=Medium Rare;DD=Heat Seeker;DE=Smeller;DF=Fluffifier;E0=Mode Changer;E1=Reaper[/Z]
 #
-#
 Newly Created Or Reincarnated Characters Start With Max Mana
 0
 bungholio

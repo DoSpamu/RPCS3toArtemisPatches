@@ -17,7 +17,6 @@ Also known as
 Uncharted 2 El Reino De Los Ladrones
 Uncharted 2 Honor Among Thieves
 Uncharted Ougontou To Kieta Sendan
-
 #
 Dev Menu
 0

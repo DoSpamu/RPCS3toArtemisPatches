@@ -553,107 +553,133 @@ Memory 999,999,999 Gil
 games24.blog.fc2.com/blog-entry-228.html
 0 02058FA8 3B9AC9FF
 #
-Memory Tiida Base Max HP0
+Memory Tiida Base Max HP
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A830 3B9AC9FF
 #
-Memory Tiida Base Max MP0
+Memory Tiida Base Max MP
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A834 3B9AC9FF
 #
-Memory Tiida Base Attack Power0
+Memory Tiida Base Attack Power
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A838 63
 #
-Memory Tiida Base Physical Defense0
+Memory Tiida Base Physical Defense
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A839 63
 #
-Memory Tiida Base Magic Power0
+Memory Tiida Base Magic Power
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A83A 63
 #
-Memory Tiida Base Magic Defense0
+Memory Tiida Base Magic Defense
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A83B 63
 #
-Memory Tiida Base Quickness0
+Memory Tiida Base Quickness
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A83C 63
 #
-Memory Tiida Base Luck0
+Memory Tiida Base Luck
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A83D 63
 #
-Memory Tiida Base Avoidance0
+Memory Tiida Base Avoidance
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A83E 63
 #
-Memory Tiida Base Hit0
+Memory Tiida Base Hit
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A83F 63
 #
-Memory Tiida Adjusted Current HP0
+Memory Tiida Adjusted Current HP
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A848 3B9AC9FF
 #
-Memory Tiida Adjusted Current MP0
+Memory Tiida Adjusted Current MP
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A84C 3B9AC9FF
 #
-Memory Tiida Adjusted Maximum HP0
+Memory Tiida Adjusted Maximum HP
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A850 3B9AC9FF
 #
-Memory Tiida Adjusted Maximum MP0
+Memory Tiida Adjusted Maximum MP
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A854 3B9AC9FF
 #
-Memory Tiida Adjusted Attack Power0
+Memory Tiida Adjusted Attack Power
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A85B 63
 #
-Memory Tiida Adjusted Physical Defense0
+Memory Tiida Adjusted Physical Defense
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A85C 63
 #
-Memory Tiida Adjusted Magic Power0
+Memory Tiida Adjusted Magic Power
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A85D 63
 #
-Memory Tiida Adjusted Magic Defense0
+Memory Tiida Adjusted Magic Defense
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A85E 63
 #
-Memory Tiida Adjusted Quickness0
+Memory Tiida Adjusted Quickness
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A85F 63
 #
-Memory Tiida Adjusted Luck0
+Memory Tiida Adjusted Luck
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A860 63
 #
-Memory Tiida Adjusted Avoidance0
+Memory Tiida Adjusted Avoidance
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A861 63
 #
-Memory Tiida Adjusted Hit0
+Memory Tiida Adjusted Hit
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A862 63
 #
-Memory Tiida Over Limit Gauge0
+Memory Tiida Over Limit Gauge
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A865 63
 #
-Memory Tiida S Level0
+Memory Tiida S Level
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A867 0C
 #
-Memory Tiida Cumulative S Level0
+Memory Tiida Cumulative S Level
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A868 0C
 #
-Memory Tiida Ability0
+Memory Tiida Ability
+0
 games24.blog.fc2.com/blog-entry-228.html
 0 0205A86A FFFB
 0 0205A86C FFFFFFFF
@@ -682,11 +708,6 @@ Memory In Battle Character 1 Current ODG
 games24.blog.fc2.com/blog-entry-228.html
 0 011CA1BF 63
 0 011CA1C3 63
-#
-All Result Plates
-0
-games24.blog.fc2.com/blog-entry-228.html
-0 00359A7C 40820008
 #
 All Dresses + Commands At Game Start
 0
@@ -845,12 +866,6 @@ B 00010000 04000000
 B 4180003C2C03000040810034889F5607 600000002C03000040810034889F5607
 B 00010000 04000000
 B 0006390DF55E4 306400633880000038A0006390DF55E4
-#
-AoB All Result Plates
-0
-games24.blog.fc2.com/blog-entry-228.html
-B 00010000 04000000
-B 41820008608300004E800020F821FF817C0802A6 40820008608300004E800020F821FF817C0802A6
 #
 AoB All Dresses + Commands At Game Start
 0

@@ -26,11 +26,6 @@ Hiei-YYH
 0 00BFF8FC 1F9CZ
 [Z]000A=10x;0064=100x;03E8=1000x;2710=10000x[/Z]
 #
-Infinite Health
-0
-FBML
-0 00B96A74 60000000
-#
 Max Suit Level When Gaining XP Points
 0
 FBML

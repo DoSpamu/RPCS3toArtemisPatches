@@ -1,6 +1,3 @@
-/*Sly Cooper 1*/
-
-#
 Memory Infinite Health
 0
 jgduff1
@@ -34,51 +31,4 @@ jgduff1
 
 
 /*Sly Cooper 2*/
-
-
-#
-Memory Infinite Health
-0
-jgduff1
-0 0073495E 0028
-#
-ASM Infinite Health
-0
-jgduff1
-0 000AC768 912A0028
-#
-Memory Infinite Coins
-0
-jgduff1
-0 007349AC 0098967E
-#
-Memory Max Bottles
-0
-jgduff1
-0 00741DB4 0000001E
-#
-ASM Max Bottles
-0
-jgduff1
-0 000DA1FC 913C001E
-#
-
-
-/*Sly Cooper 3*/
-
-
-#
-Memory Infinite Health
-0
-jgduff1
-0 356897C8 00000028
-0 357F7B08 00000028
-#
-ASM Infinite Health
-0
-jgduff1
-0 0010E1B0 60000000
-/*
-It also affects enemies.
-*/
 #

@@ -1,9 +1,9 @@
-Unlock FPS (RPCS3)
+Unlock FPS (RPCS3) [Tested]
 0
 RPCS3
 0 00F18840 00000000
 #
-File Info
+File Info [Tested]
 0
 bungholio
 /*
@@ -14,13 +14,13 @@ actual code is slightly
 different.
 */
 #
-ASM Lot Of Money On Gain
+ASM Lot Of Money On Gain [Tested]
 0
 jgduff1
 0 0018C5D0 7C001214
 0 0018C5D8 92F904D0
 #
-ASM Reserve Ammo + Ammo In Clip Never Decrease
+ASM Reserve Ammo + Ammo In Clip Never Decrease [Tested]
 0
 jgduff1
 0 0066BFD4 380B0000
@@ -28,7 +28,7 @@ jgduff1
 0 0066BFE4 39290000
 0 0066BFF4 60000000
 #
-ASM Stars Never Increase
+ASM Stars Never Increase [Tested]
 0
 jgduff1
 0 0022B824 Z /*Ballad Of Gay Tony + The Lost & Damned*/
@@ -43,13 +43,13 @@ Deactivate if the mission
 needs police pursuit.
 */
 #
-Max Money
+Max Money [Tested]
 0
 Hiei-YYH
 0 00404794 60000000
 0 004047A8 60000000
 #
-Infinite HP + Armour + No Wanted Level
+Infinite HP + Armour + No Wanted Level [Tested]
 0
 Hiei-YYH
 0 00D213A8 8BBC0211
@@ -65,39 +65,39 @@ Hiei-YYH
 0 00D213D0 4818D2DE
 0 0018D2D8 48D213AA
 #
-Invincibility
+Invincibility [Tested]
 0
 xtatu
 0 0066A950 419EFF40
 #
-No Police
+No Police [Tested]
 0
 xtatu
 0 00EFE338 00000000
 #
-Car Speed Modifier
+Car Speed Modifier [Tested]
 0
 xtatu
 0 00136374 3C00Z
 [Z]3F80=Normal;3FA0=1.25x;3FC0=1.5x;3FE0=1.75x;4000=2x;4040=3x;4080=4x;40A0=5x;40C0=6x;40E0=7x;4100=8x;4110=9x;4120=10x[/Z]
 #
-Run Speed Modifier
+Run Speed Modifier [Tested]
 0
 xtatu
 0 002EA270 3C00Z
 [Z]3F80=Normal;3FA0=1.25x;3FC0=1.5x;3FE0=1.75x;4000=2x;4040=3x;4080=4x;40A0=5x;40C0=6x;40E0=7x;4100=8x;4110=9x;4120=10x[/Z]
 #
-1,000 Hit Kill Ammo
+1,000 Hit Kill Ammo [Tested]
 0
 xtatu
 0 0066B728 3C00447A
 #
-Rapid Fire
+Rapid Fire [Tested]
 0
 xtatu
 0 0066C4B4 3D2042C8
 #
-AoB Invincibility
+AoB Invincibility [Tested]
 0
 xtatu
 B 00010000 04000000

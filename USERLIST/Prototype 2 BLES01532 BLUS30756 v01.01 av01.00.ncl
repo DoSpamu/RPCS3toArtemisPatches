@@ -1224,7 +1224,6 @@ can be 1 of 3 values:
 02 = Set value to 7F7F7F7F
 */
 #
-#
 AoB Firing Fully Refills Ammo
 0
 bungholio

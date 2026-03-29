@@ -35,11 +35,6 @@ Remove Upgrade Available on Screen
 Hiei-YYH
 0 00AFC204 38A00000
 #
-Infinite Health
-0
-GuitarMan
-0 00B5C220 90A44900
-#
 Invincibility
 0
 GuitarMan

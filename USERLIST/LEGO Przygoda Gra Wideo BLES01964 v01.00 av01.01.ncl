@@ -2,8 +2,8 @@ Alternative Names
 0
 PARAM.SFO
 /*
-La Grande Aventure LEGO Le Jeu Vidéo
-La LEGO Película El Videojuego
+La Grande Aventure LEGO Le Jeu Vidï¿½o
+La LEGO Pelï¿½cula El Videojuego
 The LEGO Movie Videogame
 */
 #

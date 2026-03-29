@@ -3,7 +3,7 @@ Alternative Names
 PARAM.SFO
 /*
 Mercenaries 2 Inferno Di Fuoco
-Mercenaries 2 L’Enfer Des Favelas
+Mercenaries 2 Lï¿½Enfer Des Favelas
 */
 #
 Infinite Ammo

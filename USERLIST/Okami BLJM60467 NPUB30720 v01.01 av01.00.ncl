@@ -508,47 +508,6 @@ becomes 0 and things
 behave like normal.
 */
 #
-Toggle Day Or Night Behavior With R3 + >
-0
-bungholio
-B 00010000 04000000
-B 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000255350555253204A4F4220494E464F250000608000000040FFFFFFFFFFFFFFFF 3C6000468863F0122B830001419E0010419D00147C8307B4480000083860000148000008386000004E800020255350555253204A4F4220494E464F250000608000000040FFFFFFFFFFFFFFFF
-B 00010000 04000000
-B 419E0028813E8004808902604BFFE5297FE31A787C60FE707C091A787D2048503929FFFF55240FFEE80100907C8307B4 419E0028813E8004808902604BFFE5297FE31A787C60FE707C091A787D2048503929FFFF55240FFEE801009048B196A7
-/*
-Requires the button
-enable code to be
-activated or nothing will
-happen when you press the
-button combo.
-
-The value starts at 0
-making the game behave
-like normal.
-
-Press R3 + > and it
-becomes 1 and makes day
-stuff appear, so if it
-were night and you were
-standing next to buried
-treasure, it will no
-longer have the glow that
-makes it very easy to
-spot.
-
-Press R3 + > again, it
-becomes 2 and you see
-night things. You will
-see treasures sticking
-out of the ground and
-stuff easily even during
-the day.
-
-Press R3 + > again, it
-becomes 0 and things
-behave like normal.
-*/
-#
 Toggle Disabling Battles With Scrolls With L3 + >
 0
 bungholio

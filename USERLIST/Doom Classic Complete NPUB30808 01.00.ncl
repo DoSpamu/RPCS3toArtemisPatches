@@ -142,35 +142,17 @@ bungholio
 0 00127548 60000002
 0 00127550 900A00C4
 #
-Have Blue Key
-0
-bungholio
-0 001283EC 38000001
-0 001283F0 900B0044
-#
 Have Blue Skull
 0
 bungholio
 0 00128418 38000001
 0 00128420 90090050
 #
-Have Yellow Key
-0
-bungholio
-0 00128438 38000001
-0 0012843C 900B0048
-#
 Have Yellow Skull
 0
 bungholio
 0 00128464 38000001
 0 0012846C 90090054
-#
-Have Red Key
-0
-bungholio
-0 00128484 38000001
-0 00128488 900B004C
 #
 Have Red Skull
 0
@@ -218,11 +200,6 @@ Have Light Amplifier Active
 bungholio
 0 0011B5A0 39207F7F
 0 0011B5A8 913F0040
-#
-Rapid Fire
-0
-bungholio
-0 0010DD4C 38000000
 #
 Infinite Ammo
 0

@@ -60,8 +60,6 @@ jgduff1
 
 
 /*Time Crisis 4*/
-
-
 #
 Memory Infinite Ammo + No Reload
 0
@@ -92,22 +90,6 @@ ASM Max Scores On 1 Kil
 0
 jgduff1
 0 0017B71C 91BF0220
-#
-
-
-/*Deadstorm Pirates*/
-
-
-#
-Memory Infinite Health
-0
-jgduff1
-0 332374D4 42C80000
-#
-ASM Infinite Health
-0
-jgduff1
-0 000FB9C8 60000000
 #
 Memory Infinite Credits
 0

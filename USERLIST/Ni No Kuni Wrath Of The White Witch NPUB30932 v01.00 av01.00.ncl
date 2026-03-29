@@ -2,10 +2,10 @@ Alternative Names
 0
 PARAM.SFO
 /*
-Ni No Kuni Der Fluch Der Weißen Königin
+Ni No Kuni Der Fluch Der Weiï¿½en Kï¿½nigin
 Ni No Kuni La Ira De La Bruja Blanca
 Ni No Kuni La Minaccia Della Strega Cinerea
-Ni No Kuni La Vengeance De La Sorcière Céleste
+Ni No Kuni La Vengeance De La Sorciï¿½re Cï¿½leste
 Ninokuni Shiroki Seihai No Joou
 */
 #
@@ -514,7 +514,7 @@ Important Items
 0039 = E933B6EE = Traveler's Diary (Teeheeti)
 003A = C21EE52D = Traveler's Diary (Pig Iron Plain)
 003B = DB05D46C = Traveler's Diary (Winter Wonderlands)
-003C = 944442AB = Traveler's Diary (Nazcaä)
+003C = 944442AB = Traveler's Diary (Nazcaï¿½)
 003D = 8D5F73EA = Traveler's Diary (Ding Dong Dell Ancient Ruins)
 003E = A6722029 = Spirit of the Woods
 003F = BF691168 = Spirit of the Glade
@@ -776,7 +776,7 @@ Weapons
 0130 = DEAED3C3 = Night Blade
 0131 = 721B9CCF = Skyfall Sword
 0132 = A19F99DF = Celestial Sword
-0133 = 93A9FB5D = Nazcaän Longsword
+0133 = 93A9FB5D = Nazcaï¿½n Longsword
 0134 = B884A89E = Primordial Sword
 0135 = 8AB2CA1C = Soppy Slapstick
 0136 = B0AEE25F = Kitchen Knife
@@ -885,7 +885,7 @@ Armor
 019A = 825A1128 = Boarland's Armor
 019B = 51DE1438 = Armor of Justice
 019C = 48C52579 = Brilliant Armor
-019D = 35B2D13C = Nazcaän Armor
+019D = 35B2D13C = Nazcaï¿½n Armor
 019E = 63E876BA = Celestial Armor
 019F = 7AF347FB = War God's Armor
 01A0 = 40EF6FB8 = Rustic Garb
@@ -933,7 +933,7 @@ Armor
 01CA = B9549205 = Champion's Helm
 01CB = A04FA344 = Blessed Helm
 01CC = 8B62F087 = Helm of Hamelin
-01CD = 15E1DD09 = Nazcaän Helm
+01CD = 15E1DD09 = Nazcaï¿½n Helm
 01CE = 9279C1C6 = War God's Helm
 01CF = 97EEE8B9 = Leafy Mantle
 01D0 = 8EF5D9F8 = Snakeskin Cloak
@@ -1716,7 +1716,7 @@ Important Items
 0039 = E933B6EE = Traveler's Diary (Teeheeti)
 003A = C21EE52D = Traveler's Diary (Pig Iron Plain)
 003B = DB05D46C = Traveler's Diary (Winter Wonderlands)
-003C = 944442AB = Traveler's Diary (Nazcaä)
+003C = 944442AB = Traveler's Diary (Nazcaï¿½)
 003D = 8D5F73EA = Traveler's Diary (Ding Dong Dell Ancient Ruins)
 003E = A6722029 = Spirit of the Woods
 003F = BF691168 = Spirit of the Glade
@@ -1978,7 +1978,7 @@ Weapons
 0130 = DEAED3C3 = Night Blade
 0131 = 721B9CCF = Skyfall Sword
 0132 = A19F99DF = Celestial Sword
-0133 = 93A9FB5D = Nazcaän Longsword
+0133 = 93A9FB5D = Nazcaï¿½n Longsword
 0134 = B884A89E = Primordial Sword
 0135 = 8AB2CA1C = Soppy Slapstick
 0136 = B0AEE25F = Kitchen Knife
@@ -2087,7 +2087,7 @@ Armor
 019A = 825A1128 = Boarland's Armor
 019B = 51DE1438 = Armor of Justice
 019C = 48C52579 = Brilliant Armor
-019D = 35B2D13C = Nazcaän Armor
+019D = 35B2D13C = Nazcaï¿½n Armor
 019E = 63E876BA = Celestial Armor
 019F = 7AF347FB = War God's Armor
 01A0 = 40EF6FB8 = Rustic Garb
@@ -2135,7 +2135,7 @@ Armor
 01CA = B9549205 = Champion's Helm
 01CB = A04FA344 = Blessed Helm
 01CC = 8B62F087 = Helm of Hamelin
-01CD = 15E1DD09 = Nazcaän Helm
+01CD = 15E1DD09 = Nazcaï¿½n Helm
 01CE = 9279C1C6 = War God's Helm
 01CF = 97EEE8B9 = Leafy Mantle
 01D0 = 8EF5D9F8 = Snakeskin Cloak

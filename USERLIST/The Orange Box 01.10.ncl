@@ -1,6 +1,3 @@
-/*Half-Life 2*/
-
-#
 Memory Infinite Suit
 0
 jgduff1
@@ -56,60 +53,4 @@ jgduff1
 
 
 /*Half-Life 2 Episodes 1 + 2*/
-
-
-#
-Memory Torch + Running Time Never Decrease
-0
-jgduff1
-0 540DBFFC 42C80000
-#
-ASM Torch + Running Time Never Decrease
-0
-jgduff1
-0 00A5A554 60000000
-#
-Memory Infinite Health + One Hit Kill
-0
-jgduff1
-0 540DB0D0 0000005F
-#
-ASM Infinite Health + One Hit Kill
-0
-jgduff1
-0 006670B4 90DF0000
-#
-Memory Infinite Suit
-0
-jgduff1
-0 501C6B90 0000008F
-0 501C6C68 0000008F
-0 501C6C6C 0000008F
-0 53E139A0 0000008F
-0 53E139C8 0000008F
-#
-ASM Infinite Suit
-0
-jgduff1
-0 003AB4BC 60000000
-#
-Memory Infinite Ammo + No Reload
-0
-jgduff1
-0 501C69F0 00000010 /*Beretta*/
-0 501C6AD0 00000010 /*Beretta*/
-0 50402D18 00000010 /*Beretta*/
-0 51F52878 00000010 /*Beretta*/
-0 55467B30 00000010 /*Beretta*/
-0 501C69F0 0000000A /*Shotgun*/
-0 501C6AD0 0000000A /*Shotgun*/
-0 50402D18 0000000A /*Shotgun*/
-0 51F48878 0000000A /*Shotgun*/
-0 556C1E00 0000000A /*Shotgun*/
-#
-ASM Infinite Ammo + No Reload
-0
-jgduff1
-0 0067FCAC 60000000 /*Beretta*/
-0 00CF1880 60000000 /*Shotgun*/
 #

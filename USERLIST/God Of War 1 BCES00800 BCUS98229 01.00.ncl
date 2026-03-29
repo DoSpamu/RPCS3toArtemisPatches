@@ -68,11 +68,6 @@ Infinite Mid-Air Jumps
 Wulf2k
 0 00080B14 60000000
 #
-Infinite Magic
-0
-Wulf2k
-0 00071E60 38600001
-#
 AoB Combos Do Not Time Out
 0
 Wulf2k

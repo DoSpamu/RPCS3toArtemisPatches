@@ -5,9 +5,6 @@ RPCS3
 0 003CC070 60000000
 0 003CC080 60000000
 #
-AO3Game-PS3ReleaseFinal_SNC.elf
-
-#
 God Mode
 0
 dron_3

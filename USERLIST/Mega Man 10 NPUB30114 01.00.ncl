@@ -19,11 +19,6 @@ dron_3
 0 000E4304 981F00A8
 0 000E4308 480002C0
 #
-Infinite Lives
-0
-dron_3
-0 000E25B8 38600009
-#
 AoB Invincibility
 0
 dron_3

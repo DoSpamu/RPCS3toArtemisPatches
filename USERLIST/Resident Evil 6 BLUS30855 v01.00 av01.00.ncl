@@ -96,11 +96,6 @@ bungholio
 0 01404420 4865B6FE
 0 0065B6F8 494043CE
 #
-Infinite Health
-0
-bungholio
-0 0076429C 60000000
-#
 Invincible From Melee Attacks
 0
 bungholio

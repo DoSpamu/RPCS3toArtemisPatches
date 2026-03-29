@@ -611,11 +611,6 @@ Bought Evilities Are "Replacement Doll"
 bungholio
 0 00372C68 388002D9
 #
-Bought Evilities Are "Protect"
-0
-bungholio
-0 00372C68 3880032B
-#
 Bonus Gauge Always Starts At 9
 0
 bungholio
@@ -1678,12 +1673,6 @@ AoB Bought Evilities Are "Replacement Doll"
 bungholio
 B 00010000 04000000
 B 7B6900207FE3FB78A0890008 7B6900207FE3FB78388002D9
-#
-AoB Bought Evilities Are "Protect"
-0
-bungholio
-B 00010000 04000000
-B 7B6900207FE3FB78A0890008 7B6900207FE3FB783880032B
 #
 AoB Bonus Gauge Always Starts At 9
 0

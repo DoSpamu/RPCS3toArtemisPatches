@@ -30,11 +30,6 @@ Hiei-YYH
 0 00056914 907C0014
 0 00056918 41820048
 #
-Infinite Ammo
-0
-Hiei-YYH
-0 001DBB84 60000000
-#
 Infinite Dead Eye
 0
 Hiei-YYH

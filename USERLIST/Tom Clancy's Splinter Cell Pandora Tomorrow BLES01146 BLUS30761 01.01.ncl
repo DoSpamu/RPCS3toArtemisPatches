@@ -3,9 +3,6 @@ Unlock FPS (RPCS3)
 RPCS3
 0 000107F4 4800006C
 #
-﻿Splinter Cell Pandora Tomorrow (sc2.ppu.self)
-
-#
 Infinite Health
 0
 dron_3

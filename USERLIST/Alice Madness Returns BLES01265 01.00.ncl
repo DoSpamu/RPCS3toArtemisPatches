@@ -1,4 +1,4 @@
-Unlock FPS (RPCS3)
+Unlock FPS (RPCS3) [Tested]
 0
 FlexBy/RPCS3
 0 0034CAD0 60000000

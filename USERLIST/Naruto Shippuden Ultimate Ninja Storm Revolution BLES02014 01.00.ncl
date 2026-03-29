@@ -10,7 +10,7 @@ Infinite Substitution
 tekman
 0 00AC5828 60000000
 #
-Max And Infinite Ryôs On Gain + Buy + Sell
+Max And Infinite Ryï¿½s On Gain + Buy + Sell
 0
 tekman
 0 00D17D14 914301F8
@@ -43,7 +43,7 @@ tekman
 B 0001000 04000000
 B 7FA3EB78FF81F8007F84E3784FDCF382 600000007FA3EB78600000007F84E3784FDCF382
 #
-AoB Max And Infinite Ryôs On Gain + Buy + Sell
+AoB Max And Infinite Ryï¿½s On Gain + Buy + Sell
 0
 tekman
 B 0001000 04000000

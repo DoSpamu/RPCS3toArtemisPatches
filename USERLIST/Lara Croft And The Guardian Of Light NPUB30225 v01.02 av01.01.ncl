@@ -35,16 +35,6 @@ jgduff1
 It also affects enemies.
 */
 #
-Infinite Health
-0
-Randy97Killa
-0 00852CB0 2B800000
-0 00852CB4 4082000C
-0 00852CB8 900B000C
-0 00852CBC 900B0008
-0 00852CC0 4BD0AF0C
-0 0055DBD0 482F50E0
-#
 Invincibility Against Melee Attacks
 0
 Randy97Killa

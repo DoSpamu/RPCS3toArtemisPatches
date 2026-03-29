@@ -226,28 +226,6 @@ Max Fire Gauge
 games24.blog.fc2.com/blog-entry-328.html
 0 0005A8E0 FC21202A
 #
-Reinforcement 255 Blade (Reinforcing)
-0
-games24.blog.fc2.com/blog-entry-328.html
-0 0046FCB4 3CA000FF
-/*
-I am slightly guessing on
-this without having the
-game to test. If it does
-not work, it is probably
-maxing out something.
-*/
-#
-Reinforcement 255 Sheath, Cylinder (Reinforcing)
-0
-games24.blog.fc2.com/blog-entry-328.html
-0 00464A08 60000000
-#
-Reinforcement 255 Device (Reinforcing)
-0
-games24.blog.fc2.com/blog-entry-328.html
-0 004CAC78 60000000
-#
 AoB Max Money On Buy
 0
 jgduff

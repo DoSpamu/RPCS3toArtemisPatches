@@ -65,29 +65,16 @@ Instant Max Musou On Gain
 jgduff1
 0 0001B448 EC27002A
 #
-SP 99,999 While Changing
-0
-CodeUnique3
-0 002D8EC8 90030A50
-#
 Food Gold 999
 0
 CodeUnique3
 0 002DB27C 38A003E7
-#
-Fame Max
-0
-CodeUnique3
-0 002D7EBC 60000000
 #
 Military 9,999
 0
 CodeUnique3
 0 002D7F88 3860270F
 0 002D7FA0 3860270F
-#
-Merit 99999
-0 002D8074 60000000
 #
 Player 9,999 KO In Battle
 0

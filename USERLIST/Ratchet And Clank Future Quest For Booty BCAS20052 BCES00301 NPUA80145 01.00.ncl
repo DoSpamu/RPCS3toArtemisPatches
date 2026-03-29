@@ -45,21 +45,6 @@ CodeFreak/PS3UserCheat
 0 009CE8DC 42C80000
 0 009CE8F0 42C80000
 #
-Infinite Health
-0
-Azagthoth
-0 0018CD6C C3FF0008
-0 0018CD78 D3FF0004
-/*
-It shows 3, then it shows
-max health.
-*/
-#
-Infinite Ammo
-0
-Azagthoth
-0 0034E538 60000000
-#
 Pickup A Bolt For Lots of Bolts
 0
 Azagthoth

@@ -1,6 +1,3 @@
-ICO (ICO.self)
-
-#
 Enemy Low AI
 0
 bitcopa

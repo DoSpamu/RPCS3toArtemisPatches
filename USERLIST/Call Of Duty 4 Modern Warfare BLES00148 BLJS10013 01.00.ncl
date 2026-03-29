@@ -1,16 +1,16 @@
-Unlock FPS (RPCS3)
+Unlock FPS (RPCS3) [Tested]
 0
 RPCS3
 0 002D6938 60000000
 0 11E81A90 453B8000
 #
-HP Max (Will be red)
+HP Max (Will be red) [Tested]
 0
 CodeFreak/PS3UserCheat
 0 107C1124 00007FFF
 0 107C1128 00000000
 #
-Ammo Of All 32767
+Ammo Of All 32767 [Tested]
 0
 CodeFreak/PS3UserCheat
 0 1090EDD0 00007FFF
@@ -20,12 +20,12 @@ CodeFreak/PS3UserCheat
 0 1090EDE0 00007FFF
 0 1090EDE4 00007FFF
 #
-Grenade 999
+Grenade 999 [Tested]
 0
 CodeFreak/PS3UserCheat
 0 1090EDE8 000007FF
 #
-Flash Grenade 999
+Flash Grenade 999 [Tested]
 0
 CodeFreak/PS3UserCheat
 0 1090EFD8 000007FF

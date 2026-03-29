@@ -23,9 +23,6 @@ Freeze Retry Counter
 FBML
 0 006F56BC 60000000
 #
-Enable Pause + Start Menu (Cheats)
-0 00915B6C 60000000
-#
 AoB Infinite Health (%99.99)
 0
 FBML

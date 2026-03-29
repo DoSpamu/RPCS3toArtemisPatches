@@ -57,10 +57,3 @@ Infinite Energy For Laser Cannon
 predprey
 0 0015DAE8 60000000
 #
-Infinite Ammo
-0
-xtatu
-0 00109FAC 60000000
-0 00109FCC 60000000
-0 00109FE0 60000000
-#

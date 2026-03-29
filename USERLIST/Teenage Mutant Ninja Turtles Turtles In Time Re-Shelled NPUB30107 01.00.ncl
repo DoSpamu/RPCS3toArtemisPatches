@@ -1,6 +1,3 @@
-TMNT_r.sprx
-
-#
 Health Max
 0
 CodeFreak/PS3UserCheat

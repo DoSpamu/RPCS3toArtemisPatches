@@ -81,12 +81,6 @@ Oxygen Does Not Decrease
 bungholio
 0 001A54F8 60000000
 #
-Infinite Power Nodes
-0
-bungholio
-0 00175F34 388003E7
-0 001F0D00 388003E7
-#
 Open Inventory For 25 Slots
 0
 bungholio

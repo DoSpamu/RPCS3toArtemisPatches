@@ -1,9 +1,9 @@
-60 FPS (RPCS3)
+60 FPS (RPCS3) [Tested]
 0
 RPCS3
 0 004087A8 38600000
 #
-Unlock FPS (PSXPlace)
+Unlock FPS (PSXPlace) [Tested]
 0
 illusion
 0 004087A8 38600000

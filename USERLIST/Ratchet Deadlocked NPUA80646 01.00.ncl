@@ -1,7 +1,6 @@
 Also known as
 Ratchet Gladiator
 Ratchet & Clank 4th GiriGiri Ginga No Giga Battle
-
 #
 Infinite Health
 0

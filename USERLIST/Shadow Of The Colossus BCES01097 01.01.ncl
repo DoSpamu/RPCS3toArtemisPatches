@@ -2,9 +2,6 @@ Also known as
 Wander To Kyozou
 
 #
-Shadow Of The Colossus (Shadow.self)
-
-#
 Health Never Decreases
 0
 xiao1102

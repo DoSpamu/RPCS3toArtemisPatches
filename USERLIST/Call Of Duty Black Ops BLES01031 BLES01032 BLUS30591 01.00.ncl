@@ -1,10 +1,10 @@
-Unlock FPS (RPCS3)
+Unlock FPS (RPCS3) [Tested]
 0
 RPCS3
 0 00647970 60000000
 0 01BF08A4 453B8000
 #
-Infinite Ammo
+Infinite Ammo [Tested]
 0
 CodeFreak/PS3UserCheat
 0 010DB850 000003E7
@@ -16,19 +16,19 @@ CodeFreak/PS3UserCheat
 0 010DB890 000003E7
 0 010DB898 000003E7
 #
-Infinite Grenade + Gas
+Infinite Grenade + Gas [Tested]
 0
 CodeFreak/PS3UserCheat
 0 010DB860 00000063
 0 010DB868 00000063
 #
-Infinite Grenade Launcher
+Infinite Grenade Launcher [Tested]
 0
 CodeFreak/PS3UserCheat
 0 010DB7F0 000003E7
 0 010DB7F8 000003E7
 #
-Infinite Health
+Infinite Health [Tested]
 0
 CodeFreak/PS3UserCheat
 0 00F84900 0000270F

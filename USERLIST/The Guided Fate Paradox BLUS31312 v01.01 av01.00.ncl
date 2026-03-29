@@ -71,12 +71,6 @@ Max Damage
 games24.blog.fc2.com/blog-entry-114.html, ported by JorgeFFC
 0 00077C48 60000000
 #
-Max Damage
-0
-games24.blog.fc2.com/blog-entry-114.html, ported by JorgeFFC
-0 00065E38 Z
-[Z]409D0008=Normal;60000000=On[/Z]
-#
 Max (Instant) Burst In Aquisition
 0
 games24.blog.fc2.com/blog-entry-114.html, ported by JorgeFFC

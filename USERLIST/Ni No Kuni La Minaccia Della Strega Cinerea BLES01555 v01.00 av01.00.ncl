@@ -2,9 +2,9 @@ Alternative Names
 0
 PARAM.SFO
 /*
-Ni No Kuni Der Fluch Der Weißen Königin
+Ni No Kuni Der Fluch Der Weiï¿½en Kï¿½nigin
 Ni No Kuni La Ira De La Bruja Blanca
-Ni No Kuni La Vengeance De La Sorcière Céleste
+Ni No Kuni La Vengeance De La Sorciï¿½re Cï¿½leste
 Ni No Kuni Wrath Of The White Witch
 Ninokuni Shiroki Seihai No Joou
 */

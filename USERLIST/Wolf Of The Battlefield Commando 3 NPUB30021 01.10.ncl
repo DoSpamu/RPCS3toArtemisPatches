@@ -20,11 +20,6 @@ optantic
 0 003405BB 08
 0 00340727 08
 #
-Infinite Bombs
-0
-optantic
-0 0009C604 60000000
-#
 AoB Infinite Health
 0
 optantic

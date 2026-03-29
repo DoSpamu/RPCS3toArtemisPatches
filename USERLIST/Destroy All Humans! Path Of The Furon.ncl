@@ -1,10 +1,10 @@
-Unlock FPS (PSXPlace)
+Unlock FPS (PSXPlace) [Tested]
 0
 PSXPlace
 0 010B9E68 60000000
 0 010B9EC0 60000000
 #
-Button Bindings
+Button Bindings [Tested]
 0
 IDontModLobbies
 /*

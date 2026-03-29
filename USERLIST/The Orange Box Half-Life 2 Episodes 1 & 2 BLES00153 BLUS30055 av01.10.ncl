@@ -1,9 +1,9 @@
-Unlock FPS (RPCS3)
+Unlock FPS (RPCS3) [Tested]
 0
 RPCS3
 0 00C471C4 60000000
 #
-Half-Life 2 Episodes 1 & 2
+Half-Life 2 Episodes 1 & 2 [Tested]
 0
 dron_3
 /*
@@ -15,42 +15,42 @@ Half-Life 2 Episodes 1
 & 2.
 */
 #
-God Mode
+God Mode [Tested]
 0
 dron_3
 0 00878824 54000630
 #
-Infinite Ammo
+Infinite Ammo [Tested]
 0
 dron_3
 0 0066FC4C 48000038
 #
-Max Ammo In Clip
+Max Ammo In Clip [Tested]
 0
 dron_3
 0 00674050 38000063
 0 00674054 901F0478
 0 00265204 39200063
 #
-Press Flashlight Button To Give All (Default TRIANGLE)
+Press Flashlight Button To Give All (Default TRIANGLE) [Tested]
 0
 dron_3
 0 0087AEA4 38800065
 0 0087AEA8 4BFFFC28
 0 0087B274 60000000
 #
-Infinite Aux Power
+Infinite Aux Power [Tested]
 0
 dron_3
 0 00A59EFC 60000000
 0 00A5C30C 60000000
 #
-Upgraded Gravity Gun
+Upgraded Gravity Gun [Tested]
 0
 dron_3
 0 00A509B8 60000000
 #
-Multiplier For Damage Inflicted By Player
+Multiplier For Damage Inflicted By Player [Tested]
 0
 dron_3
 0 00A504C4 E8010078
@@ -61,7 +61,7 @@ dron_3
 0 00A504D8 EFFF0032
 [Z]4120=10x;42C8=100x;447A=1,000x[/Z]
 #
-Hold Jump For Ghost Mode
+Hold Jump For Ghost Mode [Tested]
 0
 dron_3
 0 00875DB4 419E000C
@@ -71,34 +71,34 @@ dron_3
 0 00875DC4 9BFA0146
 0 00875DC8 83FC0008
 #
-Allow Shooting Everywhere And While Zooming
+Allow Shooting Everywhere And While Zooming [Tested]
 0
 dron_3
 0 00A60604 60000000
 #
-Allow Zooming Everywhere
+Allow Zooming Everywhere [Tested]
 0
 dron_3
 0 006C6344 48000024
 #
-Do Not Freeze Player
+Do Not Freeze Player [Tested]
 0
 dron_3
 0 0086A57C 60000000
 #
-AoB God Mode
+AoB God Mode [Tested]
 0
 dron_3
 B 00010000 04000000
 B 540004622F800000409E0394 540006302F800000409E0394
 #
-AoB Infinite Ammo
+AoB Infinite Ammo [Tested]
 0
 dron_3
 B 00010000 04000000
 B 419E00387C1CD82E 480000387C1CD82E
 #
-AoB Max Ammo In Clip
+AoB Max Ammo In Clip [Tested]
 0
 dron_3
 B 00010000 04000000
@@ -106,7 +106,7 @@ B 801F04782F800000409D0024 801F047838000063901F0478
 B 00010000 04000000
 B 3929FFFF91250000 3920006391250000
 #
-AoB Press Flashlight Button To Give All (Default TRIANGLE)
+AoB Press Flashlight Button To Give All (Default TRIANGLE) [Tested]
 0
 dron_3
 B 00010000 04000000
@@ -114,7 +114,7 @@ B 38000000901F0D44E80101C0EB410180EB6101887C0803A6EB810190EBA10198EBC101A0EBE101
 B 00010000 04000000
 B 419E00103884FFB4 600000003884FFB4
 #
-AoB Infinite Aux Power
+AoB Infinite Aux Power [Tested]
 0
 dron_3
 B 00010000 04000000
@@ -122,38 +122,38 @@ B 419E0024380000017C0307B4E80100A0 60000000380000017C0307B4E80100A0
 B 00010000 04000000
 B 800900302F800000419E022481 800900302F8000006000000081
 #
-AoB Upgraded Gravity Gun
+AoB Upgraded Gravity Gun [Tested]
 0
 dron_3
 B 00010000 04000000
 B 419E00483800000198010071 600000003800000198010071
 #
-AoB Multiplier For Damage Inflicted By Player
+AoB Multiplier For Damage Inflicted By Player [Tested]
 0
 dron_3
 B 00010000 04000000
 B 2F8300022F030003419E002C2F830001419A004C419E0070 E80100783C60Z90610078C0010078F8010078EFFF0032
 [Z]4120=10x;42C8=100x;447A=1,000x[/Z]
 #
-AoB Hold Jump For Ghost Mode
+AoB Hold Jump For Ghost Mode [Tested]
 0
 dron_3
 B 00010000 04000000
 B 419E0008394A0064915A0B4083FC00087F8AF800409D00A8 419E000C3BE00008480000083BE000029BFA014683FC0008
 #
-AoB Allow Shooting Everywhere And While Zooming
+AoB Allow Shooting Everywhere And While Zooming [Tested]
 0
 dron_3
 B 00010000 04000000
 B 7C004838901E09F8 60000000901E09F8
 #
-AoB Allow Zooming Everywhere
+AoB Allow Zooming Everywhere [Tested]
 0
 dron_3
 B 00010000 04000000
 B 419E002455692436556BA33E7D2A4A143929000479230020800300047F8B0000419E0524 4800002455692436556BA33E7D2A4A143929000479230020800300047F8B0000419E0524
 #
-AoB Do Not Freeze Player
+AoB Do Not Freeze Player [Tested]
 0
 dron_3
 B 00010000 04000000
