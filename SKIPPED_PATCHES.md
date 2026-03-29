@@ -1,22 +1,72 @@
-# Pominięte patche — przyczyny
+# Skipped Patches — Reasons & Explanation
 
-Opisuje przypadki gdzie patch RPCS3 nie mógł być automatycznie dodany do pliku Artemis .ncl.
-
----
-
-## Podsumowanie
-
-| Powód | Liczba |
-|-------|--------|
-| Brak pliku .ncl w USERLIST | 450 unikalnych Title ID |
-| Niezgodność wersji gry (bezpieczny tryb) | zawarte w USERLIST_RISKY |
-| Typ instrukcji bez odpowiednika (byte, bef64) | pomijane automatycznie |
+This file documents every case where an RPCS3 patch could **not** be automatically inserted into an Artemis `.ncl` file, and explains why.
 
 ---
 
-## Brak pliku .ncl w USERLIST (450 Title ID)
+## Summary
 
-Te gry mają patch FPS w RPCS3, ale Artemis USERLIST nie zawiera dla nich pliku .ncl.
+| Reason | Count |
+|--------|-------|
+| No matching `.ncl` file in USERLIST | 450 unique Title IDs |
+| Game version mismatch (safe mode only) | included in `USERLIST_RISKY/` instead |
+| Unsupported patch instruction type (`byte`, `bef64`, `be64`) | skipped silently during conversion |
+
+---
+
+## Reason 1 — No matching `.ncl` file in USERLIST (450 Title IDs)
+
+### What this means
+
+The RPCS3 `patch.yml` contains a patch for this Title ID, but there is no `.ncl` file for this game in the Artemis USERLIST (sourced from [bucanero/ArtemisPS3](https://github.com/bucanero/ArtemisPS3)).
+
+This can happen for several reasons:
+- The game was never added to the ArtemisPS3 USERLIST (most common — Artemis USERLIST does not cover every PS3 game)
+- The game exists in USERLIST under a different Title ID than what RPCS3 uses (e.g., USERLIST has `BLUS30443` but RPCS3 patch targets `NPUA80xxx`)
+- The game is a PSN-only title or a regional variant with no separate cheat file
+
+### What you can do
+
+If your game is in this list, you can still use the patch manually:
+1. Find your game's patch in `patch.yml` (search by Title ID)
+2. Copy the `be32`/`be16` lines from the `Patch:` block
+3. Create a new `.ncl` file or add to an existing one using the format:
+   ```
+   Patch Name (RPCS3)
+   0
+   RPCS3
+   0 AABBCCDD 60000000
+   #
+   ```
+4. Transfer it to your PS3 via FTP into `hdd0/game/ARTZ00001/USRDIR/USERLIST/`
+
+---
+
+## Reason 2 — Game version mismatch
+
+The converter in **safe mode** (`node convert.js`) only adds a patch if the game version in `patch.yml` exactly matches the version in the `.ncl` filename (e.g., `01.00`).
+
+If the versions do not match, the patch is skipped in `USERLIST/` but **is included** in `USERLIST_RISKY/` with a version suffix in the name (e.g., `Unlock FPS v01.04 (RPCS3)`), so you know which version it was written for.
+
+---
+
+## Reason 3 — Unsupported patch instruction types
+
+Some RPCS3 patches use instruction types that have no direct equivalent in Artemis format and are silently skipped:
+
+| RPCS3 type | Why skipped |
+|------------|-------------|
+| `byte` | 8-bit writes have no standard single-byte Artemis code type |
+| `bef64` | 64-bit float — Artemis operates on 32-bit words |
+| `be64` | 64-bit integer — same reason as above |
+
+If a patch consists **only** of these types, the entire patch entry produces no output and nothing is written to the `.ncl` file.
+
+---
+
+## Full list — Title IDs with no matching `.ncl`
+
+These 450 Title IDs have an FPS patch in RPCS3 but no corresponding Artemis file was found in USERLIST.
 
 | Title ID | Patch |
 |----------|-------|
