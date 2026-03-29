@@ -1,135 +1,146 @@
 # RPCS3 to Artemis Patches
 
-A collection of RPCS3 game patches converted to Artemis cheat format for use on **real PS3 hardware** (CFW required).
+A collection of FPS unlock patches for **real PS3 hardware** (CFW + Artemis required), sourced from the RPCS3 emulator patch database and the PSXPlace community forum.
 
-## What is this?
+---
 
-[RPCS3](https://rpcs3.net/) has a large library of patches for PS3 games — FPS unlocks, aspect ratio fixes, graphical tweaks, and more. These patches work on real PS3 hardware too, when loaded through the [Artemis](https://www.psx-place.com/resources/artemis-ps3.522/) cheat manager.
+## Where did this come from?
 
-This repository contains:
-- **`patch.yml`** — RPCS3 patch database (800+ patch entries across hundreds of PS3 games)
-- **`USERLIST/`** — ~2,500 Artemis `.ncl` cheat files ready to copy onto your PS3, with RPCS3 FPS patches already embedded
-- **`USERLIST_RISKY/`** — same as above, but also includes patches where the game version does not exactly match (use at your own risk)
+The idea that RPCS3 patches can work on real PS3 hardware is not new — it has been discussed and demonstrated by the community for years. This project is a direct follow-up to these tutorials:
 
-## Patch sources
+- [RPCS3 60FPS Patches on Real PS3 Console Tutorial](https://www.youtube.com/watch?v=y6tdIXyJDXI)
+- [Using RPCS3 patches on real PS3 using Artemis Cheats](https://www.youtube.com/watch?v=YGnGqlTuMK8)
 
-### RPCS3 patches — automated conversion
+The process shown in those videos is done manually. This project automates it with a script.
 
-Patches from the official RPCS3 patch database are automatically converted by `convert.js` and labeled `(RPCS3)` in the cheat name.
+---
 
-#### USERLIST (safe — version matched)
+## What is the point of this project?
 
-| Stat | Value |
-|------|-------|
-| NCL files with RPCS3 patches | **310 files** |
-| Total RPCS3 patch entries | **326 entries** |
-| Title IDs with no matching .ncl | **450** (listed in SKIPPED_PATCHES.md) |
+RPCS3 has a large, well-maintained patch database (`patch.yml`) with hundreds of FPS unlocks for PS3 games. These patches write directly to Cell CPU memory — the same physical hardware that is inside every PS3 console. In theory, the same memory addresses apply to real hardware.
 
-Full list of patched files: [PATCHED_GAMES.md](PATCHED_GAMES.md)
+The problem: RPCS3 uses its own YAML format, while real PS3 cheat managers like Artemis use `.ncl` text files. **This repo bridges that gap.**
 
-#### USERLIST_RISKY (version mismatched — use with care)
+`convert.js` (written with AI assistance) reads `patch.yml` and automatically converts every FPS-related patch into Artemis format, then inserts it into the correct `.ncl` file from the existing Artemis USERLIST.
 
-| Stat | Value |
-|------|-------|
-| Extra patches (version mismatch) | **88 additional entries** |
-| Total patch entries | **~414 entries** |
+> **Important:** Not every RPCS3 patch will work on real hardware. Some patches target emulator-specific behavior (vblank timing, etc.) that does not apply to a physical PS3. Patches that are confirmed working on real hardware are listed in [COMMUNITY_TESTED.md](COMMUNITY_TESTED.md).
 
-Risky patches are labeled `Unlock FPS v01.04 (RPCS3)` — the version suffix tells you which game version the patch was written for.
-See `USERLIST_RISKY/README_RISKY.txt` for full explanation.
+---
 
-### PSXPlace & community patches — manually sourced
+## Where does the patch data come from?
 
-Additional patches sourced from the [PSX-Place game patches forum thread](https://www.psx-place.com/threads/game-patches.43706/), the community PS3 Codes spreadsheet, and further scraping. These are labeled `(PSXPlace)` in the cheat name.
+This project does **not** invent patches. All patch data is sourced from:
 
-| Stat | Value |
-|------|-------|
-| New .ncl files created | **29 files** |
-| Existing files with added PSXPlace entries | **19 files** |
-| Total PSXPlace patch entries | **22 entries** |
+### 1. RPCS3 official patch database
+**Source:** [github.com/RPCS3/rpcs3 — patch.yml](https://github.com/RPCS3/rpcs3/blob/master/bin/patch.yml)
 
-**Key contributors:** NunoRS2000, FlexBy, vFxMz, illusion, Mitsu, Whatcookie, Brolijah, Zolika1351
+The official RPCS3 patch file, maintained by the RPCS3 community. Contains 800+ entries across hundreds of games. Patches converted from here are labeled `(RPCS3)` in the cheat name.
 
-**Highlights:**
-- Extended FOV for Killzone 2 (v1.29) and Killzone 3 (v1.14) — vFxMz
-- Sonic Unleashed: disable shadows/blur/DoF/reflection — illusion (confirmed on real HW by Mitsu)
-- 60 FPS confirmed on real PS3: Harry Potter OotP, Castle Crashers, Lost Dimension (EU/US/JP)
-- Hatsune Miku Project Diva F 2nd EU PSN (NPEB02013) — confirmed on real hardware
-- New regions: Alice Madness Returns EU PSN, Borderlands 2 EU PSN, GTA IV EU PSN, Fallout NV US, Kamen Rider series (JP), Lucha Libre AAA, Warp EU/US PSN, WRC Powerslide, Zeno Clash 2, Papo & Yo, Alien Rage EU PSN, Bulletstorm EU PSN
+### 2. PSXPlace game patches forum
+**Source:** [psx-place.com — Game Patches thread](https://www.psx-place.com/threads/game-patches.43706/)
 
-> Both `(RPCS3)` and `(PSXPlace)` entries may appear in the same game file. They may target different memory addresses — both can be tried.
+A long-running community thread where PS3 modders share patches they have written and tested on real hardware. Patches sourced from here are labeled `(PSXPlace)` in the cheat name.
 
-### Community-tested patches
+### 3. PS3 Codes community spreadsheet
+**Source:** [PS3 Codes Google Spreadsheet](https://docs.google.com/spreadsheets/d/1dvcFTU5xKt9ASbjlhaSD1zN1ONQPCFnmJNKMU5hGGNM/)
 
-See [COMMUNITY_TESTED.md](COMMUNITY_TESTED.md) for a curated list of patches confirmed working on real PS3 hardware, organized by game genre and test status.
+A community-maintained spreadsheet listing patches with a "Works" column indicating real hardware test results. Used to verify which patches are confirmed working.
+
+### 4. Base USERLIST files
+**Source:** [bucanero/ArtemisPS3](https://github.com/bucanero/ArtemisPS3)
+
+The ~2,500 `.ncl` files in `USERLIST/` come from the upstream ArtemisPS3 repository. RPCS3 and PSXPlace patches are prepended to these existing files.
+
+---
+
+## What did the script actually do?
+
+`convert.js` performs a purely mechanical format translation:
+
+| RPCS3 format (`patch.yml`) | Artemis format (`.ncl`) |
+|---------------------------|------------------------|
+| `- [ be32, 0x00ABCDEF, 0x60000000 ]` | `0 00ABCDEF 60000000` |
+| `- [ be16, 0x00ABCDEF, 0x0000 ]` | `0 00ABCDEF 0000` |
+| `- [ bef32, 0x00ABCDEF, 60.0 ]` | `0 00ABCDEF 42700000` (IEEE 754) |
+| `- [ load, *ANCHOR ]` | inlined from anchor definition |
+
+The script does not write patches. It converts existing ones from one text format to another.
+
+---
+
+## Patch statistics
+
+| Folder | Contents |
+|--------|----------|
+| `USERLIST/` | ~2,500 `.ncl` files; **310 files** have RPCS3 patches injected (**326 entries**) |
+| `USERLIST_RISKY/` | Same as above + **88 extra** version-mismatched patches |
+| `USERLIST_TESTED/` | **32 files** — only patches confirmed working on real PS3 hardware |
+
+Full list of patched games: [PATCHED_GAMES.md](PATCHED_GAMES.md)
+Games skipped due to no matching `.ncl`: [SKIPPED_PATCHES.md](SKIPPED_PATCHES.md)
+
+---
+
+## Will it work on my PS3?
+
+Maybe. It depends on the game and the patch type.
+
+| Status | Meaning |
+|--------|---------|
+| `USERLIST_TESTED/` | Confirmed working on real PS3 (sourced from community reports) |
+| `USERLIST/` (RPCS3 label) | High confidence — same Cell CPU addresses, but not all verified on HW |
+| `USERLIST_RISKY/` | Version mismatch — the patch targets a different game version than your file |
+
+See [COMMUNITY_TESTED.md](COMMUNITY_TESTED.md) for the full breakdown including known issues and games that crash.
+
+---
 
 ## Requirements
 
-- PS3 with **Custom Firmware** (HEN, CFW, etc.)
-- [**webMAN MOD**](https://github.com/aldostools/webMAN-MOD) installed
-- [**Artemis PS3 R5**](https://www.psx-place.com/resources/artemis-ps3.522/) (R5 recommended — R6 may have issues)
-- [**FileZilla**](https://filezilla-project.org/) or any FTP client to transfer files to PS3
+- PS3 with **Custom Firmware** (HEN, Rebug, etc.)
+- [**Artemis PS3 R5**](https://www.psx-place.com/resources/artemis-ps3.522/) — R5 recommended, R6 may have issues
+- [**webMAN MOD**](https://github.com/aldostools/webMAN-MOD) — for FTP access and FPS overlay
+- FTP client (e.g. FileZilla) to transfer files
 
-## How to Use
+---
 
-### Quick Method (Using Pre-made USERLIST files)
+## How to use
 
-1. Connect to your PS3 via FTP (using FileZilla or similar)
-2. Navigate to `hdd0/game/ARTZ00001/USRDIR/` (Artemis install directory)
-3. Copy the `.ncl` file for your game from the `USERLIST/` folder into the PS3's `USERLIST/` directory
-4. Open Artemis on your PS3, find your game and enable the cheats
-5. Launch your game, then press **PS button → Start** to attach cheats
+1. Connect to your PS3 via FTP
+2. Navigate to `hdd0/game/ARTZ00001/USRDIR/`
+3. Copy the `.ncl` file for your game from `USERLIST/` into the PS3's `USERLIST/` folder
+4. Open Artemis, find your game, enable the FPS patch
+5. Launch the game, then press **PS + Start** to attach cheats
 
-The RPCS3 FPS patches will appear in the cheat list alongside any existing cheats for that game.
+> Want more patches? Use `USERLIST_RISKY/` — 88 additional version-mismatched entries. Read the included README before using.
 
-> **Want more patches?** Use `USERLIST_RISKY/` instead — it contains 88 additional version-mismatched patches. Read `USERLIST_RISKY/README_RISKY.txt` before using.
+---
 
-### Regenerating patches (after updating patch.yml)
+## Regenerating patches
 
 ```bash
-# Safe mode — only version-matched patches → USERLIST/
+# Safe mode — version-matched patches only → USERLIST/
 node convert.js
 
-# Risky mode — all patches including version mismatches → USERLIST_RISKY/
+# Risky mode — includes version-mismatched patches → USERLIST_RISKY/
 node convert.js --risky
 ```
 
-Both commands are idempotent: already-converted patches (marked `(RPCS3)`) are detected and skipped automatically.
+Both commands are idempotent — already-converted patches are detected and skipped.
 
-### Manual Method (Converting from patch.yml)
+---
 
-1. In RPCS3, right-click your game → **Manage Game Patches** → **Show Patch File**
-2. Open `patch.yml` in a text editor and find the patch you want (Ctrl+F)
-3. Copy the patch bytes (the `be32`/`be16` lines)
-4. Open your game's Artemis `.ncl` file via FTP
-5. Format the patch as Artemis codes:
-   - Remove the `0x` prefix from addresses
-   - `be32` value → 8 hex digits, `be16` value → 4 hex digits
-   - Entry format: `Name\n0\nAuthor\nADDRESS VALUE\n#`
-6. Save and transfer back to PS3
+## Sources
 
-### Video Tutorials
+- [RPCS3 patch.yml](https://github.com/RPCS3/rpcs3/blob/master/bin/patch.yml) — official RPCS3 patch database
+- [PSXPlace game patches thread](https://www.psx-place.com/threads/game-patches.43706/) — community PS3 patches forum
+- [PS3 Codes spreadsheet](https://docs.google.com/spreadsheets/d/1dvcFTU5xKt9ASbjlhaSD1zN1ONQPCFnmJNKMU5hGGNM/) — community real-hardware test results
+- [bucanero/ArtemisPS3](https://github.com/bucanero/ArtemisPS3) — upstream USERLIST source
+- [Artemis PS3](https://www.psx-place.com/resources/artemis-ps3.522/) — PS3 CFW cheat manager
+- [webMAN MOD](https://github.com/aldostools/webMAN-MOD) — FTP + FPS counter
 
-- *RPCS3 60FPS Patches on Real PS3 Console Tutorial* — included as `.txt` transcript
-- *Using RPCS3 patches on real PS3 using Artemis Cheats* — included as `.txt` transcript
-
-## Patch types converted
-
-| RPCS3 type | Converted to | Notes |
-|------------|-------------|-------|
-| `be32` | `0 ADDR VVVVVVVV` | 32-bit write |
-| `be16` | `0 ADDR VVVV` | 16-bit write (4 hex digits) |
-| `bef32` | `0 ADDR VVVVVVVV` | Float converted to IEEE 754 big-endian hex |
-| `load *anchor` | Inlined | Multi-line patches resolved from YAML anchors |
-| `bef64`, `byte` | Skipped | No standard Artemis equivalent |
-
-## Credits
-
-- **RPCS3 Team** and community — original patch authors (FlexBy, Gibbed, Whatcookie, and many others)
-- **PSX-Place community** — forum contributors: NunoRS2000, FlexBy, vFxMz, illusion, Mitsu, Whatcookie, Brolijah, Zolika1351, zeWaardt, SharkyBoy, CatalinW, rock77, gmanarte and others
-- **bucanero/ArtemisPS3** — upstream USERLIST source
-- **Artemis PS3** — cheat manager for PS3 CFW
-- **webMAN MOD** — FTP and FPS counter support
+---
 
 ## Disclaimer
 
-For use with legally obtained PS3 games and CFW consoles only. All patches are for single-player use. Online play with cheats active may result in a ban.
+For use with legally obtained PS3 games and CFW consoles only. All patches are for single-player use. Using cheats online may result in a ban.
