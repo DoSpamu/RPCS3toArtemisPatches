@@ -2,3 +2,18 @@
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Node
+node_modules/
+package-lock.json
+
+# Scraper output (large raw files)
+scraped_fps_patches.txt
+scraped_rpcs3.txt
+
+# Binary / personal config
+wm_config.bin
+
+# Conversion report (regeneratable)
+conversion_report.json
+conversion_report_risky.json

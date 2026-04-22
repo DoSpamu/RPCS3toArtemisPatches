@@ -1,0 +1,59 @@
+Also known as
+Uncharted Ougontou To Kieta Sendan
+
+#
+Infinite Health
+0
+Hiei-YYH
+0 00AEA8E0 80030030
+0 00AEA8E4 9003002C
+0 00AEA8E8 4E800020
+0 0009F658 48A4B289
+#
+Infinite Ammo
+0
+Hiei-YYH
+0 0086E0D8 396B0000
+#
+Max Money After Earning Any Amount
+0
+Hiei-YYH
+0 000CEE7C 3C0005F5
+0 000CEE80 6000E0FF
+#
+Unlock FPS
+1
+0 00E9C1FB 00
+#
+60 FPS
+1
+0 00E9C1FB 01
+#
+30 FPS
+1
+0 00E9C1FB 02
+#
+Disable Depth of Field
+1
+0 00E9C251 0000000000
+#
+Enable Bloom
+1
+0 00E9C268 0100000000
+#
+Murder Lighting
+1
+0 0E9C564 00010000
+#
+Disable Mesh Trimming
+1
+0 0F9BFD0 0000000000
+#
+Disable Motion Blur
+1
+0 0E9C24F 00010000
+#
+Disable Velocity Motion Blur
+1
+0 E9C494 00000000
+#

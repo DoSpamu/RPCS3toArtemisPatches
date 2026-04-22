@@ -9,14 +9,65 @@ Use on real PS3 with **Custom Firmware + Artemis PS3** (cheat tool).
 
 | Symbol | Meaning |
 |--------|---------|
+| ✅✅ | **100% confirmed** — in `Working Artemis Patches/` folder, personally tested on real PS3 |
 | ✅ | Confirmed working on **real PS3 hardware** (CFW + Artemis), reported by community |
-| 🔵 | From official **RPCS3 patch.yml** — patches write `0x60000000` (PPC NOP) to Cell CPU, which is identical hardware — very high confidence |
-| ⚠️ | Version mismatch, uncertain, or known side effects — test carefully |
+| 🔵 | From official **RPCS3 patch.yml** — patches write `0x60000000` (PPC NOP) to Cell CPU, which is identical hardware — high confidence but not all HW-verified |
+| ⚠️ | Version mismatch, uncertain, or known side effects — **may crash your console, test carefully** |
 | ❌ | Known to **not work** or cause issues on real PS3 |
 
 ---
 
-## ✅ Confirmed on Real PS3 Hardware
+## ✅✅ 100% Confirmed — Working Artemis Patches
+
+These 39 games are in the [`Working Artemis Patches/`](Working%20Artemis%20Patches/) folder and are verified working on real PS3 hardware. Use these files directly — no guesswork.
+
+Many of these also work via PS3MAPI (webMAN MOD browser method) — see [`MAPI_PATCHES.md`](MAPI_PATCHES.md) for the raw memory addresses.
+
+| Game | File | Title ID |
+|------|------|----------|
+| Destroy All Humans! Path of the Furon | `BLES00467` | BLES00467 |
+| Dragon Ball Z: Burst Limit | `BLUS30117 v01.00` | BLUS30117 |
+| Drakengard 3 | `BLUS31197 01.01` | BLUS31197 |
+| Fallout 3 | `BLUS30185 01.61` | BLUS30185 |
+| Fallout: New Vegas Ultimate Edition | `BLES01475 01.00` | BLES01475 |
+| Final Fantasy XIII | `MRTC00003 v01.00` | MRTC00003 |
+| Folklore | `BCAS20013 BCES00050 BCUS98147 01.00` | multi |
+| God of War: Ascension | `BCUS98232 v01.00 av01.12` | BCUS98232 |
+| Grand Theft Auto IV | `BLUS30127 v01.00 av01.08` | BLUS30127 |
+| Hatsune Miku: Project DIVA F | `BLUS31319 01.00` | BLUS31319 |
+| Hatsune Miku: Project DIVA F 2nd | `BLUS31431 01.00` | BLUS31431 |
+| Just Cause 2 | `BLES00517 BLUS30400 01.02` | BLES00517 / BLUS30400 |
+| Kingdom Hearts HD 1.5 ReMIX | `BLUS31212 01.00` | BLUS31212 |
+| Kingdom Hearts HD 2.5 ReMIX | `BLUS31460 01.00` | BLUS31460 |
+| Kingdoms of Amalur: Reckoning | `BLUS30710 v01.02` | BLUS30710 |
+| Lost Dimension | `BLUS31554 v01.00` | BLUS31554 |
+| Lost Planet 2 | `MRTC00002 v01.02` | MRTC00002 |
+| Lost Planet 3 | `BLUS31020 v01.02` | BLUS31020 |
+| Metal Gear Solid 4: Guns of the Patriots | `BLUS30109` | BLUS30109 |
+| MotorStorm | `BCUS98137 v01.00` | BCUS98137 |
+| Need for Speed: Rivals | `BLUS31201 01.03` | BLUS31201 |
+| Pirates of the Caribbean: At World's End | `BLUS30029 v01.00` | BLUS30029 |
+| Resident Evil 5 | `BLUS30270 v02.00` | BLUS30270 |
+| Resistance 2 | `BLUS98120 01.60` | BLUS98120 |
+| Resistance 3 | `BCUS98176 01.05` | BCUS98176 |
+| Shadow of the Colossus (HD) | `BCES01097 01.01` | BCES01097 |
+| Shadow of the Colossus (HD) multi | `BCES01097 BCES01115 BCUS98259 NPEA00280 v01.00 av01.01` | multi |
+| Silent Hill: Downpour | `BLUS30565 01.01` | BLUS30565 |
+| Silent Hill: Homecoming | `BLUS30169 01.00` | BLUS30169 |
+| Skate 2 | `BLUS30253 v01.02` | BLUS30253 |
+| Skate 3 | `BLUS30464 v01.05` | BLUS30464 |
+| The Elder Scrolls IV: Oblivion GOTY | `BLUS30087 01.00` | BLUS30087 |
+| The Elder Scrolls V: Skyrim | `BLUS30778 v01.00` | BLUS30778 |
+| The Elder Scrolls V: Skyrim Legendary Edition | `BLUS31202 01.00` | BLUS31202 |
+| The Last of Us | `BCUS98174 BCES01584 BCES01585 BCAS20270 v01.11` | multi |
+| Tony Hawk's Project 8 | `BLUS30011 v01.00` | BLUS30011 |
+| Tony Hawk's Proving Ground | `BLUS30071 v01.00` | BLUS30071 |
+| Uncharted: Drake's Fortune | `BCES00065 BCUS98103 01.10` | BCES00065 / BCUS98103 |
+| Uncharted 2: Among Thieves | `BCUS98213 01.09` | BCUS98213 |
+
+---
+
+## ✅ Confirmed on Real PS3 Hardware (Community Reports)
 
 Reported working by community members on PSXPlace forum, PS3 Codes spreadsheet (Works=Y), or directly verified.
 
@@ -55,11 +106,12 @@ Reported working by community members on PSXPlace forum, PS3 Codes spreadsheet (
 
 ---
 
-## 🔵 From RPCS3 Official patch.yml (High Confidence)
+## 🔵 From RPCS3 Official patch.yml — Possibly Working, May Crash
 
 Patches sourced from the official RPCS3 patch.yml by FlexBy and other contributors.
 All write `0x60000000` (NOP) to disable frame limiters — identical to real PS3 Cell hardware.
-Not all have been explicitly tested on real hardware; report your results!
+
+> ⚠️ **These patches have NOT been confirmed on real PS3 hardware.** They are high-confidence conversions from the RPCS3 database, but some may cause crashes, freezes, or unexpected behavior. Test at your own risk. If your game is not in the ✅✅ section above, use these with caution.
 
 ### Action / Adventure
 

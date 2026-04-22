@@ -1,0 +1,31 @@
+version: 3
+overlay:
+    displayMode: XMB_GAME # Available options XMB_GAME, XMB, GAME 
+    type:
+      xmb:
+        position: TOP_LEFT # Available options TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+        showFPS: On
+        showCpuInfo: On
+        showGpuInfo: On
+        showRamInfo: On
+        showFanSpeed: On
+        showFirmware: On
+        showAppName: Off
+        showClockSpeeds: On
+        temperatureType: BOTH # Available options BOTH, CELSIUS, FAHRENHEIT
+        textSize: 16.0
+        showPlayTime: On
+
+      game:
+        position: TOP_LEFT # Available options TOP_LEFT, TOP_RIGHT, BOTTOM_LEFT, BOTTOM_RIGHT
+        showFPS: On
+        showCpuInfo: On
+        showGpuInfo: On
+        showRamInfo: Off
+        showFanSpeed: On
+        showFirmware: Off
+        showAppName: On
+        showClockSpeeds: On
+        temperatureType: BOTH # Available options BOTH, CELSIUS, FAHRENHEIT
+        textSize: 16.0
+        showPlayTime: On
