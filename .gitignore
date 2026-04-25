@@ -17,3 +17,8 @@ wm_config.bin
 # Conversion report (regeneratable)
 conversion_report.json
 conversion_report_risky.json
+
+# Dev/personal files
+EXTRACTED_CONVERSATIONS.txt
+PS3 Codes.xlsx
+.claude/

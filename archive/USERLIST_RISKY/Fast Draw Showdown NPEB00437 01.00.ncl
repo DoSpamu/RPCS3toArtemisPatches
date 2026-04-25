@@ -1,6 +1,0 @@
-Infinite Ammo + No Reload
-0
-jgduff1
-0 0004D4E0 39290000
-0 0004D4EC 7D38412E
-#
