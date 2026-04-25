@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="banner.svg" alt="PS3 FPS Unlock Patches" width="100%"/>
+</p>
+
 # PS3 FPS Unlock Patches — Artemis & MAPI
 
 ![Confirmed Games](https://img.shields.io/badge/confirmed_games-39-brightgreen)

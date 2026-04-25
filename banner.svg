@@ -1,0 +1,50 @@
+<svg width="1200" height="220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2f81f7"/>
+      <stop offset="100%" style="stop-color:#0d5bd4"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2f81f7;stop-opacity:0.15"/>
+      <stop offset="60%" style="stop-color:#2f81f7;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="220" fill="url(#bg)" rx="12"/>
+
+  <!-- Left glow -->
+  <rect width="500" height="220" fill="url(#glow)" rx="12"/>
+
+  <!-- Blue left bar -->
+  <rect x="0" y="0" width="6" height="220" fill="url(#accent)" rx="3"/>
+
+  <!-- Grid lines (subtle) -->
+  <line x1="0" y1="55" x2="1200" y2="55" stroke="#21262d" stroke-width="1"/>
+  <line x1="0" y1="110" x2="1200" y2="110" stroke="#21262d" stroke-width="1"/>
+  <line x1="0" y1="165" x2="1200" y2="165" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="40" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="46" font-weight="700" fill="#f0f6fc" letter-spacing="-0.5">PS3 FPS Unlock Patches</text>
+
+  <!-- Subtitle -->
+  <text x="42" y="130" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="19" fill="#8b949e">RPCS3 patches converted to Artemis .ncl — for real PS3 hardware with CFW</text>
+
+  <!-- Stats -->
+  <rect x="40" y="152" width="170" height="34" fill="#21262d" rx="6"/>
+  <text x="125" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#2f81f7" text-anchor="middle">39 confirmed games</text>
+
+  <rect x="222" y="152" width="170" height="34" fill="#21262d" rx="6"/>
+  <text x="307" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#2f81f7" text-anchor="middle">2,526 patch files</text>
+
+  <rect x="404" y="152" width="170" height="34" fill="#21262d" rx="6"/>
+  <text x="489" y="174" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="600" fill="#2f81f7" text-anchor="middle">Artemis + PS3MAPI</text>
+
+  <!-- PS3 logo area (right side) -->
+  <text x="1120" y="125" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="72" font-weight="900" fill="#21262d" text-anchor="middle">PS3</text>
+  <text x="1120" y="155" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" fill="#30363d" text-anchor="middle" letter-spacing="6">C F W</text>
+</svg>
