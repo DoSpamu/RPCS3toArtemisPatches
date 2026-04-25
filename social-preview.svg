@@ -1,0 +1,60 @@
+<svg width="1280" height="640" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#001838"/>
+      <stop offset="50%" stop-color="#00123a"/>
+      <stop offset="100%" stop-color="#000c28"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0056d6"/>
+      <stop offset="50%" stop-color="#003087"/>
+      <stop offset="100%" stop-color="#001a4d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="15%" cy="50%" r="40%">
+      <stop offset="0%" stop-color="#0056d6" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#0056d6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <!-- Glow -->
+  <rect width="1280" height="640" fill="url(#glow)"/>
+
+  <!-- PS button symbols watermark — top right, larger -->
+  <text x="1110" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="70" fill="white" fill-opacity="0.12">△</text>
+  <text x="1210" y="250" text-anchor="middle" font-family="Arial, sans-serif" font-size="70" fill="white" fill-opacity="0.12">○</text>
+  <text x="1110" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="70" fill="white" fill-opacity="0.12">✕</text>
+  <text x="1210" y="360" text-anchor="middle" font-family="Arial, sans-serif" font-size="70" fill="white" fill-opacity="0.12">□</text>
+
+  <!-- Left accent bar -->
+  <rect x="0" y="0" width="8" height="640" fill="url(#bar)"/>
+
+  <!-- Eyebrow -->
+  <text x="72" y="218" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" font-weight="700" fill="#0056d6" letter-spacing="4">PLAYSTATION 3 · CUSTOM FIRMWARE</text>
+
+  <!-- Title line 1 -->
+  <text x="72" y="315" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="82" font-weight="800" letter-spacing="-2" fill="white">PS3 FPS</text>
+
+  <!-- Title line 2 -->
+  <text x="72" y="402" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="82" font-weight="800" letter-spacing="-2" fill="#4da3ff">Unlock Patches</text>
+
+  <!-- Subtitle -->
+  <text x="72" y="446" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="20" fill="white" fill-opacity="0.45">RPCS3 → Artemis .ncl · Real hardware · CFW required</text>
+
+  <!-- Stats row -->
+  <!-- Stat 1: 39 games -->
+  <text x="72"  y="510" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="38" font-weight="800" fill="#4da3ff">39</text>
+  <text x="72"  y="538" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="white" fill-opacity="0.35" letter-spacing="1">CONFIRMED GAMES</text>
+
+  <!-- Stat 2: 2,526 files -->
+  <text x="240" y="510" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="38" font-weight="800" fill="#4da3ff">2,526</text>
+  <text x="240" y="538" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="white" fill-opacity="0.35" letter-spacing="1">PATCH FILES</text>
+
+  <!-- Stat 3: repo URL -->
+  <text x="480" y="510" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="600" fill="white" fill-opacity="0.45">github.com</text>
+  <text x="480" y="538" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="white" fill-opacity="0.35" letter-spacing="1">DoSpamu/PS3FPS</text>
+
+  <!-- Outer border -->
+  <rect width="1280" height="640" fill="none" stroke="#0056d6" stroke-opacity="0.20" stroke-width="1"/>
+</svg>
