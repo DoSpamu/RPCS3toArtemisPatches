@@ -18,6 +18,12 @@ Sourced from the RPCS3 emulator patch database and the PSXPlace community.
 
 ---
 
+## File-based FPS unlocks (no cheat tool needed)
+
+Some games let you edit a config file directly. See the **File-Based FPS Unlocks** section in [`COMMUNITY_TESTED.md`](COMMUNITY_TESTED.md) for games like Condemned 2, F.E.A.R. 2, Crysis, and others.
+
+---
+
 ## Confirmed Working Games (39 games)
 
 These files are in `Working Artemis Patches/` and are verified to work on real PS3 hardware:
@@ -104,12 +110,6 @@ These files come from the RPCS3 patch database + the upstream [ArtemisPS3](https
 | `(RPCS3)` | Converted from RPCS3 patch.yml — high confidence, not all HW-verified |
 | `(PSXPlace)` | Written for real hardware by community modders |
 | `v01.XX (RPCS3)` | Version mismatch — test carefully, may crash |
-
----
-
-## File-based FPS unlocks (no cheat tool needed)
-
-Some games let you edit a config file directly. See the **File-Based FPS Unlocks** section in [`COMMUNITY_TESTED.md`](COMMUNITY_TESTED.md) for games like Condemned 2, F.E.A.R. 2, Crysis, and others.
 
 ---
 
