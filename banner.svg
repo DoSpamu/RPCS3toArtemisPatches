@@ -22,8 +22,8 @@
   <rect width="1200" height="220" fill="url(#glow)" rx="12"/>
 
   <!-- PS button symbols watermark — 2x2 grid, far right -->
-  <text x="1086" y="92"  text-anchor="middle" font-family="Arial, sans-serif" font-size="44" fill="white" fill-opacity="0.10">△</text>
-  <text x="1148" y="92"  text-anchor="middle" font-family="Arial, sans-serif" font-size="44" fill="white" fill-opacity="0.10">○</text>
+  <text x="1086" y="92" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" fill="white" fill-opacity="0.10">△</text>
+  <text x="1148" y="92" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" fill="white" fill-opacity="0.10">○</text>
   <text x="1086" y="152" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" fill="white" fill-opacity="0.10">✕</text>
   <text x="1148" y="152" text-anchor="middle" font-family="Arial, sans-serif" font-size="44" fill="white" fill-opacity="0.10">□</text>
 
