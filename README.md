@@ -21,7 +21,9 @@ Sourced from the RPCS3 emulator patch database and the PSXPlace community.
 | **`Working Artemis Patches/`** | ✅ **100% confirmed on real PS3** | 39 games, tested personally. Use these first. |
 | `USERLIST/` | ⚠️ May work, may crash | 2,526 files — RPCS3-converted patches, not all HW-verified |
 
-> If your game is in `Working Artemis Patches/` — use that file. If not, try `USERLIST/` and test carefully.
+<div style="border:1px solid rgba(0,86,214,0.4);background:rgba(0,56,135,0.12);border-radius:8px;padding:12px 16px;margin:12px 0;color:#7eb8ff;font-size:14px">
+💡 If your game is in <code>Working Artemis Patches/</code> — use that file. If not, try <code>USERLIST/</code> and test carefully.
+</div>
 
 **Alternative method (no Artemis needed):** See [`MAPI_PATCHES.md`](MAPI_PATCHES.md) for memory addresses you can apply live via webMAN MOD's PS3MAPI browser tab.
 
