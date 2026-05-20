@@ -1,9 +1,8 @@
-Unlock FPS (RPCS3)
+Unlock FPS (PSXPlace)
 0
-RPCS3
-0 008BBD04 60000000
-0 008BBD64 60000000
-0 008BBD68 60000000
+Joey
+0 00873024 28030001
+0 00873170 28030001
 #
 Infinite Health, Fill Unlimited Gauge - Hold L2, Fill Burst Gauge - Hold R2, Max Rank
 0

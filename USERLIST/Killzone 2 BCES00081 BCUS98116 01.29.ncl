@@ -1,7 +1,7 @@
-Debug Menu (RPCS3)
+Unlock FPS (PSXPlace)
 0
-RPCS3
-0 00B336F4 38600001
+Joey
+0 00048F98 38800001
 #
 Extended FOV (PSXPlace) [Tested]
 0

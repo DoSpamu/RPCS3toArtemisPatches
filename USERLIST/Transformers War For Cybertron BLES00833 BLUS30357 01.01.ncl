@@ -1,6 +1,6 @@
-Unlock FPS (RPCS3)
+Unlock FPS (PSXPlace)
 0
-RPCS3
+Joey
 0 0020099C C03F0BB8
 #
 Infinite Health

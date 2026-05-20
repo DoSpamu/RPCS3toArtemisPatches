@@ -1,6 +1,6 @@
-Unlock FPS (RPCS3)
+Unlock FPS (PSXPlace)
 0
-RPCS3
+Joey
 0 000F8908 60000000
 #
 Stars Never Decrease

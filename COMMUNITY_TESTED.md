@@ -106,6 +106,77 @@ Reported working by community members on PSXPlace forum, PS3 Codes spreadsheet (
 
 ---
 
+## ✅ Confirmed on Real PS3 Hardware — Joey85 (PSXPlace Thread #49905)
+
+Original patches reverse-engineered using Ghidra by **Joey85**, published April–May 2026.  
+Source: [PSXPlace thread #49905](https://www.psx-place.com/threads/60-unlock-fps-patches.49905/) — 62 entries, all tested personally by Joey85 on real PS3.  
+All entries marked `(PSXPlace)` in `USERLIST/` `.ncl` files, author line: `Joey`. Files marked **New** had no previous USERLIST entry.
+
+| Game | File | Title ID | Patch | Notes |
+|------|------|----------|-------|-------|
+| Alice: Madness Returns | `BLUS30607 01.00` | BLUS30607 | Unlock FPS | No OC required; US disc |
+| Alien Rage | `NPEB01088 01.00` | NPEB01088 | Unlock FPS | |
+| Aliens: Colonial Marines | `BLES01455 BLUS30862 01.05` | BLUS30862 | Unlock FPS | |
+| Alpha Protocol | `BLUS30341 01.00` | BLUS30341 | Unlock FPS | **New**; US version |
+| Asura's Wrath | `BLUS30721 01.02` | BLUS30721 | Unlock FPS | Replaced RPCS3 patch |
+| Batman: Arkham Asylum GOTY | `BLUS30515 01.00` | BLUS30515 | Debug Menu | Enable Debug Menu (R1+Start) → disable VSync for uncapped FPS |
+| Batman: Arkham City GOTY | `BLES01587 v02.00` | BLES01587 | Debug Menu | Enable Debug Menu (R1+Start) → disable VSync for uncapped FPS |
+| Batman: Arkham Origins | `BLUS31147 01.60` | BLUS31147 | Debug Menu | Enable Debug Menu (R1+Start) → disable VSync for uncapped FPS |
+| Brutal Legend | `BLES00562 01.02` | BLES00562 | Unlock FPS | **New**; 32 addresses |
+| Bulletstorm | `BLES01134 01.03` | BLES01134 | Unlock FPS | EU disc v1.03 |
+| Castle of Illusion | `NPUB31099 01.00` | NPUB31099 | Unlock FPS | US PSN |
+| Dead Space 2 | `BLES01040 01.02` | BLES01040 | Unlock FPS | **New** |
+| Dead Space 3 | `BLES01733 BLUS31053 01.02` | BLUS31053 | Unlock FPS | |
+| Deadpool | `BLES01789 BLUS31146 01.00` | BLUS31146 | Unlock FPS | 8 addresses; expands RPCS3 patch |
+| Destroy All Humans! Path of the Furon | `BLES00467` | BLES00467 | Unlock FPS | ✅✅ already in Working Artemis Patches |
+| Deus Ex: HR Director's Cut | `BLUS31317 01.00` | BLUS31317 | Unlock FPS | **New** |
+| Duke Nukem Forever | `BLES01147 01.03` | BLES01147 | Unlock FPS | **New**; No OC required |
+| Enslaved: Odyssey to the West | `BLES00989 01.01` | BLES00989 | Unlock FPS | **New** (v1.01 specific) |
+| Fallout 3 GOTY | `BLUS30451 01.00` | BLUS30451 | Unlock FPS | |
+| Fallout: New Vegas | `BLUS30888 01.00` | BLUS30888 | Unlock FPS | ✅ already confirmed |
+| Final Fantasy XIII | `MRTC00003 v01.00` | MRTC00003 | Unlock FPS | ✅✅ already confirmed; credit RPCS3_illusion |
+| Folklore | `BCES00050 01.10` | BCES00050 | Unlock FPS | ✅✅ already confirmed |
+| Grand Theft Auto IV Complete Edition | `BLES01128 01.02` | BLES01128 | Unlock FPS | ✅ already confirmed |
+| Haze | `BLES00157 BLES00169 av01.36` | BLES00157 | Unlock FPS | 5 addresses; replaced RPCS3 patch |
+| Homefront | `BLES00962 01.04` | BLES00962 | Unlock FPS | **New** |
+| I Am Alive | `NPUB30383 01.00` | NPUB30383 | Unlock FPS | US PSN |
+| James Cameron's Avatar: The Game | `BLUS30374 01.00` | BLUS30374 | Unlock FPS | **New** |
+| Killer Is Dead | `BCAS20292 01.00` | BCAS20292 | Unlock FPS | ✅ already confirmed (Asian) |
+| Killzone 2 | `BCES00081 BCUS98116 01.29` | BCES00081 | Unlock FPS | Direct FPS unlock; separate from vFxMz FOV patch |
+| Lollipop Chainsaw | `BLES01525 01.00` | BLES01525 | Unlock FPS | Replaced RPCS3 patch |
+| Lost Planet 2 | `MRTC00002 01.02` | MRTC00002 | Unlock FPS | ✅✅ already confirmed |
+| Metal Gear Solid 4 | `BLES00246 02.00` | BLES00246 | Unlock FPS | ✅✅ already confirmed |
+| Mindjack | `MRTC00014 01.01` | MRTC00014 | Unlock FPS | **New** |
+| Mirror's Edge | `BLES00322 01.01` | BLES00322 | Unlock FPS | **New**; No OC required |
+| Prince of Persia Trilogy 3D | `BLUS30754 01.00` | BLUS30754 | Unlock FPS | **New**; 2 patches in one file: Two Thrones + Warrior Within |
+| Prototype 2 | `BLES01532 BLUS30756 01.00` | BLUS30756 | Unlock FPS | |
+| Ratchet & Clank: All 4 One | `BCUS98175 01.03` | BCUS98175 | Unlock FPS | Run in main menu; replaced unsafe be16 RPCS3 patch |
+| Ratchet & Clank: Into the Nexus | `BCES01908 01.01` | BCES01908 | Unlock FPS | Run in main menu; replaced unsafe be16 RPCS3 patch |
+| Remember Me | `BLES01701 01.00` | BLES01701 | Unlock FPS | |
+| Resident Evil (HD Remaster) | `NPEB02076 NPJB00653 NPUB31552 v01.00` | NPUB31552 | Unlock FPS | Confirms US PSN (NPUB31552) |
+| Resident Evil 5 Gold Edition | `BLES00816 01.01` | BLES00816 | Unlock FPS | ✅ already confirmed |
+| Resident Evil 6 | `BLUS30855 01.06` | BLUS30855 | Unlock FPS | |
+| Resident Evil: Revelations 2 | `BLUS31444 01.04` | BLUS31444 | Unlock FPS | |
+| Resident Evil: The Darkside Chronicles | `NPEB00816 NPUB30648 v01.00` | NPEB00816 | Unlock FPS | |
+| Resident Evil: The Umbrella Chronicles | `NPEB00817 NPUB30650 v01.00` | NPEB00817 | Unlock FPS | |
+| Resistance 3 | `BCES01118 01.05` | BCES01118 | Unlock FPS | ✅ already confirmed; Joey uses different addresses |
+| SAW | `BLES00676 01.00` | BLES00676 | Unlock FPS | **New** |
+| SAW 2 | `BLES01050 01.00` | BLES01050 | Unlock FPS | **New** |
+| Shadows of the Damned | `BLES01276 01.00` | BLES01276 | Unlock FPS | Expanded to 5 addresses |
+| Silent Hill: Homecoming | `BLES00460 01.00` | BLES00460 | Unlock FPS | |
+| Siren: Blood Curse | `BCES00294 01.00` | BCES00294 | Unlock FPS | |
+| Skyrim | `BLUS31202 01.00` | BLUS31202 | Unlock FPS | ✅✅ already confirmed |
+| Sleeping Dogs | `BLUS30927 01.04` | BLUS30927 | Unlock FPS | **New**; apply patch BEFORE loading game |
+| Splinter Cell: Blacklist | `BLES01879 01.03` | BLES01879 | Unlock FPS | |
+| The Bureau: XCOM Declassified | `BLUS30780 01.02` | BLUS30780 | Unlock FPS | |
+| The Last of Us | `BCES01585 01.11` | BCES01585 | Unlock FPS | ✅✅ already confirmed; credit RPCS3_illusion |
+| The Orange Box (Half-Life 2) | `BLUS30055 01.10` | BLUS30055 | Unlock FPS | ✅ already confirmed |
+| Transformers: War for Cybertron | `BLES00833 BLUS30357 01.01` | BLES00833 | Unlock FPS | Confirmed; same address as RPCS3 |
+| Warhammer 40,000: Space Marine | `BLES01347 01.05` | BLES01347 | Unlock FPS | **New** |
+| Wheelman | `BLUS30262 01.01` | BLUS30262 | Unlock FPS | **New** |
+
+---
+
 ## 🔵 From RPCS3 Official patch.yml — Possibly Working, May Crash
 
 Patches sourced from the official RPCS3 patch.yml by FlexBy and other contributors.
@@ -217,7 +288,8 @@ Access method: **Multiman** → back up game as **JB Folder** format → edit fi
 
 | Game | File to Edit | Change | Default Cap | Notes | Source |
 |------|-------------|--------|-------------|-------|--------|
-| Battlefield Bad Company (Gold Ed.) | `Ps3GameSettings.cfg` | Set FPS value | — | Max 60! **>60 breaks the game** (HUD bugs). Also: "FPS Unlocker" mod by Aniroh on Nexus Mods. **Note: this is BBC1, not BBC2** — BBC2 has no confirmed file method | NunoRS2000 |
+| Battlefield Bad Company (Gold Ed.) | `Ps3GameSettings.cfg` | Set FPS value | — | Max 60! **>60 breaks the game** (HUD bugs). Also: "FPS Unlocker" mod by Aniroh on Nexus Mods. **Note: this is BBC1 (BLES00261)** | NunoRS2000 |
+| Battlefield Bad Company 2 | `Ps3GameSettings.cfg` | Set FPS value (same mod) | — | Uses same Nexus Mods "FPS Unlocker" mod as BBC1. Confirmed by Joey85 (PSXPlace thread #49905). BLES00779 v1.05 | Joey85 |
 | Condemned 2: Bloodshot | `PS3_GAME/USRDIR/autoexec.cfg` | Delete or change `MaxFPS` line | 40 FPS | Delete line entirely for ~59.94 FPS. Also: `FovY` line allows custom FOV | PoppaJerry |
 | Crysis | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | — | Vsync commands in the .cfg do **not** work | NunoRS2000 |
 | Crysis 2 | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | — | Same as Crysis | NunoRS2000 |

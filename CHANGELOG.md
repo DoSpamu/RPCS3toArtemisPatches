@@ -4,6 +4,38 @@ All notable changes to this project will be documented here.
 
 ## [Unreleased]
 
+## [1.6.0] — 2026-05-20
+
+### Added
+- **PSXPlace thread #49905 — Joey85 patches (62 games, all confirmed on real PS3)**
+  - Source: https://www.psx-place.com/threads/60-unlock-fps-patches.49905/
+  - Joey85 reverse-engineered these patches using Ghidra; all tested personally on real PS3 hardware
+  - **16 new `.ncl` files** created for games with no prior USERLIST entry:
+    - `Alpha Protocol BLUS30341 01.00` — US version
+    - `Brutal Legend BLES00562 01.02` — 32 addresses
+    - `Deus Ex Human Revolution Directors Cut BLUS31317 01.00`
+    - `James Camerons Avatar The Game BLUS30374 01.00`
+    - `Mindjack MRTC00014 01.01`
+    - `Mirrors Edge BLES00322 01.01` — No OC required
+    - `Saw BLES00676 01.00`
+    - `Saw 2 BLES01050 01.00`
+    - `Sleeping Dogs BLUS30927 01.04` — apply before loading game
+    - `Prince Of Persia Trilogy 3D BLUS30754 01.00` — 2 patches: Two Thrones + Warrior Within
+    - `Warhammer 40000 Space Marine BLES01347 01.05`
+    - `Wheelman BLUS30262 01.01`
+    - `Dead Space 2 BLES01040 01.02`
+    - `Duke Nukem Forever BLES01147 01.03` — No OC required
+    - `Enslaved Odyssey To The West BLES00989 01.01`
+    - `Homefront BLES00962 01.04`
+  - **29 existing `.ncl` files updated** — Joey's `(PSXPlace)` entry prepended, unconfirmed `(RPCS3)` FPS entries removed:
+    - Aliens Colonial Marines, Asura's Wrath, Batman Arkham Asylum/City, Bulletstorm, Castle of Illusion, Dead Space 3, Deadpool, Fallout 3 GOTY, Haze, I Am Alive, Killzone 2, Lollipop Chainsaw, Prototype 2, R&C All 4 One, R&C Nexus, RE1 HD Remaster, RE6 (av01.06), RE Revelations 2 (av01.04), RE Darkside Chronicles, RE Umbrella Chronicles, Remember Me, Shadows of the Damned, Siren Blood Curse, Splinter Cell Blacklist, The Bureau XCOM, Transformers WfC, Alice Madness Returns BLUS30607, Sleeping Dogs, Warhammer Space Marine
+  - R&C All 4 One + Nexus: replaced unsafe `be16` RPCS3 patches with Joey's `be32` patches
+  - Deadpool + Shadows of the Damned: Joey's patches are expanded versions (more addresses)
+  - Killzone 2: `Debug Menu (RPCS3)` removed; `Unlock FPS (PSXPlace)` added; all `[Tested]` entries preserved
+- **`COMMUNITY_TESTED.md`** — new section "✅ Confirmed on Real PS3 Hardware — Joey85 (PSXPlace Thread #49905)" with full 62-game table
+- **`COMMUNITY_TESTED.md`** — File-Based section: added Battlefield Bad Company 2 (BLES00779 v1.05, same Nexus Mods patch as BBC1, confirmed by Joey85)
+- **`README.md`** — added PSXPlace thread #49905 as a source; updated patch file count to 2,542
+
 ## [1.5.0] — 2026-03-29
 
 ### Changed

@@ -5,7 +5,7 @@
 # PS3 FPS Unlock Patches — Artemis & MAPI
 
 ![Confirmed Games](https://img.shields.io/badge/confirmed_games-39-brightgreen)
-![Patch Files](https://img.shields.io/badge/patch_files-2%2C526-blue)
+![Patch Files](https://img.shields.io/badge/patch_files-2%2C542-blue)
 ![Platform](https://img.shields.io/badge/platform-PS3_CFW-lightgrey)
 ![License](https://img.shields.io/badge/license-MIT-yellow)
 
@@ -137,6 +137,7 @@ These files come from the RPCS3 patch database + the upstream [ArtemisPS3](https
 
 - [RPCS3 patch.yml](https://github.com/RPCS3/rpcs3/blob/master/bin/patch.yml) — official RPCS3 patch database (800+ entries)
 - [PSXPlace game patches thread](https://www.psx-place.com/threads/game-patches.43706/) — community real-hardware patches
+- [PSXPlace FPS patches thread #49905](https://www.psx-place.com/threads/60-unlock-fps-patches.49905/) — 62 games tested by Joey85 (Ghidra reverse engineering)
 - [PS3 Codes spreadsheet](https://docs.google.com/spreadsheets/d/1dvcFTU5xKt9ASbjlhaSD1zN1ONQPCFnmJNKMU5hGGNM/) — community test results
 - [bucanero/ArtemisPS3](https://github.com/bucanero/ArtemisPS3) — upstream USERLIST source
 

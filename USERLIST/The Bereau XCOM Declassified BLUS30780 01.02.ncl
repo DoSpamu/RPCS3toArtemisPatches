@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 01FB8D14 00000000
+#
 Infinite Ammo + Grenades
 0
 DANNY G
