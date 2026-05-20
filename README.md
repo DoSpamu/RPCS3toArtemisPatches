@@ -19,7 +19,7 @@ Sourced from the RPCS3 emulator patch database and the PSXPlace community.
 | Folder | Status | Notes |
 |--------|--------|-------|
 | **`Working Artemis Patches/`** | ✅ **100% confirmed on real PS3** | 39 games, tested personally. Use these first. |
-| `USERLIST/` | ⚠️ May work, may crash | 2,526 files — RPCS3-converted patches, not all HW-verified |
+| `USERLIST/` | ⚠️ May work, may crash | 2,542 files — RPCS3-converted + PSXPlace community patches. Some marked `[Tested]`. Not all HW-verified. |
 
 > [!TIP]
 > If your game is in `Working Artemis Patches/` — use that file. If not, try `USERLIST/` and test carefully.
@@ -108,11 +108,11 @@ This method applies patches instantly while the game is running — useful for t
 
 ---
 
-## About `USERLIST/` (2,526 files)
+## About `USERLIST/` (2,542 files)
 
-These files come from the RPCS3 patch database + the upstream [ArtemisPS3](https://github.com/bucanero/ArtemisPS3) USERLIST. Most FPS patches were auto-converted by `convert.js` from RPCS3's `patch.yml`.
+These files come from the RPCS3 patch database, the upstream [ArtemisPS3](https://github.com/bucanero/ArtemisPS3) USERLIST, and PSXPlace community patches — including 62 games confirmed by Joey85 on real PS3 hardware. See [COMMUNITY_TESTED.md](COMMUNITY_TESTED.md) for the full confirmed list.
 
-**These patches are not guaranteed to work on real hardware.** Some will work fine, some may cause crashes. Patches labeled `v01.XX (RPCS3)` in the cheat name target a different game version than your file — especially risky.
+**Not all patches are guaranteed to work on real hardware.** Patches marked `[Tested]` are confirmed working. Patches labeled `v01.XX (RPCS3)` target a different game version than your file — especially risky.
 
 | Label in cheat name | Meaning |
 |---------------------|---------|
