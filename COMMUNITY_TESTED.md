@@ -1,9 +1,26 @@
 # Community Tested FPS / Performance Patches
 
-> [!TIP]
-> **No Artemis needed for some games.** Condemned 2, F.E.A.R. 2, Crysis 1/2/3, Middle-Earth: Shadow of Mordor, Syndicate, and Battlefield Bad Company 1/2 let you set the FPS cap directly in a config file inside the game folder — no cheat tool required. See [📁 File-Based FPS Unlocks](#-file-based-fps-unlocks-no-cheat-codes-needed) below.
+## 📁 File-Based FPS Unlocks (No Cheat Codes Needed)
 
-All entries in the ✅ and ✅✅ sections are confirmed working on real PS3 hardware (CFW + Artemis). Confirmed patches are marked `[Tested]` in their `.ncl` cheat name so you can identify them in the Artemis UI.
+Some games store FPS limits in config files you can edit directly. **No Artemis required.** Access: **Multiman** → back up as **JB Folder** → edit file via **FTP**.
+
+| Game | File to Edit | Change | Default Cap | Notes | Source |
+|------|-------------|--------|-------------|-------|--------|
+| Battlefield Bad Company (Gold Ed.) | `Ps3GameSettings.cfg` | Set FPS value | — | Max 60! **>60 breaks the game** (HUD bugs). Also: "FPS Unlocker" mod by Aniroh on Nexus Mods. Note: this is BBC1 (BLES00261) | NunoRS2000 |
+| Battlefield Bad Company 2 | `Ps3GameSettings.cfg` | Set FPS value (same mod) | — | Same Nexus Mods "FPS Unlocker" as BBC1. Confirmed by Joey85 on real PS3. BLES00779 v1.05 | Joey85 |
+| Condemned 2: Bloodshot | `PS3_GAME/USRDIR/autoexec.cfg` | Delete or change `MaxFPS` line | 40 FPS | Delete entirely for ~59.94 FPS. `FovY` line also allows custom FOV | PoppaJerry |
+| Crysis | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | — | Vsync commands in .cfg do **not** work | NunoRS2000 |
+| Crysis 2 | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | — | Same as Crysis | NunoRS2000 |
+| Crysis 3 | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | — | Same as Crysis | NunoRS2000 |
+| F.E.A.R. 2: Project Origin | `PS3_GAME/USRDIR/autoexec.cfg` | Delete `MaxFPS` line; set `"VSyncOnFlip" "0.000000"` | 45 FPS | Delete `MaxFPS` entirely for ~59.94 FPS. Keep `FovY` ≤80 to avoid weapon clipping | PoppaJerry |
+| Middle-Earth: Shadow of Mordor | `PS3_GAME/USRDIR/autoexec.cfg` | Delete or change `MaxFPS` line | 45 FPS | Delete entirely for ~59.94 FPS | PoppaJerry |
+| Syndicate | `ENVIRONMENT_PS3.CFG` | Change vsync value to `0` | — | ⚠️ File is **binary format** — use a hex editor, not a text editor | NunoRS2000 |
+
+> **Condemned 2**, **F.E.A.R. 2**, and **Shadow of Mordor** all use the **LithTech Jupiter EX** engine — the same `autoexec.cfg` `MaxFPS` mechanism applies to all three.
+
+---
+
+All entries in the ✅ and ✅✅ sections below are confirmed working on real PS3 hardware (CFW + Artemis). Confirmed patches are marked `[Tested]` in their `.ncl` cheat name so you can identify them in the Artemis UI.
 
 ## Legend
 
@@ -227,26 +244,6 @@ Converted from the official RPCS3 patch.yml. All write `0x60000000` (NOP) to dis
 | Resident Evil 0 | `NPEB02226 01.00` | Unlock FPS | |
 | Resident Evil 5 Gold Edition | `BLUS30491 01.01` | Unlock FPS | US version (EU BLES00816 confirmed) |
 | Resident Evil: Revelations | `BLES01773 01.01` / `BLUS31051 01.01` | Unlock FPS | |
-
----
-
-## 📁 File-Based FPS Unlocks (No Cheat Codes Needed)
-
-Some games store FPS limits in config files you can edit directly. Access: **Multiman** → back up as **JB Folder** → edit file via **FTP**.
-
-| Game | File to Edit | Change | Default Cap | Notes | Source |
-|------|-------------|--------|-------------|-------|--------|
-| Battlefield Bad Company (Gold Ed.) | `Ps3GameSettings.cfg` | Set FPS value | — | Max 60! **>60 breaks the game** (HUD bugs). Also: "FPS Unlocker" mod by Aniroh on Nexus Mods. Note: this is BBC1 (BLES00261) | NunoRS2000 |
-| Battlefield Bad Company 2 | `Ps3GameSettings.cfg` | Set FPS value (same mod) | — | Same Nexus Mods "FPS Unlocker" as BBC1. Confirmed by Joey85 on real PS3. BLES00779 v1.05 | Joey85 |
-| Condemned 2: Bloodshot | `PS3_GAME/USRDIR/autoexec.cfg` | Delete or change `MaxFPS` line | 40 FPS | Delete entirely for ~59.94 FPS. `FovY` line also allows custom FOV | PoppaJerry |
-| Crysis | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | — | Vsync commands in .cfg do **not** work | NunoRS2000 |
-| Crysis 2 | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | — | Same as Crysis | NunoRS2000 |
-| Crysis 3 | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | — | Same as Crysis | NunoRS2000 |
-| F.E.A.R. 2: Project Origin | `PS3_GAME/USRDIR/autoexec.cfg` | Delete `MaxFPS` line; set `"VSyncOnFlip" "0.000000"` | 45 FPS | Delete `MaxFPS` entirely for ~59.94 FPS. Keep `FovY` ≤80 to avoid weapon clipping | PoppaJerry |
-| Middle-Earth: Shadow of Mordor | `PS3_GAME/USRDIR/autoexec.cfg` | Delete or change `MaxFPS` line | 45 FPS | Delete entirely for ~59.94 FPS | PoppaJerry |
-| Syndicate | `ENVIRONMENT_PS3.CFG` | Change vsync value to `0` | — | ⚠️ File is **binary format** — use a hex editor, not a text editor | NunoRS2000 |
-
-> **Condemned 2**, **F.E.A.R. 2**, and **Shadow of Mordor** all use the **LithTech Jupiter EX** engine — the same `autoexec.cfg` `MaxFPS` mechanism applies to all three.
 
 ---
 
