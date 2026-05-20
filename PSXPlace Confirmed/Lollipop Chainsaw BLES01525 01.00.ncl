@@ -1,0 +1,11 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 008F88F8 38800001
+0 008F8908 28030001
+#
+Invincible Mode
+0
+xtatu
+0 00099620 00000000
+#
