@@ -22,3 +22,8 @@ conversion_report_risky.json
 EXTRACTED_CONVERSATIONS.txt
 PS3 Codes.xlsx
 .claude/
+
+# Scraper/tool temp files
+.playwright-mcp/
+.superpowers/
+docs/

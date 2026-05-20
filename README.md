@@ -14,29 +14,49 @@ Sourced from the RPCS3 emulator patch database and the PSXPlace community.
 
 ---
 
-## Quickstart — which folder do I use?
+## Downloads
 
-| Folder | Status | Notes |
-|--------|--------|-------|
-| **`Working Artemis Patches/`** | ✅ **100% confirmed on real PS3** | 39 games, tested personally. Use these first. |
-| `USERLIST/` | ⚠️ May work, may crash | 2,542 files — RPCS3-converted + PSXPlace community patches. Some marked `[Tested]`. Not all HW-verified. |
+The latest release (`v1.1`) has one zip with two folders:
+
+| Folder in zip | Contents | Use when |
+|---------------|----------|----------|
+| **`Working Artemis Patches/`** | 39 games — 100% confirmed on real PS3 | Your game is in the list below |
+| **`PSXPlace Confirmed/`** | 62 games — confirmed by Joey85 + community on real PS3 | Your game isn't in the first folder |
+
+**[→ Download v1.1](https://github.com/DoSpamu/RPCS3toArtemisPatches/releases/tag/v1.1)**
+
+If your game isn't in either folder, the full **`USERLIST/`** (2,542 files) is available by cloning or downloading the repository. Those files are RPCS3 conversions — not all hardware-verified.
 
 > [!TIP]
-> If your game is in `Working Artemis Patches/` — use that file. If not, try `USERLIST/` and test carefully.
-
-**Alternative method (no Artemis needed):** See [`MAPI_PATCHES.md`](MAPI_PATCHES.md) for memory addresses you can apply live via webMAN MOD's PS3MAPI browser tab.
+> **Some games don't need Artemis at all.** Crysis, Condemned 2, F.E.A.R. 2, Shadow of Mordor, Battlefield Bad Company 1/2 and others let you set the FPS cap via a config file. See the **File-Based FPS Unlocks** section in [`COMMUNITY_TESTED.md`](COMMUNITY_TESTED.md).
 
 ---
 
-## File-based FPS unlocks (no cheat tool needed)
+## How to use (Artemis method)
 
-Some games let you edit a config file directly. See the **File-Based FPS Unlocks** section in [`COMMUNITY_TESTED.md`](COMMUNITY_TESTED.md) for games like Condemned 2, F.E.A.R. 2, Crysis, and others.
+**Requirements:**
+- PS3 with **Custom Firmware** (HEN, Rebug, etc.)
+- [**Artemis PS3 R5**](https://www.psx-place.com/resources/artemis-ps3.522/) — R5 recommended, R6 may have issues
+- [**webMAN MOD**](https://github.com/aldostools/webMAN-MOD) — for FTP access
+
+**Steps:**
+1. Connect to your PS3 via FTP
+2. Navigate to `hdd0/game/ARTZ00001/USRDIR/USERLIST/`
+3. Copy the `.ncl` file for your game from the zip
+4. Open Artemis, find your game, enable the FPS patch
+5. Launch the game, then press **PS + Start** to attach cheats
+
+---
+
+## How to use (PS3MAPI method — no file transfer needed)
+
+Apply patches live via webMAN MOD's browser interface without Artemis. See [`MAPI_PATCHES.md`](MAPI_PATCHES.md) for the full address list and instructions.
 
 ---
 
 ## Confirmed Working Games (39 games)
 
-These files are in `Working Artemis Patches/` and are verified to work on real PS3 hardware:
+These files are in `Working Artemis Patches/` and are verified working on real PS3 hardware:
 
 | Game | Title ID | Version |
 |------|----------|---------|
@@ -80,45 +100,24 @@ These files are in `Working Artemis Patches/` and are verified to work on real P
 | Uncharted: Drake's Fortune | BCES00065 / BCUS98103 | 01.10 |
 | Uncharted 2: Among Thieves | BCUS98213 | 01.09 |
 
-For more confirmed games (EU/JP regions, PSXPlace community reports) see [`COMMUNITY_TESTED.md`](COMMUNITY_TESTED.md).
-
----
-
-## How to use (Artemis method)
-
-**Requirements:**
-- PS3 with **Custom Firmware** (HEN, Rebug, etc.)
-- [**Artemis PS3 R5**](https://www.psx-place.com/resources/artemis-ps3.522/) — R5 recommended, R6 may have issues
-- [**webMAN MOD**](https://github.com/aldostools/webMAN-MOD) — for FTP access
-
-**Steps:**
-1. Connect to your PS3 via FTP
-2. Navigate to `hdd0/game/ARTZ00001/USRDIR/`
-3. Copy the `.ncl` file for your game from `Working Artemis Patches/` (or `USERLIST/`) to the PS3's `USERLIST/` folder
-4. Open Artemis, find your game, enable the FPS patch
-5. Launch the game, then press **PS + Start** to attach cheats
-
----
-
-## How to use (PS3MAPI method — no file transfer needed)
-
-You can apply patches live via webMAN MOD's browser interface without Artemis. See [`MAPI_PATCHES.md`](MAPI_PATCHES.md) for the complete address list and instructions.
-
-This method applies patches instantly while the game is running — useful for testing or when you don't want to copy .ncl files.
+For more confirmed games (EU/JP regions, PSXPlace community) see [`COMMUNITY_TESTED.md`](COMMUNITY_TESTED.md).
 
 ---
 
 ## About `USERLIST/` (2,542 files)
 
-These files come from the RPCS3 patch database, the upstream [ArtemisPS3](https://github.com/bucanero/ArtemisPS3) USERLIST, and PSXPlace community patches — including 62 games confirmed by Joey85 on real PS3 hardware. See [COMMUNITY_TESTED.md](COMMUNITY_TESTED.md) for the full confirmed list.
+The full patch database. Sources:
+- RPCS3 patch.yml (auto-converted by `convert.js`)
+- PSXPlace community patches — including 62 games confirmed by Joey85 on real PS3 hardware
+- Upstream [ArtemisPS3](https://github.com/bucanero/ArtemisPS3) USERLIST
 
-**Not all patches are guaranteed to work on real hardware.** Patches marked `[Tested]` are confirmed working. Patches labeled `v01.XX (RPCS3)` target a different game version than your file — especially risky.
+**Not all patches are guaranteed to work on real hardware.** Use the label in the cheat name to judge:
 
 | Label in cheat name | Meaning |
 |---------------------|---------|
 | `[Tested]` | Confirmed working on real PS3 |
-| `(RPCS3)` | Converted from RPCS3 patch.yml — high confidence, not all HW-verified |
-| `(PSXPlace)` | Written for real hardware by community modders |
+| `(PSXPlace)` | Written for real hardware by community (FlexBy, Joey85, vFxMz, etc.) |
+| `(RPCS3)` | Converted from RPCS3 patch.yml — not all HW-verified |
 | `v01.XX (RPCS3)` | Version mismatch — test carefully, may crash |
 
 ---
@@ -135,18 +134,17 @@ These files come from the RPCS3 patch database, the upstream [ArtemisPS3](https:
 
 ## Where does patch data come from?
 
-- [RPCS3 patch.yml](https://github.com/RPCS3/rpcs3/blob/master/bin/patch.yml) — official RPCS3 patch database (800+ entries)
-- [PSXPlace game patches thread](https://www.psx-place.com/threads/game-patches.43706/) — community real-hardware patches
-- [PSXPlace FPS patches thread #49905](https://www.psx-place.com/threads/60-unlock-fps-patches.49905/) — 62 games tested by Joey85 (Ghidra reverse engineering)
+- [RPCS3 patch.yml](https://github.com/RPCS3/rpcs3/blob/master/bin/patch.yml) — official RPCS3 patch database
+- [PSXPlace FPS patches thread #49905](https://www.psx-place.com/threads/60-unlock-fps-patches.49905/) — 62 games confirmed by Joey85 (Ghidra reverse engineering, tested on real PS3)
+- [PSXPlace game patches thread #43706](https://www.psx-place.com/threads/game-patches.43706/) — community real-hardware patches (FlexBy, vFxMz, illusion, etc.)
 - [PS3 Codes spreadsheet](https://docs.google.com/spreadsheets/d/1dvcFTU5xKt9ASbjlhaSD1zN1ONQPCFnmJNKMU5hGGNM/) — community test results
 - [bucanero/ArtemisPS3](https://github.com/bucanero/ArtemisPS3) — upstream USERLIST source
 
-`convert.js` automates the format conversion from RPCS3 YAML to Artemis `.ncl` text format.  
-See [RPCS3 60FPS Patches on Real PS3 Tutorial](https://www.youtube.com/watch?v=y6tdIXyJDXI) for the manual process this project automates.
+`convert.js` automates format conversion from RPCS3 YAML to Artemis `.ncl` text format.
 
 ---
 
-## Requirements summary
+## Requirements
 
 - PS3 with Custom Firmware (HEN / Rebug / etc.)
 - Artemis PS3 R5
