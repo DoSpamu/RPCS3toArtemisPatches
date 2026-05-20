@@ -8,13 +8,13 @@ This file documents every case where an RPCS3 patch could **not** be automatical
 
 | Reason | Count |
 |--------|-------|
-| No matching `.ncl` file in USERLIST | 450 unique Title IDs |
+| No matching `.ncl` file in USERLIST | 446 unique Title IDs |
 | Game version mismatch (safe mode only) | included in `USERLIST_RISKY/` instead |
 | Unsupported patch instruction type (`byte`, `bef64`, `be64`) | skipped silently during conversion |
 
 ---
 
-## Reason 1 — No matching `.ncl` file in USERLIST (450 Title IDs)
+## Reason 1 — No matching `.ncl` file in USERLIST (446 Title IDs)
 
 ### What this means
 
@@ -66,7 +66,7 @@ If a patch consists **only** of these types, the entire patch entry produces no 
 
 ## Full list — Title IDs with no matching `.ncl`
 
-These 450 Title IDs have an FPS patch in RPCS3 but no corresponding Artemis file was found in USERLIST.
+These 446 Title IDs have an FPS patch in RPCS3 but no corresponding Artemis file was found in USERLIST.
 
 | Title ID | Patch |
 |----------|-------|
@@ -155,7 +155,6 @@ These 450 Title IDs have an FPS patch in RPCS3 but no corresponding Artemis file
 | BLES00200 | Unlock FPS |
 | BLES00259 | 60 FPS |
 | BLES00307 | 60 FPS |
-| BLES00322 | Unlock FPS |
 | BLES00333 | 60 FPS |
 | BLES00334 | 60 FPS |
 | BLES00335 | 60 FPS |
@@ -179,7 +178,6 @@ These 450 Title IDs have an FPS patch in RPCS3 but no corresponding Artemis file
 | BLES00526 | Unlock FPS |
 | BLES00582 | Unlock FPS |
 | BLES00584 | Unlock FPS |
-| BLES00676 | Unlock FPS |
 | BLES00695 | 60 FPS |
 | BLES00696 | Unlock FPS |
 | BLES00697 | Unlock FPS |
@@ -204,7 +202,6 @@ These 450 Title IDs have an FPS patch in RPCS3 but no corresponding Artemis file
 | BLES01034 | Unlock FPS |
 | BLES01035 | Unlock FPS |
 | BLES01039 | Unlock FPS |
-| BLES01050 | Unlock FPS |
 | BLES01057 | 60 FPS |
 | BLES01057 | 60 FPS |
 | BLES01105 | Unlock FPS |
@@ -301,8 +298,6 @@ These 450 Title IDs have an FPS patch in RPCS3 but no corresponding Artemis file
 | BLUS30627 | 60 FPS |
 | BLUS30632 | 60 FPS |
 | BLUS30682 | Unlock FPS |
-| BLUS30754 | Unlock FPS |
-| BLUS30754 | Unlock FPS |
 | BLUS30758 | Unlock FPS |
 | BLUS30758 | Unlock FPS |
 | BLUS30778 | 60 FPS |

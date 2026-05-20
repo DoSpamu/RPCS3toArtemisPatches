@@ -4,7 +4,7 @@ All notable changes to this project will be documented here.
 
 ## [Unreleased]
 
-## [1.6.0] — 2026-05-20
+## [1.1] — 2026-05-20
 
 ### Added
 - **PSXPlace thread #49905 — Joey85 patches (62 games, all confirmed on real PS3)**
@@ -36,7 +36,7 @@ All notable changes to this project will be documented here.
 - **`COMMUNITY_TESTED.md`** — File-Based section: added Battlefield Bad Company 2 (BLES00779 v1.05, same Nexus Mods patch as BBC1, confirmed by Joey85)
 - **`README.md`** — added PSXPlace thread #49905 as a source; updated patch file count to 2,542
 
-## [1.5.0] — 2026-03-29
+## [1.0] — 2026-03-29
 
 ### Changed
 - **Single USERLIST folder** — merged `USERLIST/`, `USERLIST_RISKY/`, and `USERLIST_TESTED/` into one `USERLIST/` (2,526 files)
@@ -52,7 +52,7 @@ All notable changes to this project will be documented here.
 - `archive/PATCHED_GAMES.md` — stale list; use `conversion_report.json` for machine-readable equivalent
 - `archive/patch_new.yml`, `archive/gh_*.json`, `archive/scraped_*.txt`, `archive/bucanero_codes.json` — research/source artifacts
 
-## [1.4.0] — 2026-03-28
+## [0.4] — 2026-03-28
 
 ### Added
 - **32 new `.ncl` files** — missing USERLIST entries whose patches existed in `patch.yml` but had no file, plus new regions sourced from PSXPlace scraping:
@@ -83,7 +83,7 @@ All notable changes to this project will be documented here.
 - `SKIPPED_PATCHES.md` — regenerated; now reflects **450 unmatched Title IDs** (previously 375)
 - `README.md` — updated stats throughout; added COMMUNITY_TESTED.md reference and PSXPlace section expanded
 
-## [1.3.0] — 2026-03-27
+## [0.3] — 2026-03-27
 
 ### Added
 - **PSXPlace community patches** — manually sourced from [psx-place.com/threads/game-patches.43706](https://www.psx-place.com/threads/game-patches.43706/) (9 pages, 170 posts) and the community PS3 Codes spreadsheet
@@ -115,7 +115,7 @@ All notable changes to this project will be documented here.
 - `Sonic Unleashed BLUS30244` — Disable Shadows, Motion Blur, Depth of Field, Reflection (illusion; confirmed improved FPS on real HW by Mitsu)
 - `The Orange Box BLUS30055` — Unlock FPS alternate address (`0xC477F4` vs RPCS3's `0xC471C4`)
 
-## [1.2.0] — 2026-03-25
+## [0.2] — 2026-03-25
 
 ### Added
 - `USERLIST_RISKY/` — copy of USERLIST with 88 additional version-mismatched patches included
@@ -125,7 +125,7 @@ All notable changes to this project will be documented here.
 - `--risky` flag for `convert.js` — skips version check and writes to `USERLIST_RISKY/`
 - `conversion_report_risky.json` — audit log for the risky run
 
-## [1.1.0] — 2026-03-25
+## [0.1] — 2026-03-25
 
 ### Added
 - Automated RPCS3→Artemis FPS patch conversion (`convert.js`)
@@ -142,7 +142,7 @@ All notable changes to this project will be documented here.
 - **375 unique Title IDs** with no matching .ncl file in USERLIST
 - **`bef64` / `byte`** type lines — not representable in standard Artemis format
 
-## [1.0.0] — 2026-03-25
+## [0.0] — 2026-03-25
 
 ### Added
 - Initial release

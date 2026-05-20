@@ -1,5 +1,10 @@
 # Community Tested FPS / Performance Patches
 
+> [!TIP]
+> **Some games don't need Artemis at all** — you can unlock FPS by editing a config file directly inside the game folder.
+> Games like Condemned 2, F.E.A.R. 2, Crysis, Crysis 2/3, Middle-Earth: Shadow of Mordor, Syndicate, and Battlefield Bad Company 1/2 all support this method.
+> See [📁 File-Based FPS Unlocks](#-file-based-fps-unlocks-no-cheat-codes-needed) at the bottom of this page.
+
 Patches in this repo converted from RPCS3 patch.yml and PSXPlace forum research.
 Use on real PS3 with **Custom Firmware + Artemis PS3** (cheat tool).
 
@@ -189,16 +194,13 @@ All write `0x60000000` (NOP) to disable frame limiters — identical to real PS3
 | Game | File | Patch | Notes |
 |------|------|-------|-------|
 | 3D Dot Game Heroes | `BLES00875 / BLJM60180 / BLUS30490 01.00` | 60 FPS | |
-| Alice: Madness Returns | `BLUS30607 01.00` | Unlock FPS | US disc |
-| Alien Rage | `NPEB01088 01.00` | Unlock FPS | EU PSN |
 | Alpha Protocol | `BLES00704 v01.00` | Unlock FPS | ⚠️ 9-digit address in source, capped to 32-bit |
 | Anarchy Reigns | `BLES01232` | Unlock FPS | |
 | Bulletstorm | `NPEB00622 01.00` | Unlock FPS | EU PSN |
 | Dark Souls | `BLES01402 01.00` | Unlock FPS | ⚠️ May affect gameplay speed |
 | Dragon's Dogma | `BLES01356 01.00` | Unlock FPS | |
 | Dragon's Dogma: Dark Arisen | `BLES01794 01.00` / `NPUB31117 01.00` | Unlock FPS | |
-| Enslaved: Odyssey to the West | `BLES00989 01.00` / `BLES00989 BLUS30558` | Unlock FPS | |
-| Fallout 3 GOTY | `BLUS30451 01.00` | 60 FPS | |
+| Enslaved: Odyssey to the West | `BLES00989 BLUS30558` | Unlock FPS | ⚠️ Joey85 confirmed v1.01 (BLES00989); v1.00 / US untested |
 | Fallout: New Vegas Ultimate Edition | `BLES01475 01.00` | 60 FPS | EU version |
 | Folklore | `BCAS20013 BCES00050 BCUS98147 01.00` | 60 FPS | |
 | Genji: Days of the Blade | `BCES00002 01.00` | 60 FPS | |
@@ -213,16 +215,16 @@ All write `0x60000000` (NOP) to disable frame limiters — identical to real PS3
 | Killer Is Dead | `BLES01856 01.00` / `BLJS10215 BLUS31186 01.00` | Unlock FPS | EU/US/JP versions |
 | Kingdoms of Amalur: Reckoning | `BLES01251 BLUS30710 01.02` | Unlock FPS | |
 | Legendary | `BLES00405 01.00` | Unlock FPS | |
-| Lollipop Chainsaw | `BLES01525 01.00` / `BLJS10125 01.00` / `BLUS30917 01.00` | Unlock FPS | |
+| Lollipop Chainsaw | `BLJS10125 01.00` / `BLUS30917 01.00` | Unlock FPS | BLES01525 ✅ confirmed by Joey85 — see ✅ section above |
 | Lost Dimension | `BLUS31554 01.00` | 60 FPS | US version |
 | Lucha Libre AAA | `BLUS30640 01.00` | Unlock FPS | |
 | Lucha Libre AAA | `BLUS30640 01.01` | Unlock FPS | |
 | Mass Effect 2 | `BLES01133 v01.01 / BLUS30650 v01.00` | Unlock FPS | |
-| Metal Gear Solid 4 | `BLES00246 BLJM67001 02.00` | Unlock FPS | ⚠️ Some versions may crash |
+| Metal Gear Solid 4 | `BLJM67001 02.00` | Unlock FPS | BLES00246 ✅ confirmed by Joey85 — see ✅ section above |
 | NeverDead | `BLES01303 BLUS30654 01.00` | Unlock FPS | |
 | Nier | `BLES00826 BLUS30481 v01.01` / `BLUS30481 01.00` | Unlock FPS | |
 | Papo & Yo | `NPEB01109 01.00` | Unlock FPS | EU PSN |
-| Shadows of the Damned | `BLES01276 01.00` / `BLUS30653 01.00` | Unlock FPS | |
+| Shadows of the Damned | `BLUS30653 01.00` | Unlock FPS | BLES01276 ✅ confirmed by Joey85 — see ✅ section above |
 | Silent Hill: Downpour | `BLES01446` / `BLUS30565` | Unlock FPS | |
 | Silent Hill: Homecoming | `BLES00460 01.00` / `BLUS30169 01.00` | Unlock FPS | |
 | Splatterhouse | `BLES01120 01.00` | Unlock FPS | |
@@ -242,7 +244,7 @@ All write `0x60000000` (NOP) to disable frame limiters — identical to real PS3
 | Call of Duty 4: Modern Warfare | `BLES00148 BLJS10013 01.00` | Unlock FPS | |
 | Call of Duty: Black Ops | `BLES01031 BLES01032 01.13` | Unlock FPS | |
 | Call of Duty: World at War | `BLES00354 BLES00357` | Unlock FPS | |
-| Haze | `BLES00157 BLES00169` | Unlock FPS | |
+| Haze | `BLES00169` | Unlock FPS | BLES00157 ✅ confirmed by Joey85 (5 addresses) — see ✅ section above |
 | Killzone (HD) | `NPEA00418 01.00` | Unlock FPS | PSN version |
 | Resistance 2 | `BCAS20055 BCUS98120 01.00` | Unlock FPS | |
 | Resistance: Fall of Man | `BCES00001 BCUS98107` | Unlock FPS | |
@@ -307,13 +309,11 @@ Access method: **Multiman** → back up game as **JB Folder** format → edit fi
 | Game | Issue |
 |------|-------|
 | Grand Theft Auto V | ❌ Freezes during testing — do not use on real PS3 |
-| Ratchet & Clank series | Uses `type 1` (16-bit) codes at odd offsets — untested on real HW; may crash |
 | Lost Planet 2 `MRTC00002 01.01` | ⚠️ Community tested v1.02, file targets v1.01 — version mismatch |
 | Batman Arkham Origins `BLUS31147 01.06` | ℹ️ Patch enables Debug Menu (not direct FPS unlock); tested on v1.60, file is v1.06 |
 | MGS3 HD "50 FPS" | ❌ Reduces from native 60fps — not a useful patch |
 | JoJo's Bizarre Adventure: All Star Battle | Uses `bef32` vblank patches — requires 120Hz Vblank, not practical on real PS3 |
 | Metal Gear Solid V: The Phantom Pain | Patches exist on RPCS3 but PS3 version runs differently — not included |
-| Alice: Madness Returns | ⚠️ Listed as `N` in PS3 Codes WIP sheet — community uncertain about real HW |
 
 ---
 
@@ -337,4 +337,4 @@ Tested a patch on real PS3? Open an issue or PR with:
 - CFW version (HEN/Rebug/etc.)
 - Result: ✅ works / ⚠️ partial / ❌ crashes
 
-Sources: [PSXPlace game-patches thread](https://www.psx-place.com/threads/game-patches.43706/) · [RPCS3 patch.yml](https://github.com/RPCS3/rpcs3/blob/master/bin/patch.yml) · [Artemis PS3](https://github.com/bucanero/ArtemisPS3)
+Sources: [PSXPlace game-patches thread](https://www.psx-place.com/threads/game-patches.43706/) · [PSXPlace FPS patches #49905 (Joey85)](https://www.psx-place.com/threads/60-unlock-fps-patches.49905/) · [RPCS3 patch.yml](https://github.com/RPCS3/rpcs3/blob/master/bin/patch.yml) · [Artemis PS3](https://github.com/bucanero/ArtemisPS3)
