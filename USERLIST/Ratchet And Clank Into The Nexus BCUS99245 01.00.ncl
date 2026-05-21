@@ -1,3 +1,8 @@
+Unlock FPS [Tested] (PSXPlace)
+0
+Nascar1243
+0 0069A550 38A00001
+#
 Also known as
 Ratchet & Clank Nexus
 

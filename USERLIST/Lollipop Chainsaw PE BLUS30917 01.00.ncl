@@ -1,3 +1,8 @@
+Unlock FPS [Tested] (PSXPlace)
+0
+Nascar1243
+0 008F8908 28030001
+#
 Unlock FPS (RPCS3)
 0
 RPCS3
