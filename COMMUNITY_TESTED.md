@@ -84,7 +84,7 @@ Files are in the [`Working Artemis Patches/`](Working%20Artemis%20Patches/) fold
 
 ## ✅ Confirmed on Real PS3 Hardware
 
-Patches confirmed working on real PS3 hardware by community members. Sources: **Joey85** (PSXPlace thread #49905, Ghidra reverse engineering — 62 games, all personally tested), **FlexBy**, **vFxMz**, **illusion**, **NunoRS2000**, **Brolijah**, **Whatcookie**, **Zolika1351**, and others.
+Patches confirmed working on real PS3 hardware by community members. Sources: **Joey85** (PSXPlace thread #49905, Ghidra RE), **Nascar1243** ([PS3-FPS-Patches](https://github.com/Nascar1243/PS3-FPS-Patches) — 3 weeks of real-hardware testing), **FlexBy**, **vFxMz**, **illusion**, **NunoRS2000**, **Brolijah**, **Zolika1351**, and others.
 
 All entries are in `USERLIST/` with `(PSXPlace)` in the cheat name and `[Tested]` suffix.
 
@@ -103,18 +103,16 @@ All entries are in `USERLIST/` with `(PSXPlace)` in the cheat name and `[Tested]
 | Borderlands 2 | BLES01684 | 01.02 | Unlock FPS | FlexBy | EU disc; tested on v1.15 |
 | Borderlands 2 | BLUS30982 / BLES01684 / NPUB30898 | 01.15 | Unlock FPS | FlexBy | US+EU disc + US PSN |
 | Borderlands 2 | NPEB01144 | 01.00 | Unlock FPS | FlexBy | EU PSN |
-| Brutal Legend | BLES00562 | 01.02 | Unlock FPS | Joey85 | EU disc; 32 addresses |
-| Brutal Legend | BLUS30330 | 01.02 | Unlock FPS | community | US disc; confirmed via MAPI |
-| Bulletstorm | BLES01134 | 01.03 | Unlock FPS | Joey85 | EU disc |
+| Brutal Legend | BLES00562 / BLUS30330 | 01.02 | Unlock FPS | Joey85 / Nascar1243 | Apply from main menu; press Start in-game to activate |
+| Bulletstorm | BLES01134 | 01.03 | Unlock FPS | Joey85 | EU disc; max 62fps (UE3 engine cap) |
 | Call of Duty 4: Modern Warfare | BLES00148 / BLJS10013 | 01.00 | Unlock FPS | community | Capped at 60Hz vsync |
 | Call of Duty: Black Ops | BLES01031 / BLES01032 | 01.13 | Unlock FPS | community | |
 | Call of Duty: Black Ops | BLES01031 / BLES01032 / BLUS30591 | 01.00 | Unlock FPS | community | |
 | Castle Crashers | NPEB00293 | 01.00 | 60 FPS | FlexBy | EU PSN; confirmed in intro |
 | Castle of Illusion | NPUB31099 | 01.00 | Unlock FPS | Joey85 | US PSN |
-| Dead Space 2 | BLES01040 | 01.02 | Unlock FPS | Joey85 | EU disc |
-| Dead Space 2 | BLUS30717 | 01.02 | Unlock FPS | community | US disc; confirmed via MAPI |
+| Dead Space 2 | BLES01040 / BLUS30717 | 01.02 | Unlock FPS | Joey85 / Nascar1243 | EU + US disc |
 | Dead Space 3 | BLES01733 / BLUS31053 | 01.02 | Unlock FPS | Joey85 | |
-| Deadpool | BLES01789 / BLUS31146 | 01.00 | Unlock FPS | Joey85 | 8 addresses |
+| Deadpool | BLES01789 / BLUS31146 | 01.00 | Unlock FPS | Joey85 / Nascar1243 | Use 2-address version (7ED630: 41→60, 7b1fa7: →01); full 8-address version may crash |
 | Deus Ex: HR Director's Cut | BLUS31317 | 01.00 | Unlock FPS | Joey85 | |
 | Dragon Ball Z: Burst Limit | BLES00231 | 01.00 | 60 FPS | illusion | EU disc; be32 lines only |
 | Duke Nukem Forever | BLES01147 | 01.03 | Unlock FPS | Joey85 | No OC required |
@@ -126,8 +124,7 @@ All entries are in `USERLIST/` with `(PSXPlace)` in the cheat name and `[Tested]
 | Grand Theft Auto IV | NPEB00882 | 01.09 | Unlock FPS | Zolika1351/illusion | EU PSN |
 | Harry Potter: Order of the Phoenix | BLES00070 | 01.01 | 60 FPS | NunoRS2000 | Confirmed PS3 + RPCS3 |
 | Hatsune Miku: Project DIVA F 2nd | NPEB02013 | 01.00 | 60 FPS | Brolijah | EU PSN; partially confirmed |
-| Haze | BLES00157 / BLES00169 | av01.36 | Unlock FPS | Joey85 | EU disc; 5 addresses |
-| Haze | BLUS30094 | v01.36 | Unlock FPS | community | US disc; confirmed via MAPI |
+| Haze | BLES00157 / BLES00169 / BLUS30094 | av01.36 | Unlock FPS | Joey85 / Nascar1243 | EU + US disc |
 | Homefront | BLES00962 | 01.04 | Unlock FPS | Joey85 | |
 | I Am Alive | NPUB30383 | 01.00 | Unlock FPS | Joey85 | US PSN |
 | James Cameron's Avatar: The Game | BLUS30374 | 01.00 | Unlock FPS | Joey85 | |
@@ -136,19 +133,17 @@ All entries are in `USERLIST/` with `(PSXPlace)` in the cheat name and `[Tested]
 | Killzone 2 | BCES00081 / BCUS98116 | 01.29 | Unlock FPS | Joey85 | Direct FPS unlock |
 | Killzone 2 | BCES00081 / BCUS98116 | 01.29 | Extended FOV | vFxMz | 0.65× FOV multiplier; different address |
 | Killzone 3 | BCES01007 / BCUS98234 | 01.14 | Extended FOV | vFxMz | Two addresses |
-| Lollipop Chainsaw | BLES01525 | 01.00 | Unlock FPS | Joey85 | EU disc |
-| Lollipop Chainsaw | BLUS30917 | 01.00 | Unlock FPS | community | US disc; confirmed via MAPI |
+| Lollipop Chainsaw | BLES01525 / BLUS30917 | 01.00 | Unlock FPS | Joey85 / Nascar1243 | Max 58fps (UE3 engine cap); US: address 8F890B → 01 |
 | Lost Dimension | BLES02197 / BLUS31554 / BLJM61166 | 01.02 | 60 FPS | FlexBy | EU/US/JP; confirmed on stock PS3 |
 | Lost Dimension | BLJM61166 | 01.01 | 60 FPS | FlexBy | JP v1.00 addresses |
 | Lost Planet 2 | MRTC00002 | 01.01 | Unlock FPS | community | ⚠️ Tested on v1.02, file is v1.01 |
 | Metal Gear Solid 4 | BLES00246 | 02.00 | Unlock FPS | Joey85 | EU version |
 | Mindjack | MRTC00014 | 01.01 | Unlock FPS | Joey85 | |
-| Mirror's Edge | BLES00322 | 01.01 | Unlock FPS | Joey85 | EU disc; no OC required |
-| Mirror's Edge | BLUS30179 | 01.01 | Unlock FPS | community | US disc; confirmed via MAPI |
+| Mirror's Edge | BLES00322 / BLUS30179 | 01.01 | Unlock FPS | Joey85 / Nascar1243 | EU + US disc; no OC required |
 | Prince of Persia Trilogy 3D | BLUS30754 | 01.00 | Unlock FPS | Joey85 | Two Thrones + Warrior Within in one file |
 | Prototype 2 | BLES01532 / BLUS30756 | 01.00 | Unlock FPS | Joey85 | |
-| Ratchet & Clank: All 4 One | BCUS98175 | 01.03 | Unlock FPS | Joey85 | Run from main menu; be32 (safe) |
-| Ratchet & Clank: Into the Nexus | BCES01908 | 01.01 | Unlock FPS | Joey85 | Run from main menu; be32 (safe) |
+| Ratchet & Clank: All 4 One | BCUS98175 | 01.03 | Unlock FPS | Joey85 | ⚠️ Must apply from main menu only; results vary by dump |
+| Ratchet & Clank: Into the Nexus | BCES01908 / BCUS99245 | 01.01 | Unlock FPS | Joey85 / Nascar1243 | Apply from main menu; single address 69a553 → 01 sufficient |
 | Remember Me | BLES01701 | 01.00 | Unlock FPS | Joey85 | |
 | Resident Evil (HD Remaster) | NPEB02076 / NPJB00653 / NPUB31552 | v01.00 | Unlock FPS | Joey85 | EU/JP/US PSN |
 | Resident Evil 5 Gold Edition | BLES00816 | 01.01 | Unlock FPS | community / Joey85 | EU disc |
@@ -285,4 +280,4 @@ Tested a patch on real PS3? Open an issue or PR with:
 - CFW version (HEN / Rebug / etc.)
 - Result: ✅ works / ⚠️ partial / ❌ crashes
 
-Sources: [PSXPlace game-patches thread](https://www.psx-place.com/threads/game-patches.43706/) · [PSXPlace FPS patches #49905 (Joey85)](https://www.psx-place.com/threads/60-unlock-fps-patches.49905/) · [RPCS3 patch.yml](https://github.com/RPCS3/rpcs3/blob/master/bin/patch.yml) · [Artemis PS3](https://github.com/bucanero/ArtemisPS3)
+Sources: [PSXPlace game-patches thread](https://www.psx-place.com/threads/game-patches.43706/) · [PSXPlace FPS patches #49905 (Joey85)](https://www.psx-place.com/threads/60-unlock-fps-patches.49905/) · [Nascar1243/PS3-FPS-Patches](https://github.com/Nascar1243/PS3-FPS-Patches) · [RPCS3 patch.yml](https://github.com/RPCS3/rpcs3/blob/master/bin/patch.yml) · [Artemis PS3](https://github.com/bucanero/ArtemisPS3)

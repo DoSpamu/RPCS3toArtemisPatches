@@ -104,7 +104,7 @@ These files are in `Working Artemis Patches/` and are verified working on real P
 
 ## Community Confirmed Games — PSXPlace (✅)
 
-Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPlace thread #49905, Ghidra reverse engineering — all personally tested), **FlexBy**, **vFxMz**, **illusion**, **NunoRS2000**, and others. All entries are in `USERLIST/` with `(PSXPlace)` in the cheat name.
+Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPlace #49905), **Nascar1243** ([PS3-FPS-Patches](https://github.com/Nascar1243/PS3-FPS-Patches) — 3 weeks real-hardware testing), **FlexBy**, **vFxMz**, **illusion**, **NunoRS2000**, and others. All entries are in `USERLIST/` with `(PSXPlace)` in the cheat name.
 
 | Game | Title ID | Version | Patch | Author |
 |------|----------|---------|-------|--------|
@@ -121,16 +121,14 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | Borderlands 2 | BLES01684 | 01.02 | Unlock FPS | FlexBy |
 | Borderlands 2 | BLUS30982 / BLES01684 / NPUB30898 | 01.15 | Unlock FPS | FlexBy |
 | Borderlands 2 | NPEB01144 | 01.00 | Unlock FPS | FlexBy |
-| Brutal Legend | BLES00562 | 01.02 | Unlock FPS | Joey85 |
-| Brutal Legend | BLUS30330 | 01.02 | Unlock FPS | community |
+| Brutal Legend | BLES00562 / BLUS30330 | 01.02 | Unlock FPS | Joey85 / Nascar1243 |
 | Bulletstorm | BLES01134 | 01.03 | Unlock FPS | Joey85 |
 | Call of Duty 4: Modern Warfare | BLES00148 / BLJS10013 | 01.00 | Unlock FPS | community |
 | Call of Duty: Black Ops | BLES01031 / BLES01032 | 01.13 | Unlock FPS | community |
 | Call of Duty: Black Ops | BLES01031 / BLES01032 / BLUS30591 | 01.00 | Unlock FPS | community |
 | Castle Crashers | NPEB00293 | 01.00 | 60 FPS | FlexBy |
 | Castle of Illusion | NPUB31099 | 01.00 | Unlock FPS | Joey85 |
-| Dead Space 2 | BLES01040 | 01.02 | Unlock FPS | Joey85 |
-| Dead Space 2 | BLUS30717 | 01.02 | Unlock FPS | community |
+| Dead Space 2 | BLES01040 / BLUS30717 | 01.02 | Unlock FPS | Joey85 / Nascar1243 |
 | Dead Space 3 | BLES01733 / BLUS31053 | 01.02 | Unlock FPS | Joey85 |
 | Deadpool | BLES01789 / BLUS31146 | 01.00 | Unlock FPS | Joey85 |
 | Deus Ex: HR Director's Cut | BLUS31317 | 01.00 | Unlock FPS | Joey85 |
@@ -144,8 +142,7 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | Grand Theft Auto IV | NPEB00882 | 01.09 | Unlock FPS | Zolika1351/illusion |
 | Harry Potter: Order of the Phoenix | BLES00070 | 01.01 | 60 FPS | NunoRS2000 |
 | Hatsune Miku: Project DIVA F 2nd | NPEB02013 | 01.00 | 60 FPS | Brolijah |
-| Haze | BLES00157 / BLES00169 | av01.36 | Unlock FPS | Joey85 |
-| Haze | BLUS30094 | v01.36 | Unlock FPS | community |
+| Haze | BLES00157 / BLES00169 / BLUS30094 | av01.36 | Unlock FPS | Joey85 / Nascar1243 |
 | Homefront | BLES00962 | 01.04 | Unlock FPS | Joey85 |
 | I Am Alive | NPUB30383 | 01.00 | Unlock FPS | Joey85 |
 | James Cameron's Avatar: The Game | BLUS30374 | 01.00 | Unlock FPS | Joey85 |
@@ -154,15 +151,13 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | Killzone 2 | BCES00081 / BCUS98116 | 01.29 | Unlock FPS | Joey85 |
 | Killzone 2 | BCES00081 / BCUS98116 | 01.29 | Extended FOV | vFxMz |
 | Killzone 3 | BCES01007 / BCUS98234 | 01.14 | Extended FOV | vFxMz |
-| Lollipop Chainsaw | BLES01525 | 01.00 | Unlock FPS | Joey85 |
-| Lollipop Chainsaw | BLUS30917 | 01.00 | Unlock FPS | community |
+| Lollipop Chainsaw | BLES01525 / BLUS30917 | 01.00 | Unlock FPS | Joey85 / Nascar1243 |
 | Lost Dimension | BLES02197 / BLUS31554 / BLJM61166 | 01.02 | 60 FPS | FlexBy |
 | Lost Dimension | BLJM61166 | 01.01 | 60 FPS | FlexBy |
 | Lost Planet 2 | MRTC00002 | 01.01 | Unlock FPS | community |
 | Metal Gear Solid 4 | BLES00246 | 02.00 | Unlock FPS | Joey85 |
 | Mindjack | MRTC00014 | 01.01 | Unlock FPS | Joey85 |
-| Mirror's Edge | BLES00322 | 01.01 | Unlock FPS | Joey85 |
-| Mirror's Edge | BLUS30179 | 01.01 | Unlock FPS | community |
+| Mirror's Edge | BLES00322 / BLUS30179 | 01.01 | Unlock FPS | Joey85 / Nascar1243 |
 | Prince of Persia Trilogy 3D | BLUS30754 | 01.00 | Unlock FPS | Joey85 |
 | Prototype 2 | BLES01532 / BLUS30756 | 01.00 | Unlock FPS | Joey85 |
 | Ratchet & Clank: All 4 One | BCUS98175 | 01.03 | Unlock FPS | Joey85 |
@@ -186,7 +181,7 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | Splinter Cell: Blacklist | BLES01879 | 01.03 | Unlock FPS | Joey85 |
 | The Bureau: XCOM Declassified | BLUS30780 | 01.02 | Unlock FPS | Joey85 |
 | The Elder Scrolls IV: Oblivion GOTY | BLES00163 | — | 60 FPS | community |
-| The Orange Box | BLES00153 / BLUS30055 | av01.10 | Unlock FPS (HL2 + Portal) | community / Joey85 |
+| The Orange Box | BLES00153 / BLUS30055 | av01.10 | Unlock FPS | community / Nascar1243 |
 | Transformers: War for Cybertron | BLES00833 / BLUS30357 | 01.01 | Unlock FPS | Joey85 |
 | Warhammer 40,000: Space Marine | BLES01347 | 01.05 | Unlock FPS | Joey85 |
 | Wheelman | BLUS30262 | 01.01 | Unlock FPS | Joey85 |
@@ -246,7 +241,8 @@ The full patch database. Sources:
 ## Where does patch data come from?
 
 - [RPCS3 patch.yml](https://github.com/RPCS3/rpcs3/blob/master/bin/patch.yml) — official RPCS3 patch database
-- [PSXPlace FPS patches thread #49905](https://www.psx-place.com/threads/60-unlock-fps-patches.49905/) — 62 games confirmed by Joey85 (Ghidra reverse engineering, tested on real PS3)
+- [PSXPlace FPS patches thread #49905](https://www.psx-place.com/threads/60-unlock-fps-patches.49905/) — Joey85 (Ghidra reverse engineering, tested on real PS3)
+- [Nascar1243/PS3-FPS-Patches](https://github.com/Nascar1243/PS3-FPS-Patches) — 3 weeks of real-hardware testing, simplified working addresses
 - [PSXPlace game patches thread #43706](https://www.psx-place.com/threads/game-patches.43706/) — community real-hardware patches (FlexBy, vFxMz, illusion, etc.)
 - [PS3 Codes spreadsheet](https://docs.google.com/spreadsheets/d/1dvcFTU5xKt9ASbjlhaSD1zN1ONQPCFnmJNKMU5hGGNM/) — community test results
 - [bucanero/ArtemisPS3](https://github.com/bucanero/ArtemisPS3) — upstream USERLIST source
