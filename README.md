@@ -4,7 +4,7 @@
 
 # PS3 FPS Unlock Patches — Artemis & MAPI
 
-![Confirmed Games](https://img.shields.io/badge/confirmed_games-39-brightgreen)
+![Confirmed Games](https://img.shields.io/badge/confirmed_games-101-brightgreen)
 ![Patch Files](https://img.shields.io/badge/patch_files-2%2C542-blue)
 ![Platform](https://img.shields.io/badge/platform-PS3_CFW-lightgrey)
 ![License](https://img.shields.io/badge/license-MIT-yellow)
