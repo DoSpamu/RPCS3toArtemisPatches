@@ -207,7 +207,7 @@ All 4 addresses required:
 
 ---
 
-### Fallout: New Vegas Ultimate Edition
+### Fallout: New Vegas
 **BLUS30888**
 | Address | Change | Effect |
 |---------|--------|--------|
@@ -276,7 +276,7 @@ Both addresses required:
 ---
 
 ### Resistance 3
-**BLUS98176 — v1.05**
+**BCUS98176 — v1.05**
 | Address | Change | Effect |
 |---------|--------|--------|
 | `0075FA54` | `41 81` → `60 00` | 60 FPS |
@@ -316,12 +316,16 @@ Both addresses required:
 ---
 
 ### The Orange Box
+**BLUS30055 / BLES00153 — av1.10**
+
 | Address | Change | Effect |
 |---------|--------|--------|
 | `00C477F4` | any → `60 00 00 00` | Unlock FPS (HL2) |
-| `01153C4C` | any → `60 00 00 00` | Unlock FPS (Episode 1/2) |
+| `01153C4C` | any → `60 00 00 00` | Unlock FPS (Episode 1/2) ⚠️ |
 | `003A373C` | any → `60 00 00 00` | Unlock FPS (Portal) |
 | `009170D4` | any → `60 00 00 00` | Unlock FPS (additional) |
+
+> ⚠️ HL2 Episodes reportedly do not work for all users — HL2 and Portal confirmed working.
 
 ---
 

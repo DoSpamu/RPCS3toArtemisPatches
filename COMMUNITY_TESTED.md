@@ -4,17 +4,17 @@
 
 Some games store FPS limits in config files you can edit directly. **No Artemis required.** Access: **Multiman** → back up as **JB Folder** → edit file via **FTP**.
 
-| Game | File to Edit | Change | Default Cap | Notes | Source |
-|------|-------------|--------|-------------|-------|--------|
-| Battlefield Bad Company (Gold Ed.) | `Ps3GameSettings.cfg` | Set FPS value | — | Max 60! **>60 breaks the game** (HUD bugs). Also: "FPS Unlocker" mod by Aniroh on Nexus Mods. Note: this is BBC1 (BLES00261) | NunoRS2000 |
-| Battlefield Bad Company 2 | `Ps3GameSettings.cfg` | Set FPS value (same mod) | — | Same Nexus Mods "FPS Unlocker" as BBC1. Confirmed by Joey85 on real PS3. BLES00779 v1.05 | Joey85 |
-| Condemned 2: Bloodshot | `PS3_GAME/USRDIR/autoexec.cfg` | Delete or change `MaxFPS` line | 40 FPS | Delete entirely for ~59.94 FPS. `FovY` line also allows custom FOV | PoppaJerry |
-| Crysis | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | — | Vsync commands in .cfg do **not** work | NunoRS2000 |
-| Crysis 2 | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | — | Same as Crysis | NunoRS2000 |
-| Crysis 3 | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | — | Same as Crysis | NunoRS2000 |
-| F.E.A.R. 2: Project Origin | `PS3_GAME/USRDIR/autoexec.cfg` | Delete `MaxFPS` line; set `"VSyncOnFlip" "0.000000"` | 45 FPS | Delete `MaxFPS` entirely for ~59.94 FPS. Keep `FovY` ≤80 to avoid weapon clipping | PoppaJerry |
-| Middle-Earth: Shadow of Mordor | `PS3_GAME/USRDIR/autoexec.cfg` | Delete or change `MaxFPS` line | 45 FPS | Delete entirely for ~59.94 FPS | PoppaJerry |
-| Syndicate | `ENVIRONMENT_PS3.CFG` | Change vsync value to `0` | — | ⚠️ File is **binary format** — use a hex editor, not a text editor | NunoRS2000 |
+| Game | Title ID | File to Edit | Change | Default Cap | Notes | Source |
+|------|----------|-------------|--------|-------------|-------|--------|
+| Battlefield Bad Company (Gold Ed.) | BLES00261 v1.20 | `Ps3GameSettings.cfg` | Set FPS value | — | Max 60! **>60 breaks the game** (HUD bugs). "FPS Unlocker" mod by Aniroh on Nexus Mods | NunoRS2000 |
+| Battlefield Bad Company 2 | BLES00779 v1.05 | `Ps3GameSettings.cfg` | Set FPS value (same mod) | — | Same Nexus Mods "FPS Unlocker" as BBC1. Confirmed by Joey85 on real PS3 | Joey85 |
+| Condemned 2: Bloodshot | BLUS30115 v1.00 | `PS3_GAME/USRDIR/autoexec.cfg` | Delete or change `MaxFPS` line | 40 FPS | Delete entirely for ~59.94 FPS. `FovY` line also allows custom FOV | PoppaJerry |
+| Crysis | — | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | — | Vsync commands in .cfg do **not** work | NunoRS2000 |
+| Crysis 2 | BLUS30631 v1.04 | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | — | Same as Crysis | NunoRS2000 |
+| Crysis 3 | BLES01649 v1.04 | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | — | Same as Crysis | NunoRS2000 |
+| F.E.A.R. 2: Project Origin | BLES00464 | `PS3_GAME/USRDIR/autoexec.cfg` | Delete `MaxFPS` line; set `"VSyncOnFlip" "0.000000"` | 45 FPS | Delete `MaxFPS` entirely for ~59.94 FPS. Keep `FovY` ≤80 to avoid weapon clipping | PoppaJerry |
+| Middle-Earth: Shadow of Mordor | — | `PS3_GAME/USRDIR/autoexec.cfg` | Delete or change `MaxFPS` line | 45 FPS | Delete entirely for ~59.94 FPS | PoppaJerry |
+| Syndicate | BLUS30804 v1.00 | `ENVIRONMENT_PS3.CFG` | Change vsync value to `0` | — | ⚠️ File is **binary format** — use a hex editor, not a text editor | NunoRS2000 |
 
 > **Condemned 2**, **F.E.A.R. 2**, and **Shadow of Mordor** all use the **LithTech Jupiter EX** engine — the same `autoexec.cfg` `MaxFPS` mechanism applies to all three.
 
@@ -103,14 +103,16 @@ All entries are in `USERLIST/` with `(PSXPlace)` in the cheat name and `[Tested]
 | Borderlands 2 | BLES01684 | 01.02 | Unlock FPS | FlexBy | EU disc; tested on v1.15 |
 | Borderlands 2 | BLUS30982 / BLES01684 / NPUB30898 | 01.15 | Unlock FPS | FlexBy | US+EU disc + US PSN |
 | Borderlands 2 | NPEB01144 | 01.00 | Unlock FPS | FlexBy | EU PSN |
-| Brutal Legend | BLES00562 | 01.02 | Unlock FPS | Joey85 | 32 addresses |
+| Brutal Legend | BLES00562 | 01.02 | Unlock FPS | Joey85 | EU disc; 32 addresses |
+| Brutal Legend | BLUS30330 | 01.02 | Unlock FPS | community | US disc; confirmed via MAPI |
 | Bulletstorm | BLES01134 | 01.03 | Unlock FPS | Joey85 | EU disc |
 | Call of Duty 4: Modern Warfare | BLES00148 / BLJS10013 | 01.00 | Unlock FPS | community | Capped at 60Hz vsync |
 | Call of Duty: Black Ops | BLES01031 / BLES01032 | 01.13 | Unlock FPS | community | |
 | Call of Duty: Black Ops | BLES01031 / BLES01032 / BLUS30591 | 01.00 | Unlock FPS | community | |
 | Castle Crashers | NPEB00293 | 01.00 | 60 FPS | FlexBy | EU PSN; confirmed in intro |
 | Castle of Illusion | NPUB31099 | 01.00 | Unlock FPS | Joey85 | US PSN |
-| Dead Space 2 | BLES01040 | 01.02 | Unlock FPS | Joey85 | |
+| Dead Space 2 | BLES01040 | 01.02 | Unlock FPS | Joey85 | EU disc |
+| Dead Space 2 | BLUS30717 | 01.02 | Unlock FPS | community | US disc; confirmed via MAPI |
 | Dead Space 3 | BLES01733 / BLUS31053 | 01.02 | Unlock FPS | Joey85 | |
 | Deadpool | BLES01789 / BLUS31146 | 01.00 | Unlock FPS | Joey85 | 8 addresses |
 | Deus Ex: HR Director's Cut | BLUS31317 | 01.00 | Unlock FPS | Joey85 | |
@@ -124,7 +126,8 @@ All entries are in `USERLIST/` with `(PSXPlace)` in the cheat name and `[Tested]
 | Grand Theft Auto IV | NPEB00882 | 01.09 | Unlock FPS | Zolika1351/illusion | EU PSN |
 | Harry Potter: Order of the Phoenix | BLES00070 | 01.01 | 60 FPS | NunoRS2000 | Confirmed PS3 + RPCS3 |
 | Hatsune Miku: Project DIVA F 2nd | NPEB02013 | 01.00 | 60 FPS | Brolijah | EU PSN; partially confirmed |
-| Haze | BLES00157 / BLES00169 | av01.36 | Unlock FPS | Joey85 | 5 addresses |
+| Haze | BLES00157 / BLES00169 | av01.36 | Unlock FPS | Joey85 | EU disc; 5 addresses |
+| Haze | BLUS30094 | v01.36 | Unlock FPS | community | US disc; confirmed via MAPI |
 | Homefront | BLES00962 | 01.04 | Unlock FPS | Joey85 | |
 | I Am Alive | NPUB30383 | 01.00 | Unlock FPS | Joey85 | US PSN |
 | James Cameron's Avatar: The Game | BLUS30374 | 01.00 | Unlock FPS | Joey85 | |
@@ -133,13 +136,15 @@ All entries are in `USERLIST/` with `(PSXPlace)` in the cheat name and `[Tested]
 | Killzone 2 | BCES00081 / BCUS98116 | 01.29 | Unlock FPS | Joey85 | Direct FPS unlock |
 | Killzone 2 | BCES00081 / BCUS98116 | 01.29 | Extended FOV | vFxMz | 0.65× FOV multiplier; different address |
 | Killzone 3 | BCES01007 / BCUS98234 | 01.14 | Extended FOV | vFxMz | Two addresses |
-| Lollipop Chainsaw | BLES01525 | 01.00 | Unlock FPS | Joey85 | |
+| Lollipop Chainsaw | BLES01525 | 01.00 | Unlock FPS | Joey85 | EU disc |
+| Lollipop Chainsaw | BLUS30917 | 01.00 | Unlock FPS | community | US disc; confirmed via MAPI |
 | Lost Dimension | BLES02197 / BLUS31554 / BLJM61166 | 01.02 | 60 FPS | FlexBy | EU/US/JP; confirmed on stock PS3 |
 | Lost Dimension | BLJM61166 | 01.01 | 60 FPS | FlexBy | JP v1.00 addresses |
 | Lost Planet 2 | MRTC00002 | 01.01 | Unlock FPS | community | ⚠️ Tested on v1.02, file is v1.01 |
 | Metal Gear Solid 4 | BLES00246 | 02.00 | Unlock FPS | Joey85 | EU version |
 | Mindjack | MRTC00014 | 01.01 | Unlock FPS | Joey85 | |
-| Mirror's Edge | BLES00322 | 01.01 | Unlock FPS | Joey85 | No OC required |
+| Mirror's Edge | BLES00322 | 01.01 | Unlock FPS | Joey85 | EU disc; no OC required |
+| Mirror's Edge | BLUS30179 | 01.01 | Unlock FPS | community | US disc; confirmed via MAPI |
 | Prince of Persia Trilogy 3D | BLUS30754 | 01.00 | Unlock FPS | Joey85 | Two Thrones + Warrior Within in one file |
 | Prototype 2 | BLES01532 / BLUS30756 | 01.00 | Unlock FPS | Joey85 | |
 | Ratchet & Clank: All 4 One | BCUS98175 | 01.03 | Unlock FPS | Joey85 | Run from main menu; be32 (safe) |
@@ -163,7 +168,7 @@ All entries are in `USERLIST/` with `(PSXPlace)` in the cheat name and `[Tested]
 | Splinter Cell: Blacklist | BLES01879 | 01.03 | Unlock FPS | Joey85 | |
 | The Bureau: XCOM Declassified | BLUS30780 | 01.02 | Unlock FPS | Joey85 | |
 | The Elder Scrolls IV: Oblivion GOTY | BLES00163 | — | 60 FPS | community | EU version; 20-60 FPS depending on scene |
-| The Orange Box | BLES00153 / BLUS30055 | av01.10 | Unlock FPS | community / Joey85 | 3 patches: HL2 + Ep1+2 + Portal |
+| The Orange Box | BLES00153 / BLUS30055 | av01.10 | Unlock FPS | community / Joey85 | HL2 + Portal confirmed; HL2 Episodes may not work for all users |
 | Transformers: War for Cybertron | BLES00833 / BLUS30357 | 01.01 | Unlock FPS | Joey85 | |
 | Warhammer 40,000: Space Marine | BLES01347 | 01.05 | Unlock FPS | Joey85 | |
 | Wheelman | BLUS30262 | 01.01 | Unlock FPS | Joey85 | |
@@ -189,7 +194,7 @@ Converted from the official RPCS3 patch.yml. All write `0x60000000` (NOP) to dis
 | Dragon's Dogma: Dark Arisen | `BLES01794 01.00` / `NPUB31117 01.00` | Unlock FPS | |
 | Genji: Days of the Blade | `BCES00002 01.00` | 60 FPS | |
 | Legendary | `BLES00405 01.00` | Unlock FPS | |
-| Lollipop Chainsaw | `BLJS10125 01.00` / `BLUS30917 01.00` | Unlock FPS | JP/US versions (EU BLES01525 confirmed by Joey85) |
+| Lollipop Chainsaw | `BLJS10125 01.00` | Unlock FPS | JP version (EU BLES01525 + US BLUS30917 confirmed in ✅ section) |
 | Lucha Libre AAA | `BLUS30640 01.00` | Unlock FPS | |
 | Lucha Libre AAA | `BLUS30640 01.01` | Unlock FPS | |
 | Mass Effect 2 | `BLES01133 v01.01` / `BLUS30650 v01.00` | Unlock FPS | |

@@ -122,6 +122,7 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | Borderlands 2 | BLUS30982 / BLES01684 / NPUB30898 | 01.15 | Unlock FPS | FlexBy |
 | Borderlands 2 | NPEB01144 | 01.00 | Unlock FPS | FlexBy |
 | Brutal Legend | BLES00562 | 01.02 | Unlock FPS | Joey85 |
+| Brutal Legend | BLUS30330 | 01.02 | Unlock FPS | community |
 | Bulletstorm | BLES01134 | 01.03 | Unlock FPS | Joey85 |
 | Call of Duty 4: Modern Warfare | BLES00148 / BLJS10013 | 01.00 | Unlock FPS | community |
 | Call of Duty: Black Ops | BLES01031 / BLES01032 | 01.13 | Unlock FPS | community |
@@ -129,6 +130,7 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | Castle Crashers | NPEB00293 | 01.00 | 60 FPS | FlexBy |
 | Castle of Illusion | NPUB31099 | 01.00 | Unlock FPS | Joey85 |
 | Dead Space 2 | BLES01040 | 01.02 | Unlock FPS | Joey85 |
+| Dead Space 2 | BLUS30717 | 01.02 | Unlock FPS | community |
 | Dead Space 3 | BLES01733 / BLUS31053 | 01.02 | Unlock FPS | Joey85 |
 | Deadpool | BLES01789 / BLUS31146 | 01.00 | Unlock FPS | Joey85 |
 | Deus Ex: HR Director's Cut | BLUS31317 | 01.00 | Unlock FPS | Joey85 |
@@ -143,6 +145,7 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | Harry Potter: Order of the Phoenix | BLES00070 | 01.01 | 60 FPS | NunoRS2000 |
 | Hatsune Miku: Project DIVA F 2nd | NPEB02013 | 01.00 | 60 FPS | Brolijah |
 | Haze | BLES00157 / BLES00169 | av01.36 | Unlock FPS | Joey85 |
+| Haze | BLUS30094 | v01.36 | Unlock FPS | community |
 | Homefront | BLES00962 | 01.04 | Unlock FPS | Joey85 |
 | I Am Alive | NPUB30383 | 01.00 | Unlock FPS | Joey85 |
 | James Cameron's Avatar: The Game | BLUS30374 | 01.00 | Unlock FPS | Joey85 |
@@ -152,12 +155,14 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | Killzone 2 | BCES00081 / BCUS98116 | 01.29 | Extended FOV | vFxMz |
 | Killzone 3 | BCES01007 / BCUS98234 | 01.14 | Extended FOV | vFxMz |
 | Lollipop Chainsaw | BLES01525 | 01.00 | Unlock FPS | Joey85 |
+| Lollipop Chainsaw | BLUS30917 | 01.00 | Unlock FPS | community |
 | Lost Dimension | BLES02197 / BLUS31554 / BLJM61166 | 01.02 | 60 FPS | FlexBy |
 | Lost Dimension | BLJM61166 | 01.01 | 60 FPS | FlexBy |
 | Lost Planet 2 | MRTC00002 | 01.01 | Unlock FPS | community |
 | Metal Gear Solid 4 | BLES00246 | 02.00 | Unlock FPS | Joey85 |
 | Mindjack | MRTC00014 | 01.01 | Unlock FPS | Joey85 |
 | Mirror's Edge | BLES00322 | 01.01 | Unlock FPS | Joey85 |
+| Mirror's Edge | BLUS30179 | 01.01 | Unlock FPS | community |
 | Prince of Persia Trilogy 3D | BLUS30754 | 01.00 | Unlock FPS | Joey85 |
 | Prototype 2 | BLES01532 / BLUS30756 | 01.00 | Unlock FPS | Joey85 |
 | Ratchet & Clank: All 4 One | BCUS98175 | 01.03 | Unlock FPS | Joey85 |
@@ -181,7 +186,7 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | Splinter Cell: Blacklist | BLES01879 | 01.03 | Unlock FPS | Joey85 |
 | The Bureau: XCOM Declassified | BLUS30780 | 01.02 | Unlock FPS | Joey85 |
 | The Elder Scrolls IV: Oblivion GOTY | BLES00163 | — | 60 FPS | community |
-| The Orange Box | BLES00153 / BLUS30055 | av01.10 | Unlock FPS | community / Joey85 |
+| The Orange Box | BLES00153 / BLUS30055 | av01.10 | Unlock FPS (HL2 + Portal) | community / Joey85 |
 | Transformers: War for Cybertron | BLES00833 / BLUS30357 | 01.01 | Unlock FPS | Joey85 |
 | Warhammer 40,000: Space Marine | BLES01347 | 01.05 | Unlock FPS | Joey85 |
 | Wheelman | BLUS30262 | 01.01 | Unlock FPS | Joey85 |
@@ -194,15 +199,15 @@ Some games store FPS limits in config files — edit via FTP. Access: **Multiman
 
 | Game | Title ID | File to Edit | Change | Notes |
 |------|----------|-------------|--------|-------|
-| Battlefield Bad Company | BLES00261 | `Ps3GameSettings.cfg` | Set FPS value | Max 60 — higher breaks HUD |
-| Battlefield Bad Company 2 | BLES00779 | `Ps3GameSettings.cfg` | Set FPS value | Same mod as BBC1; confirmed Joey85 v1.05 |
-| Condemned 2: Bloodshot | — | `PS3_GAME/USRDIR/autoexec.cfg` | Delete `MaxFPS` line | Default 40 FPS → ~60 FPS |
+| Battlefield Bad Company | BLES00261 v1.20 | `Ps3GameSettings.cfg` | Set FPS value | Max 60 — higher breaks HUD |
+| Battlefield Bad Company 2 | BLES00779 v1.05 | `Ps3GameSettings.cfg` | Set FPS value | Same mod as BBC1; confirmed Joey85 |
+| Condemned 2: Bloodshot | BLUS30115 v1.00 | `PS3_GAME/USRDIR/autoexec.cfg` | Delete `MaxFPS` line | Default 40 FPS → ~60 FPS |
 | Crysis | — | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | Vsync commands in .cfg do not work |
-| Crysis 2 | — | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | Same as Crysis |
-| Crysis 3 | — | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | Same as Crysis |
-| F.E.A.R. 2: Project Origin | — | `PS3_GAME/USRDIR/autoexec.cfg` | Delete `MaxFPS`; set VSyncOnFlip 0 | Default 45 FPS → ~60 FPS |
+| Crysis 2 | BLUS30631 v1.04 | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | Same as Crysis |
+| Crysis 3 | BLES01649 v1.04 | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | Same as Crysis |
+| F.E.A.R. 2: Project Origin | BLES00464 | `PS3_GAME/USRDIR/autoexec.cfg` | Delete `MaxFPS`; set VSyncOnFlip 0 | Default 45 FPS → ~60 FPS |
 | Middle-Earth: Shadow of Mordor | — | `PS3_GAME/USRDIR/autoexec.cfg` | Delete `MaxFPS` line | Default 45 FPS → ~60 FPS |
-| Syndicate | — | `ENVIRONMENT_PS3.CFG` | Change vsync value to `0` | ⚠️ Binary file — use hex editor |
+| Syndicate | BLUS30804 v1.00 | `ENVIRONMENT_PS3.CFG` | Change vsync value to `0` | ⚠️ Binary file — use hex editor |
 
 > Condemned 2, F.E.A.R. 2, and Shadow of Mordor all use the LithTech Jupiter EX engine — same `MaxFPS` mechanism.
 
