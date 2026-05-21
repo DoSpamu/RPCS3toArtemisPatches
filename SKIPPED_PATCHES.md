@@ -9,7 +9,7 @@ This file documents every case where an RPCS3 patch could **not** be automatical
 | Reason | Count |
 |--------|-------|
 | No matching `.ncl` file in USERLIST | 446 unique Title IDs |
-| Game version mismatch (safe mode only) | included in `USERLIST_RISKY/` instead |
+| Game version mismatch (safe mode only) | included via `--risky` flag with `v01.XX` label |
 | Unsupported patch instruction type (`byte`, `bef64`, `be64`) | skipped silently during conversion |
 
 ---
@@ -46,7 +46,7 @@ If your game is in this list, you can still use the patch manually:
 
 The converter in **safe mode** (`node convert.js`) only adds a patch if the game version in `patch.yml` exactly matches the version in the `.ncl` filename (e.g., `01.00`).
 
-If the versions do not match, the patch is skipped in `USERLIST/` but **is included** in `USERLIST_RISKY/` with a version suffix in the name (e.g., `Unlock FPS v01.04 (RPCS3)`), so you know which version it was written for.
+If the versions do not match, the patch is skipped in safe mode. Run `node convert.js --risky` to include version-mismatched patches — they are written to the same `USERLIST/` folder with a version suffix in the cheat name (e.g., `Unlock FPS v01.04 (RPCS3)`) so you know which game version they were written for.
 
 ---
 

@@ -14,6 +14,20 @@ Sourced from the RPCS3 emulator patch database and the PSXPlace community.
 
 ---
 
+## Start here
+
+> **New to this?** Pick the right method for your situation:
+
+| Your situation | Use this | Section |
+|----------------|----------|---------|
+| I want a tested, plug-and-play patch | **`Working Artemis Patches/`** folder (39 games) | [Confirmed (39)](#confirmed-working-games-39-games) |
+| My game isn't in that folder | **`PSXPlace Confirmed/`** folder (62 games) | [Community Confirmed](#community-confirmed-games--psxplace-) |
+| My game isn't in either folder | Full **`USERLIST/`** (2,542 files, mixed confidence) | [About USERLIST](#about-userlist-2542-files) |
+| I don't want to FTP files | **PS3MAPI** (apply patches live in browser) | [`MAPI_PATCHES.md`](MAPI_PATCHES.md) |
+| My game has a config file (Crysis, BBC, etc.) | **File-based unlock** (no Artemis at all) | [File-Based](#file-based-fps-unlocks-no-artemis-needed) |
+
+---
+
 ## Downloads
 
 The latest release (`v1.1`) has one zip with two folders:
@@ -128,7 +142,7 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | Call of Duty: Black Ops | BLES01031 / BLES01032 / BLUS30591 | 01.00 | Unlock FPS | community |
 | Castle Crashers | NPEB00293 | 01.00 | 60 FPS | FlexBy |
 | Castle of Illusion | NPUB31099 | 01.00 | Unlock FPS | Joey85 |
-| Dead Space 2 | BLES01040 / BLUS30717 | 01.02 | Unlock FPS | Joey85 / Nascar1243 |
+| Dead Space 2 | BLES01040 | 01.02 | Unlock FPS | Joey85 / Nascar1243 |
 | Dead Space 3 | BLES01733 / BLUS31053 | 01.02 | Unlock FPS | Joey85 |
 | Deadpool | BLES01789 / BLUS31146 | 01.00 | Unlock FPS | Joey85 |
 | Deus Ex: HR Director's Cut | BLUS31317 | 01.00 | Unlock FPS | Joey85 |
@@ -157,7 +171,7 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | Lost Planet 2 | MRTC00002 | 01.01 | Unlock FPS | community |
 | Metal Gear Solid 4 | BLES00246 | 02.00 | Unlock FPS | Joey85 |
 | Mindjack | MRTC00014 | 01.01 | Unlock FPS | Joey85 |
-| Mirror's Edge | BLES00322 / BLUS30179 | 01.01 | Unlock FPS | Joey85 / Nascar1243 |
+| Mirror's Edge | BLES00322 | 01.01 | Unlock FPS | Joey85 / Nascar1243 |
 | Prince of Persia Trilogy 3D | BLUS30754 | 01.00 | Unlock FPS | Joey85 |
 | Prototype 2 | BLES01532 / BLUS30756 | 01.00 | Unlock FPS | Joey85 |
 | Ratchet & Clank: All 4 One | BCUS98175 | 01.03 | Unlock FPS | Joey85 |

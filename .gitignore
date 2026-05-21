@@ -23,6 +23,10 @@ EXTRACTED_CONVERSATIONS.txt
 PS3 Codes.xlsx
 .claude/
 
+# Research / reference material (not for public repo)
+FPS Unlocking- wMM MAPI*.docx
+beta_testing/
+
 # Scraper/tool temp files
 .playwright-mcp/
 .superpowers/

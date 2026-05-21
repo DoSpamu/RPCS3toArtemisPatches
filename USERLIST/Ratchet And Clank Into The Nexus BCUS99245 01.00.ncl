@@ -1,4 +1,4 @@
-Unlock FPS [Tested] (PSXPlace)
+Unlock FPS (PSXPlace) [Tested]
 0
 Nascar1243
 0 0069A550 38A00001

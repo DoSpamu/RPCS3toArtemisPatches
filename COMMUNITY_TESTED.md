@@ -110,7 +110,7 @@ All entries are in `USERLIST/` with `(PSXPlace)` in the cheat name and `[Tested]
 | Call of Duty: Black Ops | BLES01031 / BLES01032 / BLUS30591 | 01.00 | Unlock FPS | community | |
 | Castle Crashers | NPEB00293 | 01.00 | 60 FPS | FlexBy | EU PSN; confirmed in intro |
 | Castle of Illusion | NPUB31099 | 01.00 | Unlock FPS | Joey85 | US PSN |
-| Dead Space 2 | BLES01040 / BLUS30717 | 01.02 | Unlock FPS | Joey85 / Nascar1243 | EU + US disc |
+| Dead Space 2 | BLES01040 | 01.02 | Unlock FPS | Joey85 / Nascar1243 | EU disc (US BLUS30624 not in repo — patch may need separate addresses) |
 | Dead Space 3 | BLES01733 / BLUS31053 | 01.02 | Unlock FPS | Joey85 | |
 | Deadpool | BLES01789 / BLUS31146 | 01.00 | Unlock FPS | Joey85 / Nascar1243 | Use 2-address version (7ED630: 41→60, 7b1fa7: →01); full 8-address version may crash |
 | Deus Ex: HR Director's Cut | BLUS31317 | 01.00 | Unlock FPS | Joey85 | |
@@ -139,7 +139,7 @@ All entries are in `USERLIST/` with `(PSXPlace)` in the cheat name and `[Tested]
 | Lost Planet 2 | MRTC00002 | 01.01 | Unlock FPS | community | ⚠️ Tested on v1.02, file is v1.01 |
 | Metal Gear Solid 4 | BLES00246 | 02.00 | Unlock FPS | Joey85 | EU version |
 | Mindjack | MRTC00014 | 01.01 | Unlock FPS | Joey85 | |
-| Mirror's Edge | BLES00322 / BLUS30179 | 01.01 | Unlock FPS | Joey85 / Nascar1243 | EU + US disc; no OC required |
+| Mirror's Edge | BLES00322 | 01.01 | Unlock FPS | Joey85 / Nascar1243 | EU disc; no OC required (US BLUS30179 .ncl not in repo) |
 | Prince of Persia Trilogy 3D | BLUS30754 | 01.00 | Unlock FPS | Joey85 | Two Thrones + Warrior Within in one file |
 | Prototype 2 | BLES01532 / BLUS30756 | 01.00 | Unlock FPS | Joey85 | |
 | Ratchet & Clank: All 4 One | BCUS98175 | 01.03 | Unlock FPS | Joey85 | ⚠️ Must apply from main menu only; results vary by dump |

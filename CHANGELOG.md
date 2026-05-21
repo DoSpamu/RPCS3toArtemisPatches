@@ -4,6 +4,31 @@ All notable changes to this project will be documented here.
 
 ## [Unreleased]
 
+## [1.2] — 2026-05-21
+
+### Fixed (community feedback / Nascar1243 real-hardware testing)
+- **Deadpool BLES01789 BLUS31146** — removed problematic address `007B2238` (caused 30↔60 FPS oscillation per Nascar1243). Kept the working 7-address patch.
+- **Lollipop Chainsaw PE BLUS30917 + BLES01525 BLUS30917** — prepended confirmed PSXPlace patch (`008F8908 28030001` by Nascar1243). Previous RPCS3-only entry had wrong addresses for real PS3. Max 58 FPS (UE3 engine cap).
+- **Ratchet & Clank: Into the Nexus BCUS99245** (both `01.00` and `v01.00 av01.00` files) — prepended confirmed Nascar1243 patch (`0069A550 38A00001`). Single-address version works; EU file BCES01908 already had correct 2-address Joey85 patch.
+- **Killer Is Dead BCAS20292** — removed duplicate PSXPlace entry that had identical addresses to the existing `(RPCS3) [Tested]` entry.
+- **Killzone 3 BCES01007 BCUS98234** — removed redundant `Debug Menu (RPCS3)` entry (duplicated by `Debug Options [Tested]` from dron_3 with same addresses).
+- **MAPI_PATCHES.md** — fixed bad Title ID `BLUS03702` (was a 5-digit typo) on GTA IV entry.
+- **MAPI_PATCHES.md** — corrected Resistance 3 Title ID from `BLUS98176` to `BCUS98176` (Sony-format US disc).
+- **MAPI_PATCHES.md** — corrected Fallout: New Vegas entry name (BLUS30888 is base game, not Ultimate Edition).
+- **MAPI_PATCHES.md** — Orange Box: added Title IDs `BLUS30055 / BLES00153` and warning that HL2 Episodes don't work for all users.
+
+### Changed
+- **COMMUNITY_TESTED.md** + **README.md** — combined split EU/US rows for games where one entry covers both regions: Brutal Legend, Dead Space 2, Haze, Lollipop Chainsaw, Mirror's Edge.
+- **COMMUNITY_TESTED.md** — removed Title IDs that have no matching `.ncl` file in the repo (Dead Space 2 `BLUS30717`, Mirror's Edge `BLUS30179`) to avoid misleading users.
+- **README.md** — added "Start here" decision table at the top so new users can quickly pick the right method (Working Patches folder / PSXPlace folder / USERLIST / MAPI / file-based).
+- **CLAUDE.md** — updated folder structure documentation to reflect current state (removed stale `archive/` references, updated USERLIST count to 2,542, added `Working Artemis Patches/` and `PSXPlace Confirmed/` folders).
+- **SKIPPED_PATCHES.md** — replaced stale `USERLIST_RISKY/` references with the current `--risky` flag workflow.
+
+### Added
+- **Nascar1243/PS3-FPS-Patches** added as an official source in README, COMMUNITY_TESTED, and CHANGELOG — 3 weeks of real-hardware testing, simplified working addresses for games where Joey85's research had extra unnecessary addresses.
+- **COMMUNITY_TESTED.md** — File-Based table: added Title IDs and versions for all entries that had them (Condemned 2 BLUS30115, Crysis 2 BLUS30631, Crysis 3 BLES01649, F.E.A.R. 2 BLES00464, Syndicate BLUS30804, BBC1 v1.20, BBC2 v1.05).
+- Per-game notes in COMMUNITY_TESTED for engine quirks (Bulletstorm/Lollipop Chainsaw max 58-62 FPS due to UE3 cap; R&C All 4 One requires main-menu application).
+
 ## [1.1] — 2026-05-20
 
 ### Added

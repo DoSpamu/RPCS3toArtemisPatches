@@ -31,7 +31,7 @@ Source: *FPS Unlocking Finalized — wMM MAPI* (personal research document).
 ---
 
 ### Grand Theft Auto IV
-**BLUS30127 / BLUS03702 — v1.00 & v1.08**
+**BLUS30127 — v1.00 & v1.08**
 | Address | Change | Effect |
 |---------|--------|--------|
 | `00F18830` | `3D` → `00` | Uncapped FPS |
