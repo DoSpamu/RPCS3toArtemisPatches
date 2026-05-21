@@ -100,7 +100,113 @@ These files are in `Working Artemis Patches/` and are verified working on real P
 | Uncharted: Drake's Fortune | BCES00065 / BCUS98103 | 01.10 |
 | Uncharted 2: Among Thieves | BCUS98213 | 01.09 |
 
-For more confirmed games (EU/JP regions, PSXPlace community) see [`COMMUNITY_TESTED.md`](COMMUNITY_TESTED.md).
+---
+
+## Community Confirmed Games — PSXPlace (✅)
+
+Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPlace thread #49905, Ghidra reverse engineering — all personally tested), **FlexBy**, **vFxMz**, **illusion**, **NunoRS2000**, and others. All entries are in `USERLIST/` with `(PSXPlace)` in the cheat name.
+
+| Game | Title ID | Version | Patch | Author |
+|------|----------|---------|-------|--------|
+| Alice: Madness Returns | BLES01265 | 01.00 | Unlock FPS | FlexBy |
+| Alice: Madness Returns | NPEB00625 | 01.00 | Unlock FPS | FlexBy |
+| Alice: Madness Returns | BLUS30607 | 01.00 | Unlock FPS | Joey85 |
+| Alien Rage | NPEB01088 | 01.00 | Unlock FPS | Joey85 |
+| Aliens: Colonial Marines | BLES01455 / BLUS30862 | 01.05 | Unlock FPS | Joey85 |
+| Alpha Protocol | BLUS30341 | 01.00 | Unlock FPS | Joey85 |
+| Asura's Wrath | BLUS30721 | 01.02 | Unlock FPS | Joey85 |
+| Batman: Arkham Asylum GOTY | BLUS30515 | 01.00 | Debug Menu (disable VSync) | Joey85 |
+| Batman: Arkham City GOTY | BLES01587 | v02.00 | Debug Menu (disable VSync) | Joey85 |
+| Batman: Arkham Origins | BLUS31147 | 01.60 | Debug Menu (disable VSync) | Joey85 |
+| Borderlands 2 | BLES01684 | 01.02 | Unlock FPS | FlexBy |
+| Borderlands 2 | BLUS30982 / BLES01684 / NPUB30898 | 01.15 | Unlock FPS | FlexBy |
+| Borderlands 2 | NPEB01144 | 01.00 | Unlock FPS | FlexBy |
+| Brutal Legend | BLES00562 | 01.02 | Unlock FPS | Joey85 |
+| Bulletstorm | BLES01134 | 01.03 | Unlock FPS | Joey85 |
+| Call of Duty 4: Modern Warfare | BLES00148 / BLJS10013 | 01.00 | Unlock FPS | community |
+| Call of Duty: Black Ops | BLES01031 / BLES01032 | 01.13 | Unlock FPS | community |
+| Call of Duty: Black Ops | BLES01031 / BLES01032 / BLUS30591 | 01.00 | Unlock FPS | community |
+| Castle Crashers | NPEB00293 | 01.00 | 60 FPS | FlexBy |
+| Castle of Illusion | NPUB31099 | 01.00 | Unlock FPS | Joey85 |
+| Dead Space 2 | BLES01040 | 01.02 | Unlock FPS | Joey85 |
+| Dead Space 3 | BLES01733 / BLUS31053 | 01.02 | Unlock FPS | Joey85 |
+| Deadpool | BLES01789 / BLUS31146 | 01.00 | Unlock FPS | Joey85 |
+| Deus Ex: HR Director's Cut | BLUS31317 | 01.00 | Unlock FPS | Joey85 |
+| Dragon Ball Z: Burst Limit | BLES00231 | 01.00 | 60 FPS | illusion |
+| Duke Nukem Forever | BLES01147 | 01.03 | Unlock FPS | Joey85 |
+| Enslaved: Odyssey to the West | BLES00989 | 01.01 | Unlock FPS | Joey85 |
+| Fallout 3 GOTY | BLUS30451 | 01.00 | Unlock FPS | Joey85 |
+| Fallout: New Vegas | BLUS30888 | 01.00 | Unlock FPS | FlexBy / Joey85 |
+| Grand Theft Auto IV | BLES00229 / BLES00258 | av01.08 | Unlock FPS | Zolika1351/illusion |
+| Grand Theft Auto IV Complete Edition | BLES01128 | 01.00 | Unlock FPS | Zolika1351/illusion |
+| Grand Theft Auto IV | NPEB00882 | 01.09 | Unlock FPS | Zolika1351/illusion |
+| Harry Potter: Order of the Phoenix | BLES00070 | 01.01 | 60 FPS | NunoRS2000 |
+| Hatsune Miku: Project DIVA F 2nd | NPEB02013 | 01.00 | 60 FPS | Brolijah |
+| Haze | BLES00157 / BLES00169 | av01.36 | Unlock FPS | Joey85 |
+| Homefront | BLES00962 | 01.04 | Unlock FPS | Joey85 |
+| I Am Alive | NPUB30383 | 01.00 | Unlock FPS | Joey85 |
+| James Cameron's Avatar: The Game | BLUS30374 | 01.00 | Unlock FPS | Joey85 |
+| Just Cause 2 | NPUB30606 | 01.02 | Unlock FPS | illusion |
+| Killer Is Dead | BCAS20292 | 01.00 | Unlock FPS | FlexBy / Joey85 |
+| Killzone 2 | BCES00081 / BCUS98116 | 01.29 | Unlock FPS | Joey85 |
+| Killzone 2 | BCES00081 / BCUS98116 | 01.29 | Extended FOV | vFxMz |
+| Killzone 3 | BCES01007 / BCUS98234 | 01.14 | Extended FOV | vFxMz |
+| Lollipop Chainsaw | BLES01525 | 01.00 | Unlock FPS | Joey85 |
+| Lost Dimension | BLES02197 / BLUS31554 / BLJM61166 | 01.02 | 60 FPS | FlexBy |
+| Lost Dimension | BLJM61166 | 01.01 | 60 FPS | FlexBy |
+| Lost Planet 2 | MRTC00002 | 01.01 | Unlock FPS | community |
+| Metal Gear Solid 4 | BLES00246 | 02.00 | Unlock FPS | Joey85 |
+| Mindjack | MRTC00014 | 01.01 | Unlock FPS | Joey85 |
+| Mirror's Edge | BLES00322 | 01.01 | Unlock FPS | Joey85 |
+| Prince of Persia Trilogy 3D | BLUS30754 | 01.00 | Unlock FPS | Joey85 |
+| Prototype 2 | BLES01532 / BLUS30756 | 01.00 | Unlock FPS | Joey85 |
+| Ratchet & Clank: All 4 One | BCUS98175 | 01.03 | Unlock FPS | Joey85 |
+| Ratchet & Clank: Into the Nexus | BCES01908 | 01.01 | Unlock FPS | Joey85 |
+| Remember Me | BLES01701 | 01.00 | Unlock FPS | Joey85 |
+| Resident Evil (HD Remaster) | NPEB02076 / NPJB00653 / NPUB31552 | v01.00 | Unlock FPS | Joey85 |
+| Resident Evil 5 Gold Edition | BLES00816 | 01.01 | Unlock FPS | community / Joey85 |
+| Resident Evil 6 | BLUS30855 | 01.06 | Unlock FPS | Joey85 |
+| Resident Evil: Revelations 2 | BLUS31444 | 01.04 | Unlock FPS | Joey85 |
+| Resident Evil: The Darkside Chronicles | NPEB00816 / NPUB30648 | v01.00 | Unlock FPS | Joey85 |
+| Resident Evil: The Umbrella Chronicles | NPEB00817 / NPUB30650 | v01.00 | Unlock FPS | Joey85 |
+| Resistance 3 | BCES01118 | 01.00 / 01.05 | Unlock FPS | community / Joey85 |
+| SAW | BLES00676 | 01.00 | Unlock FPS | Joey85 |
+| SAW 2 | BLES01050 | 01.00 | Unlock FPS | Joey85 |
+| Shadows of the Damned | BLES01276 | 01.00 | Unlock FPS | Joey85 |
+| Silent Hill: Homecoming | BLES00460 | 01.00 | Unlock FPS | Joey85 |
+| Siren: Blood Curse | BCES00294 | 01.00 | Unlock FPS | Joey85 |
+| Skyrim Legendary Edition | BLES01886 | — | 60 FPS | community |
+| Sleeping Dogs | BLUS30927 | 01.04 | Unlock FPS | Joey85 |
+| Sonic Unleashed | BLUS30244 | 01.02 | Disable Shadows/Blur/DoF | illusion |
+| Splinter Cell: Blacklist | BLES01879 | 01.03 | Unlock FPS | Joey85 |
+| The Bureau: XCOM Declassified | BLUS30780 | 01.02 | Unlock FPS | Joey85 |
+| The Elder Scrolls IV: Oblivion GOTY | BLES00163 | — | 60 FPS | community |
+| The Orange Box | BLES00153 / BLUS30055 | av01.10 | Unlock FPS | community / Joey85 |
+| Transformers: War for Cybertron | BLES00833 / BLUS30357 | 01.01 | Unlock FPS | Joey85 |
+| Warhammer 40,000: Space Marine | BLES01347 | 01.05 | Unlock FPS | Joey85 |
+| Wheelman | BLUS30262 | 01.01 | Unlock FPS | Joey85 |
+
+---
+
+## File-Based FPS Unlocks (No Artemis Needed)
+
+Some games store FPS limits in config files — edit via FTP. Access: **Multiman** → back up as **JB Folder** → edit file via FTP.
+
+| Game | Title ID | File to Edit | Change | Notes |
+|------|----------|-------------|--------|-------|
+| Battlefield Bad Company | BLES00261 | `Ps3GameSettings.cfg` | Set FPS value | Max 60 — higher breaks HUD |
+| Battlefield Bad Company 2 | BLES00779 | `Ps3GameSettings.cfg` | Set FPS value | Same mod as BBC1; confirmed Joey85 v1.05 |
+| Condemned 2: Bloodshot | — | `PS3_GAME/USRDIR/autoexec.cfg` | Delete `MaxFPS` line | Default 40 FPS → ~60 FPS |
+| Crysis | — | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | Vsync commands in .cfg do not work |
+| Crysis 2 | — | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | Same as Crysis |
+| Crysis 3 | — | `PS3_GAME/USRDIR/autoexec.cfg` | Add `sys_maxfps = 60` | Same as Crysis |
+| F.E.A.R. 2: Project Origin | — | `PS3_GAME/USRDIR/autoexec.cfg` | Delete `MaxFPS`; set VSyncOnFlip 0 | Default 45 FPS → ~60 FPS |
+| Middle-Earth: Shadow of Mordor | — | `PS3_GAME/USRDIR/autoexec.cfg` | Delete `MaxFPS` line | Default 45 FPS → ~60 FPS |
+| Syndicate | — | `ENVIRONMENT_PS3.CFG` | Change vsync value to `0` | ⚠️ Binary file — use hex editor |
+
+> Condemned 2, F.E.A.R. 2, and Shadow of Mordor all use the LithTech Jupiter EX engine — same `MaxFPS` mechanism.
+
+For full details see [`COMMUNITY_TESTED.md`](COMMUNITY_TESTED.md).
 
 ---
 
