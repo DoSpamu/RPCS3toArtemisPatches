@@ -39,7 +39,7 @@ Both `(RPCS3)` and `(PSXPlace)` types may coexist in the same `.ncl` file and ma
 |--------|----------|
 | `USERLIST/` | **2,542** Artemis `.ncl` files — full patch database (RPCS3 conversions + PSXPlace community patches) |
 | `Working Artemis Patches/` | **39** personally-verified `.ncl` files — same games as `MAPI_PATCHES.md` |
-| `PSXPlace Confirmed/` | **62** community-verified `.ncl` files from PSXPlace thread #49905 (Joey85) + Nascar1243 |
+| `PSXPlace Confirmed/` | **64** community-verified `.ncl` files from PSXPlace thread #49905 (Joey85) + Nascar1243 |
 | `beta_testing/` | Saved HTML exports of Discord beta-test channel (reference material for verifying patches) |
 
 Patches confirmed on real PS3 hardware are marked `[Tested]` in the cheat name. Version-mismatched RPCS3 patches are labeled `v01.XX (RPCS3)` inline. `Working Artemis Patches/` and `PSXPlace Confirmed/` are curated subsets of `USERLIST/` shipped together in each release zip for users who only want known-good patches.
