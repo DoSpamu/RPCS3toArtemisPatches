@@ -83,11 +83,14 @@ function extractPatches(text) {
     return nclMatches.map(m => `0 ${m[1].toUpperCase()} ${m[2].toUpperCase()}`);
   }
 
-  // Priority 2: "0xADDR 0xVALUE" hex pairs on the same line (may have intervening text)
-  return [...text.matchAll(/0x([0-9A-Fa-f]{6,8}).*?0x([0-9A-Fa-f]{4,8})/gi)].map(m => {
-    const addr = m[1].toUpperCase().padStart(8, '0').slice(-8);
-    const val  = m[2].toUpperCase();
-    return `0 ${addr} ${val.length <= 4 ? val.padStart(4, '0') : val.padStart(8, '0')}`;
+  // Priority 2: "0xADDR 0xVALUE" hex pairs (whitespace-separated, no intervening text)
+  return [...text.matchAll(/0x([0-9A-Fa-f]{1,})\s+0x([0-9A-Fa-f]{1,})/gi)].map(m => {
+    const addr    = m[1].toUpperCase().padStart(8, '0').slice(-8);
+    const rawVal  = m[2].toUpperCase();
+    const val     = rawVal.length <= 4
+      ? rawVal.padStart(4, '0')
+      : rawVal.padStart(8, '0').slice(-8);
+    return `0 ${addr} ${val}`;
   });
 }
 

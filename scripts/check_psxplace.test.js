@@ -13,18 +13,28 @@ assert.deepStrictEqual(
   extractPatches('0 004DC6F4 3F800000'),
   ['0 004DC6F4 3F800000']
 );
-// extractPatches — hex pair on same line
+// extractPatches — hex pair with whitespace-only separation
 assert.deepStrictEqual(
-  extractPatches('offset: 0x004DC6F4 value: 0x3F800000'),
+  extractPatches('0x004DC6F4 0x3F800000'),
   ['0 004DC6F4 3F800000']
 );
 // extractPatches — 16-bit value
 assert.deepStrictEqual(
-  extractPatches('addr 0x00200000 val 0x003C'),
+  extractPatches('0x00200000 0x003C'),
   ['0 00200000 003C']
 );
 // extractPatches — no patches
 assert.deepStrictEqual(extractPatches('just some game text'), []);
+// extractPatches — 9-digit address: keep low 32 bits (last 8 hex digits), not first 8
+assert.deepStrictEqual(
+  extractPatches('0x000d78d48 0x003C'),
+  ['0 00D78D48 003C']
+);
+// extractPatches — firmware version on same line should NOT match (not whitespace-adjacent to addr)
+assert.deepStrictEqual(
+  extractPatches('works on fw 0x00030001 — addr 0x004DC6F4'),
+  []
+);
 
 // buildNclEntry
 assert.strictEqual(
