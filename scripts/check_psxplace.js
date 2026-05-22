@@ -69,3 +69,30 @@ async function scrapeThread() {
 
   return allPosts;
 }
+
+const TITLE_ID_RE = /\b(BL[UECSJA][A-Z0-9]{6}|NP[A-Z]{2}[0-9]{5}|BC[A-Z]{2}[0-9]{5})\b/gi;
+
+function extractTitleIds(text) {
+  return [...new Set((text.match(TITLE_ID_RE) || []).map(s => s.toUpperCase()))];
+}
+
+function extractPatches(text) {
+  // Priority 1: already in NCL format "0 XXXXXXXX YYYYYYYY"
+  const nclMatches = [...text.matchAll(/^0\s+([0-9A-Fa-f]{8})\s+([0-9A-Fa-f]{4,8})\s*$/gm)];
+  if (nclMatches.length) {
+    return nclMatches.map(m => `0 ${m[1].toUpperCase()} ${m[2].toUpperCase()}`);
+  }
+
+  // Priority 2: "0xADDR 0xVALUE" hex pairs on the same line (may have intervening text)
+  return [...text.matchAll(/0x([0-9A-Fa-f]{6,8}).*?0x([0-9A-Fa-f]{4,8})/gi)].map(m => {
+    const addr = m[1].toUpperCase().padStart(8, '0').slice(-8);
+    const val  = m[2].toUpperCase();
+    return `0 ${addr} ${val.length <= 4 ? val.padStart(4, '0') : val.padStart(8, '0')}`;
+  });
+}
+
+function buildNclEntry(cheatName, author, patches) {
+  return [`${cheatName} (PSXPlace)`, '0', author, ...patches, '#'].join('\n');
+}
+
+module.exports = { scrapeThread, scrapePage, extractTitleIds, extractPatches, buildNclEntry };
