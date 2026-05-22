@@ -126,16 +126,31 @@ function parseFirstPost(text) {
     }
     if (!patches.length || j >= lines.length) continue; // no terminating '#'
 
-    // Find nearest TID above the block — stop at '#' to avoid crossing into a previous entry
+    // Extract cheat name: the name line may be a tab-row "GameName\tTID\t...\tCheatName"
+    // or a note line "Some note text\tCheatName" — always use the last tab segment.
+    let cheatName = name;
+    if (name.includes('\t')) {
+      const parts = name.split('\t').map(s => s.trim()).filter(Boolean);
+      cheatName = parts[parts.length - 1];
+    }
+
+    // TID: the name line often embeds the TID (Format 1: game info + cheat on one line).
+    // Fall back to looking backwards for Format 2/3 (cheat name on its own line).
+    // Stop backward search at '#' to avoid leaking into a previous entry.
     let tid = null;
-    for (let k = i - 1; k >= Math.max(0, i - 20); k--) {
-      if (lines[k] === '#') break;
-      const m = lines[k].match(TID_RE);
-      if (m) { tid = m[1].toUpperCase(); break; }
+    const tidInName = name.match(TID_RE);
+    if (tidInName) {
+      tid = tidInName[1].toUpperCase();
+    } else {
+      for (let k = i - 1; k >= Math.max(0, i - 20); k--) {
+        if (lines[k] === '#') break;
+        const m = lines[k].match(TID_RE);
+        if (m) { tid = m[1].toUpperCase(); break; }
+      }
     }
     if (!tid) { i = j; continue; }
 
-    results.push({ tid, cheatName: name, author, patches });
+    results.push({ tid, cheatName, author, patches });
     i = j; // advance past '#'; for-loop will i++ past it
   }
 

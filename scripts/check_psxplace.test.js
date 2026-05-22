@@ -48,19 +48,20 @@ assert.strictEqual(
 );
 
 // parseFirstPost — extract NCL blocks from the catalog (first post)
-const FIRST_POST_SAMPLE = `
+// Format 2/3: cheat name on its own line, TID found by looking backwards
+const FORMAT23_SAMPLE = `
 Some intro text.
 
-Condemned 2 Bloodshot    BLUS30115    1.01    Game disc dump
+Condemned 2 Bloodshot\tBLUS30115\t1.01\tGame disc dump
 +
-Cheat code    \\PS3_GAME\\USRDIR\\autoexec.cfg "MaxFPS" "60"
+Cheat code\t\t\\PS3_GAME\\USRDIR\\autoexec.cfg "MaxFPS" "60"
 +
 Unlock FPS
 0
 Joey
 0 008fe1ac 38600001
 #
-Dead Space    BLES00523    1.00    Game disc dump
+Dead Space\tBLES00523\t1.00\tGame disc dump
 +
 Unlock FPS
 0
@@ -76,21 +77,58 @@ Joey
 #
 `.trim();
 
-const fpResults = parseFirstPost(FIRST_POST_SAMPLE);
-assert.strictEqual(fpResults.length, 2, 'should find 2 entries with TIDs');
-assert.strictEqual(fpResults[0].tid, 'BLUS30115');
-assert.strictEqual(fpResults[0].cheatName, 'Unlock FPS');
-assert.strictEqual(fpResults[0].author, 'Joey');
-assert.deepStrictEqual(fpResults[0].patches, ['0 008FE1AC 38600001']);
-assert.strictEqual(fpResults[1].tid, 'BLES00523');
-assert.deepStrictEqual(fpResults[1].patches, ['0 00AABBCC 38600001']);
+const f23Results = parseFirstPost(FORMAT23_SAMPLE);
+assert.strictEqual(f23Results.length, 2, 'Format 2/3: should find 2 entries with TIDs');
+assert.strictEqual(f23Results[0].tid, 'BLUS30115');
+assert.strictEqual(f23Results[0].cheatName, 'Unlock FPS');
+assert.strictEqual(f23Results[0].author, 'Joey');
+assert.deepStrictEqual(f23Results[0].patches, ['0 008FE1AC 38600001']);
+assert.strictEqual(f23Results[1].tid, 'BLES00523');
+assert.deepStrictEqual(f23Results[1].patches, ['0 00AABBCC 38600001']);
+
+// Format 1: game info + TID + cheat name all on one tab-separated line
+const FORMAT1_SAMPLE = `
+Alien Rage\tNPEB01088\t1.00\tCheat code\t\tUnlock FPS
+0
+Joey
+0 009802e8 2c030001
+#
+F.E.A.R. 2 Project Origin\tBLES00464\t\tGame disc dump\tconfig file edit\t
+FALLOUT 3 GAME OF THE YEAR\tBLUS30451\t1.00\tCheat code\t\tUnlock FPS
+0
+RPCS3
+0 00702BCC 60000000
+#
+`.trim();
+
+const f1Results = parseFirstPost(FORMAT1_SAMPLE);
+assert.strictEqual(f1Results.length, 2, 'Format 1: should find 2 entries');
+assert.strictEqual(f1Results[0].tid, 'NPEB01088', 'TID from name line (Format 1)');
+assert.strictEqual(f1Results[0].cheatName, 'Unlock FPS', 'cheat name = last tab segment');
+assert.strictEqual(f1Results[1].tid, 'BLUS30451', 'Fallout 3 TID, not FEAR 2 TID');
+assert.strictEqual(f1Results[1].cheatName, 'Unlock FPS');
+
+// Format 2 with note on cheat name line: "Note text\tCheatName"
+const FORMAT2_NOTE = `
+Sleeping Dogs\tBLUS30927\t1.04\tCheat code\tPatch before loading the game.
+Patching during gameplay may make it unstable.\tUnlock FPS
+0
+Joey
+0 00898bb8 60000000
+#
+`.trim();
+
+const f2NoteResults = parseFirstPost(FORMAT2_NOTE);
+assert.strictEqual(f2NoteResults.length, 1);
+assert.strictEqual(f2NoteResults[0].tid, 'BLUS30927');
+assert.strictEqual(f2NoteResults[0].cheatName, 'Unlock FPS', 'last tab segment strips the note');
 
 // parseFirstPost — no NCL blocks
 assert.deepStrictEqual(parseFirstPost('Just text, no patches.'), []);
 
 // parseFirstPost — multiple patch lines in one block
 const MULTI_PATCH = `
-Test Game    BLUS30443    1.00
+Test Game\tBLUS30443\t1.00
 Unlock FPS
 0
 dev
