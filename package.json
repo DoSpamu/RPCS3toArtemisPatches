@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/DoSpamu/RCPS3toArtemisPatches#readme",
   "devDependencies": {
-    "js-yaml": "^4.1.1"
+    "js-yaml": "^4.1.1",
+    "patchright": "^1.0.0"
   },
   "dependencies": {
     "playwright": "^1.58.2",
