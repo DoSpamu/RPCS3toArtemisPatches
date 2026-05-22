@@ -1,6 +1,6 @@
 'use strict';
 const assert = require('node:assert');
-const { extractTitleIds, extractPatches, buildNclEntry } = require('./check_psxplace.js');
+const { extractTitleIds, extractPatches, parseFirstPost, buildNclEntry } = require('./check_psxplace.js');
 
 // extractTitleIds — finds known PS3 Title ID patterns
 assert.deepStrictEqual(extractTitleIds('Game BLUS30443 supports 60fps'), ['BLUS30443']);
@@ -46,5 +46,60 @@ assert.strictEqual(
   buildNclEntry('60 FPS', 'dev', ['0 00000001 00000001', '0 00000002 00000002']),
   '60 FPS (PSXPlace)\n0\ndev\n0 00000001 00000001\n0 00000002 00000002\n#'
 );
+
+// parseFirstPost — extract NCL blocks from the catalog (first post)
+const FIRST_POST_SAMPLE = `
+Some intro text.
+
+Condemned 2 Bloodshot    BLUS30115    1.01    Game disc dump
++
+Cheat code    \\PS3_GAME\\USRDIR\\autoexec.cfg "MaxFPS" "60"
++
+Unlock FPS
+0
+Joey
+0 008fe1ac 38600001
+#
+Dead Space    BLES00523    1.00    Game disc dump
++
+Unlock FPS
+0
+Joey
+0 00aabbcc 38600001
+#
+No ID game here
++
+Unlock FPS
+0
+Joey
+0 00112233 3f800000
+#
+`.trim();
+
+const fpResults = parseFirstPost(FIRST_POST_SAMPLE);
+assert.strictEqual(fpResults.length, 2, 'should find 2 entries with TIDs');
+assert.strictEqual(fpResults[0].tid, 'BLUS30115');
+assert.strictEqual(fpResults[0].cheatName, 'Unlock FPS');
+assert.strictEqual(fpResults[0].author, 'Joey');
+assert.deepStrictEqual(fpResults[0].patches, ['0 008FE1AC 38600001']);
+assert.strictEqual(fpResults[1].tid, 'BLES00523');
+assert.deepStrictEqual(fpResults[1].patches, ['0 00AABBCC 38600001']);
+
+// parseFirstPost — no NCL blocks
+assert.deepStrictEqual(parseFirstPost('Just text, no patches.'), []);
+
+// parseFirstPost — multiple patch lines in one block
+const MULTI_PATCH = `
+Test Game    BLUS30443    1.00
+Unlock FPS
+0
+dev
+0 004DC6F4 3F800000
+0 00200000 003C
+#
+`.trim();
+const mpResults = parseFirstPost(MULTI_PATCH);
+assert.strictEqual(mpResults.length, 1);
+assert.deepStrictEqual(mpResults[0].patches, ['0 004DC6F4 3F800000', '0 00200000 003C']);
 
 console.log('All tests passed');

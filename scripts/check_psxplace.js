@@ -1,5 +1,6 @@
 'use strict';
 const { Camoufox } = require('camoufox');
+const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 
@@ -59,7 +60,6 @@ async function scrapeThread() {
   } catch (err) {
     if (err.message === 'CF_BLOCKED') {
       console.error('CF_BLOCKED: Cloudflare challenge not resolved.');
-      console.error('Fallback: swap patchright for camoufox (see CLAUDE.md).');
       process.exit(1);
     }
     throw err;
@@ -85,13 +85,61 @@ function extractPatches(text) {
 
   // Priority 2: "0xADDR 0xVALUE" hex pairs (whitespace-separated, no intervening text)
   return [...text.matchAll(/0x([0-9A-Fa-f]{1,})\s+0x([0-9A-Fa-f]{1,})/gi)].map(m => {
-    const addr    = m[1].toUpperCase().padStart(8, '0').slice(-8);
-    const rawVal  = m[2].toUpperCase();
-    const val     = rawVal.length <= 4
+    const addr   = m[1].toUpperCase().padStart(8, '0').slice(-8);
+    const rawVal = m[2].toUpperCase();
+    const val    = rawVal.length <= 4
       ? rawVal.padStart(4, '0')
       : rawVal.padStart(8, '0').slice(-8);
     return `0 ${addr} ${val}`;
   });
+}
+
+// Parse NCL blocks directly embedded in the first post (the catalog).
+// Joey85 edits the first post to add new entries in NCL format — we need to
+// detect those changes via content hashing and re-parse when the post changes.
+function parseFirstPost(text) {
+  const lines = text.split('\n').map(l => l.trim());
+  const results = [];
+  const PATCH_RE = /^0\s+([0-9A-Fa-f]{8})\s+([0-9A-Fa-f]{4,8})$/;
+  const TID_RE   = /\b(BL[UECSJA][A-Z0-9]{6}|NP[A-Z]{2}[0-9]{5}|BC[A-Z]{2}[0-9]{5})\b/i;
+
+  for (let i = 0; i < lines.length - 3; i++) {
+    const name   = lines[i];
+    const zero   = lines[i + 1];
+    const author = lines[i + 2];
+
+    // Candidate NCL block: name / "0" / author / at-least-one patch line
+    if (
+      !name || zero !== '0' || !author ||
+      author === '0' || author === '#' ||
+      PATCH_RE.test(name) || PATCH_RE.test(author) ||
+      !PATCH_RE.test(lines[i + 3])
+    ) continue;
+
+    // Collect all contiguous patch lines
+    let j = i + 3;
+    const patches = [];
+    while (j < lines.length && lines[j] !== '#') {
+      const m = lines[j].match(PATCH_RE);
+      if (m) patches.push(`0 ${m[1].toUpperCase()} ${m[2].toUpperCase()}`);
+      j++;
+    }
+    if (!patches.length || j >= lines.length) continue; // no terminating '#'
+
+    // Find nearest TID above the block — stop at '#' to avoid crossing into a previous entry
+    let tid = null;
+    for (let k = i - 1; k >= Math.max(0, i - 20); k--) {
+      if (lines[k] === '#') break;
+      const m = lines[k].match(TID_RE);
+      if (m) { tid = m[1].toUpperCase(); break; }
+    }
+    if (!tid) { i = j; continue; }
+
+    results.push({ tid, cheatName: name, author, patches });
+    i = j; // advance past '#'; for-loop will i++ past it
+  }
+
+  return results;
 }
 
 function buildNclEntry(cheatName, author, patches) {
@@ -111,12 +159,10 @@ function prependToNcl(nclPath, entry) {
     .replace(/\r\n/g, '\n')
     .replace(/\r/g, '\n');
 
-  // Duplicate check: same cheat name (PSXPlace) already in file
-  const cheatName = entry.split('\n')[0]; // e.g. "60 FPS (PSXPlace)"
+  const cheatName = entry.split('\n')[0];
   const baseName  = cheatName.replace(/ \(PSXPlace\)$/i, '').toLowerCase();
   if (content.toLowerCase().includes(baseName + ' (psxplace)')) return false;
 
-  // Guard: ensure existing content ends with # before prepending (quirk documented in CLAUDE.md)
   const trimmed = content.trimEnd();
   if (trimmed && !trimmed.endsWith('#')) {
     content = trimmed + '\n#\n';
@@ -126,12 +172,16 @@ function prependToNcl(nclPath, entry) {
   return true;
 }
 
+function sha256short(text) {
+  return crypto.createHash('sha256').update(text).digest('hex').slice(0, 16);
+}
+
 async function main() {
   let state;
   try {
     state = JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
   } catch (err) {
-    throw new Error(`Cannot read known_posts.json: ${err.message}\nRun: create known_posts.json with { "thread_url": "...", "last_checked": null, "known_post_ids": [] }`);
+    throw new Error(`Cannot read known_posts.json: ${err.message}`);
   }
   if (!Array.isArray(state.known_post_ids)) {
     throw new Error('known_posts.json: known_post_ids must be an array');
@@ -143,19 +193,25 @@ async function main() {
     : 'Checking for new posts on thread 49905...'
   );
 
-  const allPosts  = await scrapeThread();
-  const knownIds  = new Set(state.known_post_ids);
-  const newPosts  = isBootstrap ? [] : allPosts.filter(p => !knownIds.has(p.id));
+  const allPosts = await scrapeThread();
+  const knownIds = new Set(state.known_post_ids);
+  const newPosts = isBootstrap ? [] : allPosts.filter(p => !knownIds.has(p.id));
 
-  console.log(`Total posts seen: ${allPosts.length} | New: ${newPosts.length}`);
+  // Track first post separately: Joey85 edits it to add new patches rather than posting new replies.
+  const firstPost      = allPosts[0] || null;
+  const firstPostHash  = firstPost ? sha256short(firstPost.text) : null;
+  const firstPostChanged = !isBootstrap && firstPost && firstPostHash !== state.first_post_hash;
 
-  // Update state with all seen IDs (bootstrap: all; normal: merge new ones in)
+  console.log(`Total posts seen: ${allPosts.length} | New replies: ${newPosts.length} | First post updated: ${firstPostChanged}`);
+
+  // Persist state before any early returns
   state.known_post_ids = [...new Set([...state.known_post_ids, ...allPosts.map(p => p.id)])];
-  state.last_checked   = new Date().toISOString();
+  if (firstPostHash) state.first_post_hash = firstPostHash;
+  state.last_checked = new Date().toISOString();
   fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2) + '\n', 'utf8');
 
-  if (!newPosts.length) {
-    console.log(isBootstrap ? 'Bootstrap complete. Commit known_posts.json to repo.' : 'No new posts.');
+  if (!newPosts.length && !firstPostChanged) {
+    console.log(isBootstrap ? 'Bootstrap complete. Commit known_posts.json to repo.' : 'No new activity.');
     return;
   }
 
@@ -165,12 +221,15 @@ async function main() {
   const rawLines = newPosts.map(p =>
     `=== ${p.id} | @${p.author} ===\n${p.text}\n${'─'.repeat(60)}`
   );
+  if (firstPostChanged) {
+    rawLines.push(`=== FIRST POST UPDATED (hash: ${firstPostHash}) ===\n${firstPost.text}\n${'─'.repeat(60)}`);
+  }
   fs.writeFileSync(path.join(RAW_DIR, `${date}.txt`), rawLines.join('\n\n'), 'utf8');
 
-  // Parse + write NCL updates
   const prRows   = [];
   const modFiles = [];
 
+  // Process new reply posts (unchanged logic)
   for (const post of newPosts) {
     const tids    = extractTitleIds(post.text);
     const patches = extractPatches(post.text);
@@ -194,16 +253,35 @@ async function main() {
     }
   }
 
+  // Process first post if its content changed (Joey85 added new games to the catalog)
+  if (firstPostChanged) {
+    console.log('Parsing first post for new NCL entries...');
+    const entries = parseFirstPost(firstPost.text);
+    console.log(`  Found ${entries.length} NCL block(s) in first post.`);
+
+    for (const { tid, cheatName, author, patches } of entries) {
+      const entry = buildNclEntry(cheatName, author, patches);
+      for (const nclPath of findNclFiles(tid)) {
+        if (prependToNcl(nclPath, entry)) {
+          const rel = path.relative(process.cwd(), nclPath);
+          modFiles.push(rel);
+          prRows.push(`| (first post edit) | ${author.replace(/\|/g, '\\|')} | ${tid} | ${patches.length} |`);
+          console.log(`  Added "${cheatName}" to ${path.basename(nclPath)}`);
+        }
+      }
+    }
+  }
+
   // Write PR body (existence of this file is the workflow's "create PR" signal)
   const prBody = [
-    `## New posts detected on thread 49905`,
+    `## New activity detected on thread 49905`,
     '',
     `| Post | Author | Title IDs | Codes |`,
     `|------|--------|-----------|-------|`,
-    ...prRows,
+    ...(prRows.length ? prRows : ['| — | — | — | — |']),
     '',
     `## Modified NCL files (${modFiles.length})`,
-    modFiles.length ? modFiles.map(f => `- \`${f}\``).join('\n') : '_No parseable patches found in new posts._',
+    modFiles.length ? modFiles.map(f => `- \`${f}\``).join('\n') : '_No parseable patches found in new activity._',
     '',
     `Raw content for review: \`new_patches_raw/${date}.txt\``,
   ].join('\n');
@@ -218,6 +296,6 @@ if (require.main === module) {
 
 module.exports = {
   scrapeThread, scrapePage,
-  extractTitleIds, extractPatches, buildNclEntry,
+  extractTitleIds, extractPatches, parseFirstPost, buildNclEntry,
   findNclFiles, prependToNcl,
 };
