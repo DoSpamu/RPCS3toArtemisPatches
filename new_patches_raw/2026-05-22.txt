@@ -1,0 +1,12 @@
+=== js-post-423407 | @NunoRS2000 ===
+Joey85 said:
+Crysis 2 and 3 all you need to do is dump the disc to the hard drive and use the notepad and edit the config file inside.
+
+Condemned 2 needs both (config edit + cheat code). I lost my notes with the cheat code for this one  so I'll have to revisit this one.
+
+Orange box there is already patches from RPCS3. I only tested the Half-life one.
+About the Crysis sys_maxfps command, it just changes the framerate target and the two v-sync commands I know don't work (I tested the commands on both PS3 and 360). From my experience, any value above 60 just doesn't work, 60fps is the maximum value the console will recognize. These Crysis games are triple-buffered on the PS3 so they will never tear.
+On the Orange Box games, the games are always double buffered, with or without the patch. With the patch, you only get 60fps when the engine has enough resources to jump the 30fps step. So my question yesterday was related to a way to directly disable the v-sync. 
+
+Edit: Tested Dead Space, the game runs surprisingly well though it stutters heavily in some scenes. This game will benefit a lot from the overclock.
+────────────────────────────────────────────────────────────
