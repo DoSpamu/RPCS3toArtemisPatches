@@ -24,8 +24,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Install Patchright Chromium + OS deps
-        run: npx patchright install chromium --with-deps
+      - name: Install Camoufox browser
+        run: npx camoufox fetch
 
       - name: Scrape thread and parse new patches
         run: node scripts/check_psxplace.js

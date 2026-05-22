@@ -4,7 +4,7 @@
   "description": "A collection of RPCS3 game patches converted to Artemis cheat format for use on **real PS3 hardware** (CFW required).",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node scripts/check_psxplace.test.js"
   },
   "repository": {
     "type": "git",
@@ -19,11 +19,10 @@
   },
   "homepage": "https://github.com/DoSpamu/RCPS3toArtemisPatches#readme",
   "devDependencies": {
-    "camoufox": "^0.1.19",
-    "js-yaml": "^4.1.1",
-    "patchright": "^1.0.0"
+    "js-yaml": "^4.1.1"
   },
   "dependencies": {
+    "camoufox": "^0.1.19",
     "playwright": "^1.58.2",
     "xlsx": "^0.18.5"
   }
