@@ -29,7 +29,8 @@ jobs:
 
       - name: Scrape thread and parse new patches
         run: node scripts/check_psxplace.js
-        # Exit 1 means Cloudflare blocked — workflow continues so we can report it
+        continue-on-error: true
+        # Exit 1 means Cloudflare blocked — workflow continues to PR step via if: always()
 
       - name: Create or update PR if new patches found
         if: always()
