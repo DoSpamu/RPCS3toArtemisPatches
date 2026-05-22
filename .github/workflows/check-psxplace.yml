@@ -51,7 +51,7 @@ jobs:
           git add known_posts.json new_patches_raw/ USERLIST/ 2>/dev/null || true
           git diff --cached --quiet && echo "Nothing staged." && exit 0
           git commit -m "[Auto] PSXPlace new patches $DATE"
-          git push --force-with-lease origin "$BRANCH"
+          git push --force origin "$BRANCH"
 
           # Create PR only if none already open for this branch
           OPEN=$(gh pr list --head "$BRANCH" --state open --json number --jq length)
