@@ -1,6 +1,6 @@
 'use strict';
 const assert = require('node:assert');
-const { extractTitleIds, extractPatches, parseFirstPost, buildNclEntry } = require('./check_psxplace.js');
+const { extractTitleIds, extractPatches, parseFirstPost, buildNclEntry, normVersion, buildPsxplaceFilename } = require('./check_psxplace.js');
 
 // extractTitleIds — finds known PS3 Title ID patterns
 assert.deepStrictEqual(extractTitleIds('Game BLUS30443 supports 60fps'), ['BLUS30443']);
@@ -139,5 +139,37 @@ dev
 const mpResults = parseFirstPost(MULTI_PATCH);
 assert.strictEqual(mpResults.length, 1);
 assert.deepStrictEqual(mpResults[0].patches, ['0 004DC6F4 3F800000', '0 00200000 003C']);
+
+// normVersion
+assert.strictEqual(normVersion('1.01'), '01.01');
+assert.strictEqual(normVersion('01.01'), '01.01');
+assert.strictEqual(normVersion('1.00'), '01.00');
+assert.strictEqual(normVersion(''), '');
+
+// buildPsxplaceFilename
+assert.strictEqual(
+  buildPsxplaceFilename('Condemned 2 Bloodshot', 'BLUS30115', '1.01'),
+  'Condemned 2 Bloodshot BLUS30115 01.01.ncl'
+);
+assert.strictEqual(
+  buildPsxplaceFilename('Alien Rage', 'NPEB01088', '1.00'),
+  'Alien Rage NPEB01088 01.00.ncl'
+);
+
+// parseFirstPost — gameName and version are returned
+const GN_SAMPLE = `
+Condemned 2 Bloodshot\tBLUS30115\t1.01\tGame disc dump
++
+Unlock FPS
+0
+Joey
+0 008fe1ac 38600001
+#
+`.trim();
+const gnResults = parseFirstPost(GN_SAMPLE);
+assert.strictEqual(gnResults.length, 1);
+assert.strictEqual(gnResults[0].gameName, 'Condemned 2 Bloodshot');
+assert.strictEqual(gnResults[0].version, '1.01');
+assert.strictEqual(gnResults[0].tid, 'BLUS30115');
 
 console.log('All tests passed');

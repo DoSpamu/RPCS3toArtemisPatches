@@ -47,8 +47,8 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           git checkout -B "$BRANCH"
-          # Stage all changed files (known_posts.json, new_patches_raw/, USERLIST/)
-          git add known_posts.json new_patches_raw/ USERLIST/ 2>/dev/null || true
+          # Stage all changed files (known_posts.json, new_patches_raw/, PSXPlace Confirmed/)
+          git add known_posts.json new_patches_raw/ "PSXPlace Confirmed/" 2>/dev/null || true
           git diff --cached --quiet && echo "Nothing staged." && exit 0
           git commit -m "[Auto] PSXPlace new patches $DATE"
           git push --force origin "$BRANCH"

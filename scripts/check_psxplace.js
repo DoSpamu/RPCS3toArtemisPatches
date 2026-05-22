@@ -4,16 +4,15 @@ const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 
-const THREAD_URL = 'https://www.psx-place.com/threads/60-unlock-fps-patches.49905/';
-const STATE_FILE  = path.join(__dirname, '..', 'known_posts.json');
-const USERLIST_DIR = path.join(__dirname, '..', 'USERLIST');
-const RAW_DIR     = path.join(__dirname, '..', 'new_patches_raw');
-const PR_BODY_FILE = path.join(__dirname, '..', 'pr_body.txt');
+const THREAD_URL    = 'https://www.psx-place.com/threads/60-unlock-fps-patches.49905/';
+const STATE_FILE    = path.join(__dirname, '..', 'known_posts.json');
+const PSXPLACE_DIR  = path.join(__dirname, '..', 'PSXPlace Confirmed');
+const RAW_DIR       = path.join(__dirname, '..', 'new_patches_raw');
+const PR_BODY_FILE  = path.join(__dirname, '..', 'pr_body.txt');
 
 async function scrapePage(page, url) {
   await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
 
-  // Wait out Cloudflare challenge (title = "Just a moment..." for up to 30s)
   try {
     await page.waitForFunction(
       () => !document.title.includes('Just a moment'),
@@ -55,7 +54,7 @@ async function scrapeThread() {
       allPosts.push(...filtered);
       console.log(`  Found ${filtered.length} posts on this page (total: ${allPosts.length})`);
       url = nextUrl;
-      if (url) await page.waitForTimeout(1500); // polite delay between pages
+      if (url) await page.waitForTimeout(1500);
     }
   } catch (err) {
     if (err.message === 'CF_BLOCKED') {
@@ -77,38 +76,42 @@ function extractTitleIds(text) {
 }
 
 function extractPatches(text) {
-  // Priority 1: already in NCL format "0 XXXXXXXX YYYYYYYY"
   const nclMatches = [...text.matchAll(/^0\s+([0-9A-Fa-f]{8})\s+([0-9A-Fa-f]{4,8})\s*$/gm)];
   if (nclMatches.length) {
     return nclMatches.map(m => `0 ${m[1].toUpperCase()} ${m[2].toUpperCase()}`);
   }
-
-  // Priority 2: "0xADDR 0xVALUE" hex pairs (whitespace-separated, no intervening text)
   return [...text.matchAll(/0x([0-9A-Fa-f]{1,})\s+0x([0-9A-Fa-f]{1,})/gi)].map(m => {
     const addr   = m[1].toUpperCase().padStart(8, '0').slice(-8);
     const rawVal = m[2].toUpperCase();
-    const val    = rawVal.length <= 4
-      ? rawVal.padStart(4, '0')
-      : rawVal.padStart(8, '0').slice(-8);
+    const val    = rawVal.length <= 4 ? rawVal.padStart(4, '0') : rawVal.padStart(8, '0').slice(-8);
     return `0 ${addr} ${val}`;
   });
 }
 
-// Parse NCL blocks directly embedded in the first post (the catalog).
-// Joey85 edits the first post to add new entries in NCL format — we need to
-// detect those changes via content hashing and re-parse when the post changes.
+// Parse NCL blocks embedded in the first post (the catalog that Joey85 edits when adding games).
+// Returns array of { tid, cheatName, author, patches, gameName, version } — gameName and version
+// are used to create a new file in PSXPlace Confirmed/ when the game isn't there yet.
 function parseFirstPost(text) {
   const lines = text.split('\n').map(l => l.trim());
   const results = [];
   const PATCH_RE = /^0\s+([0-9A-Fa-f]{8})\s+([0-9A-Fa-f]{4,8})$/;
   const TID_RE   = /\b(BL[UECSJA][A-Z0-9]{6}|NP[A-Z]{2}[0-9]{5}|BC[A-Z]{2}[0-9]{5})\b/i;
 
+  function parseTidLine(line) {
+    const parts = line.split('\t').map(s => s.trim());
+    const tidMatch = line.match(TID_RE);
+    return {
+      gameName: parts[0] || null,
+      version:  parts[2] || null,
+      tid: tidMatch ? tidMatch[1].toUpperCase() : null,
+    };
+  }
+
   for (let i = 0; i < lines.length - 3; i++) {
     const name   = lines[i];
     const zero   = lines[i + 1];
     const author = lines[i + 2];
 
-    // Candidate NCL block: name / "0" / author / at-least-one patch line
     if (
       !name || zero !== '0' || !author ||
       author === '0' || author === '#' ||
@@ -116,7 +119,6 @@ function parseFirstPost(text) {
       !PATCH_RE.test(lines[i + 3])
     ) continue;
 
-    // Collect all contiguous patch lines
     let j = i + 3;
     const patches = [];
     while (j < lines.length && lines[j] !== '#') {
@@ -124,34 +126,37 @@ function parseFirstPost(text) {
       if (m) patches.push(`0 ${m[1].toUpperCase()} ${m[2].toUpperCase()}`);
       j++;
     }
-    if (!patches.length || j >= lines.length) continue; // no terminating '#'
+    if (!patches.length || j >= lines.length) continue;
 
-    // Extract cheat name: the name line may be a tab-row "GameName\tTID\t...\tCheatName"
-    // or a note line "Some note text\tCheatName" — always use the last tab segment.
+    // cheat name = last tab segment (name line may be a full tab row)
     let cheatName = name;
     if (name.includes('\t')) {
       const parts = name.split('\t').map(s => s.trim()).filter(Boolean);
       cheatName = parts[parts.length - 1];
     }
 
-    // TID: the name line often embeds the TID (Format 1: game info + cheat on one line).
-    // Fall back to looking backwards for Format 2/3 (cheat name on its own line).
-    // Stop backward search at '#' to avoid leaking into a previous entry.
-    let tid = null;
+    // TID + game info: prefer from the name line itself (Format 1);
+    // fall back to backward search (Format 2/3 where cheat name is on its own line).
+    let tid = null, gameName = null, version = null;
     const tidInName = name.match(TID_RE);
     if (tidInName) {
-      tid = tidInName[1].toUpperCase();
+      const parsed = parseTidLine(name);
+      tid = parsed.tid; gameName = parsed.gameName; version = parsed.version;
     } else {
       for (let k = i - 1; k >= Math.max(0, i - 20); k--) {
         if (lines[k] === '#') break;
         const m = lines[k].match(TID_RE);
-        if (m) { tid = m[1].toUpperCase(); break; }
+        if (m) {
+          const parsed = parseTidLine(lines[k]);
+          tid = parsed.tid; gameName = parsed.gameName; version = parsed.version;
+          break;
+        }
       }
     }
     if (!tid) { i = j; continue; }
 
-    results.push({ tid, cheatName, author, patches });
-    i = j; // advance past '#'; for-loop will i++ past it
+    results.push({ tid, cheatName, author, patches, gameName, version });
+    i = j;
   }
 
   return results;
@@ -161,18 +166,39 @@ function buildNclEntry(cheatName, author, patches) {
   return [`${cheatName} (PSXPlace)`, '0', author, ...patches, '#'].join('\n');
 }
 
-function findNclFiles(tid) {
-  if (!fs.existsSync(USERLIST_DIR)) return [];
-  return fs.readdirSync(USERLIST_DIR)
-    .filter(f => new RegExp(`(?<![A-Z0-9])${tid}(?![A-Z0-9])`, 'i').test(f) && f.endsWith('.ncl'))
-    .map(f => path.join(USERLIST_DIR, f));
+// Normalize "1.01" → "01.01" to match PSXPlace Confirmed file naming convention.
+function normVersion(ver) {
+  if (!ver) return '';
+  const parts = ver.split('.');
+  return parts.length === 2
+    ? parts[0].padStart(2, '0') + '.' + parts[1].padStart(2, '0')
+    : ver;
 }
 
-// Returns true if prepended, false if duplicate (already has this entry)
+// Build a filename for a new PSXPlace Confirmed entry.
+function buildPsxplaceFilename(gameName, tid, version) {
+  const safeName = (gameName || 'Unknown').replace(/[<>:"/\\|?*]/g, '').trim();
+  const ver = normVersion(version);
+  return ver ? `${safeName} ${tid} ${ver}.ncl` : `${safeName} ${tid}.ncl`;
+}
+
+// Search PSXPlace Confirmed/ for files matching the given Title ID.
+function findPsxplaceFiles(tid) {
+  if (!fs.existsSync(PSXPLACE_DIR)) return [];
+  return fs.readdirSync(PSXPLACE_DIR)
+    .filter(f => new RegExp(`(?<![A-Z0-9])${tid}(?![A-Z0-9])`, 'i').test(f) && f.endsWith('.ncl'))
+    .map(f => path.join(PSXPLACE_DIR, f));
+}
+
+// Prepend entry to an .ncl file. Creates the file if it doesn't exist.
+// Returns true if written, false if duplicate already present.
 function prependToNcl(nclPath, entry) {
-  let content = fs.readFileSync(nclPath, 'utf8')
-    .replace(/\r\n/g, '\n')
-    .replace(/\r/g, '\n');
+  let content = '';
+  if (fs.existsSync(nclPath)) {
+    content = fs.readFileSync(nclPath, 'utf8')
+      .replace(/\r\n/g, '\n')
+      .replace(/\r/g, '\n');
+  }
 
   const cheatName = entry.split('\n')[0];
   const baseName  = cheatName.replace(/ \(PSXPlace\)$/i, '').toLowerCase();
@@ -183,7 +209,8 @@ function prependToNcl(nclPath, entry) {
     content = trimmed + '\n#\n';
   }
 
-  fs.writeFileSync(nclPath, entry + '\n' + content, 'utf8');
+  const newContent = trimmed ? entry + '\n' + content : entry + '\n';
+  fs.writeFileSync(nclPath, newContent, 'utf8');
   return true;
 }
 
@@ -212,14 +239,12 @@ async function main() {
   const knownIds = new Set(state.known_post_ids);
   const newPosts = isBootstrap ? [] : allPosts.filter(p => !knownIds.has(p.id));
 
-  // Track first post separately: Joey85 edits it to add new patches rather than posting new replies.
-  const firstPost      = allPosts[0] || null;
-  const firstPostHash  = firstPost ? sha256short(firstPost.text) : null;
+  const firstPost     = allPosts[0] || null;
+  const firstPostHash = firstPost ? sha256short(firstPost.text) : null;
   const firstPostChanged = !isBootstrap && firstPost && firstPostHash !== state.first_post_hash;
 
   console.log(`Total posts seen: ${allPosts.length} | New replies: ${newPosts.length} | First post updated: ${firstPostChanged}`);
 
-  // Persist state before any early returns
   state.known_post_ids = [...new Set([...state.known_post_ids, ...allPosts.map(p => p.id)])];
   if (firstPostHash) state.first_post_hash = firstPostHash;
   state.last_checked = new Date().toISOString();
@@ -230,7 +255,6 @@ async function main() {
     return;
   }
 
-  // Write raw post content for reviewer reference
   fs.mkdirSync(RAW_DIR, { recursive: true });
   const date = new Date().toISOString().slice(0, 10);
   const rawLines = newPosts.map(p =>
@@ -242,9 +266,11 @@ async function main() {
   fs.writeFileSync(path.join(RAW_DIR, `${date}.txt`), rawLines.join('\n\n'), 'utf8');
 
   const prRows   = [];
-  const modFiles = [];
+  const modFiles = new Set();
 
-  // Process new reply posts (unchanged logic)
+  // Process new reply posts — search PSXPlace Confirmed for matching files.
+  // If the game isn't there yet, we report it in the PR for manual action
+  // (we don't know the canonical game name/version from a freeform reply post).
   for (const post of newPosts) {
     const tids    = extractTitleIds(post.text);
     const patches = extractPatches(post.text);
@@ -256,11 +282,11 @@ async function main() {
 
     if (!tids.length || !patches.length) continue;
 
-    const entry = buildNclEntry('60 FPS', author, patches);
+    const entry = buildNclEntry('Unlock FPS', author, patches);
     for (const tid of tids) {
-      for (const nclPath of findNclFiles(tid)) {
+      for (const nclPath of findPsxplaceFiles(tid)) {
         if (prependToNcl(nclPath, entry)) {
-          modFiles.push(path.relative(process.cwd(), nclPath));
+          modFiles.add(path.relative(process.cwd(), nclPath));
         } else {
           console.log(`  Skipped duplicate: ${path.basename(nclPath)}`);
         }
@@ -268,18 +294,29 @@ async function main() {
     }
   }
 
-  // Process first post if its content changed (Joey85 added new games to the catalog)
+  // Process first post edits — Joey85 edits the catalog to add new games.
+  // We have structured data (game name, TID, version) so we can create new files.
   if (firstPostChanged) {
-    console.log('Parsing first post for new NCL entries...');
+    console.log('Parsing first post for new/updated NCL entries...');
     const entries = parseFirstPost(firstPost.text);
     console.log(`  Found ${entries.length} NCL block(s) in first post.`);
 
-    for (const { tid, cheatName, author, patches } of entries) {
+    for (const { tid, cheatName, author, patches, gameName, version } of entries) {
       const entry = buildNclEntry(cheatName, author, patches);
-      for (const nclPath of findNclFiles(tid)) {
+      let nclFiles = findPsxplaceFiles(tid);
+
+      if (nclFiles.length === 0 && gameName) {
+        // New game not yet in PSXPlace Confirmed — create the file
+        const filename = buildPsxplaceFilename(gameName, tid, version);
+        const newPath  = path.join(PSXPLACE_DIR, filename);
+        nclFiles = [newPath];
+        console.log(`  Creating new file: ${filename}`);
+      }
+
+      for (const nclPath of nclFiles) {
         if (prependToNcl(nclPath, entry)) {
           const rel = path.relative(process.cwd(), nclPath);
-          modFiles.push(rel);
+          modFiles.add(rel);
           prRows.push(`| (first post edit) | ${author.replace(/\|/g, '\\|')} | ${tid} | ${patches.length} |`);
           console.log(`  Added "${cheatName}" to ${path.basename(nclPath)}`);
         }
@@ -287,22 +324,22 @@ async function main() {
     }
   }
 
-  // Write PR body (existence of this file is the workflow's "create PR" signal)
+  const modList = [...modFiles];
   const prBody = [
-    `## New activity detected on thread 49905`,
+    `## New activity detected on PSXPlace thread 49905`,
     '',
     `| Post | Author | Title IDs | Codes |`,
     `|------|--------|-----------|-------|`,
     ...(prRows.length ? prRows : ['| — | — | — | — |']),
     '',
-    `## Modified NCL files (${modFiles.length})`,
-    modFiles.length ? modFiles.map(f => `- \`${f}\``).join('\n') : '_No parseable patches found in new activity._',
+    `## Modified/created files in \`PSXPlace Confirmed/\` (${modList.length})`,
+    modList.length ? modList.map(f => `- \`${f}\``).join('\n') : '_No parseable patches found in new activity._',
     '',
-    `Raw content for review: \`new_patches_raw/${date}.txt\``,
+    `Raw content: \`new_patches_raw/${date}.txt\``,
   ].join('\n');
 
   fs.writeFileSync(PR_BODY_FILE, prBody, 'utf8');
-  console.log(`Done. Modified ${modFiles.length} NCL file(s). PR body written to pr_body.txt.`);
+  console.log(`Done. Modified/created ${modList.length} file(s) in PSXPlace Confirmed/. PR body written.`);
 }
 
 if (require.main === module) {
@@ -312,5 +349,5 @@ if (require.main === module) {
 module.exports = {
   scrapeThread, scrapePage,
   extractTitleIds, extractPatches, parseFirstPost, buildNclEntry,
-  findNclFiles, prependToNcl,
+  findPsxplaceFiles, prependToNcl, normVersion, buildPsxplaceFilename,
 };
