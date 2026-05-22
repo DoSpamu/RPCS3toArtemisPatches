@@ -172,4 +172,10 @@ assert.strictEqual(gnResults[0].gameName, 'Condemned 2 Bloodshot');
 assert.strictEqual(gnResults[0].version, '1.01');
 assert.strictEqual(gnResults[0].tid, 'BLUS30115');
 
+// findPsxplaceFiles — name-based fallback (requires real filesystem; tested via integration)
+// Verify the function is exported and accepts the gameName parameter without throwing
+const { findPsxplaceFiles } = require('./check_psxplace.js');
+assert.deepStrictEqual(findPsxplaceFiles('BLES00467'), []);          // no dir → empty
+assert.deepStrictEqual(findPsxplaceFiles('BLES00467', 'Some Game'), []); // no dir → empty
+
 console.log('All tests passed');

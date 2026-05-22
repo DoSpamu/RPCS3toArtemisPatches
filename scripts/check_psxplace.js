@@ -183,11 +183,25 @@ function buildPsxplaceFilename(gameName, tid, version) {
 }
 
 // Search PSXPlace Confirmed/ for files matching the given Title ID.
-function findPsxplaceFiles(tid) {
+// Falls back to game-name prefix match when no file has the TID in its filename
+// (e.g. "Destroy All Humans! Path Of The Furon.ncl" has no TID in the name).
+function findPsxplaceFiles(tid, gameName) {
   if (!fs.existsSync(PSXPLACE_DIR)) return [];
-  return fs.readdirSync(PSXPLACE_DIR)
-    .filter(f => new RegExp(`(?<![A-Z0-9])${tid}(?![A-Z0-9])`, 'i').test(f) && f.endsWith('.ncl'))
+  const files = fs.readdirSync(PSXPLACE_DIR);
+  const TID_RE = new RegExp(`(?<![A-Z0-9])${tid}(?![A-Z0-9])`, 'i');
+
+  const byTid = files
+    .filter(f => TID_RE.test(f) && f.endsWith('.ncl'))
     .map(f => path.join(PSXPLACE_DIR, f));
+  if (byTid.length) return byTid;
+
+  if (!gameName) return [];
+  const safeName = gameName.replace(/[<>:"/\\|?*]/g, '').trim().toLowerCase();
+  const byName = files
+    .filter(f => f.endsWith('.ncl') && f.replace(/\.ncl$/i, '').toLowerCase().startsWith(safeName))
+    .map(f => path.join(PSXPLACE_DIR, f));
+  if (byName.length) console.log(`  [findPsxplaceFiles] name-match for ${tid}: ${byName.map(f => path.basename(f)).join(', ')}`);
+  return byName;
 }
 
 // Prepend entry to an .ncl file. Creates the file if it doesn't exist.
@@ -303,7 +317,7 @@ async function main() {
 
     for (const { tid, cheatName, author, patches, gameName, version } of entries) {
       const entry = buildNclEntry(cheatName, author, patches);
-      let nclFiles = findPsxplaceFiles(tid);
+      let nclFiles = findPsxplaceFiles(tid, gameName);
 
       if (nclFiles.length === 0 && gameName) {
         // New game not yet in PSXPlace Confirmed — create the file
