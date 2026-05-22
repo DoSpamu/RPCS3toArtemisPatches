@@ -101,7 +101,7 @@ function buildNclEntry(cheatName, author, patches) {
 function findNclFiles(tid) {
   if (!fs.existsSync(USERLIST_DIR)) return [];
   return fs.readdirSync(USERLIST_DIR)
-    .filter(f => f.includes(tid) && f.endsWith('.ncl'))
+    .filter(f => new RegExp(`(?<![A-Z0-9])${tid}(?![A-Z0-9])`, 'i').test(f) && f.endsWith('.ncl'))
     .map(f => path.join(USERLIST_DIR, f));
 }
 
@@ -127,7 +127,15 @@ function prependToNcl(nclPath, entry) {
 }
 
 async function main() {
-  const state      = JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
+  let state;
+  try {
+    state = JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
+  } catch (err) {
+    throw new Error(`Cannot read known_posts.json: ${err.message}\nRun: create known_posts.json with { "thread_url": "...", "last_checked": null, "known_post_ids": [] }`);
+  }
+  if (!Array.isArray(state.known_post_ids)) {
+    throw new Error('known_posts.json: known_post_ids must be an array');
+  }
   const isBootstrap = state.known_post_ids.length === 0;
 
   console.log(isBootstrap
@@ -152,7 +160,7 @@ async function main() {
   }
 
   // Write raw post content for reviewer reference
-  if (!fs.existsSync(RAW_DIR)) fs.mkdirSync(RAW_DIR);
+  fs.mkdirSync(RAW_DIR, { recursive: true });
   const date = new Date().toISOString().slice(0, 10);
   const rawLines = newPosts.map(p =>
     `=== ${p.id} | @${p.author} ===\n${p.text}\n${'─'.repeat(60)}`
@@ -167,16 +175,20 @@ async function main() {
     const tids    = extractTitleIds(post.text);
     const patches = extractPatches(post.text);
     const postUrl = `${THREAD_URL}#${post.id}`;
+    const author  = (post.author || 'unknown').replace(/[\r\n]/g, ' ').trim();
+    const safeAuthor = author.replace(/\|/g, '\\|');
 
-    prRows.push(`| [${post.id}](${postUrl}) | ${post.author} | ${tids.join(', ') || '—'} | ${patches.length} |`);
+    prRows.push(`| [${post.id}](${postUrl}) | ${safeAuthor} | ${tids.join(', ') || '—'} | ${patches.length} |`);
 
     if (!tids.length || !patches.length) continue;
 
-    const entry = buildNclEntry('60 FPS', post.author, patches);
+    const entry = buildNclEntry('60 FPS', author, patches);
     for (const tid of tids) {
       for (const nclPath of findNclFiles(tid)) {
         if (prependToNcl(nclPath, entry)) {
           modFiles.push(path.relative(process.cwd(), nclPath));
+        } else {
+          console.log(`  Skipped duplicate: ${path.basename(nclPath)}`);
         }
       }
     }
