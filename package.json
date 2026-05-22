@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/DoSpamu/RCPS3toArtemisPatches#readme",
   "devDependencies": {
+    "camoufox": "^0.1.19",
     "js-yaml": "^4.1.1",
     "patchright": "^1.0.0"
   },

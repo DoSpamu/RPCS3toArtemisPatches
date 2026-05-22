@@ -1,5 +1,5 @@
 'use strict';
-const { chromium } = require('patchright');
+const { Camoufox } = require('camoufox');
 const fs = require('fs');
 const path = require('path');
 
@@ -12,11 +12,11 @@ const PR_BODY_FILE = path.join(__dirname, '..', 'pr_body.txt');
 async function scrapePage(page, url) {
   await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
 
-  // Wait out Cloudflare challenge (title = "Just a moment..." for up to 15s)
+  // Wait out Cloudflare challenge (title = "Just a moment..." for up to 30s)
   try {
     await page.waitForFunction(
       () => !document.title.includes('Just a moment'),
-      { timeout: 15000 }
+      { timeout: 30000 }
     );
   } catch (_) {
     if ((await page.title()).includes('Just a moment')) {
@@ -41,7 +41,7 @@ async function scrapePage(page, url) {
 }
 
 async function scrapeThread() {
-  const browser = await chromium.launch({ headless: true });
+  const browser = await Camoufox({ headless: true, os: 'windows', humanize: true });
   const page    = await browser.newPage();
   const allPosts = [];
   let url = THREAD_URL;
