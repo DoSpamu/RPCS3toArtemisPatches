@@ -241,7 +241,7 @@ async function main() {
 
   const firstPost     = allPosts[0] || null;
   const firstPostHash = firstPost ? sha256short(firstPost.text) : null;
-  const firstPostChanged = !isBootstrap && firstPost && firstPostHash !== state.first_post_hash;
+  const firstPostChanged = !isBootstrap && firstPost && state.first_post_hash !== undefined && firstPostHash !== state.first_post_hash;
 
   console.log(`Total posts seen: ${allPosts.length} | New replies: ${newPosts.length} | First post updated: ${firstPostChanged}`);
 
