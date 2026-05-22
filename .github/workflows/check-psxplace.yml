@@ -1,0 +1,67 @@
+name: Check PSXPlace Thread
+
+on:
+  schedule:
+    - cron: '0 6 * * *'   # daily at 06:00 UTC
+  workflow_dispatch:        # allow manual trigger from GitHub UI
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Patchright Chromium + OS deps
+        run: npx patchright install chromium --with-deps
+
+      - name: Scrape thread and parse new patches
+        run: node scripts/check_psxplace.js
+        # Exit 1 means Cloudflare blocked — workflow continues so we can report it
+
+      - name: Create or update PR if new patches found
+        if: always()
+        run: |
+          if [ ! -f pr_body.txt ]; then
+            echo "No new patches found (or scraper was blocked). Nothing to PR."
+            exit 0
+          fi
+
+          DATE=$(date +%Y-%m-%d)
+          BRANCH="auto/psxplace-monitor"
+
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git checkout -B "$BRANCH"
+          # Stage all changed files (known_posts.json, new_patches_raw/, USERLIST/)
+          git add known_posts.json new_patches_raw/ USERLIST/ 2>/dev/null || true
+          git diff --cached --quiet && echo "Nothing staged." && exit 0
+          git commit -m "[Auto] PSXPlace new patches $DATE"
+          git push --force-with-lease origin "$BRANCH"
+
+          # Create PR only if none already open for this branch
+          OPEN=$(gh pr list --head "$BRANCH" --state open --json number --jq length)
+          if [ "$OPEN" = "0" ]; then
+            gh pr create \
+              --title "[Auto] New PSXPlace patches ($DATE)" \
+              --body-file pr_body.txt \
+              --base master \
+              --head "$BRANCH"
+          else
+            echo "PR already open for $BRANCH — branch updated via force push."
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
