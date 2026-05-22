@@ -5,7 +5,6 @@ desktop.ini
 
 # Node
 node_modules/
-package-lock.json
 
 # Scraper output (large raw files)
 scraped_fps_patches.txt
