@@ -1,3 +1,8 @@
+FALLOUT 3 GAME OF THE YEAR	BLUS30451	1.00	Cheat code		Unlock FPS (PSXPlace)
+0
+RPCS3
+0 00702BCC 60000000
+#
 Use A Health Kit For Permanent Invincibility
 0
 bungholio

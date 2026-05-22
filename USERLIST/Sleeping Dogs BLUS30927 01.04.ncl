@@ -1,3 +1,12 @@
+Patching during gameplay may make it unstable.	Unlock FPS (PSXPlace)
+0
+Joey
+0 00898BB8 60000000
+0 00898CBC 60000000
+0 00898AC4 60000000
+0 00898AD8 60000000
+0 00898AB4 60000000
+#
 Unlock FPS (PSXPlace)
 0
 Joey

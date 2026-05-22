@@ -1,3 +1,8 @@
+The Bureau: XCOM Declassified	BLUS30780	1.02	Cheat code		Unlock FPS (PSXPlace)
+0
+Joey
+0 01FB8D14 00000000
+#
 Button Enable Code
 0
 bungholio

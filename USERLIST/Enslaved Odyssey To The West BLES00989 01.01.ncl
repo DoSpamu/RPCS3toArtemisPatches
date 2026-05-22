@@ -1,3 +1,11 @@
+Cut scenes and loading periods are still 30.	Unlock FPS (PSXPlace)
+0
+Joey
+0 00A01D3C 28030001
+0 00A01E94 28050001
+0 008863DC 38600001
+0 00A0E24C 38600001
+#
 Unlock FPS (PSXPlace)
 0
 Joey
