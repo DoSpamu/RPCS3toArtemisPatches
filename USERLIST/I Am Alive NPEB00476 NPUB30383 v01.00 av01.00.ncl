@@ -1,3 +1,9 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 0074BCD4 60000000
+0 0074BBFC 60000000
+#
 Infinite Health (%99.99)
 0
 FBML

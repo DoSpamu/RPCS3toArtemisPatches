@@ -1,3 +1,9 @@
+UnlockFPS (PSXPlace)
+0
+Joey
+0 006E9BE8 60000000
+0 006E9B60 60000000
+#
 Debug Menu (RPCS3)
 0
 RPCS3

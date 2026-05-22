@@ -1,3 +1,9 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 00F310BC 60000000
+0 00F310D0 60000000
+#
 Alternative Names
 0
 PARAM.SFO

@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 009C1974 2C030001
+#
 Unlimited Ammo + Charged Shots + Thumper
 0
 MrFire

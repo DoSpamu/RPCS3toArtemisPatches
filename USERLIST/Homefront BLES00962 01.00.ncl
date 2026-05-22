@@ -1,3 +1,10 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 007EEAB8 28030001
+0 007EEC08 38800001
+0 007EEC60 28030001
+#
 Infinite Grenades + C4
 0
 bitcopa

@@ -1,3 +1,11 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 008F07D4 60000000
+0 008F1E98 38600001
+0 008F203C 38600001
+0 008F39B0 38600001
+#
 Hardcore Mode Save Count Never Decreases
 0
 bungholio
