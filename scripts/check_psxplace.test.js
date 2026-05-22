@@ -7,6 +7,7 @@ assert.deepStrictEqual(extractTitleIds('Game BLUS30443 supports 60fps'), ['BLUS3
 assert.deepStrictEqual(extractTitleIds('BLES01614 and BLUS30983 both work'), ['BLES01614', 'BLUS30983']);
 assert.deepStrictEqual(extractTitleIds('No ID here'), []);
 assert.deepStrictEqual(extractTitleIds('BLUS30443 BLUS30443 duplicate'), ['BLUS30443']); // deduped
+assert.deepStrictEqual(extractTitleIds('Mindjack MRTC00014 1.01'), ['MRTC00014']);        // MRTC format
 
 // extractPatches — NCL direct format
 assert.deepStrictEqual(

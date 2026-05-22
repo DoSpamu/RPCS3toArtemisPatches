@@ -69,7 +69,7 @@ async function scrapeThread() {
   return allPosts;
 }
 
-const TITLE_ID_RE = /\b(BL[UECSJA][A-Z0-9]{6}|NP[A-Z]{2}[0-9]{5}|BC[A-Z]{2}[0-9]{5})\b/gi;
+const TITLE_ID_RE = /\b(BL[UECSJA][A-Z0-9]{6}|NP[A-Z]{2}[0-9]{5}|BC[A-Z]{2}[0-9]{5}|MRTC[0-9]{5})\b/gi;
 
 function extractTitleIds(text) {
   return [...new Set((text.match(TITLE_ID_RE) || []).map(s => s.toUpperCase()))];
@@ -95,7 +95,7 @@ function parseFirstPost(text) {
   const lines = text.split('\n').map(l => l.trim());
   const results = [];
   const PATCH_RE = /^0\s+([0-9A-Fa-f]{8})\s+([0-9A-Fa-f]{4,8})$/;
-  const TID_RE   = /\b(BL[UECSJA][A-Z0-9]{6}|NP[A-Z]{2}[0-9]{5}|BC[A-Z]{2}[0-9]{5})\b/i;
+  const TID_RE   = /\b(BL[UECSJA][A-Z0-9]{6}|NP[A-Z]{2}[0-9]{5}|BC[A-Z]{2}[0-9]{5}|MRTC[0-9]{5})\b/i;
 
   function parseTidLine(line) {
     const parts = line.split('\t').map(s => s.trim());
