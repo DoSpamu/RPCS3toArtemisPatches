@@ -20,9 +20,7 @@ async function scrapePage(page, url) {
     );
   } catch (_) {
     if ((await page.title()).includes('Just a moment')) {
-      console.error('CF_BLOCKED: Cloudflare challenge not resolved.');
-      console.error('Fallback: swap patchright for camoufox (see CLAUDE.md).');
-      process.exit(1);
+      throw new Error('CF_BLOCKED');
     }
   }
 
@@ -48,15 +46,26 @@ async function scrapeThread() {
   const allPosts = [];
   let url = THREAD_URL;
 
-  while (url) {
-    console.log(`Scraping: ${url}`);
-    const { posts, nextUrl } = await scrapePage(page, url);
-    allPosts.push(...posts.filter(p => p.id));
-    console.log(`  Found ${posts.length} posts on this page (total: ${allPosts.length})`);
-    url = nextUrl;
-    if (url) await page.waitForTimeout(1500); // polite delay between pages
+  try {
+    while (url) {
+      console.log(`Scraping: ${url}`);
+      const { posts, nextUrl } = await scrapePage(page, url);
+      const filtered = posts.filter(p => p.id);
+      allPosts.push(...filtered);
+      console.log(`  Found ${filtered.length} posts on this page (total: ${allPosts.length})`);
+      url = nextUrl;
+      if (url) await page.waitForTimeout(1500); // polite delay between pages
+    }
+  } catch (err) {
+    if (err.message === 'CF_BLOCKED') {
+      console.error('CF_BLOCKED: Cloudflare challenge not resolved.');
+      console.error('Fallback: swap patchright for camoufox (see CLAUDE.md).');
+      process.exit(1);
+    }
+    throw err;
+  } finally {
+    await browser.close();
   }
 
-  await browser.close();
   return allPosts;
 }
