@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   check:
@@ -32,37 +31,20 @@ jobs:
         continue-on-error: true
         # Exit 1 means Cloudflare blocked — workflow continues to PR step via if: always()
 
-      - name: Create or update PR if new patches found
+      - name: Commit new patches to master
         if: always()
         run: |
           if [ ! -f pr_body.txt ]; then
-            echo "No new patches found (or scraper was blocked). Nothing to PR."
+            echo "No new patches found (or scraper was blocked). Nothing to commit."
             exit 0
           fi
 
           DATE=$(date +%Y-%m-%d)
-          BRANCH="auto/psxplace-monitor"
 
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git checkout -B "$BRANCH"
-          # Stage all changed files (known_posts.json, new_patches_raw/, PSXPlace Confirmed/)
           git add known_posts.json new_patches_raw/ "PSXPlace Confirmed/" 2>/dev/null || true
           git diff --cached --quiet && echo "Nothing staged." && exit 0
           git commit -m "[Auto] PSXPlace new patches $DATE"
-          git push --force origin "$BRANCH"
-
-          # Create PR only if none already open for this branch
-          OPEN=$(gh pr list --head "$BRANCH" --state open --json number --jq length)
-          if [ "$OPEN" = "0" ]; then
-            gh pr create \
-              --title "[Auto] New PSXPlace patches ($DATE)" \
-              --body-file pr_body.txt \
-              --base master \
-              --head "$BRANCH"
-          else
-            echo "PR already open for $BRANCH — branch updated via force push."
-          fi
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          git push origin master
