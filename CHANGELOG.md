@@ -4,6 +4,47 @@ All notable changes to this project will be documented here.
 
 ## [Unreleased]
 
+### Added (PSXPlace auto-monitor — 2026-05-22)
+New patches auto-detected from thread #49905 (Joey85 first-post edits), committed directly to `PSXPlace Confirmed/`:
+- `Alien Rage NPEB01088 01.00` — new file
+- `Condemned 2 Bloodshot BLUS30115 01.01` — new file
+- `Dead Space BLES00308 01.00` — new file
+- `Folklore BCES00050 01.10` — new file
+- `Metal Gear Solid 4 BLES00246 02.00` — new file
+- `Need for Speed Rivals BLUS31201 01.03` — new file
+- `Resident Evil Revelations BLES01773 01.01` — new file
+- `Silent Hill Homecoming BLES00460 01.00` — new file
+- `Skyrim BLUS31202 01.00` — new file (PSXPlace Confirmed variant)
+- `The Last of Us BCES01585 01.11` — new file
+- `STRANGLEHOLD BLES00144 01.20` — new file
+- `Destroy All Humans! Path of the Furon BLES00467` — entry added (name-match fallback, no TID in filename)
+- `Prototype 2 BLES01532 BLUS30756 01.00` — entry added
+
+### Added (PSXPlace auto-monitor — 2026-06-05)
+New patches auto-detected from thread #49905 (Joey85 first-post edits):
+- `FINAL FANTASY XIII MRTC00003 01.00` — new file
+- `MotorStorm BCES00006 01.00` — new file
+- `Resistance 2 BCES00226 01.60` — new file
+- `The Evil Within BLES01916 01.05` — new file
+- `The Godfather II BLES00477 01.01` — new file
+- `WET BLES00707 01.00` — new file
+- `Prototype 2 BLES01532 BLUS30756 01.00` — additional entry added
+
+### Fixed (scripts/check_psxplace.js)
+- **MRTC TID format** — added `MRTC[0-9]{5}` to `TITLE_ID_RE` regex; previously Lost Planet 2 (`MRTC00002`) and Mindjack (`MRTC00014`) TIDs were not matched
+- **Name-based file fallback** — `findPsxplaceFiles` now falls back to game-name prefix match when no file has the TID in its filename (e.g. `Destroy All Humans! Path Of The Furon.ncl`)
+- **parseFirstPost** — corrected cheat name extraction (tab-split last segment) and TID detection from name lines
+- **Author field** — corrected `RPCS3_illusion` → `illusion` in The Last of Us BCES01585 NCL
+- **Duplicate entry** — removed duplicate `UnlockFPS` entry in `Prototype 2 BLES01532 BLUS30756 01.00`
+- **Bootstrap guard** — `first_post_hash` is no longer written on the first-ever run (bootstrap), preventing false "first post changed" detection on the next run
+
+### Added (scripts/check_psxplace.js)
+- **First-post edit tracking** — monitor now detects when Joey85 edits the catalog post (SHA-256 hash comparison). When a change is detected, all NCL blocks in the first post are re-parsed and new/updated entries are written to `PSXPlace Confirmed/`
+
+### Changed
+- **GitHub Actions** — Node.js runner upgraded from 20 to 22 LTS (`actions/setup-node`); Node 20 is deprecated in GitHub Actions from June 16 2026
+- **GitHub Actions** — workflow now commits new patches directly to `master` instead of creating a PR on `auto/psxplace-monitor`; `pull-requests: write` permission removed
+
 ## [1.2] — 2026-05-21
 
 ### Fixed (community feedback / Nascar1243 real-hardware testing)
