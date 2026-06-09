@@ -1,0 +1,1015 @@
+=== js-post-423928 | @Nascar1243 ===
+Figured I would contribute since I see titles are missing
+Silent Hill Downpour BLUS30565 v1.01
+⦁ Address 2A1250
+⦁ Change to 60000000 (untested)
+
+Lost Dimension BLUS31554
+⦁ Address 170CC8
+⦁ change from 41 to 60 for 60FPS
+
+Kingdoms of Amalur: Reckoning BLUS30710 1.02
+⦁ Address 1242F8
+⦁ change 489C to 6000 for 60FPS
+
+Kingdom of Hearts HD 1.5 ReMIX Chain of Memories BLUS31212
+⦁ Address 12484
+⦁ change from 80847C48 to 38800000 for 60FPS
+⦁ Address 36870
+⦁ change to 38800000 for 60FPS (untested)
+
+Pirates of the Caribbean: At World's End BLUS30029
+⦁ Address 889063
+⦁ change from 02 to 01 for 60FPS (Seems to only apply to cutscenes)
+
+Hatsune Miku: Project Diva F 2nd BLUS31431
+⦁ Address 6AF44E
+⦁ change from 0002 to 0001
+⦁ Address 6AF46E
+⦁ change from 0002 to 0001
+⦁ Address 6AF492
+⦁ change from 0002 to 0001
+⦁ Address 6AF4B6
+⦁ change from 0002 to 0001 breaks videos but still playable, unlocks 60FPS, all are required
+
+Hatsune Mike: Project Diva F BLUS31319
+⦁ Address 589496
+⦁ change from 0002 to 0001
+⦁ Address 5894BA
+⦁ change from 0002 to 0001
+⦁ Address 589802
+⦁ change from 0002 to 0001
+⦁ Address 58982A
+⦁ change from 0002 to 0001 breaks videos but still playable, unlocks 60FPS, all are required
+
+Kingdom Hearts HD 2.5 Remix (Birth by Sleep) BLUS31460
+⦁ Address 15AA4
+⦁ change from 80637510 to 38600000 for 60FPS
+⦁ Address 76859
+⦁ change to 38600000 for supposed 60FPS, untested
+
+Dragon Ball Z: Burst Limit BLUS30117
+⦁ Address 4C4383
+⦁ change from 02 to 01 for 60FPS (Seems to only apply to cutscenes)
+⦁ Address 1633E8
+⦁ change from 801C to 6000 to fix the pause glitch
+
+Skate 2 BLUS30253 1.02
+⦁ Address 46383F
+⦁ change from 02 to 01 for 60FPS (only applies to cutscenes it seems)
+
+Tony Hawk's Project 8 BLUS30011
+⦁ Address 56658C
+⦁ change from 41 to 60 for 60FPS
+
+Tony Hawk's Proving Ground BLUS30071
+⦁ Address 606138
+⦁ change from 41 to 60 for 60FPS
+
+Oblivion GOTY BLUS30087 1.00
+⦁ Address AAED04
+⦁ change from 40 to 60 for 60fps
+
+Just Cause 2 BLUS30400 1.02
+⦁ Address 35D3E4
+⦁ change 7803 to 7800
+
+Uncharted 1 BCUS98103 1.10
+⦁ Address BB4352
+⦁ change from 02 to 00 = unlock fps, 01 = 60fps, 02 = 30fps
+
+Skate 3 BLUS30464 1.05
+⦁ Address 94713A
+⦁ change from 06 to 00 for 60fps
+
+Uncharted 2 (v1.09)
+⦁ Address E9C1FB
+⦁ change the byte 02 (30fps) to 01 (60fps) or 00 (unlocked)
+
+Grand Theft Auto 4 v1.00 & 1.08 (BLUS30127 & BLUS03702)
+⦁ Address: 00f18830
+⦁ Value: 3D to 00 (uncapped)
+
+All of these are tested and confirmed working.
+
+
+Joey85 said:
+Alice Madness Returns	BLUS30607	1.00	Cheat code	No OC:
+	Unlock FPS
+0
+Joey
+0 008a3238 28030001
+0 008a30e4 28030001
+#
+Alien Rage	NPEB01088	1.00	Cheat code		Unlock FPS
+0
+Joey
+0 009802e8 2c030001
+0 003491bc 2c040001
+0 00980304 28030000
+0 009801a4 28030000
+#
+Aliens: Colonial Marines	BLUS30862	1.05	Cheat code		Unlock FPS
+0
+Joey
+0 005c92f8 2b800000
+#
+Alpha Protocol	BLUS30341	1.00	Cheat code	No OC:
+
+	Unlock FPS
+0
+Joey
+0 00954970 2b090000
+0 0095478c 2b800000
+#
+Asura's Wrath	BLUS30721	1.02	Cheat code		Unlock FPS
+0
+Joey
+0 00873024 28030001
+0 00873170 28030001
+#
+Batman Arkham Asylum GOTY	BLUS30515	1.00	Cheat code	Debug menu works (R1+start). From there unlock VSync for uncapped frame rate.	Debug Menu
+0
+RPCS3
+0 0121DBAC 38600000
+#
+Batman Arkham City GOTY	BLES01587	1.00	Cheat code	Debug menu works (R1+start). From there unlock VSync for uncapped frame rate.	Debug Menu
+0
+RPCS3
+0 00E36504 38600000
+#
+Batman Arkham Origins	BLUS31147	1.60	Cheat code	Debug menu works (R1+start). From there unlock VSync for uncapped frame rate.	Debug Menu
+0
+RPCS3
+0 00F249F0 38600000
+#
+BATTLEFIELD Bad Company	BLES00261	1.20	Game disc dump		https://www.nexusmods.com/battlefieldbadcompany/mods/2?tab=files
+BATTLEFIELD Bad Company 2	BLES00779	1.05	Game disc dump	same patch/mod works	https://www.nexusmods.com/battlefieldbadcompany/mods/2?tab=files
+Brutal Legend	BLES00562	1.02	Cheat code	(Needs cleaning)	Unlock FPS
+0
+RPCS3
+0 00012ef4 3c888889
+0 000132f0 3c888889
+0 00017d90 3c888889
+0 00022d48 3c888889
+0 000686ac 3c888889
+0 0007d680 3c888889
+0 001594ac 3c888889
+0 00161380 3c888889
+0 00164cec 3c888889
+0 001bd978 3c888889
+0 00201454 3c888889
+0 002b2bc8 3c888889
+0 002b339c 3c888889
+0 002e3418 3c888889
+0 002f005c 3c888889
+0 002f44b0 3c888889
+0 002f5274 3c888889
+0 00303bfc 3c888889
+0 00327ed8 3c888889
+0 0034fb10 3c888889
+0 006b7d24 3c888889
+0 006b89f8 3c888889
+0 006b8c28 3c888889
+0 006b9270 3c888889
+0 00a0246c 3c888889
+0 011163c8 3c888889
+0 0116b34c 3c888889
+0 01353e5c 3c888889
+0 013be100 3c888889
+0 013c0520 3c888889
+0 000c479c 38600001
+0 000c44f8 38600001
+#
+Bulletstorm	BLES01134	1.03			Unlock FPS
+0
+Joey
+0 009c1974 2c030001
+#
+Castle of Illusion Starring Mickey Mouse	NPUB31099	1.00	Cheat code		Unlock FPS
+0
+RPCS3
+0 000F8908 60000000
+#
+Condemned 2 Bloodshot	BLUS30115	1.01	Game disc dump
++
+Cheat code		\PS3_GAME\USRDIR\autoexec.cfg "MaxFPS" "60"
++
+Unlock FPS
+0
+Joey
+0 008fe1ac 38600001
+#
+Crysis 2	BLUS30631	1.04	Game disc dump		\PS3_GAME\USRDIR\system.cfg
+sys_maxfps = 60
+Crysis 3	BLES01649	1.04	Game disc dump		\PS3_GAME\USRDIR\system.cfg
+sys_maxfps = 60
+Dead Space	BLES00308	1.00	Cheat code	Minor "jumps" w/ character movement
+0 00D5E938 00000000 -> uncapped fps
+0 00D5E938 00000001 -> 60fps limited
+
+No OC, NunoRS2000 review:
+
+	Unlock FPS
+0
+Joey
+0 00D5E938 00000000
+0 004549a0 38600001
+0 00454b60 38600001
+0 00455950 38600001
+#
+Dead Space 2	BLES01040	1.02	Cheat code		Unlock FPS
+0
+Joey
+0 008f07d4 60000000
+0 008f1e98 38600001
+0 008f203c 38600001
+0 008f39b0 38600001
+#
+Dead Space 3	BLUS31053	1.02	Cheat code		Unlock FPS
+0
+Joey
+0 00928364 60000000
+0 00934dfc 38600001
+0 00932aec 38600001
+0 00932954 38600001
+#
+Deadpool	BLUS31146	1.0	Cheat code		Unlock FPS
+0
+Joey
+0 016af2d0 60000000
+0 016af2dc 60000000
+0 007b28d4 38600001
+0 007ab89c 38600001
+0 007b1fa4 28030001
+0 007ED630 60000000
+0 007bf970 60000000
+0 007b2238 60000000
+#
+Destroy All Humans! Path of the Furon	BLES00467		Cheat code		Unlock FPS
+0
+RPCS3
+0 010B9E68 60000000
+0 010B9EC0 60000000
+#
+Deus Ex: Human Revolution - Director's Cut	BLUS31317	1.00	Cheat code		Unlock FPS
+0
+Joey
+0 002a205c 60000000
+#
+Duke Nukem Forever	BLES01147	1.03	Cheat code	No OC:
+	Unlock FPS
+0
+Joey
+0 00486e34 39240002
+#
+ENSLAVED ODYSSEY TO THE WEST	BLES00989	1.01	Cheat code	Unlocks the framerate ingame and in menus.
+Cut scenes and loading periods are still 30.	Unlock FPS
+0
+Joey
+0 00a01d3c 28030001
+0 00a01e94 28050001
+0 008863dc 38600001
+0 00a0e24c 38600001
+#
+F.E.A.R. 2 Project Origin	BLES00464		Game disc dump	config file use notepad to edit frame rate limit	
+FALLOUT 3 GAME OF THE YEAR	BLUS30451	1.00	Cheat code		Unlock FPS
+0
+RPCS3
+0 00702BCC 60000000
+#
+Fallout New Vegas Ultimate Edition	BLUS30888	1.00	Cheat code		Unlock FPS
+0
+RPCS3
+0 0097504C 60000000
+#
+FINAL FANTASY XIII	MRTC00003	1.00	Cheat code		Unlock FPS
+0
+RPCS3_illusion
+0 008d2e94 38800001
+#
+Folklore	BCES00050	1.10	Cheat code	Minor graphical issues	Unlock FPS
+0
+RPCS3
+0 001821a0 60000000
+#
+Grand Theft Auto IV: Complete Edition	BLES01128	1.02	Cheat code		Unlock FPS
+0
+RPCS3
+0 00F18840 00000000
+#
+Half-Life 2 (The Orange Box)	BLUS30055	1.10	Cheat code		Unlock FPS
+0
+RPCS3
+0 00C477F4 60000000
+#
+HAZE	BLES00157	1.36	Cheat code		Unlock FPS
+0
+Joey
+0 007411a8 38600001
+0 00742d10 38600001
+0 00e4e36c 3D4CCCCD
+0 00e4e364 3D03D70A
+0 0068d1b8 60000000
+#
+Homefront	BLES00962	1.04	Cheat code		Unlock FPS
+0
+Joey
+0 007eeab8 28030001
+0 007eec08 38800001
+0 007eec60 28030001
+#
+I AM ALIVE	NPUB30383	1.00	Cheat code		Unlock FPS
+0
+Joey
+0 0074bcd4 60000000
+0 0074bbfc 60000000
+#
+James Cameron's AVATAR: THE GAME	BLUS30374	1.00	Cheat code		Unlock FPS
+0
+Joey
+0 00a785e8 3be00002
+#
+KILLER IS DEAD	BCAS20292	1.00	Cheat code		Unlock FPS
+0
+RPCS3
+0 009913B8 60000000
+0 00991418 60000000
+0 0099141C 60000000
+#
+Killzone 2	BCES00081	1.29	Cheat code		Unlock FPS
+0
+Joey
+0 00048f98 38800001
+#
+LOLLIPOP CHAINSAW	BLES01525	1.00	Cheat code		Unlock FPS
+0
+Joey
+0 008f88f8 38800001
+0 008f8908 28030001
+#
+Lost Planet 2	MRTC00002	1.02	Cheat code		Unlock FPS
+0
+RPCS3
+0 013DC518 60000000
+0 013DC524 60000000
+#
+METAL GEAR SOLID 4 GUNS OF THE PATRIOTS	BLES00246	2.00	Cheat code		Unlock FPS
+0
+RPCS3
+0 000DB720 4E800020
+#
+Mindjack	MRTC00014	1.01	Cheat code		Unlock FPS
+0
+Joey
+0 003d9728 60000000
+#
+Mirror's Edge	BLES00322	1.01	Cheat code	No OC:
+	Unlock FPS
+0
+Joey
+0 0091fe98 2b800000
+0 009205b4 2b090000
+0 00920568 2b800000
+#
+MotorStorm	BCES00006	1.00	Cheat code	
+800MHz/700MHz OC, review:
+
+	UnlockFPS
+0
+RPCS3
+0 0001852c 38c00001
+0 00018530 39000001
+0 0087f3a0 39000001
+#
+Need for Speed Rivals	BLUS31201	1.03	Cheat code	Based on the RPCS3 (ZEROx) patch but updated for version 1.03	Unlock FPS
+0
+Joey
+0 01861f80 404e0000
+0 01861f88 3F911111
+#
+NeverDead	BLUS30654	1.00	Pre-Patch	eboot needs to be pre-patched	Mem: 0x008275E4 | File: 0x008175E4 | Orig: 3C0041F0 -> New: 3C004270
+Mem: 0x00728D40 | File: 0x00718D40 | Orig: 3C0041F0 -> New: 3C004270
+Mem: 0x00617C18 | File: 0x00607C18 | Orig: 3C0041F0 -> New: 3C004270
+Mem: 0x005F3720 | File: 0x005E3720 | Orig: 3C0041F0 -> New: 3C004270
+Mem: 0x005E9C20 | File: 0x005D9C20 | Orig: 3C0041F0 -> New: 3C004270
+Mem: 0x005CBE44 | File: 0x005BBE44 | Orig: 3C0041F0 -> New: 3C004270
+Mem: 0x005261C0 | File: 0x005161C0 | Orig: 3C0041F0 -> New: 3C004270
+Mem: 0x004E6FC4 | File: 0x004D6FC4 | Orig: 3C0041F0 -> New: 3C004270
+Mem: 0x002BD2A4 | File: 0x002AD2A4 | Orig: 3C0041F0 -> New: 3C004270
+Mem: 0x002AC9D0 | File: 0x0029C9D0 | Orig: 3C0041F0 -> New: 3C004270
+Mem: 0x0023FA20 | File: 0x0022FA20 | Orig: 3C0041F0 -> New: 3C004270
+Mem: 0x0023F930 | File: 0x0022F930 | Orig: 3C0041F0 -> New: 3C004270
+Mem: 0x0023D3BC | File: 0x0022D3BC | Orig: 3C0041F0 -> New: 3C004270
+Prototype 2	BLUS30756	1.00	Cheat code		UnlockFPS
+0
+Joey
+0 006e9be8 60000000
+0 006e9b60 60000000
+#
+Ratchet & Clank All 4 One	BCUS98175	1.03	Cheat code	Run patch in main menu	Unlock FPS
+0
+Joey
+0 0073c7a0 38600001
+0 0073c78c 38a00001
+#
+Ratchet & Clank Nexus	BCES01908	1.01	Cheat code	Run patch in main menu
+
+No OC, NunoRS2000 review:
+
+	Unlock FPS
+0
+Joey
+0 0069a550 38a00001
+0 0069a564 38600001
+#
+Remember Me	BLES01701	1.00	Cheat code		Unlock FPS
+0
+Joey
+0 00a347d4 28030001
+0 00a34914 28030001
+#
+Resident Evil	NPUB31552	1.00	Cheat code		Unlock FPS
+0
+RPCS3
+0 007C77A4 60000000
+0 007C77B8 60000000
+#
+RESIDENT EVIL 5 GOLD EDITION	BLES00816	1.01	Cheat code		Unlock FPS
+0
+RPCS3
+0 00C27964 60000000
+0 00C27970 60000000
+#
+RESIDENT EVIL 6	BLUS30855	1.06	Cheat code		Unlock FPS
+0
+Joey
+0 010e5b18 60000000
+0 010e5b2c 60000000
+#
+Resident Evil Revelations	BLES01773	1.01	Cheat code		Unlock FPS
+0
+RPCS3
+0 00B73910 60000000
+0 00B73924 60000000
+#
+Resident Evil Revelations 2	BLUS31444	1.04	Cheat code		Unlock FPS
+0
+Joey
+0 00f310bc 60000000
+0 00f310d0 60000000
+#
+RESIDENT EVIL THE DARKSIDE CHRONICLES	NPEB00816	1.00	Cheat code		Unlock FPS
+0
+Joey
+0 0046b354 60000000
+#
+RESIDENT EVIL THE UMBRELLA CHRONICLES	NPEB00817	1.00	Cheat code		Unlock FPS
+0
+Joey
+0 0007cb6c 60000000
+#
+Resistance 2	BCES00226	1.60	Cheat code	Based on the RPCS3 (Whatcookie, illusion) codes	Unlock FPS
+0
+Joey
+0 0065066c 42800088
+0 00d62f34 3c888889
+#
+Resistance 3	BCES01118	1.05	Cheat code		Unlock FPS
+0
+RPCS3
+0 00817D48 C0228DD4
+0 00F330FC 38D1B717
+0 0075FA54 60000000
+#
+Saw	BLES00676	1.00	Cheat code		Unlock FPS
+0
+Joey
+0 018bec38 3c888889
+0 018c2000 3c888889
+0 018d5914 3c888889
+0 00a60f80 2b800000
+#
+SAW 2	BLES01050	1.00	Cheat code		Unlock FPS
+0
+Joey
+0 00b6a0c0 2b890000
+0 00b6a078 2b800000
+#
+Shadows of the Damned	BLES01276	1.00	Cheat code	No OC:
+	Unlock FPS
+0
+Joey
+0 009E0CE4 60000000
+0 009E0D64 60000000
+0 009a5f38 28030001
+0 009a5e0c 28030001
+0 009a5f28 38800001
+#
+Silent Hill: Homecoming	BLES00460	1.00	Cheat code		Unlock FPS
+0
+RPCS3
+0 0005A6BC 38000001
+#
+Siren Blood Curse	BCES00294	1.00	Cheat code		Unlock FPS
+0
+Joey
+0 002e8404 38600001
+0 002fa99c 38600001
+0 00022818 4e800020
+#
+Skyrim	BLUS31202	1.00	Cheat code		Unlock FPS
+0
+RPCS3
+0 008EDB64 F8051C60
+#
+Sleeping Dogs	BLUS30927	1.04	Cheat code	Patch before loading the game.
+Patching during gameplay may make it unstable.	Unlock FPS
+0
+Joey
+0 00898bb8 60000000
+0 00898cbc 60000000
+0 00898ac4 60000000
+0 00898ad8 60000000
+0 00898ab4 60000000
+#
+STRANGLEHOLD	BLES00144	1.20	Cheat code		Unlock FPS
+0
+RPCS3
+0 00B9FF70 60000000
+#
+Syndicate	BLUS30804	1.00	Game disc dump		\PS3_GAME\USRDIR\\CONTENT\USER.CFG
+VID_VSYNC=0
+VID_RREFRESHRATE=0
+Vid_TripleBuffer=0
+Vid_PostProcess=1
+The Bureau: XCOM Declassified	BLUS30780	1.02	Cheat code		Unlock FPS
+0
+Joey
+0 01FB8D14 00000000
+#
+The Evil Within	BLES01916	1.05	Cheat code		UnlockFPS
+0
+Joey
+0 00259328 38600001
+0 0025c100 48000050
+#
+The Godfather II	BLES00477	1.01	Cheat code		UnlockFPS
+0
+Joey
+0 0074f1bc 42800030
+0 00750454 38600001
+0 00751aa8 38600001
+0 00750620 38600001
+#
+The Last of Us	BCES01585	1.11	Cheat code		Unlock FPS
+0
+RPCS3_illusion
+0 00039D08 38A00000
+#
+The Two Thrones (Prince of Persia Trilogy 3D)	BLUS30754	1.00	Cheat code		Unlock FPS
+0
+RPCS3
+0 0009381C 60000000
+#
+Tom Clancy's Splinter Cell Blacklist	BLES01879	1.03	Cheat code		Unlock FPS
+0
+Joey
+0 00210450 38600001
+0 00bb2080 38800000
+0 00bb2090 38800000
+#
+Transformers: War for Cybertron	BLES00833	1.01	Cheat code		Unlock FPS
+0
+RPCS3
+0 0020099C C03F0BB8
+#
+Warhammer 40,000: Space Marine	BLES01347	1.05	Cheat code		Unlock FPS
+0
+Joey
+0 0003f970 60000000
+#
+Warrior Within (Prince of Persia Trilogy 3D)	BLUS30754	1.00	Cheat code		Unlock FPS
+0
+RPCS3
+0 00824E10 60000000
+#
+WET	BLES00707	1.00	Cheat code		Unlock FPS
+0
+Joey
+0 00964704 60000000
+#
+Wheelman	BLUS30262	1.01	Cheat code		Unlock FPS
+0
+Joey
+0 00806ec0 2c030001
+#
+
+Yah it's 2026 and PS3 games are still getting patched 
+All patches tested and working on the real hardware.
+
+Generally speaking they will remove the 30fps software lock coded inside the game and the framerate will be limited by your PS3 hardware:
+* Expect: Screen tearing, high framerate fluctuations, instabilities, higher CPU/GPU temps, lower hardware lifespan. So use them at your own risk  Also your millage may vary due to silicon lottery & overclock.
+* Don't expect: Stable locked smooth 60fps
+
+
+Enjoy!
+For Condemned 2 Bloodshot I noticed the game is already unlocked by default, using the codes you provided seemed to make no difference in terms of fps changing. I was at the same fps before and after the code was written.
+────────────────────────────────────────────────────────────
+
+=== js-post-423948 | @NunoRS2000 ===
+Nascar1243 said:
+For Condemned 2 Bloodshot I noticed the game is already unlocked by default, using the codes you provided seemed to make no difference in terms of fps changing. I was at the same fps before and after the code was written.
+both F.E.A.R. 2 and Condemned 2 target 45fps with double buffer v-sync. The original Condemned on the 360 also targets 45fps. On the cfg file you can override the 45fps limit and make it 60fps.
+
+I tried to use an autoexec.cfg to unlock the fps on the original F.E.A.R. but it doesn't work. So even when using the same engine, the cfg trick won't work for every game.
+────────────────────────────────────────────────────────────
+
+=== js-post-423949 | @Nascar1243 ===
+NunoRS2000 said:
+both F.E.A.R. 2 and Condemned 2 target 45fps with double buffer v-sync. The original Condemned on the 360 also targets 45fps. On the cfg file you can override the 45fps limit and make it 60fps.
+I tried to use an autoexec.cfg to unlock the fps on the original F.E.A.R. but it doesn't work.
+That's what I am saying though, the code won't do anything, you'd have to modify the cfg file for the patch to work.
+────────────────────────────────────────────────────────────
+
+=== js-post-423950 | @NunoRS2000 ===
+Nascar1243 said:
+That's what I am saying though, the code won't do anything, you'd have to modify the cfg file for the patch to work.
+Also, like on the Orange Box and the Crysis trilogy, the v-sync command is locked so by the cfg we can't go further than changing the fps target.
+────────────────────────────────────────────────────────────
+
+=== js-post-423951 | @Nascar1243 ===
+NunoRS2000 said:
+Also, like on the Orange Box and the Crysis trilogy, the v-sync command is locked so by the cfg we can't go further than changing the fps target.
+The Orange Box unlocks with the codes just fine, I can get it to go above 30fps no issues. I have those codes let me grab them
+
+
+Nascar1243 said:
+The Orange Box unlocks with the codes just fine, I can get it to go above 30fps no issues. I have those codes let me grab them
+The Orange Box
+C477F4 change to 60000000 for 60FPS
+1153C4C change to 60000000 for 60FPS
+3A373C change to 60000000 for 60FPS
+9170D4 change to 60000000 for 60FPS
+
+These work to unlock the FPS
+────────────────────────────────────────────────────────────
+
+=== js-post-423953 | @NunoRS2000 ===
+Nascar1243 said:
+The Orange Box
+C477F4 change to 60000000 for 60FPS
+1153C4C change to 60000000 for 60FPS
+3A373C change to 60000000 for 60FPS
+9170D4 change to 60000000 for 60FPS
+
+These work to unlock the FPS
+but they still kick the 30fps step when under load due to the v-sync, that's what I was saying.
+This said, the base game and Episode 1 benefit a lot from the patch jumping to 60 frequently based on my testing (I played the full Half Life 2 package with those patches). Episode 2 is terribly optimized and often fails to even keep 30fps, triggering the 20fps step on the v-sync. Can't say much about Portal since my testing on it was minimal and on TF2 though the patch works, we can't get the proper test on gameplay until we get custom servers.
+────────────────────────────────────────────────────────────
+
+=== js-post-423954 | @Nascar1243 ===
+NunoRS2000 said:
+but they still kick the 30fps step when under load due to the v-sync, that's what I was saying.
+This said, the base game and Episode 1 benefit a lot from the patch jumping to 60 frequently based on my testing (I played the full Half Life 2 package with those patches). Episode 2 is terribly optimized and often fails to even keep 30fps, triggering the 20fps step on the v-sync. Can't say much about Portal since my testing on it was minimal and on TF2 though the patch works, we can't get the proper test on gameplay until we get custom servers.
+Anyways found more that didn't change FPS or didn't work at all, The Godfather 2 didn't change, Prince of Persia Two Thrones didn't change and I used the exact same BLUS Joey did, still locked to 30FPS, Killer is Dead didn't apply either, it was still at 30fps, working through the last of them now testing wise.
+
+Realized that Joey had a bunch of extra codes that didn't do anything so I went through every single code he had and cut it down to what it really needs to just go to 60FPS or fully unlock the FPS so here you go
+
+The Last of Us (v1.11)
+
+Address 1571A6F
+change the byte 02 (30fps) to 01 (60fps) or 00 (unlocked)
+Grand Theft Auto 4 v1.00 & 1.08 (BLUS30127 & BLUS03702)
+
+Address: 00f18830
+Value: 3D to 00 (uncapped)
+Uncharted 2 (v1.09)
+
+Address E9C1FB
+change the byte 02 (30fps) to 01 (60fps) or 00 (unlocked)
+Final Fantasy XIII.
+
+Address 8D2E94
+Change to 38800001.
+Skyrim
+
+Address 8EDB64
+change from F865 to F805 for 60fps
+Skate 3 BLUS30464 1.05
+
+Address 94713A
+change from 06 to 00 for 60fps
+Fallout 3 BLUS30185 1.61
+
+Address 702BAC
+change from F864 to F804
+Just Cause 2 BLUS30400 1.02
+
+Address 35D3E4
+change 7803 to 7800
+Uncharted 1 BCUS98103 1.10
+
+Address BB4352
+change from 02 to 00 = unlock fps, 01 = 60fps, 02 = 30fps
+Need For Speed Rivals BLUS31201 1.00
+
+Address 1841D08
+change 3FA1 to 3F91 for 60FPS
+Address 1841D00
+change from 403D to 404E for gamespeed fix
+Oblivion GOTY BLUS30087 1.00
+
+Address AAED04
+change from 40 to 60 for 60fps
+Folklore BCUS98147 1.10
+
+Address 1823C0
+change from 40 to 60 for 60fps
+Metal Gear Solid 4 BLUS30109
+
+Address DB720
+change from FBC1FFF0 to 4E800020 for 60fps
+Skate 2 BLUS30253 1.02
+
+Address 46383F
+change from 02 to 01 for 60FPS (only applies to cutscenes it seems)
+Tony Hawk's Project 8 BLUS30011
+
+Address 56658C
+change from 41 to 60 for 60FPS
+Tony Hawk's Proving Ground BLUS30071
+
+Address 606138
+change from 41 to 60 for 60FPS
+Dragon Ball Z: Burst Limit BLUS30117
+
+Address 4C4383
+change from 02 to 01 for 60FPS (Seems to only apply to cutscenes)
+Address 1633E8
+change from 801C to 6000 to fix the pause glitch
+Pirates of the Caribbean: At World's End BLUS30029
+
+Address 889063
+change from 02 to 01 for 60FPS (Seems to only apply to cutscenes)
+Hatsune Miku: Project Diva F 2nd BLUS31431
+
+Address 6AF44E
+change from 0002 to 0001
+Address 6AF46E
+change from 0002 to 0001
+Address 6AF492
+change from 0002 to 0001
+Address 6AF4B6
+change from 0002 to 0001 breaks videos but still playable, unlocks 60FPS, all are required
+Hatsune Mike: Project Diva F BLUS31319
+
+Address 589496
+change from 0002 to 0001
+Address 5894BA
+change from 0002 to 0001
+Address 589802
+change from 0002 to 0001
+Address 58982A
+change from 0002 to 0001 breaks videos but still playable, unlocks 60FPS, all are required
+Kingdom Hearts HD 2.5 Remix (Birth by Sleep) BLUS31460
+
+Address 15AA4
+change from 80637510 to 38600000 for 60FPS
+Address 76859
+change to 38600000 for supposed 60FPS, untested
+Fallout New Vegas Ultimate Edition BLUS30888
+
+Address 97504C
+change from 41 to 60 for 60FPS
+Kingdoms of Amalur: Reckoning BLUS30710 1.02
+
+Address 1242F8
+change 489C to 6000 for 60FPS
+Kingdom of Hearts HD 1.5 ReMIX Chain of Memories BLUS31212
+
+Address 12484
+change from 80847C48 to 38800000 for 60FPS
+Address 36870
+change to 38800000 for 60FPS (untested)
+Lost Dimension BLUS31554
+
+Address 170CC8
+change from 41 to 60 for 60FPS
+Lost Planet 2 MRTC00002 1.02
+
+Address 13DC518
+change from 44000002 to 60000000 for 60FPS
+Address 13DC524
+change from 419D to 6000 for 60FPS (Both are required)
+Lost Planet 3 BLUS31020 1.02
+
+Address 2FF5F0
+change to 60000000 for 60FPS (untested but should work)
+Resident Evil 5 BLUS30270 2.00
+
+Address C27970
+change from 41 to 60 for 60FPS
+Resistance 2 BLUS98120 1.60
+
+Address 65066C
+change from 409C to 4800 for 60FPS
+Resistance 3 BLUS98176 1.05
+
+Address 75FA54
+change from 4181 to 6000 for 60FPS
+Destroy All Humans! Path of the Furon BLES00467
+
+Address 10B9E68
+change 4180 to 6000 for 60FPS
+Motorstorm BCUS98137
+
+Address 75C864
+change from 810A0018 to 39000001 for 60FPS
+Silent Hill Homecoming BLUS30169
+
+Address 5A36C
+Change to 38000001
+Silent Hill Downpour BLUS30565 v1.01
+
+Address 2A1250
+Change to 60000000 (untested)
+The Orange Box
+
+Address C477F4
+Change to 60000000 for 60FPS
+Address 1153C4C
+Change to 60000000 for 60FPS
+Address 3A373C
+Change to 60000000 for 60FPS
+Address 9170D4
+Change to 60000000 for 60FPS
+Deadpool BLUS31146
+
+Address 7ED630
+Change from 41 to 60
+Address 7B1FA7
+Change to 01
+Address 7B2238
+Change from 4081 to 6000
+Ratchet and Clank Into the Nexus BCUS99245
+
+Apply in Main Menu first
+Address 69A553
+Change from 02 to 01 for 60FPS
+Aliens: Colonial Marines 1.05 BLUS30862
+
+Address 5C92FB
+Change from 01 to 00 for 60FPS
+Alpha Protocol BLUS30341
+
+Address 954970
+Change from 01 to 00 for 60FPS
+HAZE v1.36 BLUS30094
+
+Address E4E36D
+Change from CC to 4C for 60FPS
+Lollipop Chainsaw BLUS30917
+
+Address 8F890B
+Change from 02 to 01 for 60FPS
+Mirrors Edge 1.01 BLUS30179
+
+Address 9205B7
+Change from 01 to 00 for 60FPS
+Killzone 2 1.29 BCUS98116
+
+Address 48F9B
+Change from 02 to 01 for 60FPS
+Grand Theft Auto IV Episodes From Liberty City 1.02 BLES0087
+
+Address F18840
+Change from 3D to 00 for 60FPS
+Grand Theft Auto IV Complete Edition
+
+Address F18840
+Change from 3D to 00 for 60FPS
+Dead Space 2 1.02 BLUS30717
+
+Address 8F07D4
+Change from 419D to 6000 for 60FPS
+Dead Space 3 1.02 BLUS31053
+
+Address 928364
+Change from 419D to 6000 for 60FPS
+Brutal Legend 1.02 BLUS30330
+
+(Have to press start every time you want it on otherwise it turns off if the game hits 30fps, must apply in main menu first)
+Address C479F
+Change from 02 to 01 for 60FPS
+Alice Madness Returns BLUS30607
+
+Address 8A323B
+Change from 02 to 01
+Address 8A30E7
+Change from 02 to 01
+(Both are needed for 60FPS)
+Asura's Wrath 1.02 BLUS30721
+
+Address 873027
+Change from 02 to 01
+Address 873173
+Change from 02 to 01
+(Both are needed for 60FPS)
+XCOM Declassified 1.02 BLUS30780
+
+Address 1FB8D17
+Change from 01 to 00 for 60FPS
+Dead Space BLES00308 (works for BLUS version)
+
+Address D5E93B
+Change from 02 to 00 for 60FPS
+Deus Ex: Human Revolution Directors Cut BLUS31317
+
+Address 2A205C
+Change from 4190 to 6000 for 60FPS
+Duke Nukem Forever 1.03 BLES01147
+
+Address 486E37
+Change from 01 to 02 for 60FPS
+Homefront 1.04 BLES00962
+
+Address 7EEABB
+Change from 02 to 01 for 60FPS
+James Cameron's AVATAR THE GAME BLUS30374
+
+Address A785E8
+Change from 3BFF0001 to 3BE00002 for 60FPS
+Prototype 2 BLUS30756
+
+Address 6E9BE8
+Change from 419C to 6000 for 60FPS
+Remember Me BLES01701
+
+Address A347D7
+Change from 02 to 01 for 60FPS
+Resident Evil 6 1.06 BLUS30855
+
+Address 10E5B18
+Change from 44 to 60
+Address 10E5B2C
+Change from 4190 to 6000
+(Both are needed for 60FPS)
+Resident Evil Revelations 2 1.04 BLUS31444
+
+Address F310D0
+Change from 4180 to 6000 for 60FPS
+Shadows of the Damned BLES01276
+
+Address 9E0CE4
+Change from 4BFF to 6000
+Address 9E0D64
+Change from 4180 to 6000
+Address 9A5E0F
+Change from 02 to 01
+(All are needed for 60FPS)
+Siren Blood Curse BCES00294
+
+Address 22818
+Change from 81028588 to 4E800020 for 60FPS
+Sleeping Dogs 1.04 BLUS30927
+
+Address 898BB8
+Change from 4182 to 6000 (60FPS Game)
+Address 898CBC
+Change from 4181 to 6000 (60FPS Cutscene)
+Address 898AC4
+Change from 4180 to 6000 (60FPS Title Screen)
+STRANGLEHOLD 1.20 BLES00144
+
+Address B9FF70
+Change from C03E0408 to 60000000 for 60FPS
+The Evil Within 1.05 BLES01916 (works for BLUS)
+
+Address 25C100
+Change from 4181000C to 48000050 for 60FPS
+Tom Clancy's Splinter Cell Blacklist 1.03 BLES01879 (Works for BLUS)
+
+Address BB2093
+Change from 02 to 00 for Unlocked FPS
+Transformers War for Cybertron 1.01 BLES00833
+
+Address 20099C
+Change from C023052C to C03F0BB8 for 60FPS
+Warhammer 40,000 Space Marine 1.05 BLES01347
+
+Address 3F970
+Change from 4182 to 6000 for 60FPS
+WET BLES00707
+
+Address 964704
+Change from 419D to 6000 for Unlocked FPS
+Wheelman 1.01 BLUS30262
+
+Address 806EC3
+Change from 00 to 01 for Unlocked FPS
+Bulletstorm 1.03 BLES01134
+
+Address 9C1977
+Change from 00 to 01 for Unlocked FPS
+────────────────────────────────────────────────────────────
