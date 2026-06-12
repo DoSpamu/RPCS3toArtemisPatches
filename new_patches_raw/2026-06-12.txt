@@ -1,0 +1,30 @@
+=== js-post-424027 | @Nascar1243 ===
+NunoRS2000 said:
+@Nascar1234 Lost Planet 3 and Silent Hill Downpour RPCS3 patches don't work on console. They are set for half the console refresh rate. The half rate approach was mostly used on Unreal Engine 3 games by the developers to lock to 30fps.
+And there's the exemples of the Resistance, Motorstorm and Ratchet & Clank series that run with the game speed tied to the framerate so, like Joey said, there are games that require patches to the game speed.
+Motorstorm and ratchet and clank don't require patches for game speed, the game ran fine during an hour stress test with it. Not sure where you are getting that information from. Also fixed the silent hill downpour and lost planet 3 patches with Joeys. So far I haven't seen any games that have issues with game speed other than Need for speed rivals. If they did I wouldn't have released them publicly. The ones marked as untested I wasn't sure about but I removed them from my list and corrected them.
+
+Joey85 said:
+I just retested The Godfather 2, Killer is Dead and Prince of Persia Two Thrones codes and they work. (I always test with OC, if you are using default clock speeds that may be the reason why you don't see much difference (specially with double buffered games) or there's something else that's failing here)
+
+
+Did you test by pre-patching the eboot or by patching the game during gameplay/menus through Artemis? I still need to do further testing with pre-patched eboot but some "extra codes that didn't do anything" may be useful if you pre-patch the eboot (or they are simply part of leftover code from the original developers that are never used)
+
+
+I'm a tad familiar with that one. That code falls outside of the eboot addressing (I've been refraining of posting codes that fall outside of the eboot addressing.
+
+
+If my memory serves me well you will need the second code to fix the game speed.
+
+Silent Hill Downpour BLUS30565 v1.01
+
+Tested doesn't work. I'll be posting the working code soon.
+
+
+Tested doesn't work. Also I'll be posting the working code soon.
+
+Thank you all for feedback 
+I tested during the game operation, also resistance 2 doesn't need a game speed fix. It ran completely fine. The Godfather 2, Killer is Dead, and Prince of Persia didn't work for me at all and I am overclocked on Cell and RSX. FPS didn't change no matter where I was in the game.
+
+What about Watch Dogs? Any chance that'll get unlocked at any point? I had a viewer requesting that.
+────────────────────────────────────────────────────────────
