@@ -1,3 +1,13 @@
+Debug Menu (RPCS3)
+0
+RPCS3
+0 0150BB34 38600000
+#
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 00313318 60000000
+#
 Unlock FPS (PSXPlace)
 0
 Joey

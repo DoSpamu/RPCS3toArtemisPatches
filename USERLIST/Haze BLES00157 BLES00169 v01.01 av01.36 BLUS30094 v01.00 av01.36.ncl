@@ -1,3 +1,8 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 0068D0E8 38000000
+#
 Unlock FPS (PSXPlace)
 0
 Joey

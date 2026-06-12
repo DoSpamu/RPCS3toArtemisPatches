@@ -1,3 +1,9 @@
+Unlock FPS (RPCS3)
+0
+RPCS3
+0 0031A186 3A83
+0 0031A192 126F
+#
 Unlock FPS (PSXPlace)
 0
 Joey

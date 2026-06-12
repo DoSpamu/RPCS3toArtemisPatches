@@ -1,3 +1,8 @@
+Debug Menu (RPCS3)
+0
+RPCS3
+0 00E36504 38600000
+#
 Debug Menu (PSXPlace)
 0
 Joey
