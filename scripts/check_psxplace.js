@@ -296,6 +296,13 @@ async function main() {
 
     if (!tids.length || !patches.length) continue;
 
+    // Guard against quoted-catalog false positives: a single reply with >20 NCL lines
+    // almost certainly contains a quoted full catalog, not a single-game patch.
+    if (patches.length > 20) {
+      console.log(`  Skipping ${post.id}: ${patches.length} patch lines looks like a quoted catalog (max 20 for auto-add).`);
+      continue;
+    }
+
     const entry = buildNclEntry('Unlock FPS', author, patches);
     for (const tid of tids) {
       for (const nclPath of findPsxplaceFiles(tid)) {
