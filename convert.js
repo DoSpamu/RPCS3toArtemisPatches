@@ -194,25 +194,48 @@ function findNcl(tid, dir) {
     .map(f => path.join(dir, f));
 }
 
-function nclVer(filename) {
+function nclVers(filename) {
   // "Game TITLEID 01.00.ncl" or "Game TITLEID v01.00 av01.01.ncl"
+  // "av" = app version (what RPCS3 patches target), preferred over disc "v".
+  // Multi-region files may carry several v/av pairs — return all candidates.
   const b = path.basename(filename);
-  // Try "XX.XX" that comes right before .ncl
+  const av = [...b.matchAll(/\bav(\d{2}\.\d{2}(?:\.\d+)?)/g)].map(m => m[1]);
+  if (av.length) return [...new Set(av)];
+  const v = [...b.matchAll(/\bv(\d{2}\.\d{2}(?:\.\d+)?)/g)].map(m => m[1]);
+  if (v.length) return [...new Set(v)];
   const m = b.match(/ (\d{2}\.\d{2}(?:\.\d+)?)\.ncl$/);
-  return m ? m[1] : null;
+  return m ? [m[1]] : null;
 }
 
-function verMatches(fileVer, patchVers) {
-  if (!fileVer) return true;
+function verMatches(fileVers, patchVers) {
+  if (!fileVers || !fileVers.length) return true;
   if (patchVers.includes('All')) return true;
-  return patchVers.some(v => fileVer === v || fileVer.startsWith(v+'.'));
+  return patchVers.some(v => fileVers.some(fv => fv === v || fv.startsWith(v+'.')));
+}
+
+// Canonical key for duplicate detection. Cheat names accumulate suffixes added by
+// other processes — "[Tested]" (manual hardware verification) and "vXX.XX" (risky
+// mode) — so both sides of the comparison must be stripped to the bare name.
+function canonName(name) {
+  return name
+    .replace(/\s*\[Tested\]\s*$/i, '')
+    .replace(/\s*\(RPCS3\)\s*$/i, '')
+    .replace(/\s+v[\d.\/]+$/i, '')
+    .trim().toLowerCase();
+}
+
+function existingRpcs3Names(content) {
+  const lines = content.replace(/\r\n?/g, '\n').split('\n');
+  return new Set(
+    lines.filter(l => /\(RPCS3\)(\s*\[Tested\])?\s*$/i.test(l)).map(canonName)
+  );
 }
 
 // ---------- Main ----------
 function main() {
   const risky = process.argv.includes('--risky');
   const targetDir = USERLIST_DIR;
-  const reportFile = 'conversion_report.json';
+  const reportFile = path.join(__dirname, 'conversion_report.json');
 
   if (risky) {
     console.log('MODE: RISKY — version checking disabled, target: USERLIST/');
@@ -238,22 +261,20 @@ function main() {
     }
 
     for (const nclFile of files) {
-      const fVer = nclVer(nclFile);
+      const fVer = nclVers(nclFile);
       let content = fs.readFileSync(nclFile,'utf8');
       const newEntries = [];
 
-      // Track already-added patch names (case-insensitive) for this file
-      const done = new Set(
-        (content.match(/^.+\(RPCS3\)$/gm)||[]).map(l=>l.replace(/ \(RPCS3\)$/,'').toLowerCase())
-      );
+      // Track already-added patch names (canonical, case-insensitive) for this file
+      const done = existingRpcs3Names(content);
 
       for (const p of patches) {
         if (!risky && !verMatches(fVer, p.versions)) {
           rep.skipped.push({tid, file:path.basename(nclFile), name:p.name,
-            reason:`version mismatch (file=${fVer||'any'}, patch=${p.versions.join(',')})`});
+            reason:`version mismatch (file=${fVer ? fVer.join('/') : 'any'}, patch=${p.versions.join(',')})`});
           continue;
         }
-        if (done.has(p.name.toLowerCase())) {
+        if (done.has(canonName(p.name))) {
           rep.skipped.push({tid, file:path.basename(nclFile), name:p.name, reason:'duplicate'});
           continue;
         }
@@ -272,7 +293,7 @@ function main() {
 
         const entry = [patchLabel, '0', 'RPCS3', ...artemis, '#'].join('\n');
         newEntries.push(entry);
-        done.add(p.name.toLowerCase());
+        done.add(canonName(p.name));
         totalAdded++;
         rep.modified.push({tid, file:path.basename(nclFile), name:patchLabel,
           lines:artemis.length, skippedLines:skips, patchVersion:p.versions});
@@ -294,4 +315,9 @@ function main() {
   console.log(`  Report           : ${reportFile}`);
 }
 
-main();
+if (require.main === module) main();
+
+module.exports = {
+  isFpsPatch, isDebugMenuPatch, f32hex, parseLine, resolveLines,
+  parsePatchYml, nclVers, verMatches, canonName, existingRpcs3Names,
+};
