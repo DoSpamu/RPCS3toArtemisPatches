@@ -17,6 +17,9 @@ wm_config.bin
 conversion_report.json
 conversion_report_risky.json
 
+# Monitor output (regenerated every run)
+pr_body.txt
+
 # Dev/personal files
 EXTRACTED_CONVERSATIONS.txt
 PS3 Codes.xlsx

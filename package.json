@@ -1,29 +1,25 @@
 {
   "name": "ps3fps",
   "version": "1.0.0",
-  "description": "A collection of RPCS3 game patches converted to Artemis cheat format for use on **real PS3 hardware** (CFW required).",
-  "main": "index.js",
+  "description": "RPCS3 game patches converted to Artemis cheat format for real PS3 hardware (CFW required).",
+  "main": "convert.js",
   "scripts": {
-    "test": "node scripts/check_psxplace.test.js"
+    "test": "node scripts/check_psxplace.test.js && node scripts/convert.test.js",
+    "convert": "node convert.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DoSpamu/RCPS3toArtemisPatches.git"
+    "url": "git+https://github.com/DoSpamu/RPCS3toArtemisPatches.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/DoSpamu/RCPS3toArtemisPatches/issues"
+    "url": "https://github.com/DoSpamu/RPCS3toArtemisPatches/issues"
   },
-  "homepage": "https://github.com/DoSpamu/RCPS3toArtemisPatches#readme",
-  "devDependencies": {
-    "js-yaml": "^4.1.1"
-  },
+  "homepage": "https://github.com/DoSpamu/RPCS3toArtemisPatches#readme",
   "dependencies": {
-    "camoufox": "^0.1.19",
-    "playwright": "^1.58.2",
-    "xlsx": "^0.18.5"
+    "camoufox": "^0.1.19"
   }
 }
