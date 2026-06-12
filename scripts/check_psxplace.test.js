@@ -8,6 +8,7 @@ assert.deepStrictEqual(extractTitleIds('BLES01614 and BLUS30983 both work'), ['B
 assert.deepStrictEqual(extractTitleIds('No ID here'), []);
 assert.deepStrictEqual(extractTitleIds('BLUS30443 BLUS30443 duplicate'), ['BLUS30443']); // deduped
 assert.deepStrictEqual(extractTitleIds('Mindjack MRTC00014 1.01'), ['MRTC00014']);        // MRTC format
+assert.deepStrictEqual(extractTitleIds('Mirrors Edge KR BLKS20094 1.02'), ['BLKS20094']); // Korea region
 
 // extractPatches — NCL direct format
 assert.deepStrictEqual(
@@ -173,10 +174,47 @@ assert.strictEqual(gnResults[0].gameName, 'Condemned 2 Bloodshot');
 assert.strictEqual(gnResults[0].version, '1.01');
 assert.strictEqual(gnResults[0].tid, 'BLUS30115');
 
-// findPsxplaceFiles — name-based fallback (requires real filesystem; tested via integration)
-// Verify the function is exported and accepts the gameName parameter without throwing
+// findPsxplaceFiles — name-based fallback (scans the real "PSXPlace Confirmed/"
+// dir when run from the repo root; the TID below must not exist in any filename)
 const { findPsxplaceFiles } = require('./check_psxplace.js');
-assert.deepStrictEqual(findPsxplaceFiles('BLES00467'), []);          // no dir → empty
-assert.deepStrictEqual(findPsxplaceFiles('BLES00467', 'Some Game'), []); // no dir → empty
+assert.deepStrictEqual(findPsxplaceFiles('BLZZ99999'), []);              // no match → empty
+assert.deepStrictEqual(findPsxplaceFiles('BLZZ99999', 'No Such Game'), []); // no match → empty
+
+// prependToNcl — exercised on temp files
+const os = require('node:os');
+const fs = require('node:fs');
+const path = require('node:path');
+const { prependToNcl } = require('./check_psxplace.js');
+
+const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'ncl-test-'));
+const tmpNcl = path.join(tmpDir, 'Test Game BLUS99999 01.00.ncl');
+
+const entryV1 = buildNclEntry('Unlock FPS', 'Joey', ['0 00000001 00000001']);
+const entryV2 = buildNclEntry('Unlock FPS', 'Joey', ['0 00000001 00000002']);
+
+// new file → added
+assert.strictEqual(prependToNcl(tmpNcl, entryV1), 'added');
+// identical entry → duplicate
+assert.strictEqual(prependToNcl(tmpNcl, entryV1), false);
+// same name, different codes (forum correction) → updated in place, no duplicate block
+assert.strictEqual(prependToNcl(tmpNcl, entryV2), 'updated');
+const afterUpdate = fs.readFileSync(tmpNcl, 'utf8');
+assert.ok(afterUpdate.includes('0 00000001 00000002'), 'corrected code present');
+assert.ok(!afterUpdate.includes('0 00000001 00000001'), 'stale code removed');
+assert.strictEqual((afterUpdate.match(/Unlock FPS \(PSXPlace\)/g) || []).length, 1, 'single block');
+
+// whole-line name match: a longer name must not shadow a shorter one
+const tmpNcl2 = path.join(tmpDir, 'Test Game 2 BLUS99998 01.00.ncl');
+fs.writeFileSync(tmpNcl2, 'Super Unlock FPS (PSXPlace)\n0\ndev\n0 00000009 00000009\n#\n', 'utf8');
+assert.strictEqual(prependToNcl(tmpNcl2, entryV1), 'added',
+  '"Super Unlock FPS" must not block adding "Unlock FPS"');
+
+// hardware-verified [Tested] blocks are never auto-replaced
+const tmpNcl3 = path.join(tmpDir, 'Test Game 3 BLUS99997 01.00.ncl');
+fs.writeFileSync(tmpNcl3, 'Unlock FPS (PSXPlace) [Tested]\n0\nJoey\n0 00000001 00000001\n#\n', 'utf8');
+assert.strictEqual(prependToNcl(tmpNcl3, entryV2), false,
+  '[Tested] entry must not be replaced by a forum post');
+
+fs.rmSync(tmpDir, { recursive: true, force: true });
 
 console.log('All tests passed');

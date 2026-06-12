@@ -69,7 +69,7 @@ async function scrapeThread() {
   return allPosts;
 }
 
-const TITLE_ID_RE = /\b(BL[UECSJA][A-Z0-9]{6}|NP[A-Z]{2}[0-9]{5}|BC[A-Z]{2}[0-9]{5}|MRTC[0-9]{5})\b/gi;
+const TITLE_ID_RE = /\b(BL[UECSJAK][A-Z0-9]{6}|NP[A-Z]{2}[0-9]{5}|BC[A-Z]{2}[0-9]{5}|MRTC[0-9]{5})\b/gi;
 
 function extractTitleIds(text) {
   return [...new Set((text.match(TITLE_ID_RE) || []).map(s => s.toUpperCase()))];
@@ -95,7 +95,7 @@ function parseFirstPost(text) {
   const lines = text.split('\n').map(l => l.trim());
   const results = [];
   const PATCH_RE = /^0\s+([0-9A-Fa-f]{8})\s+([0-9A-Fa-f]{4,8})$/;
-  const TID_RE   = /\b(BL[UECSJA][A-Z0-9]{6}|NP[A-Z]{2}[0-9]{5}|BC[A-Z]{2}[0-9]{5}|MRTC[0-9]{5})\b/i;
+  const TID_RE   = /\b(BL[UECSJAK][A-Z0-9]{6}|NP[A-Z]{2}[0-9]{5}|BC[A-Z]{2}[0-9]{5}|MRTC[0-9]{5})\b/i;
 
   function parseTidLine(line) {
     const parts = line.split('\t').map(s => s.trim());
@@ -205,7 +205,10 @@ function findPsxplaceFiles(tid, gameName) {
 }
 
 // Prepend entry to an .ncl file. Creates the file if it doesn't exist.
-// Returns true if written, false if duplicate already present.
+// Returns 'added' for a new entry, 'updated' when an existing same-name block
+// had different patch lines and was replaced in place (forum corrections),
+// false when an identical entry — or a hardware-verified [Tested] variant —
+// is already present.
 function prependToNcl(nclPath, entry) {
   let content = '';
   if (fs.existsSync(nclPath)) {
@@ -214,9 +217,36 @@ function prependToNcl(nclPath, entry) {
       .replace(/\r/g, '\n');
   }
 
-  const cheatName = entry.split('\n')[0];
-  const baseName  = cheatName.replace(/ \(PSXPlace\)$/i, '').toLowerCase();
-  if (content.toLowerCase().includes(baseName + ' (psxplace)')) return false;
+  const entryLines = entry.split('\n');
+  const cheatName  = entryLines[0].toLowerCase();
+  const newCodes   = entryLines.slice(3, -1);
+  const lines      = content ? content.split('\n') : [];
+
+  // Find an existing block whose name line matches the cheat name exactly
+  // (whole line, so "Super Unlock FPS" never shadows "Unlock FPS"), with an
+  // optional "[Tested]" suffix.
+  let i = 0;
+  while (i < lines.length) {
+    if (!lines[i].trim()) { i++; continue; }
+    const start = i;
+    while (i < lines.length && lines[i].trim() !== '#') i++;
+    const end = i; // index of '#' (or EOF for an unterminated final block)
+
+    const nameLine = lines[start].trim().toLowerCase();
+    if (nameLine === cheatName || nameLine === cheatName + ' [tested]') {
+      // Never auto-replace a hardware-verified entry.
+      if (nameLine.endsWith(' [tested]')) return false;
+
+      const oldCodes = lines.slice(start + 3, end).filter(l => l.trim());
+      if (oldCodes.join('\n') === newCodes.join('\n')) return false;
+
+      // Same cheat name, different codes — the forum post corrected it.
+      lines.splice(start, end - start + 1, ...entryLines);
+      fs.writeFileSync(nclPath, lines.join('\n'), 'utf8');
+      return 'updated';
+    }
+    i = end + 1;
+  }
 
   const trimmed = content.trimEnd();
   if (trimmed && !trimmed.endsWith('#')) {
@@ -225,7 +255,7 @@ function prependToNcl(nclPath, entry) {
 
   const newContent = trimmed ? entry + '\n' + content : entry + '\n';
   fs.writeFileSync(nclPath, newContent, 'utf8');
-  return true;
+  return 'added';
 }
 
 function sha256short(text) {
@@ -262,9 +292,13 @@ async function main() {
   state.known_post_ids = [...new Set([...state.known_post_ids, ...allPosts.map(p => p.id)])];
   if (firstPostHash) state.first_post_hash = firstPostHash;
   state.last_checked = new Date().toISOString();
-  fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2) + '\n', 'utf8');
+  // Persisted only after processing succeeds (see end of main) — writing it
+  // earlier would mark posts as known even when a crash loses their patches.
+  const saveState = () =>
+    fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2) + '\n', 'utf8');
 
   if (!newPosts.length && !firstPostChanged) {
+    saveState();
     console.log(isBootstrap ? 'Bootstrap complete. Commit known_posts.json to repo.' : 'No new activity.');
     return;
   }
@@ -306,8 +340,10 @@ async function main() {
     const entry = buildNclEntry('Unlock FPS', author, patches);
     for (const tid of tids) {
       for (const nclPath of findPsxplaceFiles(tid)) {
-        if (prependToNcl(nclPath, entry)) {
+        const res = prependToNcl(nclPath, entry);
+        if (res) {
           modFiles.add(path.relative(process.cwd(), nclPath));
+          console.log(`  ${res === 'updated' ? 'Updated' : 'Added'}: ${path.basename(nclPath)}`);
         } else {
           console.log(`  Skipped duplicate: ${path.basename(nclPath)}`);
         }
@@ -335,11 +371,12 @@ async function main() {
       }
 
       for (const nclPath of nclFiles) {
-        if (prependToNcl(nclPath, entry)) {
+        const res = prependToNcl(nclPath, entry);
+        if (res) {
           const rel = path.relative(process.cwd(), nclPath);
           modFiles.add(rel);
           prRows.push(`| (first post edit) | ${author.replace(/\|/g, '\\|')} | ${tid} | ${patches.length} |`);
-          console.log(`  Added "${cheatName}" to ${path.basename(nclPath)}`);
+          console.log(`  ${res === 'updated' ? 'Updated' : 'Added'} "${cheatName}" in ${path.basename(nclPath)}`);
         }
       }
     }
@@ -360,6 +397,7 @@ async function main() {
   ].join('\n');
 
   fs.writeFileSync(PR_BODY_FILE, prBody, 'utf8');
+  saveState();
   console.log(`Done. Modified/created ${modList.length} file(s) in PSXPlace Confirmed/. PR body written.`);
 }
 
