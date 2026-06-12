@@ -16,9 +16,33 @@ node convert.js
 node convert.js --risky
 ```
 
-Both modes are idempotent: re-running skips entries already marked `(RPCS3)` in the target file. Results are logged to `conversion_report.json`.
+Both modes are idempotent: re-running skips entries already marked `(RPCS3)` in the target file. Results are logged to `conversion_report.json` (written next to `convert.js`, gitignored).
 
 In risky mode, version-mismatched patches get the target version appended to their label: `Unlock FPS v01.04 (RPCS3)` so users know which game version the patch was written for. Both safe and risky output goes to `USERLIST/`.
+
+## Tests
+
+```bash
+npm test                            # both suites
+node scripts/convert.test.js        # converter only (nclVers, canonName, parseLine…)
+node scripts/check_psxplace.test.js # monitor only (parsers, prependToNcl on temp files)
+```
+
+Plain `node:assert` scripts, no test framework. CI runs `npm test` before every scrape. When changing duplicate detection or version matching in `convert.js`, an end-to-end check is cheap and definitive: run `node convert.js` twice — the second run must report `Added 0 patch entries`.
+
+## PSXPlace thread monitor (`scripts/check_psxplace.js`)
+
+Daily automation (GitHub Actions, cron 06:00 UTC, `.github/workflows/check-psxplace.yml`) that scrapes PSXPlace thread #49905 via Camoufox (Cloudflare-resistant Firefox). It detects two kinds of activity:
+
+- **New reply posts** → extracts Title IDs + NCL codes, prepends `Unlock FPS (PSXPlace)` entries to matching files in `PSXPlace Confirmed/` (>20 code lines in one post = quoted catalog, skipped).
+- **First-post edits** (Joey85's catalog, detected via `first_post_hash`) → `parseFirstPost()` extracts structured entries (game name, TID, version) and can **create new files**.
+
+Key behaviors:
+- `prependToNcl()` returns `'added' | 'updated' | false`. Same cheat name with **different** codes replaces the old block in place (forum corrections); `[Tested]` blocks are **never** auto-replaced; identical entries are skipped.
+- State (`known_posts.json`: `known_post_ids`, `first_post_hash`, `last_checked`) is saved **after** processing succeeds — a crash must not mark posts as known before their patches are extracted.
+- Raw scraped content of new posts goes to `new_patches_raw/YYYY-MM-DD.txt`; `pr_body.txt` (gitignored) gates the workflow's commit step.
+- The workflow commits results **directly to master** (`[Auto] PSXPlace new patches YYYY-MM-DD`).
+- Empty `known_post_ids` = bootstrap mode: records all current posts without processing them.
 
 ## Patch label conventions
 
@@ -39,7 +63,7 @@ Both `(RPCS3)` and `(PSXPlace)` types may coexist in the same `.ncl` file and ma
 |--------|----------|
 | `USERLIST/` | **2,542** Artemis `.ncl` files — full patch database (RPCS3 conversions + PSXPlace community patches) |
 | `Working Artemis Patches/` | **39** personally-verified `.ncl` files — same games as `MAPI_PATCHES.md` |
-| `PSXPlace Confirmed/` | **64** community-verified `.ncl` files from PSXPlace thread #49905 (Joey85) + Nascar1243 |
+| `PSXPlace Confirmed/` | **83** community-verified `.ncl` files from PSXPlace thread #49905 (Joey85) + Nascar1243 — grown automatically by the monitor |
 | `beta_testing/` | Saved HTML exports of Discord beta-test channel (reference material for verifying patches) |
 
 Patches confirmed on real PS3 hardware are marked `[Tested]` in the cheat name. Version-mismatched RPCS3 patches are labeled `v01.XX (RPCS3)` inline. `Working Artemis Patches/` and `PSXPlace Confirmed/` are curated subsets of `USERLIST/` shipped together in each release zip for users who only want known-good patches.
@@ -114,6 +138,10 @@ Code prefixes seen in USERLIST: `0` (direct write), `6` (pointer follow), `B` (a
 **Missing `#` terminator:** A small number of original USERLIST files have an unterminated final cheat block (the last `B`-type or `0`-type entry has no closing `#`). If content is appended to such a file without checking, the new entry gets fused into the previous block. Always verify that the line immediately before an `(RPCS3)` entry is `#`.
 
 **Address width in patch.yml:** At least one entry (`Alpha Protocol BLES00704`) has a 9-digit hex address (`0x000d78d48`) — a typo in the source. `fmtAddr` guards against this with `.slice(-8)` to cap to 32-bit width.
+
+**Indentation anomaly in patch.yml:** one entry (`WRC Powerslide`, line ~2487) has its patch name at 1-space indent instead of 2 — the parser requires exactly 2 spaces and silently skips it. Its NCL entry already exists in USERLIST (verified correct against the source). If patch.yml is ever refreshed, watch for new lines matching `^ "[^"]+":$`.
+
+**Metadata pseudo-blocks:** the upstream database contains non-cheat blocks that violate the name/0/author/codes/`#` structure by design: `Also known as` / `Alternative Names` blocks (alternate game titles), `/*Section Name*/` separators in collection files, and `AoB`-named blocks whose `B`-prefix codes start right after the name. A structural linter must whitelist these — they are conventions, not corruption.
 
 ## USERLIST file naming convention
 
