@@ -1,0 +1,20 @@
+=== js-post-424069 | @Joey85 ===
+Nascar1243 said:
+resistance 2 doesn't need a game speed fix
+I just retested and I can confirm Resistance 2 does need the second code line in order to fix the game speed. Without it the game runs at double the speed.
+
+Nascar1243 said:
+The Godfather 2, Killer is Dead, and Prince of Persia didn't work for me
+again this ones work for me.
+
+
+Nascar1243 said:
+I am overclocked on Cell and RSX
+how are you overclocking the CPU?
+I'm quite keen to understand what are you doing with your PS3 test setup... clearly you must be doing something different.
+
+
+Nascar1243 said:
+What about Watch Dogs?
+yah... I have a patch for this one but haven't released it yet. Stay tune for more updates 
+────────────────────────────────────────────────────────────
