@@ -12,6 +12,7 @@ const ROOT          = path.join(__dirname, '..');
 const CONFIRMED_DIR = path.join(ROOT, 'PSXPlace Confirmed');
 const USERLIST_DIR  = path.join(ROOT, 'USERLIST');
 const README_PATH   = path.join(ROOT, 'README.md');
+const BANNER_PATH   = path.join(ROOT, 'banner.svg');
 
 // ── Filename parsing ─────────────────────────────────────────────────────────
 
@@ -184,8 +185,28 @@ function updateReadme(rows) {
   );
 
   fs.writeFileSync(README_PATH, readme, 'utf8');
+
+  // ── banner.svg ────────────────────────────────────────────────────────────
+  // Two stat pills in the SVG contain hardcoded numbers — keep them in sync.
+  let banner = fs.readFileSync(BANNER_PATH, 'utf8');
+
+  // Pill 1: "NNN confirmed games"
+  banner = banner.replace(
+    /(<tspan fill="white">)\d[\d,]*(<\/tspan> confirmed games)/,
+    `$1${confirmedTotal}$2`
+  );
+
+  // Pill 2: "N,NNN patch files"
+  const patchFormatted = String(userlistCount).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  banner = banner.replace(
+    /(<tspan fill="white">)[\d,]+(<\/tspan> patch files)/,
+    `$1${patchFormatted}$2`
+  );
+
+  fs.writeFileSync(BANNER_PATH, banner, 'utf8');
+
   console.log(
-    `README updated — PSXPlace: ${rows.length} games | ` +
+    `README + banner.svg updated — PSXPlace: ${rows.length} games | ` +
     `Total confirmed: ${confirmedTotal} | USERLIST: ${userlistCount} files`
   );
 }
