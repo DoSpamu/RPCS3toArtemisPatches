@@ -1,0 +1,5 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 0028F0C8 60000000
+#

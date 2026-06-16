@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+RPCS3
+0 00824E10 60000000
+#
 Two Thrones Unlock FPS (PSXPlace)
 0
 Joey

@@ -4,7 +4,7 @@
 
 # PS3 FPS Unlock Patches — Artemis & MAPI
 
-![Confirmed Games](https://img.shields.io/badge/confirmed_games-122-brightgreen)
+![Confirmed Games](https://img.shields.io/badge/confirmed_games-124-brightgreen)
 ![Patch Files](https://img.shields.io/badge/patch_files-2%2C542-blue)
 ![Platform](https://img.shields.io/badge/platform-PS3_CFW-lightgrey)
 ![License](https://img.shields.io/badge/license-MIT-yellow)
@@ -21,7 +21,7 @@ Sourced from the RPCS3 emulator patch database and the PSXPlace community.
 | Your situation | Use this | Section |
 |----------------|----------|---------|
 | I want a tested, plug-and-play patch | **`Working Artemis Patches/`** folder (39 games) | [Confirmed (39)](#confirmed-working-games-39-games) |
-| My game isn't in that folder | **`PSXPlace Confirmed/`** folder (83 games) | [Community Confirmed](#community-confirmed-games--psxplace-) |
+| My game isn't in that folder | **`PSXPlace Confirmed/`** folder (85 games) | [Community Confirmed](#community-confirmed-games--psxplace-) |
 | My game isn't in either folder | Full **`USERLIST/`** (2,542 files, mixed confidence) | [About USERLIST](#about-userlist-2542-files) |
 | I don't want to FTP files | **PS3MAPI** (apply patches live in browser) | [`MAPI_PATCHES.md`](MAPI_PATCHES.md) |
 | My game has a config file (Crysis, BBC, etc.) | **File-based unlock** (no Artemis at all) | [File-Based](#file-based-fps-unlocks-no-artemis-needed) |
@@ -35,7 +35,7 @@ The latest release (`v1.1`) has one zip with two folders:
 | Folder in zip | Contents | Use when |
 |---------------|----------|----------|
 | **`Working Artemis Patches/`** | 39 games — 100% confirmed on real PS3 | Your game is in the list below |
-| **`PSXPlace Confirmed/`** | 83 games — confirmed by Joey85 + Nascar1243 + community on real PS3 | Your game isn't in the first folder |
+| **`PSXPlace Confirmed/`** | 85 games — confirmed by Joey85 + Nascar1243 + community on real PS3 | Your game isn't in the first folder |
 
 **[→ Download v1.1](https://github.com/DoSpamu/RPCS3toArtemisPatches/releases/tag/v1.1)**
 
@@ -170,7 +170,7 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | Mirrors Edge | BLES00322 | 01.01 | Unlock FPS | Joey85 |
 | MotorStorm | BCES00006 | 01.00 | UnlockFPS | RPCS3 |
 | Need for Speed Rivals | BLUS31201 | 01.03 | Unlock FPS | Joey85 |
-| Prince Of Persia Trilogy 3D | BLUS30754 | 01.00 | Two Thrones Unlock FPS | Joey85 |
+| Prince Of Persia Trilogy 3D | BLUS30754 | 01.00 | Unlock FPS | RPCS3 |
 | Prototype 2 | BLES01532 / BLUS30756 | 01.00 | UnlockFPS | Joey85 |
 | Ratchet And Clank All 4 One | BCAS20200 / BCES01141 / BCJS30081 / BCUS98175 / NPEA00356 | 01.03 | Unlock FPS | Joey85 |
 | Ratchet And Clank Into The Nexus | BCUS99245 | 01.00 | Unlock FPS | Nascar1243 |
@@ -201,8 +201,10 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | The Last of Us | BCES01585 | 01.11 | Unlock FPS | illusion |
 | The Orange Box Half-Life 2 | BLES00153 / BLUS30055 | av01.10 | Unlock FPS | PSXPlace |
 | Tom Clancy's Splinter Cell Blacklist | BLUS31025 / BLES01879 / BLES01766 | 01.03 | Unlock FPS | Joey85 |
+| Tomb Raider | BLUS31036 | 01.03 | Unlock FPS | Joey85 |
 | Transformers War For Cybertron | BLES00833 / BLUS30357 | 01.01 | Unlock FPS | Joey85 |
 | Warhammer 40000 Space Marine | BLES01347 | 01.05 | Unlock FPS | Joey85 |
+| WATCH_DOGS | BLUS31176 | 01.04 | Unlock FPS | Joey85 |
 | WET | BLES00707 | 01.00 | Unlock FPS | Joey85 |
 | Wheelman | BLUS30262 | 01.01 | Unlock FPS | Joey85 |
 
