@@ -1,0 +1,5 @@
+=== js-post-424206 | @NunoRS2000 ===
+I've tested Tomb Raider today and here are the observations, played on a PS3 with stock speeds: the game gets fully unlocked. The game speed is unimpacted which is great while the FMVs run like they're going to catch the train (and they'll tear a LOT). And for the first time in the unlocks, I noticed that a patched unlock makes a fully v-syncked game drop v-sync though the tearing is minimal in gameplay.
+
+Also sorry for the lack of videos testing the patches but I haven't been able to record lately.
+────────────────────────────────────────────────────────────
