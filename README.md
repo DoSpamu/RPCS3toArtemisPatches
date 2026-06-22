@@ -4,7 +4,7 @@
 
 # PS3 FPS Unlock Patches — Artemis & MAPI
 
-![Confirmed Games](https://img.shields.io/badge/confirmed_games-124-brightgreen)
+![Confirmed Games](https://img.shields.io/badge/confirmed_games-125-brightgreen)
 ![Patch Files](https://img.shields.io/badge/patch_files-2%2C542-blue)
 ![Platform](https://img.shields.io/badge/platform-PS3_CFW-lightgrey)
 ![License](https://img.shields.io/badge/license-MIT-yellow)
@@ -21,7 +21,7 @@ Sourced from the RPCS3 emulator patch database and the PSXPlace community.
 | Your situation | Use this | Section |
 |----------------|----------|---------|
 | I want a tested, plug-and-play patch | **`Working Artemis Patches/`** folder (39 games) | [Confirmed (39)](#confirmed-working-games-39-games) |
-| My game isn't in that folder | **`PSXPlace Confirmed/`** folder (85 games) | [Community Confirmed](#community-confirmed-games--psxplace-) |
+| My game isn't in that folder | **`PSXPlace Confirmed/`** folder (86 games) | [Community Confirmed](#community-confirmed-games--psxplace-) |
 | My game isn't in either folder | Full **`USERLIST/`** (2,542 files, mixed confidence) | [About USERLIST](#about-userlist-2542-files) |
 | I don't want to FTP files | **PS3MAPI** (apply patches live in browser) | [`MAPI_PATCHES.md`](MAPI_PATCHES.md) |
 | My game has a config file (Crysis, BBC, etc.) | **File-based unlock** (no Artemis at all) | [File-Based](#file-based-fps-unlocks-no-artemis-needed) |
@@ -35,7 +35,7 @@ The latest release (`v1.1`) has one zip with two folders:
 | Folder in zip | Contents | Use when |
 |---------------|----------|----------|
 | **`Working Artemis Patches/`** | 39 games — 100% confirmed on real PS3 | Your game is in the list below |
-| **`PSXPlace Confirmed/`** | 85 games — confirmed by Joey85 + Nascar1243 + community on real PS3 | Your game isn't in the first folder |
+| **`PSXPlace Confirmed/`** | 86 games — confirmed by Joey85 + Nascar1243 + community on real PS3 | Your game isn't in the first folder |
 
 **[→ Download v1.1](https://github.com/DoSpamu/RPCS3toArtemisPatches/releases/tag/v1.1)**
 
@@ -123,6 +123,7 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | Game | Title ID | Version | Patch | Author |
 |------|----------|---------|-------|--------|
 | Alice Madness Returns | BLUS30607 | 01.00 | Unlock FPS | Joey85 |
+| Alien Isolation | BLES01697 | 01.02 | Unlock FPS | Joey85 |
 | Alien Rage | NPEB01088 | 01.00 | Unlock FPS | Joey85 |
 | Aliens Colonial Marines | BLES01455 / BLUS30862 | 01.05 | Unlock FPS | Joey85 |
 | Alpha Protocol | BLUS30341 | 01.00 | Unlock FPS | Joey85 |
