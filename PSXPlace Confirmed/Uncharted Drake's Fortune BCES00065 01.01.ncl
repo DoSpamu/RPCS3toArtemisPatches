@@ -1,0 +1,5 @@
+Unlock FPS (PSXPlace)
+0
+RPCS3
+0 00BB4350 00000001
+#
