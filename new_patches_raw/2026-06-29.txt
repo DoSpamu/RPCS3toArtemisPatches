@@ -1,0 +1,3 @@
+=== js-post-424421 | @NunoRS2000 ===
+Uncharted 3 locked and loaded. I tried some multiplayer maps and they ran pretty fine with some tearing (tears much less than Uncharted 1). Still need to test how it works on the campaign.
+────────────────────────────────────────────────────────────
