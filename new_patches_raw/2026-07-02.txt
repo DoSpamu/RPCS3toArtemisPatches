@@ -1,0 +1,32 @@
+=== js-post-424490 | @Joey85 ===
+Nascar1243 said:
+On Dead Space 1 it seems that if you have all of the codes entered, the first cutscene is completely broken. The first line works fine and puts it at 60FPS, but one of the 3 other lines breaks the cutscene.
+Is that before the elevator part or after? What do you mean exactly with "completely broken"? Can you upload a video with the issue? Did you test using CPU overclock and/or GPU OC? (I wonder if CPU overclock can lead to issues due timebase frequencies changes??)
+
+NunoRS also reported issues with the game speed but when running above 60fps.
+
+In my testing the only issue I've experienced was stutters in the character movement.
+────────────────────────────────────────────────────────────
+
+=== js-post-424502 | @NunoRS2000 ===
+Another one for the list 
+
+────────────────────────────────────────────────────────────
+
+=== js-post-424505 | @Nascar1243 ===
+Joey85 said:
+Is that before the elevator part or after? What do you mean exactly with "completely broken"? Can you upload a video with the issue? Did you test using CPU overclock and/or GPU OC? (I wonder if CPU overclock can lead to issues due timebase frequencies changes??)
+
+NunoRS also reported issues with the game speed but when running above 60fps.
+
+In my testing the only issue I've experienced was stutters in the character movement.
+I was on stock clocks, what I mean is that intro where the title card is played is slowed down and it won't go to the video. It just hangs right after the title is shown. It does zoom out of the screen but you cannot skip that cutscene, almost if the game is stuck. It is at the beginning of the game, fresh save.
+
+Also on Watch Dogs the gunshot and punch sounds are missing when the patch is applied. Everything else works fine though
+────────────────────────────────────────────────────────────
+
+=== js-post-424506 | @NunoRS2000 ===
+Nascar1243 said:
+I was on stock clocks, what I mean is that intro where the title card is played is slowed down and it won't go to the video. It just hangs right after the title is shown. It does zoom out of the screen but you cannot skip that cutscene, almost if the game is stuck. It is at the beginning of the game, fresh save.
+I used the patch (with all the codes) in the main menu before hitting New Game and for me it ran fine. The only thing to point on my side is the game speed increase when going over 60fps.
+────────────────────────────────────────────────────────────
