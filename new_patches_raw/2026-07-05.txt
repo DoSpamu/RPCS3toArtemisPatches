@@ -1,0 +1,9 @@
+=== js-post-424558 | @Nascar1243 ===
+Joey85 said:
+Is that before the elevator part or after? What do you mean exactly with "completely broken"? Can you upload a video with the issue? Did you test using CPU overclock and/or GPU OC? (I wonder if CPU overclock can lead to issues due timebase frequencies changes??)
+
+NunoRS also reported issues with the game speed but when running above 60fps.
+
+In my testing the only issue I've experienced was stutters in the character movement.
+Also I had a few questions, is there a way to bypass the Final Fantasy 13 Square Enix screen or the intro entirely? Also is there a chance that the Souls games can be patched for 60FPS? I have someone that plays the Souls games a lot and he would be good for testing that.
+────────────────────────────────────────────────────────────
