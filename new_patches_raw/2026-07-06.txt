@@ -1,0 +1,14 @@
+=== js-post-424583 | @Joey85 ===
+Nascar1243 said:
+On Dead Space 1 it seems that if you have all of the codes entered, the first cutscene is completely broken. The first line works fine and puts it at 60FPS, but one of the 3 other lines breaks the cutscene.
+
+
+Nascar1243 said:
+I was on stock clocks, what I mean is that intro where the title card is played is slowed down and it won't go to the video. It just hangs right after the title is shown. It does zoom out of the screen but you cannot skip that cutscene, almost if the game is stuck. It is at the beginning of the game, fresh save.
+
+Also on Watch Dogs the gunshot and punch sounds are missing when the patch is applied. Everything else works fine though
+Dead Space 1 I re-tested (on my PS3) and found no issues with freezing when starting a new game also no issues with game speed when 60+fps... Only issue visible in my console is the character stuttering.
+Anyway the main code line to unlock the framerate is the first line (with the option to have it capped at 60fps) and the other 3 lines are optional (they should simply turn vsync-off). So you can always adjust the patch to your hardware/needs/liking 
+
+Watch Dogs I haven't had the time but I'll have a look sometime later.
+────────────────────────────────────────────────────────────
