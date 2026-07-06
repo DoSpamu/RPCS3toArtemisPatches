@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 00486E34 39240002
+#
 Ammo 99999
 0
 Skiller

@@ -1,3 +1,9 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 0078008C 28030000
+0 007801CC 28040000
+#
 Infinite Health
 0
 Medo

@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+RPCS3
+0 00B9FF70 60000000
+#
 Unlock FPS (RPCS3)
 0
 RPCS3

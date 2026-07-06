@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+RPCS3
+0 000DB720 4E800020
+#
 Infinite Health
 0
 CodeFreak/PS3UserCheat

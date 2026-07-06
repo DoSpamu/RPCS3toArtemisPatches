@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+RPCS3_illusion
+0 00039D08 38A00000
+#
 Debug Menu (RPCS3)
 0
 RPCS3

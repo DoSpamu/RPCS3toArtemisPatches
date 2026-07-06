@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 00048F98 38800001
+#
 Debug Menu (RPCS3)
 0
 RPCS3

@@ -1,3 +1,9 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 01861F80 404E0000
+0 01861F88 3F911111
+#
 Infinite Money
 0
 flynhigh09

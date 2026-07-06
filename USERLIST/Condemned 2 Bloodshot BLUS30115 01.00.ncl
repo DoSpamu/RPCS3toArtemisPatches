@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 008FE1AC 38600001
+#
 Infinite Health
 0
 CodeFreak/PS3UserCheat

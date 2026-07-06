@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 004E2998 38A00001
+#
 Alternative Names
 0
 PARAM.SFO

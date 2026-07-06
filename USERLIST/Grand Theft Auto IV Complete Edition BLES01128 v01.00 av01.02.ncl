@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+RPCS3
+0 00F18840 00000000
+#
 File Info
 0
 Eboot.Elf

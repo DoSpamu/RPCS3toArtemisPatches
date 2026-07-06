@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+RPCS3_illusion
+0 008D2E94 38800001
+#
 60 FPS (RPCS3)
 0
 RPCS3

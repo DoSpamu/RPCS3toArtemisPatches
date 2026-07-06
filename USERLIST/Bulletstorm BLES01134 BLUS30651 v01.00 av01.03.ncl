@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 009C1974 2C030001
+#
 Infinite HP
 0
 MrFire

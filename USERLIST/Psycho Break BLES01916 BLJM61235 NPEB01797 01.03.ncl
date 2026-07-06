@@ -1,3 +1,9 @@
+UnlockFPS (PSXPlace)
+0
+Joey
+0 00259328 38600001
+0 0025C100 48000050
+#
 Alternative Names
 0
 PARAM.SFO

@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 0028F0C8 60000000
+#
 Infinite Arrows, Bullets, Salvage, Parts
 0
 games24.blog.fc2.com/blog-entry-169.html
