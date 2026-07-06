@@ -32,9 +32,12 @@ jobs:
         run: npx camoufox fetch
 
       - name: Scrape thread and parse new patches
+        id: scrape
         run: node scripts/check_psxplace.js
         continue-on-error: true
-        # Exit 1 means Cloudflare blocked — workflow continues to PR step via if: always()
+        # Exit codes: 2 = Cloudflare block, 3 = empty scrape (layout change), 1 = crash.
+        # continue-on-error lets the commit step save partial results;
+        # the final step re-raises the failure so the run goes red and alerts us.
 
       - name: Commit new patches to master
         if: always()
@@ -52,7 +55,13 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add known_posts.json new_patches_raw/ "PSXPlace Confirmed/" README.md banner.svg 2>/dev/null || true
+          git add known_posts.json new_patches_raw/ "PSXPlace Confirmed/" USERLIST/ README.md banner.svg 2>/dev/null || true
           git diff --cached --quiet && echo "Nothing staged." && exit 0
           git commit -m "[Auto] PSXPlace new patches $DATE"
           git push origin master
+
+      - name: Fail run if scraper failed
+        if: steps.scrape.outcome == 'failure'
+        run: |
+          echo "Scraper failed — see the scrape step logs (CF_BLOCKED / SCRAPE_EMPTY / crash)."
+          exit 1

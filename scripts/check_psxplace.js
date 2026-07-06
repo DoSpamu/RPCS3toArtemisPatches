@@ -7,6 +7,7 @@ const path = require('path');
 const THREAD_URL    = 'https://www.psx-place.com/threads/60-unlock-fps-patches.49905/';
 const STATE_FILE    = path.join(__dirname, '..', 'known_posts.json');
 const PSXPLACE_DIR  = path.join(__dirname, '..', 'PSXPlace Confirmed');
+const USERLIST_DIR  = path.join(__dirname, '..', 'USERLIST');
 const RAW_DIR       = path.join(__dirname, '..', 'new_patches_raw');
 const PR_BODY_FILE  = path.join(__dirname, '..', 'pr_body.txt');
 
@@ -56,15 +57,13 @@ async function scrapeThread() {
       url = nextUrl;
       if (url) await page.waitForTimeout(1500);
     }
-  } catch (err) {
-    if (err.message === 'CF_BLOCKED') {
-      console.error('CF_BLOCKED: Cloudflare challenge not resolved.');
-      process.exit(1);
-    }
-    throw err;
   } finally {
     await browser.close();
   }
+
+  // A thread page with zero parsed posts means the forum layout changed (or we
+  // were served a stub page) — treat it as a failure, not "no activity".
+  if (!allPosts.length) throw new Error('SCRAPE_EMPTY');
 
   return allPosts;
 }
@@ -204,12 +203,24 @@ function findPsxplaceFiles(tid, gameName) {
   return byName;
 }
 
+// Search USERLIST/ for existing .ncl files matching the given Title ID.
+// Same substring convention as convert.js findNcl(). Never creates files —
+// new games get a file only in PSXPlace Confirmed/.
+function findUserlistFiles(tid, dir = USERLIST_DIR) {
+  if (!fs.existsSync(dir)) return [];
+  return fs.readdirSync(dir)
+    .filter(f => f.includes(tid) && f.endsWith('.ncl'))
+    .map(f => path.join(dir, f));
+}
+
 // Prepend entry to an .ncl file. Creates the file if it doesn't exist.
 // Returns 'added' for a new entry, 'updated' when an existing same-name block
-// had different patch lines and was replaced in place (forum corrections),
+// had different patch lines and was replaced in place (first-post corrections),
+// 'conflict' when such a block exists but allowUpdate is false (reply posts —
+// the first-post catalog is the source of truth, replies never overwrite),
 // false when an identical entry — or a hardware-verified [Tested] variant —
 // is already present.
-function prependToNcl(nclPath, entry) {
+function prependToNcl(nclPath, entry, { allowUpdate = true } = {}) {
   let content = '';
   if (fs.existsSync(nclPath)) {
     content = fs.readFileSync(nclPath, 'utf8')
@@ -240,7 +251,9 @@ function prependToNcl(nclPath, entry) {
       const oldCodes = lines.slice(start + 3, end).filter(l => l.trim());
       if (oldCodes.join('\n') === newCodes.join('\n')) return false;
 
-      // Same cheat name, different codes — the forum post corrected it.
+      // Same cheat name, different codes. Only the first-post catalog may
+      // correct an existing block; reply posts report a conflict instead.
+      if (!allowUpdate) return 'conflict';
       lines.splice(start, end - start + 1, ...entryLines);
       fs.writeFileSync(nclPath, lines.join('\n'), 'utf8');
       return 'updated';
@@ -313,8 +326,9 @@ async function main() {
   }
   fs.writeFileSync(path.join(RAW_DIR, `${date}.txt`), rawLines.join('\n\n'), 'utf8');
 
-  const prRows   = [];
-  const modFiles = new Set();
+  const prRows    = [];
+  const modFiles  = new Set();
+  const conflicts = [];
 
   // Process new reply posts — search PSXPlace Confirmed for matching files.
   // If the game isn't there yet, we report it in the PR for manual action
@@ -339,11 +353,17 @@ async function main() {
 
     const entry = buildNclEntry('Unlock FPS', author, patches);
     for (const tid of tids) {
-      for (const nclPath of findPsxplaceFiles(tid)) {
-        const res = prependToNcl(nclPath, entry);
-        if (res) {
+      const targets = [...findPsxplaceFiles(tid), ...findUserlistFiles(tid)];
+      for (const nclPath of targets) {
+        // Reply posts never overwrite existing blocks — the first-post
+        // catalog is the source of truth; conflicts go to the PR body.
+        const res = prependToNcl(nclPath, entry, { allowUpdate: false });
+        if (res === 'conflict') {
+          conflicts.push({ post: post.id, author, tid, file: path.basename(nclPath) });
+          console.log(`  CONFLICT (manual review): ${path.basename(nclPath)}`);
+        } else if (res) {
           modFiles.add(path.relative(process.cwd(), nclPath));
-          console.log(`  ${res === 'updated' ? 'Updated' : 'Added'}: ${path.basename(nclPath)}`);
+          console.log(`  Added: ${path.basename(nclPath)}`);
         } else {
           console.log(`  Skipped duplicate: ${path.basename(nclPath)}`);
         }
@@ -370,6 +390,10 @@ async function main() {
         console.log(`  Creating new file: ${filename}`);
       }
 
+      // Also update existing USERLIST files (never created here) so the
+      // full database stays in sync with the PSXPlace catalog.
+      nclFiles = [...nclFiles, ...findUserlistFiles(tid)];
+
       for (const nclPath of nclFiles) {
         const res = prependToNcl(nclPath, entry);
         if (res) {
@@ -390,8 +414,18 @@ async function main() {
     `|------|--------|-----------|-------|`,
     ...(prRows.length ? prRows : ['| — | — | — | — |']),
     '',
-    `## Modified/created files in \`PSXPlace Confirmed/\` (${modList.length})`,
+    `## Modified/created files (${modList.length})`,
     modList.length ? modList.map(f => `- \`${f}\``).join('\n') : '_No parseable patches found in new activity._',
+    ...(conflicts.length ? [
+      '',
+      `## ⚠️ Conflicts — manual review needed (${conflicts.length})`,
+      'Reply posts with codes that differ from an existing entry. Not applied automatically',
+      '(the first-post catalog is the source of truth). See raw content for the proposed codes.',
+      '',
+      `| Post | Author | Title ID | File |`,
+      `|------|--------|----------|------|`,
+      ...conflicts.map(c => `| [${c.post}](${THREAD_URL}#${c.post}) | ${c.author.replace(/\|/g, '\\|')} | ${c.tid} | \`${c.file}\` |`),
+    ] : []),
     '',
     `Raw content: \`new_patches_raw/${date}.txt\``,
   ].join('\n');
@@ -402,11 +436,18 @@ async function main() {
 }
 
 if (require.main === module) {
-  main().catch(err => { console.error(err); process.exit(1); });
+  // Exit codes: 2 = Cloudflare block (transient, retry tomorrow),
+  // 3 = empty scrape (layout change — needs a code fix), 1 = other crash.
+  main().catch(err => {
+    console.error(err);
+    if (err.message === 'CF_BLOCKED')   process.exit(2);
+    if (err.message === 'SCRAPE_EMPTY') process.exit(3);
+    process.exit(1);
+  });
 }
 
 module.exports = {
   scrapeThread, scrapePage,
   extractTitleIds, extractPatches, parseFirstPost, buildNclEntry,
-  findPsxplaceFiles, prependToNcl, normVersion, buildPsxplaceFilename,
+  findPsxplaceFiles, findUserlistFiles, prependToNcl, normVersion, buildPsxplaceFilename,
 };

@@ -11,6 +11,7 @@ const path = require('path');
 const ROOT          = path.join(__dirname, '..');
 const CONFIRMED_DIR = path.join(ROOT, 'PSXPlace Confirmed');
 const USERLIST_DIR  = path.join(ROOT, 'USERLIST');
+const WORKING_DIR   = path.join(ROOT, 'Working Artemis Patches');
 const README_PATH   = path.join(ROOT, 'README.md');
 const BANNER_PATH   = path.join(ROOT, 'banner.svg');
 
@@ -157,9 +158,9 @@ function updateReadme(rows) {
   }
   readme = readme.slice(0, si) + generateSection(rows) + readme.slice(ei);
 
-  // Badge: confirmed_games = 39 (Working Artemis) + PSXPlace Confirmed file count
-  const WORKING_COUNT = 39;
-  const confirmedTotal = WORKING_COUNT + rows.length;
+  // Badge: confirmed_games = Working Artemis file count + PSXPlace Confirmed file count
+  const workingCount = fs.readdirSync(WORKING_DIR).filter(f => f.endsWith('.ncl')).length;
+  const confirmedTotal = workingCount + rows.length;
   readme = readme.replace(
     /badge\/confirmed_games-\d+-brightgreen/,
     `badge/confirmed_games-${confirmedTotal}-brightgreen`

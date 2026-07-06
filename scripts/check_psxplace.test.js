@@ -215,6 +215,39 @@ fs.writeFileSync(tmpNcl3, 'Unlock FPS (PSXPlace) [Tested]\n0\nJoey\n0 00000001 0
 assert.strictEqual(prependToNcl(tmpNcl3, entryV2), false,
   '[Tested] entry must not be replaced by a forum post');
 
+// allowUpdate: false (reply posts) — same name + different codes must NOT replace;
+// returns 'conflict' and leaves the file untouched (first post is the source of truth)
+const tmpNcl4 = path.join(tmpDir, 'Test Game 4 BLUS99996 01.00.ncl');
+assert.strictEqual(prependToNcl(tmpNcl4, entryV1, { allowUpdate: false }), 'added',
+  'new entry is still added with allowUpdate: false');
+const beforeConflict = fs.readFileSync(tmpNcl4, 'utf8');
+assert.strictEqual(prependToNcl(tmpNcl4, entryV2, { allowUpdate: false }), 'conflict',
+  'reply post must not overwrite an existing block');
+assert.strictEqual(fs.readFileSync(tmpNcl4, 'utf8'), beforeConflict,
+  'file must be unchanged after a conflict');
+assert.strictEqual(prependToNcl(tmpNcl4, entryV1, { allowUpdate: false }), false,
+  'identical entry is still a duplicate skip with allowUpdate: false');
+// explicit allowUpdate: true keeps the first-post correction behavior
+assert.strictEqual(prependToNcl(tmpNcl4, entryV2, { allowUpdate: true }), 'updated',
+  'first-post edit still replaces in place');
+
+// findUserlistFiles — TID substring match against existing .ncl files, never creates
+const { findUserlistFiles } = require('./check_psxplace.js');
+const tmpUserlist = path.join(tmpDir, 'USERLIST');
+fs.mkdirSync(tmpUserlist);
+fs.writeFileSync(path.join(tmpUserlist, 'Some Game BLUS88888 01.00.ncl'), 'X\n0\ndev\n0 00000001 00000001\n#\n', 'utf8');
+fs.writeFileSync(path.join(tmpUserlist, 'Other Game BLES77777.ncl'), 'X\n0\ndev\n0 00000001 00000001\n#\n', 'utf8');
+fs.writeFileSync(path.join(tmpUserlist, 'BLUS88888 notes.txt'), 'not an ncl', 'utf8');
+assert.deepStrictEqual(
+  findUserlistFiles('BLUS88888', tmpUserlist).map(f => path.basename(f)),
+  ['Some Game BLUS88888 01.00.ncl'],
+  'matches .ncl by TID substring, ignores non-.ncl'
+);
+assert.deepStrictEqual(findUserlistFiles('BLUS00000', tmpUserlist), [],
+  'no match → empty, no file created');
+assert.deepStrictEqual(findUserlistFiles('BLUS88888', path.join(tmpDir, 'no-such-dir')), [],
+  'missing dir → empty');
+
 fs.rmSync(tmpDir, { recursive: true, force: true });
 
 console.log('All tests passed');
