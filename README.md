@@ -24,6 +24,7 @@ Sourced from the RPCS3 emulator patch database and the PSXPlace community.
 | My game isn't in that folder | **`PSXPlace Confirmed/`** folder (87 games) | [Community Confirmed](#community-confirmed-games--psxplace-) |
 | My game isn't in either folder | Full **`USERLIST/`** (2,542 files, mixed confidence) | [About USERLIST](#about-userlist-2542-files) |
 | I don't want to FTP files | **PS3MAPI** (apply patches live in browser) | [`MAPI_PATCHES.md`](MAPI_PATCHES.md) |
+| I want the patch permanent, zero setup | **Pre-patched EBOOTs / PKGs** by Nascar1243 (70 games) | [`EBOOT_PATCHES.md`](EBOOT_PATCHES.md) |
 | My game has a config file (Crysis, BBC, etc.) | **File-based unlock** (no Artemis at all) | [File-Based](#file-based-fps-unlocks-no-artemis-needed) |
 
 ---
@@ -65,6 +66,12 @@ If your game isn't in either folder, the full **`USERLIST/`** (2,542 files) is a
 ## How to use (PS3MAPI method — no file transfer needed)
 
 Apply patches live via webMAN MOD's browser interface without Artemis. See [`MAPI_PATCHES.md`](MAPI_PATCHES.md) for the full address list and instructions.
+
+---
+
+## How to use (pre-patched EBOOTs — patch baked in)
+
+Nascar1243 shares ready-made patched `EBOOT.BIN` files and update PKGs for 70 games — install once, the FPS patch is permanent. See [`EBOOT_PATCHES.md`](EBOOT_PATCHES.md) for the game list, download link and instructions.
 
 ---
 
@@ -171,7 +178,7 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | Mirrors Edge | BLES00322 | 01.01 | Unlock FPS | Joey85 |
 | MotorStorm | BCES00006 | 01.00 | UnlockFPS | RPCS3 |
 | Need for Speed Rivals | BLUS31201 | 01.03 | Unlock FPS | Joey85 |
-| Prince Of Persia Trilogy 3D | BLUS30754 | 01.00 | Unlock FPS | RPCS3 |
+| Prince Of Persia Trilogy 3D | BLUS30754 | 01.00 | The Two Thrones Unlock FPS | Joey85 |
 | Prototype 2 | BLES01532 / BLUS30756 | 01.00 | UnlockFPS | Joey85 |
 | Ratchet And Clank All 4 One | BCAS20200 / BCES01141 / BCJS30081 / BCUS98175 / NPEA00356 | 01.03 | Unlock FPS | Joey85 |
 | Ratchet And Clank Into The Nexus | BCUS99245 | 01.00 | Unlock FPS | Nascar1243 |

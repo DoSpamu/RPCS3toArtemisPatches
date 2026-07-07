@@ -147,7 +147,9 @@ function fmtBadgeNum(n) {
 }
 
 function updateReadme(rows) {
-  let readme = fs.readFileSync(README_PATH, 'utf8');
+  // Normalize CRLF: on Windows checkouts (autocrlf) the '\n\n---' section
+  // terminator would otherwise never match.
+  let readme = fs.readFileSync(README_PATH, 'utf8').replace(/\r\n/g, '\n');
 
   // Replace Community Confirmed section (from header to the next \n\n---)
   const si = readme.indexOf(SECTION_HEADER);
