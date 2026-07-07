@@ -165,6 +165,25 @@ function buildNclEntry(cheatName, author, patches) {
   return [`${cheatName} (PSXPlace)`, '0', author, ...patches, '#'].join('\n');
 }
 
+// The catalog may hold several same-named entries for one TID — e.g. the
+// Prince of Persia Trilogy has one "Unlock FPS" per sub-game. Written as-is
+// they overwrite each other in the target file, so prefix colliding cheat
+// names with the sub-game name (collection suffix in parentheses stripped:
+// "Warrior Within (Prince of Persia Trilogy 3D)" → "Warrior Within Unlock FPS").
+function disambiguateEntries(entries) {
+  const counts = {};
+  for (const e of entries) {
+    const key = `${e.tid}\0${e.cheatName.toLowerCase()}`;
+    counts[key] = (counts[key] || 0) + 1;
+  }
+  return entries.map(e => {
+    const key = `${e.tid}\0${e.cheatName.toLowerCase()}`;
+    if (counts[key] < 2 || !e.gameName) return e;
+    const sub = e.gameName.replace(/\s*\([^)]*\)\s*$/, '').trim();
+    return sub ? { ...e, cheatName: `${sub} ${e.cheatName}` } : e;
+  });
+}
+
 // Normalize "1.01" → "01.01" to match PSXPlace Confirmed file naming convention.
 function normVersion(ver) {
   if (!ver) return '';
@@ -375,7 +394,7 @@ async function main() {
   // We have structured data (game name, TID, version) so we can create new files.
   if (firstPostChanged) {
     console.log('Parsing first post for new/updated NCL entries...');
-    const entries = parseFirstPost(firstPost.text);
+    const entries = disambiguateEntries(parseFirstPost(firstPost.text));
     console.log(`  Found ${entries.length} NCL block(s) in first post.`);
 
     for (const { tid, cheatName, author, patches, gameName, version } of entries) {
@@ -448,6 +467,6 @@ if (require.main === module) {
 
 module.exports = {
   scrapeThread, scrapePage,
-  extractTitleIds, extractPatches, parseFirstPost, buildNclEntry,
+  extractTitleIds, extractPatches, parseFirstPost, buildNclEntry, disambiguateEntries,
   findPsxplaceFiles, findUserlistFiles, prependToNcl, normVersion, buildPsxplaceFilename,
 };

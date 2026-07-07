@@ -1,14 +1,9 @@
-Unlock FPS (PSXPlace)
-0
-RPCS3
-0 00824E10 60000000
-#
 Unlock FPS (RPCS3)
 0
 RPCS3
 0 00824E10 60000000
 #
-Two Thrones Unlock FPS (PSXPlace)
+The Two Thrones Unlock FPS (PSXPlace)
 0
 Joey
 0 0009381C 60000000

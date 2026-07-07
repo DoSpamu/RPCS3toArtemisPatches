@@ -142,6 +142,42 @@ const mpResults = parseFirstPost(MULTI_PATCH);
 assert.strictEqual(mpResults.length, 1);
 assert.deepStrictEqual(mpResults[0].patches, ['0 004DC6F4 3F800000', '0 00200000 003C']);
 
+// disambiguateEntries — same TID + same cheat name (e.g. Prince of Persia Trilogy:
+// one "Unlock FPS" per sub-game) must get the sub-game name prefixed so the
+// entries don't overwrite each other in one file
+const { disambiguateEntries } = require('./check_psxplace.js');
+const popEntries = [
+  { tid: 'BLUS30754', cheatName: 'Unlock FPS', author: 'RPCS3', patches: ['0 0009381C 60000000'],
+    gameName: 'The Two Thrones (Prince of Persia Trilogy 3D)', version: '1.00' },
+  { tid: 'BLUS30754', cheatName: 'Unlock FPS', author: 'RPCS3', patches: ['0 00824E10 60000000'],
+    gameName: 'Warrior Within (Prince of Persia Trilogy 3D)', version: '1.00' },
+];
+const popResult = disambiguateEntries(popEntries);
+assert.strictEqual(popResult[0].cheatName, 'The Two Thrones Unlock FPS',
+  'collection suffix in parentheses is stripped, sub-game name prefixed');
+assert.strictEqual(popResult[1].cheatName, 'Warrior Within Unlock FPS');
+assert.strictEqual(popResult[0].tid, 'BLUS30754', 'other fields unchanged');
+assert.deepStrictEqual(popResult[1].patches, ['0 00824E10 60000000']);
+
+// no collision → names untouched
+const single = disambiguateEntries([
+  { tid: 'BLUS30115', cheatName: 'Unlock FPS', author: 'Joey', patches: ['0 008FE1AC 38600001'],
+    gameName: 'Condemned 2 Bloodshot', version: '1.01' },
+  { tid: 'BLES00523', cheatName: 'Unlock FPS', author: 'Joey', patches: ['0 00AABBCC 38600001'],
+    gameName: 'Dead Space', version: '1.00' },
+]);
+assert.strictEqual(single[0].cheatName, 'Unlock FPS', 'same name, different TID → no prefix');
+assert.strictEqual(single[1].cheatName, 'Unlock FPS');
+
+// colliding entry without gameName stays as-is (nothing to prefix with)
+const noName = disambiguateEntries([
+  { tid: 'BLUS30754', cheatName: 'Unlock FPS', author: 'RPCS3', patches: ['0 00000001 00000001'], gameName: null, version: null },
+  { tid: 'BLUS30754', cheatName: 'Unlock FPS', author: 'RPCS3', patches: ['0 00000002 00000002'],
+    gameName: 'Warrior Within (Prince of Persia Trilogy 3D)', version: '1.00' },
+]);
+assert.strictEqual(noName[0].cheatName, 'Unlock FPS', 'null gameName → unchanged');
+assert.strictEqual(noName[1].cheatName, 'Warrior Within Unlock FPS');
+
 // normVersion
 assert.strictEqual(normVersion('1.01'), '01.01');
 assert.strictEqual(normVersion('01.01'), '01.01');
