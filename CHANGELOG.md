@@ -4,6 +4,12 @@ All notable changes to this project will be documented here.
 
 ## [Unreleased]
 
+_Nothing yet._
+
+## [2.0] — 2026-07-08
+
+Expanded from an Artemis-only patch set into a **four-method toolkit** — Artemis `.ncl` cheats, live **PS3MAPI** memory edits, **pre-patched EBOOTs**, and **config-file** tweaks — backed by a hardened daily PSXPlace monitor. `PSXPlace Confirmed/` grew from 62 to 87 games since v1.1.
+
 ### Added (documentation & monitor hardening — 2026-07)
 - **`EBOOT_PATCHES.md`** — index of Nascar1243's pre-patched EBOOT / update-PKG collection (70 games) with install instructions; binaries stay on MEGA, repo holds only the index
 - **`MAPI_PATCHES.md`** — rewritten from Nascar1243's July 2026 "FPS Unlocking Updated" document: ~74 games (up from ~35). Lost Planet 3 and Silent Hill Downpour addresses replaced with the verified multi-address versions

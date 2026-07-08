@@ -1,6 +1,6 @@
 {
   "name": "ps3fps",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "RPCS3 game patches converted to Artemis cheat format for real PS3 hardware (CFW required).",
   "main": "convert.js",
   "scripts": {

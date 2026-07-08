@@ -32,14 +32,14 @@ Sourced from the RPCS3 emulator patch database and the PSXPlace community.
 
 ## Downloads
 
-The latest release (`v1.1`) has one zip with two folders:
+The latest release (`v2.0`) has one zip with two folders:
 
 | Folder in zip | Contents | Use when |
 |---------------|----------|----------|
 | **`Working Artemis Patches/`** | 39 games — 100% confirmed on real PS3 | Your game is in the list below |
 | **`PSXPlace Confirmed/`** | 87 games — confirmed by Joey85 + Nascar1243 + community on real PS3 | Your game isn't in the first folder |
 
-**[→ Download v1.1](https://github.com/DoSpamu/RPCS3toArtemisPatches/releases/tag/v1.1)**
+**[→ Download v2.0](https://github.com/DoSpamu/RPCS3toArtemisPatches/releases/tag/v2.0)**
 
 > [!NOTE]
 > Release zips are snapshots. The folders in this repository are updated **daily** by the PSXPlace monitor, so they may contain newer games than the latest release. For the freshest files, clone the repo or use **Code → Download ZIP**.
