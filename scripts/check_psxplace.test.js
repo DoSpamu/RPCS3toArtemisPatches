@@ -286,4 +286,39 @@ assert.deepStrictEqual(findUserlistFiles('BLUS88888', path.join(tmpDir, 'no-such
 
 fs.rmSync(tmpDir, { recursive: true, force: true });
 
-console.log('All tests passed');
+// retryOnCfBlock — retries only CF_BLOCKED; injected no-op wait keeps tests instant.
+const { retryOnCfBlock } = require('./check_psxplace.js');
+const noWait = async () => {};
+const retryOpts = { attempts: 3, backoffMs: [0, 0] };
+
+(async () => {
+  // CF_BLOCKED every attempt → tries exactly `attempts` times, then propagates
+  let calls = 0;
+  await assert.rejects(
+    retryOnCfBlock(async () => { calls++; throw new Error('CF_BLOCKED'); }, retryOpts, noWait),
+    /CF_BLOCKED/,
+    'exhausted retries re-throw CF_BLOCKED'
+  );
+  assert.strictEqual(calls, 3, 'CF_BLOCKED retried up to attempts (3 calls)');
+
+  // CF_BLOCKED once, then success → returns the value, called twice
+  calls = 0;
+  const result = await retryOnCfBlock(async () => {
+    calls++;
+    if (calls === 1) throw new Error('CF_BLOCKED');
+    return ['post'];
+  }, retryOpts, noWait);
+  assert.deepStrictEqual(result, ['post'], 'succeeds on retry after a CF block');
+  assert.strictEqual(calls, 2, 'stops retrying once fn succeeds');
+
+  // SCRAPE_EMPTY → not retried, propagates immediately (layout change, exit 3)
+  calls = 0;
+  await assert.rejects(
+    retryOnCfBlock(async () => { calls++; throw new Error('SCRAPE_EMPTY'); }, retryOpts, noWait),
+    /SCRAPE_EMPTY/,
+    'SCRAPE_EMPTY propagates without retry'
+  );
+  assert.strictEqual(calls, 1, 'SCRAPE_EMPTY is not retried (1 call)');
+
+  console.log('All tests passed');
+})().catch(err => { console.error(err); process.exit(1); });

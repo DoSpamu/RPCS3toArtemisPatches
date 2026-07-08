@@ -11,13 +11,21 @@ const USERLIST_DIR  = path.join(__dirname, '..', 'USERLIST');
 const RAW_DIR       = path.join(__dirname, '..', 'new_patches_raw');
 const PR_BODY_FILE  = path.join(__dirname, '..', 'pr_body.txt');
 
+// Cloudflare serves a "Just a moment..." challenge that Camoufox usually clears,
+// but sometimes doesn't within one attempt. Each retry spins up a FRESH browser
+// (new fingerprint) — retrying the same page/session would just hit the same
+// block. backoffMs has attempts-1 entries (wait after every attempt but the last).
+const CF_RETRY = { attempts: 3, challengeTimeoutMs: 45000, backoffMs: [10000, 20000] };
+
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
 async function scrapePage(page, url) {
   await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
 
   try {
     await page.waitForFunction(
       () => !document.title.includes('Just a moment'),
-      { timeout: 30000 }
+      { timeout: CF_RETRY.challengeTimeoutMs }
     );
   } catch (_) {
     if ((await page.title()).includes('Just a moment')) {
@@ -41,24 +49,22 @@ async function scrapePage(page, url) {
   return { posts, nextUrl };
 }
 
-async function scrapeThread() {
-  const browser = await Camoufox({ headless: true, os: 'windows', humanize: true });
-  const page    = await browser.newPage();
+// Walks every page of the thread using a caller-owned browser. The caller
+// creates and closes the browser (see scrapeThreadWithRetry) so the retry
+// wrapper can hand each attempt a fresh instance.
+async function scrapeThread(browser) {
+  const page     = await browser.newPage();
   const allPosts = [];
   let url = THREAD_URL;
 
-  try {
-    while (url) {
-      console.log(`Scraping: ${url}`);
-      const { posts, nextUrl } = await scrapePage(page, url);
-      const filtered = posts.filter(p => p.id);
-      allPosts.push(...filtered);
-      console.log(`  Found ${filtered.length} posts on this page (total: ${allPosts.length})`);
-      url = nextUrl;
-      if (url) await page.waitForTimeout(1500);
-    }
-  } finally {
-    await browser.close();
+  while (url) {
+    console.log(`Scraping: ${url}`);
+    const { posts, nextUrl } = await scrapePage(page, url);
+    const filtered = posts.filter(p => p.id);
+    allPosts.push(...filtered);
+    console.log(`  Found ${filtered.length} posts on this page (total: ${allPosts.length})`);
+    url = nextUrl;
+    if (url) await page.waitForTimeout(1500);
   }
 
   // A thread page with zero parsed posts means the forum layout changed (or we
@@ -66,6 +72,37 @@ async function scrapeThread() {
   if (!allPosts.length) throw new Error('SCRAPE_EMPTY');
 
   return allPosts;
+}
+
+// Retries `fn` ONLY on CF_BLOCKED, backing off between attempts. Any other error
+// (including SCRAPE_EMPTY, which signals a layout change, not a transient block)
+// propagates immediately so its exit code keeps its diagnostic meaning.
+// `wait` is injectable so tests can run without real delays.
+async function retryOnCfBlock(fn, opts, wait = sleep) {
+  const { attempts, backoffMs } = opts;
+  for (let i = 1; i <= attempts; i++) {
+    try {
+      return await fn(i);
+    } catch (err) {
+      if (err.message !== 'CF_BLOCKED' || i === attempts) throw err;
+      const ms = backoffMs[i - 1] ?? backoffMs[backoffMs.length - 1];
+      console.error(`CF block on attempt ${i}/${attempts}, retrying in ${ms / 1000}s…`);
+      await wait(ms);
+    }
+  }
+}
+
+// Each attempt gets a brand-new Camoufox instance — a fresh fingerprint is what
+// actually gets us past Cloudflare; reusing the browser would reproduce the block.
+async function scrapeThreadWithRetry() {
+  return retryOnCfBlock(async () => {
+    const browser = await Camoufox({ headless: true, os: 'windows', humanize: true });
+    try {
+      return await scrapeThread(browser);
+    } finally {
+      await browser.close();
+    }
+  }, CF_RETRY);
 }
 
 const TITLE_ID_RE = /\b(BL[UECSJAK][A-Z0-9]{6}|NP[A-Z]{2}[0-9]{5}|BC[A-Z]{2}[0-9]{5}|MRTC[0-9]{5})\b/gi;
@@ -311,7 +348,7 @@ async function main() {
     : 'Checking for new posts on thread 49905...'
   );
 
-  const allPosts = await scrapeThread();
+  const allPosts = await scrapeThreadWithRetry();
   const knownIds = new Set(state.known_post_ids);
   const newPosts = isBootstrap ? [] : allPosts.filter(p => !knownIds.has(p.id));
 
@@ -466,7 +503,7 @@ if (require.main === module) {
 }
 
 module.exports = {
-  scrapeThread, scrapePage,
+  scrapeThread, scrapePage, scrapeThreadWithRetry, retryOnCfBlock, sleep,
   extractTitleIds, extractPatches, parseFirstPost, buildNclEntry, disambiguateEntries,
   findPsxplaceFiles, findUserlistFiles, prependToNcl, normVersion, buildPsxplaceFilename,
 };
