@@ -1,0 +1,20 @@
+# Normalize source, config and docs to LF on all platforms.
+# (Stops the "LF will be replaced by CRLF" churn on Windows checkouts.)
+*.js    text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+*.yml   text eol=lf
+*.yaml  text eol=lf
+*.svg   text eol=lf
+
+# Artemis patch files carry mixed CRLF/LF line endings by design (see CLAUDE.md);
+# the parsers normalize on read. Treat them as text for diffs but never rewrite
+# their line endings, so existing files stay byte-for-byte intact.
+*.ncl   -text
+
+# Binary assets — never touch.
+*.png   binary
+*.bin   binary
+*.xlsx  binary
+*.docx  binary
+*.pdf   binary

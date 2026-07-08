@@ -2,14 +2,15 @@
   <img src="banner.svg" alt="PS3 FPS Unlock Patches" width="100%"/>
 </p>
 
-# PS3 FPS Unlock Patches — Artemis & MAPI
+# PS3 FPS Unlock Patches
 
 ![Confirmed Games](https://img.shields.io/badge/confirmed_games-126-brightgreen)
 ![Patch Files](https://img.shields.io/badge/patch_files-2%2C542-blue)
 ![Platform](https://img.shields.io/badge/platform-PS3_CFW-lightgrey)
 ![License](https://img.shields.io/badge/license-MIT-yellow)
 
-FPS unlock patches for **real PS3 hardware** (CFW + Artemis required).  
+FPS unlock patches for **real PS3 hardware** (Custom Firmware required — Artemis optional).  
+Four ways to apply: **Artemis** cheats, live **PS3MAPI** memory edits, **pre-patched EBOOTs**, or **config-file** tweaks.  
 Sourced from the RPCS3 emulator patch database and the PSXPlace community.
 
 ---
@@ -23,7 +24,7 @@ Sourced from the RPCS3 emulator patch database and the PSXPlace community.
 | I want a tested, plug-and-play patch | **`Working Artemis Patches/`** folder (39 games) | [Confirmed (39)](#confirmed-working-games-39-games) |
 | My game isn't in that folder | **`PSXPlace Confirmed/`** folder (87 games) | [Community Confirmed](#community-confirmed-games--psxplace-) |
 | My game isn't in either folder | Full **`USERLIST/`** (2,542 files, mixed confidence) | [About USERLIST](#about-userlist-2542-files) |
-| I don't want to FTP files | **PS3MAPI** (apply patches live in browser) | [`MAPI_PATCHES.md`](MAPI_PATCHES.md) |
+| I don't want to FTP files | **PS3MAPI** (apply patches live in browser, ~74 games) | [`MAPI_PATCHES.md`](MAPI_PATCHES.md) |
 | I want the patch permanent, zero setup | **Pre-patched EBOOTs / PKGs** by Nascar1243 (70 games) | [`EBOOT_PATCHES.md`](EBOOT_PATCHES.md) |
 | My game has a config file (Crysis, BBC, etc.) | **File-based unlock** (no Artemis at all) | [File-Based](#file-based-fps-unlocks-no-artemis-needed) |
 
@@ -39,6 +40,9 @@ The latest release (`v1.1`) has one zip with two folders:
 | **`PSXPlace Confirmed/`** | 87 games — confirmed by Joey85 + Nascar1243 + community on real PS3 | Your game isn't in the first folder |
 
 **[→ Download v1.1](https://github.com/DoSpamu/RPCS3toArtemisPatches/releases/tag/v1.1)**
+
+> [!NOTE]
+> Release zips are snapshots. The folders in this repository are updated **daily** by the PSXPlace monitor, so they may contain newer games than the latest release. For the freshest files, clone the repo or use **Code → Download ZIP**.
 
 If your game isn't in either folder, the full **`USERLIST/`** (2,542 files) is available by cloning or downloading the repository. Those files are RPCS3 conversions — not all hardware-verified.
 
@@ -147,7 +151,7 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | Dead Space 2 | BLES01040 | 01.02 | Unlock FPS | Joey85 |
 | Dead Space 3 | BLES01733 / BLUS31053 | 01.02 | Unlock FPS | Joey85 |
 | Deadpool | BLES01789 / BLUS31146 | 01.00 | Unlock FPS | Joey85 |
-| Destroy All Humans! Path Of The Furon | — | — | Unlock FPS | PSXPlace |
+| Destroy All Humans! Path Of The Furon | BLES00467 | — | Unlock FPS | PSXPlace |
 | Deus Ex Human Revolution Directors Cut | BLUS31317 | 01.00 | Unlock FPS | Joey85 |
 | Disney Castle Of Illusion Starring Mickey Mouse | NPUB31099 | 01.00 | Unlock FPS | Joey85 |
 | Dragon Ball Z Burst Limit | BLES00231 | 01.00 | 60 FPS | illusion |
@@ -170,7 +174,7 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | Killzone 3 | BCES01007 / BCUS98234 | 01.14 | Extended FOV | vFxMz |
 | Lollipop Chainsaw | BLES01525 | 01.00 | Unlock FPS | Joey85 |
 | Lollipop Chainsaw PE | BLUS30917 | 01.00 | Unlock FPS | Nascar1243 |
-| Lost Dimension 01.01 | — | — | 60 FPS | FlexBy |
+| Lost Dimension | BLES02197 / BLUS31554 / BLJM61166 | 01.01 | 60 FPS | FlexBy |
 | Lost Planet 2 | MRTC00002 | 01.01 | Unlock FPS | PSXPlace |
 | Lost Planet 3 | BLUS31020 | 01.02 | Unlock FPS | Joey85 |
 | METAL GEAR SOLID 4 GUNS OF THE PATRIOTS | BLES00246 | 02.00 | Unlock FPS | RPCS3 |
@@ -203,7 +207,7 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | Sleeping Dogs | BLUS30927 | 01.04 | Unlock FPS | Joey85 |
 | Sonic Unleashed | BLUS30244 | 01.02 | Disable Shadows | illusion |
 | STRANGLEHOLD | BLES00144 | 01.20 | Unlock FPS | RPCS3 |
-| The Bereau XCOM Declassified | BLUS30780 | 01.02 | Unlock FPS | Joey85 |
+| The Bureau XCOM Declassified | BLUS30780 | 01.02 | Unlock FPS | Joey85 |
 | The Evil Within | BLES01916 | 01.05 | UnlockFPS | Joey85 |
 | The Godfather II | BLES00477 | 01.01 | UnlockFPS | Joey85 |
 | The Last of Us | BCES01585 | 01.11 | Unlock FPS | illusion |
@@ -245,7 +249,7 @@ For full details see [`COMMUNITY_TESTED.md`](COMMUNITY_TESTED.md).
 
 The full patch database. Sources:
 - RPCS3 patch.yml (auto-converted by `convert.js`)
-- PSXPlace community patches — including 64 games confirmed by Joey85 + Nascar1243 on real PS3 hardware
+- PSXPlace community patches — hardware-confirmed games are listed in the [Community Confirmed](#community-confirmed-games--psxplace-) table above, and the daily monitor keeps them in sync
 - Upstream [ArtemisPS3](https://github.com/bucanero/ArtemisPS3) USERLIST
 
 **Not all patches are guaranteed to work on real hardware.** Use the label in the cheat name to judge:

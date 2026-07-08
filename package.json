@@ -1,6 +1,6 @@
 {
   "name": "ps3fps",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "RPCS3 game patches converted to Artemis cheat format for real PS3 hardware (CFW required).",
   "main": "convert.js",
   "scripts": {
@@ -11,9 +11,19 @@
     "type": "git",
     "url": "git+https://github.com/DoSpamu/RPCS3toArtemisPatches.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "ps3",
+    "fps",
+    "60fps",
+    "patches",
+    "artemis",
+    "rpcs3",
+    "cfw",
+    "cheats",
+    "psxplace"
+  ],
+  "author": "DoSpamu",
+  "license": "MIT",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/DoSpamu/RPCS3toArtemisPatches/issues"

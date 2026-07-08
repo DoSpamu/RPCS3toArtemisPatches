@@ -25,8 +25,9 @@ EXTRACTED_CONVERSATIONS.txt
 PS3 Codes.xlsx
 .claude/
 
-# Research / reference material (not for public repo)
-FPS Unlocking- wMM MAPI*.docx
+# Research / reference material (not for public repo — MAPI_PATCHES.md is the public form)
+FPS Unlocking*.docx
+FPS Unlocking*.pdf
 beta_testing/
 
 # Scraper/tool temp files

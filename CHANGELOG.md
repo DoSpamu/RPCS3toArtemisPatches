@@ -4,6 +4,23 @@ All notable changes to this project will be documented here.
 
 ## [Unreleased]
 
+### Added (documentation & monitor hardening — 2026-07)
+- **`EBOOT_PATCHES.md`** — index of Nascar1243's pre-patched EBOOT / update-PKG collection (70 games) with install instructions; binaries stay on MEGA, repo holds only the index
+- **`MAPI_PATCHES.md`** — rewritten from Nascar1243's July 2026 "FPS Unlocking Updated" document: ~74 games (up from ~35). Lost Planet 3 and Silent Hill Downpour addresses replaced with the verified multi-address versions
+- **USERLIST sync** — the monitor now also prepends confirmed patches to matching existing `USERLIST/` files (`findUserlistFiles`), not just `PSXPlace Confirmed/`; new files are still created only in `PSXPlace Confirmed/`
+- **`.gitattributes`** — normalizes source/doc line endings to LF; `.ncl` files left byte-for-byte intact (mixed CRLF/LF by design)
+
+### Fixed (scripts/check_psxplace.js)
+- **Reply posts no longer overwrite existing patches** — `prependToNcl` gained an `allowUpdate` flag: only first-post catalog edits (Joey85, the source of truth) correct existing blocks in place; reply posts that conflict are reported for manual review instead of silently replacing verified codes
+- **Same-name catalog entries disambiguated** — collections like Prince of Persia Trilogy (one "Unlock FPS" per sub-game under one TID) are prefixed with the sub-game name (`disambiguateEntries`) so they stop overwriting each other
+- **Fail-loud monitoring** — distinct exit codes (2 = Cloudflare block, 3 = empty scrape / layout change, 1 = crash); the workflow now fails the run on scraper error so it alerts by email instead of going silently green
+- **`update_readme.js`** — normalizes CRLF before locating the section terminator (previously failed on Windows checkouts)
+
+### Fixed (repo cleanup)
+- Renamed `.ncl` files that were missing their Title ID (`Lost Dimension`, `Destroy All Humans! Path Of The Furon`) so the README table and monitor matching pick them up; fixed `Bereau` → `Bureau` typo
+- Fixed 24 `USERLIST/` filenames with double-encoded (mojibake) accented characters
+- `package.json` license corrected `ISC` → `MIT` (matches LICENSE), author/keywords filled, version bumped to 1.1.0
+
 ### Added (PSXPlace auto-monitor — 2026-05-22)
 New patches auto-detected from thread #49905 (Joey85 first-post edits), committed directly to `PSXPlace Confirmed/`:
 - `Alien Rage NPEB01088 01.00` — new file
