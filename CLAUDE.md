@@ -32,7 +32,7 @@ Plain `node:assert` scripts, no test framework. CI runs `npm test` before every 
 
 ## PSXPlace thread monitor (`scripts/check_psxplace.js`)
 
-Daily automation (GitHub Actions, cron 06:00 UTC, .github/workflows/check-psxplace.yml) that scrapes PSXPlace thread #49905 via Camoufox (Cloudflare-resistant Firefox). Since 2026-07 the job runs on a self-hosted runner (label psxplace) on the user's home NUC — datacenter IPs are Cloudflare-blocked; deployment docs in deploy/nuc-runner/. It detects two kinds of activity:
+Daily automation (GitHub Actions, cron 06:00 UTC, `.github/workflows/check-psxplace.yml`) that scrapes PSXPlace thread #49905 via Camoufox (Cloudflare-resistant Firefox). Since 2026-07 the job runs on a self-hosted runner (label psxplace) on the user's home NUC — datacenter IPs are Cloudflare-blocked; deployment docs in deploy/nuc-runner/. It detects two kinds of activity:
 
 - **New reply posts** → extracts Title IDs + NCL codes, prepends `Unlock FPS (PSXPlace)` entries to matching files in `PSXPlace Confirmed/` (>20 code lines in one post = quoted catalog, skipped).
 - **First-post edits** (Joey85's catalog, detected via `first_post_hash`) → `parseFirstPost()` extracts structured entries (game name, TID, version) and can **create new files**.

@@ -73,7 +73,7 @@ Ofelia.
 
 - **Rebuild obrazu** (gdy log runa pokazuje, że `npx camoufox fetch` pobiera
   ~200 MB — wyszła nowa wersja przeglądarki):
-  `git -C RPCS3toArtemisPatches pull && docker build -f deploy/nuc-runner/Dockerfile -t psxplace-runner:latest RPCS3toArtemisPatches`
+  `git -C RPCS3toArtemisPatches pull && docker build -f RPCS3toArtemisPatches/deploy/nuc-runner/Dockerfile -t psxplace-runner:latest RPCS3toArtemisPatches`
   Stack w Portainerze podniesie nowy obraz przy następnym starcie kontenera.
 - **Zmiana godziny:** labelka `ofelia.job-run.wake-runner.schedule` w compose
   (6 pól, sekundy najpierw, UTC) + cron w `.github/workflows/check-psxplace.yml`.
