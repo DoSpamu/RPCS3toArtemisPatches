@@ -125,6 +125,11 @@ Model zagrożenia: obcy kod (fork-PR) wykonany na runnerze w domowej sieci.
   jako opcjonalne wzmocnienie. `mem_limit: 2g`, `cpus: 1.5`; proces runnera
   jako non-root przez jawne `RUN_AS_ROOT=false` (domyślnie obraz myoung34
   działa jako root).
+- **Neutralna nazwa runnera:** logi runów w publicznym repo są publiczne
+  i zawierają nazwę runnera (domyślnie hostname kontenera). Jawne
+  `RUNNER_NAME=psxplace-runner`, żeby nie ujawniać nazw z sieci domowej.
+- **Łączność:** runner używa wyłącznie wychodzącego HTTPS (443, long-poll) —
+  działa za CGNAT/podwójnym NAT, zero portów przychodzących na NUC-u.
 - **Token:** fine-grained PAT ograniczony do tego jednego repo, wyłącznie
   uprawnienie *Administration: read/write* (rejestracja runnera). Trzymany jako
   zmienna środowiskowa stacka w Portainerze. Push do repo wykonuje wbudowany
