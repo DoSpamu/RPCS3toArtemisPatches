@@ -1,0 +1,45 @@
+# PSXPlace monitor — wake-window self-hosted runner stack (Portainer).
+# Design: docs/superpowers/specs/2026-07-18-nuc-selfhosted-runner-design.md
+#
+# ACCESS_TOKEN = fine-grained PAT scoped to this single repo with ONLY the
+# "Administration: Read and write" permission (runner registration). Supply it
+# as a stack environment variable in Portainer — NEVER commit it.
+services:
+  ofelia:
+    image: mcuadros/ofelia:latest
+    container_name: psxplace-ofelia
+    restart: unless-stopped
+    command: daemon --docker
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    labels:
+      # Ofelia cron has 6 fields (seconds first); container TZ is UTC.
+      # 05:55 UTC = 5 minutes before the GitHub cron (06:00 UTC). Order is
+      # forgiving either way: a queued job is picked up on registration, and
+      # an early runner just listens until the job arrives.
+      ofelia.job-run.wake-runner.schedule: "0 55 5 * * *"
+      ofelia.job-run.wake-runner.container: "psxplace-runner"
+    mem_limit: 64m
+
+  runner:
+    image: psxplace-runner:latest
+    container_name: psxplace-runner
+    # Wake-window: Ofelia starts this container daily; EPHEMERAL makes the
+    # runner deregister and the container exit after one job. No restart.
+    restart: "no"
+    environment:
+      RUNNER_NAME: psxplace-runner   # visible in public run logs — keep neutral
+      RUNNER_SCOPE: repo
+      REPO_URL: https://github.com/DoSpamu/RPCS3toArtemisPatches
+      ACCESS_TOKEN: ${ACCESS_TOKEN}
+      LABELS: psxplace               # must match runs-on in check-psxplace.yml
+      EPHEMERAL: "1"
+      RUN_AS_ROOT: "false"
+    mem_limit: 2g
+    cpus: 1.5
+    networks:
+      - runner-net
+
+networks:
+  runner-net:
+    driver: bridge
