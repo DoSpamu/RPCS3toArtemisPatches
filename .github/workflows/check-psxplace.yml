@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   check:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, psxplace]
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
@@ -18,21 +18,14 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '22'
-
       - name: Install dependencies
         run: npm ci
 
       - name: Run tests
         run: npm test
 
-      - name: Install Camoufox browser
+      - name: Install Camoufox browser (no-op if baked version is current)
         run: npx camoufox fetch
-
-      - name: Install Xvfb (virtual display for headed Camoufox)
-        run: sudo apt-get update && sudo apt-get install -y xvfb
 
       - name: Scrape thread and parse new patches
         id: scrape
