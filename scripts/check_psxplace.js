@@ -19,18 +19,57 @@ const CF_RETRY = { attempts: 3, challengeTimeoutMs: 45000, backoffMs: [10000, 20
 
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 
-async function scrapePage(page, url) {
-  await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
-
+// Waits up to challengeTimeoutMs for Cloudflare's "Just a moment" interstitial to
+// go away on its own. Returns true if the page is clear, false if still challenged.
+async function challengeCleared(page) {
   try {
     await page.waitForFunction(
       () => !document.title.includes('Just a moment'),
       { timeout: CF_RETRY.challengeTimeoutMs }
     );
+    return true;
   } catch (_) {
-    if ((await page.title()).includes('Just a moment')) {
-      throw new Error('CF_BLOCKED');
-    }
+    return !(await page.title()).includes('Just a moment');
+  }
+}
+
+// Best-effort click of the interactive Cloudflare Turnstile checkbox. The widget
+// lives in a cross-origin iframe that page JS can't reach, but Playwright's
+// frameLocator can; a coordinate click is the fallback. Logs each step so a
+// single CI dispatch is diagnostic. Never throws — the caller re-checks clearance.
+async function solveTurnstile(page) {
+  try {
+    const target = page
+      .frameLocator('iframe[src*="challenges.cloudflare.com"]')
+      .locator('input[type="checkbox"], body');
+    await target.waitFor({ state: 'visible', timeout: 15000 });
+    console.error('Turnstile: widget found, clicking checkbox…');
+    await target.click({ timeout: 10000 });
+    console.error('Turnstile: checkbox click dispatched.');
+    return;
+  } catch (e) {
+    console.error(`Turnstile: frame click failed (${e.message}); trying coordinate click…`);
+  }
+  try {
+    const el = await page.$('iframe[src*="challenges.cloudflare.com"]');
+    if (!el) { console.error('Turnstile: no widget iframe present.'); return; }
+    const bb = await el.boundingBox();
+    if (!bb) { console.error('Turnstile: iframe has no bounding box.'); return; }
+    await page.mouse.click(bb.x + 30, bb.y + bb.height / 2);
+    console.error('Turnstile: coordinate click dispatched.');
+  } catch (e) {
+    console.error(`Turnstile: coordinate click failed (${e.message}).`);
+  }
+}
+
+async function scrapePage(page, url) {
+  await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 30000 });
+
+  if (!(await challengeCleared(page))) {
+    console.error('Challenge did not auto-clear — attempting Turnstile solve…');
+    await solveTurnstile(page);
+    if (!(await challengeCleared(page))) throw new Error('CF_BLOCKED');
+    console.error('Turnstile: challenge cleared after click.');
   }
 
   const posts = await page.evaluate(() => {
@@ -95,8 +134,11 @@ async function retryOnCfBlock(fn, opts, wait = sleep) {
 // Each attempt gets a brand-new Camoufox instance — a fresh fingerprint is what
 // actually gets us past Cloudflare; reusing the browser would reproduce the block.
 async function scrapeThreadWithRetry() {
+  // 'virtual' runs a headed browser under Xvfb on Linux (CI) — Turnstile almost
+  // never clears in true-headless. Non-Linux dev machines keep plain headless.
+  const headless = process.platform === 'linux' ? 'virtual' : true;
   return retryOnCfBlock(async () => {
-    const browser = await Camoufox({ headless: true, os: 'windows', humanize: true });
+    const browser = await Camoufox({ headless, os: 'windows', humanize: true });
     try {
       return await scrapeThread(browser);
     } finally {
@@ -504,6 +546,7 @@ if (require.main === module) {
 
 module.exports = {
   scrapeThread, scrapePage, scrapeThreadWithRetry, retryOnCfBlock, sleep,
+  solveTurnstile, challengeCleared,
   extractTitleIds, extractPatches, parseFirstPost, buildNclEntry, disambiguateEntries,
   findPsxplaceFiles, findUserlistFiles, prependToNcl, normVersion, buildPsxplaceFilename,
 };
