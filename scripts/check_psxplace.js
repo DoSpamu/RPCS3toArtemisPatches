@@ -45,17 +45,29 @@ async function challengeCleared(page) {
 // caller re-checks clearance.
 async function solveTurnstile(page) {
   try {
-    let box = null;
-    const deadline = Date.now() + 10000;
+    let box = null, sawFrame = false, sawElement = false;
+    const deadline = Date.now() + 15000;
     while (Date.now() < deadline && !box) {
       const frame = page.frames().find(f => f.url().includes('challenges.cloudflare.com'));
       if (frame) {
+        sawFrame = true;
         const el = await frame.frameElement().catch(() => null);
-        box = el ? await el.boundingBox().catch(() => null) : null;
+        if (el) {
+          sawElement = true;
+          box = await el.boundingBox().catch(() => null);
+        }
       }
       if (!box) await page.waitForTimeout(500);
     }
-    if (!box) { console.error('Turnstile: no challenge frame appeared within 10s.'); return; }
+    if (!box) {
+      // Distinguish the failure modes: no CF frame at all (hard/managed block,
+      // no widget offered — typical of datacenter IPs) vs. a frame that exists
+      // but never lays out a bounding box (render/Xvfb issue). Dump the full
+      // frame list so a single CI dispatch tells us which.
+      const urls = page.frames().map(f => f.url()).filter(Boolean);
+      console.error(`Turnstile: no clickable widget after 15s (sawFrame=${sawFrame}, sawElement=${sawElement}). Frames: ${JSON.stringify(urls)}`);
+      return;
+    }
     const cx = box.x + 22, cy = box.y + box.height / 2;
     console.error(`Turnstile: widget frame at ${Math.round(box.x)},${Math.round(box.y)} ${Math.round(box.width)}x${Math.round(box.height)} — clicking (${Math.round(cx)}, ${Math.round(cy)})…`);
     await page.mouse.move(cx - 80, cy + 30, { steps: 15 });
