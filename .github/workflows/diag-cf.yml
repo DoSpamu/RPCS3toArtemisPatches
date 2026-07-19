@@ -1,0 +1,21 @@
+name: CF Fingerprint Matrix (diagnostic)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  diag:
+    runs-on: [self-hosted, psxplace]
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: npm ci
+      - name: Install Camoufox browser (no-op if baked version is current)
+        run: npx camoufox fetch
+      - name: Run CF fingerprint matrix
+        run: node scripts/cf_matrix_diag.js
