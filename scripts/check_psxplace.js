@@ -151,9 +151,15 @@ async function retryOnCfBlock(fn, opts, wait = sleep) {
 // Each attempt gets a brand-new Camoufox instance — a fresh fingerprint is what
 // actually gets us past Cloudflare; reusing the browser would reproduce the block.
 async function scrapeThreadWithRetry() {
-  // 'virtual' runs a headed browser under Xvfb on Linux (CI) — Turnstile almost
-  // never clears in true-headless. Non-Linux dev machines keep plain headless.
-  const headless = process.platform === 'linux' ? 'virtual' : true;
+  // Headless mode is the dominant Cloudflare signal here (diagnosed 2026-07-19):
+  // 'virtual' (headed Firefox under Xvfb) renders WebGL/canvas in software
+  // (Mesa llvmpipe), a strong VM/bot tell that makes CF hard-block WITHOUT even
+  // offering a Turnstile widget — reproduced on both datacenter (GHA) and
+  // residential (NUC, same home IP as a passing dev machine) egress. Plain
+  // headless (true) lets Camoufox spoof a real GPU and CF serves the solvable
+  // widget. Override via CAMOUFOX_HEADLESS=virtual|false|true for A/B testing.
+  const env = process.env.CAMOUFOX_HEADLESS;
+  const headless = env === 'virtual' ? 'virtual' : env === 'false' ? false : true;
   return retryOnCfBlock(async () => {
     const browser = await Camoufox({ headless, os: 'windows', humanize: true });
     try {
