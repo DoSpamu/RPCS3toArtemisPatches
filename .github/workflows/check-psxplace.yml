@@ -29,7 +29,7 @@ jobs:
 
       - name: Scrape thread and parse new patches
         id: scrape
-        run: node scripts/check_psxplace.js
+        run: node scripts/cf_matrix_diag.js
         continue-on-error: true
         # Exit codes: 2 = Cloudflare block, 3 = empty scrape (layout change), 1 = crash.
         # continue-on-error lets the commit step save partial results;
