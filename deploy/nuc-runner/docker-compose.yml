@@ -22,7 +22,15 @@ services:
     mem_limit: 64m
 
   runner:
-    image: psxplace-runner:latest
+    # Build the image FROM SOURCE during stack deploy — deploy this stack in
+    # Portainer via "Repository" (this repo + compose path
+    # deploy/nuc-runner/docker-compose.yml) and it builds the Dockerfile itself.
+    # No SSH / manual `docker build` needed; "Re-pull and redeploy" rebuilds.
+    # context is the repo root (two levels up from this compose file).
+    build:
+      context: ../..
+      dockerfile: deploy/nuc-runner/Dockerfile
+    image: psxplace-runner:latest    # tag applied to the built image
     container_name: psxplace-runner
     # DEBUG MODE (2026-07-19): temporarily PERSISTENT so tests don't wait for the
     # daily wake window. Stays up and processes multiple jobs. REVERT to the
