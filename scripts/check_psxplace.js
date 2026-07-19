@@ -34,31 +34,33 @@ async function challengeCleared(page) {
 }
 
 // Best-effort click of the interactive Cloudflare Turnstile checkbox. The widget
-// lives in a cross-origin iframe that page JS can't reach, but Playwright's
-// frameLocator can; a coordinate click is the fallback. Logs each step so a
-// single CI dispatch is diagnostic. Never throws — the caller re-checks clearance.
+// renders inside a CLOSED shadow root, so neither page.content() nor any CSS/
+// frame selector can reach it (diagnosed 2026-07-19: challenge HTML has zero
+// iframes in the light DOM). The only light-DOM trace is the hidden
+// cf-turnstile-response input; the shadow host is its nearest ancestor with a
+// real bounding box, and the checkbox sits ~25px from the widget's left edge.
+// Logs each step so a single CI dispatch is diagnostic. Never throws — the
+// caller re-checks clearance.
 async function solveTurnstile(page) {
   try {
-    const target = page
-      .frameLocator('iframe[src*="challenges.cloudflare.com"]')
-      .locator('input[type="checkbox"], body');
-    await target.waitFor({ state: 'visible', timeout: 15000 });
-    console.error('Turnstile: widget found, clicking checkbox…');
-    await target.click({ timeout: 10000 });
+    const box = await page.evaluate(() => {
+      let n = document.querySelector('input[name="cf-turnstile-response"]');
+      while (n && n !== document.body) {
+        const r = n.getBoundingClientRect();
+        if (r.width > 50 && r.height > 30) return { x: r.x, y: r.y, w: r.width, h: r.height };
+        n = n.parentElement;
+      }
+      return null;
+    });
+    if (!box) { console.error('Turnstile: no rendered widget host found in light DOM.'); return; }
+    const cx = box.x + 25, cy = box.y + box.h / 2;
+    console.error(`Turnstile: widget host at ${Math.round(box.x)},${Math.round(box.y)} ${Math.round(box.w)}x${Math.round(box.h)} — clicking (${Math.round(cx)}, ${Math.round(cy)})…`);
+    await page.mouse.move(cx - 60, cy + 20, { steps: 12 });
+    await page.mouse.move(cx, cy, { steps: 8 });
+    await page.mouse.click(cx, cy);
     console.error('Turnstile: checkbox click dispatched.');
-    return;
   } catch (e) {
-    console.error(`Turnstile: frame click failed (${e.message}); trying coordinate click…`);
-  }
-  try {
-    const el = await page.$('iframe[src*="challenges.cloudflare.com"]');
-    if (!el) { console.error('Turnstile: no widget iframe present.'); return; }
-    const bb = await el.boundingBox();
-    if (!bb) { console.error('Turnstile: iframe has no bounding box.'); return; }
-    await page.mouse.click(bb.x + 30, bb.y + bb.height / 2);
-    console.error('Turnstile: coordinate click dispatched.');
-  } catch (e) {
-    console.error(`Turnstile: coordinate click failed (${e.message}).`);
+    console.error(`Turnstile: click failed (${e.message}).`);
   }
 }
 
