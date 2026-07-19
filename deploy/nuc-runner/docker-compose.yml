@@ -36,11 +36,9 @@ services:
       ACCESS_TOKEN: ${ACCESS_TOKEN}
       LABELS: psxplace               # must match runs-on in check-psxplace.yml
       EPHEMERAL: "0"                 # DEBUG: persistent; restore "1" after fix
-      # DEBUG (2026-07-19): root owns /dev/dri/renderD128 (crw-rw---- root:104),
-      # so running as root grants GPU access without fighting group_add (the
-      # runner entrypoint drops docker-supplied supplementary groups on su).
-      # This is a discriminating test (perms vs driver). RESTORE "false" after.
-      RUN_AS_ROOT: "true"
+      # Non-root: Firefox refuses to launch as root, and the image now bakes the
+      # "runner" user into GID 104 for renderD128 access (see Dockerfile).
+      RUN_AS_ROOT: "false"
     # GPU passthrough: give the container the NUC's integrated GPU so Firefox
     # gets a REAL hardware WebGL renderer (e.g. "Mesa Intel(R) ...") instead of
     # the software "llvmpipe" string that Cloudflare flags as a bot, causing it

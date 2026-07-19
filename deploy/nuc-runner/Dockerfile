@@ -3,7 +3,11 @@
 #
 # Build from the REPO ROOT (context must include package*.json):
 #   docker build -f deploy/nuc-runner/Dockerfile -t psxplace-runner:latest .
-FROM myoung34/github-runner:ubuntu-jammy
+#
+# Base is ubuntu-noble (24.04): its Mesa (~24.x) supports modern Intel iGPUs;
+# jammy's (22.04) Mesa could not initialize this NUC's GPU (llvmpipe fallback,
+# eglinfo found no device even as root — diagnosed 2026-07-19).
+FROM myoung34/github-runner:ubuntu-noble
 
 # Node 22 via NodeSource — the workflow uses this instead of actions/setup-node.
 RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
@@ -17,9 +21,17 @@ RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - \
 # mesa-utils ships glxinfo for verifying the renderer inside the container.
 RUN apt-get update \
  && apt-get install -y --no-install-recommends \
-      xvfb libgtk-3-0 libdbus-glib-1-2 libasound2 libx11-xcb1 libxt6 libpci3 \
-      libgl1-mesa-dri libglx-mesa0 libegl-mesa0 mesa-va-drivers mesa-utils \
+      xvfb libgtk-3-0 libdbus-glib-1-2 libasound2t64 libx11-xcb1 libxt6 libpci3 \
+      libgl1-mesa-dri libglx-mesa0 libegl-mesa0 libgbm1 mesa-va-drivers mesa-utils \
  && rm -rf /var/lib/apt/lists/*
+
+# Grant the non-root "runner" user access to the DRI render node. The host's
+# renderD128 is group GID 104; docker's group_add doesn't survive the runner
+# entrypoint's su, so bake the membership into /etc/group here. (Inside the base
+# image GID 104 may already belong to another group — the name is irrelevant,
+# only the numeric GID must match the host device's group.)
+RUN if ! getent group 104 >/dev/null; then groupadd -g 104 render; fi \
+ && usermod -aG "$(getent group 104 | cut -d: -f1)" runner
 
 # Bake the Camoufox browser and warm the npm cache for the "runner" user
 # (with RUN_AS_ROOT=false the job runs as "runner"; caches are read from its HOME).
