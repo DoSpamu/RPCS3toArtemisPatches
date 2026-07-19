@@ -34,29 +34,32 @@ async function challengeCleared(page) {
 }
 
 // Best-effort click of the interactive Cloudflare Turnstile checkbox. The widget
-// renders inside a CLOSED shadow root, so neither page.content() nor any CSS/
-// frame selector can reach it (diagnosed 2026-07-19: challenge HTML has zero
-// iframes in the light DOM). The only light-DOM trace is the hidden
-// cf-turnstile-response input; the shadow host is its nearest ancestor with a
-// real bounding box, and the checkbox sits ~25px from the widget's left edge.
+// is a cross-origin iframe (challenges.cloudflare.com) injected into a CLOSED
+// shadow root, so page.content()/CSS selectors can't see it — but Playwright
+// still tracks it in page.frames(), and frameElement().boundingBox() gives the
+// true 300x65 widget geometry (diagnosed 2026-07-19). The checkbox sits ~22px
+// from the widget's left edge at half height. Do NOT climb the light-DOM
+// ancestors of the hidden cf-turnstile-response input — they resolve to the
+// 896px-wide content column, not the widget, and the click drifts off target.
 // Logs each step so a single CI dispatch is diagnostic. Never throws — the
 // caller re-checks clearance.
 async function solveTurnstile(page) {
   try {
-    const box = await page.evaluate(() => {
-      let n = document.querySelector('input[name="cf-turnstile-response"]');
-      while (n && n !== document.body) {
-        const r = n.getBoundingClientRect();
-        if (r.width > 50 && r.height > 30) return { x: r.x, y: r.y, w: r.width, h: r.height };
-        n = n.parentElement;
+    let box = null;
+    const deadline = Date.now() + 10000;
+    while (Date.now() < deadline && !box) {
+      const frame = page.frames().find(f => f.url().includes('challenges.cloudflare.com'));
+      if (frame) {
+        const el = await frame.frameElement().catch(() => null);
+        box = el ? await el.boundingBox().catch(() => null) : null;
       }
-      return null;
-    });
-    if (!box) { console.error('Turnstile: no rendered widget host found in light DOM.'); return; }
-    const cx = box.x + 25, cy = box.y + box.h / 2;
-    console.error(`Turnstile: widget host at ${Math.round(box.x)},${Math.round(box.y)} ${Math.round(box.w)}x${Math.round(box.h)} — clicking (${Math.round(cx)}, ${Math.round(cy)})…`);
-    await page.mouse.move(cx - 60, cy + 20, { steps: 12 });
-    await page.mouse.move(cx, cy, { steps: 8 });
+      if (!box) await page.waitForTimeout(500);
+    }
+    if (!box) { console.error('Turnstile: no challenge frame appeared within 10s.'); return; }
+    const cx = box.x + 22, cy = box.y + box.height / 2;
+    console.error(`Turnstile: widget frame at ${Math.round(box.x)},${Math.round(box.y)} ${Math.round(box.width)}x${Math.round(box.height)} — clicking (${Math.round(cx)}, ${Math.round(cy)})…`);
+    await page.mouse.move(cx - 80, cy + 30, { steps: 15 });
+    await page.mouse.move(cx, cy, { steps: 10 });
     await page.mouse.click(cx, cy);
     console.error('Turnstile: checkbox click dispatched.');
   } catch (e) {
