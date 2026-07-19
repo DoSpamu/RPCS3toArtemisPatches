@@ -1,28 +1,34 @@
 'use strict';
-// GPU-passthrough verification — runs ON the NUC via the temporarily repointed
-// scrape step. Confirms the container now sees a real GPU and that Cloudflare
-// consequently offers the Turnstile widget. Read-only, writes no state.
-// Throwaway diagnostic — revert the workflow to check_psxplace.js before merge.
+// GPU/EGL verification — runs ON the NUC via the temporarily repointed scrape
+// step. glxinfo-under-Xvfb reports llvmpipe even with a real GPU (Xvfb is a
+// software X server); hardware WebGL must come from EGL on the DRM render node.
+// This dumps perms + the EGL renderer, then forces Firefox onto EGL and checks
+// whether Cloudflare offers the Turnstile widget. Read-only. Throwaway.
 const { execSync } = require('child_process');
 const { Camoufox } = require('camoufox');
 
 const URL = 'https://www.psx-place.com/threads/60-unlock-fps-patches.49905/';
 
-function hostGl() {
-  try {
-    // glxinfo needs a display; run it under the same Xvfb Camoufox will use.
-    const out = execSync('xvfb-run -a glxinfo 2>/dev/null | grep -iE "OpenGL renderer|OpenGL vendor"', { encoding: 'utf8' });
-    return out.trim() || '(no renderer line)';
-  } catch (e) {
-    return `glxinfo failed: ${e.message.split('\n')[0]}`;
-  }
+function sh(cmd) {
+  try { return execSync(cmd, { encoding: 'utf8' }).trim() || '(empty)'; }
+  catch (e) { return `FAILED: ${(e.message || '').split('\n')[0]}`; }
 }
+
+// Force Firefox to use EGL on the hardware render node instead of Xvfb's
+// software GLX. MOZ_X11_EGL=1 switches the X11 path to EGL.
+const EGL_ENV = { ...process.env, MOZ_X11_EGL: '1', LIBGL_ALWAYS_SOFTWARE: '0' };
+const EGL_PREFS = {
+  'gfx.x11-egl.force-enabled': true,
+  'webgl.force-enabled': true,
+  'webgl.disabled': false,
+  'gfx.webrender.all': true,
+};
 
 async function run(cfg) {
   const label = `headless=${cfg.headless} os=${cfg.os}`;
   let browser;
   try {
-    browser = await Camoufox(cfg);
+    browser = await Camoufox({ ...cfg, humanize: true, env: EGL_ENV, firefox_user_prefs: EGL_PREFS });
     const page = await browser.newPage();
     await page.goto(URL, { waitUntil: 'domcontentloaded', timeout: 30000 });
     let sawWidget = false, cleared = false, box = null;
@@ -55,9 +61,13 @@ async function run(cfg) {
 }
 
 (async () => {
-  console.log('host GL (via xvfb-run glxinfo):');
-  console.log('  ' + hostGl().replace(/\n/g, '\n  '));
-  await run({ headless: 'virtual', os: 'windows', humanize: true });
-  await run({ headless: 'virtual', os: 'linux',   humanize: true });
+  console.log('== container GPU access ==');
+  console.log('id:            ' + sh('id'));
+  console.log('/dev/dri:      ' + sh('ls -ln /dev/dri').replace(/\n/g, ' | '));
+  console.log('eglinfo (HW):  ' + sh('eglinfo -B 2>/dev/null | grep -iE "Device platform|OpenGL renderer|Vendor:" | head -4').replace(/\n/g, ' | '));
+  console.log('glxinfo(surfaceless): ' + sh('EGL_PLATFORM=surfaceless glxinfo -B 2>/dev/null | grep -iE "renderer" | head -2').replace(/\n/g, ' | '));
+
+  await run({ headless: true,      os: 'windows' });
+  await run({ headless: 'virtual', os: 'windows' });
   console.log('\nmatrix done');
 })();
