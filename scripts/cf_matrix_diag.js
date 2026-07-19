@@ -1,19 +1,23 @@
 'use strict';
-// One-shot Cloudflare fingerprint matrix — runs ON the NUC via the diag-cf
-// workflow. For each Camoufox config it loads the thread, records whether CF
-// offers a Turnstile widget (page.frames() has a challenges.cloudflare.com
-// frame) or hard-blocks, and dumps the fingerprint CF actually sees
-// (navigator.platform, UA, WebGL renderer). Read-only, writes no state.
-// Throwaway diagnostic — not part of the normal workflow.
+// One-shot Cloudflare WebGL-spoof matrix — runs ON the NUC via the temporarily
+// repointed scrape step. The NUC has no GPU, so Camoufox relays a broken WebGL
+// fingerprint (null in true-headless, "llvmpipe" under Xvfb) and CF hard-blocks
+// without offering a Turnstile widget. camoufox-js exposes webgl_config:
+// [vendor, renderer] to force the strings. This tries plausible pairs and
+// reports, per config, the WebGL string CF sees and whether a widget appears.
+// Read-only, writes no state. Throwaway diagnostic.
 const { Camoufox } = require('camoufox');
 
 const URL = 'https://www.psx-place.com/threads/60-unlock-fps-patches.49905/';
 
+// [vendor, renderer] pairs. NVIDIA pair mirrors the known-good dev machine.
+const NVIDIA = ['Google Inc. (NVIDIA)', 'ANGLE (NVIDIA, NVIDIA GeForce GTX 980 Direct3D11 vs_5_0 ps_5_0), or similar'];
+const INTEL  = ['Google Inc. (Intel)',  'ANGLE (Intel, Intel(R) UHD Graphics 630 Direct3D11 vs_5_0 ps_5_0), or similar'];
+
 const CONFIGS = [
-  { headless: true,      os: 'windows' },
-  { headless: true,      os: 'linux'   },
-  { headless: 'virtual', os: 'linux'   },
-  { headless: 'virtual', os: 'windows' },
+  { headless: 'virtual', os: 'windows', webgl_config: NVIDIA },
+  { headless: 'virtual', os: 'windows', webgl_config: INTEL  },
+  { headless: true,      os: 'windows', webgl_config: NVIDIA },
 ];
 
 async function readFingerprint(page) {
@@ -24,33 +28,26 @@ async function readFingerprint(page) {
       const dbg = gl.getExtension('WEBGL_debug_renderer_info');
       webgl = gl.getParameter(dbg.UNMASKED_RENDERER_WEBGL);
     } catch (e) { webgl = 'err:' + e.message; }
-    return {
-      platform: navigator.platform,
-      ua: navigator.userAgent,
-      webgl,
-      hw: navigator.hardwareConcurrency,
-      screen: `${screen.width}x${screen.height}`,
-    };
+    return { platform: navigator.platform, webgl };
   }).catch(e => ({ err: e.message }));
 }
 
 (async () => {
   for (const cfg of CONFIGS) {
-    const label = `headless=${cfg.headless} os=${cfg.os}`;
+    const label = `headless=${cfg.headless} os=${cfg.os} webgl=${cfg.webgl_config[1].slice(7, 20)}`;
     let browser;
     try {
-      browser = await Camoufox({ headless: cfg.headless, os: cfg.os, humanize: true });
+      browser = await Camoufox(cfg);
       const page = await browser.newPage();
       await page.goto(URL, { waitUntil: 'domcontentloaded', timeout: 30000 });
 
-      // Poll up to 12s: did a CF challenge frame appear, and/or did it clear?
-      let sawFrame = false, cleared = false, box = null;
-      for (let i = 0; i < 12; i++) {
+      let sawWidget = false, cleared = false, box = null;
+      for (let i = 0; i < 15; i++) {
         const t = await page.title().catch(() => '?');
         if (!t.includes('Just a moment')) { cleared = true; break; }
         const frame = page.frames().find(f => f.url().includes('challenges.cloudflare.com'));
         if (frame) {
-          sawFrame = true;
+          sawWidget = true;
           const el = await frame.frameElement().catch(() => null);
           if (el) box = await el.boundingBox().catch(() => null);
         }
@@ -58,10 +55,8 @@ async function readFingerprint(page) {
       }
       const fp = await readFingerprint(page);
       console.log(`\n### ${label}`);
-      console.log(`   result: cleared=${cleared} sawWidget=${sawFrame} box=${box ? `${Math.round(box.width)}x${Math.round(box.height)}` : 'none'}`);
-      console.log(`   platform=${fp.platform} hw=${fp.hw} screen=${fp.screen}`);
-      console.log(`   webgl=${fp.webgl}`);
-      console.log(`   ua=${fp.ua}`);
+      console.log(`   result: cleared=${cleared} sawWidget=${sawWidget} box=${box ? `${Math.round(box.width)}x${Math.round(box.height)}` : 'none'}`);
+      console.log(`   webgl-seen=${fp.webgl}`);
     } catch (e) {
       console.log(`\n### ${label}\n   FATAL: ${e.message}`);
     } finally {
