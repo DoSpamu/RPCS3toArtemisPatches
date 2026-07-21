@@ -16,6 +16,16 @@ async function run(label, extra) {
       os: 'windows',
       humanize: true,
       env: { ...process.env, MOZ_ENABLE_WAYLAND: '1', LIBGL_ALWAYS_SOFTWARE: '0' },
+      // Force hardware WebGL: bypass Firefox's GPU blocklist + software fallback
+      // so its EGL context uses the Intel iGPU instead of Mesa's llvmpipe.
+      firefox_user_prefs: {
+        'webgl.force-enabled': true,
+        'webgl.disable-fail-if-major-performance-caveat': true,
+        'gfx.webrender.all': true,
+        'gfx.webrender.software': false,
+        'layers.acceleration.force-enabled': true,
+        'media.gpu-process-decoder': false,
+      },
       ...extra,
     });
     const page = await browser.newPage();

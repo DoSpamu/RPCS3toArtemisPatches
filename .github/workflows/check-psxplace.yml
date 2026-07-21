@@ -35,7 +35,9 @@ jobs:
         run: |
           export XDG_RUNTIME_DIR=/tmp/xdgrt
           mkdir -p "$XDG_RUNTIME_DIR" && chmod 700 "$XDG_RUNTIME_DIR"
-          export WLR_BACKENDS=headless WLR_RENDERER=gles2 WLR_RENDERER_ALLOW_SOFTWARE=1 MOZ_ENABLE_WAYLAND=1
+          export WLR_BACKENDS=headless WLR_RENDERER=gles2 WLR_RENDER_DRM_DEVICE=/dev/dri/renderD128 WLR_RENDERER_ALLOW_SOFTWARE=1
+          export MOZ_ENABLE_WAYLAND=1 LIBGL_ALWAYS_SOFTWARE=0 MESA_LOADER_DRIVER_OVERRIDE=iris
+          export MOZ_DISABLE_CONTENT_SANDBOX=1 MOZ_DISABLE_GPU_SANDBOX=1
           cage -- node scripts/cf_matrix_diag.js
         continue-on-error: true
         # Exit codes: 2 = Cloudflare block, 3 = empty scrape (layout change), 1 = crash.
