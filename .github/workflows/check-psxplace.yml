@@ -29,7 +29,14 @@ jobs:
 
       - name: Scrape thread and parse new patches
         id: scrape
-        run: node scripts/cf_matrix_diag.js
+        # DEBUG: run the GPU/Wayland diag under cage (wlroots headless backend +
+        # GPU renderer) so Firefox renders WebGL on the real Intel iGPU. Revert
+        # to `node scripts/check_psxplace.js` before merge.
+        run: |
+          export XDG_RUNTIME_DIR=/tmp/xdgrt
+          mkdir -p "$XDG_RUNTIME_DIR" && chmod 700 "$XDG_RUNTIME_DIR"
+          export WLR_BACKENDS=headless WLR_RENDERER=gles2 WLR_RENDERER_ALLOW_SOFTWARE=1 MOZ_ENABLE_WAYLAND=1
+          cage -- node scripts/cf_matrix_diag.js
         continue-on-error: true
         # Exit codes: 2 = Cloudflare block, 3 = empty scrape (layout change), 1 = crash.
         # continue-on-error lets the commit step save partial results;

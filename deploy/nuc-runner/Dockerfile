@@ -23,6 +23,7 @@ RUN apt-get update \
  && apt-get install -y --no-install-recommends \
       xvfb libgtk-3-0 libdbus-glib-1-2 libasound2t64 libx11-xcb1 libxt6 libpci3 \
       libgl1-mesa-dri libglx-mesa0 libegl-mesa0 libgbm1 mesa-va-drivers mesa-utils \
+      cage libgles2 xwayland \
  && rm -rf /var/lib/apt/lists/*
 
 # Grant the non-root "runner" user access to the DRI render node. The host's

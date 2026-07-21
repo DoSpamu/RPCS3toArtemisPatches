@@ -1,23 +1,23 @@
 'use strict';
-// GPU/EGL verification on noble. EGL now enumerates a device and the runner is
-// in the render group; the open question is whether Device #0 is the Intel GPU
-// and whether Firefox uses it. glxinfo/Xvfb gives llvmpipe; Firefox --headless
-// uses surfaceless EGL which can hit the hardware GBM device directly. Dumps the
-// full eglinfo device renderer, then tests headless:true (surfaceless). Read-only.
-const { execSync } = require('child_process');
+// cage/Wayland GPU test. The runner wraps this in `cage -- node ...` with a
+// wlroots headless backend + GPU renderer, so there is a Wayland compositor
+// backed by the Intel iGPU. Camoufox launches HEADED (headless:false) with
+// MOZ_ENABLE_WAYLAND=1 so Firefox renders into cage and WebGL runs on the real
+// GPU (goal: "Mesa Intel(R) ..." instead of "llvmpipe"). Read-only. Throwaway.
 const { Camoufox } = require('camoufox');
 
 const URL = 'https://www.psx-place.com/threads/60-unlock-fps-patches.49905/';
 
-function sh(cmd) {
-  try { return execSync(cmd, { encoding: 'utf8', timeout: 40000 }).trim() || '(empty)'; }
-  catch (e) { return `FAILED: ${(e.message || '').split('\n')[0]}`; }
-}
-
 async function run(label, extra) {
   let browser;
   try {
-    browser = await Camoufox({ os: 'windows', humanize: true, ...extra });
+    browser = await Camoufox({
+      headless: false,
+      os: 'windows',
+      humanize: true,
+      env: { ...process.env, MOZ_ENABLE_WAYLAND: '1', LIBGL_ALWAYS_SOFTWARE: '0' },
+      ...extra,
+    });
     const page = await browser.newPage();
     await page.goto(URL, { waitUntil: 'domcontentloaded', timeout: 30000 });
     let sawWidget = false, cleared = false, box = null;
@@ -50,11 +50,8 @@ async function run(label, extra) {
 }
 
 (async () => {
-  console.log('== eglinfo -B (device renderer) ==');
-  console.log(sh('eglinfo -B 2>&1 | head -40'));
-
-  const HW = { LIBGL_ALWAYS_SOFTWARE: '0' };
-  await run('headless:true (surfaceless EGL)', { headless: true, env: { ...process.env, ...HW } });
-  await run('headless:true + iris override', { headless: true, env: { ...process.env, ...HW, MESA_LOADER_DRIVER_OVERRIDE: 'iris' } });
+  console.log('== Wayland session ==');
+  console.log(`   WAYLAND_DISPLAY=${process.env.WAYLAND_DISPLAY || '(unset)'} XDG_RUNTIME_DIR=${process.env.XDG_RUNTIME_DIR || '(unset)'}`);
+  await run('headed under cage (Wayland)', {});
   console.log('\nmatrix done');
 })();
