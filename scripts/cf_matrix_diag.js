@@ -1,25 +1,23 @@
 'use strict';
-// GPU/EGL verification on the ubuntu-noble (newer Mesa) image. Runs ON the NUC
-// via the temporarily repointed scrape step. Confirms whether the container now
-// initializes the Intel GPU (eglinfo device platform) and whether Firefox gets
-// a hardware WebGL renderer that makes Cloudflare offer the Turnstile widget.
-// Read-only. Throwaway diagnostic — revert workflow to check_psxplace.js first.
+// GPU/EGL verification on noble. EGL now enumerates a device and the runner is
+// in the render group; the open question is whether Device #0 is the Intel GPU
+// and whether Firefox uses it. glxinfo/Xvfb gives llvmpipe; Firefox --headless
+// uses surfaceless EGL which can hit the hardware GBM device directly. Dumps the
+// full eglinfo device renderer, then tests headless:true (surfaceless). Read-only.
 const { execSync } = require('child_process');
 const { Camoufox } = require('camoufox');
 
 const URL = 'https://www.psx-place.com/threads/60-unlock-fps-patches.49905/';
 
 function sh(cmd) {
-  try { return execSync(cmd, { encoding: 'utf8', timeout: 30000 }).trim() || '(empty)'; }
+  try { return execSync(cmd, { encoding: 'utf8', timeout: 40000 }).trim() || '(empty)'; }
   catch (e) { return `FAILED: ${(e.message || '').split('\n')[0]}`; }
 }
 
-// MOZ_X11_EGL=1 makes Firefox use EGL (hardware render node) instead of Xvfb's
-// software GLX. Firefox WebGL over EGL on renderD128 = real Intel renderer.
 async function run(label, extra) {
   let browser;
   try {
-    browser = await Camoufox({ headless: 'virtual', os: 'windows', humanize: true, ...extra });
+    browser = await Camoufox({ os: 'windows', humanize: true, ...extra });
     const page = await browser.newPage();
     await page.goto(URL, { waitUntil: 'domcontentloaded', timeout: 30000 });
     let sawWidget = false, cleared = false, box = null;
@@ -52,12 +50,11 @@ async function run(label, extra) {
 }
 
 (async () => {
-  console.log('== container GPU access (Mesa version + device) ==');
-  console.log('mesa:     ' + sh('glxinfo -B 2>/dev/null | grep -iE "OpenGL version|Mesa" | head -2').replace(/\n/g, ' | '));
-  console.log('id:       ' + sh('id'));
-  console.log('eglinfo:  ' + sh('eglinfo 2>/dev/null | grep -iE "Device platform|Device #|OpenGL renderer|EGL_MESA" | head -6').replace(/\n/g, ' | '));
+  console.log('== eglinfo -B (device renderer) ==');
+  console.log(sh('eglinfo -B 2>&1 | head -40'));
 
-  await run('virtual + plain', {});
-  await run('virtual + MOZ_X11_EGL', { env: { ...process.env, MOZ_X11_EGL: '1', LIBGL_ALWAYS_SOFTWARE: '0' }, firefox_user_prefs: { 'gfx.x11-egl.force-enabled': true, 'webgl.force-enabled': true } });
+  const HW = { LIBGL_ALWAYS_SOFTWARE: '0' };
+  await run('headless:true (surfaceless EGL)', { headless: true, env: { ...process.env, ...HW } });
+  await run('headless:true + iris override', { headless: true, env: { ...process.env, ...HW, MESA_LOADER_DRIVER_OVERRIDE: 'iris' } });
   console.log('\nmatrix done');
 })();
