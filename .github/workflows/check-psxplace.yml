@@ -35,7 +35,7 @@ jobs:
         run: |
           npm i patchright@latest --no-save --no-audit --no-fund
           npx patchright install --with-deps chromium
-          xvfb-run -a --server-args="-screen 0 1920x1080x24" node scripts/cf_patchright_diag.js
+          node scripts/cf_patchright_diag.js
         continue-on-error: true
         # Exit codes: 2 = Cloudflare block, 3 = empty scrape (layout change), 1 = crash.
         # continue-on-error lets the commit step save partial results;

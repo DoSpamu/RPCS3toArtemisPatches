@@ -26,8 +26,8 @@ async function run(label, headless) {
     browser = await chromium.launch({ headless, args: GPU_ARGS });
     const page = await browser.newPage();
     await page.goto(URL, { waitUntil: 'domcontentloaded', timeout: 30000 });
-    let sawWidget = false, cleared = false, box = null;
-    for (let i = 0; i < 40; i++) {
+    let sawWidget = false, cleared = false, box = null, clickTried = false;
+    for (let i = 0; i < 35; i++) {
       const t = await page.title().catch(() => '?');
       if (!t.includes('Just a moment')) { cleared = true; break; }
       const frame = page.frames().find(f => f.url().includes('challenges.cloudflare.com'));
@@ -35,6 +35,19 @@ async function run(label, headless) {
         sawWidget = true;
         const el = await frame.frameElement().catch(() => null);
         if (el) box = await el.boundingBox().catch(() => null);
+        if (!clickTried && i >= 3) {
+          clickTried = true;
+          // Proper element click inside the Turnstile iframe (Chromium exposes
+          // it as a real frame). Fall back to a coordinate click on the widget.
+          try {
+            const cb = page.frameLocator('iframe[src*="challenges.cloudflare.com"]').locator('input[type="checkbox"], body').first();
+            await cb.click({ timeout: 8000 });
+            console.log('   clicked Turnstile via frameLocator');
+          } catch (e) {
+            console.log(`   frameLocator click failed (${e.message.split('\n')[0]}); coordinate click`);
+            if (box) { const cx = box.x + 30, cy = box.y + box.height / 2; await page.mouse.click(cx, cy).catch(() => {}); }
+          }
+        }
       }
       await page.waitForTimeout(1000);
     }
@@ -60,6 +73,6 @@ async function run(label, headless) {
   // headless:false (headed under Xvfb) — stealth Chromium passes Turnstile
   // passively far more often headed than headless. ANGLE-EGL keeps WebGL on
   // the GPU regardless of the X display, so hardware WebGL survives.
-  await run('patchright chromium headed', false);
+  await run('patchright chromium', true);
   console.log('\nmatrix done');
 })();
