@@ -1,0 +1,7 @@
+# The runner image build only needs package.json + package-lock.json (the
+# Dockerfile COPYs those to warm the npm/Camoufox cache). Exclude everything
+# else so the build context stays tiny — the repo carries thousands of .ncl
+# files (USERLIST/) that must NOT be shipped to the Docker daemon.
+*
+!package.json
+!package-lock.json

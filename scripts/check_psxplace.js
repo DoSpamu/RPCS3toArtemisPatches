@@ -34,31 +34,48 @@ async function challengeCleared(page) {
 }
 
 // Best-effort click of the interactive Cloudflare Turnstile checkbox. The widget
-// lives in a cross-origin iframe that page JS can't reach, but Playwright's
-// frameLocator can; a coordinate click is the fallback. Logs each step so a
-// single CI dispatch is diagnostic. Never throws — the caller re-checks clearance.
+// is a cross-origin iframe (challenges.cloudflare.com) injected into a CLOSED
+// shadow root, so page.content()/CSS selectors can't see it — but Playwright
+// still tracks it in page.frames(), and frameElement().boundingBox() gives the
+// true 300x65 widget geometry (diagnosed 2026-07-19). The checkbox sits ~22px
+// from the widget's left edge at half height. Do NOT climb the light-DOM
+// ancestors of the hidden cf-turnstile-response input — they resolve to the
+// 896px-wide content column, not the widget, and the click drifts off target.
+// Logs each step so a single CI dispatch is diagnostic. Never throws — the
+// caller re-checks clearance.
 async function solveTurnstile(page) {
   try {
-    const target = page
-      .frameLocator('iframe[src*="challenges.cloudflare.com"]')
-      .locator('input[type="checkbox"], body');
-    await target.waitFor({ state: 'visible', timeout: 15000 });
-    console.error('Turnstile: widget found, clicking checkbox…');
-    await target.click({ timeout: 10000 });
+    let box = null, sawFrame = false, sawElement = false;
+    const deadline = Date.now() + 15000;
+    while (Date.now() < deadline && !box) {
+      const frame = page.frames().find(f => f.url().includes('challenges.cloudflare.com'));
+      if (frame) {
+        sawFrame = true;
+        const el = await frame.frameElement().catch(() => null);
+        if (el) {
+          sawElement = true;
+          box = await el.boundingBox().catch(() => null);
+        }
+      }
+      if (!box) await page.waitForTimeout(500);
+    }
+    if (!box) {
+      // Distinguish the failure modes: no CF frame at all (hard/managed block,
+      // no widget offered — typical of datacenter IPs) vs. a frame that exists
+      // but never lays out a bounding box (render/Xvfb issue). Dump the full
+      // frame list so a single CI dispatch tells us which.
+      const urls = page.frames().map(f => f.url()).filter(Boolean);
+      console.error(`Turnstile: no clickable widget after 15s (sawFrame=${sawFrame}, sawElement=${sawElement}). Frames: ${JSON.stringify(urls)}`);
+      return;
+    }
+    const cx = box.x + 22, cy = box.y + box.height / 2;
+    console.error(`Turnstile: widget frame at ${Math.round(box.x)},${Math.round(box.y)} ${Math.round(box.width)}x${Math.round(box.height)} — clicking (${Math.round(cx)}, ${Math.round(cy)})…`);
+    await page.mouse.move(cx - 80, cy + 30, { steps: 15 });
+    await page.mouse.move(cx, cy, { steps: 10 });
+    await page.mouse.click(cx, cy);
     console.error('Turnstile: checkbox click dispatched.');
-    return;
   } catch (e) {
-    console.error(`Turnstile: frame click failed (${e.message}); trying coordinate click…`);
-  }
-  try {
-    const el = await page.$('iframe[src*="challenges.cloudflare.com"]');
-    if (!el) { console.error('Turnstile: no widget iframe present.'); return; }
-    const bb = await el.boundingBox();
-    if (!bb) { console.error('Turnstile: iframe has no bounding box.'); return; }
-    await page.mouse.click(bb.x + 30, bb.y + bb.height / 2);
-    console.error('Turnstile: coordinate click dispatched.');
-  } catch (e) {
-    console.error(`Turnstile: coordinate click failed (${e.message}).`);
+    console.error(`Turnstile: click failed (${e.message}).`);
   }
 }
 
@@ -134,9 +151,15 @@ async function retryOnCfBlock(fn, opts, wait = sleep) {
 // Each attempt gets a brand-new Camoufox instance — a fresh fingerprint is what
 // actually gets us past Cloudflare; reusing the browser would reproduce the block.
 async function scrapeThreadWithRetry() {
-  // 'virtual' runs a headed browser under Xvfb on Linux (CI) — Turnstile almost
-  // never clears in true-headless. Non-Linux dev machines keep plain headless.
-  const headless = process.platform === 'linux' ? 'virtual' : true;
+  // Headless mode is the dominant Cloudflare signal here (diagnosed 2026-07-19):
+  // 'virtual' (headed Firefox under Xvfb) renders WebGL/canvas in software
+  // (Mesa llvmpipe), a strong VM/bot tell that makes CF hard-block WITHOUT even
+  // offering a Turnstile widget — reproduced on both datacenter (GHA) and
+  // residential (NUC, same home IP as a passing dev machine) egress. Plain
+  // headless (true) lets Camoufox spoof a real GPU and CF serves the solvable
+  // widget. Override via CAMOUFOX_HEADLESS=virtual|false|true for A/B testing.
+  const env = process.env.CAMOUFOX_HEADLESS;
+  const headless = env === 'virtual' ? 'virtual' : env === 'false' ? false : true;
   return retryOnCfBlock(async () => {
     const browser = await Camoufox({ headless, os: 'windows', humanize: true });
     try {

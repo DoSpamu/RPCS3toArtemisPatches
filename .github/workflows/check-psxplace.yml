@@ -1,8 +1,11 @@
 name: Check PSXPlace Thread
 
 on:
-  schedule:
-    - cron: '0 6 * * *'   # daily at 06:00 UTC
+  # Daily scraping now runs on a real Windows desktop (deploy/windows/) — it
+  # clears Cloudflare where the headless self-hosted runner cannot. The cron is
+  # disabled to avoid daily red failures; workflow_dispatch stays for manual runs.
+  # schedule:
+  #   - cron: '0 6 * * *'   # daily at 06:00 UTC (disabled 2026-07-22)
   workflow_dispatch:        # allow manual trigger from GitHub UI
 
 permissions:

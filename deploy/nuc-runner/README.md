@@ -38,25 +38,24 @@ Repo → Settings → Actions → General:
 - Sprawdź, że tylko `check-psxplace.yml` używa `runs-on: [self-hosted, psxplace]`
   (żaden workflow odpalany przez PR nie może celować w self-hosted).
 
-## 3. Build obrazu (na NUC-u)
+## 3-4. Deploy stacka w Portainerze (Repository — Portainer buduje sam)
 
-```bash
-git clone https://github.com/DoSpamu/RPCS3toArtemisPatches.git
-cd RPCS3toArtemisPatches
-docker build -f deploy/nuc-runner/Dockerfile -t psxplace-runner:latest .
-```
+Portainer buduje obraz z Dockerfile podczas deployu — bez ręcznego `git clone`
+ani `docker build`. Compose jest w **korzeniu repo** (`docker-compose.yml`), bo
+kontekst buildu musi być korzeniem (Dockerfile kopiuje `package*.json`), a
+Portainer rzuca 500 na kontekst wychodzący ponad katalog compose (np. `../..`).
+`.dockerignore` trzyma kontekst mały (tylko `package*.json`).
 
-Kontekst buildu MUSI być korzeniem repo (Dockerfile kopiuje `package*.json`).
+Portainer → Stacks → Add stack → **Build method: Repository**:
+- **Repository URL:** `https://github.com/DoSpamu/RPCS3toArtemisPatches`
+- **Reference:** `refs/heads/master` (lub gałąź robocza)
+- **Compose path:** `docker-compose.yml`
+- **Environment variables:** `ACCESS_TOKEN` = PAT z kroku 1, `RENDER_GID` = `104`
+- **Deploy the stack**
 
-## 4. Deploy stacka w Portainerze
-
-Portainer → Stacks → Add stack → nazwa `psxplace-runner` → wklej zawartość
-`docker-compose.yml` z tego katalogu → w sekcji **Environment variables** dodaj
-`ACCESS_TOKEN` = PAT z kroku 1 → Deploy.
-
-Po deployu kontener runnera startuje od razu (jednorazowo) — wykorzystaj to
-okno na test z kroku 5. Po pierwszym jobie zgaśnie i dalej budzi go już tylko
-Ofelia.
+Aktualizacja po zmianie kodu: w stacku **Pull and redeploy** (Portainer klonuje
+świeży kod i przebudowuje obraz). GPU: compose przekazuje `/dev/dri`, a obraz
+wpisuje usera `runner` do grupy GID 104 (dostęp do `renderD128`).
 
 ## 5. Test wdrożenia
 
