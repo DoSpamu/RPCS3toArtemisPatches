@@ -4,7 +4,7 @@
 
 # PS3 FPS Unlock Patches
 
-![Confirmed Games](https://img.shields.io/badge/confirmed_games-129-brightgreen)
+![Confirmed Games](https://img.shields.io/badge/confirmed_games-132-brightgreen)
 ![Patch Files](https://img.shields.io/badge/patch_files-2%2C544-blue)
 ![Platform](https://img.shields.io/badge/platform-PS3_CFW-lightgrey)
 ![License](https://img.shields.io/badge/license-MIT-yellow)
@@ -22,7 +22,7 @@ Sourced from the RPCS3 emulator patch database and the PSXPlace community.
 | Your situation | Use this | Section |
 |----------------|----------|---------|
 | I want a tested, plug-and-play patch | **`Working Artemis Patches/`** folder (39 games) | [Confirmed (39)](#confirmed-working-games-39-games) |
-| My game isn't in that folder | **`PSXPlace Confirmed/`** folder (90 games) | [Community Confirmed](#community-confirmed-games--psxplace-) |
+| My game isn't in that folder | **`PSXPlace Confirmed/`** folder (93 games) | [Community Confirmed](#community-confirmed-games--psxplace-) |
 | My game isn't in either folder | Full **`USERLIST/`** (2,542 files, mixed confidence) | [About USERLIST](#about-userlist-2542-files) |
 | I don't want to FTP files | **PS3MAPI** (apply patches live in browser, ~74 games) | [`MAPI_PATCHES.md`](MAPI_PATCHES.md) |
 | I want the patch permanent, zero setup | **Pre-patched EBOOTs / PKGs** by Nascar1243 (70 games) | [`EBOOT_PATCHES.md`](EBOOT_PATCHES.md) |
@@ -37,7 +37,7 @@ The latest release (`v2.0`) has one zip with two folders:
 | Folder in zip | Contents | Use when |
 |---------------|----------|----------|
 | **`Working Artemis Patches/`** | 39 games — 100% confirmed on real PS3 | Your game is in the list below |
-| **`PSXPlace Confirmed/`** | 90 games — confirmed by Joey85 + Nascar1243 + community on real PS3 | Your game isn't in the first folder |
+| **`PSXPlace Confirmed/`** | 93 games — confirmed by Joey85 + Nascar1243 + community on real PS3 | Your game isn't in the first folder |
 
 **[→ Download v2.0](https://github.com/DoSpamu/RPCS3toArtemisPatches/releases/tag/v2.0)**
 
@@ -142,6 +142,7 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | Batman Arkham Asylum GOTY | BLUS30515 | 01.00 | Debug Menu | Joey85 |
 | Batman Arkham City | BLES01587 / BLUS30978 | v01.01 av01.00 | Debug Menu | Joey85 |
 | Batman Arkham Origins | BLUS31147 / BLUS31207 | 01.06 | Debug Menu | PSXPlace |
+| Blur | BLES00759 | 01.02 | Unlock FPS | Joey85 |
 | Borderlands 2 | BLES01684 | 01.02 | Unlock FPS | FlexBy |
 | Brutal Legend | BLES00562 | 01.02 | Unlock FPS | Joey85 |
 | Bulletstorm | BLES01134 | 01.03 | Unlock FPS | Joey85 |
@@ -183,8 +184,10 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | METAL GEAR SOLID 4 GUNS OF THE PATRIOTS | BLES00246 | 02.00 | Unlock FPS | RPCS3 |
 | Mindjack | MRTC00014 | 01.01 | Unlock FPS | Joey85 |
 | Mirrors Edge | BLES00322 | 01.01 | Unlock FPS | Joey85 |
-| MotorStorm | BCES00006 | 01.00 | UnlockFPS | RPCS3 |
+| MotorStorm | BCES00006 | 01.00 | Unlock FPS | RPCS3 |
 | Need for Speed Rivals | BLUS31201 | 01.03 | Unlock FPS | Joey85 |
+| Need for Speed SHIFT | BLUS30391 | 01.03 | Unlock FPS | Joey85 |
+| Need for Speed SHIFT 2 UNLEASHED | BLUS30580 | 01.02 | Unlock FPS | Joey85 |
 | Prince Of Persia Trilogy 3D | BLUS30754 | 01.00 | The Two Thrones Unlock FPS | Joey85 |
 | Prototype 2 | BLES01532 / BLUS30756 | 01.00 | UnlockFPS | Joey85 |
 | Ratchet And Clank All 4 One | BCAS20200 / BCES01141 / BCJS30081 / BCUS98175 / NPEA00356 | 01.03 | Unlock FPS | Joey85 |
@@ -203,7 +206,7 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | Saw | BLES00676 | 01.00 | Unlock FPS | Joey85 |
 | Saw 2 | BLES01050 | 01.00 | Unlock FPS | Joey85 |
 | Shadows Of The Damned | BLES01276 | 01.00 | Unlock FPS | Joey85 |
-| Silent Hill Downpour | BLUS30565 | 01.01 | UnlockFPS | Joey85 |
+| Silent Hill Downpour | BLUS30565 | 01.01 | Unlock FPS | Joey85 |
 | Silent Hill Homecoming | BLES00460 | 01.00 | Unlock FPS | RPCS3 |
 | Siren Blood Curse | BCES00294 | 01.00 | Unlock FPS | Joey85 |
 | Skyrim | BLUS31202 | 01.00 | Unlock FPS | RPCS3 |
@@ -211,8 +214,8 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | Sonic Unleashed | BLUS30244 | 01.02 | Disable Shadows | illusion |
 | STRANGLEHOLD | BLES00144 | 01.20 | Unlock FPS | RPCS3 |
 | The Bureau XCOM Declassified | BLUS30780 | 01.02 | Unlock FPS | Joey85 |
-| The Evil Within | BLES01916 | 01.05 | UnlockFPS | Joey85 |
-| The Godfather II | BLES00477 | 01.01 | UnlockFPS | Joey85 |
+| The Evil Within | BLES01916 | 01.05 | Unlock FPS | Joey85 |
+| The Godfather II | BLES00477 | 01.01 | Unlock FPS | Joey85 |
 | The Last of Us | BCES01585 | 01.11 | Unlock FPS | illusion |
 | The Orange Box Half-Life 2 | BLES00153 / BLUS30055 | av01.10 | Unlock FPS | PSXPlace |
 | Tom Clancy's Splinter Cell Blacklist | BLUS31025 / BLES01879 / BLES01766 | 01.03 | Unlock FPS | Joey85 |

@@ -1,3 +1,9 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 0089AF64 38000000
+0 008A4850 60000000
+#
 Memory Lot Money On 1 Race
 0
 jgduff1

@@ -1,3 +1,9 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 006E9BE8 60000000
+0 006E9B60 60000000
+#
 UnlockFPS (PSXPlace)
 0
 Joey
