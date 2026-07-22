@@ -11,11 +11,12 @@ const URL = 'https://www.psx-place.com/threads/60-unlock-fps-patches.49905/';
 
 // Force Chromium onto hardware GL via ANGLE-over-EGL on the Intel render node.
 const GPU_ARGS = [
+  '--headless=new',            // full Chrome new-headless (not the detectable
+                               // headless-shell) — less detectable, keeps ANGLE
   '--use-gl=angle',
   '--use-angle=gl-egl',
   '--enable-gpu',
   '--ignore-gpu-blocklist',
-  '--enable-unsafe-webgpu',
   '--disable-gpu-sandbox',
   '--no-sandbox',
 ];
@@ -23,7 +24,10 @@ const GPU_ARGS = [
 async function run(label, headless) {
   let browser;
   try {
-    browser = await chromium.launch({ headless, args: GPU_ARGS });
+    // headless:false so Playwright launches the FULL Chrome binary; --headless=new
+    // (in args) then runs it headless-new. This avoids the headless-shell that
+    // Cloudflare fingerprints, while keeping hardware ANGLE WebGL.
+    browser = await chromium.launch({ headless: false, args: GPU_ARGS });
     const page = await browser.newPage();
     await page.goto(URL, { waitUntil: 'domcontentloaded', timeout: 30000 });
     let sawWidget = false, cleared = false, box = null, clickTried = false;
