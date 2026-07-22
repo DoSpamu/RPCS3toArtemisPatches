@@ -14,13 +14,23 @@ param(
   [switch]$Force  # ignore the once-per-day guard
 )
 
-$ErrorActionPreference = 'Stop'
+# IMPORTANT: 'Continue', not 'Stop'. git/npm/node write normal progress to
+# stderr; under 'Stop' PowerShell 5.1 turns each stderr line into a terminating
+# error. We drive native tools explicitly and check $LASTEXITCODE instead.
+$ErrorActionPreference = 'Continue'
 $log = Join-Path $RepoPath 'scrape.log'
 
 function Log($msg) {
   $line = "[{0}] {1}" -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'), $msg
   Write-Output $line
-  try { Add-Content -Path $log -Value $line -Encoding utf8 } catch {}
+  try { Add-Content -Path $log -Value $line -Encoding utf8 -ErrorAction SilentlyContinue } catch {}
+}
+
+# Run a native command, capture merged output, return exit code + text. Never
+# throws on stderr; the caller decides based on .Code.
+function Exec([string]$File, [string[]]$CmdArgs) {
+  $out = & $File @CmdArgs 2>&1 | Out-String
+  return [pscustomobject]@{ Code = $LASTEXITCODE; Out = $out.Trim() }
 }
 
 try {
@@ -39,22 +49,24 @@ try {
 
   # Sync the dedicated clone to the latest master (discard any local drift so the
   # scraper always prepends onto current data and the push fast-forwards cleanly).
-  git fetch origin master 2>&1 | Out-Null
-  git checkout master 2>&1 | Out-Null
-  git reset --hard origin/master 2>&1 | Out-Null
-  Log "synced to origin/master @ $(git rev-parse --short HEAD)"
+  $r = Exec git @('fetch','origin','master');            if ($r.Code) { throw "git fetch failed: $($r.Out)" }
+  $r = Exec git @('checkout','master');                  if ($r.Code) { throw "git checkout failed: $($r.Out)" }
+  $r = Exec git @('reset','--hard','origin/master');     if ($r.Code) { throw "git reset failed: $($r.Out)" }
+  $head = (Exec git @('rev-parse','--short','HEAD')).Out
+  Log "synced to origin/master @ $head"
 
   # Ensure deps + the Camoufox browser are present (no-op once installed).
   if (-not (Test-Path (Join-Path $RepoPath 'node_modules\camoufox'))) {
-    Log "installing npm deps..."; npm ci --no-audit --no-fund 2>&1 | Out-Null
+    Log "installing npm deps..."; (Exec npm @('ci','--no-audit','--no-fund')) | Out-Null
   }
-  npx camoufox fetch 2>&1 | Out-Null
+  (Exec npx @('camoufox','fetch')) | Out-Null
 
   # Run the scraper. On Windows it uses headless:true (real GPU) - the mode that
-  # clears Cloudflare. Non-zero exit = CF block / empty / crash; we log and stop.
+  # clears Cloudflare. Non-zero exit = CF block / empty / crash; log and stop.
   Log "running scraper..."
-  node scripts/check_psxplace.js 2>&1 | ForEach-Object { Log "  $_" }
-  if ($LASTEXITCODE -ne 0) { throw "scraper exited $LASTEXITCODE (CF block / empty / crash) - nothing committed." }
+  $s = Exec node @('scripts/check_psxplace.js')
+  foreach ($ln in ($s.Out -split "`r?`n")) { if ($ln.Trim()) { Log "  $ln" } }
+  if ($s.Code -ne 0) { throw "scraper exited $($s.Code) (CF block / empty / crash) - nothing committed." }
 
   if (-not (Test-Path (Join-Path $RepoPath 'pr_body.txt'))) {
     Log "no new patches - nothing to commit."
@@ -64,13 +76,15 @@ try {
   }
 
   # New patches found -> regenerate README/badges and push to master.
-  node scripts/update_readme.js 2>&1 | ForEach-Object { Log "  $_" }
-  git add known_posts.json new_patches_raw/ "PSXPlace Confirmed/" USERLIST/ README.md banner.svg 2>$null
-  $staged = git diff --cached --name-only
+  (Exec node @('scripts/update_readme.js')) | Out-Null
+  (Exec git @('add','known_posts.json','new_patches_raw/','PSXPlace Confirmed/','USERLIST/','README.md','banner.svg')) | Out-Null
+  $staged = (Exec git @('diff','--cached','--name-only')).Out
   if (-not $staged) { Log "nothing staged after scrape."; Set-Content -Path $stamp -Value $today -Encoding ascii; return }
 
-  git commit -m "[Auto] PSXPlace new patches $today" 2>&1 | Out-Null
-  git push origin master 2>&1 | ForEach-Object { Log "  $_" }
+  $r = Exec git @('commit','-m',"[Auto] PSXPlace new patches $today"); if ($r.Code) { throw "git commit failed: $($r.Out)" }
+  $r = Exec git @('push','origin','master')
+  Log ("push: " + ($r.Out -replace "`r?`n"," | "))
+  if ($r.Code) { throw "git push failed (check credentials): $($r.Out)" }
   Set-Content -Path $stamp -Value $today -Encoding ascii
   Log "=== pushed new patches to master ==="
 }
