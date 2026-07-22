@@ -11,7 +11,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $script = Join-Path $RepoPath 'deploy\windows\run-scrape.ps1'
-if (-not (Test-Path $script)) { throw "run-scrape.ps1 not found at $script — check -RepoPath." }
+if (-not (Test-Path $script)) { throw "run-scrape.ps1 not found at $script - check -RepoPath." }
 
 # -WindowStyle Hidden + -NonInteractive = no visible console; the task itself is
 # also set to run hidden. ExecutionPolicy Bypass so it runs regardless of policy.
