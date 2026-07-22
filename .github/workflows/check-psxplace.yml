@@ -1,8 +1,11 @@
 name: Check PSXPlace Thread
 
 on:
-  schedule:
-    - cron: '0 6 * * *'   # daily at 06:00 UTC
+  # Daily scraping now runs on a real Windows desktop (deploy/windows/) — it
+  # clears Cloudflare where the headless self-hosted runner cannot. The cron is
+  # disabled to avoid daily red failures; workflow_dispatch stays for manual runs.
+  # schedule:
+  #   - cron: '0 6 * * *'   # daily at 06:00 UTC (disabled 2026-07-22)
   workflow_dispatch:        # allow manual trigger from GitHub UI
 
 permissions:
@@ -29,13 +32,7 @@ jobs:
 
       - name: Scrape thread and parse new patches
         id: scrape
-        # DEBUG: run the GPU/Wayland diag under cage (wlroots headless backend +
-        # GPU renderer) so Firefox renders WebGL on the real Intel iGPU. Revert
-        # to `node scripts/check_psxplace.js` before merge.
-        run: |
-          npm i patchright@latest --no-save --no-audit --no-fund
-          npx patchright install --with-deps chromium
-          node scripts/cf_patchright_diag.js
+        run: node scripts/check_psxplace.js
         continue-on-error: true
         # Exit codes: 2 = Cloudflare block, 3 = empty scrape (layout change), 1 = crash.
         # continue-on-error lets the commit step save partial results;
