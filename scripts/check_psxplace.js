@@ -196,16 +196,55 @@ function parseFirstPost(text) {
   const lines = text.split('\n').map(l => l.trim());
   const results = [];
   const PATCH_RE = /^0\s+([0-9A-Fa-f]{8})\s+([0-9A-Fa-f]{4,8})$/;
-  const TID_RE   = /\b(BL[UECSJAK][A-Z0-9]{6}|NP[A-Z]{2}[0-9]{5}|BC[A-Z]{2}[0-9]{5}|MRTC[0-9]{5})\b/i;
+  // No \b anchors: the forum now glues the TID to the game name and version
+  // ("SHIFTBLUS303911.03"), so word boundaries never match. The numeric part
+  // MUST be exactly 5 digits — an alphanumeric tail let a game name ending in
+  // letters fuse with the next TID into a false match (e.g. "Blur"+"BLES00759"
+  // -> "BLURBLES0"). 4 letters + 5 digits keeps it precise without \b.
+  const TID_RE   = /(BL[A-Z]{2}[0-9]{5}|BC[A-Z]{2}[0-9]{5}|NP[A-Z]{2}[0-9]{5}|MRTC[0-9]{5})/i;
+  const TYPE_RE  = /(Cheat code|Pre-?Patch|Game disc dump|No OC:?|config file edit)/ig;
 
+  // Cheat name from the name line. Old tab-separated rows: last tab segment.
+  // New run-together rows (forum HTML->text now concatenates fields, e.g.
+  // "#Need for Speed SHIFTBLUS303911.03Cheat codeUnlockFPS"): recognise the
+  // known FPS cheat labels in the trailing text.
+  function deriveCheatName(line) {
+    if (line.includes('\t')) {
+      const parts = line.split('\t').map(s => s.trim()).filter(Boolean);
+      return parts[parts.length - 1];
+    }
+    if (/unlock\s*fps/i.test(line)) return 'Unlock FPS';
+    if (/debug\s*menu/i.test(line)) return 'Debug Menu';
+    const fps = line.match(/(\d{2,3})\s*fps/i);
+    if (fps) return `${fps[1]} FPS`;
+    let m, last = 0; TYPE_RE.lastIndex = 0;
+    while ((m = TYPE_RE.exec(line))) last = m.index + m[0].length;
+    return (last ? line.slice(last) : line).trim() || line;
+  }
+
+  // TID / game name / version from a header line, handling both the old
+  // tab-separated layout and the new concatenated one.
   function parseTidLine(line) {
-    const parts = line.split('\t').map(s => s.trim());
-    const tidMatch = line.match(TID_RE);
-    return {
-      gameName: parts[0] || null,
-      version:  parts[2] || null,
-      tid: tidMatch ? tidMatch[1].toUpperCase() : null,
-    };
+    // Use the LAST TID on the line: when prior code-less entries (disc dumps,
+    // pre-patches) get concatenated into one header, several TIDs pile up and
+    // the one belonging to this cheat block is the last, nearest the codes.
+    const tidMatches = [...line.matchAll(new RegExp(TID_RE.source, 'ig'))];
+    const tidMatch = tidMatches.length ? tidMatches[tidMatches.length - 1] : null;
+    const tid = tidMatch ? tidMatch[1].toUpperCase() : null;
+    if (line.includes('\t')) {
+      const parts = line.split('\t').map(s => s.trim());
+      return { gameName: parts[0] || null, version: parts[2] || null, tid };
+    }
+    if (!tidMatch) return { gameName: null, version: null, tid: null };
+    // game name = text before the TID, minus the previous entry's terminator/
+    // type keyword; version = the x.yy right after the TID.
+    let before = line.slice(0, tidMatch.index).replace(/^#+/, '');
+    let m, last = 0; TYPE_RE.lastIndex = 0;
+    while ((m = TYPE_RE.exec(before))) last = m.index + m[0].length;
+    if (last) before = before.slice(last);
+    const after = line.slice(tidMatch.index + tidMatch[1].length);
+    const ver = after.match(/^\s*v?([0-9]+\.[0-9]+)/i);
+    return { gameName: before.trim() || null, version: ver ? ver[1] : null, tid };
   }
 
   for (let i = 0; i < lines.length - 3; i++) {
@@ -220,44 +259,36 @@ function parseFirstPost(text) {
       !PATCH_RE.test(lines[i + 3])
     ) continue;
 
+    // Collect the consecutive code lines. Terminate at the first non-code line:
+    // a standalone '#' (old format) OR a '#GameName...' header the forum now
+    // fuses onto the terminator. Waiting for a bare '#' used to hang past EOF
+    // and discard every block (parser rot after a forum formatting change).
     let j = i + 3;
     const patches = [];
-    while (j < lines.length && lines[j] !== '#') {
+    while (j < lines.length && PATCH_RE.test(lines[j])) {
       const m = lines[j].match(PATCH_RE);
-      if (m) patches.push(`0 ${m[1].toUpperCase()} ${m[2].toUpperCase()}`);
+      patches.push(`0 ${m[1].toUpperCase()} ${m[2].toUpperCase()}`);
       j++;
     }
-    if (!patches.length || j >= lines.length) continue;
+    if (!patches.length) continue;
 
-    // cheat name = last tab segment (name line may be a full tab row)
-    let cheatName = name;
-    if (name.includes('\t')) {
-      const parts = name.split('\t').map(s => s.trim()).filter(Boolean);
-      cheatName = parts[parts.length - 1];
-    }
+    const cheatName = deriveCheatName(name);
 
-    // TID + game info: prefer from the name line itself (Format 1);
+    // TID + game info: prefer from the name line itself (Format 1 / concatenated);
     // fall back to backward search (Format 2/3 where cheat name is on its own line).
     let tid = null, gameName = null, version = null;
-    const tidInName = name.match(TID_RE);
-    if (tidInName) {
-      const parsed = parseTidLine(name);
-      tid = parsed.tid; gameName = parsed.gameName; version = parsed.version;
+    if (TID_RE.test(name)) {
+      ({ tid, gameName, version } = parseTidLine(name));
     } else {
       for (let k = i - 1; k >= Math.max(0, i - 20); k--) {
         if (lines[k] === '#') break;
-        const m = lines[k].match(TID_RE);
-        if (m) {
-          const parsed = parseTidLine(lines[k]);
-          tid = parsed.tid; gameName = parsed.gameName; version = parsed.version;
-          break;
-        }
+        if (TID_RE.test(lines[k])) { ({ tid, gameName, version } = parseTidLine(lines[k])); break; }
       }
     }
-    if (!tid) { i = j; continue; }
 
+    i = j - 1;   // resume at the terminator / fused next-header line
+    if (!tid) continue;
     results.push({ tid, cheatName, author, patches, gameName, version });
-    i = j;
   }
 
   return results;
