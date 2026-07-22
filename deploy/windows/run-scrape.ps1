@@ -55,6 +55,11 @@ try {
   $head = (Exec git @('rev-parse','--short','HEAD')).Out
   Log "synced to origin/master @ $head"
 
+  # Commit identity for this clone (fresh clones inherit none) - mirrors the old
+  # GitHub Action's bot identity.
+  (Exec git @('config','user.name','psxplace-scraper')) | Out-Null
+  (Exec git @('config','user.email','psxplace-scraper@users.noreply.github.com')) | Out-Null
+
   # Ensure deps + the Camoufox browser are present (no-op once installed).
   if (-not (Test-Path (Join-Path $RepoPath 'node_modules\camoufox'))) {
     Log "installing npm deps..."; (Exec npm @('ci','--no-audit','--no-fund')) | Out-Null
