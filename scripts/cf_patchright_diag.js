@@ -26,8 +26,8 @@ async function run(label, headless) {
     browser = await chromium.launch({ headless, args: GPU_ARGS });
     const page = await browser.newPage();
     await page.goto(URL, { waitUntil: 'domcontentloaded', timeout: 30000 });
-    let sawWidget = false, cleared = false, box = null;
-    for (let i = 0; i < 15; i++) {
+    let sawWidget = false, cleared = false, box = null, clicked = false;
+    for (let i = 0; i < 25; i++) {
       const t = await page.title().catch(() => '?');
       if (!t.includes('Just a moment')) { cleared = true; break; }
       const frame = page.frames().find(f => f.url().includes('challenges.cloudflare.com'));
@@ -35,9 +35,20 @@ async function run(label, headless) {
         sawWidget = true;
         const el = await frame.frameElement().catch(() => null);
         if (el) box = await el.boundingBox().catch(() => null);
+        // Click the checkbox ~30px from the widget's left edge, once, after it
+        // has had a moment to render. Chromium exposes the challenge as a real
+        // iframe, so a coordinate click on the frame box hits the checkbox.
+        if (box && !clicked && i >= 2) {
+          clicked = true;
+          const cx = box.x + 30, cy = box.y + box.height / 2;
+          console.log(`   clicking Turnstile at (${Math.round(cx)}, ${Math.round(cy)})…`);
+          await page.mouse.move(cx - 50, cy + 15, { steps: 10 }).catch(() => {});
+          await page.mouse.click(cx, cy).catch(() => {});
+        }
       }
       await page.waitForTimeout(1000);
     }
+    const postCount = cleared ? await page.evaluate(() => document.querySelectorAll('article.message[data-author]').length).catch(() => -1) : 0;
     const webgl = await page.evaluate(() => {
       try {
         const gl = document.createElement('canvas').getContext('webgl');
@@ -46,7 +57,7 @@ async function run(label, headless) {
       } catch (e) { return 'err:' + e.message; }
     }).catch(e => 'eval-err:' + e.message);
     console.log(`\n### ${label} (headless=${headless})`);
-    console.log(`   cleared=${cleared} sawWidget=${sawWidget} box=${box ? `${Math.round(box.width)}x${Math.round(box.height)}` : 'none'}`);
+    console.log(`   cleared=${cleared} sawWidget=${sawWidget} posts=${postCount} box=${box ? `${Math.round(box.width)}x${Math.round(box.height)}` : 'none'}`);
     console.log(`   webgl-in-browser=${webgl}`);
   } catch (e) {
     console.log(`\n### ${label} (headless=${headless})\n   FATAL: ${e.message}`);
