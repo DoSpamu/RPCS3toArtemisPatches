@@ -1,0 +1,53 @@
+=== js-post-425253 | @Nascar1243 ===
+Joey85 said:
+Interesting.... uncapped the framerate but left my screen full of green glitches and flickers.
+
+didn't seem to work at all
+
+So what were you trying to patch in the first place? That is patchable 
+Any chance you can get GT6, that's the one game I can't figure out at the moment
+────────────────────────────────────────────────────────────
+
+=== js-post-425254 | @Joey85 ===
+Nascar1243 said:
+Any chance you can get GT6, that's the one game I can't figure out at the moment
+GT6 already targets 60fps during gameplay.... plus RPCS3 website says "Vblank unlocks the Frame Rate but speeds up the game"
+────────────────────────────────────────────────────────────
+
+=== js-post-425261 | @Nascar1243 ===
+Joey85 said:
+GT6 already targets 60fps during gameplay.... plus RPCS3 website says "Vblank unlocks the Frame Rate but speeds up the game"
+Huh, never actually tested it, I know someone sent me a video where it was locked to 30fps for whatever reason but who knows. I've been also trying to get GTA 5 since that game I believe targets 30fps but I couldn't get the FPS to stabilize enough for testing.
+────────────────────────────────────────────────────────────
+
+=== js-post-425262 | @Kevstah2004 ===
+Nascar1243 said:
+Huh, never actually tested it, I know someone sent me a video where it was locked to 30fps for whatever reason but who knows. I've been also trying to get GTA 5 since that game I believe targets 30fps but I couldn't get the FPS to stabilize enough for testing.
+
+Various GT6 tracks cause major slowdown, travelling slowly across the bridge section at the high speed ring has texture & depth of field pop, you can see it on a real ps3 when you change the interlaced/progressive display settings.
+────────────────────────────────────────────────────────────
+
+=== js-post-425268 | @NunoRS2000 ===
+Nascar1243 said:
+Huh, never actually tested it, I know someone sent me a video where it was locked to 30fps for whatever reason but who knows. I've been also trying to get GTA 5 since that game I believe targets 30fps but I couldn't get the FPS to stabilize enough for testing.
+Gran Turismo 5 and 6 lock at 30 on the replays but during races they target 60
+
+
+Joey85 said:
+GT6 already targets 60fps during gameplay.... plus RPCS3 website says "Vblank unlocks the Frame Rate but speeds up the game"
+There's a full fps unlock for Gran Turismo 5. Depending on the track, you can actually get more that 100fps 
+────────────────────────────────────────────────────────────
+
+=== js-post-425282 | @Dukem02 ===
+Joey85 said:
+Interesting.... uncapped the framerate but left my screen full of green glitches and flickers.
+
+didn't seem to work at all
+
+That is patchable 
+Yeah I jumped the gun, scrap all of it, im new to this .
+
+00526E04 = 38 60 00 02 > change to 38 60 00 01
+
+eboot has to be pre patched so thats the file address, not memory. that turns off vsync, no game speed weirdness
+────────────────────────────────────────────────────────────
