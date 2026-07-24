@@ -1,3 +1,9 @@
+Unlock FPS (PSXPlace)
+0
+RPCS3
+0 00EF0C74 60000000
+0 00EF0C88 60000000
+#
 Damage Player
 0
 xtatu

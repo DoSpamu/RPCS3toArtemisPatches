@@ -1,3 +1,9 @@
+Unlock FPS (PSXPlace)
+0
+RPCS3
+0 00F5AAB4 60000000
+0 00F5AAC8 60000000
+#
 Unlock FPS v01.02 [Tested] (PSXPlace)
 0
 Nascar1243
