@@ -242,6 +242,11 @@ function parseFirstPost(text) {
     let m, last = 0; TYPE_RE.lastIndex = 0;
     while ((m = TYPE_RE.exec(before))) last = m.index + m[0].length;
     if (last) before = before.slice(last);
+    // A "Game disc dump" entry's value is freeform CFG-file text (no TYPE_RE
+    // keyword to strip on), so its trailing "KEY=digits" settings line glues
+    // straight onto the next header with no separator (e.g. "Vid_PostProcess=1"
+    // + "Tales of Xillia..."). Strip that leftover settings token too.
+    before = before.replace(/^(?:[A-Za-z_]\w*=[0-9]+)+/, '');
     const after = line.slice(tidMatch.index + tidMatch[1].length);
     const ver = after.match(/^\s*v?([0-9]+\.[0-9]+)/i);
     return { gameName: before.trim() || null, version: ver ? ver[1] : null, tid };

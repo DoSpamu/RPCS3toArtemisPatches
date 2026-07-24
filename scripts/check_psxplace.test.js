@@ -210,6 +210,28 @@ assert.strictEqual(gnResults[0].gameName, 'Condemned 2 Bloodshot');
 assert.strictEqual(gnResults[0].version, '1.01');
 assert.strictEqual(gnResults[0].tid, 'BLUS30115');
 
+// parseFirstPost — a preceding "Game disc dump" entry's freeform CFG-file text
+// glues its last "KEY=digits" settings line onto the next header with no
+// separator (real forum sample: Syndicate's USER.CFG dump run into Tales of
+// Xillia's header). The settings token must not leak into gameName.
+const CFG_GLUE_SAMPLE = `
+#SyndicateBLUS308041.00Game disc dump\\PS3_GAME\\USRDIR\\\\CONTENT\\USER.CFG
+VID_VSYNC=0
+VID_RREFRESHRATE=0
+Vid_TripleBuffer=0
+Vid_PostProcess=1Tales of XilliaBLUS31006Cheat codeNascar1243 reported working
+From RPCS3 for more details: https://wiki.rpcs3.net/index.php?title=Tales_of_XilliaUnlock FPS
+0
+RPCS3
+0 00710694 38600001
+0 0023F114 3A900001
+#
+`.trim();
+const cfgGlueResults = parseFirstPost(CFG_GLUE_SAMPLE);
+assert.strictEqual(cfgGlueResults.length, 1);
+assert.strictEqual(cfgGlueResults[0].gameName, 'Tales of Xillia', 'settings token stripped from gameName');
+assert.strictEqual(cfgGlueResults[0].tid, 'BLUS31006');
+
 // findPsxplaceFiles — name-based fallback (scans the real "PSXPlace Confirmed/"
 // dir when run from the repo root; the TID below must not exist in any filename)
 const { findPsxplaceFiles } = require('./check_psxplace.js');
