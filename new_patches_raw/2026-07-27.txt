@@ -1,0 +1,722 @@
+=== js-post-425368 | @Nascar1243 ===
+Joey85 said:
+Software needed for pre-patching:
+* TrueAncestor_SELF_Resigner_v1.96
+* HxD
+1) decrypt eboot.bin -> eboot.elf (TrueAncestor)
+2) edit/patch eboot.elf (HxD)
+3) resign new patched eboot.elf back to eboot.bin (TrueAncestor)
+4) replace the patched eboot.bin where it is executed
+
+How to find the executed eboot.bin:
+* If the game has updates odds are you will find the executed eboot.bin in the ps3 hdd: /dev_hdd0/game/???????/USRDIR/EBOOT.BIN
+* If the game doesn't have update most likely the executed eboot.bin will be in the disc backup: /dev_hdd0/GAMES/??????/PS3_GAME/USRDIR/EBOOT.BIN
+
+Side note on disc backups: if you prefer your backups to be .iso format: backup to folder format, patch the eboot.bin and after that you can convert it to .iso
+
+Side notes on addresses:
+"File address" = "Memory address" - 10000
+Pre-patching uses "File address".
+Cheat Codes use "Memory address".
+
+Today's update:
+* Far Cry 2 BLUS30178 1.04
+* Far Cry 3 BLES01137 1.05
+* Far Cry 3 Blood Dragon NPEB01322 1.01
+* Far Cry 4 BLUS31420 1.07
+* Far Cry Classic NPEB00989 1.00
+Enjoy 
+For Far Cry 2, the game just crashes when changing that value, I also tried changing it to 3BFF0000 to see if anything would change and same thing happened, I updated my game to 1.04
+
+Also here is a link for all of the prepatched EBOOTs in case anyone wants it, if there are any issues with any of the games let me know and I will look into it
+
+15.88 GB folder on MEGA
+185 files and 87 subfolders
+ mega.nz
+────────────────────────────────────────────────────────────
+
+=== js-post-425374 | @Joey85 ===
+Nascar1243 said:
+Far Cry 2, the game just crashes when changing that value
+Far Cry 2 patch updated.
+Previous one worked but you had to be in gameplay, applying it during main menu resulted in screen freeze. The updated one should work fine 
+────────────────────────────────────────────────────────────
+
+=== js-post-425375 | @NunoRS2000 ===
+Tested Far Cry 3 patch and it works flawlessly. I think this will be useful to benchmark the custom maps I've planned to do
+────────────────────────────────────────────────────────────
+
+=== js-post-425422 | @Joey85 ===
+Today's update:
+* Marvel: Ultimate Alliance BLUS30010 1.00
+* Marvel: Ultimate Alliance 2 BLUS30294 1.02
+Enjoy 
+────────────────────────────────────────────────────────────
+
+=== js-post-425443 | @Nascar1243 ===
+Found some more patches from RPCS3
+
+Kingdom Hearts 1.5 ReMIX BLUS31212 (Should also work with BLES)
+Kingdom Final Mix (kingdom.self)
+Address 36870 change to 38600000
+Chain of Memories
+Address 12484 change to 38800000
+
+Kingdom Hearts 2.5 ReMIX BLUS31460 (Should also work with BLES) (From RPCS3 notes it can double gravity and some stuff is double the speed, I didn't notice this during gameplay)
+Kingdom 2 Final Mix (Kingdom2.self)
+Address 76850 change to 38600000
+Birth by Sleep
+Address 15AA4 change to 38600000
+────────────────────────────────────────────────────────────
+
+=== FIRST POST UPDATED (hash: 76fe0882191a0176) ===
+
+3D DOT GAME HEROESBLES008751.00Pre-PatchMem: 0x0002A11C | File: 0x0001A11C | Orig: 38600002 -> New: 38600001
+Mem: 0x0002A6AC | File: 0x0001A6AC | Orig: 44000002 -> New: 60000000
+Mem: 0x00029C08 | File: 0x00019C08 | Orig: 419D002C -> New: 4280002CAlice Madness ReturnsBLUS306071.00Cheat codeNo OC: 
+	
+		
+	
+Unlock FPS
+0
+Joey
+0 008a3238 28030001
+0 008a30e4 28030001
+#Alien RageNPEB010881.00Cheat codeUnlock FPS
+0
+Joey
+0 009802e8 2c030001
+0 003491bc 2c040001
+0 00980304 28030000
+0 009801a4 28030000
+#Alien: IsolationBLES016971.02Cheat codeUnlock FPS
+0
+Joey
+0 004e2998 38a00001
+#Aliens: Colonial MarinesBLUS308621.05Cheat codeUnlock FPS
+0
+Joey
+0 005c92f8 2b800000
+#Alpha ProtocolBLUS303411.00Cheat codeNo OC:
+
+	
+		
+	
+Unlock FPS
+0
+Joey
+0 00954970 2b090000
+0 0095478c 2b800000
+#Asura's WrathBLUS307211.02Cheat codeUnlock FPS
+0
+Joey
+0 00873024 28030001
+0 00873170 28030001
+#Batman Arkham Asylum GOTYBLUS305151.00Cheat codeDebug menu works (R1+start). From there unlock VSync for uncapped frame rate.Debug Menu
+0
+RPCS3
+0 0121DBAC 38600000
+#Batman Arkham City GOTYBLES015871.00Cheat codeDebug menu works (R1+start). From there unlock VSync for uncapped frame rate.Debug Menu
+0
+RPCS3
+0 00E36504 38600000
+#Batman Arkham OriginsBLUS311471.60Cheat codeDebug menu works (R1+start). From there unlock VSync for uncapped frame rate.Debug Menu
+0
+RPCS3
+0 00F249F0 38600000
+#BATTLEFIELD Bad CompanyBLES002611.20Game disc dumphttps://www.nexusmods.com/battlefieldbadcompany/mods/2?tab=filesBATTLEFIELD Bad Company 2BLES007791.05Game disc dumpsame patch/mod workshttps://www.nexusmods.com/battlefieldbadcompany/mods/2?tab=filesBlurBLES007591.02Cheat codeUnlockFPS
+0
+Joey
+0 0033ca5c 38600001
+#Brutal LegendBLES005621.02Cheat code(Needs cleaning)Unlock FPS
+0
+Joey
+0 00012ef4 3c888889
+0 000132f0 3c888889
+0 00017d90 3c888889
+0 00022d48 3c888889
+0 000686ac 3c888889
+0 0007d680 3c888889
+0 001594ac 3c888889
+0 00161380 3c888889
+0 00164cec 3c888889
+0 001bd978 3c888889
+0 00201454 3c888889
+0 002b2bc8 3c888889
+0 002b339c 3c888889
+0 002e3418 3c888889
+0 002f005c 3c888889
+0 002f44b0 3c888889
+0 002f5274 3c888889
+0 00303bfc 3c888889
+0 00327ed8 3c888889
+0 0034fb10 3c888889
+0 006b7d24 3c888889
+0 006b89f8 3c888889
+0 006b8c28 3c888889
+0 006b9270 3c888889
+0 00a0246c 3c888889
+0 011163c8 3c888889
+0 0116b34c 3c888889
+0 01353e5c 3c888889
+0 013be100 3c888889
+0 013c0520 3c888889
+0 000c479c 38600001
+0 000c44f8 38600001
+#BulletstormBLES011341.03Unlock FPS
+0
+Joey
+0 009c1974 2c030001
+#Castle of Illusion Starring Mickey MouseNPUB310991.00Cheat codeUnlock FPS
+0
+RPCS3
+0 000F8908 60000000
+#Condemned 2 BloodshotBLUS301151.01Game disc dump
++
+Cheat code\PS3_GAME\USRDIR\autoexec.cfg "MaxFPS" "60"
++
+Unlock FPS
+0
+Joey
+0 008fe1ac 38600001
+#Crysis 2BLUS306311.04Game disc dump\PS3_GAME\USRDIR\system.cfg
+sys_maxfps = 60Crysis 3BLES016491.04Game disc dump\PS3_GAME\USRDIR\system.cfg
+sys_maxfps = 60DARK SOULSBLES014021.00Pre-PatchFrom RPCS3 and for other disc version patches: https://wiki.rpcs3.net/index.php?title=Dark_SoulsFile: 0x001366D0 | Orig: 9BBF070C -> New: 38800002
+File: 0x001366D4 | Orig: 9BBF070D -> New: 989F070C
+File: 0x001366D8 | Orig: 9BBF070F -> New: 989F070D
+File: 0x00131C78 | Orig: C3FE80AC -> New: 494447F9
+File: 0x01576470 | Orig: 00200054 -> New: 7EAC42E6
+File: 0x01576474 | Orig: 00680072 -> New: 3EC0017D
+File: 0x01576478 | Orig: 006F0075 -> New: 62D6E3F8
+File: 0x0157647C | Orig: 00670068 -> New: 7E96A02A
+File: 0x01576480 | Orig: 002030E0 -> New: FAB60000
+File: 0x01576484 | Orig: 30FC30D6 -> New: 7E74A850
+File: 0x01576488 | Orig: 30DE30C3 -> New: FA7600E0
+File: 0x0157648C | Orig: 30D70000 -> New: CBD600E0
+File: 0x01576490 | Orig: 00420067 -> New: FFC0F69C
+File: 0x01576494 | Orig: 006D0020 -> New: FFC0F018
+File: 0x01576498 | Orig: 00540065 -> New: 3E400158
+File: 0x0157649C | Orig: 00730074 -> New: 62526470
+File: 0x015764A0 | Orig: 0020FF22 -> New: C3B20054
+File: 0x015764A4 | Orig: FF27FF2D -> New: C3920058
+File: 0x015764A8 | Orig: 30C630B9 -> New: FFFEE824
+File: 0x015764AC | Orig: 30C80000 -> New: FF9FE000
+File: 0x015764B0 | Orig: 81EA52D5 -> New: 419C0008
+File: 0x015764B4 | Orig: 30C630B9 -> New: FFE0E090
+File: 0x015764B8 | Orig: 30C80000 -> New: 7E94A278
+File: 0x015764BC | Orig: 00000000 -> New: 7E94A278
+File: 0x015764C0 | Orig: 00530046 -> New: 4E800020
+File: 0x015764C4 | Orig: 005830C6 -> New: 4C989680
+File: 0x015764C8 | Orig: 30B930C8 -> New: 3D4CCCCDDead SpaceBLES003081.00Cheat codeMinor "jumps" w/ character movement
+0 00D5E938 00000000 -> uncapped fps
+0 00D5E938 00000001 -> 60fps limited
+
+No OC, NunoRS2000 review:
+
+	
+		
+	
+Unlock FPS
+0
+Joey
+0 00D5E938 00000000
+0 004549a0 38600001
+0 00454b60 38600001
+0 00455950 38600001
+#Dead Space 2BLES010401.02Cheat codeUnlock FPS
+0
+Joey
+0 008f07d4 60000000
+0 008f1e98 38600001
+0 008f203c 38600001
+0 008f39b0 38600001
+#Dead Space 3BLUS310531.02Cheat codeUnlock FPS
+0
+Joey
+0 00928364 60000000
+0 00934dfc 38600001
+0 00932aec 38600001
+0 00932954 38600001
+#DeadpoolBLUS311461.00Cheat codeUnlock FPS
+0
+Joey
+0 016af2d0 60000000
+0 016af2dc 60000000
+0 007b28d4 38600001
+0 007ab89c 38600001
+0 007b1fa4 28030001
+0 007ED630 60000000
+0 007bf970 60000000
+0 007b2238 60000000
+#Demon's SoulsBLES009321.00Pre-PatchFrom RPCS3 and for other disc version patches: https://wiki.rpcs3.net/index.php?title=Demon's_SoulsFile: 0x00016AC0 | Orig: 9BBF06ED -> New: 981F06ED
+File: 0x0000C534 | Orig: C3FE8088 -> New: 496ADA1D
+File: 0x016B9F50 | Orig: 004D006F -> New: 7EAC42E6
+File: 0x016B9F54 | Orig: 00640065 -> New: 3EC00185
+File: 0x016B9F58 | Orig: 006C0020 -> New: 3AD62608
+File: 0x016B9F5C | Orig: 00560069 -> New: 7E96A02A
+File: 0x016B9F60 | Orig: 00650077 -> New: FAB60000
+File: 0x016B9F64 | Orig: 00650072 -> New: 7E74A850
+File: 0x016B9F68 | Orig: 002030E2 -> New: FA760018
+File: 0x016B9F6C | Orig: 30C730EB -> New: CBD60018
+File: 0x016B9F70 | Orig: 30D330E5 -> New: FFC0F69C
+File: 0x016B9F74 | Orig: 30FC30A2 -> New: FFC0F018
+File: 0x016B9F78 | Orig: 00000000 -> New: 3E40016C
+File: 0x016B9F7C | Orig: 00000000 -> New: 62529F50
+File: 0x016B9F80 | Orig: 00570061 -> New: C3B20054
+File: 0x016B9F84 | Orig: 006C006B -> New: C3920058
+File: 0x016B9F88 | Orig: 00200054 -> New: EFFEE824
+File: 0x016B9F8C | Orig: 00680072 -> New: FF9FE000
+File: 0x016B9F90 | Orig: 006F0075 -> New: 419C0008
+File: 0x016B9F94 | Orig: 00670068 -> New: FFE0E090
+File: 0x016B9F98 | Orig: 002030E0 -> New: 7E94A278
+File: 0x016B9F9C | Orig: 30FC30D6 -> New: 7E94A278
+File: 0x016B9FA0 | Orig: 30DE30C3 -> New: 4E800020
+File: 0x016B9FA4 | Orig: 30D70000 -> New: 4C989680
+File: 0x016B9FA8 | Orig: 00530046 -> New: 3D4CCCCDDestroy All Humans! Path of the FuronBLES00467Cheat codeUnlock FPS
+0
+RPCS3
+0 010B9E68 60000000
+0 010B9EC0 60000000
+#Deus Ex: Human Revolution - Director's CutBLUS313171.00Cheat codeUnlock FPS
+0
+Joey
+0 002a205c 60000000
+#Dragon's DogmaBLUS307201.05Cheat codeNascar1243 reported working
+From RPCS3 for more details: https://wiki.rpcs3.net/index.php?title=Dragon's_DogmaUnlock FPS
+0
+RPCS3
+0 00EF0C74 60000000
+0 00EF0C88 60000000
+#Dragon's Dogma: Dark ArisenBLUS311551.02Cheat codeNascar1243 reported working
+From RPCS3 for more details: https://wiki.rpcs3.net/index.php?title=Dragon's_DogmaUnlock FPS
+0
+RPCS3
+0 00F5AAB4 60000000
+0 00F5AAC8 60000000
+#Duke Nukem ForeverBLES011471.03Cheat codeNo OC: 
+	
+		
+	
+Unlock FPS
+0
+Joey
+0 00486e34 39240002
+#ENSLAVED ODYSSEY TO THE WESTBLES009891.01Cheat codeUnlocks the framerate ingame and in menus.
+Cut scenes and loading periods are still 30.Unlock FPS
+0
+Joey
+0 00a01d3c 28030001
+0 00a01e94 28050001
+0 008863dc 38600001
+0 00a0e24c 38600001
+#F.E.A.R. 2 Project OriginBLES00464Game disc dumpconfig file use notepad to edit frame rate limitFALLOUT 3 GAME OF THE YEARBLUS304511.00Cheat codeUnlock FPS
+0
+RPCS3
+0 00702BCC 60000000
+#Fallout New Vegas Ultimate EditionBLUS308881.00Cheat codeUnlock FPS
+0
+RPCS3
+0 0097504C 60000000
+#Far Cry 2BLUS301781.04Cheat codeUnlock FPS
+0
+Joey
+0 00886204 3be00002
+#Far Cry 3BLES011371.05Cheat codeRendered cutscenes still locked at 20/30fps.UnlockFPS
+0
+Joey
+0 00df70a8 38600000
+#Far Cry 3 Blood DragonNPEB013221.01Cheat codeUnlock FPS
+0
+Joey
+0 00deccc4 60000000
+0 00deccc8 38800000
+#Far Cry 4BLUS314201.07Cheat codeUnlockFPS
+0
+Joey
+0 0024a6f8 38800000
+#Far Cry ClassicNPEB009891.00Cheat codeUnlock FPS
+0
+Joey
+0 00502754 38000000
+#FINAL FANTASY XIIIMRTC000031.00Cheat codeUnlock FPS
+0
+RPCS3_illusion
+0 008d2e94 38800001
+#FolkloreBCES000501.10Cheat codeMinor graphical issuesUnlock FPS
+0
+RPCS3
+0 001821a0 60000000
+#FuseBLUS310401.00Pre-PatchFrom RPCS3. For more details: https://wiki.rpcs3.net/index.php?title=FuseFile: 0x005D4C28 | Orig: 38800002 -> New: 38800001
+File: 0x005D4C30 | Orig: 38600002 -> New: 38600001
+File: 0x00605944 | Orig: FC24186E -> New: C024000C
+File: 0x005D4B54 | Orig: 3CC03C88 -> New: 3CC03A83
+File: 0x005D4B58 | Orig: 60C6AB86 -> New: 60C6126FGran Turismo 5BCUS981142.17Cheat codeFrom RPCS3 for more info: https://wiki.rpcs3.net/index.php?title=Gran_Turismo_5Unlock FPS
+0
+RPCS3
+0 001855cb 00
+0 001855d7 00
+#Grand Theft Auto IV: Complete EditionBLES011281.02Cheat codeUnlock FPS
+0
+RPCS3
+0 00F18840 00000000
+#Half-Life 2 (The Orange Box)BLUS300551.10Cheat codeUnlock FPS
+0
+RPCS3
+0 00C477F4 60000000
+#HAZEBLES001571.36Cheat codeUnlock FPS
+0
+Joey
+0 007411a8 38600001
+0 00742d10 38600001
+0 00e4e36c 3D4CCCCD
+0 00e4e364 3D03D70A
+0 0068d1b8 60000000
+#HomefrontBLES009621.04Cheat codeUnlock FPS
+0
+Joey
+0 007eeab8 28030001
+0 007eec08 38800001
+0 007eec60 28030001
+#I AM ALIVENPUB303831.00Cheat codeUnlock FPS
+0
+Joey
+0 0074bcd4 60000000
+0 0074bbfc 60000000
+#inFamousBCES006091.00Pre-PatchFile: 0x0039AC10 | Orig: 38600002 -> New: 38600001inFamous 2BCES011441.04Pre-PatchFile: 0x00526E04 | Orig: 38600002 -> New: 38600001inFamous: Festival of BloodNPEA003221.00Pre-PatchFile: 0x0055B11C | Orig: 38600002 -> New: 38600001James Cameron's AVATAR: THE GAMEBLUS303741.00Cheat codeUnlock FPS
+0
+Joey
+0 00a785e8 3be00002
+#KILLER IS DEADBCAS202921.00Cheat codeUnlock FPS
+0
+RPCS3
+0 009913B8 60000000
+0 00991418 60000000
+0 0099141C 60000000
+#Killzone 2BCES000811.29Cheat codeNo OC, NunoRS2000 review:
+
+	
+		
+	
+Unlock FPS
+0
+Joey
+0 00048f98 38800001
+#LOLLIPOP CHAINSAWBLES015251.00Cheat codeUnlock FPS
+0
+Joey
+0 008f88f8 38800001
+0 008f8908 28030001
+#Lost Planet 2MRTC000021.02Cheat codeUnlock FPS
+0
+RPCS3
+0 013DC518 60000000
+0 013DC524 60000000
+#Lost Planet 3BLUS310201.02Cheat codeUnlock FPS
+0
+Joey
+0 0078008c 28030000
+0 007801cc 28040000
+#Marvel: Ultimate AllianceBLUS300101.00Pre-PatchFor extra performance force 720p in the PS3 video settingsFile: 0x00003300 | Orig: ED9F0028 -> New: 60000000
+File: 0x00702ECC | Orig: 20630002 -> New: 38600001Marvel: Ultimate Alliance 2BLUS302941.02Cheat codeUnlockFPS
+0
+Joey
+0 0096c3ec 39600001
+#METAL GEAR SOLID 4 GUNS OF THE PATRIOTSBLES002462.00Cheat codeUnlock FPS
+0
+RPCS3
+0 000DB720 4E800020
+#MindjackMRTC000141.01Cheat codeUnlock FPS
+0
+Joey
+0 003d9728 60000000
+#Mirror's EdgeBLES003221.01Cheat codeNo OC: 
+	
+		
+	
+Unlock FPS
+0
+Joey
+0 0091fe98 2b800000
+0 009205b4 2b090000
+0 00920568 2b800000
+#MotorStormBCES000061.00Cheat code
+800MHz/700MHz OC, review:
+
+	
+		
+	
+UnlockFPS
+0
+RPCS3
+0 0001852c 38c00001
+0 00018530 39000001
+0 0087f3a0 39000001
+#Need for Speed RivalsBLUS312011.03Cheat codeNot suitable for pre-patching
+Based on the RPCS3 (ZEROx) patch but updated for version 1.03Unlock FPS
+0
+Joey
+0 01861f80 404e0000
+0 01861f88 3F911111
+#Need for Speed SHIFTBLUS303911.03Cheat codeUnlockFPS
+0
+Joey
+0 0089af64 38000000
+0 008a4850 60000000
+#Need for Speed SHIFT 2 UNLEASHEDBLUS305801.02Cheat codeUnlockFPS
+0
+Joey
+0 009fb928 4280001c
+#NeverDeadBLUS306541.00Pre-Patcheboot needs to be pre-patchedMem: 0x008275E4 | File: 0x008175E4 | Orig: 3C0041F0 -> New: 3C004270
+Mem: 0x00728D40 | File: 0x00718D40 | Orig: 3C0041F0 -> New: 3C004270
+Mem: 0x00617C18 | File: 0x00607C18 | Orig: 3C0041F0 -> New: 3C004270
+Mem: 0x005F3720 | File: 0x005E3720 | Orig: 3C0041F0 -> New: 3C004270
+Mem: 0x005E9C20 | File: 0x005D9C20 | Orig: 3C0041F0 -> New: 3C004270
+Mem: 0x005CBE44 | File: 0x005BBE44 | Orig: 3C0041F0 -> New: 3C004270
+Mem: 0x005261C0 | File: 0x005161C0 | Orig: 3C0041F0 -> New: 3C004270
+Mem: 0x004E6FC4 | File: 0x004D6FC4 | Orig: 3C0041F0 -> New: 3C004270
+Mem: 0x002BD2A4 | File: 0x002AD2A4 | Orig: 3C0041F0 -> New: 3C004270
+Mem: 0x002AC9D0 | File: 0x0029C9D0 | Orig: 3C0041F0 -> New: 3C004270
+Mem: 0x0023FA20 | File: 0x0022FA20 | Orig: 3C0041F0 -> New: 3C004270
+Mem: 0x0023F930 | File: 0x0022F930 | Orig: 3C0041F0 -> New: 3C004270
+Mem: 0x0023D3BC | File: 0x0022D3BC | Orig: 3C0041F0 -> New: 3C004270Prototype 2BLUS307561.00Cheat codeUnlockFPS
+0
+Joey
+0 006e9be8 60000000
+0 006e9b60 60000000
+#Ratchet & Clank All 4 OneBCUS981751.03Cheat codeRun patch in main menuUnlock FPS
+0
+Joey
+0 0073c7a0 38600001
+0 0073c78c 38a00001
+#Ratchet & Clank NexusBCES019081.01Cheat codeRun patch in main menu
+
+No OC, NunoRS2000 review:
+
+	
+		
+	
+Unlock FPS
+0
+Joey
+0 0069a550 38a00001
+0 0069a564 38600001
+#Remember MeBLES017011.00Cheat codeUnlock FPS
+0
+Joey
+0 00a347d4 28030001
+0 00a34914 28030001
+#Resident EvilNPUB315521.00Cheat codeUnlock FPS
+0
+RPCS3
+0 007C77A4 60000000
+0 007C77B8 60000000
+#RESIDENT EVIL 5 GOLD EDITIONBLES008161.01Cheat codeUnlock FPS
+0
+RPCS3
+0 00C27964 60000000
+0 00C27970 60000000
+#RESIDENT EVIL 6BLUS308551.06Cheat codeUnlock FPS
+0
+Joey
+0 010e5b18 60000000
+0 010e5b2c 60000000
+#Resident Evil RevelationsBLES017731.01Cheat codeUnlock FPS
+0
+RPCS3
+0 00B73910 60000000
+0 00B73924 60000000
+#Resident Evil Revelations 2BLUS314441.04Cheat codeUnlock FPS
+0
+Joey
+0 00f310bc 60000000
+0 00f310d0 60000000
+#RESIDENT EVIL THE DARKSIDE CHRONICLESNPEB008161.00Cheat codeUnlock FPS
+0
+Joey
+0 0046b354 60000000
+#RESIDENT EVIL THE UMBRELLA CHRONICLESNPEB008171.00Cheat codeUnlock FPS
+0
+Joey
+0 0007cb6c 60000000
+#Resistance 2BCES002261.60Cheat codeBased on the RPCS3 (Whatcookie, illusion) codesUnlock FPS
+0
+Joey
+0 0065066c 42800088
+0 00d62f34 3c888889
+#Resistance 3BCES011181.05Cheat codeUnlock FPS
+0
+RPCS3
+0 00817D48 C0228DD4
+0 00F330FC 38D1B717
+0 0075FA54 60000000
+#SawBLES006761.00Cheat codeUnlock FPS
+0
+Joey
+0 018bec38 3c888889
+0 018c2000 3c888889
+0 018d5914 3c888889
+0 00a60f80 2b800000
+#SAW 2BLES010501.00Cheat codeUnlock FPS
+0
+Joey
+0 00b6a0c0 2b890000
+0 00b6a078 2b800000
+#Serious Sam 3: BFENPUB311651.01Cheat codeNascar1243 reported working
+From RPCS3 for more details: https://wiki.rpcs3.net/index.php?title=Serious_Sam_3:_BFEUnlock FPS
+0
+RPCS3
+0 00622BE0 60000000
+#Shadows of the DamnedBLES012761.00Cheat codeNo OC: 
+	
+		
+	
+Unlock FPS
+0
+Joey
+0 009E0CE4 60000000
+0 009E0D64 60000000
+0 009a5f38 28030001
+0 009a5e0c 28030001
+0 009a5f28 38800001
+#Silent Hill DownpourBLUS305651.01Cheat codeUnlockFPS
+0
+Joey
+0 0077d8e8 38600001
+0 0073283c 38600001
+0 0077f6e8 38600001
+0 0072cc6c 28030000
+0 0072cb30 28030000
+#Silent Hill: HomecomingBLES004601.00Cheat codeUnlock FPS
+0
+RPCS3
+0 0005A6BC 38000001
+#Siren Blood CurseBCES002941.00Cheat codeUnlock FPS
+0
+Joey
+0 002e8404 38600001
+0 002fa99c 38600001
+0 00022818 4e800020
+#SkyrimBLUS312021.00Cheat codeUnlock FPS
+0
+RPCS3
+0 008EDB64 F8051C60
+#Sleeping DogsBLUS309271.04Cheat codePatch before loading the game.
+Patching during gameplay may make it unstable.Unlock FPS
+0
+Joey
+0 00898bb8 60000000
+0 00898cbc 60000000
+0 00898ac4 60000000
+0 00898ad8 60000000
+0 00898ab4 60000000
+#STRANGLEHOLDBLES001441.20Cheat codeUnlock FPS
+0
+RPCS3
+0 00B9FF70 60000000
+#SyndicateBLUS308041.00Game disc dump\PS3_GAME\USRDIR\\CONTENT\USER.CFG
+VID_VSYNC=0
+VID_RREFRESHRATE=0
+Vid_TripleBuffer=0
+Vid_PostProcess=1Tales of XilliaBLUS31006Cheat codeNascar1243 reported working
+From RPCS3 for more details: https://wiki.rpcs3.net/index.php?title=Tales_of_XilliaUnlock FPS
+0
+RPCS3
+0 00710694 38600001
+0 0023F114 3A900001
+#The Bureau: XCOM DeclassifiedBLUS307801.02Cheat codeUnlock FPS
+0
+Joey
+0 01FB8D14 00000000
+#The Evil WithinBLES019161.05Cheat codeUnlockFPS
+0
+Joey
+0 00259328 38600001
+0 0025c100 48000050
+#The Godfather IIBLES004771.01Cheat codeUnlockFPS
+0
+Joey
+0 0074f1bc 42800030
+0 00750454 38600001
+0 00751aa8 38600001
+0 00750620 38600001
+#The Last of UsBCES015851.11Cheat codeUnlock FPS
+0
+RPCS3_illusion
+0 00039D08 38A00000
+#The Two Thrones (Prince of Persia Trilogy 3D)BLUS307541.00Cheat codeUnlock FPS
+0
+RPCS3
+0 0009381C 60000000
+#Tom Clancy's Splinter Cell BlacklistBLES018791.03Cheat codeUnlock FPS
+0
+Joey
+0 00210450 38600001
+0 00bb2080 38800000
+0 00bb2090 38800000
+#Tomb RaiderBLUS310361.03Cheat codeUnlock FPS
+0
+Joey
+0 0028f0c8 60000000
+#Transformers: War for CybertronBLES008331.01Cheat codeUnlock FPS
+0
+RPCS3
+0 0020099C C03F0BB8
+#Uncharted: Drake's FortuneBCES000651.01Cheat codeNot suitable for pre-patching
+0 00bb4350 00000001 (60 fps capped)
+0 00bb4350 00000000 (uncapped)Unlock FPS
+0
+RPCS3
+0 00bb4350 00000001
+#Uncharted: Drake's FortuneBCES000651.01Pre-PatchFile: 0x000D5114 | 39000001 (60 fps capped)
+or
+File: 0x000D5114 | 39000000 (uncapped)Uncharted 2: Among ThievesBCES007271.09Cheat codeNot suitable for pre-patching
+0 00E9C1FB 01 (60 fps capped)
+0 00E9C1FB 00 (uncapped)UnlockFPS
+0
+RPCS3
+0 00E9C1FB 01
+#Uncharted 2: Among ThievesBCES007271.09Pre-PatchFile: 0x000B26E0 | 39200001 (60 fps capped)
+or
+File: 0x000B26E0 | 39200000 (uncapped)
+
+File: 0x00930930 | 38600001 (optional/recommended)
+File: 0x00782E0C | 38600001 (optional/recommended)Uncharted 3: Drake's DeceptionBCES016921.19Pre-PatchFile: 0x0095E8E8 | 38E00001 (60 fps capped)
+or
+File: 0x0095E8E8 | 38E00000 (uncapped)
+
+File: 0x0073B8E0 | 38600001 (optional/recommended)
+File: 0x00A887B0 | 38600001 (optional/recommended)Warhammer 40,000: Space MarineBLES013471.05Cheat codeUnlock FPS
+0
+Joey
+0 0003f970 60000000
+#Warrior Within (Prince of Persia Trilogy 3D)BLUS307541.00Cheat codeUnlock FPS
+0
+RPCS3
+0 00824E10 60000000
+#WATCH_DOGSBLUS311761.04Cheat codeUnlock FPS
+0
+Joey
+0 00ee7c00 60000000
+0 00ee7c04 38800000
+#WETBLES007071.00Cheat codeUnlock FPS
+0
+Joey
+0 00964704 60000000
+#WheelmanBLUS302621.01Cheat codeUnlock FPS
+0
+Joey
+0 00806ec0 2c030001
+#X-BladesBLUS302411.00Pre-PatchFile: 0x0031F938 | Orig: 78630020 -> New: 38600001
+File: 0x003201C0 | Orig: 78630020 -> New: 38600001
+File: 0x0031FDA4 | Orig: 2F800000 -> New: 2F800001
+
+Yah it's 2026 and PS3 games are still getting patched 
+All patches tested and working on the real hardware.
+
+Generally speaking they will remove the 30fps software lock coded inside the game and the framerate will be limited by your PS3 hardware:
+ * Expect: Screen tearing, high framerate fluctuations, instabilities, higher CPU/GPU temps, lower hardware lifespan. So use them at your own risk  Also your millage may vary due to silicon lottery & overclock.
+ * Don't expect: Stable locked smooth 60fps
+ 
+
+Enjoy!
+────────────────────────────────────────────────────────────

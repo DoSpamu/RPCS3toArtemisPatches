@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 0096C3EC 39600001
+#
 Heros Infinite Health
 0
 CodeFreak/PS3UserCheat

@@ -1,7 +1,7 @@
 Unlock FPS (PSXPlace)
 0
 Joey
-0 00886204 3BFF0002
+0 00886204 3BE00002
 #
 Health Never Decreases (Except From Drowning)
 0

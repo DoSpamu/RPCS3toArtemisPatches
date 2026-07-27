@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 0096C3EC 39600001
+#
 Infinite Health + Stamina For Player Controlled
 0
 GuitarMan
