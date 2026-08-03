@@ -1,0 +1,30 @@
+=== js-post-425769 | @NunoRS2000 ===
+I was trying here the fps patch for Far Cry Classic and thinking: how Ubisoft kept releasing such unpolished remasters back then?
+Most of their remasters either break the games graphics, downgrade the shit out of the game or perform like crap... or all the 3 combined.
+How a game from 2004 can't at least hold 30fps in an open world?
+
+Also tested Blood Dragon but, just like Far Cry 3, you have to be creative with your camera work to see the game run above 40s
+────────────────────────────────────────────────────────────
+
+=== js-post-425794 | @Dariush Aghaee ===
+I'm trying to patch X blades.
+After patching the eboot file, which one of these options should I pick to resign it?
+NON-DRM or NPDRM?
+I used NON-DRM (option 2) and I get black screen on boot. My console is a super slim HEN. Is it possible to make HEN PS3s run games with patched eboots? Because I can remember PS3 HEN gets black screen with patched EBOOTs.
+And can't we make update files for this type of games?
+────────────────────────────────────────────────────────────
+
+=== js-post-425839 | @Nascar1243 ===
+Dariush Aghaee said:
+I'm trying to patch X blades.
+After patching the eboot file, which one of these options should I pick to resign it?
+NON-DRM or NPDRM?
+I used NON-DRM (option 2) and I get black screen on boot. My console is a super slim HEN. Is it possible to make HEN PS3s run games with patched eboots? Because I can remember PS3 HEN gets black screen with patched EBOOTs.
+And can't we make update files for this type of games?
+I already went through the trouble of making a working EBOOT, here is a link.
+
+
+23.2 GB folder on MEGA
+236 files and 103 subfolders
+ mega.nz
+────────────────────────────────────────────────────────────
