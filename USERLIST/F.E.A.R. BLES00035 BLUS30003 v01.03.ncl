@@ -1,3 +1,10 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 00187C74 60000000
+0 00187C8C 42800014
+0 00189FE0 38600001
+#
 Mostly Full Brightness
 0
 bungholio

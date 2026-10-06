@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 00BD3758 38800001
+#
 60 FPS (RPCS3)
 0
 RPCS3

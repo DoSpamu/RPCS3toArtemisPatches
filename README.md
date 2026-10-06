@@ -4,7 +4,7 @@
 
 # PS3 FPS Unlock Patches
 
-![Confirmed Games](https://img.shields.io/badge/confirmed_games-140-brightgreen)
+![Confirmed Games](https://img.shields.io/badge/confirmed_games-143-brightgreen)
 ![Patch Files](https://img.shields.io/badge/patch_files-2%2C544-blue)
 ![Platform](https://img.shields.io/badge/platform-PS3_CFW-lightgrey)
 ![License](https://img.shields.io/badge/license-MIT-yellow)
@@ -22,7 +22,7 @@ Sourced from the RPCS3 emulator patch database and the PSXPlace community.
 | Your situation | Use this | Section |
 |----------------|----------|---------|
 | I want a tested, plug-and-play patch | **`Working Artemis Patches/`** folder (39 games) | [Confirmed (39)](#confirmed-working-games-39-games) |
-| My game isn't in that folder | **`PSXPlace Confirmed/`** folder (101 games) | [Community Confirmed](#community-confirmed-games--psxplace-) |
+| My game isn't in that folder | **`PSXPlace Confirmed/`** folder (104 games) | [Community Confirmed](#community-confirmed-games--psxplace-) |
 | My game isn't in either folder | Full **`USERLIST/`** (2,542 files, mixed confidence) | [About USERLIST](#about-userlist-2542-files) |
 | I don't want to FTP files | **PS3MAPI** (apply patches live in browser, ~74 games) | [`MAPI_PATCHES.md`](MAPI_PATCHES.md) |
 | I want the patch permanent, zero setup | **Pre-patched EBOOTs / PKGs** by Nascar1243 (70 games) | [`EBOOT_PATCHES.md`](EBOOT_PATCHES.md) |
@@ -37,7 +37,7 @@ The latest release (`v2.0`) has one zip with two folders:
 | Folder in zip | Contents | Use when |
 |---------------|----------|----------|
 | **`Working Artemis Patches/`** | 39 games — 100% confirmed on real PS3 | Your game is in the list below |
-| **`PSXPlace Confirmed/`** | 101 games — confirmed by Joey85 + Nascar1243 + community on real PS3 | Your game isn't in the first folder |
+| **`PSXPlace Confirmed/`** | 104 games — confirmed by Joey85 + Nascar1243 + community on real PS3 | Your game isn't in the first folder |
 
 **[→ Download v2.0](https://github.com/DoSpamu/RPCS3toArtemisPatches/releases/tag/v2.0)**
 
@@ -148,6 +148,7 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | Bulletstorm | BLES01134 | 01.03 | Unlock FPS | Joey85 |
 | Castle Crashers | NPEB00293 | 01.00 | 60 FPS | FlexBy |
 | Condemned 2 Bloodshot | BLUS30115 | 01.01 | Unlock FPS | Joey85 |
+| config file use notepad to edit frame rate limitF.E.A.R. 3 | BLES00963 | 01.01 | Unlock FPS | Joey85 |
 | Dead Space | BLES00308 | 01.00 | Unlock FPS | Joey85 |
 | Dead Space 2 | BLES01040 | 01.02 | Unlock FPS | Joey85 |
 | Dead Space 3 | BLES01733 / BLUS31053 | 01.02 | Unlock FPS | Joey85 |
@@ -161,6 +162,7 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | Dragon's Dogma Dark Arisen | BLUS31155 | 01.02 | Unlock FPS | RPCS3 |
 | Duke Nukem Forever | BLES01147 | 01.03 | Unlock FPS | Joey85 |
 | Enslaved Odyssey To The West | BLES00989 | 01.01 | Unlock FPS | Joey85 |
+| F.E.A.R. | BLUS30003 | 01.00 | Unlock FPS | Joey85 |
 | Fallout 3 GOTY Edition | BLUS30451 | 01.00 | Unlock FPS | Joey85 |
 | Fallout New Vegas Ultimate Edition | BLUS30888 | 01.00 | Unlock FPS | PSXPlace |
 | Far Cry 2 | BLUS30178 | 01.04 | Unlock FPS | Joey85 |
@@ -172,6 +174,7 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | FINAL FANTASY XIII | MRTC00003 | 01.00 | Unlock FPS | illusion |
 | Folklore | BCES00050 | 01.10 | Unlock FPS | RPCS3 |
 | Grand Theft Auto IV Complete Edition | BLES01128 | 01.00 | Unlock FPS | Zolika1351/illusion |
+| Grand Theft Auto V | BLES01807 | 01.27 | Unlock FPS | Joey85 |
 | Harry Potter And The Order Of The Phoenix | BLES00070 | 01.01 | 60 FPS | NunoRS2000 |
 | Haze | BLES00157 / BLES00169 / BLUS30094 | v01.00 av01.36 | Unlock FPS | Joey85 |
 | Homefront | BLES00962 | 01.04 | Unlock FPS | Joey85 |
