@@ -1,3 +1,9 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 00013AE8 60000000
+0 00024200 60000000
+#
 Press L3 + Triangle To Save a Checkpoint
 0
 bungholio

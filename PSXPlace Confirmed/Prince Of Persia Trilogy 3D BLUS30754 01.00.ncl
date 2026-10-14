@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 001D4168 3BA00001
+#
 The Two Thrones Unlock FPS (PSXPlace)
 0
 Joey

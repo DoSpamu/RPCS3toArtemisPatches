@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 0028D410 3B800001
+#
 Memory Infinite Ammo + No Reload
 0
 jgduff1
