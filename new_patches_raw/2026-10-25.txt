@@ -1,0 +1,4 @@
+=== js-post-428777 | @NunoRS2000 ===
+Just tested Need for Speed Rivals patch and the game is pretty much holding to 30fps. It will ocasionally go slightly up to the mid 30s just to return to 30. Pretty sure it uses double buffer v-sync.
+Also tested Aliens Colonial Marines and I wish I hadn't because the game is terrible. But at least there will be a video with the usual analysis.
+────────────────────────────────────────────────────────────
