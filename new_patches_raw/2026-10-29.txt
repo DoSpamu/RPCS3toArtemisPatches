@@ -1,0 +1,22 @@
+=== js-post-428836 | @Joey85 ===
+NunoRS2000 said:
+I need some help with the SELF file resigning for the Metal Gear Solid 4 patch. I did everything like I usually do for the EBOOTs but using the SELF related tools but after resigning back to SELF and putting it back in the console the game doesn't launch.
+Are you still struggling with this?
+
+NunoRS2000 said:
+Prototype crashes the console, not matter if I apply the patch on menu or during gameplay.
+Retested Prototype yesterday and it works with no issues on my end. Anyway it is one of those games where the console struggles to reach 30fps during demanding scenes (even with RSX overclock).
+────────────────────────────────────────────────────────────
+
+=== js-post-428838 | @NunoRS2000 ===
+Joey85 said:
+Are you still struggling with this?
+
+Retested Prototype yesterday and it works with no issues on my end. Anyway it is one of those games where the console struggles to reach 30fps during demanding scenes (even with RSX overclock).
+I don't know what I'm doing wrong on both MGS 4.
+About Prototype I think I know what I did wrong so I'll try again and let you know how it went.
+
+EDIT: That Prototype patch only works on the american version. It's the first time where I find the game being on the same update but not allowing the patch simply for it being for a different region. 
+
+EDIT2: Now it the proper version at hand, the testing is done and I'll surprised with the results. The game being simple in terms of graphics helps the performance to jump up in many ocasions and it's not rare to see the 60fps number while climbing buildings.
+────────────────────────────────────────────────────────────
