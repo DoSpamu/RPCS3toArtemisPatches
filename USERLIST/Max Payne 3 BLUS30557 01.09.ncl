@@ -1,3 +1,9 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 00C664B0 60000000
+0 014C8D9C 00000001
+#
 Infinite Health
 0
 Hiei-YYH

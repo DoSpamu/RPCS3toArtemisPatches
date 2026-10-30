@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 0078E500 42800010
+#
 SuperStyle + Invincibility + Timer Controllers
 0
 bungholio

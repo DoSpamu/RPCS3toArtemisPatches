@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 004690A0 60000000
+#
 ASM Infinite Ammo + No Reload
 0
 jgduff1

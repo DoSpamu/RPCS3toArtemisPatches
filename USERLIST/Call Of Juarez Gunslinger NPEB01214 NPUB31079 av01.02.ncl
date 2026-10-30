@@ -1,3 +1,9 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 004208EC 38C00001
+0 004208C8 38C00001
+#
 Developer Menu
 0
 dron_3

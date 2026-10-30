@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 000658E4 60000000
+#
 Extended FOV (PSXPlace) [Tested]
 0
 vFxMz

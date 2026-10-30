@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 003E9DF4 60000000
+#
 Max HP
 0
 CodeFreak/PS3UserCheat
