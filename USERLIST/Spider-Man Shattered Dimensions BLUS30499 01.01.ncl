@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 0024AD04 2C030000
+#
 Infinite HP
 0
 CodeFreak/PS3UserCheat

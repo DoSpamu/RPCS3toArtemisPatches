@@ -1,6 +1,6 @@
 {
   "thread_url": "https://www.psx-place.com/threads/60-unlock-fps-patches.49905/",
-  "last_checked": "2026-10-31T20:39:03.572Z",
+  "last_checked": "2026-11-03T17:29:23.262Z",
   "known_post_ids": [
     "js-post-422276",
     "js-post-422297",
@@ -169,7 +169,10 @@
     "js-post-428836",
     "js-post-428838",
     "js-post-429002",
-    "js-post-429004"
+    "js-post-429004",
+    "js-post-429099",
+    "js-post-429174",
+    "js-post-429216"
   ],
-  "first_post_hash": "76194fccca5bf218"
+  "first_post_hash": "8c2763796f68b90f"
 }

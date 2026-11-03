@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 003F2BC4 38000001
+#
 Items Never Decrease
 0
 dron_3

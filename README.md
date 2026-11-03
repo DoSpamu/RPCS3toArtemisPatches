@@ -4,7 +4,7 @@
 
 # PS3 FPS Unlock Patches
 
-![Confirmed Games](https://img.shields.io/badge/confirmed_games-160-brightgreen)
+![Confirmed Games](https://img.shields.io/badge/confirmed_games-167-brightgreen)
 ![Patch Files](https://img.shields.io/badge/patch_files-2%2C544-blue)
 ![Platform](https://img.shields.io/badge/platform-PS3_CFW-lightgrey)
 ![License](https://img.shields.io/badge/license-MIT-yellow)
@@ -22,7 +22,7 @@ Sourced from the RPCS3 emulator patch database and the PSXPlace community.
 | Your situation | Use this | Section |
 |----------------|----------|---------|
 | I want a tested, plug-and-play patch | **`Working Artemis Patches/`** folder (39 games) | [Confirmed (39)](#confirmed-working-games-39-games) |
-| My game isn't in that folder | **`PSXPlace Confirmed/`** folder (121 games) | [Community Confirmed](#community-confirmed-games--psxplace-) |
+| My game isn't in that folder | **`PSXPlace Confirmed/`** folder (128 games) | [Community Confirmed](#community-confirmed-games--psxplace-) |
 | My game isn't in either folder | Full **`USERLIST/`** (2,542 files, mixed confidence) | [About USERLIST](#about-userlist-2542-files) |
 | I don't want to FTP files | **PS3MAPI** (apply patches live in browser, ~74 games) | [`MAPI_PATCHES.md`](MAPI_PATCHES.md) |
 | I want the patch permanent, zero setup | **Pre-patched EBOOTs / PKGs** by Nascar1243 (70 games) | [`EBOOT_PATCHES.md`](EBOOT_PATCHES.md) |
@@ -37,7 +37,7 @@ The latest release (`v2.0`) has one zip with two folders:
 | Folder in zip | Contents | Use when |
 |---------------|----------|----------|
 | **`Working Artemis Patches/`** | 39 games — 100% confirmed on real PS3 | Your game is in the list below |
-| **`PSXPlace Confirmed/`** | 121 games — confirmed by Joey85 + Nascar1243 + community on real PS3 | Your game isn't in the first folder |
+| **`PSXPlace Confirmed/`** | 128 games — confirmed by Joey85 + Nascar1243 + community on real PS3 | Your game isn't in the first folder |
 
 **[→ Download v2.0](https://github.com/DoSpamu/RPCS3toArtemisPatches/releases/tag/v2.0)**
 
@@ -197,8 +197,10 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | Lollipop Chainsaw | BLES01525 | 01.00 | Unlock FPS | Joey85 |
 | Lollipop Chainsaw PE | BLUS30917 | 01.00 | Unlock FPS | Nascar1243 |
 | Lost Dimension | BLES02197 / BLUS31554 / BLJM61166 | 01.01 | 60 FPS | FlexBy |
+| Lost in the rain | NPHA80264 | 01.00 | Unlock FPS | Joey85 |
 | Lost Planet 2 | MRTC00002 | 01.01 | Unlock FPS | PSXPlace |
 | Lost Planet 3 | BLUS31020 | 01.02 | Unlock FPS | Joey85 |
+| Lost Via Domus | BLES00221 | 01.00 | Unlock FPS | Joey85 |
 | Max Payne 3 | BLUS30557 | 01.10 | Unlock FPS | Joey85 |
 | Mem 0x0023D3BC  File 0x0022D3BC  Orig 3C0041F0 - New 3C004270Persona 5 | BLES02247 | 01.00 | Unlock FPS | Joey85 |
 | METAL GEAR SOLID 4 GUNS OF THE PATRIOTS | BLES00246 | 02.00 | Unlock FPS | RPCS3 |
@@ -237,6 +239,9 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | Skyrim | BLUS31202 | 01.00 | Unlock FPS | RPCS3 |
 | Sleeping Dogs | BLUS30927 | 01.04 | Unlock FPS | Joey85 |
 | Sonic Unleashed | BLUS30244 | 01.02 | Disable Shadows | illusion |
+| Spec Ops The Line | BLES01157 | 01.01 | Unlock FPS | Joey85 |
+| Spider-Man Shattered Dimensions | BLUS30499 | 01.00 | Unlock FPS | Joey85 |
+| SplitSecond | BLES00780 | 01.04 | Unlock FPS | Joey85 |
 | STRANGLEHOLD | BLES00144 | 01.20 | Unlock FPS | RPCS3 |
 | sys_maxfps = 60Dark Sector | BLES00222 | 01.01 | Unlock FPS | Joey85 |
 | Tales of Xillia | BLUS31006 | — | Unlock FPS | RPCS3 |
@@ -245,7 +250,9 @@ Confirmed on real PS3 hardware by community members. Sources: **Joey85** (PSXPla
 | The Godfather II | BLES00477 | 01.01 | Unlock FPS | Joey85 |
 | The Last of Us | BCES01585 | 01.11 | Unlock FPS | illusion |
 | The Orange Box Half-Life 2 | BLES00153 / BLUS30055 | av01.10 | Unlock FPS | PSXPlace |
+| Thief | BLES01982 | 01.02 | Unlock FPS | Joey85 |
 | TitleGame IDGame VersionMethodNotesCode007 James Bond Blood Stone | BLES01017 | 01.00 | Unlock FPS | Joey85 |
+| Tom Clancy's Ghost Recon Future Soldier | BLUS30521 | 01.05 | Unlock FPS | Joey85 |
 | Tom Clancy's Splinter Cell Blacklist | BLUS31025 / BLES01879 / BLES01766 | 01.03 | Unlock FPS | Joey85 |
 | Tomb Raider | BLUS31036 | 01.03 | Unlock FPS | Joey85 |
 | Transformers War For Cybertron | BLES00833 / BLUS30357 | 01.01 | Unlock FPS | Joey85 |

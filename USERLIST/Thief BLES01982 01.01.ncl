@@ -1,3 +1,8 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 024160EC 00000000
+#
 Infinite Arrows + Focus Points + Gold
 0
 jijibecali, games24.blog.fc2.com/blog-entry-234.html
