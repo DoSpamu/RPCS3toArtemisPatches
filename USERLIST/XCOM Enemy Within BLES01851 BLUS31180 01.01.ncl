@@ -1,3 +1,9 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 00762F20 28030001
+0 00763068 28030001
+#
 Developer Mode (L1 + R1 - Debug Menu during mission)
 0
 dron_3

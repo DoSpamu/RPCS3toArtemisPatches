@@ -1,3 +1,9 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 00689348 42800008
+0 006892DC 42800020
+#
 Infinite Health
 0
 Skiller

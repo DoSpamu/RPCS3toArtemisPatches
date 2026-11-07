@@ -1,3 +1,10 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 018A0C3C 60000000
+0 018A0D34 60000000
+0 018A0D38 60000000
+#
 Infinite Health
 0
 GuitarMan

@@ -1,3 +1,9 @@
+Unlock FPS (PSXPlace)
+0
+Joey
+0 0090BF10 60000000
+0 0090BF24 60000000
+#
 Max And Infinite Health & Automatically Escape Grabs
 0
 FBML
