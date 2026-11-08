@@ -1,0 +1,13 @@
+=== js-post-429411 | @NunoRS2000 ===
+I remember Final Fantasy XIII-2 being a terrible performer. Let's see how it works unlocked.
+────────────────────────────────────────────────────────────
+
+=== js-post-429412 | @BALLINNNNM ===
+What about Call of Duty 3? It ran at 30 FPS on PS3 compared to all the other versions of COD 3.
+────────────────────────────────────────────────────────────
+
+=== js-post-429413 | @NunoRS2000 ===
+BALLINNNNM said:
+What about Call of Duty 3? It ran at 30 FPS on PS3 compared to all the other versions of COD 3.
+And without v-sync, since the game is double-buffered. From 4 onwards is triple-buffered.
+────────────────────────────────────────────────────────────
